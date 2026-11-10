@@ -1,0 +1,13 @@
+# Ảnh SGK có bản quyền: lưu trên Drive nhóm, không đẩy lên GitHub public
+data/images/*
+!data/images/.gitkeep
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+eval/results/
+*.safetensors
+.cache/
+# môi trường ảo, mã tham khảo, ảnh tải từ Drive: chỉ giữ trên máy
+.venv/
+third_party/
+raw_drive/
