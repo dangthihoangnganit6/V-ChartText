@@ -33,6 +33,13 @@ def norm(s):
     return re.sub(r"\s+", " ", s)
 
 
+def norm_unit(s):
+    """Chuẩn hoá đơn vị để so khớp chính xác: 'Nghìn km' == 'nghìn km', 'tỷ đồng' == 'tỉ đồng',
+    '(%)' == '%'. KHÔNG so khớp chuỗi con, vì 'km' khác 'nghìn km' (lệch 1000 lần)."""
+    s = norm(s).replace("tỷ", "tỉ").replace("ngàn", "nghìn")
+    return re.sub(r"[()\[\]\s]+", " ", s).strip()
+
+
 def parse_json(text):
     text = re.sub(r"```(?:json)?", "", text)
     m = re.search(r"\{.*\}", text, re.S)
@@ -95,15 +102,15 @@ def score_chart(gt, out_text):
             err = "E2_sai_gia_tri"
         rows.append({**_base(gt, g), "pred_raw": p["raw"], "pred": p["y"], "rel_err": round(e, 4), "err": err})
 
-    gt_unit = norm((gt.get("y_axis") or {}).get("unit"))
-    pr_unit = norm((pred.get("y_axis") or {}).get("unit"))
+    gt_unit = norm_unit((gt.get("y_axis") or {}).get("unit"))
+    pr_unit = norm_unit((pred.get("y_axis") or {}).get("unit"))
     gt_leg = {norm(x) for x in gt.get("legend") or []}
     pr_leg = {norm(x) for x in pred.get("legend") or []}
     chart = {
         "json_ok": 1,
         "rnss": rnss([g["y"] for g in gt_pts], [p["y"] for p in pred_pts]),
         "type_ok": int(norm(pred.get("chart_type")) == norm(gt["chart_type"])),
-        "unit_ok": int(bool(gt_unit) and (gt_unit in pr_unit or pr_unit in gt_unit) and bool(pr_unit)) if gt_unit else None,
+        "unit_ok": int(gt_unit == pr_unit) if gt_unit else None,
         "legend_ok": int(gt_leg == pr_leg) if gt_leg else None,
         "n_extra_points": len(pred_pts) - len(used),
     }

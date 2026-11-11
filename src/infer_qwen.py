@@ -18,6 +18,16 @@ from common import Timer, append_result, done_ids, list_images
 from prompts import PROMPT_VERSION, PROMPTS
 
 
+def pick_dtype(name):
+    """T4/P100 (compute capability < 8) không có bf16 thật: torch.cuda.is_bf16_supported() vẫn
+    trả True vì giả lập, nhưng chạy rất chậm. 'auto' = bf16 trên Ampere+, fp16 trên GPU cũ."""
+    if name != "auto":
+        return {"fp16": torch.float16, "bf16": torch.bfloat16, "fp32": torch.float32}[name]
+    if torch.cuda.is_available() and torch.cuda.get_device_capability(0)[0] >= 8:
+        return torch.bfloat16
+    return torch.float16
+
+
 def load_img(path, max_side):
     img = Image.open(path).convert("RGB")
     w, h = img.size
@@ -37,14 +47,15 @@ def main():
     ap.add_argument("--max_side", type=int, default=1280, help="cạnh dài tối đa của ảnh (px)")
     ap.add_argument("--max_new_tokens", type=int, default=768)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--dtype", default="auto", choices=["auto", "fp16", "bf16", "fp32"])
     ap.add_argument("--ids", default="", help="chỉ chạy các id này, cách nhau bởi dấu phẩy")
     args = ap.parse_args()
 
     short = args.model.split("/")[-1]
     out = args.out or f"outputs/{short}__{args.task}__{PROMPT_VERSION}.jsonl"
 
-    # T4 không hỗ trợ bf16 tốt -> fp16; GPU Ampere trở lên -> bf16
-    dtype = torch.bfloat16 if torch.cuda.is_available() and torch.cuda.is_bf16_supported() else torch.float16
+    dtype = pick_dtype(args.dtype)
+    print("dtype:", dtype)
     model = AutoModelForImageTextToText.from_pretrained(args.model, dtype=dtype, device_map="auto").eval()
     processor = AutoProcessor.from_pretrained(args.model)
 
@@ -71,7 +82,7 @@ def main():
         text = processor.batch_decode(gen[:, inputs.input_ids.shape[1]:], skip_special_tokens=True)[0]
         append_result(out, {
             "id": cid, "model": args.model, "task": args.task, "prompt_version": PROMPT_VERSION,
-            "output": text, "latency_s": t.sec, "max_side": args.max_side,
+            "output": text, "latency_s": t.sec, "max_side": args.max_side, "dtype": str(dtype),
             "n_new_tokens": int(gen.shape[1] - inputs.input_ids.shape[1]),
             "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else platform.processor(),
         })

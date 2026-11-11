@@ -24,6 +24,16 @@ from prompts import PROMPT_VERSION, PROMPTS
 MEAN, STD = (0.485, 0.456, 0.406), (0.229, 0.224, 0.225)
 
 
+def pick_dtype(name):
+    """T4/P100 (compute capability < 8) không có bf16 thật: torch.cuda.is_bf16_supported() vẫn
+    trả True vì giả lập, nhưng chạy rất chậm. 'auto' = bf16 trên Ampere+, fp16 trên GPU cũ."""
+    if name != "auto":
+        return {"fp16": torch.float16, "bf16": torch.bfloat16, "fp32": torch.float32}[name]
+    if torch.cuda.is_available() and torch.cuda.get_device_capability(0)[0] >= 8:
+        return torch.bfloat16
+    return torch.float16
+
+
 def build_transform(size):
     return T.Compose([
         T.Lambda(lambda im: im.convert("RGB")),
@@ -77,18 +87,22 @@ def main():
     ap.add_argument("--max_tiles", type=int, default=6)
     ap.add_argument("--max_new_tokens", type=int, default=768)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--dtype", default="auto", choices=["auto", "fp16", "bf16", "fp32"])
+    ap.add_argument("--repetition_penalty", type=float, default=1.5,
+                    help="model card khuyên 1.5; với --task extract nên thử 1.05 nếu JSON bị hỏng")
     ap.add_argument("--ids", default="", help="chỉ chạy các id này, cách nhau bởi dấu phẩy")
     args = ap.parse_args()
 
     short = args.model.split("/")[-1]
     out = args.out or f"outputs/{short}__{args.task}__{PROMPT_VERSION}.jsonl"
-    dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+    dtype = pick_dtype(args.dtype)
+    print("dtype:", dtype)
 
     model = AutoModel.from_pretrained(args.model, torch_dtype=dtype, low_cpu_mem_usage=True,
                                       trust_remote_code=True, use_flash_attn=False).eval().cuda()
     tok = AutoTokenizer.from_pretrained(args.model, trust_remote_code=True, use_fast=False)
     gen_cfg = dict(max_new_tokens=args.max_new_tokens, do_sample=False, num_beams=1,
-                   repetition_penalty=1.5)  # theo khuyến nghị của model card để tránh lặp
+                   repetition_penalty=args.repetition_penalty)
 
     items = list_images(args.labels, args.images)
     skip = done_ids(out)
@@ -107,7 +121,8 @@ def main():
             text = model.chat(tok, pv, q, gen_cfg)
         append_result(out, {
             "id": cid, "model": args.model, "task": args.task, "prompt_version": PROMPT_VERSION,
-            "output": text, "latency_s": t.sec, "max_tiles": args.max_tiles,
+            "output": text, "latency_s": t.sec, "max_tiles": args.max_tiles, "dtype": str(dtype),
+            "repetition_penalty": args.repetition_penalty,
             "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else platform.processor(),
         })
         print(cid, f"{t.sec}s")
