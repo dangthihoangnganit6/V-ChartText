@@ -72,6 +72,7 @@ def main():
         append_result(out, {
             "id": cid, "model": args.model, "task": args.task, "prompt_version": PROMPT_VERSION,
             "output": text, "latency_s": t.sec, "max_side": args.max_side,
+            "n_new_tokens": int(gen.shape[1] - inputs.input_ids.shape[1]),
             "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else platform.processor(),
         })
         print(cid, f"{t.sec}s")
