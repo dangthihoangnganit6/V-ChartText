@@ -1,0 +1,28 @@
+{
+  "id": "line_029",
+  "image": "images/line_029.png",
+  "status": "todo",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_29.png"
+  },
+  "annotator": "nhi",
+  "subject": null,
+  "chart_type": "line",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": null
+  },
+  "legend": [],
+  "values_shown_on_chart": null,
+  "data": [],
+  "notes": ""
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bar_057",
+  "image": "images/bar_057.png",
+  "status": "todo",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_56.png"
+  },
+  "annotator": "ngan",
+  "subject": null,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": null
+  },
+  "legend": [],
+  "values_shown_on_chart": null,
+  "data": [],
+  "notes": ""
+}

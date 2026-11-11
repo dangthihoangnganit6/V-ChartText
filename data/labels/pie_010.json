@@ -1,0 +1,28 @@
+{
+  "id": "pie_010",
+  "image": "images/pie_010.png",
+  "status": "todo",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_10.png"
+  },
+  "annotator": "nhi",
+  "subject": null,
+  "chart_type": "pie",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": null
+  },
+  "legend": [],
+  "values_shown_on_chart": null,
+  "data": [],
+  "notes": ""
+}

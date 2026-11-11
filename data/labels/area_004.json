@@ -1,0 +1,28 @@
+{
+  "id": "area_004",
+  "image": "images/area_004.jpg",
+  "status": "todo",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_4.jpg"
+  },
+  "annotator": "giang",
+  "subject": null,
+  "chart_type": "area",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": null
+  },
+  "legend": [],
+  "values_shown_on_chart": null,
+  "data": [],
+  "notes": ""
+}
