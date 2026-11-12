@@ -45,7 +45,7 @@ def main():
     ap.add_argument("--images", default="data/images")
     ap.add_argument("--out", default=None)
     ap.add_argument("--max_side", type=int, default=1280, help="cạnh dài tối đa của ảnh (px)")
-    ap.add_argument("--max_new_tokens", type=int, default=768)
+    ap.add_argument("--max_new_tokens", type=int, default=2048)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--dtype", default="auto", choices=["auto", "fp16", "bf16", "fp32"])
     ap.add_argument("--ids", default="", help="chỉ chạy các id này, cách nhau bởi dấu phẩy")
@@ -84,6 +84,7 @@ def main():
             "id": cid, "model": args.model, "task": args.task, "prompt_version": PROMPT_VERSION,
             "output": text, "latency_s": t.sec, "max_side": args.max_side, "dtype": str(dtype),
             "n_new_tokens": int(gen.shape[1] - inputs.input_ids.shape[1]),
+            "max_new_tokens": args.max_new_tokens,
             "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else platform.processor(),
         })
         print(cid, f"{t.sec}s")

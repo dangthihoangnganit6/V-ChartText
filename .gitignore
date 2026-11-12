@@ -11,3 +11,6 @@ eval/results/
 .venv/
 third_party/
 raw_drive/
+# file tạm của find_truncated.py
+rerun_ids.json
+outputs_v768/

@@ -85,7 +85,7 @@ def main():
     ap.add_argument("--images", default="data/images")
     ap.add_argument("--out", default=None)
     ap.add_argument("--max_tiles", type=int, default=6)
-    ap.add_argument("--max_new_tokens", type=int, default=768)
+    ap.add_argument("--max_new_tokens", type=int, default=2048)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--dtype", default="auto", choices=["auto", "fp16", "bf16", "fp32"])
     ap.add_argument("--repetition_penalty", type=float, default=1.5,
@@ -119,10 +119,13 @@ def main():
         q = "<image>\n" + PROMPTS[args.task]
         with Timer() as t, torch.inference_mode():
             text = model.chat(tok, pv, q, gen_cfg)
+        # model.chat chỉ trả văn bản: đếm lại token bằng chính tokenizer của Vintern (xấp xỉ, sai lệch ±1-2)
+        n_new = len(tok(text, add_special_tokens=False).input_ids)
         append_result(out, {
             "id": cid, "model": args.model, "task": args.task, "prompt_version": PROMPT_VERSION,
             "output": text, "latency_s": t.sec, "max_tiles": args.max_tiles, "dtype": str(dtype),
             "repetition_penalty": args.repetition_penalty,
+            "n_new_tokens": n_new, "max_new_tokens": args.max_new_tokens,
             "gpu": torch.cuda.get_device_name(0) if torch.cuda.is_available() else platform.processor(),
         })
         print(cid, f"{t.sec}s")
