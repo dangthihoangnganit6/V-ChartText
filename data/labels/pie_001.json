@@ -1,7 +1,6 @@
 {
   "id": "pie_001",
   "image": "images/pie_001.jpeg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,55 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_1.jpeg"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
   "chart_type": "pie",
-  "title": "",
+  "title": "Tỷ trọng các nguồn điện tổng sản lượng điện sản xuất",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Thủy điện",
+    "Nhiệt điện",
+    "Tua bin khí",
+    "Năng lượng tái tạo",
+    "Điện nhập khẩu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Thủy điện",
+      "x": "Thủy điện",
+      "y": 27,
+      "y_raw": "27"
+    },
+    {
+      "series": "Nhiệt điện",
+      "x": "Nhiệt điện",
+      "y": 44,
+      "y_raw": "44"
+    },
+    {
+      "series": "Tua bin khí",
+      "x": "Tua bin khí",
+      "y": 11,
+      "y_raw": "11"
+    },
+    {
+      "series": "Năng lượng tái tạo",
+      "x": "Năng lượng tái tạo",
+      "y": 17,
+      "y_raw": "17"
+    },
+    {
+      "series": "Điện nhập khẩu",
+      "x": "Điện nhập khẩu",
+      "y": 0.8,
+      "y_raw": "0,8"
+    }
+  ]
 }

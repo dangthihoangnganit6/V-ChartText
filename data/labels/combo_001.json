@@ -1,7 +1,6 @@
 {
   "id": "combo_001",
   "image": "images/combo_001.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,119 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_1.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
   "chart_type": "combo",
-  "title": "",
+  "title": "BIỂU ĐỒ THỂ HIỆN SẢN LƯỢNG VÀ GIÁ TRỊ SẢN XUẤT THỦY SẢN CỦA NƯỚC TA, GIAI ĐOẠN 2005 - 2017",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn tấn"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "y2_axis": {
+    "label": null,
+    "unit": "Tỉ đồng"
+  },
+  "legend": [
+    "Khai thác",
+    "Nuôi trồng",
+    "Giá trị sản xuất"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Khai thác",
+      "x": "2005",
+      "y": 2000,
+      "y_raw": "2000",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2005",
+      "y": 1467,
+      "y_raw": "1467",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2005",
+      "y": 38784,
+      "y_raw": "38 784",
+      "axis": "y2"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2010",
+      "y": 2000,
+      "y_raw": "2000",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2010",
+      "y": 2200,
+      "y_raw": "2200",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2010",
+      "y": 47014,
+      "y_raw": "47 014",
+      "axis": "y2"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2015",
+      "y": 2000,
+      "y_raw": "2000",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2015",
+      "y": 2870,
+      "y_raw": "2870",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2015",
+      "y": 53654,
+      "y_raw": "53 654",
+      "axis": "y2"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2017",
+      "y": 2500,
+      "y_raw": "2500",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2017",
+      "y": 2628,
+      "y_raw": "2628",
+      "axis": "y",
+      "estimated": true
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2017",
+      "y": 56966,
+      "y_raw": "56 966",
+      "axis": "y2"
+    }
+  ]
 }

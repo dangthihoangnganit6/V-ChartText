@@ -1,7 +1,6 @@
 {
   "id": "bar_001",
   "image": "images/bar_001.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,49 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_1.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
   "chart_type": "bar",
-  "title": "",
+  "title": "Biểu đồ các nước có chiều dài đường ô tô lớn nhất thế giới, năm 2019",
   "x_axis": {
-    "label": null,
+    "label": "Nước",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn km"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Chiều dài đường ô tô",
+      "x": "Hoa Kỳ",
+      "y": 6586.6,
+      "y_raw": "6 586,6"
+    },
+    {
+      "series": "Chiều dài đường ô tô",
+      "x": "Trung Quốc",
+      "y": 4860.6,
+      "y_raw": "4 860,6"
+    },
+    {
+      "series": "Chiều dài đường ô tô",
+      "x": "Ấn Độ",
+      "y": 4699,
+      "y_raw": "4 699,0"
+    },
+    {
+      "series": "Chiều dài đường ô tô",
+      "x": "Bra-xin",
+      "y": 2000,
+      "y_raw": "2 000,0"
+    },
+    {
+      "series": "Chiều dài đường ô tô",
+      "x": "Liên bang Nga",
+      "y": 1283.4,
+      "y_raw": "1 283,4"
+    }
+  ]
 }
