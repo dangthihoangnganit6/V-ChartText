@@ -5,6 +5,7 @@ Chạy SAU score_extract.py và check_describe.py cho mọi file trong outputs/:
 -> eval/results/summary_models.csv    (hàng = mô hình)
 -> eval/results/summary_by_type.csv   (mô hình x loại biểu đồ)
 -> eval/results/summary_errors.csv    (tần suất mã lỗi E0-E9, gộp tự động + chấm tay)
+-> eval/results/summary_errors_noi.csv (tần suất mã lỗi theo chế độ chấm nới)
 và in bảng markdown để dán vào báo cáo.
 Chấm tay: điền eval/errors_manual.csv (cùng cột với errors_manual_template.csv).
 """
@@ -41,6 +42,7 @@ def main():
     models = defaultdict(dict)
     by_type = defaultdict(dict)
     errors = defaultdict(Counter)
+    errors_noi = defaultdict(Counter)
 
     for p in RES.glob("*__extract__*__charts.csv"):
         m, rows = model_of(p.stem), read_csv(p)
@@ -51,18 +53,40 @@ def main():
             "RNSS": mean([fnum(r.get("rnss")) for r in rows]),
             "type_ok": mean([fnum(r.get("type_ok")) for r in rows]),
             "unit_ok": mean([fnum(r.get("unit_ok")) for r in rows]),
+            "RA@5%_noi": mean([fnum(r.get("ra5_lenient")) for r in rows]),
+            "RNSS_noi": mean([fnum(r.get("rnss_lenient")) for r in rows]),
+            "unit_ok_noi": mean([fnum(r.get("unit_ok_lenient")) for r in rows]),
         })
         groups = defaultdict(list)
         for r in rows:
             groups[r["chart_type"]].append(r)
         for t, rs in groups.items():
             by_type[(m, t)].update({"n": len(rs), "RA@5%": mean([fnum(r.get("ra5")) for r in rs]),
+                                    "RA@5%_noi": mean([fnum(r.get("ra5_lenient")) for r in rs]),
                                     "RNSS": mean([fnum(r.get("rnss")) for r in rs])})
+    # thống kê không cần nhãn, trên mọi biểu đồ (file __all.csv của score_extract.py)
+    for p in RES.glob("*__extract__*__all.csv"):
+        m, rows = model_of(p.stem), read_csv(p)
+        parsed = [r for r in rows if r["json_status"] != "fail"]
+        models[m].update({
+            "n_tat_ca": len(rows),
+            "json_ok_tat_ca": mean([float(r["json_status"] == "ok") for r in rows]),
+            "json_cuu_duoc": sum(r["json_status"] == "salvaged" for r in rows),
+            "extract_cham_gioi_han": sum(r["hit_limit"] == "1" for r in rows),
+            "extract_lap": sum(r["loop"] == "1" for r in rows),
+            "loai_dung_tat_ca": mean([float(r["pred_type"] == r["chart_type"]) for r in parsed]),
+            "loai_khong_hop_le": sum(r["type_valid"] == "0" for r in parsed),
+        })
+        for t in {r["chart_type"] for r in rows}:
+            rs = [r for r in parsed if r["chart_type"] == t]
+            by_type[(m, t)]["loai_dung_tat_ca"] = mean([float(r["pred_type"] == t) for r in rs])
     for p in RES.glob("*__extract__*__points.csv"):
         m = model_of(p.stem)
         for r in read_csv(p):
             if r["err"]:
                 errors[m][r["err"].split("_")[0]] += 1
+            if r.get("err_lenient"):
+                errors_noi[m][r["err_lenient"].split("_")[0]] += 1
 
     for p in RES.glob("*__describe__*__desc_summary.csv"):
         m, rows = model_of(p.stem), read_csv(p)
@@ -76,6 +100,14 @@ def main():
             "desc_E9_khong_TV_%": mean([fnum(r["E9_khong_phai_tieng_viet"]) for r in rows]),
             "desc_so_tu_tb": mean([fnum(r["n_words"]) for r in rows]),
         })
+        pa = RES / p.name.replace("__desc_summary.csv", "__desc_all.csv")
+        if pa.exists():
+            ra = read_csv(pa)
+            models[m].update({
+                "desc_lap_tat_ca": sum(r["loop"] == "1" for r in ra),
+                "desc_chen_tieng_Anh_%": mean([float(r["chen_tieng_anh"]) for r in ra]),
+                "desc_khong_co_so": sum(r["n_numbers_all"] == "0" for r in ra),
+            })
         groups = defaultdict(list)
         for r in rows:
             groups[r["chart_type"]].append(r)
@@ -99,9 +131,13 @@ def main():
     _write(RES / "summary_by_type.csv", [{"model": m, "chart_type": t, **v} for (m, t), v in sorted(by_type.items())])
     codes = sorted({c for cnt in errors.values() for c in cnt})
     _write(RES / "summary_errors.csv", [{"model": m, **{c: cnt.get(c, 0) for c in codes}} for m, cnt in sorted(errors.items())])
+    codes_n = sorted({c for cnt in errors_noi.values() for c in cnt})
+    _write(RES / "summary_errors_noi.csv", [{"model": m, **{c: cnt.get(c, 0) for c in codes_n}}
+                                             for m, cnt in sorted(errors_noi.items())])
 
     for title, path in (("Theo mô hình", "summary_models.csv"), ("Theo loại biểu đồ", "summary_by_type.csv"),
-                        ("Tần suất lỗi", "summary_errors.csv")):
+                        ("Tần suất lỗi (chặt)", "summary_errors.csv"),
+                        ("Tần suất lỗi (nới)", "summary_errors_noi.csv")):
         p = RES / path
         if p.exists():
             rows = read_csv(p)
