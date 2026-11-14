@@ -1,0 +1,98 @@
+{
+ "id": "area_003",
+ "title": "",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Hàng nông - lâm - thủy sản",
+  "Hàng công nghiệp nhẹ và tiểu thủ công nghiệp",
+  "Hàng công nghiệp nặng và khoáng sản"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Hàng nông - lâm - thủy sản",
+   "x": "1995",
+   "y_raw": "46,3"
+  },
+  {
+   "series": "Hàng nông - lâm - thủy sản",
+   "x": "2000",
+   "y_raw": "28,9"
+  },
+  {
+   "series": "Hàng nông - lâm - thủy sản",
+   "x": "2005",
+   "y_raw": "22,9"
+  },
+  {
+   "series": "Hàng nông - lâm - thủy sản",
+   "x": "2010",
+   "y_raw": "20,8"
+  },
+  {
+   "series": "Hàng nông - lâm - thủy sản",
+   "x": "2015",
+   "y_raw": "19,2"
+  },
+  {
+   "series": "Hàng công nghiệp nhẹ và tiểu thủ công nghiệp",
+   "x": "1995",
+   "y_raw": "28,4"
+  },
+  {
+   "series": "Hàng công nghiệp nhẹ và tiểu thủ công nghiệp",
+   "x": "2000",
+   "y_raw": "33,9"
+  },
+  {
+   "series": "Hàng công nghiệp nhẹ và tiểu thủ công nghiệp",
+   "x": "2005",
+   "y_raw": "41"
+  },
+  {
+   "series": "Hàng công nghiệp nhẹ và tiểu thủ công nghiệp",
+   "x": "2010",
+   "y_raw": "34,1"
+  },
+  {
+   "series": "Hàng công nghiệp nhẹ và tiểu thủ công nghiệp",
+   "x": "2015",
+   "y_raw": "32,7"
+  },
+  {
+   "series": "Hàng công nghiệp nặng và khoáng sản",
+   "x": "1995",
+   "y_raw": "25,3"
+  },
+  {
+   "series": "Hàng công nghiệp nặng và khoáng sản",
+   "x": "2000",
+   "y_raw": "37,2"
+  },
+  {
+   "series": "Hàng công nghiệp nặng và khoáng sản",
+   "x": "2005",
+   "y_raw": "36,1"
+  },
+  {
+   "series": "Hàng công nghiệp nặng và khoáng sản",
+   "x": "2010",
+   "y_raw": "45,1"
+  },
+  {
+   "series": "Hàng công nghiệp nặng và khoáng sản",
+   "x": "2015",
+   "y_raw": "48,1"
+  }
+ ],
+ "notes": "[Claude nháp] Cùng số liệu với area_014: đề xuất 'bỏ' một trong hai."
+}

@@ -1,0 +1,113 @@
+{
+ "id": "area_012",
+ "title": "BIỂU ĐỒ MIỀN TỔNG SẢN PHẨM TRONG NƯỚC PHÂN THEO NHÓM NGÀNH KINH TẾ VIỆT NAM GIAI ĐOẠN 1985 – 2001",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Nông, lâm, ngư nghiệp",
+  "Công nghiệp – xây dựng",
+  "Dịch vụ"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1985",
+   "y_raw": "40,2"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1991",
+   "y_raw": "40,5"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1995",
+   "y_raw": "28,9"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1997",
+   "y_raw": "28,4"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1999",
+   "y_raw": "26,2"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "2001",
+   "y_raw": "26"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1985",
+   "y_raw": "27,3"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1991",
+   "y_raw": "23,8"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1995",
+   "y_raw": "29,9"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1997",
+   "y_raw": "30"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1999",
+   "y_raw": "31,2"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "2001",
+   "y_raw": "30,3"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1985",
+   "y_raw": "32,5"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1991",
+   "y_raw": "35,7"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1995",
+   "y_raw": "41,2"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1997",
+   "y_raw": "42,1"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1999",
+   "y_raw": "42,6"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2001",
+   "y_raw": "43,7"
+  }
+ ],
+ "notes": "[Claude nháp] Năm 1997 tổng 100,5% (đúng như ảnh)."
+}

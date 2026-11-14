@@ -1,0 +1,98 @@
+{
+ "id": "area_016",
+ "title": "Biểu đồ thể hiện cơ cấu GDP phân theo ngành của nước ta giai đoạn 1991-2014",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Nông, lâm, ngư nghiệp",
+  "Công nghiệp, xây dựng",
+  "Dịch vụ"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1991",
+   "y_raw": "40,5"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1995",
+   "y_raw": "27,2"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "2002",
+   "y_raw": "23"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "2010",
+   "y_raw": "21"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "2014",
+   "y_raw": "19,7"
+  },
+  {
+   "series": "Công nghiệp, xây dựng",
+   "x": "1991",
+   "y_raw": "23,8"
+  },
+  {
+   "series": "Công nghiệp, xây dựng",
+   "x": "1995",
+   "y_raw": "28,8"
+  },
+  {
+   "series": "Công nghiệp, xây dựng",
+   "x": "2002",
+   "y_raw": "38,5"
+  },
+  {
+   "series": "Công nghiệp, xây dựng",
+   "x": "2010",
+   "y_raw": "36,7"
+  },
+  {
+   "series": "Công nghiệp, xây dựng",
+   "x": "2014",
+   "y_raw": "36,9"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1991",
+   "y_raw": "35,7"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1995",
+   "y_raw": "44"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2002",
+   "y_raw": "38,5"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2010",
+   "y_raw": "42,3"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2014",
+   "y_raw": "43,4"
+  }
+ ],
+ "notes": "[Claude nháp]"
+}

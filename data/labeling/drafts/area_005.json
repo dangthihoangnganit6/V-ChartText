@@ -1,0 +1,72 @@
+{
+ "id": "area_005",
+ "title": "",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Thành thị",
+  "Nông thôn"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Thành thị",
+   "x": "2010",
+   "y_raw": "30,5"
+  },
+  {
+   "series": "Thành thị",
+   "x": "2012",
+   "y_raw": "31,8"
+  },
+  {
+   "series": "Thành thị",
+   "x": "2014",
+   "y_raw": "33,1"
+  },
+  {
+   "series": "Thành thị",
+   "x": "2016",
+   "y_raw": "34,4"
+  },
+  {
+   "series": "Thành thị",
+   "x": "2018",
+   "y_raw": "35,7"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2010",
+   "y_raw": "69,5"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2012",
+   "y_raw": "68,2"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2014",
+   "y_raw": "66,9"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2016",
+   "y_raw": "65,6"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2018",
+   "y_raw": "64,3"
+  }
+ ],
+ "notes": "[Claude nháp]"
+}

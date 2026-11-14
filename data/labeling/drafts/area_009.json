@@ -1,0 +1,113 @@
+{
+ "id": "area_009",
+ "title": "",
+ "subject": "khac",
+ "src_type": null,
+ "x_axis": {
+  "label": null,
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Bán hàng",
+  "Marketing",
+  "Tài chính"
+ ],
+ "values_shown_on_chart": false,
+ "data": [
+  {
+   "series": "Bán hàng",
+   "x": "2021",
+   "y_raw": "47,5",
+   "estimated": true
+  },
+  {
+   "series": "Bán hàng",
+   "x": "2022",
+   "y_raw": "51",
+   "estimated": true
+  },
+  {
+   "series": "Bán hàng",
+   "x": "2023",
+   "y_raw": "38,5",
+   "estimated": true
+  },
+  {
+   "series": "Bán hàng",
+   "x": "2024",
+   "y_raw": "44",
+   "estimated": true
+  },
+  {
+   "series": "Bán hàng",
+   "x": "2025",
+   "y_raw": "38,5",
+   "estimated": true
+  },
+  {
+   "series": "Marketing",
+   "x": "2021",
+   "y_raw": "21",
+   "estimated": true
+  },
+  {
+   "series": "Marketing",
+   "x": "2022",
+   "y_raw": "25,5",
+   "estimated": true
+  },
+  {
+   "series": "Marketing",
+   "x": "2023",
+   "y_raw": "34",
+   "estimated": true
+  },
+  {
+   "series": "Marketing",
+   "x": "2024",
+   "y_raw": "37,5",
+   "estimated": true
+  },
+  {
+   "series": "Marketing",
+   "x": "2025",
+   "y_raw": "46",
+   "estimated": true
+  },
+  {
+   "series": "Tài chính",
+   "x": "2021",
+   "y_raw": "31,5",
+   "estimated": true
+  },
+  {
+   "series": "Tài chính",
+   "x": "2022",
+   "y_raw": "23,5",
+   "estimated": true
+  },
+  {
+   "series": "Tài chính",
+   "x": "2023",
+   "y_raw": "27,5",
+   "estimated": true
+  },
+  {
+   "series": "Tài chính",
+   "x": "2024",
+   "y_raw": "18,5",
+   "estimated": true
+  },
+  {
+   "series": "Tài chính",
+   "x": "2025",
+   "y_raw": "15,5",
+   "estimated": true
+  }
+ ],
+ "notes": "[Claude nháp] Không ghi số: Claude ước lượng theo vị trí đường ranh (đọc đường ranh cộng dồn rồi trừ), làm tròn 0,5%. Không phải biểu đồ học tập: cân nhắc 'bỏ'."
+}

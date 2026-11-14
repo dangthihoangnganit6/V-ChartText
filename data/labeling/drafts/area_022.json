@@ -1,0 +1,104 @@
+{
+ "id": "area_022",
+ "title": "Cơ cấu GDP của khu vực Mỹ La tinh giai đoạn 1990 – 2020",
+ "subject": "dia_li",
+ "src_type": "sgk",
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Nông nghiệp, lâm nghiệp và thuỷ sản",
+  "Công nghiệp và xây dựng",
+  "Dịch vụ",
+  "Thuế sản phẩm trừ trợ cấp sản phẩm"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+   "x": "1990",
+   "y_raw": "8,2"
+  },
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+   "x": "2000",
+   "y_raw": "4,9"
+  },
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+   "x": "2010",
+   "y_raw": "4,7"
+  },
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+   "x": "2020",
+   "y_raw": "6,5"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "1990",
+   "y_raw": "32,4"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "2000",
+   "y_raw": "29,4"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "2010",
+   "y_raw": "29,1"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "2020",
+   "y_raw": "28,3"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1990",
+   "y_raw": "54,8"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2000",
+   "y_raw": "55,3"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2010",
+   "y_raw": "55,7"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2020",
+   "y_raw": "60,3"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "1990",
+   "y_raw": "4,6"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "2000",
+   "y_raw": "10,4"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "2010",
+   "y_raw": "10,5"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "2020",
+   "y_raw": "4,9"
+  }
+ ],
+ "notes": "[Claude nháp] Ảnh chụp SGK (Hình 7.1, Địa lí 11); tiêu đề đã bỏ 'Hình 7.1.'. Nguồn số liệu: Ngân hàng Thế giới, 2022."
+}

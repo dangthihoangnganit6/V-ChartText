@@ -2,6 +2,7 @@
 
   python src/labeling_xlsx.py export            # data/labels/*.json -> data/labeling/nhan_<người>.xlsx
   python src/labeling_xlsx.py import            # data/labeling/*.xlsx -> data/labels/*.json (ảnh "xong" / "bỏ")
+  python src/labeling_xlsx.py fill-drafts       # chép bản nháp data/labeling/drafts/*.json vào Excel (vẫn để "chưa")
   python eval/validate_labels.py                # luôn chạy sau import
 
 export KHÔNG ghi đè file Excel đã có (tránh mất công gán); thêm --force nếu thật sự muốn tạo lại.
@@ -216,8 +217,6 @@ def build(name, recs, path):
 
     _guide(guide, name, n)
     wb.active = 1
-    from openpyxl.workbook.properties import CalcProperties
-    wb.calculation = CalcProperties(fullCalcOnLoad=True)
     path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(path)
 
@@ -392,8 +391,7 @@ def build_record(rec, r, pts):
     new.update({"legend": legend, "values_shown_on_chart": None if vs is None else vs == "có", "data": data})
     if _s(r.get("reviewer")) or _s(r.get("review")):
         new["review"] = {"by": _s(r.get("reviewer")), "result": _s(r.get("review"))}
-    if _s(r.get("notes")):
-        new["notes"] = _s(r.get("notes"))
+    new["notes"] = _s(r.get("notes")) or ""
     return new
 
 
@@ -404,7 +402,7 @@ def _write(path, rec):
 # ----------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["export", "import"])
+    ap.add_argument("cmd", choices=["export", "import", "fill-drafts"])
     ap.add_argument("--force", action="store_true", help="export: ghi đè file Excel đã có")
     args = ap.parse_args()
     if args.cmd == "export":
@@ -418,11 +416,67 @@ def main():
             mine = [r for r in recs if r.get("annotator") == name]
             build(name, mine, path)
             print(f"Đã tạo {path}: {len(mine)} biểu đồ")
+    elif args.cmd == "fill-drafts":
+        do_fill_drafts(force=args.force)
     else:
         paths = sorted(OUTDIR.glob("nhan_*.xlsx"))
         if not paths:
             raise SystemExit(f"Không thấy file nào trong {OUTDIR}")
         do_import([p for p in paths if not p.name.startswith("~$")])
+
+# ----------------------------------------------------------------- fill-drafts
+DRAFTS = OUTDIR / "drafts"
+
+
+def do_fill_drafts(force=False):
+    drafts = {json.loads(p.read_text(encoding="utf-8"))["id"]: json.loads(p.read_text(encoding="utf-8"))
+              for p in sorted(DRAFTS.glob("*.json"))}
+    if not drafts:
+        raise SystemExit(f"Không thấy bản nháp nào trong {DRAFTS}")
+    owner = {}
+    for cid in drafts:
+        lp = LABELS / f"{cid}.json"
+        if lp.exists():
+            owner[cid] = json.loads(lp.read_text(encoding="utf-8")).get("annotator")
+    for name in sorted({v for v in owner.values() if v}):
+        path = OUTDIR / f"nhan_{name}.xlsx"
+        if (OUTDIR / f"~${path.name}").exists():
+            print(f"BỎ QUA {path.name}: file đang mở trong Excel (có ~${path.name}). Đóng Excel rồi chạy lại.")
+            continue
+        wb = load_workbook(path)
+        ws, wp = wb["BieuDo"], wb["DiemDuLieu"]
+        hc = {c.value: j for j, c in enumerate(ws[1], 1)}
+        hp = {c.value: j for j, c in enumerate(wp[1], 1)}
+        col_c = {k: hc[t] for k, t, *_ in CHART_COLS}
+        col_p = {k: hp[t] for k, t, *_ in POINT_COLS}
+        rows = {ws.cell(r, col_c["id"]).value: r for r in range(2, ws.max_row + 1)}
+        have_pts = {wp.cell(r, col_p["id"]).value for r in range(2, wp.max_row + 1)} - {None}
+        free = (r for r in range(2, wp.max_row + 1) if wp.cell(r, col_p["id"]).value is None)
+        n_fill = n_skip = 0
+        for cid, d in drafts.items():
+            if owner.get(cid) != name or cid not in rows:
+                continue
+            r = rows[cid]
+            if (_s(ws.cell(r, col_c["status"]).value) or "chưa") != "chưa" or (cid in have_pts and not force):
+                n_skip += 1
+                continue
+            vals = chart_row({**d, "status": "todo", "chart_type": ws.cell(r, col_c["chart_type"]).value})
+            for k in ("subject", "src_type", "title", "x_label", "x_unit", "y_label", "y_unit", "y2_label", "y2_unit",
+                      "legend", "values_shown", "notes"):
+                ws.cell(r, col_c[k]).value = vals.get(k)
+            src = d.get("src_type")
+            if src:
+                ws.cell(r, col_c["src_type"]).value = src
+            for pt in d["data"]:
+                i = next(free)
+                for k in ("id", "series", "x", "y_raw", "axis", "estimated"):
+                    v = cid if k == "id" else pt.get(k)
+                    if k == "estimated":
+                        v = "có" if v else None
+                    wp.cell(i, col_p[k]).value = v
+            n_fill += 1
+        wb.save(path)
+        print(f"{path.name}: điền nháp {n_fill} biểu đồ, bỏ qua {n_skip} (đã có điểm hoặc không còn 'chưa')")
 
 
 if __name__ == "__main__":
