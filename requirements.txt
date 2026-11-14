@@ -10,3 +10,5 @@ scipy
 timm
 einops
 sentencepiece
+# gán nhãn bằng Excel (src/labeling_xlsx.py)
+openpyxl

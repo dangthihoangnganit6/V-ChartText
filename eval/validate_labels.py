@@ -57,13 +57,16 @@ def check(rec, path, img_root):
 
 def main(label_dir="data/labels", img_root="data/images"):
     files = [p for p in sorted(Path(label_dir).glob("*.json")) if not p.name.startswith("example_")]
-    bad, recs, todo = 0, [], []
+    bad, recs, todo, excluded = 0, [], [], []
     for p in files:
         try:
             rec = json.loads(p.read_text(encoding="utf-8"))
         except json.JSONDecodeError as e:
             print(f"[LỖI] {p.name}: JSON hỏng ({e})")
             bad += 1
+            continue
+        if rec.get("status") == "excluded":
+            excluded.append(rec["id"])
             continue
         if rec.get("status") == "todo":
             todo.append(rec)
@@ -75,7 +78,11 @@ def main(label_dir="data/labels", img_root="data/images"):
             for e in errs:
                 print(f"[LỖI] {p.name}: {e}")
         recs.append(rec)
-    print(f"\n{len(files)} file: {len(files) - len(todo)} đã gán ({bad} có lỗi), {len(todo)} chưa gán (status=todo)")
+    n_done = len(files) - len(todo) - len(excluded)
+    print(f"\n{len(files)} file: {n_done} đã gán ({bad} có lỗi), {len(todo)} chưa gán (status=todo), "
+          f"{len(excluded)} bị loại (status=excluded)")
+    if excluded:
+        print("Bị loại:", ", ".join(excluded))
     if todo:
         print("Chưa gán theo người:", dict(Counter(r.get("annotator") for r in todo)))
     for key in ("chart_type", "subject", "annotator"):

@@ -306,6 +306,8 @@ def load_labels():
         if p.name.startswith("example_"):
             continue
         r = json.loads(p.read_text(encoding="utf-8"))
+        if r.get("status") == "excluded":  # ảnh bị loại khỏi bộ dữ liệu
+            continue
         every[r["id"]] = r
         if r.get("data") and r.get("status") != "todo":
             done[r["id"]] = r

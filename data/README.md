@@ -3,6 +3,18 @@
 Mỗi biểu đồ = 1 ảnh trong `data/images/` + 1 file JSON cùng tên trong `data/labels/`.
 Mẫu đầy đủ: `labels/example_dl_c01_001.json`. Kiểm tra trước khi đẩy lên: `python eval/validate_labels.py`.
 
+## 0. Cách gán nhãn: dùng Excel (khuyên dùng)
+Mỗi người một file `data/labeling/nhan_<tên>.xlsx`, có sẵn danh sách ảnh của mình. Mở file **ngay trong thư mục repo**
+để link "mở ảnh" hoạt động; sheet `Huong_dan` trong file giải thích từng cột.
+```bash
+pip install openpyxl
+python src/labeling_xlsx.py import     # Excel -> data/labels/*.json (chỉ dòng "xong" và "bỏ")
+python eval/validate_labels.py         # sửa hết lỗi rồi mới commit + push (cả file .xlsx và data/labels)
+```
+Đóng Excel trước khi chạy import. Không chạy `export --force` nếu đã gán trong Excel: lệnh này tạo lại file và xoá phần đã gán.
+Ảnh bị loại (trùng, hỏng): trạng thái "bỏ" -> nhãn có `"status": "excluded"`, các script chấm tự bỏ qua.
+Các quy ước bên dưới vẫn áp dụng y nguyên khi điền Excel.
+
 ## 1. Đặt tên và tạo khung nhãn
 Không đặt tên tay. Chạy `python src/prepare_dataset.py --raw "raw_drive/Ảnh biểu đồ"`: script chép ảnh vào `data/images/`
 với id theo loại (`bar_001`, `line_001`, `pie_001`, `combo_001`, `area_001`) và tạo file nhãn khung `"status": "todo"`.
