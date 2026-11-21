@@ -1,7 +1,6 @@
 {
   "id": "area_002",
   "image": "images/area_002.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,101 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_2.jpg"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 121,
   "chart_type": "area",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Hàng xuất khẩu",
+    "Hàng nhập khẩu",
+    "Hàng nội địa"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2010",
+      "y": 24.9,
+      "y_raw": "24,9"
+    },
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2013",
+      "y": 20.9,
+      "y_raw": "20,9"
+    },
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2015",
+      "y": 25.9,
+      "y_raw": "25,9"
+    },
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2017",
+      "y": 25.2,
+      "y_raw": "25,2"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2010",
+      "y": 42.4,
+      "y_raw": "42,4"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2013",
+      "y": 39.9,
+      "y_raw": "39,9"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2015",
+      "y": 38.8,
+      "y_raw": "38,8"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2017",
+      "y": 38.6,
+      "y_raw": "38,6"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2010",
+      "y": 32.7,
+      "y_raw": "32,7"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2013",
+      "y": 39.2,
+      "y_raw": "39,2"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2015",
+      "y": 35.3,
+      "y_raw": "35,3"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2017",
+      "y": 36.2,
+      "y_raw": "36,2"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Nó chưa hiểu được biểu đồ miền",
+  "imported_at": "2026-11-20"
 }

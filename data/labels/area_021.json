@@ -1,7 +1,6 @@
 {
   "id": "area_021",
   "image": "images/area_021.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,126 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_21.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 140,
   "chart_type": "area",
-  "title": "",
+  "title": "Cơ cấu GDP phân theo ngành kinh tế của nước ta giai đoạn 2010 - 2022",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Nông nghiệp, lâm nghiệp và thủy sản",
+    "Công nghiệp và xây dựng",
+    "Dịch vụ",
+    "Thuế sản phẩm trừ trợ cấp sản phẩm"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+      "x": "2010",
+      "y": 15.4,
+      "y_raw": "15,4"
+    },
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+      "x": "2015",
+      "y": 14.5,
+      "y_raw": "14,5"
+    },
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+      "x": "2020",
+      "y": 12.7,
+      "y_raw": "12,7"
+    },
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+      "x": "2022",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "2010",
+      "y": 33.0,
+      "y_raw": "33"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "2015",
+      "y": 34.3,
+      "y_raw": "34,3"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "2020",
+      "y": 36.7,
+      "y_raw": "36,7"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "2022",
+      "y": 38.2,
+      "y_raw": "38,2"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2010",
+      "y": 40.6,
+      "y_raw": "40,6"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2015",
+      "y": 42.2,
+      "y_raw": "42,2"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2020",
+      "y": 41.8,
+      "y_raw": "41,8"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2022",
+      "y": 41.3,
+      "y_raw": "41,3"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "2010",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "2015",
+      "y": 9.1,
+      "y_raw": "9,1"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "2020",
+      "y": 8.8,
+      "y_raw": "8,8"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "2022",
+      "y": 8.5,
+      "y_raw": "8,5"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "pie_028",
   "image": "images/pie_028.webp",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,49 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_28.webp"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 84,
   "chart_type": "pie",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Bộ phận",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỉ lệ",
+      "x": "Bán hàng",
+      "y": 55.0,
+      "y_raw": "55"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Tài chính",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Marketing",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Nhân sự",
+      "y": 5.0,
+      "y_raw": "5"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề",
+  "imported_at": "2026-11-20"
 }

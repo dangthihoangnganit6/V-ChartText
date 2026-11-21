@@ -1,7 +1,6 @@
 {
   "id": "area_010",
   "image": "images/area_010.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,101 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_10.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 129,
   "chart_type": "area",
-  "title": "",
+  "title": "Chuyển dịch cơ cấu diện tích lúa phân theo mùa vụ của nước ta, giai đoạn 2005 - 2016",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Lúa đông xuân",
+    "Lúa hè thu và thu đông",
+    "Lúa mùa"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Lúa đông xuân",
+      "x": "2005",
+      "y": 40.1,
+      "y_raw": "40,1"
+    },
+    {
+      "series": "Lúa đông xuân",
+      "x": "2010",
+      "y": 41.2,
+      "y_raw": "41,2"
+    },
+    {
+      "series": "Lúa đông xuân",
+      "x": "2013",
+      "y": 39.3,
+      "y_raw": "39,3"
+    },
+    {
+      "series": "Lúa đông xuân",
+      "x": "2016",
+      "y": 39.6,
+      "y_raw": "39,6"
+    },
+    {
+      "series": "Lúa hè thu và thu đông",
+      "x": "2005",
+      "y": 32.1,
+      "y_raw": "32,1"
+    },
+    {
+      "series": "Lúa hè thu và thu đông",
+      "x": "2010",
+      "y": 32.5,
+      "y_raw": "32,5"
+    },
+    {
+      "series": "Lúa hè thu và thu đông",
+      "x": "2013",
+      "y": 35.6,
+      "y_raw": "35,6"
+    },
+    {
+      "series": "Lúa hè thu và thu đông",
+      "x": "2016",
+      "y": 36.0,
+      "y_raw": "36"
+    },
+    {
+      "series": "Lúa mùa",
+      "x": "2005",
+      "y": 27.8,
+      "y_raw": "27,8"
+    },
+    {
+      "series": "Lúa mùa",
+      "x": "2010",
+      "y": 26.3,
+      "y_raw": "26,3"
+    },
+    {
+      "series": "Lúa mùa",
+      "x": "2013",
+      "y": 25.1,
+      "y_raw": "25,1"
+    },
+    {
+      "series": "Lúa mùa",
+      "x": "2016",
+      "y": 24.4,
+      "y_raw": "24,4"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

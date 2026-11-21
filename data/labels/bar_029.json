@@ -1,7 +1,6 @@
 {
   "id": "bar_029",
   "image": "images/bar_029.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,56 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_29.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 172,
   "chart_type": "bar",
-  "title": "",
+  "title": "Số con vật nuôi của học sinh lớp 6A1",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Số con vật"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số con vật",
+      "x": "Chó",
+      "y": 6.0,
+      "y_raw": "6"
+    },
+    {
+      "series": "Số con vật",
+      "x": "Mèo",
+      "y": 4.0,
+      "y_raw": "4"
+    },
+    {
+      "series": "Số con vật",
+      "x": "Chim",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Số con vật",
+      "x": "Cá",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Số con vật",
+      "x": "Thò",
+      "y": 2.0,
+      "y_raw": "2"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

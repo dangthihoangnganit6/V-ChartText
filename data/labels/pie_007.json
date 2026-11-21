@@ -1,7 +1,6 @@
 {
   "id": "pie_007",
   "image": "images/pie_007.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,49 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_7.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 63,
   "chart_type": "pie",
-  "title": "",
+  "title": "Tỉ lệ phần trăm các loại vật nuôi tại nông trường Phong Phú",
   "x_axis": {
-    "label": null,
+    "label": "Loài",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ",
+      "x": "Bò",
+      "y": 3.0,
+      "y_raw": "3"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Lợn",
+      "y": 69.0,
+      "y_raw": "69"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Gà",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Thỏ",
+      "y": 14.0,
+      "y_raw": "14"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

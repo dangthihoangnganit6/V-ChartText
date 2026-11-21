@@ -1,7 +1,6 @@
 {
   "id": "area_022",
   "image": "images/area_022.jpeg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,126 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_22.jpeg"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 141,
   "chart_type": "area",
-  "title": "",
+  "title": "Cơ cấu GDP của khu vực Mỹ La tinh giai đoạn 1990 - 2020",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Nông nghiệp, lâm nghiệp và thuỷ sản",
+    "Công nghiệp và xây dựng",
+    "Dịch vụ",
+    "Thuế sản phẩm trừ trợ cấp sản phẩm"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+      "x": "1990",
+      "y": 8.2,
+      "y_raw": "8,2"
+    },
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+      "x": "2000",
+      "y": 4.9,
+      "y_raw": "4,9"
+    },
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+      "x": "2010",
+      "y": 4.7,
+      "y_raw": "4,7"
+    },
+    {
+      "series": "Nông nghiệp, lâm nghiệp và thuỷ sản",
+      "x": "2020",
+      "y": 6.5,
+      "y_raw": "6,5"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "1990",
+      "y": 32.4,
+      "y_raw": "32,4"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "2000",
+      "y": 29.4,
+      "y_raw": "29,4"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "2010",
+      "y": 29.1,
+      "y_raw": "29,1"
+    },
+    {
+      "series": "Công nghiệp và xây dựng",
+      "x": "2020",
+      "y": 28.3,
+      "y_raw": "28,3"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1990",
+      "y": 54.8,
+      "y_raw": "54,8"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2000",
+      "y": 55.3,
+      "y_raw": "55,3"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2010",
+      "y": 55.7,
+      "y_raw": "55,7"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2020",
+      "y": 60.3,
+      "y_raw": "60,3"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "1990",
+      "y": 4.6,
+      "y_raw": "4,6"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "2000",
+      "y": 10.4,
+      "y_raw": "10,4"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "2010",
+      "y": 10.5,
+      "y_raw": "10,5"
+    },
+    {
+      "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "x": "2020",
+      "y": 4.9,
+      "y_raw": "4,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "bar_030",
   "image": "images/bar_030.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,56 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_30.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 173,
   "chart_type": "bar",
-  "title": "",
+  "title": "Tổng lượng mưa của thành phố Hà Nội",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "mm"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tổng lượng mưa (mm)",
+      "x": "2015",
+      "y": 1520.0,
+      "y_raw": "1520"
+    },
+    {
+      "series": "Tổng lượng mưa (mm)",
+      "x": "2016",
+      "y": 1631.0,
+      "y_raw": "1631"
+    },
+    {
+      "series": "Tổng lượng mưa (mm)",
+      "x": "2017",
+      "y": 1858.0,
+      "y_raw": "1858"
+    },
+    {
+      "series": "Tổng lượng mưa (mm)",
+      "x": "2018",
+      "y": 1695.0,
+      "y_raw": "1695"
+    },
+    {
+      "series": "Tổng lượng mưa (mm)",
+      "x": "2019",
+      "y": 1311.0,
+      "y_raw": "1311"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

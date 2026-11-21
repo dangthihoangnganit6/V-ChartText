@@ -1,7 +1,6 @@
 {
   "id": "bar_074",
   "image": "images/bar_074.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,62 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_73.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 216,
   "chart_type": "bar",
-  "title": "",
+  "title": "Dữ liệu về lượng mưa (mm)",
   "x_axis": {
-    "label": null,
+    "label": "Tháng",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "mm"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Lượng mưa (mm)",
+      "x": "7",
+      "y": 95.3,
+      "y_raw": "95,3"
+    },
+    {
+      "series": "Lượng mưa (mm)",
+      "x": "8",
+      "y": 104.0,
+      "y_raw": "104,0"
+    },
+    {
+      "series": "Lượng mưa (mm)",
+      "x": "9",
+      "y": 473.4,
+      "y_raw": "473,4"
+    },
+    {
+      "series": "Lượng mưa (mm)",
+      "x": "10",
+      "y": 795.6,
+      "y_raw": "795,6"
+    },
+    {
+      "series": "Lượng mưa (mm)",
+      "x": "11",
+      "y": 580.6,
+      "y_raw": "580,6"
+    },
+    {
+      "series": "Lượng mưa (mm)",
+      "x": "12",
+      "y": 297.4,
+      "y_raw": "297,4"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

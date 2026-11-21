@@ -1,7 +1,7 @@
 {
   "id": "bar_046",
   "image": "images/bar_046.jpg",
-  "status": "todo",
+  "status": "excluded",
   "source": {
     "type": null,
     "book": null,
@@ -24,5 +24,6 @@
   "legend": [],
   "values_shown_on_chart": null,
   "data": [],
-  "notes": ""
+  "notes": "",
+  "exclude_reason": "Cùng một ảnh với bar_047 (Biểu đồ cột_46.png), chỉ khác đuôi .jpg"
 }

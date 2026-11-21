@@ -56,6 +56,10 @@ def main():
             "RA@5%_noi": mean([fnum(r.get("ra5_lenient")) for r in rows]),
             "RNSS_noi": mean([fnum(r.get("rnss_lenient")) for r in rows]),
             "unit_ok_noi": mean([fnum(r.get("unit_ok_lenient")) for r in rows]),
+            # tập con sạch: ảnh có in số trên hình và không trùng số liệu với ảnh khác
+            "n_sach": len(clean := [r for r in rows if r.get("values_shown", "1") == "1" and r.get("duplicate", "0") == "0"]),
+            "RA@5%_sach": mean([fnum(r.get("ra5")) for r in clean]),
+            "RA@5%_noi_sach": mean([fnum(r.get("ra5_lenient")) for r in clean]),
         })
         groups = defaultdict(list)
         for r in rows:

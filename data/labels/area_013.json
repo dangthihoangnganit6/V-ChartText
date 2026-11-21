@@ -1,7 +1,6 @@
 {
   "id": "area_013",
   "image": "images/area_013.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,100 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_13.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 132,
   "chart_type": "area",
-  "title": "",
+  "title": "Thay đổi cơ cấu giá trị xuất nhập khẩu của Campuchia",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỉ trọng (thang 0-1)"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu"
+  ],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "2010",
+      "y": 0.375,
+      "y_raw": "0,375"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2012",
+      "y": 0.42,
+      "y_raw": "0,42"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2014",
+      "y": 0.455,
+      "y_raw": "0,455"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2016",
+      "y": 0.475,
+      "y_raw": "0,475"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2018",
+      "y": 0.48,
+      "y_raw": "0,48"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2020",
+      "y": 0.48,
+      "y_raw": "0,48"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2010",
+      "y": 0.625,
+      "y_raw": "0,625"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2012",
+      "y": 0.58,
+      "y_raw": "0,58"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2014",
+      "y": 0.545,
+      "y_raw": "0,545"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2016",
+      "y": 0.525,
+      "y_raw": "0,525"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2018",
+      "y": 0.52,
+      "y_raw": "0,52"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2020",
+      "y": 0.52,
+      "y_raw": "0,52"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng; trục ghi 'Tỉ trọng (%)' nhưng thang 0-1, giữ theo thang trên ảnh",
+  "imported_at": "2026-11-20"
 }

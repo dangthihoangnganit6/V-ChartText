@@ -1,7 +1,6 @@
 {
   "id": "pie_018",
   "image": "images/pie_018.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,52 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_18.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 74,
   "chart_type": "pie",
-  "title": "",
+  "title": "Biểu đồ về cơ cấu giá trị xuất khẩu và nhập khẩu hàng hóa và dịch vụ Trung Quốc năm 2000 và 2020",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cơ cấu năm 2000",
+    "Cơ cấu năm 2020"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 2000",
+      "x": "Xuất khẩu",
+      "y": 53.1,
+      "y_raw": "53,1"
+    },
+    {
+      "series": "Cơ cấu năm 2000",
+      "x": "Nhập khẩu",
+      "y": 46.9,
+      "y_raw": "46,9"
+    },
+    {
+      "series": "Cơ cấu năm 2020",
+      "x": "Xuất khẩu",
+      "y": 53.6,
+      "y_raw": "53,6"
+    },
+    {
+      "series": "Cơ cấu năm 2020",
+      "x": "Nhập khẩu",
+      "y": 46.4,
+      "y_raw": "46,4"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

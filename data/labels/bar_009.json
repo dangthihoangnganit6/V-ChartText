@@ -1,7 +1,6 @@
 {
   "id": "bar_009",
   "image": "images/bar_009.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,50 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_9.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 152,
   "chart_type": "bar",
-  "title": "",
+  "title": "Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá thực tế của nước ta giai đoạn 2005 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn tỷ đồng"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng",
+      "x": "2005",
+      "y": 480.3,
+      "y_raw": "480,3"
+    },
+    {
+      "series": "Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng",
+      "x": "2010",
+      "y": 1677.3,
+      "y_raw": "1677,3"
+    },
+    {
+      "series": "Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng",
+      "x": "2015",
+      "y": 3223.2,
+      "y_raw": "3223,2"
+    },
+    {
+      "series": "Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng",
+      "x": "2021",
+      "y": 4407.8,
+      "y_raw": "4407,8"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

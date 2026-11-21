@@ -48,11 +48,22 @@ def check(rec, path, img_root):
     legend = set(rec["legend"] or [])
     if legend and series - legend:
         errs.append(f"series không có trong legend: {series - legend}")
-    if rec["chart_type"] == "pie":
-        tot = sum(float(d["y"]) for d in rec["data"] if "y" in d)
-        if (rec["y_axis"] or {}).get("unit") == "%" and abs(tot - 100) > 1.5:
-            errs.append(f"biểu đồ tròn: tổng {tot} khác 100%")
     return errs
+
+
+def warnings(rec):
+    """Cảnh báo, không chặn: biểu đồ tròn (mỗi hình) hoặc miền (mỗi mốc x) đơn vị % mà tổng lệch 100."""
+    out = []
+    if (rec.get("y_axis") or {}).get("unit") != "%" or rec.get("chart_type") not in ("pie", "area"):
+        return out
+    key = "series" if rec["chart_type"] == "pie" else "x"
+    tot = Counter()
+    for d in rec["data"]:
+        tot[d.get(key)] += float(d["y"])
+    for k, v in tot.items():
+        if abs(v - 100) > 1.5:
+            out.append(f"{rec['chart_type']} '{k}': tổng {round(v, 2)} khác 100%")
+    return out
 
 
 def main(label_dir="data/labels", img_root="data/images"):
@@ -73,6 +84,8 @@ def main(label_dir="data/labels", img_root="data/images"):
             recs.append(rec)
             continue
         errs = check(rec, p, img_root)
+        for w in (warnings(rec) if not errs else []):
+            print(f"[cảnh báo] {p.name}: {w}")
         if errs:
             bad += 1
             for e in errs:
@@ -89,6 +102,8 @@ def main(label_dir="data/labels", img_root="data/images"):
         print(key, dict(Counter(r.get(key) for r in recs)))
     print("source.type", dict(Counter((r.get("source") or {}).get("type") for r in recs)))
     print("số điểm dữ liệu:", sum(len(r.get("data") or []) for r in recs))
+    print("ảnh không ghi số (values_shown_on_chart=false):", sum(r.get("values_shown_on_chart") is False for r in recs),
+          "| ảnh trùng số liệu (duplicate_of):", sum(bool(r.get("duplicate_of")) for r in recs))
 
 
 if __name__ == "__main__":

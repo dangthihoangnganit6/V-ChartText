@@ -15,6 +15,17 @@ python eval/validate_labels.py         # sửa hết lỗi rồi mới commit + 
 Ảnh bị loại (trùng, hỏng): trạng thái "bỏ" -> nhãn có `"status": "excluded"`, các script chấm tự bỏ qua.
 Các quy ước bên dưới vẫn áp dụng y nguyên khi điền Excel.
 
+## 0b. Nhãn nhập từ Google Sheet (cách nhóm đang dùng, từ 20/11)
+Nhãn chính nằm ở tab `Data_Labeling` của Google Sheet nhóm. Sau mỗi lần sửa Sheet:
+```bash
+# Google Sheet > tab Data_Labeling > Tệp > Tải xuống > CSV  -> lưu đè data/labeling/sheet/Data_Labeling.csv
+python src/import_sheet.py            # chạy thử: báo dòng lỗi, ảnh trùng, ảnh không ghi số
+python src/import_sheet.py --write    # ghi data/labels/*.json (5 nhãn gán tay không bị ghi đè)
+python eval/validate_labels.py
+```
+Cột "Ghi chú nhãn" (M): ghi `LOẠI KHỎI BENCHMARK` để loại ảnh, `ẢNH KHÔNG GHI SỐ` nếu giá trị là ước lượng.
+Thống kê bộ dữ liệu: `data/DATA_CARD.md`.
+
 ## 1. Đặt tên và tạo khung nhãn
 Không đặt tên tay. Chạy `python src/prepare_dataset.py --raw "raw_drive/Ảnh biểu đồ"`: script chép ảnh vào `data/images/`
 với id theo loại (`bar_001`, `line_001`, `pie_001`, `combo_001`, `area_001`) và tạo file nhãn khung `"status": "todo"`.

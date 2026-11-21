@@ -1,7 +1,6 @@
 {
   "id": "pie_005",
   "image": "images/pie_005.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,55 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_5.jpg"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 61,
   "chart_type": "pie",
-  "title": "",
+  "title": "Tỉ lệ dân số các châu lục (năm 2008)",
   "x_axis": {
-    "label": null,
+    "label": "Châu lục",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ dân số",
+      "x": "Châu Á",
+      "y": 60.4,
+      "y_raw": "60,4"
+    },
+    {
+      "series": "Tỷ lệ dân số",
+      "x": "Châu Âu",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "Tỷ lệ dân số",
+      "x": "Châu Đại Dương",
+      "y": 0.5,
+      "y_raw": "0,5"
+    },
+    {
+      "series": "Tỷ lệ dân số",
+      "x": "Châu Mỹ",
+      "y": 13.6,
+      "y_raw": "13,6"
+    },
+    {
+      "series": "Tỷ lệ dân số",
+      "x": "Châu Phi",
+      "y": 14.5,
+      "y_raw": "14,5"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

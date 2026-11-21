@@ -1,7 +1,6 @@
 {
   "id": "pie_003",
   "image": "images/pie_003.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,61 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_3.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 59,
   "chart_type": "pie",
-  "title": "",
+  "title": "Diện tích rừng bị cháy ở Việt Nam năm 2016",
   "x_axis": {
-    "label": null,
+    "label": "Vùng",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ diện tích",
+      "x": "Tây Nguyên",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Tỷ lệ diện tích",
+      "x": "Trung du và miền núi Bắc Bộ",
+      "y": 32.0,
+      "y_raw": "32"
+    },
+    {
+      "series": "Tỷ lệ diện tích",
+      "x": "Bắc Trung Bộ",
+      "y": 1.2,
+      "y_raw": "1,2"
+    },
+    {
+      "series": "Tỷ lệ diện tích",
+      "x": "Đông Nam bộ",
+      "y": 2.8,
+      "y_raw": "2,8"
+    },
+    {
+      "series": "Tỷ lệ diện tích",
+      "x": "Đông bằng sông Hồng",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Tỷ lệ diện tích",
+      "x": "Duyên hải Nam Trung Bộ",
+      "y": 9.0,
+      "y_raw": "9"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

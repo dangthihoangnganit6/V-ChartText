@@ -1,7 +1,6 @@
 {
   "id": "combo_019",
   "image": "images/combo_019.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,176 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_19.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 117,
   "chart_type": "combo",
-  "title": "",
+  "title": "Nhiệt độ và lượng mưa Hà Nội năm 2017",
   "x_axis": {
-    "label": null,
+    "label": "Tháng",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "mm"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Lượng mưa",
+    "Nhiệt độ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Lượng mưa",
+      "x": "1",
+      "y": 70.9,
+      "y_raw": "70,9"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "2",
+      "y": 12.3,
+      "y_raw": "12,3"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "3",
+      "y": 112.4,
+      "y_raw": "112,4"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "4",
+      "y": 19.1,
+      "y_raw": "19,1"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "5",
+      "y": 105.4,
+      "y_raw": "105,4"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "6",
+      "y": 212.9,
+      "y_raw": "212,9"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "7",
+      "y": 449.1,
+      "y_raw": "449,1"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "8",
+      "y": 283.2,
+      "y_raw": "283,2"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "9",
+      "y": 266.9,
+      "y_raw": "266,9"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "10",
+      "y": 259.7,
+      "y_raw": "259,7"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "11",
+      "y": 19.4,
+      "y_raw": "19,4"
+    },
+    {
+      "series": "Lượng mưa",
+      "x": "12",
+      "y": 47.5,
+      "y_raw": "47,5"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "1",
+      "y": 19.7,
+      "y_raw": "19,7"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "2",
+      "y": 20.1,
+      "y_raw": "20,1"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "3",
+      "y": 21.9,
+      "y_raw": "21,9"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "4",
+      "y": 25.1,
+      "y_raw": "25,1"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "5",
+      "y": 28.1,
+      "y_raw": "28,1"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "6",
+      "y": 30.8,
+      "y_raw": "30,8"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "7",
+      "y": 29.4,
+      "y_raw": "29,4"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "8",
+      "y": 29.5,
+      "y_raw": "29,5"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "9",
+      "y": 29.3,
+      "y_raw": "29,3"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "10",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "11",
+      "y": 22.7,
+      "y_raw": "22,7"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "12",
+      "y": 18.1,
+      "y_raw": "18,1"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Nhiệt độ theo trục phải (°C)",
+  "y2_axis": {
+    "label": null,
+    "unit": "°C"
+  },
+  "imported_at": "2026-11-20"
 }

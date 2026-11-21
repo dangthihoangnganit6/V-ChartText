@@ -1,7 +1,6 @@
 {
   "id": "bar_012",
   "image": "images/bar_012.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,65 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_12.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 155,
   "chart_type": "bar",
-  "title": "",
+  "title": "Sản lượng thủy sản vùng Đông Nam Bộ giai đoạn 2010 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn tấn"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Khai thác",
+    "Nuôi trồng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Khai thác",
+      "x": "2010",
+      "y": 278.8,
+      "y_raw": "278,8"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2015",
+      "y": 317.3,
+      "y_raw": "317,3"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2021",
+      "y": 374.1,
+      "y_raw": "374,1"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2010",
+      "y": 85.7,
+      "y_raw": "85,7"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2015",
+      "y": 119.1,
+      "y_raw": "119,1"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2021",
+      "y": 144.2,
+      "y_raw": "144,2"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

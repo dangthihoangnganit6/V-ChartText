@@ -1,7 +1,6 @@
 {
   "id": "bar_028",
   "image": "images/bar_028.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,62 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_28.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 171,
   "chart_type": "bar",
-  "title": "",
+  "title": "Số áo sơ mi bán được trong tháng đầu tiên",
   "x_axis": {
-    "label": null,
+    "label": "Số áo sơ mi bán được",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Cỡ áo"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số áo sơ mi bán được",
+      "x": "37",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Số áo sơ mi bán được",
+      "x": "38",
+      "y": 29.0,
+      "y_raw": "29"
+    },
+    {
+      "series": "Số áo sơ mi bán được",
+      "x": "39",
+      "y": 56.0,
+      "y_raw": "56"
+    },
+    {
+      "series": "Số áo sơ mi bán được",
+      "x": "40",
+      "y": 65.0,
+      "y_raw": "65"
+    },
+    {
+      "series": "Số áo sơ mi bán được",
+      "x": "41",
+      "y": 47.0,
+      "y_raw": "47"
+    },
+    {
+      "series": "Số áo sơ mi bán được",
+      "x": "42",
+      "y": 18.0,
+      "y_raw": "18"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

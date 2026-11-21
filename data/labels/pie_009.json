@@ -1,7 +1,6 @@
 {
   "id": "pie_009",
   "image": "images/pie_009.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,55 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_9.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 65,
   "chart_type": "pie",
-  "title": "",
+  "title": "Các yếu tố ảnh hưởng đến sự phát triển chiều cao của trẻ",
   "x_axis": {
-    "label": null,
+    "label": "Yếu tố ảnh hưởng",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ ảnh hưởng",
+      "x": "Vận đồng",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Tỷ lệ ảnh hưởng",
+      "x": "Di truyền",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Tỷ lệ ảnh hưởng",
+      "x": "Dinh dưỡng",
+      "y": 32.0,
+      "y_raw": "32"
+    },
+    {
+      "series": "Tỷ lệ ảnh hưởng",
+      "x": "Giấc ngủ và môi trường",
+      "y": 16.0,
+      "y_raw": "16"
+    },
+    {
+      "series": "Tỷ lệ ảnh hưởng",
+      "x": "Yếu tố khác",
+      "y": 9.0,
+      "y_raw": "9"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

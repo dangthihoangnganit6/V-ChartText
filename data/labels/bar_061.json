@@ -1,7 +1,6 @@
 {
   "id": "bar_061",
   "image": "images/bar_061.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,7 +9,10 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_60.jpg"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 203,
   "chart_type": "bar",
   "title": "",
   "x_axis": {
@@ -21,8 +23,171 @@
     "label": null,
     "unit": null
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "2021",
+    "2022"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "2021",
+      "x": "Điện thoại các loại và linh kiện",
+      "y": 15.0,
+      "y_raw": "15,0"
+    },
+    {
+      "series": "2021",
+      "x": "Máy vi tính, sản phẩm điện tử và linh kiện",
+      "y": 11.5,
+      "y_raw": "11,5"
+    },
+    {
+      "series": "2021",
+      "x": "Xơ, sợi dệt các loại",
+      "y": 2.5,
+      "y_raw": "2,5"
+    },
+    {
+      "series": "2021",
+      "x": "Máy ảnh, máy quay phim và linh kiện",
+      "y": 2.5,
+      "y_raw": "2,5"
+    },
+    {
+      "series": "2021",
+      "x": "Máy móc, thiết bị dụng cụ phụ tùng khác",
+      "y": 2.5,
+      "y_raw": "2,5"
+    },
+    {
+      "series": "2021",
+      "x": "Cao su",
+      "y": 1.8,
+      "y_raw": "1,8"
+    },
+    {
+      "series": "2021",
+      "x": "Hàng rau quả",
+      "y": 1.2,
+      "y_raw": "1,2"
+    },
+    {
+      "series": "2021",
+      "x": "Thủy sản",
+      "y": 1.0,
+      "y_raw": "1,0"
+    },
+    {
+      "series": "2021",
+      "x": "Giày dép các loại",
+      "y": 1.1,
+      "y_raw": "1,1"
+    },
+    {
+      "series": "2021",
+      "x": "Gỗ, sản phẩm gỗ",
+      "y": 1.3,
+      "y_raw": "1,3"
+    },
+    {
+      "series": "2021",
+      "x": "Hàng dệt may",
+      "y": 0.8,
+      "y_raw": "0,8"
+    },
+    {
+      "series": "2021",
+      "x": "Sắn",
+      "y": 0.5,
+      "y_raw": "0,5"
+    },
+    {
+      "series": "2021",
+      "x": "Hàng hóa khác",
+      "y": 9.0,
+      "y_raw": "9,0"
+    },
+    {
+      "series": "2022",
+      "x": "Điện thoại các loại và linh kiện",
+      "y": 16.2,
+      "y_raw": "16,2"
+    },
+    {
+      "series": "2022",
+      "x": "Máy vi tính, sản phẩm điện tử và linh kiện",
+      "y": 12.0,
+      "y_raw": "12,0"
+    },
+    {
+      "series": "2022",
+      "x": "Xơ, sợi dệt các loại",
+      "y": 2.0,
+      "y_raw": "2,0"
+    },
+    {
+      "series": "2022",
+      "x": "Máy ảnh, máy quay phim và linh kiện",
+      "y": 3.0,
+      "y_raw": "3,0"
+    },
+    {
+      "series": "2022",
+      "x": "Máy móc, thiết bị dụng cụ phụ tùng khác",
+      "y": 3.5,
+      "y_raw": "3,5"
+    },
+    {
+      "series": "2022",
+      "x": "Cao su",
+      "y": 2.2,
+      "y_raw": "2,2"
+    },
+    {
+      "series": "2022",
+      "x": "Hàng rau quả",
+      "y": 1.5,
+      "y_raw": "1,5"
+    },
+    {
+      "series": "2022",
+      "x": "Thủy sản",
+      "y": 1.5,
+      "y_raw": "1,5"
+    },
+    {
+      "series": "2022",
+      "x": "Giày dép các loại",
+      "y": 1.5,
+      "y_raw": "1,5"
+    },
+    {
+      "series": "2022",
+      "x": "Gỗ, sản phẩm gỗ",
+      "y": 1.2,
+      "y_raw": "1,2"
+    },
+    {
+      "series": "2022",
+      "x": "Hàng dệt may",
+      "y": 0.7,
+      "y_raw": "0,7"
+    },
+    {
+      "series": "2022",
+      "x": "Sắn",
+      "y": 0.5,
+      "y_raw": "0,5"
+    },
+    {
+      "series": "2022",
+      "x": "Hàng hóa khác",
+      "y": 10.5,
+      "y_raw": "10,5"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

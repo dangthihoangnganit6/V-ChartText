@@ -1,7 +1,6 @@
 {
   "id": "line_016",
   "image": "images/line_016.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,67 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_16.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 19,
   "chart_type": "line",
-  "title": "",
+  "title": "Biến động chỉ số CPI Việt Nam giai đoạn từ 2018 đến nay",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "CPI",
+      "x": "2018",
+      "y": 3.54,
+      "y_raw": "3,54"
+    },
+    {
+      "series": "CPI",
+      "x": "2019",
+      "y": 2.79,
+      "y_raw": "2,79"
+    },
+    {
+      "series": "CPI",
+      "x": "2020",
+      "y": 3.23,
+      "y_raw": "3,23"
+    },
+    {
+      "series": "CPI",
+      "x": "2021",
+      "y": 1.84,
+      "y_raw": "1,84"
+    },
+    {
+      "series": "CPI",
+      "x": "2022",
+      "y": 3.15,
+      "y_raw": "3,15"
+    },
+    {
+      "series": "CPI",
+      "x": "2023",
+      "y": 3.25,
+      "y_raw": "3,25"
+    },
+    {
+      "series": "CPI",
+      "x": "2024",
+      "y": 3.63,
+      "y_raw": "3,63"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

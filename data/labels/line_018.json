@@ -1,7 +1,6 @@
 {
   "id": "line_018",
   "image": "images/line_018.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,400 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_18.jpg"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 21,
   "chart_type": "line",
-  "title": "",
+  "title": "Biến động giá bán bạc miếng (triệu đồng/lượng)",
   "x_axis": {
-    "label": null,
+    "label": "Sáng ngày",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Triệu đồng /lượng"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Bán ra",
+    "Mua vào"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Bán ra",
+      "x": "27/6",
+      "y": 2.314,
+      "y_raw": "2,314"
+    },
+    {
+      "series": "Bán ra",
+      "x": "28/6",
+      "y": 2.314,
+      "y_raw": "2,314"
+    },
+    {
+      "series": "Bán ra",
+      "x": "30/6",
+      "y": 2.241,
+      "y_raw": "2,241"
+    },
+    {
+      "series": "Bán ra",
+      "x": "1/7",
+      "y": 2.249,
+      "y_raw": "2,249"
+    },
+    {
+      "series": "Bán ra",
+      "x": "2/7",
+      "y": 2.346,
+      "y_raw": "2,346"
+    },
+    {
+      "series": "Bán ra",
+      "x": "3/7",
+      "y": 2.422,
+      "y_raw": "2,422"
+    },
+    {
+      "series": "Bán ra",
+      "x": "4/7",
+      "y": 2.425,
+      "y_raw": "2,425"
+    },
+    {
+      "series": "Bán ra",
+      "x": "5/7",
+      "y": 2.425,
+      "y_raw": "2,425"
+    },
+    {
+      "series": "Bán ra",
+      "x": "6/7",
+      "y": 2.41,
+      "y_raw": "2,410"
+    },
+    {
+      "series": "Bán ra",
+      "x": "7/7",
+      "y": 2.395,
+      "y_raw": "2,395"
+    },
+    {
+      "series": "Bán ra",
+      "x": "8/7",
+      "y": 2.331,
+      "y_raw": "2,331"
+    },
+    {
+      "series": "Bán ra",
+      "x": "9/7",
+      "y": 2.273,
+      "y_raw": "2,273"
+    },
+    {
+      "series": "Bán ra",
+      "x": "10/7",
+      "y": 2.346,
+      "y_raw": "2,346"
+    },
+    {
+      "series": "Bán ra",
+      "x": "11/7",
+      "y": 2.33,
+      "y_raw": "2,330"
+    },
+    {
+      "series": "Bán ra",
+      "x": "12/7",
+      "y": 2.33,
+      "y_raw": "2,330"
+    },
+    {
+      "series": "Bán ra",
+      "x": "13/7",
+      "y": 2.278,
+      "y_raw": "2,278"
+    },
+    {
+      "series": "Bán ra",
+      "x": "14/7",
+      "y": 2.247,
+      "y_raw": "2,247"
+    },
+    {
+      "series": "Bán ra",
+      "x": "15/7",
+      "y": 2.276,
+      "y_raw": "2,276"
+    },
+    {
+      "series": "Bán ra",
+      "x": "16/7",
+      "y": 2.222,
+      "y_raw": "2,222"
+    },
+    {
+      "series": "Bán ra",
+      "x": "17/7",
+      "y": 2.145,
+      "y_raw": "2,145"
+    },
+    {
+      "series": "Bán ra",
+      "x": "18/7",
+      "y": 2.191,
+      "y_raw": "2,191"
+    },
+    {
+      "series": "Bán ra",
+      "x": "19/7",
+      "y": 2.191,
+      "y_raw": "2,191"
+    },
+    {
+      "series": "Bán ra",
+      "x": "20/7",
+      "y": 2.227,
+      "y_raw": "2,227"
+    },
+    {
+      "series": "Bán ra",
+      "x": "21/7",
+      "y": 2.254,
+      "y_raw": "2,254"
+    },
+    {
+      "series": "Bán ra",
+      "x": "22/7",
+      "y": 2.322,
+      "y_raw": "2,322"
+    },
+    {
+      "series": "Bán ra",
+      "x": "23/7",
+      "y": 2.304,
+      "y_raw": "2,304"
+    },
+    {
+      "series": "Bán ra",
+      "x": "24/7",
+      "y": 2.202,
+      "y_raw": "2,202"
+    },
+    {
+      "series": "Bán ra",
+      "x": "25/7",
+      "y": 2.235,
+      "y_raw": "2,235"
+    },
+    {
+      "series": "Bán ra",
+      "x": "26/7",
+      "y": 2.235,
+      "y_raw": "2,235"
+    },
+    {
+      "series": "Bán ra",
+      "x": "27/7",
+      "y": 2.285,
+      "y_raw": "2,285"
+    },
+    {
+      "series": "Bán ra",
+      "x": "28/7",
+      "y": 2.193,
+      "y_raw": "2,193"
+    },
+    {
+      "series": "Mua vào",
+      "x": "27/6",
+      "y": 2.245,
+      "y_raw": "2,245"
+    },
+    {
+      "series": "Mua vào",
+      "x": "28/6",
+      "y": 2.245,
+      "y_raw": "2,245"
+    },
+    {
+      "series": "Mua vào",
+      "x": "30/6",
+      "y": 2.174,
+      "y_raw": "2,174"
+    },
+    {
+      "series": "Mua vào",
+      "x": "1/7",
+      "y": 2.182,
+      "y_raw": "2,182"
+    },
+    {
+      "series": "Mua vào",
+      "x": "2/7",
+      "y": 2.276,
+      "y_raw": "2,276"
+    },
+    {
+      "series": "Mua vào",
+      "x": "3/7",
+      "y": 2.349,
+      "y_raw": "2,349"
+    },
+    {
+      "series": "Mua vào",
+      "x": "4/7",
+      "y": 2.352,
+      "y_raw": "2,352"
+    },
+    {
+      "series": "Mua vào",
+      "x": "5/7",
+      "y": 2.352,
+      "y_raw": "2,352"
+    },
+    {
+      "series": "Mua vào",
+      "x": "6/7",
+      "y": 2.338,
+      "y_raw": "2,338"
+    },
+    {
+      "series": "Mua vào",
+      "x": "7/7",
+      "y": 2.323,
+      "y_raw": "2,323"
+    },
+    {
+      "series": "Mua vào",
+      "x": "8/7",
+      "y": 2.261,
+      "y_raw": "2,261"
+    },
+    {
+      "series": "Mua vào",
+      "x": "9/7",
+      "y": 2.205,
+      "y_raw": "2,205"
+    },
+    {
+      "series": "Mua vào",
+      "x": "10/7",
+      "y": 2.276,
+      "y_raw": "2,276"
+    },
+    {
+      "series": "Mua vào",
+      "x": "11/7",
+      "y": 2.26,
+      "y_raw": "2,260"
+    },
+    {
+      "series": "Mua vào",
+      "x": "12/7",
+      "y": 2.26,
+      "y_raw": "2,260"
+    },
+    {
+      "series": "Mua vào",
+      "x": "13/7",
+      "y": 2.21,
+      "y_raw": "2,210"
+    },
+    {
+      "series": "Mua vào",
+      "x": "14/7",
+      "y": 2.18,
+      "y_raw": "2,180"
+    },
+    {
+      "series": "Mua vào",
+      "x": "15/7",
+      "y": 2.208,
+      "y_raw": "2,208"
+    },
+    {
+      "series": "Mua vào",
+      "x": "16/7",
+      "y": 2.155,
+      "y_raw": "2,155"
+    },
+    {
+      "series": "Mua vào",
+      "x": "17/7",
+      "y": 2.081,
+      "y_raw": "2,081"
+    },
+    {
+      "series": "Mua vào",
+      "x": "18/7",
+      "y": 2.125,
+      "y_raw": "2,125"
+    },
+    {
+      "series": "Mua vào",
+      "x": "19/7",
+      "y": 2.125,
+      "y_raw": "2,125"
+    },
+    {
+      "series": "Mua vào",
+      "x": "20/7",
+      "y": 2.16,
+      "y_raw": "2,160"
+    },
+    {
+      "series": "Mua vào",
+      "x": "21/7",
+      "y": 2.186,
+      "y_raw": "2,186"
+    },
+    {
+      "series": "Mua vào",
+      "x": "22/7",
+      "y": 2.252,
+      "y_raw": "2,252"
+    },
+    {
+      "series": "Mua vào",
+      "x": "23/7",
+      "y": 2.235,
+      "y_raw": "2,235"
+    },
+    {
+      "series": "Mua vào",
+      "x": "24/7",
+      "y": 2.136,
+      "y_raw": "2,136"
+    },
+    {
+      "series": "Mua vào",
+      "x": "25/7",
+      "y": 2.168,
+      "y_raw": "2,168"
+    },
+    {
+      "series": "Mua vào",
+      "x": "26/7",
+      "y": 2.168,
+      "y_raw": "2,168"
+    },
+    {
+      "series": "Mua vào",
+      "x": "27/7",
+      "y": 2.216,
+      "y_raw": "2,216"
+    },
+    {
+      "series": "Mua vào",
+      "x": "28/7",
+      "y": 2.127,
+      "y_raw": "2,127"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "[20/11] Bỏ mốc 29/6 (ảnh không có, 31 điểm); sửa 2155 → 2.155; tên chuỗi theo ảnh (Bán ra | Mua vào). Ảnh viết số kiểu Anh",
+  "imported_at": "2026-11-20"
 }

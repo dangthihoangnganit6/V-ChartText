@@ -1,7 +1,6 @@
 {
   "id": "pie_012",
   "image": "images/pie_012.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,64 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_12.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 68,
   "chart_type": "pie",
-  "title": "",
+  "title": "Cơ cấu sản lượng thủy sản nuôi trong nước ta năm 2010 và 2017",
   "x_axis": {
-    "label": null,
+    "label": "Loài",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cơ cấu năm 2010",
+    "Cơ cấu năm 2017"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Cá",
+      "y": 77.0,
+      "y_raw": "77"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Tôm",
+      "y": 16.5,
+      "y_raw": "16,5"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Thuỷ sản khác",
+      "y": 6.6,
+      "y_raw": "6,6"
+    },
+    {
+      "series": "Cơ cấu năm 2017",
+      "x": "Cá",
+      "y": 70.2,
+      "y_raw": "70,2"
+    },
+    {
+      "series": "Cơ cấu năm 2017",
+      "x": "Tôm",
+      "y": 18.9,
+      "y_raw": "18,9"
+    },
+    {
+      "series": "Cơ cấu năm 2017",
+      "x": "Thuỷ sản khác",
+      "y": 10.9,
+      "y_raw": "10,9"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

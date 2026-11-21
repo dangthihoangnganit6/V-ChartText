@@ -1,7 +1,6 @@
 {
   "id": "bar_065",
   "image": "images/bar_065.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,86 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_64.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 207,
   "chart_type": "bar",
-  "title": "",
+  "title": "Tăng trưởng GDP quý II giai đoạn 2011 - 2020",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2011",
+      "y": 5.93,
+      "y_raw": "5,93"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2012",
+      "y": 5.08,
+      "y_raw": "5,08"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2013",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2014",
+      "y": 5.34,
+      "y_raw": "5,34"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2015",
+      "y": 6.47,
+      "y_raw": "6,47"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2016",
+      "y": 5.78,
+      "y_raw": "5,78"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2017",
+      "y": 6.26,
+      "y_raw": "6,26"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2018",
+      "y": 6.73,
+      "y_raw": "6,73"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2019",
+      "y": 6.71,
+      "y_raw": "6,71"
+    },
+    {
+      "series": "Tăng trưởng GDP",
+      "x": "2020",
+      "y": 0.36,
+      "y_raw": "0,36"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

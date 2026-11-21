@@ -1,7 +1,6 @@
 {
   "id": "pie_035",
   "image": "images/pie_035.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,49 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_35.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 91,
   "chart_type": "pie",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Trình độ",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Tỉ lệ",
+      "x": "Thạc sĩ",
+      "y": 50.9,
+      "y_raw": "50,9"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Đại học",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Tiến sĩ",
+      "y": 20.7,
+      "y_raw": "20,7"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Cao đẳng",
+      "y": 1.4,
+      "y_raw": "1,4"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo góc lát cắt. Không nên chấm RA@5% trên ảnh này",
+  "imported_at": "2026-11-20"
 }

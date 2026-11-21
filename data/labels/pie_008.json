@@ -1,7 +1,6 @@
 {
   "id": "pie_008",
   "image": "images/pie_008.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,61 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_8.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 64,
   "chart_type": "pie",
-  "title": "",
+  "title": "Tỷ lệ người đạt giải Nobel theo các lĩnh vực năm 2020",
   "x_axis": {
-    "label": null,
+    "label": "Lĩnh vực",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ người đạt giải Nobel",
+      "x": "Văn học",
+      "y": 13.0,
+      "y_raw": "13"
+    },
+    {
+      "series": "Tỷ lệ người đạt giải Nobel",
+      "x": "Vật lý",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Tỷ lệ người đạt giải Nobel",
+      "x": "Y học",
+      "y": 24.0,
+      "y_raw": "24"
+    },
+    {
+      "series": "Tỷ lệ người đạt giải Nobel",
+      "x": "Hoá học",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Tỷ lệ người đạt giải Nobel",
+      "x": "Kinh tế",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "Tỷ lệ người đạt giải Nobel",
+      "x": "Hoà bình",
+      "y": 11.0,
+      "y_raw": "11"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

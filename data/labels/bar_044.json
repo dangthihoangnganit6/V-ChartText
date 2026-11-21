@@ -1,7 +1,6 @@
 {
   "id": "bar_044",
   "image": "images/bar_044.webp",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,68 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_44.webp"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 187,
   "chart_type": "bar",
-  "title": "",
+  "title": "Những mặt hàng xuất khẩu hàng đầu sang Mỹ",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "tỷ USD"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "những mặt hàng xuất khẩu",
+      "x": "Máy móc, thiết bị, dụng cụ và phụ tùng khác",
+      "y": 17.82,
+      "y_raw": "17,82"
+    },
+    {
+      "series": "những mặt hàng xuất khẩu",
+      "x": "Hàng dệt may",
+      "y": 16.1,
+      "y_raw": "16,1"
+    },
+    {
+      "series": "những mặt hàng xuất khẩu",
+      "x": "Máy vi tính sản phẩm điện tử và linh kiện",
+      "y": 12.76,
+      "y_raw": "12,76"
+    },
+    {
+      "series": "những mặt hàng xuất khẩu",
+      "x": "Điện thoại các loại và linh kiện",
+      "y": 9.69,
+      "y_raw": "9,69"
+    },
+    {
+      "series": "những mặt hàng xuất khẩu",
+      "x": "Giày dép các loại",
+      "y": 7.42,
+      "y_raw": "7,42"
+    },
+    {
+      "series": "những mặt hàng xuất khẩu",
+      "x": "Gỗ và sản phẩm từ gỗ",
+      "y": 8.8,
+      "y_raw": "8,8"
+    },
+    {
+      "series": "những mặt hàng xuất khẩu",
+      "x": "Hàng thủy sản",
+      "y": 2.05,
+      "y_raw": "2,05"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

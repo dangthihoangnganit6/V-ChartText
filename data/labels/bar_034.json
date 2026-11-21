@@ -1,7 +1,6 @@
 {
   "id": "bar_034",
   "image": "images/bar_034.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,7 +9,10 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_34.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 177,
   "chart_type": "bar",
   "title": "",
   "x_axis": {
@@ -22,7 +24,47 @@
     "unit": null
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "không có",
+      "x": "Đỏ",
+      "y": 3.0,
+      "y_raw": "3"
+    },
+    {
+      "series": "không có",
+      "x": "Xanh da trời",
+      "y": 6.0,
+      "y_raw": "6"
+    },
+    {
+      "series": "không có",
+      "x": "Xanh lá cây",
+      "y": 2.0,
+      "y_raw": "2"
+    },
+    {
+      "series": "không có",
+      "x": "vàng",
+      "y": 3.0,
+      "y_raw": "3"
+    },
+    {
+      "series": "không có",
+      "x": "Da Cam",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "không có",
+      "x": "Hồng",
+      "y": 4.0,
+      "y_raw": "4"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

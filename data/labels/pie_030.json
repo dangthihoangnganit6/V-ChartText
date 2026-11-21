@@ -1,7 +1,6 @@
 {
   "id": "pie_030",
   "image": "images/pie_030.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,65 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_30.jpg"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 86,
   "chart_type": "pie",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Vùng kinh tế",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Diện tích",
+    "Dân số",
+    "GDP"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diện tích",
+      "x": "Vùng kinh tế trọng điểm phía Nam",
+      "y": 39.3,
+      "y_raw": "39,3"
+    },
+    {
+      "series": "Diện tích",
+      "x": "Vùng kinh tế trọng điểm miền Bắc và miền Trung",
+      "y": 60.7,
+      "y_raw": "60,7"
+    },
+    {
+      "series": "Dân số",
+      "x": "Vùng kinh tế trọng điểm phía Nam",
+      "y": 39.3,
+      "y_raw": "39,3"
+    },
+    {
+      "series": "Dân số",
+      "x": "Vùng kinh tế trọng điểm miền Bắc và miền Trung",
+      "y": 60.7,
+      "y_raw": "60,7"
+    },
+    {
+      "series": "GDP",
+      "x": "Vùng kinh tế trọng điểm phía Nam",
+      "y": 65.0,
+      "y_raw": "65"
+    },
+    {
+      "series": "GDP",
+      "x": "Vùng kinh tế trọng điểm miền Bắc và miền Trung",
+      "y": 35.0,
+      "y_raw": "35"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề, không ghi đơn vị (tổng = 100 nên coi là %)",
+  "imported_at": "2026-11-20"
 }

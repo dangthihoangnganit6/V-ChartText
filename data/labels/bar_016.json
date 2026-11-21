@@ -1,7 +1,6 @@
 {
   "id": "bar_016",
   "image": "images/bar_016.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,65 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_16.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 159,
   "chart_type": "bar",
-  "title": "",
+  "title": "Quy mô GDP của Malaysia và Singapo, giai đoạn 2010 - 2016",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỷ đô la Mỹ"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Malaysia",
+    "Singapore"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Malaysia",
+      "x": "2010",
+      "y": 255.0,
+      "y_raw": "255"
+    },
+    {
+      "series": "Malaysia",
+      "x": "2013",
+      "y": 323.0,
+      "y_raw": "323"
+    },
+    {
+      "series": "Malaysia",
+      "x": "2016",
+      "y": 297.0,
+      "y_raw": "297"
+    },
+    {
+      "series": "Singapore",
+      "x": "2010",
+      "y": 236.0,
+      "y_raw": "236"
+    },
+    {
+      "series": "Singapore",
+      "x": "2013",
+      "y": 303.0,
+      "y_raw": "303"
+    },
+    {
+      "series": "Singapore",
+      "x": "2016",
+      "y": 297.0,
+      "y_raw": "297"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

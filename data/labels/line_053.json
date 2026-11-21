@@ -1,7 +1,6 @@
 {
   "id": "line_053",
   "image": "images/line_053.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,222 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_53.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 52,
   "chart_type": "line",
-  "title": "",
+  "title": "Tỷ lệ việc làm tại bốn ngành khác nhau (1990-2025)",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Ngành A",
+    "Ngành B",
+    "Ngành C",
+    "Ngành D"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Ngành A",
+      "x": "1990",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Ngành A",
+      "x": "1995",
+      "y": 48.0,
+      "y_raw": "48"
+    },
+    {
+      "series": "Ngành A",
+      "x": "2000",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "Ngành A",
+      "x": "2005",
+      "y": 46.0,
+      "y_raw": "46"
+    },
+    {
+      "series": "Ngành A",
+      "x": "2010",
+      "y": 43.0,
+      "y_raw": "43"
+    },
+    {
+      "series": "Ngành A",
+      "x": "2015",
+      "y": 39.0,
+      "y_raw": "39"
+    },
+    {
+      "series": "Ngành A",
+      "x": "2020",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Ngành A",
+      "x": "2025",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Ngành B",
+      "x": "1990",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Ngành B",
+      "x": "1995",
+      "y": 28.0,
+      "y_raw": "28"
+    },
+    {
+      "series": "Ngành B",
+      "x": "2000",
+      "y": 31.0,
+      "y_raw": "31"
+    },
+    {
+      "series": "Ngành B",
+      "x": "2005",
+      "y": 29.0,
+      "y_raw": "29"
+    },
+    {
+      "series": "Ngành B",
+      "x": "2010",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Ngành B",
+      "x": "2015",
+      "y": 38.0,
+      "y_raw": "38"
+    },
+    {
+      "series": "Ngành B",
+      "x": "2020",
+      "y": 33.0,
+      "y_raw": "33"
+    },
+    {
+      "series": "Ngành B",
+      "x": "2025",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Ngành C",
+      "x": "1990",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Ngành C",
+      "x": "1995",
+      "y": 18.0,
+      "y_raw": "18"
+    },
+    {
+      "series": "Ngành C",
+      "x": "2000",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Ngành C",
+      "x": "2005",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Ngành C",
+      "x": "2010",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Ngành C",
+      "x": "2015",
+      "y": 28.0,
+      "y_raw": "28"
+    },
+    {
+      "series": "Ngành C",
+      "x": "2020",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Ngành C",
+      "x": "2025",
+      "y": 29.0,
+      "y_raw": "29"
+    },
+    {
+      "series": "Ngành D",
+      "x": "1990",
+      "y": 28.0,
+      "y_raw": "28"
+    },
+    {
+      "series": "Ngành D",
+      "x": "1995",
+      "y": 36.0,
+      "y_raw": "36"
+    },
+    {
+      "series": "Ngành D",
+      "x": "2000",
+      "y": 34.0,
+      "y_raw": "34"
+    },
+    {
+      "series": "Ngành D",
+      "x": "2005",
+      "y": 32.0,
+      "y_raw": "32"
+    },
+    {
+      "series": "Ngành D",
+      "x": "2010",
+      "y": 29.0,
+      "y_raw": "29"
+    },
+    {
+      "series": "Ngành D",
+      "x": "2015",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Ngành D",
+      "x": "2020",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Ngành D",
+      "x": "2025",
+      "y": 24.0,
+      "y_raw": "24"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "pie_015",
   "image": "images/pie_015.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,64 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_15.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 71,
   "chart_type": "pie",
-  "title": "",
+  "title": "Tỉ trọng GDP phân theo khu vực kinh tế của Hoa Kỳ",
   "x_axis": {
-    "label": null,
+    "label": "Ngành",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cơ cấu năm 1960",
+    "Cơ cấu năm 2016"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 1960",
+      "x": "Nông nghiệp",
+      "y": 4.0,
+      "y_raw": "4"
+    },
+    {
+      "series": "Cơ cấu năm 1960",
+      "x": "Công nghiệp",
+      "y": 34.0,
+      "y_raw": "34"
+    },
+    {
+      "series": "Cơ cấu năm 1960",
+      "x": "Dịch vụ",
+      "y": 62.0,
+      "y_raw": "62"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Nông nghiệp",
+      "y": 1.0,
+      "y_raw": "1"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Công nghiệp",
+      "y": 19.0,
+      "y_raw": "19"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Dịch vụ",
+      "y": 80.0,
+      "y_raw": "80"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

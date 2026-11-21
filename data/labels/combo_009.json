@@ -1,7 +1,6 @@
 {
   "id": "combo_009",
   "image": "images/combo_009.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,80 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_9.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 107,
   "chart_type": "combo",
-  "title": "",
+  "title": "Biểu đồ thể hiện diện tích và sản lượng sản xuất lúa gạo của vùng Đồng bằng sông Cửu Long giai đoạn 2010 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn ha"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Diện tích",
+    "Sản lượng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diện tích",
+      "x": "2010",
+      "y": 3945.9,
+      "y_raw": "3945,9"
+    },
+    {
+      "series": "Diện tích",
+      "x": "2015",
+      "y": 4301.5,
+      "y_raw": "4301,5"
+    },
+    {
+      "series": "Diện tích",
+      "x": "2020",
+      "y": 3963.7,
+      "y_raw": "3963,7"
+    },
+    {
+      "series": "Diện tích",
+      "x": "2021",
+      "y": 3898.6,
+      "y_raw": "3898,6"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2010",
+      "y": 21.6,
+      "y_raw": "21,6"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2015",
+      "y": 25.6,
+      "y_raw": "25,6"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2020",
+      "y": 23.8,
+      "y_raw": "23,8"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2021",
+      "y": 24.3,
+      "y_raw": "24,3"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Diện tích (cột) theo trục phải Nghìn ha; Sản lượng (đường) theo trục trái Triệu tấn",
+  "y2_axis": {
+    "label": null,
+    "unit": "Triệu tấn"
+  },
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "pie_019",
   "image": "images/pie_019.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,49 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_19.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 75,
   "chart_type": "pie",
-  "title": "",
+  "title": "Tỉ lệ phần trăm thành phần của đất tốt cho cây trồng",
   "x_axis": {
-    "label": null,
+    "label": "Thành phần",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỉ lệ",
+      "x": "Không khí",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Nước",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Chất khoáng",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Chất mùn",
+      "y": 5.0,
+      "y_raw": "5"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

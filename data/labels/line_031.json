@@ -1,7 +1,6 @@
 {
   "id": "line_031",
   "image": "images/line_031.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,88 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_31.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 34,
   "chart_type": "line",
-  "title": "",
+  "title": "Biểu đồ thể hiện tỷ giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hoà Nam Phi giai đoạn 2000-2020",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "2000",
+      "y": 37.0,
+      "y_raw": "37"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2005",
+      "y": 68.2,
+      "y_raw": "68,2"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2010",
+      "y": 107.6,
+      "y_raw": "107,6"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2015",
+      "y": 96.1,
+      "y_raw": "96,1"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2020",
+      "y": 93.2,
+      "y_raw": "93,2"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2000",
+      "y": 33.1,
+      "y_raw": "33,1"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2005",
+      "y": 68.8,
+      "y_raw": "68,8"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2010",
+      "y": 102.8,
+      "y_raw": "102,8"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2015",
+      "y": 100.6,
+      "y_raw": "100,6"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2020",
+      "y": 78.3,
+      "y_raw": "78,3"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

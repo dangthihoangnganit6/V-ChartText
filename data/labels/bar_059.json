@@ -1,7 +1,6 @@
 {
   "id": "bar_059",
   "image": "images/bar_059.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,285 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_58.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 201,
   "chart_type": "bar",
-  "title": "",
+  "title": "Dòng vốn FDI theo khu vực",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỷ đô"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Thế giới",
+    "Châu Á",
+    "Bắc Mỹ",
+    "Latinh & Caribe",
+    "Châu Phi",
+    "Châu Âu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Thế giới",
+      "x": "2017",
+      "y": 1600.0,
+      "y_raw": "1600"
+    },
+    {
+      "series": "Thế giới",
+      "x": "2018",
+      "y": 1500.0,
+      "y_raw": "1500"
+    },
+    {
+      "series": "Thế giới",
+      "x": "2019",
+      "y": 1550.0,
+      "y_raw": "1550"
+    },
+    {
+      "series": "Thế giới",
+      "x": "2020",
+      "y": 1000.0,
+      "y_raw": "1000"
+    },
+    {
+      "series": "Thế giới",
+      "x": "2021",
+      "y": 1600.0,
+      "y_raw": "1600"
+    },
+    {
+      "series": "Thế giới",
+      "x": "2022",
+      "y": 1350.0,
+      "y_raw": "1350"
+    },
+    {
+      "series": "Thế giới",
+      "x": "2023",
+      "y": 1350.0,
+      "y_raw": "1350"
+    },
+    {
+      "series": "Châu Á",
+      "x": "2017",
+      "y": 500.0,
+      "y_raw": "500"
+    },
+    {
+      "series": "Châu Á",
+      "x": "2018",
+      "y": 500.0,
+      "y_raw": "500"
+    },
+    {
+      "series": "Châu Á",
+      "x": "2019",
+      "y": 500.0,
+      "y_raw": "500"
+    },
+    {
+      "series": "Châu Á",
+      "x": "2020",
+      "y": 550.0,
+      "y_raw": "550"
+    },
+    {
+      "series": "Châu Á",
+      "x": "2021",
+      "y": 650.0,
+      "y_raw": "650"
+    },
+    {
+      "series": "Châu Á",
+      "x": "2022",
+      "y": 650.0,
+      "y_raw": "650"
+    },
+    {
+      "series": "Châu Á",
+      "x": "2023",
+      "y": 650.0,
+      "y_raw": "650"
+    },
+    {
+      "series": "Bắc Mỹ",
+      "x": "2017",
+      "y": 300.0,
+      "y_raw": "300"
+    },
+    {
+      "series": "Bắc Mỹ",
+      "x": "2018",
+      "y": 250.0,
+      "y_raw": "250"
+    },
+    {
+      "series": "Bắc Mỹ",
+      "x": "2019",
+      "y": 300.0,
+      "y_raw": "300"
+    },
+    {
+      "series": "Bắc Mỹ",
+      "x": "2020",
+      "y": 150.0,
+      "y_raw": "150"
+    },
+    {
+      "series": "Bắc Mỹ",
+      "x": "2021",
+      "y": 400.0,
+      "y_raw": "400"
+    },
+    {
+      "series": "Bắc Mỹ",
+      "x": "2022",
+      "y": 300.0,
+      "y_raw": "300"
+    },
+    {
+      "series": "Bắc Mỹ",
+      "x": "2023",
+      "y": 350.0,
+      "y_raw": "350"
+    },
+    {
+      "series": "Latinh & Caribe",
+      "x": "2017",
+      "y": 150.0,
+      "y_raw": "150"
+    },
+    {
+      "series": "Latinh & Caribe",
+      "x": "2018",
+      "y": 150.0,
+      "y_raw": "150"
+    },
+    {
+      "series": "Latinh & Caribe",
+      "x": "2019",
+      "y": 150.0,
+      "y_raw": "150"
+    },
+    {
+      "series": "Latinh & Caribe",
+      "x": "2020",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Latinh & Caribe",
+      "x": "2021",
+      "y": 150.0,
+      "y_raw": "150"
+    },
+    {
+      "series": "Latinh & Caribe",
+      "x": "2022",
+      "y": 200.0,
+      "y_raw": "200"
+    },
+    {
+      "series": "Latinh & Caribe",
+      "x": "2023",
+      "y": 200.0,
+      "y_raw": "200"
+    },
+    {
+      "series": "Châu Phi",
+      "x": "2017",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Châu Phi",
+      "x": "2018",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Châu Phi",
+      "x": "2019",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Châu Phi",
+      "x": "2020",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Châu Phi",
+      "x": "2021",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Châu Phi",
+      "x": "2022",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Châu Phi",
+      "x": "2023",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Châu Âu",
+      "x": "2017",
+      "y": 400.0,
+      "y_raw": "400"
+    },
+    {
+      "series": "Châu Âu",
+      "x": "2018",
+      "y": 450.0,
+      "y_raw": "450"
+    },
+    {
+      "series": "Châu Âu",
+      "x": "2019",
+      "y": 450.0,
+      "y_raw": "450"
+    },
+    {
+      "series": "Châu Âu",
+      "x": "2020",
+      "y": -150.0,
+      "y_raw": "-150"
+    },
+    {
+      "series": "Châu Âu",
+      "x": "2021",
+      "y": 300.0,
+      "y_raw": "300"
+    },
+    {
+      "series": "Châu Âu",
+      "x": "2022",
+      "y": -100.0,
+      "y_raw": "-100"
+    },
+    {
+      "series": "Châu Âu",
+      "x": "2023",
+      "y": 50.0,
+      "y_raw": "50"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

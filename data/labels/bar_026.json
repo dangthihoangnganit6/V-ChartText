@@ -1,7 +1,6 @@
 {
   "id": "bar_026",
   "image": "images/bar_026.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,56 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_26.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 169,
   "chart_type": "bar",
-  "title": "",
+  "title": "Trái cây yêu thích của học sinh lớp 6A",
   "x_axis": {
-    "label": null,
+    "label": "Loại trái cây",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Số học sinh"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số học sinh",
+      "x": "Cam",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Số học sinh",
+      "x": "Xoài",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Số học sinh",
+      "x": "Táo",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Số học sinh",
+      "x": "Ổi",
+      "y": 6.0,
+      "y_raw": "6"
+    },
+    {
+      "series": "Số học sinh",
+      "x": "Quýt",
+      "y": 5.0,
+      "y_raw": "5"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

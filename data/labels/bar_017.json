@@ -1,7 +1,6 @@
 {
   "id": "bar_017",
   "image": "images/bar_017.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,84 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_17.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 160,
   "chart_type": "bar",
-  "title": "",
+  "title": "Sản lượng gỗ khai thác của cả nước và một số vùng",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn mét khối"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cả nước",
+    "Trung du và miền núi Bắc bộ",
+    "Tây Nguyên"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cả nước",
+      "x": "2012",
+      "y": 5251.0,
+      "y_raw": "5251"
+    },
+    {
+      "series": "Cả nước",
+      "x": "2013",
+      "y": 5908.0,
+      "y_raw": "5908"
+    },
+    {
+      "series": "Cả nước",
+      "x": "2014",
+      "y": 7701.0,
+      "y_raw": "7701"
+    },
+    {
+      "series": "Trung du và miền núi Bắc bộ",
+      "x": "2012",
+      "y": 1590.0,
+      "y_raw": "1590"
+    },
+    {
+      "series": "Trung du và miền núi Bắc bộ",
+      "x": "2013",
+      "y": 1731.0,
+      "y_raw": "1731"
+    },
+    {
+      "series": "Trung du và miền núi Bắc bộ",
+      "x": "2014",
+      "y": 2278.0,
+      "y_raw": "2278"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "2012",
+      "y": 620.0,
+      "y_raw": "620"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "2013",
+      "y": 540.0,
+      "y_raw": "540"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "2014",
+      "y": 447.0,
+      "y_raw": "447"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

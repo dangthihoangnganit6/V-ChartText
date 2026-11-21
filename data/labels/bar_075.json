@@ -1,7 +1,6 @@
 {
   "id": "bar_075",
   "image": "images/bar_075.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,173 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_74.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 217,
   "chart_type": "bar",
-  "title": "",
+  "title": "Lượng mưa trung bình theo tháng của Hà Nội và Thành phố Hồ Chí Minh",
   "x_axis": {
-    "label": null,
+    "label": "Tháng",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "mm"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Hà Nội",
+    "Thành phố Hồ Chí Mình"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 1",
+      "y": 19.0,
+      "y_raw": "19"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 2",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 3",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 4",
+      "y": 90.0,
+      "y_raw": "90"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 5",
+      "y": 189.0,
+      "y_raw": "189"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 6",
+      "y": 240.0,
+      "y_raw": "240"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 7",
+      "y": 288.0,
+      "y_raw": "288"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 8",
+      "y": 318.0,
+      "y_raw": "318"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 9",
+      "y": 265.0,
+      "y_raw": "265"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 10",
+      "y": 131.0,
+      "y_raw": "131"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 11",
+      "y": 43.0,
+      "y_raw": "43"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Tháng 12",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 1",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 2",
+      "y": 4.0,
+      "y_raw": "4"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 3",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 4",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 5",
+      "y": 218.0,
+      "y_raw": "218"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 6",
+      "y": 312.0,
+      "y_raw": "312"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 7",
+      "y": 294.0,
+      "y_raw": "294"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 8",
+      "y": 270.0,
+      "y_raw": "270"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 9",
+      "y": 327.0,
+      "y_raw": "327"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 10",
+      "y": 267.0,
+      "y_raw": "267"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 11",
+      "y": 117.0,
+      "y_raw": "117"
+    },
+    {
+      "series": "Thành phố Hồ Chí Mình",
+      "x": "Tháng 12",
+      "y": 48.0,
+      "y_raw": "48"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

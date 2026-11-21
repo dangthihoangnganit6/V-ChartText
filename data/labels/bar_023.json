@@ -1,7 +1,6 @@
 {
   "id": "bar_023",
   "image": "images/bar_023.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,65 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_23.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 166,
   "chart_type": "bar",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỉ đô la Mỹ"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Thái Lan",
+    "Phi-lip-pin"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Thái Lan",
+      "x": "2010",
+      "y": 341.0,
+      "y_raw": "341"
+    },
+    {
+      "series": "Thái Lan",
+      "x": "2013",
+      "y": 421.0,
+      "y_raw": "421"
+    },
+    {
+      "series": "Thái Lan",
+      "x": "2016",
+      "y": 407.0,
+      "y_raw": "407"
+    },
+    {
+      "series": "Phi-lip-pin",
+      "x": "2010",
+      "y": 200.0,
+      "y_raw": "200"
+    },
+    {
+      "series": "Phi-lip-pin",
+      "x": "2013",
+      "y": 272.0,
+      "y_raw": "272"
+    },
+    {
+      "series": "Phi-lip-pin",
+      "x": "2016",
+      "y": 305.0,
+      "y_raw": "305"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

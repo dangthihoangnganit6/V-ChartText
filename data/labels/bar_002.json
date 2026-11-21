@@ -1,7 +1,6 @@
 {
   "id": "bar_002",
   "image": "images/bar_002.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,56 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_2.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 145,
   "chart_type": "bar",
-  "title": "",
+  "title": "Biểu đồ về độ dài đường sắt lớn nhất thế giới",
   "x_axis": {
-    "label": null,
+    "label": "Nước",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "nghìn km"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "độ dài đường sắt",
+      "x": "Hoa Kỳ",
+      "y": 239.2,
+      "y_raw": "239,2"
+    },
+    {
+      "series": "độ dài đường sắt",
+      "x": "Trung Quốc",
+      "y": 131.0,
+      "y_raw": "131,0"
+    },
+    {
+      "series": "độ dài đường sắt",
+      "x": "Liên bang Nga",
+      "y": 87.2,
+      "y_raw": "87,2"
+    },
+    {
+      "series": "độ dài đường sắt",
+      "x": "Ca-na-da",
+      "y": 77.9,
+      "y_raw": "77,9"
+    },
+    {
+      "series": "độ dài đường sắt",
+      "x": "Ấn Độ",
+      "y": 68.5,
+      "y_raw": "68,5"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

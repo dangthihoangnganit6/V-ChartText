@@ -1,7 +1,6 @@
 {
   "id": "line_036",
   "image": "images/line_036.jpeg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,151 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_36.jpeg"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 39,
   "chart_type": "line",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Thuỷ sản ướp đông",
+    "Bia các loại",
+    "Gạo xay xát",
+    "Muối biển"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Thuỷ sản ướp đông",
+      "x": "2005",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Thuỷ sản ướp đông",
+      "x": "2007",
+      "y": 119.6,
+      "y_raw": "119,6"
+    },
+    {
+      "series": "Thuỷ sản ướp đông",
+      "x": "2009",
+      "y": 172.8,
+      "y_raw": "172,8"
+    },
+    {
+      "series": "Thuỷ sản ướp đông",
+      "x": "2010",
+      "y": 187.5,
+      "y_raw": "187,5"
+    },
+    {
+      "series": "Thuỷ sản ướp đông",
+      "x": "2013",
+      "y": 214.7,
+      "y_raw": "214,7"
+    },
+    {
+      "series": "Bia các loại",
+      "x": "2005",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Bia các loại",
+      "x": "2007",
+      "y": 113.3,
+      "y_raw": "113,3"
+    },
+    {
+      "series": "Bia các loại",
+      "x": "2009",
+      "y": 137.4,
+      "y_raw": "137,4"
+    },
+    {
+      "series": "Bia các loại",
+      "x": "2010",
+      "y": 165.7,
+      "y_raw": "165,7"
+    },
+    {
+      "series": "Bia các loại",
+      "x": "2013",
+      "y": 205.7,
+      "y_raw": "205,7"
+    },
+    {
+      "series": "Gạo xay xát",
+      "x": "2005",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Gạo xay xát",
+      "x": "2007",
+      "y": 108.3,
+      "y_raw": "108,3"
+    },
+    {
+      "series": "Gạo xay xát",
+      "x": "2009",
+      "y": 117.4,
+      "y_raw": "117,4"
+    },
+    {
+      "series": "Gạo xay xát",
+      "x": "2010",
+      "y": 117.7,
+      "y_raw": "117,7"
+    },
+    {
+      "series": "Gạo xay xát",
+      "x": "2013",
+      "y": 144.3,
+      "y_raw": "144,3"
+    },
+    {
+      "series": "Muối biển",
+      "x": "2005",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Muối biển",
+      "x": "2007",
+      "y": 95.5,
+      "y_raw": "95,5"
+    },
+    {
+      "series": "Muối biển",
+      "x": "2009",
+      "y": 75.6,
+      "y_raw": "75,6"
+    },
+    {
+      "series": "Muối biển",
+      "x": "2010",
+      "y": 108.6,
+      "y_raw": "108,6"
+    },
+    {
+      "series": "Muối biển",
+      "x": "2013",
+      "y": 83.0,
+      "y_raw": "83"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "duplicate_of": "line_029",
+  "imported_at": "2026-11-20"
 }

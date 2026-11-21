@@ -1,7 +1,6 @@
 {
   "id": "pie_010",
   "image": "images/pie_010.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,64 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_10.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 66,
   "chart_type": "pie",
-  "title": "",
+  "title": "Cơ cấu tổng mức bán lẻ hàng hóa và doanh thu dịch vụ của nước ta phân theo thành phần kinh tế, năm 2005 và 2013",
   "x_axis": {
-    "label": null,
+    "label": "Thành phần kinh tế",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cơ cấu năm 2005",
+    "Cơ cấu năm 2013"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 2005",
+      "x": "Kinh tế nước ngoài",
+      "y": 83.3,
+      "y_raw": "83,3"
+    },
+    {
+      "series": "Cơ cấu năm 2005",
+      "x": "Kinh tế nhà nước",
+      "y": 12.9,
+      "y_raw": "12,9"
+    },
+    {
+      "series": "Cơ cấu năm 2005",
+      "x": "Kinh tế có vốn đầu tư nước ngoài",
+      "y": 3.8,
+      "y_raw": "3,8"
+    },
+    {
+      "series": "Cơ cấu năm 2013",
+      "x": "Kinh tế nước ngoài",
+      "y": 85.2,
+      "y_raw": "85,2"
+    },
+    {
+      "series": "Cơ cấu năm 2013",
+      "x": "Kinh tế nhà nước",
+      "y": 10.9,
+      "y_raw": "10,9"
+    },
+    {
+      "series": "Cơ cấu năm 2013",
+      "x": "Kinh tế có vốn đầu tư nước ngoài",
+      "y": 3.9,
+      "y_raw": "3,9"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

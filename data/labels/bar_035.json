@@ -1,7 +1,6 @@
 {
   "id": "bar_035",
   "image": "images/bar_035.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,62 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_35.jpg"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 178,
   "chart_type": "bar",
-  "title": "",
+  "title": "Người dân",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn người"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Người dân",
+      "x": "2005",
+      "y": 82392.1,
+      "y_raw": "82392,1"
+    },
+    {
+      "series": "Người dân",
+      "x": "2007",
+      "y": 84218.5,
+      "y_raw": "84218,5"
+    },
+    {
+      "series": "Người dân",
+      "x": "2009",
+      "y": 86025.0,
+      "y_raw": "86025"
+    },
+    {
+      "series": "Người dân",
+      "x": "2011",
+      "y": 87860.4,
+      "y_raw": "87860,4"
+    },
+    {
+      "series": "Người dân",
+      "x": "2013",
+      "y": 89759.5,
+      "y_raw": "89759,5"
+    },
+    {
+      "series": "Người dân",
+      "x": "2015",
+      "y": 91713.3,
+      "y_raw": "91713,3"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

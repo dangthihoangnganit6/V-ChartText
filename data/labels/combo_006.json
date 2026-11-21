@@ -1,7 +1,6 @@
 {
   "id": "combo_006",
   "image": "images/combo_006.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,123 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_6.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 104,
   "chart_type": "combo",
-  "title": "",
+  "title": "Sự biến động diện tích rừng và độ che phủ rừng ở nước ta, giai đoạn 2008 - 2018",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn ha"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Rừng tự nhiên",
+    "Rừng trồng",
+    "Độ che phủ rừng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Rừng tự nhiên",
+      "x": "2008",
+      "y": 10348.6,
+      "y_raw": "10348,6"
+    },
+    {
+      "series": "Rừng tự nhiên",
+      "x": "2012",
+      "y": 10423.8,
+      "y_raw": "10423,8"
+    },
+    {
+      "series": "Rừng tự nhiên",
+      "x": "2014",
+      "y": 10100.2,
+      "y_raw": "10100,2"
+    },
+    {
+      "series": "Rừng tự nhiên",
+      "x": "2016",
+      "y": 10242.1,
+      "y_raw": "10242,1"
+    },
+    {
+      "series": "Rừng tự nhiên",
+      "x": "2018",
+      "y": 10255.5,
+      "y_raw": "10255,5"
+    },
+    {
+      "series": "Rừng trồng",
+      "x": "2008",
+      "y": 2770.2,
+      "y_raw": "2770,2"
+    },
+    {
+      "series": "Rừng trồng",
+      "x": "2012",
+      "y": 3438.2,
+      "y_raw": "3438,2"
+    },
+    {
+      "series": "Rừng trồng",
+      "x": "2014",
+      "y": 3696.3,
+      "y_raw": "3696,3"
+    },
+    {
+      "series": "Rừng trồng",
+      "x": "2016",
+      "y": 4135.6,
+      "y_raw": "4135,6"
+    },
+    {
+      "series": "Rừng trồng",
+      "x": "2018",
+      "y": 4235.8,
+      "y_raw": "4235,8"
+    },
+    {
+      "series": "Độ che phủ rừng",
+      "x": "2008",
+      "y": 38.7,
+      "y_raw": "38,7"
+    },
+    {
+      "series": "Độ che phủ rừng",
+      "x": "2012",
+      "y": 40.7,
+      "y_raw": "40,7"
+    },
+    {
+      "series": "Độ che phủ rừng",
+      "x": "2014",
+      "y": 40.4,
+      "y_raw": "40,4"
+    },
+    {
+      "series": "Độ che phủ rừng",
+      "x": "2016",
+      "y": 41.2,
+      "y_raw": "41,2"
+    },
+    {
+      "series": "Độ che phủ rừng",
+      "x": "2018",
+      "y": 41.7,
+      "y_raw": "41,7"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Độ che phủ theo trục phải (%); ảnh mờ, số 3696.3 cần soát lại",
+  "y2_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "imported_at": "2026-11-20"
 }

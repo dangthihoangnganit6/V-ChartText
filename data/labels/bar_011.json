@@ -1,7 +1,6 @@
 {
   "id": "bar_011",
   "image": "images/bar_011.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,79 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_11.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 154,
   "chart_type": "bar",
-  "title": "",
+  "title": "Diện tích một số loại cây công nghiệp lâu năm vùng Tây Nguyên giai đoạn 2010 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn ha"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cà phê",
+    "Cao su",
+    "Hỗ trợ",
+    "Điều"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cà phê",
+      "x": "2010",
+      "y": 526.7,
+      "y_raw": "526,7"
+    },
+    {
+      "series": "Cà phê",
+      "x": "2021",
+      "y": 657.4,
+      "y_raw": "657,4"
+    },
+    {
+      "series": "Cao su",
+      "x": "2010",
+      "y": 214.8,
+      "y_raw": "214,8"
+    },
+    {
+      "series": "Cao su",
+      "x": "2021",
+      "y": 232.2,
+      "y_raw": "232,2"
+    },
+    {
+      "series": "Hỗ trợ",
+      "x": "2010",
+      "y": 22.6,
+      "y_raw": "22,6"
+    },
+    {
+      "series": "Hỗ trợ",
+      "x": "2021",
+      "y": 83.5,
+      "y_raw": "83,5"
+    },
+    {
+      "series": "Điều",
+      "x": "2010",
+      "y": 88.1,
+      "y_raw": "88,1"
+    },
+    {
+      "series": "Điều",
+      "x": "2021",
+      "y": 90.3,
+      "y_raw": "90,3"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

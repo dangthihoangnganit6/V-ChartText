@@ -1,7 +1,6 @@
 {
   "id": "combo_011",
   "image": "images/combo_011.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,80 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_11.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 109,
   "chart_type": "combo",
-  "title": "",
+  "title": "Biểu đồ thể hiện số dân thành thị và tỉ lệ dân thành thị trong dân số cả nước giai đoạn 1990 - 2005",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Triệu người"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Số dân thành thị",
+    "Tỉ lệ dân thành thị"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số dân thành thị",
+      "x": "1990",
+      "y": 12.9,
+      "y_raw": "12,9"
+    },
+    {
+      "series": "Số dân thành thị",
+      "x": "1995",
+      "y": 14.9,
+      "y_raw": "14,9"
+    },
+    {
+      "series": "Số dân thành thị",
+      "x": "2000",
+      "y": 18.8,
+      "y_raw": "18,8"
+    },
+    {
+      "series": "Số dân thành thị",
+      "x": "2005",
+      "y": 22.3,
+      "y_raw": "22,3"
+    },
+    {
+      "series": "Tỉ lệ dân thành thị",
+      "x": "1990",
+      "y": 19.5,
+      "y_raw": "19,5"
+    },
+    {
+      "series": "Tỉ lệ dân thành thị",
+      "x": "1995",
+      "y": 20.8,
+      "y_raw": "20,8"
+    },
+    {
+      "series": "Tỉ lệ dân thành thị",
+      "x": "2000",
+      "y": 24.2,
+      "y_raw": "24,2"
+    },
+    {
+      "series": "Tỉ lệ dân thành thị",
+      "x": "2005",
+      "y": 26.9,
+      "y_raw": "26,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Tỉ lệ theo trục phải (%)",
+  "y2_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "imported_at": "2026-11-20"
 }

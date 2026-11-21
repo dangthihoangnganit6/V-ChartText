@@ -1,7 +1,6 @@
 {
   "id": "pie_034",
   "image": "images/pie_034.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,64 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_34.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 90,
   "chart_type": "pie",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Thành phần kinh tế",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Năm 2010",
+    "Năm 2016"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 2010",
+      "x": "Kinh tế Nhà nước",
+      "y": 31.8,
+      "y_raw": "31,8"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Kinh tế ngoài Nhà nước",
+      "y": 60.3,
+      "y_raw": "60,3"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Khu vực có vốn đầu tư nước ngoài",
+      "y": 7.9,
+      "y_raw": "7,9"
+    },
+    {
+      "series": "Năm 2016",
+      "x": "Kinh tế Nhà nước",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Năm 2016",
+      "x": "Kinh tế ngoài Nhà nước",
+      "y": 73.8,
+      "y_raw": "73,8"
+    },
+    {
+      "series": "Năm 2016",
+      "x": "Khu vực có vốn đầu tư nước ngoài",
+      "y": 11.2,
+      "y_raw": "11,2"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề",
+  "imported_at": "2026-11-20"
 }

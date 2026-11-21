@@ -1,7 +1,6 @@
 {
   "id": "combo_003",
   "image": "images/combo_003.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,80 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_3.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 101,
   "chart_type": "combo",
-  "title": "",
+  "title": "Sản lượng than và sản lượng điện của Mi-an-ma, giai đoạn 2010 - 2015",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn tấn"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Than",
+    "Điện"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Than",
+      "x": "2010",
+      "y": 240.0,
+      "y_raw": "240"
+    },
+    {
+      "series": "Than",
+      "x": "2012",
+      "y": 471.0,
+      "y_raw": "471"
+    },
+    {
+      "series": "Than",
+      "x": "2013",
+      "y": 380.0,
+      "y_raw": "380"
+    },
+    {
+      "series": "Than",
+      "x": "2015",
+      "y": 420.0,
+      "y_raw": "420"
+    },
+    {
+      "series": "Điện",
+      "x": "2010",
+      "y": 8.6,
+      "y_raw": "8,6"
+    },
+    {
+      "series": "Điện",
+      "x": "2012",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "Điện",
+      "x": "2013",
+      "y": 12.2,
+      "y_raw": "12,2"
+    },
+    {
+      "series": "Điện",
+      "x": "2015",
+      "y": 16.0,
+      "y_raw": "16"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Điện theo trục phải (Tỉ kWh)",
+  "y2_axis": {
+    "label": null,
+    "unit": "Tỉ kWh"
+  },
+  "imported_at": "2026-11-20"
 }

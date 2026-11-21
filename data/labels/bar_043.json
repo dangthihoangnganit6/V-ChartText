@@ -1,7 +1,6 @@
 {
   "id": "bar_043",
   "image": "images/bar_043.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,7 +9,10 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_43.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 186,
   "chart_type": "bar",
   "title": "",
   "x_axis": {
@@ -19,10 +21,137 @@
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỷ USD"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "2021",
+    "2022"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "2021",
+      "x": "Điện thoại các loại & linh kiện",
+      "y": 57.53,
+      "y_raw": "57,53"
+    },
+    {
+      "series": "2021",
+      "x": "Máy vi tính sản phẩm điện tử & linh kiện",
+      "y": 50.8,
+      "y_raw": "50,8"
+    },
+    {
+      "series": "2021",
+      "x": "Máy móc thiết bị dụng cụ phụ tùng khác",
+      "y": 38.33,
+      "y_raw": "38,33"
+    },
+    {
+      "series": "2021",
+      "x": "Hàng dệt, may",
+      "y": 32.75,
+      "y_raw": "32,75"
+    },
+    {
+      "series": "2021",
+      "x": "Giày dép các loại",
+      "y": 17.75,
+      "y_raw": "17,75"
+    },
+    {
+      "series": "2021",
+      "x": "Gỗ và sản phẩm gỗ",
+      "y": 14.81,
+      "y_raw": "14,81"
+    },
+    {
+      "series": "2021",
+      "x": "Phương tiện vận tải và phụ tùng",
+      "y": 10.62,
+      "y_raw": "10,62"
+    },
+    {
+      "series": "2021",
+      "x": "Hàng thuỷ sản",
+      "y": 8.88,
+      "y_raw": "8,88"
+    },
+    {
+      "series": "2021",
+      "x": "Sắt thép các loại",
+      "y": 11.79,
+      "y_raw": "11,79"
+    },
+    {
+      "series": "2021",
+      "x": "Máy ảnh máy quay phim và linh kiện",
+      "y": 5.22,
+      "y_raw": "5,22"
+    },
+    {
+      "series": "2022",
+      "x": "Điện thoại các loại & linh kiện",
+      "y": 57.99,
+      "y_raw": "57,99"
+    },
+    {
+      "series": "2022",
+      "x": "Máy vi tính sản phẩm điện tử & linh kiện",
+      "y": 55.54,
+      "y_raw": "55,54"
+    },
+    {
+      "series": "2022",
+      "x": "Máy móc thiết bị dụng cụ phụ tùng khác",
+      "y": 45.75,
+      "y_raw": "45,75"
+    },
+    {
+      "series": "2022",
+      "x": "Hàng dệt, may",
+      "y": 37.57,
+      "y_raw": "37,57"
+    },
+    {
+      "series": "2022",
+      "x": "Giày dép các loại",
+      "y": 23.9,
+      "y_raw": "23,9"
+    },
+    {
+      "series": "2022",
+      "x": "Gỗ và sản phẩm gỗ",
+      "y": 16.01,
+      "y_raw": "16,01"
+    },
+    {
+      "series": "2022",
+      "x": "Phương tiện vận tải và phụ tùng",
+      "y": 11.99,
+      "y_raw": "11,99"
+    },
+    {
+      "series": "2022",
+      "x": "Hàng thuỷ sản",
+      "y": 10.92,
+      "y_raw": "10,92"
+    },
+    {
+      "series": "2022",
+      "x": "Sắt thép các loại",
+      "y": 7.99,
+      "y_raw": "7,99"
+    },
+    {
+      "series": "2022",
+      "x": "Máy ảnh máy quay phim và linh kiện",
+      "y": 6.37,
+      "y_raw": "6,37"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "pie_038",
   "image": "images/pie_038.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,7 +9,10 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_38.jpg"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 94,
   "chart_type": "pie",
   "title": "",
   "x_axis": {
@@ -19,10 +21,107 @@
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Năm 2011",
+    "Năm 2012",
+    "Năm 2013"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 2011",
+      "x": "Lát 1 (xanh dương)",
+      "y": 59.0,
+      "y_raw": "59"
+    },
+    {
+      "series": "Năm 2011",
+      "x": "Lát 2 (đỏ)",
+      "y": 21.0,
+      "y_raw": "21"
+    },
+    {
+      "series": "Năm 2011",
+      "x": "Lát 3 (xanh lá)",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Năm 2011",
+      "x": "Lát 4 (tím)",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Năm 2011",
+      "x": "Lát 5 (xanh ngọc)",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Năm 2012",
+      "x": "Lát 1 (xanh dương)",
+      "y": 49.0,
+      "y_raw": "49"
+    },
+    {
+      "series": "Năm 2012",
+      "x": "Lát 2 (đỏ)",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Năm 2012",
+      "x": "Lát 3 (xanh lá)",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Năm 2012",
+      "x": "Lát 4 (tím)",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Năm 2012",
+      "x": "Lát 5 (xanh ngọc)",
+      "y": 6.0,
+      "y_raw": "6"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Lát 1 (xanh dương)",
+      "y": 38.0,
+      "y_raw": "38"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Lát 2 (đỏ)",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Lát 3 (xanh lá)",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Lát 4 (tím)",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Lát 5 (xanh ngọc)",
+      "y": 8.0,
+      "y_raw": "8"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề và chú giải: tên lát chỉ là mô tả màu",
+  "imported_at": "2026-11-20"
 }

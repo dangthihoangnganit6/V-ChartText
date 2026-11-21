@@ -1,7 +1,6 @@
 {
   "id": "combo_021",
   "image": "images/combo_021.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,80 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_21.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 119,
   "chart_type": "combo",
-  "title": "",
+  "title": "Diện tích gieo trồng và sản lượng lúa của nước ta giai đoạn 2005 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn ha"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Diện tích gieo trồng",
+    "Sản lượng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2005",
+      "y": 7329.9,
+      "y_raw": "7329,9"
+    },
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2010",
+      "y": 7489.4,
+      "y_raw": "7489,4"
+    },
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2015",
+      "y": 7828.0,
+      "y_raw": "7828"
+    },
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2021",
+      "y": 7238.9,
+      "y_raw": "7238,9"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2005",
+      "y": 35.8,
+      "y_raw": "35,8"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2010",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2015",
+      "y": 45.1,
+      "y_raw": "45,1"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2021",
+      "y": 43.9,
+      "y_raw": "43,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Sản lượng theo trục phải (Triệu tấn)",
+  "y2_axis": {
+    "label": null,
+    "unit": "Triệu tấn"
+  },
+  "imported_at": "2026-11-20"
 }

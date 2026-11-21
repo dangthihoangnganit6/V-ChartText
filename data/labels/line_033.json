@@ -1,7 +1,6 @@
 {
   "id": "line_033",
   "image": "images/line_033.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,120 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_33.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 36,
   "chart_type": "line",
-  "title": "",
+  "title": "Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta gia đoạn 2010 - 2016",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn ha"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cà phê",
+    "Cao su",
+    "Điều"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cà phê",
+      "x": "2010",
+      "y": 518.2,
+      "y_raw": "518,2"
+    },
+    {
+      "series": "Cà phê",
+      "x": "2013",
+      "y": 581.3,
+      "y_raw": "581,3"
+    },
+    {
+      "series": "Cà phê",
+      "x": "2014",
+      "y": 588.8,
+      "y_raw": "588,8"
+    },
+    {
+      "series": "Cà phê",
+      "x": "2015",
+      "y": 604.3,
+      "y_raw": "604,3"
+    },
+    {
+      "series": "Cà phê",
+      "x": "2016",
+      "y": 622.2,
+      "y_raw": "622,2"
+    },
+    {
+      "series": "Cao su",
+      "x": "2010",
+      "y": 429.1,
+      "y_raw": "429,1"
+    },
+    {
+      "series": "Cao su",
+      "x": "2013",
+      "y": 548.8,
+      "y_raw": "548,8"
+    },
+    {
+      "series": "Cao su",
+      "x": "2014",
+      "y": 570.0,
+      "y_raw": "570"
+    },
+    {
+      "series": "Cao su",
+      "x": "2015",
+      "y": 593.8,
+      "y_raw": "593,8"
+    },
+    {
+      "series": "Cao su",
+      "x": "2016",
+      "y": 600.1,
+      "y_raw": "600,1"
+    },
+    {
+      "series": "Điều",
+      "x": "2010",
+      "y": 339.8,
+      "y_raw": "339,8"
+    },
+    {
+      "series": "Điều",
+      "x": "2013",
+      "y": 300.9,
+      "y_raw": "300,9"
+    },
+    {
+      "series": "Điều",
+      "x": "2014",
+      "y": 285.8,
+      "y_raw": "285,8"
+    },
+    {
+      "series": "Điều",
+      "x": "2015",
+      "y": 280.3,
+      "y_raw": "280,3"
+    },
+    {
+      "series": "Điều",
+      "x": "2016",
+      "y": 288.3,
+      "y_raw": "288,3"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "duplicate_of": "line_028",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "bar_067",
   "image": "images/bar_067.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,7 +9,10 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_66.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 209,
   "chart_type": "bar",
   "title": "",
   "x_axis": {
@@ -19,10 +21,68 @@
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "USD/người"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "USD/người",
+      "x": "Bru-nây",
+      "y": 12300.0,
+      "y_raw": "12300"
+    },
+    {
+      "series": "USD/người",
+      "x": "Cam-pu-chia",
+      "y": 280.0,
+      "y_raw": "280"
+    },
+    {
+      "series": "USD/người",
+      "x": "In-đô-nê-xi-a",
+      "y": 680.0,
+      "y_raw": "680"
+    },
+    {
+      "series": "USD/người",
+      "x": "Lào",
+      "y": 317.0,
+      "y_raw": "317"
+    },
+    {
+      "series": "USD/người",
+      "x": "Ma-lai-xi-a",
+      "y": 3680.0,
+      "y_raw": "3680"
+    },
+    {
+      "series": "USD/người",
+      "x": "Phi-lip-pin",
+      "y": 930.0,
+      "y_raw": "930"
+    },
+    {
+      "series": "USD/người",
+      "x": "Thái Lan",
+      "y": 1870.0,
+      "y_raw": "1870"
+    },
+    {
+      "series": "USD/người",
+      "x": "Việt Nam",
+      "y": 415.0,
+      "y_raw": "415"
+    },
+    {
+      "series": "USD/người",
+      "x": "Xin-ga-po",
+      "y": 20740.0,
+      "y_raw": "20740"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

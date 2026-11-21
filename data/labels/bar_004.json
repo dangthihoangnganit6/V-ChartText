@@ -1,7 +1,6 @@
 {
   "id": "bar_004",
   "image": "images/bar_004.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,65 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_4.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 147,
   "chart_type": "bar",
-  "title": "",
+  "title": "Sản lượng thủy sản Liên bang Nga giai đoạn 2000 - 2020",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn tấn"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Sản lượng thủy sản khai thác",
+    "Sản lượng thuỷ sản nuôi trồng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Sản lượng thủy sản khai thác",
+      "x": "2000",
+      "y": 4027.4,
+      "y_raw": "4027,4"
+    },
+    {
+      "series": "Sản lượng thủy sản khai thác",
+      "x": "2010",
+      "y": 4075.8,
+      "y_raw": "4075,8"
+    },
+    {
+      "series": "Sản lượng thủy sản khai thác",
+      "x": "2020",
+      "y": 5081.0,
+      "y_raw": "5081,0"
+    },
+    {
+      "series": "Sản lượng thuỷ sản nuôi trồng",
+      "x": "2000",
+      "y": 77.1,
+      "y_raw": "77,1"
+    },
+    {
+      "series": "Sản lượng thuỷ sản nuôi trồng",
+      "x": "2010",
+      "y": 121.0,
+      "y_raw": "121,0"
+    },
+    {
+      "series": "Sản lượng thuỷ sản nuôi trồng",
+      "x": "2020",
+      "y": 219.2,
+      "y_raw": "219,2"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

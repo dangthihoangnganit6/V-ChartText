@@ -1,7 +1,6 @@
 {
   "id": "pie_017",
   "image": "images/pie_017.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,55 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_17.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 73,
   "chart_type": "pie",
-  "title": "",
+  "title": "Biểu đồ thể hiện tỷ trọng xuất khẩu của EU và các trung tâm kinh tế với so với thế giới năm 2020",
   "x_axis": {
-    "label": null,
+    "label": "Khu vực",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ trọng xuất khẩu",
+      "x": "EU",
+      "y": 31.0,
+      "y_raw": "31"
+    },
+    {
+      "series": "Tỷ trọng xuất khẩu",
+      "x": "Hoa Kỳ",
+      "y": 9.2,
+      "y_raw": "9,2"
+    },
+    {
+      "series": "Tỷ trọng xuất khẩu",
+      "x": "Nhật Bản",
+      "y": 3.3,
+      "y_raw": "3,3"
+    },
+    {
+      "series": "Tỷ trọng xuất khẩu",
+      "x": "Trung Quốc",
+      "y": 12.7,
+      "y_raw": "12,7"
+    },
+    {
+      "series": "Tỷ trọng xuất khẩu",
+      "x": "Các nước khác",
+      "y": 43.8,
+      "y_raw": "43,8"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

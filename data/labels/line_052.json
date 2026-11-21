@@ -1,7 +1,6 @@
 {
   "id": "line_052",
   "image": "images/line_052.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,137 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_52.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 51,
   "chart_type": "line",
-  "title": "",
+  "title": "Số lượng liên hệ trực tiếp, qua thư/email và qua điện thoại theo tháng",
   "x_axis": {
-    "label": null,
+    "label": "Tháng",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Số lượng"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Qua điện thoại",
+    "Qua thư/email",
+    "Trực tiếp"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Qua điện thoại",
+      "x": "Tháng 1",
+      "y": 1000.0,
+      "y_raw": "1000"
+    },
+    {
+      "series": "Qua điện thoại",
+      "x": "Tháng 2",
+      "y": 900.0,
+      "y_raw": "900"
+    },
+    {
+      "series": "Qua điện thoại",
+      "x": "Tháng 3",
+      "y": 1100.0,
+      "y_raw": "1100"
+    },
+    {
+      "series": "Qua điện thoại",
+      "x": "Tháng 4",
+      "y": 1050.0,
+      "y_raw": "1050"
+    },
+    {
+      "series": "Qua điện thoại",
+      "x": "Tháng 5",
+      "y": 1425.0,
+      "y_raw": "1425"
+    },
+    {
+      "series": "Qua điện thoại",
+      "x": "Tháng 6",
+      "y": 1625.0,
+      "y_raw": "1625"
+    },
+    {
+      "series": "Qua thư/email",
+      "x": "Tháng 1",
+      "y": 800.0,
+      "y_raw": "800"
+    },
+    {
+      "series": "Qua thư/email",
+      "x": "Tháng 2",
+      "y": 800.0,
+      "y_raw": "800"
+    },
+    {
+      "series": "Qua thư/email",
+      "x": "Tháng 3",
+      "y": 795.0,
+      "y_raw": "795"
+    },
+    {
+      "series": "Qua thư/email",
+      "x": "Tháng 4",
+      "y": 595.0,
+      "y_raw": "595"
+    },
+    {
+      "series": "Qua thư/email",
+      "x": "Tháng 5",
+      "y": 395.0,
+      "y_raw": "395"
+    },
+    {
+      "series": "Qua thư/email",
+      "x": "Tháng 6",
+      "y": 385.0,
+      "y_raw": "385"
+    },
+    {
+      "series": "Trực tiếp",
+      "x": "Tháng 1",
+      "y": 450.0,
+      "y_raw": "450"
+    },
+    {
+      "series": "Trực tiếp",
+      "x": "Tháng 2",
+      "y": 650.0,
+      "y_raw": "650"
+    },
+    {
+      "series": "Trực tiếp",
+      "x": "Tháng 3",
+      "y": 850.0,
+      "y_raw": "850"
+    },
+    {
+      "series": "Trực tiếp",
+      "x": "Tháng 4",
+      "y": 1400.0,
+      "y_raw": "1400"
+    },
+    {
+      "series": "Trực tiếp",
+      "x": "Tháng 5",
+      "y": 1750.0,
+      "y_raw": "1750"
+    },
+    {
+      "series": "Trực tiếp",
+      "x": "Tháng 6",
+      "y": 1950.0,
+      "y_raw": "1950"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

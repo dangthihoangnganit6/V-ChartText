@@ -1,7 +1,6 @@
 {
   "id": "line_019",
   "image": "images/line_019.webp",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -11,18 +10,24 @@
   },
   "annotator": "nhi",
   "subject": null,
+  "status": "excluded",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 22,
   "chart_type": "line",
-  "title": "",
+  "title": "Lãi suất điều hành của Mỹ, Việt Nam, Indonesia, Thái Lan và Philippines",
   "x_axis": {
-    "label": null,
+    "label": "Thời điểm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "DXY"
   },
   "legend": [],
-  "values_shown_on_chart": null,
+  "values_shown_on_chart": true,
   "data": [],
-  "notes": ""
+  "reviewer": "Nhi",
+  "notes": "LOẠI KHỎI BENCHMARK: không ghi số, chỉ ước lượng",
+  "exclude_reason": "LOẠI KHỎI BENCHMARK: không ghi số, chỉ ước lượng",
+  "imported_at": "2026-11-20"
 }

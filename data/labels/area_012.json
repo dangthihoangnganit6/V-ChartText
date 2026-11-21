@@ -1,7 +1,6 @@
 {
   "id": "area_012",
   "image": "images/area_012.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,137 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_12.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 131,
   "chart_type": "area",
-  "title": "",
+  "title": "Biểu đồ miền tổng sản phẩm trong nước phân theo nhóm ngành kinh tế Việt Nam giai đoạn 1985 - 2001",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Nông, lâm, ngư nghiệp",
+    "Công nghiệp - xây dựng",
+    "Dịch vụ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nông, lâm, ngư nghiệp",
+      "x": "1985",
+      "y": 40.2,
+      "y_raw": "40,2"
+    },
+    {
+      "series": "Nông, lâm, ngư nghiệp",
+      "x": "1991",
+      "y": 40.5,
+      "y_raw": "40,5"
+    },
+    {
+      "series": "Nông, lâm, ngư nghiệp",
+      "x": "1995",
+      "y": 28.9,
+      "y_raw": "28,9"
+    },
+    {
+      "series": "Nông, lâm, ngư nghiệp",
+      "x": "1997",
+      "y": 28.4,
+      "y_raw": "28,4"
+    },
+    {
+      "series": "Nông, lâm, ngư nghiệp",
+      "x": "1999",
+      "y": 26.2,
+      "y_raw": "26,2"
+    },
+    {
+      "series": "Nông, lâm, ngư nghiệp",
+      "x": "2001",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1985",
+      "y": 27.3,
+      "y_raw": "27,3"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1991",
+      "y": 23.8,
+      "y_raw": "23,8"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1995",
+      "y": 29.9,
+      "y_raw": "29,9"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1997",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1999",
+      "y": 31.2,
+      "y_raw": "31,2"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2001",
+      "y": 30.3,
+      "y_raw": "30,3"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1985",
+      "y": 32.5,
+      "y_raw": "32,5"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1991",
+      "y": 35.7,
+      "y_raw": "35,7"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1995",
+      "y": 41.2,
+      "y_raw": "41,2"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1997",
+      "y": 42.1,
+      "y_raw": "42,1"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1999",
+      "y": 42.6,
+      "y_raw": "42,6"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2001",
+      "y": 43.7,
+      "y_raw": "43,7"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

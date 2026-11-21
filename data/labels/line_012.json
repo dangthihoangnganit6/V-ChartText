@@ -1,7 +1,6 @@
 {
   "id": "line_012",
   "image": "images/line_012.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,91 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_12.jpg"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 15,
   "chart_type": "line",
-  "title": "",
+  "title": "Tăng trưởng GDP 10 năm gần đây (2009-2019)",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "GDP",
+      "x": "2009",
+      "y": 5.32,
+      "y_raw": "5,32"
+    },
+    {
+      "series": "GDP",
+      "x": "2010",
+      "y": 6.78,
+      "y_raw": "6,78"
+    },
+    {
+      "series": "GDP",
+      "x": "2011",
+      "y": 6.24,
+      "y_raw": "6,24"
+    },
+    {
+      "series": "GDP",
+      "x": "2012",
+      "y": 5.25,
+      "y_raw": "5,25"
+    },
+    {
+      "series": "GDP",
+      "x": "2013",
+      "y": 5.42,
+      "y_raw": "5,42"
+    },
+    {
+      "series": "GDP",
+      "x": "2014",
+      "y": 5.98,
+      "y_raw": "5,98"
+    },
+    {
+      "series": "GDP",
+      "x": "2015",
+      "y": 6.68,
+      "y_raw": "6,68"
+    },
+    {
+      "series": "GDP",
+      "x": "2016",
+      "y": 6.21,
+      "y_raw": "6,21"
+    },
+    {
+      "series": "GDP",
+      "x": "2017",
+      "y": 6.81,
+      "y_raw": "6,81"
+    },
+    {
+      "series": "GDP",
+      "x": "2018",
+      "y": 7.08,
+      "y_raw": "7,08"
+    },
+    {
+      "series": "GDP",
+      "x": "2019",
+      "y": 7.02,
+      "y_raw": "7,02"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

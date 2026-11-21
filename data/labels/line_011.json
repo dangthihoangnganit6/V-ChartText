@@ -1,7 +1,6 @@
 {
   "id": "line_011",
   "image": "images/line_011.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -11,18 +10,24 @@
   },
   "annotator": "nhi",
   "subject": null,
+  "status": "excluded",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 14,
   "chart_type": "line",
-  "title": "",
+  "title": "Biểu đồ thể hiện tình hình sản xuất của than, dầu, điện thế giới giai đoạn 1950-2003",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
+  "values_shown_on_chart": true,
   "data": [],
-  "notes": ""
+  "reviewer": "Nhi",
+  "notes": "LOẠI KHỎI BENCHMARK: không có giá trị (Đồ thị lỗi)",
+  "exclude_reason": "LOẠI KHỎI BENCHMARK: không có giá trị (Đồ thị lỗi)",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "bar_073",
   "image": "images/bar_073.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,56 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_72.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 215,
   "chart_type": "bar",
-  "title": "",
+  "title": "Sản lượng điện của TQ qua các năm",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỷ kWh"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Sản lượng điện",
+      "x": "2001",
+      "y": 1500.0,
+      "y_raw": "1500"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2002",
+      "y": 1700.0,
+      "y_raw": "1700"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2003",
+      "y": 1900.0,
+      "y_raw": "1900"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2004",
+      "y": 2100.0,
+      "y_raw": "2100"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2005",
+      "y": 2300.0,
+      "y_raw": "2300"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "pie_016",
   "image": "images/pie_016.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,64 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_16.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 72,
   "chart_type": "pie",
-  "title": "",
+  "title": "Cơ cấu diện tích lúa cà năm phân theo mùa vụ nước ta, năm 2010 và 2016",
   "x_axis": {
-    "label": null,
+    "label": "Mùa vụ",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Cơ cấu năm 2010",
+    "Cơ cấu năm 2016"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Lúa đồng Xuân",
+      "y": 41.2,
+      "y_raw": "41,2"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Lúa hè Thu",
+      "y": 32.5,
+      "y_raw": "32,5"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Lúa Mùa",
+      "y": 26.3,
+      "y_raw": "26,3"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Lúa đồng Xuân",
+      "y": 39.6,
+      "y_raw": "39,6"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Lúa hè Thu",
+      "y": 36.0,
+      "y_raw": "36"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Lúa Mùa",
+      "y": 24.4,
+      "y_raw": "24,4"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "pie_023",
   "image": "images/pie_023.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,64 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_23.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 79,
   "chart_type": "pie",
-  "title": "",
+  "title": "Biểu đồ thể hiện sản lượng lúa, cà phê của khu vực Đông Nam Á và của châu Á so với thế giới năm 2000",
   "x_axis": {
-    "label": null,
+    "label": "Khu vực",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Lúa",
+    "Cà phê"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Lúa",
+      "x": "Đông Nam Á",
+      "y": 26.2,
+      "y_raw": "26,2"
+    },
+    {
+      "series": "Lúa",
+      "x": "Châu Á",
+      "y": 71.3,
+      "y_raw": "71,3"
+    },
+    {
+      "series": "Lúa",
+      "x": "Vùng khác",
+      "y": 2.5,
+      "y_raw": "2,5"
+    },
+    {
+      "series": "Cà phê",
+      "x": "Đông Nam Á",
+      "y": 19.2,
+      "y_raw": "19,2"
+    },
+    {
+      "series": "Cà phê",
+      "x": "Châu Á",
+      "y": 24.7,
+      "y_raw": "24,7"
+    },
+    {
+      "series": "Cà phê",
+      "x": "Vùng khác",
+      "y": 26.1,
+      "y_raw": "26,1"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Cà phê: 3 phần cộng lại chỉ 70%, giữ nguyên số trên ảnh",
+  "imported_at": "2026-11-20"
 }

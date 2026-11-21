@@ -1,7 +1,6 @@
 {
   "id": "line_002",
   "image": "images/line_002.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,67 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_2.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 5,
   "chart_type": "line",
-  "title": "",
+  "title": "Nhiệt độ Hà Nội trong một ngày mùa thu",
   "x_axis": {
-    "label": null,
+    "label": "Giờ",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nhiệt độ"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nhiệt độ",
+      "x": "8",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "10",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "12",
+      "y": 34.0,
+      "y_raw": "34"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "14",
+      "y": 32.0,
+      "y_raw": "32"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "16",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "18",
+      "y": 22.0,
+      "y_raw": "22"
+    },
+    {
+      "series": "Nhiệt độ",
+      "x": "20",
+      "y": 18.0,
+      "y_raw": "18"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

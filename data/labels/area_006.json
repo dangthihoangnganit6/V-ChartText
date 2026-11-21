@@ -1,7 +1,6 @@
 {
   "id": "area_006",
   "image": "images/area_006.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,76 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_6.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 125,
   "chart_type": "area",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "1985",
+      "y": 39.3,
+      "y_raw": "39,3"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "1995",
+      "y": 53.5,
+      "y_raw": "53,5"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2004",
+      "y": 51.4,
+      "y_raw": "51,4"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2012",
+      "y": 53.0,
+      "y_raw": "53"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "1985",
+      "y": 60.7,
+      "y_raw": "60,7"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "1995",
+      "y": 46.5,
+      "y_raw": "46,5"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2004",
+      "y": 48.6,
+      "y_raw": "48,6"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2012",
+      "y": 47.0,
+      "y_raw": "47"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

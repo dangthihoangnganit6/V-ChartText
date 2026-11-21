@@ -1,7 +1,6 @@
 {
   "id": "bar_058",
   "image": "images/bar_058.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,101 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_57.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 200,
   "chart_type": "bar",
-  "title": "",
+  "title": "Thu nhập bình quân đầu người/năm (đô la Mỹ)",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "đô la Mỹ"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Việt Nam",
+    "Singapore"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Việt Nam",
+      "x": "2015",
+      "y": 2097.0,
+      "y_raw": "2097"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2016",
+      "y": 2202.0,
+      "y_raw": "2202"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2017",
+      "y": 2373.0,
+      "y_raw": "2373"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2018",
+      "y": 2570.0,
+      "y_raw": "2570"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2019",
+      "y": 2714.0,
+      "y_raw": "2714"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2020",
+      "y": 2779.0,
+      "y_raw": "2779"
+    },
+    {
+      "series": "Singapore",
+      "x": "2015",
+      "y": 55647.0,
+      "y_raw": "55647"
+    },
+    {
+      "series": "Singapore",
+      "x": "2016",
+      "y": 56848.0,
+      "y_raw": "56848"
+    },
+    {
+      "series": "Singapore",
+      "x": "2017",
+      "y": 61176.0,
+      "y_raw": "61176"
+    },
+    {
+      "series": "Singapore",
+      "x": "2018",
+      "y": 66679.0,
+      "y_raw": "66679"
+    },
+    {
+      "series": "Singapore",
+      "x": "2019",
+      "y": 65233.0,
+      "y_raw": "65233"
+    },
+    {
+      "series": "Singapore",
+      "x": "2020",
+      "y": 59798.0,
+      "y_raw": "59798"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

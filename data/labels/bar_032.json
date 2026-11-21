@@ -1,7 +1,6 @@
 {
   "id": "bar_032",
   "image": "images/bar_032.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,89 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_32.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 175,
   "chart_type": "bar",
-  "title": "",
+  "title": "Số cuốn truyện cửa hàng bán ra trong tuần",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Số cuốn truyện"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Truyện tranh thiếu nhi",
+    "Truyện đọc thiếu nhi"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Truyện tranh thiếu nhi",
+      "x": "Thứ Hai",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Truyện tranh thiếu nhi",
+      "x": "Thứ Ba",
+      "y": 18.0,
+      "y_raw": "18"
+    },
+    {
+      "series": "Truyện tranh thiếu nhi",
+      "x": "Thứ Tư",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Truyện tranh thiếu nhi",
+      "x": "Thứ Năm",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Truyện tranh thiếu nhi",
+      "x": "Thứ Sáu",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Truyện đọc thiếu nhi",
+      "x": "Thứ Hai",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Truyện đọc thiếu nhi",
+      "x": "Thứ Ba",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Truyện đọc thiếu nhi",
+      "x": "Thứ Tư",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Truyện đọc thiếu nhi",
+      "x": "Thứ Năm",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Truyện đọc thiếu nhi",
+      "x": "Thứ Sáu",
+      "y": 15.0,
+      "y_raw": "15"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

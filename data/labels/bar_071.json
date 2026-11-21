@@ -1,7 +1,6 @@
 {
   "id": "bar_071",
   "image": "images/bar_071.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,79 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_70.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 213,
   "chart_type": "bar",
-  "title": "",
+  "title": "Cơ cấu giá trị sản xuất chăn nuôi năm 1990 và 2002",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Gia súc",
+    "Gia cầm",
+    "Sản phẩm trứng, sữa",
+    "Phụ phẩm chăn nuôi"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Gia súc",
+      "x": "1990",
+      "y": 63.9,
+      "y_raw": "63,9"
+    },
+    {
+      "series": "Gia súc",
+      "x": "2002",
+      "y": 62.8,
+      "y_raw": "62,8"
+    },
+    {
+      "series": "Gia cầm",
+      "x": "1990",
+      "y": 12.9,
+      "y_raw": "12,9"
+    },
+    {
+      "series": "Gia cầm",
+      "x": "2002",
+      "y": 17.5,
+      "y_raw": "17,5"
+    },
+    {
+      "series": "Sản phẩm trứng, sữa",
+      "x": "1990",
+      "y": 19.3,
+      "y_raw": "19,3"
+    },
+    {
+      "series": "Sản phẩm trứng, sữa",
+      "x": "2002",
+      "y": 17.3,
+      "y_raw": "17,3"
+    },
+    {
+      "series": "Phụ phẩm chăn nuôi",
+      "x": "1990",
+      "y": 3.9,
+      "y_raw": "3,9"
+    },
+    {
+      "series": "Phụ phẩm chăn nuôi",
+      "x": "2002",
+      "y": 2.4,
+      "y_raw": "2,4"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "stacked",
+  "imported_at": "2026-11-20"
 }

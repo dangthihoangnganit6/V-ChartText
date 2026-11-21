@@ -1,7 +1,6 @@
 {
   "id": "line_013",
   "image": "images/line_013.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,49 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_13.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 16,
   "chart_type": "line",
-  "title": "",
+  "title": "Diễn tích rừng tự nhiên của Việt Nam giai đoạn 2018 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Triệu ha"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diễn tích",
+      "x": "2018",
+      "y": 10.26,
+      "y_raw": "10,26"
+    },
+    {
+      "series": "Diễn tích",
+      "x": "2019",
+      "y": 10.29,
+      "y_raw": "10,29"
+    },
+    {
+      "series": "Diễn tích",
+      "x": "2020",
+      "y": 10.28,
+      "y_raw": "10,28"
+    },
+    {
+      "series": "Diễn tích",
+      "x": "2021",
+      "y": 10.17,
+      "y_raw": "10,17"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

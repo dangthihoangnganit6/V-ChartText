@@ -1,7 +1,6 @@
 {
   "id": "bar_052",
   "image": "images/bar_052.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,137 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_51.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 194,
   "chart_type": "bar",
-  "title": "",
+  "title": "Kim ngạch xuất khẩu 11 tháng qua các năm",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "tỷ USD"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "2013",
+      "y": 120.49,
+      "y_raw": "120,49"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2014",
+      "y": 137.36,
+      "y_raw": "137,36"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2015",
+      "y": 138.33,
+      "y_raw": "138,33"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2016",
+      "y": 160.03,
+      "y_raw": "160,03"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2017",
+      "y": 195.4,
+      "y_raw": "195,4"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2018",
+      "y": 223.9,
+      "y_raw": "223,9"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2019",
+      "y": 2141.74,
+      "y_raw": "2141,74"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2020",
+      "y": 254.98,
+      "y_raw": "254,98"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2021",
+      "y": 299.67,
+      "y_raw": "299,67"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2013",
+      "y": 119.9,
+      "y_raw": "119,9"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2014",
+      "y": 134.06,
+      "y_raw": "134,06"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2015",
+      "y": 151.33,
+      "y_raw": "151,33"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2016",
+      "y": 157.8,
+      "y_raw": "157,8"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2017",
+      "y": 192.88,
+      "y_raw": "192,88"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2018",
+      "y": 216.33,
+      "y_raw": "216,33"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2019",
+      "y": 230.98,
+      "y_raw": "230,98"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2020",
+      "y": 234.79,
+      "y_raw": "234,79"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2021",
+      "y": 299.45,
+      "y_raw": "299,45"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "Ảnh in 2141,74 ở năm 2019 (nhiều khả năng ảnh in sai, đúng là 241,74); nhãn giữ theo ảnh",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

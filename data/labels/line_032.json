@@ -1,7 +1,6 @@
 {
   "id": "line_032",
   "image": "images/line_032.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,76 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_32.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 35,
   "chart_type": "line",
-  "title": "",
+  "title": "Biểu đồ thể hiện tốc độ tăng trưởng sản lượng dầu mỏ và điện trên thế giới, giai đoạn 1990 - 2020",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Dầu mỏ",
+    "Điện"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Dầu mỏ",
+      "x": "1990",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "2000",
+      "y": 113.9,
+      "y_raw": "113,9"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "2010",
+      "y": 126.0,
+      "y_raw": "126"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "2020",
+      "y": 131.9,
+      "y_raw": "131,9"
+    },
+    {
+      "series": "Điện",
+      "x": "1990",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Điện",
+      "x": "2000",
+      "y": 127.1,
+      "y_raw": "127,1"
+    },
+    {
+      "series": "Điện",
+      "x": "2010",
+      "y": 177.2,
+      "y_raw": "177,2"
+    },
+    {
+      "series": "Điện",
+      "x": "2020",
+      "y": 217.5,
+      "y_raw": "217,5"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

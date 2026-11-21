@@ -1,7 +1,6 @@
 {
   "id": "bar_040",
   "image": "images/bar_040.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,89 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_40.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 183,
   "chart_type": "bar",
-  "title": "",
+  "title": "Giá trị xuất khẩu tôm, 2021-2025",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "tỷ USD"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Việt Nam",
+    "Ecuador"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Việt Nam",
+      "x": "2021",
+      "y": 3.9,
+      "y_raw": "3,9"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2022",
+      "y": 4.3,
+      "y_raw": "4,3"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2023",
+      "y": 3.45,
+      "y_raw": "3,45"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2024",
+      "y": 3.9,
+      "y_raw": "3,9"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2025",
+      "y": 4.6,
+      "y_raw": "4,6"
+    },
+    {
+      "series": "Ecuador",
+      "x": "2021",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Ecuador",
+      "x": "2022",
+      "y": 6.7,
+      "y_raw": "6,7"
+    },
+    {
+      "series": "Ecuador",
+      "x": "2023",
+      "y": 6.3,
+      "y_raw": "6,3"
+    },
+    {
+      "series": "Ecuador",
+      "x": "2024",
+      "y": 6.07,
+      "y_raw": "6,07"
+    },
+    {
+      "series": "Ecuador",
+      "x": "2025",
+      "y": 7.47,
+      "y_raw": "7,47"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

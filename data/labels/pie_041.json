@@ -1,7 +1,6 @@
 {
   "id": "pie_041",
   "image": "images/pie_041.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,100 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_41.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 95,
   "chart_type": "pie",
-  "title": "",
+  "title": "Cơ cấu tỷ lệ các loại thiết bị trong năm 2009 và 2019",
   "x_axis": {
-    "label": null,
+    "label": "Loại thiết bị",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Năm 2009",
+    "Năm 2019"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 2009",
+      "x": "Điện thoại di động",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Năm 2009",
+      "x": "Máy tính xách tay",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Năm 2009",
+      "x": "Máy tính bảng",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Năm 2009",
+      "x": "Máy tính để bàn",
+      "y": 18.0,
+      "y_raw": "18"
+    },
+    {
+      "series": "Năm 2009",
+      "x": "TV màn hình phẳng",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Năm 2009",
+      "x": "TV truyền thống",
+      "y": 34.0,
+      "y_raw": "34"
+    },
+    {
+      "series": "Năm 2019",
+      "x": "Điện thoại di động",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Năm 2019",
+      "x": "Máy tính xách tay",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Năm 2019",
+      "x": "Máy tính bảng",
+      "y": 19.0,
+      "y_raw": "19"
+    },
+    {
+      "series": "Năm 2019",
+      "x": "Máy tính để bàn",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Năm 2019",
+      "x": "TV màn hình phẳng",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Năm 2019",
+      "x": "TV truyền thống",
+      "y": 4.0,
+      "y_raw": "4"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

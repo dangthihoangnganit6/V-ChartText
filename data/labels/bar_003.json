@@ -1,7 +1,6 @@
 {
   "id": "bar_003",
   "image": "images/bar_003.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,56 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_3.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 146,
   "chart_type": "bar",
-  "title": "",
+  "title": "GDP của các nền kinh tế hàng đầu thế giới năm 2020",
   "x_axis": {
-    "label": null,
+    "label": "Nước",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỉ USD"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "GDP",
+      "x": "Hoa Kỳ",
+      "y": 20893.7,
+      "y_raw": "20893,7"
+    },
+    {
+      "series": "GDP",
+      "x": "Trung Quốc",
+      "y": 14687.7,
+      "y_raw": "14687,7"
+    },
+    {
+      "series": "GDP",
+      "x": "Nhật Bản",
+      "y": 5040.1,
+      "y_raw": "5040,1"
+    },
+    {
+      "series": "GDP",
+      "x": "Đức",
+      "y": 3846.4,
+      "y_raw": "3846,4"
+    },
+    {
+      "series": "GDP",
+      "x": "Anh",
+      "y": 2756.9,
+      "y_raw": "2756,9"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

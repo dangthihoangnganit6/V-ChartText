@@ -1,7 +1,6 @@
 {
   "id": "bar_025",
   "image": "images/bar_025.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,50 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_25.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 168,
   "chart_type": "bar",
-  "title": "",
+  "title": "Số học viên CLB Tiếng Nhật của trường THCS Đoàn Kết",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Học viên"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số học viên",
+      "x": "2017",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Số học viên",
+      "x": "2018",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Số học viên",
+      "x": "2019",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Số học viên",
+      "x": "2020",
+      "y": 60.0,
+      "y_raw": "60"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
 }

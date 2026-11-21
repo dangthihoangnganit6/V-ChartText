@@ -1,7 +1,6 @@
 {
   "id": "line_006",
   "image": "images/line_006.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,61 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_6.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 9,
   "chart_type": "line",
-  "title": "",
+  "title": "Các nhóm nghề có nhu cầu tìm việc cao trong năm 2020",
   "x_axis": {
-    "label": null,
+    "label": "Nhóm nghề",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỉ lệ",
+      "x": "Kinh doanh",
+      "y": 14.66,
+      "y_raw": "14,66"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Kế toán - Kiểm toán",
+      "y": 13.56,
+      "y_raw": "13,56"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Nhân sự",
+      "y": 8.34,
+      "y_raw": "8,34"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Công nghệ thông tin",
+      "y": 5.89,
+      "y_raw": "5,89"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Hành chính - Văn phòng - Biên phiên dịch",
+      "y": 11.32,
+      "y_raw": "11,32"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Marketing",
+      "y": 6.44,
+      "y_raw": "6,44"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

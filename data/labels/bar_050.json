@@ -1,7 +1,6 @@
 {
   "id": "bar_050",
   "image": "images/bar_050.webp",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,101 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_49.webp"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 192,
   "chart_type": "bar",
-  "title": "",
+  "title": "Tổng giá trị kim ngạch xuất nhập khẩu năm 2025 đạt khoảng 930 tỷ USD, tăng 18,2% so với cùng kỳ năm trước",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỷ USD"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "2020",
+      "y": 280.0,
+      "y_raw": "280"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2021",
+      "y": 335.0,
+      "y_raw": "335"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2022",
+      "y": 370.0,
+      "y_raw": "370"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2023",
+      "y": 355.0,
+      "y_raw": "355"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2024",
+      "y": 405.0,
+      "y_raw": "405"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2025",
+      "y": 475.0,
+      "y_raw": "475"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2020",
+      "y": 260.0,
+      "y_raw": "260"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2021",
+      "y": 332.0,
+      "y_raw": "332"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2022",
+      "y": 355.0,
+      "y_raw": "355"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2023",
+      "y": 325.0,
+      "y_raw": "325"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2024",
+      "y": 376.0,
+      "y_raw": "376"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2025",
+      "y": 455.0,
+      "y_raw": "455"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

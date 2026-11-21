@@ -1,7 +1,6 @@
 {
   "id": "pie_014",
   "image": "images/pie_014.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,43 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_14.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 70,
   "chart_type": "pie",
-  "title": "",
+  "title": "Biểu đồ thể hiện tỷ lệ GDP của Cam-Pu-Chia năm 2017",
   "x_axis": {
-    "label": null,
+    "label": "Khu vực",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ GDP",
+      "x": "Khu vực I",
+      "y": 24.9,
+      "y_raw": "24,9"
+    },
+    {
+      "series": "Tỷ lệ GDP",
+      "x": "Khu vực II",
+      "y": 32.9,
+      "y_raw": "32,9"
+    },
+    {
+      "series": "Tỷ lệ GDP",
+      "x": "Khu vực III",
+      "y": 42.2,
+      "y_raw": "42,2"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

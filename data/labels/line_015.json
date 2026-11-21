@@ -1,7 +1,6 @@
 {
   "id": "line_015",
   "image": "images/line_015.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,67 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_15.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 18,
   "chart_type": "line",
-  "title": "",
+  "title": "Tỉ lệ phần trăm dòng góp của Việt Nam vào tổng thu nhập của thế giới",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỉ lệ đóng góp",
+      "x": "2012",
+      "y": 0.26,
+      "y_raw": "0,26"
+    },
+    {
+      "series": "Tỉ lệ đóng góp",
+      "x": "2013",
+      "y": 0.28,
+      "y_raw": "0,28"
+    },
+    {
+      "series": "Tỉ lệ đóng góp",
+      "x": "2014",
+      "y": 0.3,
+      "y_raw": "0,3"
+    },
+    {
+      "series": "Tỉ lệ đóng góp",
+      "x": "2015",
+      "y": 0.32,
+      "y_raw": "0,32"
+    },
+    {
+      "series": "Tỉ lệ đóng góp",
+      "x": "2016",
+      "y": 0.34,
+      "y_raw": "0,34"
+    },
+    {
+      "series": "Tỉ lệ đóng góp",
+      "x": "2017",
+      "y": 0.35,
+      "y_raw": "0,35"
+    },
+    {
+      "series": "Tỉ lệ đóng góp",
+      "x": "2018",
+      "y": 0.36,
+      "y_raw": "0,36"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

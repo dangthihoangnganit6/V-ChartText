@@ -1,7 +1,6 @@
 {
   "id": "bar_051",
   "image": "images/bar_051.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,7 +9,10 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_50.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 193,
   "chart_type": "bar",
   "title": "",
   "x_axis": {
@@ -21,8 +23,99 @@
     "label": null,
     "unit": null
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Khách du lịch nội địa",
+    "Khách quốc tế đến Việt Nam"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2011",
+      "y": 30000.0,
+      "y_raw": "30000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2012",
+      "y": 32000.0,
+      "y_raw": "32000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2013",
+      "y": 35000.0,
+      "y_raw": "35000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2014",
+      "y": 38000.0,
+      "y_raw": "38000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2015",
+      "y": 58000.0,
+      "y_raw": "58000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2016",
+      "y": 62000.0,
+      "y_raw": "62000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2017",
+      "y": 74000.0,
+      "y_raw": "74000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2011",
+      "y": 6000.0,
+      "y_raw": "6000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2012",
+      "y": 6500.0,
+      "y_raw": "6500"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2013",
+      "y": 7000.0,
+      "y_raw": "7000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2014",
+      "y": 7500.0,
+      "y_raw": "7500"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2015",
+      "y": 7500.0,
+      "y_raw": "7500"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2016",
+      "y": 10000.0,
+      "y_raw": "10000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2017",
+      "y": 13000.0,
+      "y_raw": "13000"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

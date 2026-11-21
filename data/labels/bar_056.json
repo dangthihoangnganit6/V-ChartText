@@ -1,7 +1,6 @@
 {
   "id": "bar_056",
   "image": "images/bar_056.webp",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,149 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_55.webp"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 198,
   "chart_type": "bar",
-  "title": "",
+  "title": "Top 10 Địa phương có giá trị xuất khẩu hàng hóa cao nhất cả nước năm 2021",
   "x_axis": {
     "label": null,
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Tỷ USD"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "2020",
+    "2021"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "2020",
+      "x": "TP Hồ Chí Minh",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "2020",
+      "x": "Bắc Ninh",
+      "y": 39.0,
+      "y_raw": "39"
+    },
+    {
+      "series": "2020",
+      "x": "Bình Dương",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "2020",
+      "x": "Thái Nguyên",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "2020",
+      "x": "Hải Phòng",
+      "y": 17.0,
+      "y_raw": "17"
+    },
+    {
+      "series": "2020",
+      "x": "Đồng Nai",
+      "y": 17.0,
+      "y_raw": "17"
+    },
+    {
+      "series": "2020",
+      "x": "Bắc Giang",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "2020",
+      "x": "Hà Nội",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "2020",
+      "x": "Hải Dương",
+      "y": 7.0,
+      "y_raw": "7"
+    },
+    {
+      "series": "2020",
+      "x": "Phú Thọ",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "2021",
+      "x": "TP Hồ Chí Minh",
+      "y": 45.0,
+      "y_raw": "45"
+    },
+    {
+      "series": "2021",
+      "x": "Bắc Ninh",
+      "y": 45.0,
+      "y_raw": "45"
+    },
+    {
+      "series": "2021",
+      "x": "Bình Dương",
+      "y": 33.0,
+      "y_raw": "33"
+    },
+    {
+      "series": "2021",
+      "x": "Thái Nguyên",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "2021",
+      "x": "Hải Phòng",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "2021",
+      "x": "Đồng Nai",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "2021",
+      "x": "Bắc Giang",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "2021",
+      "x": "Hà Nội",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "2021",
+      "x": "Hải Dương",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "2021",
+      "x": "Phú Thọ",
+      "y": 7.0,
+      "y_raw": "7"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

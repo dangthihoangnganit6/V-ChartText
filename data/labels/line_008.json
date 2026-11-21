@@ -1,7 +1,6 @@
 {
   "id": "line_008",
   "image": "images/line_008.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,151 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_8.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 11,
   "chart_type": "line",
-  "title": "",
+  "title": "Biểu đồ thể hiện chỉ số phát triển công nghiệp của nước ta giai đoạn 2018 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Đơn vị đo"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Công nghiệp khai khoáng",
+    "Công nghiệp chế biến, chế tạo",
+    "Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",
+    "Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",
+    "Toàn ngành"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Công nghiệp khai khoáng",
+      "x": "2018",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Công nghiệp khai khoáng",
+      "x": "2019",
+      "y": 103.2,
+      "y_raw": "103,2"
+    },
+    {
+      "series": "Công nghiệp khai khoáng",
+      "x": "2020",
+      "y": 94.6,
+      "y_raw": "94,6"
+    },
+    {
+      "series": "Công nghiệp khai khoáng",
+      "x": "2021",
+      "y": 96.4,
+      "y_raw": "96,4"
+    },
+    {
+      "series": "Công nghiệp chế biến, chế tạo",
+      "x": "2018",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Công nghiệp chế biến, chế tạo",
+      "x": "2019",
+      "y": 98.4,
+      "y_raw": "98,4"
+    },
+    {
+      "series": "Công nghiệp chế biến, chế tạo",
+      "x": "2020",
+      "y": 93.4,
+      "y_raw": "93,4"
+    },
+    {
+      "series": "Công nghiệp chế biến, chế tạo",
+      "x": "2021",
+      "y": 94.4,
+      "y_raw": "94,4"
+    },
+    {
+      "series": "Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",
+      "x": "2018",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",
+      "x": "2019",
+      "y": 98.6,
+      "y_raw": "98,6"
+    },
+    {
+      "series": "Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",
+      "x": "2020",
+      "y": 93.7,
+      "y_raw": "93,7"
+    },
+    {
+      "series": "Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",
+      "x": "2021",
+      "y": 95.0,
+      "y_raw": "95"
+    },
+    {
+      "series": "Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",
+      "x": "2018",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",
+      "x": "2019",
+      "y": 99.7,
+      "y_raw": "99,7"
+    },
+    {
+      "series": "Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",
+      "x": "2020",
+      "y": 97.9,
+      "y_raw": "97,9"
+    },
+    {
+      "series": "Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",
+      "x": "2021",
+      "y": 96.8,
+      "y_raw": "96,8"
+    },
+    {
+      "series": "Toàn ngành",
+      "x": "2018",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Toàn ngành",
+      "x": "2019",
+      "y": 99.1,
+      "y_raw": "99,1"
+    },
+    {
+      "series": "Toàn ngành",
+      "x": "2020",
+      "y": 93.8,
+      "y_raw": "93,8"
+    },
+    {
+      "series": "Toàn ngành",
+      "x": "2021",
+      "y": 95.1,
+      "y_raw": "95,1"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

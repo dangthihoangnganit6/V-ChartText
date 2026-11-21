@@ -1,7 +1,6 @@
 {
   "id": "line_048",
   "image": "images/line_048.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -11,18 +10,24 @@
   },
   "annotator": "nhi",
   "subject": null,
+  "status": "excluded",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 47,
   "chart_type": "line",
-  "title": "",
+  "title": "Thu nhập của bàn quán cà phê tại New York trong năm qua",
   "x_axis": {
-    "label": null,
+    "label": "Tháng",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "nghìn USD"
   },
   "legend": [],
-  "values_shown_on_chart": null,
+  "values_shown_on_chart": true,
   "data": [],
-  "notes": ""
+  "reviewer": "Nhi",
+  "notes": "LOẠI KHỎI BENCHMARK: không có giá trị (Đồ thị lỗi)",
+  "exclude_reason": "LOẠI KHỎI BENCHMARK: không có giá trị (Đồ thị lỗi)",
+  "imported_at": "2026-11-20"
 }

@@ -1,7 +1,6 @@
 {
   "id": "pie_006",
   "image": "images/pie_006.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,64 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_6.jpg"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 62,
   "chart_type": "pie",
-  "title": "",
+  "title": "Biểu đồ quy mô và cấu trúc lao động đang làm việc theo ngành kinh tế",
   "x_axis": {
-    "label": null,
+    "label": "Ngành kinh tế",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Hình tròn 1",
+    "Hình tròn 2"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Hình tròn 1",
+      "x": "Nông nghiệp - lâm - thủy sản",
+      "y": 65.1,
+      "y_raw": "65,1"
+    },
+    {
+      "series": "Hình tròn 1",
+      "x": "Công nghiệp - xây dựng",
+      "y": 13.1,
+      "y_raw": "13,1"
+    },
+    {
+      "series": "Hình tròn 1",
+      "x": "Dịch vụ",
+      "y": 21.8,
+      "y_raw": "21,8"
+    },
+    {
+      "series": "Hình tròn 2",
+      "x": "Nông nghiệp - lâm - thủy sản",
+      "y": 46.7,
+      "y_raw": "46,7"
+    },
+    {
+      "series": "Hình tròn 2",
+      "x": "Công nghiệp - xây dựng",
+      "y": 21.2,
+      "y_raw": "21,2"
+    },
+    {
+      "series": "Hình tròn 2",
+      "x": "Dịch vụ",
+      "y": 32.0,
+      "y_raw": "32"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "[20/11] Ảnh có 2 hình tròn nhưng không ghi năm; đặt tên chuỗi Hình tròn 1 / Hình tròn 2",
+  "imported_at": "2026-11-20"
 }

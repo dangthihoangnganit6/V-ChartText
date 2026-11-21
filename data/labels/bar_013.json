@@ -1,7 +1,6 @@
 {
   "id": "bar_013",
   "image": "images/bar_013.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,65 @@
     "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_13.png"
   },
   "annotator": "ngan",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 156,
   "chart_type": "bar",
-  "title": "",
+  "title": "Sản lượng thủy sản của vùng Đồng bằng sông Cửu Long giai đoạn 2010 - 2021",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn tấn"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Khai thác",
+    "Nuôi trồng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Khai thác",
+      "x": "2010",
+      "y": 1012.6,
+      "y_raw": "1012,6"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2015",
+      "y": 1232.2,
+      "y_raw": "1232,2"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2021",
+      "y": 1515.0,
+      "y_raw": "1515,0"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2010",
+      "y": 1986.5,
+      "y_raw": "1986,5"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2015",
+      "y": 2471.3,
+      "y_raw": "2471,3"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2021",
+      "y": 3377.1,
+      "y_raw": "3377,1"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
 }

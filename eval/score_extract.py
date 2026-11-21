@@ -348,7 +348,9 @@ def score_file(path, every, done):
             a.update({"pred_raw_lenient": b["pred_raw"], "pred_lenient": b["pred"], "err_lenient": b["err"]})
             pts_rows.append(a)
         ra = lambda rs: float(np.mean([r["err"] == "" for r in rs])) if rs else None
-        charts.append({"id": o["id"], "chart_type": gt["chart_type"], **c_s, "ra5": ra(r_s),
+        charts.append({"id": o["id"], "chart_type": gt["chart_type"],
+                       "values_shown": int(gt.get("values_shown_on_chart") is not False),
+                       "duplicate": int(bool(gt.get("duplicate_of"))), **c_s, "ra5": ra(r_s),
                        **{k + "_lenient": v for k, v in c_l.items() if k not in ("json_ok", "type_ok")},
                        "ra5_lenient": ra(r_l)})
 

@@ -1,7 +1,6 @@
 {
   "id": "combo_002",
   "image": "images/combo_002.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,92 @@
     "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_2.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 100,
   "chart_type": "combo",
-  "title": "",
+  "title": "Biểu đồ thể hiện tình hình sản xuất lúa ở nước ta, giai đoạn 2010 - 2018",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "Nghìn ha"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Diện tích lúa cả năm",
+    "Năng suất lúa cả năm"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diện tích lúa cả năm",
+      "x": "2010",
+      "y": 7666.0,
+      "y_raw": "7666"
+    },
+    {
+      "series": "Diện tích lúa cả năm",
+      "x": "2013",
+      "y": 7452.0,
+      "y_raw": "7452"
+    },
+    {
+      "series": "Diện tích lúa cả năm",
+      "x": "2015",
+      "y": 7329.0,
+      "y_raw": "7329"
+    },
+    {
+      "series": "Diện tích lúa cả năm",
+      "x": "2017",
+      "y": 7207.0,
+      "y_raw": "7207"
+    },
+    {
+      "series": "Diện tích lúa cả năm",
+      "x": "2018",
+      "y": 7400.0,
+      "y_raw": "7400"
+    },
+    {
+      "series": "Năng suất lúa cả năm",
+      "x": "2010",
+      "y": 42.4,
+      "y_raw": "42,4"
+    },
+    {
+      "series": "Năng suất lúa cả năm",
+      "x": "2013",
+      "y": 46.4,
+      "y_raw": "46,4"
+    },
+    {
+      "series": "Năng suất lúa cả năm",
+      "x": "2015",
+      "y": 48.9,
+      "y_raw": "48,9"
+    },
+    {
+      "series": "Năng suất lúa cả năm",
+      "x": "2017",
+      "y": 49.9,
+      "y_raw": "49,9"
+    },
+    {
+      "series": "Năng suất lúa cả năm",
+      "x": "2018",
+      "y": 52.3,
+      "y_raw": "52,3"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Diện tích lúa mùa không ghi số; Năng suất theo trục phải (Tạ/ha)",
+  "y2_axis": {
+    "label": null,
+    "unit": "Tạ/ha"
+  },
+  "imported_at": "2026-11-20"
 }

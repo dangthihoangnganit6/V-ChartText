@@ -1,7 +1,6 @@
 {
   "id": "line_044",
   "image": "images/line_044.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,198 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_44.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 53,
   "chart_type": "line",
-  "title": "",
+  "title": "Tỷ lệ khách du lịch đến Scotland tham quan các điểm du lịch khác nhau",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Thủy cung",
+    "Lâu đài",
+    "Sở thú",
+    "Lễ hội"
+  ],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Thủy cung",
+      "x": "1980",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Thủy cung",
+      "x": "1985",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Thủy cung",
+      "x": "1990",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Thủy cung",
+      "x": "1995",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Thủy cung",
+      "x": "2000",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Thủy cung",
+      "x": "2005",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Thủy cung",
+      "x": "2010",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "Lâu đài",
+      "x": "1980",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Lâu đài",
+      "x": "1985",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Lâu đài",
+      "x": "1990",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Lâu đài",
+      "x": "1995",
+      "y": 45.0,
+      "y_raw": "45"
+    },
+    {
+      "series": "Lâu đài",
+      "x": "2000",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Lâu đài",
+      "x": "2005",
+      "y": 34.0,
+      "y_raw": "34"
+    },
+    {
+      "series": "Lâu đài",
+      "x": "2010",
+      "y": 33.0,
+      "y_raw": "33"
+    },
+    {
+      "series": "Sở thú",
+      "x": "1980",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Sở thú",
+      "x": "1985",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Sở thú",
+      "x": "1990",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "Sở thú",
+      "x": "1995",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Sở thú",
+      "x": "2000",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Sở thú",
+      "x": "2005",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Sở thú",
+      "x": "2010",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Lễ hội",
+      "x": "1980",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Lễ hội",
+      "x": "1985",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Lễ hội",
+      "x": "1990",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Lễ hội",
+      "x": "1995",
+      "y": 24.0,
+      "y_raw": "24"
+    },
+    {
+      "series": "Lễ hội",
+      "x": "2000",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Lễ hội",
+      "x": "2005",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Lễ hội",
+      "x": "2010",
+      "y": 18.0,
+      "y_raw": "18"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị đọc theo lưới 5%. [20/11] Bổ sung đủ 7 mốc cho Lâu đài, đọc lại cả 4 chuỗi; Sở thủ → Sở thú",
+  "imported_at": "2026-11-20"
 }

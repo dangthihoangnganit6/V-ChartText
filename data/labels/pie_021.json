@@ -1,7 +1,6 @@
 {
   "id": "pie_021",
   "image": "images/pie_021.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,55 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_21.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 77,
   "chart_type": "pie",
-  "title": "",
+  "title": "Sản lượng điện theo nguồn của Việt Nam năm 2019",
   "x_axis": {
-    "label": null,
+    "label": "Nguồn điện",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
   "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Sản lượng điện",
+      "x": "Thủy điện",
+      "y": 37.7,
+      "y_raw": "37,7"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "Điện than",
+      "y": 41.6,
+      "y_raw": "41,6"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "Điện khí",
+      "y": 18.8,
+      "y_raw": "18,8"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "Điện tái tạo",
+      "y": 0.5,
+      "y_raw": "0,5"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "Điện nhập khẩu",
+      "y": 1.4,
+      "y_raw": "1,4"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

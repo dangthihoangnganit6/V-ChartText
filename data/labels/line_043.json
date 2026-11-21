@@ -1,7 +1,6 @@
 {
   "id": "line_043",
   "image": "images/line_043.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -11,10 +10,13 @@
   },
   "annotator": "nhi",
   "subject": null,
+  "status": "excluded",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 46,
   "chart_type": "line",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Thời điểm",
     "unit": null
   },
   "y_axis": {
@@ -22,7 +24,10 @@
     "unit": null
   },
   "legend": [],
-  "values_shown_on_chart": null,
+  "values_shown_on_chart": true,
   "data": [],
-  "notes": ""
+  "reviewer": "Nhi",
+  "notes": "LOẠI KHỎI BENCHMARK: không có giá trị (Khó trích xuất)",
+  "exclude_reason": "LOẠI KHỎI BENCHMARK: không có giá trị (Khó trích xuất)",
+  "imported_at": "2026-11-20"
 }

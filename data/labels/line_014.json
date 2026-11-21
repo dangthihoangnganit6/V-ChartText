@@ -1,7 +1,6 @@
 {
   "id": "line_014",
   "image": "images/line_014.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,88 @@
     "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_14.png"
   },
   "annotator": "nhi",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 17,
   "chart_type": "line",
-  "title": "",
+  "title": "Tỉ lệ đất rừng trên tổng diện tích đất",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Việt Nam",
+    "Indonesia"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Việt Nam",
+      "x": "2013",
+      "y": 44.5,
+      "y_raw": "44,5"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2014",
+      "y": 44.9,
+      "y_raw": "44,9"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2015",
+      "y": 45.4,
+      "y_raw": "45,4"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2016",
+      "y": 46.4,
+      "y_raw": "46,4"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2017",
+      "y": 46.5,
+      "y_raw": "46,5"
+    },
+    {
+      "series": "Indonesia",
+      "x": "2013",
+      "y": 53.5,
+      "y_raw": "53,5"
+    },
+    {
+      "series": "Indonesia",
+      "x": "2014",
+      "y": 53.0,
+      "y_raw": "53"
+    },
+    {
+      "series": "Indonesia",
+      "x": "2015",
+      "y": 52.5,
+      "y_raw": "52,5"
+    },
+    {
+      "series": "Indonesia",
+      "x": "2016",
+      "y": 50.7,
+      "y_raw": "50,7"
+    },
+    {
+      "series": "Indonesia",
+      "x": "2017",
+      "y": 50.0,
+      "y_raw": "50"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

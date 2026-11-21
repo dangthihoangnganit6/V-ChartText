@@ -1,7 +1,6 @@
 {
   "id": "area_007",
   "image": "images/area_007.jpg",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,119 @@
     "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_7.jpg"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 126,
   "chart_type": "area",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Nông - lâm - ngư nghiệp",
+    "Công nghiệp - xây dựng",
+    "Dịch vụ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1986",
+      "y": 49.5,
+      "y_raw": "49,5"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1990",
+      "y": 45.6,
+      "y_raw": "45,6"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1995",
+      "y": 32.6,
+      "y_raw": "32,6"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2000",
+      "y": 23.4,
+      "y_raw": "23,4"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2005",
+      "y": 16.8,
+      "y_raw": "16,8"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1986",
+      "y": 21.5,
+      "y_raw": "21,5"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1990",
+      "y": 22.7,
+      "y_raw": "22,7"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1995",
+      "y": 25.4,
+      "y_raw": "25,4"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2000",
+      "y": 32.7,
+      "y_raw": "32,7"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2005",
+      "y": 39.3,
+      "y_raw": "39,3"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1986",
+      "y": 29.0,
+      "y_raw": "29"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1990",
+      "y": 31.7,
+      "y_raw": "31,7"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1995",
+      "y": 42.0,
+      "y_raw": "42"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2000",
+      "y": 43.9,
+      "y_raw": "43,9"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2005",
+      "y": 43.9,
+      "y_raw": "43,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
 }

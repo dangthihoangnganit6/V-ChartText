@@ -1,7 +1,6 @@
 {
   "id": "pie_039",
   "image": "images/pie_039.png",
-  "status": "todo",
   "source": {
     "type": null,
     "book": null,
@@ -10,19 +9,101 @@
     "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_39.png"
   },
   "annotator": "giang",
-  "subject": null,
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 97,
   "chart_type": "pie",
-  "title": "",
+  "title": "Tỷ lệ trung bình natri, chất béo bão hòa và đường bổ sung trong các bữa ăn điển hình tại Hoa Kỳ",
   "x_axis": {
-    "label": null,
+    "label": "Bữa ăn",
     "unit": null
   },
   "y_axis": {
     "label": null,
-    "unit": null
+    "unit": "%"
   },
-  "legend": [],
-  "values_shown_on_chart": null,
-  "data": [],
-  "notes": ""
+  "legend": [
+    "Natri",
+    "Chất béo bão hòa",
+    "Đường bổ sung"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Natri",
+      "x": "Bữa sáng",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Natri",
+      "x": "Bữa trưa",
+      "y": 29.0,
+      "y_raw": "29"
+    },
+    {
+      "series": "Natri",
+      "x": "Bữa tối",
+      "y": 43.0,
+      "y_raw": "43"
+    },
+    {
+      "series": "Natri",
+      "x": "Đồ ăn nhẹ",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Chất béo bão hòa",
+      "x": "Bữa sáng",
+      "y": 16.0,
+      "y_raw": "16"
+    },
+    {
+      "series": "Chất béo bão hòa",
+      "x": "Bữa trưa",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Chất béo bão hòa",
+      "x": "Bữa tối",
+      "y": 37.0,
+      "y_raw": "37"
+    },
+    {
+      "series": "Chất béo bão hòa",
+      "x": "Đồ ăn nhẹ",
+      "y": 21.0,
+      "y_raw": "21"
+    },
+    {
+      "series": "Đường bổ sung",
+      "x": "Bữa sáng",
+      "y": 16.0,
+      "y_raw": "16"
+    },
+    {
+      "series": "Đường bổ sung",
+      "x": "Bữa trưa",
+      "y": 19.0,
+      "y_raw": "19"
+    },
+    {
+      "series": "Đường bổ sung",
+      "x": "Bữa tối",
+      "y": 23.0,
+      "y_raw": "23"
+    },
+    {
+      "series": "Đường bổ sung",
+      "x": "Đồ ăn nhẹ",
+      "y": 42.0,
+      "y_raw": "42"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Tiêu đề trên ảnh có ký tự '\\n' thừa, đã bỏ",
+  "imported_at": "2026-11-20"
 }
