@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments & local configs
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Audio test files (temporary audio generated during test scripts)
+audio_tests/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp

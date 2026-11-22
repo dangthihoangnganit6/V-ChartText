@@ -1,0 +1,61 @@
+﻿STT,image_name,chart_category,chart_title,unit,baseline_fact_accuracy,baseline_hallucinated_count,baseline_completeness,pipeline_fact_accuracy,pipeline_hallucinated_count,pipeline_completeness,factuality_gain
+1,Biểu đồ cột_5.png,Biểu đồ cột,Trị giá xuất nhập khẩu hàng hóa và dịch vụ của Nhật Bản giai đoạn 2000 - 2020,Tỉ USD,1.0,0,100.0,1.0,0,75.0,0.0
+2,Biểu đồ cột_64.png,Biểu đồ cột,Tăng trưởng GDP quý II giai đoạn 2011 - 2020,%,0.75,1,100.0,1.0,0,100.0,0.25
+3,Biểu đồ cột_19.png,Biểu đồ cột,"Tình hình Nợ nước Ngoài của Một Số Quốc Gia Mĩ La Tinh, Năm 2017",Tỉ USD,0.0,3,100.0,0.6666666666666666,1,75.0,0.6666666666666666
+4,Biểu đồ cột_1.png,Biểu đồ cột,Biểu đồ các nước có chiều dài đường ô tô lớn nhất thế giới,nghìn km,0.5,1,100.0,1.0,0,75.0,0.5
+5,Biểu đồ cột_29.png,Biểu đồ cột,Số con vật nuôi của học sinh lớp 6A1,Số con vật,0.0,2,100.0,1.0,0,75.0,1.0
+6,Biểu đồ cột_74.png,Biểu đồ cột,Lượng mưa trung bình theo tháng của Hà Nội và Thành phố Hồ Chí Minh,mm,0.5,1,100.0,1.0,0,75.0,0.5
+7,Biểu đồ cột_11.png,Biểu đồ cột,Diện tích một số loại cây công nghiệp lâu năm vùng Tây Nguyên giai đoạn 2010 - 2021,Nghìn ha,0.75,1,100.0,1.0,0,75.0,0.25
+8,Biểu đồ cột_35.jpg,Biểu đồ cột,Người dân,Nghìn người,0.5,1,100.0,1.0,0,75.0,0.5
+9,Biểu đồ cột_13.png,Biểu đồ cột,Sản lượng thủy sản của vùng Đồng bằng sông Cửu Long giai đoạn 2010 - 2021,Nghìn tấn,1.0,0,100.0,1.0,0,75.0,0.0
+10,Biểu đồ cột_56.png,Biểu đồ cột,Cán cân thương mại hàng hóa giữa EU và Việt Nam qua các năm (đơn vị: tỷ USD),Tỷ USD,0.5,1,100.0,0.9375,1,75.0,0.4375
+11,Biểu đồ cột_66.png,Biểu đồ cột,Biểu đồ không có tên,USD/người,0.0,2,100.0,1.0,0,75.0,1.0
+12,Biểu đồ cột_32.png,Biểu đồ cột,Số cuốn truyện cửa hàng bán ra trong tuần,Số cuốn truyện,0.0,2,100.0,1.0,0,75.0,1.0
+13,Biểu đồ cột_10.png,Biểu đồ cột,"Diện tích cây công nghiệp lâu năm vung Trung du và miền núi Bắc Bô, Tây Nguyên và Đông Nam Bộ giai đoạn 2010 - 2021",Nghìn ha,0.75,1,100.0,1.0,0,75.0,0.25
+14,Biểu đồ cột_46.png,Biểu đồ cột,Biểu đồ tăng trưởng GDP Việt Nam giai đoạn 2012 - 2025,không có,0.75,1,100.0,1.0,0,100.0,0.25
+15,Biểu đồ cột_6.png,Biểu đồ cột,Sản lượng thủy sản Trung Quốc giai đoạn 2000 - 2020,Triệu Tấn,0.75,1,100.0,1.0,0,75.0,0.25
+16,Biểu đồ cột_23.png,Biểu đồ cột,Biểu đồ không có tên,Tỉ đô la Mỹ,0.5,1,100.0,1.0,0,75.0,0.5
+17,Biểu đồ cột_58.png,Biểu đồ cột,Dòng vốn FDI theo khu vực,Tỷ đô,0.5,1,100.0,1.0,0,75.0,0.5
+18,Biểu đồ cột_51.png,Biểu đồ cột,Kim ngạch xuất khẩu 11 tháng qua các năm,tỷ USD,0.3333333333333333,2,100.0,0.9285714285714286,1,75.0,0.5952380952380953
+19,Biểu đồ cột_34.png,Biểu đồ cột,Biểu đồ không có tên,Không có,0.0,2,100.0,1.0,0,75.0,1.0
+20,Biểu đồ cột_40.png,Biểu đồ cột,"Giá trị xuất khẩu tôm, 2021-2025",tỷ USD,0.75,1,100.0,1.0,0,75.0,0.25
+21,Biểu đồ đường_4.jpg,Biểu đồ đường,Tổng sản lượng thủy sản của nước ta giai đoạn 2017 - 2020,Nghìn tấn,0.75,1,100.0,1.0,0,75.0,0.25
+22,Biểu đồ đường_44.png,Biểu đồ đường,Tỷ lệ khách du lịch đến Scotland tham quan các điểm du lịch khác nhau,%,1.0,0,100.0,1.0,0,75.0,0.0
+23,Biểu đồ đường_32.png,Biểu đồ đường,"Biểu đồ thể hiện tốc độ tăng trưởng sản lượng dầu mỏ và điện trên thế giới, giai đoạn 1990 - 2020",%,0.75,1,100.0,1.0,0,100.0,0.25
+24,Biểu đồ đường_47.png,Biểu đồ đường,Tỷ lệ dân số từ 65 tuổi trở lên,%,0.3333333333333333,2,100.0,0.7272727272727273,3,75.0,0.393939393939394
+25,Biểu đồ đường_14.png,Biểu đồ đường,Tỉ lệ đất rừng trên tổng diện tích đất,%,0.5,1,100.0,1.0,0,75.0,0.5
+26,Biểu đồ đường_31.png,Biểu đồ đường,"Biểu đồ thể hiện tỷ giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hoà Nam Phi giai đoạn 2000-2020",%,0.75,1,100.0,1.0,0,75.0,0.25
+27,Biểu đồ đường_40.jpg,Biểu đồ đường,Thiếu tên biểu đồ,Thiếu dữ liệu,0.0,2,100.0,0.0,2,75.0,0.0
+28,Biểu đồ đường_33.png,Biểu đồ đường,Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta gia đoạn 2010 - 2016,Nghìn ha,0.75,1,100.0,1.0,0,75.0,0.25
+29,Biểu đồ đường_6.png,Biểu đồ đường,Các nhóm nghề có nhu cầu tìm việc cao trong năm 2020,%,0.0,3,100.0,0.6666666666666666,1,75.0,0.6666666666666666
+30,Biểu đồ đường_13.png,Biểu đồ đường,Diễn tích rừng tự nhiên của Việt Nam giai đoạn 2018 - 2021,Triệu ha,0.75,1,100.0,1.0,0,75.0,0.25
+31,Biểu đồ đường_28.png,Biểu đồ đường,Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta,Nghìn ha,0.5,1,100.0,1.0,0,75.0,0.5
+32,Biểu đồ đường_53.png,Biểu đồ đường,Tỷ lệ việc làm tại bốn ngành khác nhau (1990-2025),%,0.75,1,100.0,1.0,0,75.0,0.25
+33,Biểu đồ đường_20.png,Biểu đồ đường,Diễn biến tỷ giá USD/VND trong giai đoạn 1 năm,USD/VND,0.0,3,100.0,0.2,8,75.0,0.2
+34,Biểu đồ đường_42.png,Biểu đồ đường,Thiếu tên biểu đồ,%,0.5,1,100.0,1.0,0,75.0,0.5
+35,Biểu đồ đường_22.jpg,Biểu đồ đường,Tỉ suất sinh và dân số Nhật Bản 1950-2020,Tỷ suất | Triệu người,0.75,1,100.0,1.0,0,75.0,0.25
+36,Biểu đồ tròn_39.png,Biểu đồ tròn,"Tỷ lệ trung bình natri, chất béo bão hòa và đường bổ sung trong các bữa ăn điển hình tại Hoa Kỳ",%,0.5,1,100.0,1.0,0,75.0,0.5
+37,Biểu đồ tròn_37.jpeg,Biểu đồ tròn,Biểu đồ thể hiện quy mô và cơ cấu diện tích một số cây công nghiệp lâu năm của nước ta giai đoạn 1995-2013,%,0.0,4,100.0,0.5,2,75.0,0.5
+38,Biểu đồ tròn_38.jpg,Biểu đồ tròn,Thiếu tên biểu đồ,%,0.5,1,100.0,1.0,0,75.0,0.5
+39,Biểu đồ tròn_8.png,Biểu đồ tròn,Tỷ lệ người đạt giải Nobel theo các lĩnh vực năm 2020,%,0.0,3,100.0,0.6666666666666666,1,75.0,0.6666666666666666
+40,Biểu đồ tròn_33.gif,Biểu đồ tròn,Thiếu tên biểu đồ,%,0.0,2,100.0,1.0,0,75.0,1.0
+41,Biểu đồ tròn_18.png,Biểu đồ tròn,Biểu đồ về cơ cấu giá trị xuất khẩu và nhập khẩu hàng hóa và dịch vụ Trung Quốc năm 2000 và 2020,%,0.0,4,100.0,0.5,2,75.0,0.5
+42,Biểu đồ tròn_12.png,Biểu đồ tròn,Cơ cấu sản lượng thủy sản nuôi trong nước ta năm 2010 và 2017,%,0.0,4,100.0,0.5,2,75.0,0.5
+43,Biểu đồ tròn_24.png,Biểu đồ tròn,Biểu đồ thể hiện cơ cấu GDP của khu vực Mỹ La-tinh năm 2010 và năm 2020,%,0.0,4,100.0,0.5,2,75.0,0.5
+44,Biểu đồ tròn_36.jpg,Biểu đồ tròn,Thiếu tên biểu đồ,%,0.0,2,100.0,1.0,0,75.0,1.0
+45,Biểu đồ tròn_32.png,Biểu đồ tròn,Thiếu tên biểu đồ,%,0.0,2,100.0,1.0,0,75.0,1.0
+46,Biểu đồ tròn_2.jpeg,Biểu đồ tròn,Cơ cấu công suất nguồn điện đến năm 2020,%,0.0,3,100.0,0.6666666666666666,1,75.0,0.6666666666666666
+47,Biểu đồ tròn_6.jpg,Biểu đồ tròn,Biểu đồ quy mô và cấu trúc lao động đang làm việc theo ngành kinh tế,%,0.0,2,100.0,1.0,0,75.0,1.0
+48,Biểu đồ miền_15.png,Biểu đồ miền,"Cơ cấu GDP các ngành kinh tế nước ta, thời kì 1991 - 2002",%,0.75,1,100.0,1.0,0,75.0,0.25
+49,Biểu đồ miền_14.png,Biểu đồ miền,Thiếu tên biểu đồ,%,0.5,1,100.0,1.0,0,75.0,0.5
+50,Biểu đồ miền_19.png,Biểu đồ miền,Thiếu tên biểu đồ,%,0.5,1,100.0,1.0,0,75.0,0.5
+51,Biểu đồ miền_16.png,Biểu đồ miền,Biểu đồ thể hiện cơ cấu GDP phân theo ngành của nước ta giai đoạn 1991-2014,%,0.75,1,100.0,1.0,0,75.0,0.25
+52,Biểu đồ miền_10.png,Biểu đồ miền,"Chuyển dịch cơ cấu diện tích lúa phân theo mùa vụ của nước ta, giai đoạn 2005 - 2016",%,0.75,1,100.0,1.0,0,100.0,0.25
+53,Biểu đồ miền_12.png,Biểu đồ miền,Biểu đồ miền tổng sản phẩm trong nước phân theo nhóm ngành kinh tế Việt Nam giai đoạn 1985 - 2001,%,0.75,1,100.0,1.0,0,75.0,0.25
+54,Biểu đồ miền_4.jpg,Biểu đồ miền,Biểu đồ thể hiện cơ cấu dân số phân theo thành thị và nông thôn nước ta giai đoạn 2000 - 2014,%,0.75,1,100.0,1.0,0,75.0,0.25
+55,Biểu đồ kết hợp_19.png,Biểu đồ kết hợp,Nhiệt độ và lượng mưa Hà Nội năm 2017,mm | °C,0.6666666666666666,1,100.0,0.9411764705882353,1,75.0,0.27450980392156865
+56,Biểu đồ kết hợp_16.png,Biểu đồ kết hợp,"Diện tích và giá trị sản xuất của ngành trồng cây công nghiệp ở nước ta, giai đoạn 2005 - 2012",Nghìn ha | Nghìn tỉ đồng,0.75,1,100.0,1.0,0,75.0,0.25
+57,Biểu đồ kết hợp_10.png,Biểu đồ kết hợp,Biểu đồ tình hình sản xuất lúa ở nước ta giai đoạn 2010 - 2021,Triệu ha | Triệu tấn,0.75,1,100.0,1.0,0,75.0,0.25
+58,Biểu đồ kết hợp_18.png,Biểu đồ kết hợp,"Nhiệt độ, lượng mưa trung bình tháng của Hà Nội",mm | °C,0.0,2,100.0,1.0,0,75.0,1.0
+59,Biểu đồ kết hợp_14.png,Biểu đồ kết hợp,Biểu đồ thể hiện số lượng khách và doanh thu du lịch ở nước ta giai đoạn 2010 - 2021,Triệu lượt | Nghìn tỉ đồng,0.75,1,100.0,1.0,0,75.0,0.25
+60,Biểu đồ kết hợp_6.png,Biểu đồ kết hợp,"Sự biến động diện tích rừng và độ che phủ rừng ở nước ta, giai đoạn 2008 - 2018",Nghìn ha | %,0.75,1,100.0,1.0,0,100.0,0.25

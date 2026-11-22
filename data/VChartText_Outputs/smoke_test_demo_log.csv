@@ -1,0 +1,6 @@
+﻿STT,image_name,has_banner,is_flagged,matrix_shape,has_desc_3levels,has_audio,audio_size_kb,no_nam_nam,test_status
+1,Biểu đồ cột_1.png,True,False,1x6,True,True,133.3,True,PASS
+2,Biểu đồ cột_48.png,True,False,1x6,True,True,138.2,True,PASS
+3,Biểu đồ miền_1.webp,True,True,3x5,True,True,274.1,True,PASS
+4,Biểu đồ tròn_1.jpeg,True,True,5x5,True,True,154.3,True,PASS
+5,Biểu đồ đường_1.png,True,False,1x8,True,True,278.4,True,PASS
