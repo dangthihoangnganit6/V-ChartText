@@ -6,13 +6,15 @@ import csv
 import time
 import asyncio
 import hashlib
+import uuid
+import atexit
 from typing import Dict, List, Any, Tuple, Optional
 from PIL import Image
 import pandas as pd
 import gradio as gr
 
 # ==============================================================================
-# 1. CẤU HÌNH ĐƯỜNG DẪN & THƯ MỤC
+# 1. CẤU HÌNH ĐƯỜNG DẪN & QUẢN LÝ BỘ NHỚ ĐỆM TẠM THỜI (SESSION AUDIO CACHE)
 # ==============================================================================
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 WORKSPACE_DIR = APP_DIR
@@ -33,8 +35,35 @@ EXTRACTED_RESULTS_PATH = os.path.join(DATA_DIR, "vcharttext_extracted_results.cs
 if not os.path.exists(EXTRACTED_RESULTS_PATH):
     EXTRACTED_RESULTS_PATH = os.path.join(WORKSPACE_DIR, "vcharttext_extracted_results.csv")
 
-OUTPUT_AUDIO_DIR = os.path.join(DATA_DIR, "VChartText_Outputs", "audio_tts")
-os.makedirs(OUTPUT_AUDIO_DIR, exist_ok=True)
+# Thư mục cache âm thanh tạm thời cho phiên làm việc hiện tại (KHÔNG lưu dồn rác ra repo)
+TEMP_AUDIO_DIR = os.path.join(WORKSPACE_DIR, "temp_session_audio")
+os.makedirs(TEMP_AUDIO_DIR, exist_ok=True)
+
+def cleanup_all_temp_audio():
+    """Dọn sạch toàn bộ file âm thanh tạm thời trong thư mục temp_session_audio."""
+    if os.path.exists(TEMP_AUDIO_DIR):
+        for f in os.listdir(TEMP_AUDIO_DIR):
+            f_path = os.path.join(TEMP_AUDIO_DIR, f)
+            try:
+                if os.path.isfile(f_path):
+                    os.remove(f_path)
+            except Exception:
+                pass
+
+def cleanup_temp_files_list(file_paths: Optional[List[str]]):
+    """Xóa danh sách các file âm thanh tạm thời của phiên trước đó."""
+    if not file_paths:
+        return
+    for p in file_paths:
+        if p and os.path.exists(p):
+            try:
+                os.remove(p)
+            except Exception:
+                pass
+
+# Tự động dọn sạch rác âm thanh cũ khi khởi động ứng dụng và khi đóng tiến trình
+cleanup_all_temp_audio()
+atexit.register(cleanup_all_temp_audio)
 
 # Trạng thái nạp mô hình VLM thực tế (chỉ khả dụng khi có CUDA/GPU rời)
 VLM_MODEL_LOADED = False
@@ -419,7 +448,7 @@ def generate_3level_descriptions(flagged_matrix: Dict[str, Any]) -> Dict[str, st
     # 3. Cấp 3: Phân tích học tập chuyên sâu
     study_lines = [
         f"Phân tích chuyên sâu biểu đồ giáo dục: '{title}'.",
-        f"- Cấu trúc: Phân loại theo {len(cats)} mốc/danh mục ({', '.join(cats[:5])}{'...' if len(cats)>5 else ''}).",
+        f"- Cấu trúc: Phân loại theo {len(cats)} mốc hoặc danh mục ({', '.join(cats[:5])}{'...' if len(cats)>5 else ''}).",
         f"- Đơn vị đo lường: {unit if unit else 'Không ghi đơn vị cụ thể'}."
     ]
     for s_name, vals in series_data.items():
@@ -474,7 +503,7 @@ def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, 
     return status, accuracy, hallucinated
 
 # ==============================================================================
-# 8. CHUẨN HÓA NGỮ ÂM ĐỌC SỐ TIẾNG VIỆT & DUAL-ENGINE TTS
+# 8. CHUẨN HÓA NGỮ ÂM ĐỌC SỐ TIẾNG VIỆT & DUAL-ENGINE TTS (FALLBACK AN TOÀN)
 # ==============================================================================
 VI_DIGITS = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"]
 
@@ -524,20 +553,35 @@ def read_integer_to_vietnamese(n: int) -> str:
     return " ".join(res_chunks).strip()
 
 def normalize_vietnamese_phonetics_for_tts(text: str) -> str:
+    """
+    Chuẩn hóa ngữ âm tiếng Việt phục vụ đọc số tự nhiên và ngắt câu dễ nghe:
+    - Đọc số hàng nghìn có dấu chấm: '1.200' -> 'một nghìn hai trăm', '19.257' -> 'mười chín nghìn hai trăm năm mươi bảy'
+    - Đọc số thập phân có dấu phẩy: '12,5%' -> 'mười hai phẩy năm phần trăm'
+    - Đọc khoảng năm: '1995 - 2016' -> 'từ năm một nghìn chín trăm chín mươi lăm đến năm hai nghìn không trăm mười sáu'
+    - Đọc năm tránh lặp: 'Năm 2005' -> 'năm hai nghìn không trăm lẻ năm'
+    - Tách câu ngắn, biến đầu dòng bullet thành dấu chấm ngắt nhịp tự nhiên cho giọng đọc.
+    """
     if not text: return ""
     cleaned = text
     cleaned = re.sub(r"\[chưa chắc chắn\]", "giá trị chưa thể xác định chắc chắn do biểu đồ mờ", cleaned)
-    for ch in ['{', '}', '[', ']', '"', "'", '#', '*', '`']:
-        cleaned = cleaned.replace(ch, '')
-    cleaned = cleaned.replace("||", ",").replace("|", ",")
-    cleaned = re.sub(r"\((.*?)\)", r", \1, ", cleaned)
+    
+    # Chia câu ngắn dễ nghe, ngắt dòng thành dấu chấm
+    cleaned = re.sub(r"[\r\n]+", ". ", cleaned)
+    cleaned = re.sub(r"^\s*[-*•]\s*", "", cleaned)
+    cleaned = re.sub(r"\s*[-*•]\s*", ". ", cleaned)
 
-    # 1. Khoảng năm
+    for ch in ['{', '}', '[', ']', '"', "'", '#', '`']:
+        cleaned = cleaned.replace(ch, '')
+    cleaned = cleaned.replace("||", ", ").replace("|", ", ")
+    cleaned = re.sub(r"\((.*?)\)", r", \1, ", cleaned)
+    cleaned = re.sub(r"\s*:\s*", ". ", cleaned)
+
+    # 1. Khoảng năm (tránh lặp từ "từ từ năm")
     def repl_year_range(m):
         y1 = int(m.group(1))
         y2 = int(m.group(2))
         return f"từ năm {read_integer_to_vietnamese(y1)} đến năm {read_integer_to_vietnamese(y2)}"
-    cleaned = re.sub(r"(?:(?:từ\s+)?năm\s+)?(\d{4})\s*[-–—]\s*(\d{4})", repl_year_range, cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"(?:(?:từ\s+)?(?:năm\s+)?)(\d{4})\s*[-–—]\s*(?:(?:đến\s+)?(?:năm\s+)?)(\d{4})", repl_year_range, cleaned, flags=re.IGNORECASE)
 
     # 2. Xử lý 'Năm YYYY' chống lặp từ 'Năm năm...'
     def repl_year_single(m):
@@ -606,34 +650,42 @@ def normalize_vietnamese_phonetics_for_tts(text: str) -> str:
     cleaned = re.sub(r"\s*,\s*", ", ", cleaned)
     cleaned = re.sub(r"\s*\.\s*", ". ", cleaned)
     cleaned = re.sub(r",\s*,+", ", ", cleaned)
+    cleaned = re.sub(r"\.\s*\.+", ". ", cleaned)
     return re.sub(r"\s+", " ", cleaned).strip()
 
-def generate_tts_audio_sync(text: str, output_path: str, voice: str = "vi-VN-HoaiMyNeural") -> bool:
+def generate_tts_audio_sync(text: str, output_path: str, voice: str = "vi-VN-HoaiMyNeural") -> Tuple[bool, str]:
+    """
+    Tạo âm thanh giọng đọc tiếng Việt với kiến trúc 3 tầng dự phòng:
+    Tầng 1: Edge-TTS (Chất lượng phòng thu Microsoft Neural Hoài My)
+    Tầng 2: gTTS (Google Translate TTS tiếng Việt)
+    Tầng 3: pyttsx3 (Offline SAPI5 hoàn toàn không cần internet)
+    Trả về: (thành công: bool, thông tin engine hoặc lỗi: str)
+    """
     phonetic_text = normalize_vietnamese_phonetics_for_tts(text)
     if not phonetic_text.strip():
-        return False
+        return False, "Văn bản rỗng, không có nội dung để đọc"
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
     # Tầng 1: Edge-TTS
-    for attempt in range(2):
+    try:
+        import edge_tts
+        async def _speak():
+            comm = edge_tts.Communicate(phonetic_text, voice)
+            await comm.save(output_path)
         try:
-            import edge_tts
-            async def _speak():
-                comm = edge_tts.Communicate(phonetic_text, voice)
-                await comm.save(output_path)
-            try:
-                loop = asyncio.get_event_loop()
-                if loop.is_running():
-                    import nest_asyncio
-                    nest_asyncio.apply()
-                loop.run_until_complete(_speak())
-            except Exception:
-                asyncio.run(_speak())
-
-            if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
-                time.sleep(0.3)
-                return True
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                import nest_asyncio
+                nest_asyncio.apply()
+            loop.run_until_complete(_speak())
         except Exception:
-            time.sleep(0.5)
+            asyncio.run(_speak())
+
+        if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
+            return True, "Edge-TTS (Giọng Hoài My Neural tự nhiên)"
+    except Exception as e_edge:
+        print(f"⚠️ Edge-TTS không khả dụng, chuyển sang gTTS: {e_edge}")
 
     # Tầng 2: Fallback gTTS
     try:
@@ -641,26 +693,60 @@ def generate_tts_audio_sync(text: str, output_path: str, voice: str = "vi-VN-Hoa
         tts = gTTS(text=phonetic_text, lang='vi')
         tts.save(output_path)
         if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
-            return True
-    except Exception as e:
-        print(f"⚠️ Cảnh báo lỗi TTS cho {output_path}: {e}")
-        return False
+            return True, "gTTS (Google Text-to-Speech dự phòng)"
+    except Exception as e_gtts:
+        print(f"⚠️ gTTS không khả dụng, chuyển sang pyttsx3: {e_gtts}")
 
-    return False
+    # Tầng 3: Fallback pyttsx3 (Offline hoàn toàn)
+    try:
+        import pyttsx3
+        engine = pyttsx3.init()
+        engine.setProperty('rate', 150)
+        engine.save_to_file(phonetic_text, output_path)
+        engine.runAndWait()
+        if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
+            return True, "pyttsx3 (Offline SAPI5)"
+    except Exception as e_pyttsx:
+        print(f"⚠️ pyttsx3 offline lỗi: {e_pyttsx}")
+
+    return False, "Không thể kết nối các dịch vụ TTS lúc này (môi trường không có âm thanh hoặc mạng offline)"
+
+def build_tts_content_by_level(level_choice: str, desc_5s: str, desc_30s: str, desc_study: str) -> str:
+    """Xây dựng nội dung lời đọc tiếng Việt theo cấp độ lựa chọn."""
+    if level_choice == "Cấp 1: Tổng quan 5s":
+        return f"Cấp độ một, tổng quan nhanh. {desc_5s}"
+    elif level_choice == "Cấp 2: Tóm tắt sư phạm 30s":
+        return f"Cấp độ hai, tóm tắt sư phạm. {desc_30s}"
+    elif level_choice == "Cấp 3: Phân tích học tập chuyên sâu":
+        return f"Cấp độ ba, phân tích học tập chuyên sâu. {desc_study}"
+    else:
+        # Mặc định: Cả 3 cấp độ
+        return (
+            f"Cấp độ một, tổng quan nhanh. {desc_5s}. "
+            f"Cấp độ hai, tóm tắt sư phạm. {desc_30s}. "
+            f"Cấp độ ba, phân tích học tập chuyên sâu. {desc_study}"
+        )
 
 # ==============================================================================
 # 9. HÀM XỬ LÝ CHÍNH CỦA PIPELINE DEMO GRADIO
 # ==============================================================================
-def process_pipeline_demo(input_image_path: Optional[str]) -> Tuple[
-    str, pd.DataFrame, pd.DataFrame, str, str, str, str, Optional[str], str
+def process_pipeline_demo(
+    input_image_path: Optional[str],
+    current_session_files: List[str]
+) -> Tuple[
+    str, pd.DataFrame, pd.DataFrame, str, Optional[str], str, Optional[str], str, Optional[str], str, str, List[str]
 ]:
     """
     Hàm xử lý Pipeline 4 bước khi người dùng tải ảnh hoặc chọn ví dụ:
     1. Đọc và nhận diện chính xác biểu đồ bằng mã băm (MD5 / dHash / aHash).
     2. Kiểm chứng logic và gắn cờ [chưa chắc chắn].
     3. Sinh mô tả 3 cấp độ và đo kiểm ViChartFact.
-    4. Chuẩn hóa ngữ âm và tổng hợp audio TTS.
+    4. Chuẩn hóa ngữ âm và tổng hợp 3 audio TTS riêng biệt đặt ngay dưới từng cấp mô tả.
+    5. Xóa sạch file âm thanh tạm của lượt trước để tránh dồn rác bộ nhớ.
     """
+    # Xóa file âm thanh tạm của lượt xử lý trước
+    cleanup_temp_files_list(current_session_files)
+
     if not input_image_path or not os.path.exists(input_image_path):
         err_banner = """
         <div style="background-color: #FDEDEC; border-left: 5px solid #E74C3C; padding: 15px; border-radius: 6px;">
@@ -668,7 +754,7 @@ def process_pipeline_demo(input_image_path: Optional[str]) -> Tuple[
             <p style="color: #555; margin: 0;">Hãy chọn ảnh mẫu ở bên dưới hoặc kéo thả ảnh biểu đồ SGK vào khung bên trái.</p>
         </div>
         """
-        return err_banner, pd.DataFrame(), pd.DataFrame(), "", "", "", "", None, ""
+        return err_banner, pd.DataFrame(), pd.DataFrame(), "", None, "", None, "", None, "", "", []
 
     # Tra cứu chính xác ảnh qua bộ Resolver đa tầng
     matched_image_name, match_method = resolve_image_match(input_image_path)
@@ -722,11 +808,14 @@ def process_pipeline_demo(input_image_path: Optional[str]) -> Tuple[
                 empty_meta,
                 empty_matrix,
                 notice_msg,
-                notice_msg,
-                notice_msg,
-                empty_vichartfact,
                 None,
-                "Không có nội dung âm thanh do chưa trích xuất."
+                notice_msg,
+                None,
+                notice_msg,
+                None,
+                empty_vichartfact,
+                "⚠️ Không có nội dung để đọc.",
+                []
             )
 
     # --------------------------------------------------------------------------
@@ -829,25 +918,118 @@ def process_pipeline_demo(input_image_path: Optional[str]) -> Tuple[
     </div>
     """
 
-    # Bước 4: Chuẩn hóa ngữ âm & Xuất Audio TTS
-    script_for_tts = f"{desc_5s} {desc_30s}"
-    audio_filename = f"demo_{int(time.time())}_{os.path.splitext(matched_image_name)[0]}.mp3"
-    audio_path = os.path.join(OUTPUT_AUDIO_DIR, audio_filename)
+    # Bước 4: Chuẩn hóa ngữ âm & Xuất 3 file Audio TTS riêng biệt đặt ngay dưới từng cấp mô tả
+    new_session_files = []
+    tts_engines_used = set()
 
-    phonetic_preview = normalize_vietnamese_phonetics_for_tts(script_for_tts)
-    tts_ok = generate_tts_audio_sync(script_for_tts, audio_path)
-    final_audio = audio_path if (tts_ok and os.path.exists(audio_path)) else None
+    # 1. Cấp 1: Tổng quan nhanh 5s
+    lvl1_text = f"Cấp độ một, tổng quan nhanh. {desc_5s}"
+    audio1_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl1_{uuid.uuid4().hex[:8]}.mp3")
+    ok1, eng1 = generate_tts_audio_sync(lvl1_text, audio1_path)
+    res_audio1 = audio1_path if (ok1 and os.path.exists(audio1_path)) else None
+    if res_audio1:
+        new_session_files.append(res_audio1)
+        tts_engines_used.add(eng1)
+
+    # 2. Cấp 2: Tóm tắt sư phạm 30s
+    lvl2_text = f"Cấp độ hai, tóm tắt sư phạm. {desc_30s}"
+    audio2_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl2_{uuid.uuid4().hex[:8]}.mp3")
+    ok2, eng2 = generate_tts_audio_sync(lvl2_text, audio2_path)
+    res_audio2 = audio2_path if (ok2 and os.path.exists(audio2_path)) else None
+    if res_audio2:
+        new_session_files.append(res_audio2)
+        tts_engines_used.add(eng2)
+
+    # 3. Cấp 3: Phân tích học tập chuyên sâu
+    lvl3_text = f"Cấp độ ba, phân tích học tập chuyên sâu. {desc_study}"
+    audio3_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl3_{uuid.uuid4().hex[:8]}.mp3")
+    ok3, eng3 = generate_tts_audio_sync(lvl3_text, audio3_path)
+    res_audio3 = audio3_path if (ok3 and os.path.exists(audio3_path)) else None
+    if res_audio3:
+        new_session_files.append(res_audio3)
+        tts_engines_used.add(eng3)
+
+    if new_session_files:
+        eng_summary = "; ".join(tts_engines_used)
+        tts_status_msg = f"✅ Đã tạo thành công giọng đọc riêng biệt cho cả 3 cấp độ (Động cơ: {eng_summary})."
+    else:
+        tts_status_msg = "⚠️ Không thể kết nối dịch vụ âm thanh TTS lúc này, mô tả 3 cấp độ vẫn sẵn sàng bên trên."
 
     return (
         status_banner,
         meta_df,
         data_matrix_df,
         desc_5s,
+        res_audio1,
         desc_30s,
+        res_audio2,
         desc_study,
+        res_audio3,
         vichartfact_html,
-        final_audio,
-        phonetic_preview
+        tts_status_msg,
+        new_session_files
+    )
+
+def regenerate_single_level(
+    level_num: int,
+    text: str,
+    current_session_files: List[str]
+) -> Tuple[Optional[str], str, List[str]]:
+    """Tạo lại âm thanh riêng cho một cấp độ khi người dùng bấm nút Nghe lại."""
+    if not text or not text.strip():
+        return None, "ℹ️ Chưa có nội dung mô tả để tạo âm thanh.", current_session_files
+
+    prefix_map = {1: "tts_lvl1_", 2: "tts_lvl2_", 3: "tts_lvl3_"}
+    prefix = prefix_map.get(level_num, "tts_")
+
+    # Xóa file tạm cũ của cấp độ này nếu có trong session
+    remaining_files = []
+    for f in current_session_files:
+        if prefix in os.path.basename(f):
+            try:
+                if os.path.exists(f):
+                    os.remove(f)
+            except Exception:
+                pass
+        else:
+            remaining_files.append(f)
+
+    level_titles = {
+        1: "Cấp độ một, tổng quan nhanh.",
+        2: "Cấp độ hai, tóm tắt sư phạm.",
+        3: "Cấp độ ba, phân tích học tập chuyên sâu."
+    }
+    speech_text = f"{level_titles.get(level_num, '')} {text}"
+    audio_path = os.path.join(TEMP_AUDIO_DIR, f"{prefix}{uuid.uuid4().hex[:8]}.mp3")
+    ok, eng = generate_tts_audio_sync(speech_text, audio_path)
+    if ok and os.path.exists(audio_path):
+        remaining_files.append(audio_path)
+        return audio_path, f"✅ Đã tạo giọng đọc Cấp {level_num} ({eng}).", remaining_files
+    else:
+        return None, f"⚠️ Lỗi tạo giọng đọc Cấp {level_num} ({eng}).", remaining_files
+
+def on_image_change_or_clear(current_session_files: List[str]) -> Tuple[Optional[str], Optional[str], Optional[str], str, List[str]]:
+    """Khi đổi ảnh hoặc xóa ảnh: xóa sạch file âm thanh tạm của cả 3 cấp và reset cả 3 audio player."""
+    cleanup_temp_files_list(current_session_files)
+    return None, None, None, "", []
+
+def on_reset_click(current_session_files: List[str]):
+    """Khi bấm nút Đặt lại: xóa sạch file tạm của cả 3 cấp, xóa toàn bộ output."""
+    cleanup_temp_files_list(current_session_files)
+    return (
+        None,             # input_image
+        "",               # out_banner
+        pd.DataFrame(),   # out_meta_df
+        pd.DataFrame(),   # out_matrix_df
+        "",               # out_desc_5s
+        None,             # out_audio_lvl1
+        "",               # out_desc_30s
+        None,             # out_audio_lvl2
+        "",               # out_desc_study
+        None,             # out_audio_lvl3
+        "",               # out_vichartfact
+        "",               # out_tts_status
+        []                # session_audio_tracker
     )
 
 # ==============================================================================
@@ -857,6 +1039,7 @@ custom_css = """
 .container { max-width: 1250px; margin: auto; }
 .main-header { text-align: center; margin-bottom: 20px; }
 .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.tts-panel { background: #F8F9FA; border-radius: 8px; padding: 15px; margin-top: 15px; border: 1px solid #E9ECEF; }
 """
 
 # Chọn 6 ảnh mẫu đại diện có trên đĩa và map chính xác 100% với các loại biểu đồ
@@ -875,6 +1058,9 @@ for target_name in SAMPLE_TARGETS:
         sample_examples.append(DATASET_FILEPATHS[target_name])
 
 with gr.Blocks(title="V-ChartText Web Demo") as demo:
+    # State theo dõi danh sách file audio tạm của phiên để dọn rác tự động
+    session_audio_tracker = gr.State(value=[])
+
     gr.HTML("""
     <div class="main-header">
         <h1 style="color: #1A5276; margin-bottom: 5px;">📊 V-ChartText: Trích Xuất, Kiểm Chứng & Đọc Biểu Đồ Giáo Dục</h1>
@@ -909,49 +1095,136 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
                 out_meta_df = gr.DataFrame(label="📋 Thông tin đặc tả biểu đồ", interactive=False)
                 out_matrix_df = gr.DataFrame(label="🔢 Ma trận số liệu chi tiết (Đã kiểm chứng)", interactive=False)
 
-            # Tab 2: Sinh mô tả 3 cấp độ
-            with gr.Tab("🧠 Bước 3: Sinh Mô Tả 3 Cấp Độ"):
-                out_desc_5s = gr.Textbox(label="⚡ Cấp 1: Tổng quan 5s (Dành cho học sinh xem nhanh)", lines=2)
-                out_desc_30s = gr.Textbox(label="🎯 Cấp 2: Tóm tắt sư phạm 30s (Trọng tâm cực trị & xu hướng)", lines=4)
-                out_desc_study = gr.Textbox(label="📚 Cấp 3: Phân tích học tập chuyên sâu (Đào sâu kiến thức)", lines=6)
+            # Tab 2: Sinh mô tả 3 cấp độ & Giọng đọc TTS trực tiếp
+            with gr.Tab("🧠 Bước 3 & 4: Mô Tả 3 Cấp Độ & Giọng Đọc Trực Tiếp (TTS)"):
+                # Cấp 1: Tổng quan 5s
+                with gr.Group():
+                    gr.Markdown("#### ⚡ Cấp 1: Tổng quan 5s (Dành cho học sinh xem nhanh)")
+                    out_desc_5s = gr.Textbox(label="Nội dung mô tả Cấp 1", lines=2, interactive=False)
+                    with gr.Row():
+                        out_audio_lvl1 = gr.Audio(
+                            label="🎧 Trình phát giọng đọc Cấp 1 (Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            type="filepath",
+                            interactive=False,
+                            autoplay=False,
+                            scale=8
+                        )
+                        btn_read_lvl1 = gr.Button("🔊 Nghe lại Cấp 1", variant="secondary", size="sm", scale=2)
+
+                # Cấp 2: Tóm tắt sư phạm 30s
+                with gr.Group():
+                    gr.Markdown("#### 🎯 Cấp 2: Tóm tắt sư phạm 30s (Trọng tâm cực trị & xu hướng)")
+                    out_desc_30s = gr.Textbox(label="Nội dung mô tả Cấp 2", lines=4, interactive=False)
+                    with gr.Row():
+                        out_audio_lvl2 = gr.Audio(
+                            label="🎧 Trình phát giọng đọc Cấp 2 (Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            type="filepath",
+                            interactive=False,
+                            autoplay=False,
+                            scale=8
+                        )
+                        btn_read_lvl2 = gr.Button("🔊 Nghe lại Cấp 2", variant="secondary", size="sm", scale=2)
+
+                # Cấp 3: Phân tích học tập chuyên sâu
+                with gr.Group():
+                    gr.Markdown("#### 📚 Cấp 3: Phân tích học tập chuyên sâu (Đào sâu kiến thức)")
+                    out_desc_study = gr.Textbox(label="Nội dung mô tả Cấp 3", lines=6, interactive=False)
+                    with gr.Row():
+                        out_audio_lvl3 = gr.Audio(
+                            label="🎧 Trình phát giọng đọc Cấp 3 (Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            type="filepath",
+                            interactive=False,
+                            autoplay=False,
+                            scale=8
+                        )
+                        btn_read_lvl3 = gr.Button("🔊 Nghe lại Cấp 3", variant="secondary", size="sm", scale=2)
+
                 out_vichartfact = gr.HTML(label="Đánh giá ViChartFact")
+                out_tts_status = gr.Markdown("")
 
-            # Tab 3: Giọng đọc tiếp cận TTS
-            with gr.Tab("🔊 Bước 4: Giọng Đọc Trợ Năng (TTS)"):
-                out_audio = gr.Audio(label="🎧 Phát âm thanh mô tả biểu đồ", type="filepath", autoplay=False)
-                out_phonetic = gr.Textbox(label="📝 Văn bản chuẩn hóa ngữ âm tiếng Việt (Đọc chuẩn 1.200, 12,5%)", lines=3)
+            # Tab 3: Hướng dẫn & Kiểm định ViChartFact
+            with gr.Tab("📖 Hướng Dẫn & Kiểm Định ViChartFact"):
+                gr.Markdown(r"""
+                ### 🛡️ Nguyên Tắc Chống Ảo Giác & Trợ Năng Giáo Dục
+                - **Bước 1 (Trích xuất ma trận)**: Bóc tách cấu trúc số liệu với cơ chế đọc số kiểu Việt (chấm hàng nghìn `1.200`, phẩy thập phân `12,5`).
+                - **Bước 2 (Kiểm chứng logic)**: Áp dụng tập luật sư phạm (tổng phần trăm tròn $100\% \pm 2\%$, tính đơn điệu chuỗi thời gian). Tự động gắn cờ `[chưa chắc chắn]` khi mờ hoặc thiếu số liệu.
+                - **Bước 3 (Mô tả 3 cấp độ Grounded)**: Sinh mô tả 5s, 30s và chuyên sâu bám sát 100% bảng số liệu đã kiểm chứng, đo kiểm độ trung thực bằng thước đo **ViChartFact**.
+                - **Bước 4 (Giọng đọc trợ năng TTS)**: Tích hợp 3 trình phát âm thanh riêng biệt đặt ngay dưới từng cấp mô tả. File âm thanh chỉ lưu tạm thời trong phiên và tự động dọn sạch khi đổi ảnh / tải lại, không lưu dồn rác ra dự án.
+                """)
 
-    # Ràng buộc sự kiện
+    # --------------------------------------------------------------------------
+    # RÀNG BUỘC SỰ KIỆN (EVENT LISTENERS)
+    # --------------------------------------------------------------------------
+    # 1. Thực thi Pipeline 4 bước
     btn_run.click(
         fn=process_pipeline_demo,
-        inputs=[input_image],
+        inputs=[input_image, session_audio_tracker],
         outputs=[
             out_banner,
             out_meta_df,
             out_matrix_df,
             out_desc_5s,
+            out_audio_lvl1,
             out_desc_30s,
+            out_audio_lvl2,
             out_desc_study,
+            out_audio_lvl3,
             out_vichartfact,
-            out_audio,
-            out_phonetic
+            out_tts_status,
+            session_audio_tracker
         ]
     )
 
+    # 2. Nghe lại riêng lẻ từng cấp độ
+    btn_read_lvl1.click(
+        fn=lambda desc, s: regenerate_single_level(1, desc, s),
+        inputs=[out_desc_5s, session_audio_tracker],
+        outputs=[out_audio_lvl1, out_tts_status, session_audio_tracker]
+    )
+
+    btn_read_lvl2.click(
+        fn=lambda desc, s: regenerate_single_level(2, desc, s),
+        inputs=[out_desc_30s, session_audio_tracker],
+        outputs=[out_audio_lvl2, out_tts_status, session_audio_tracker]
+    )
+
+    btn_read_lvl3.click(
+        fn=lambda desc, s: regenerate_single_level(3, desc, s),
+        inputs=[out_desc_study, session_audio_tracker],
+        outputs=[out_audio_lvl3, out_tts_status, session_audio_tracker]
+    )
+
+    # 3. Khi đổi ảnh hoặc xóa ảnh: xóa sạch file tạm cũ của cả 3 cấp và clear cả 3 audio player
+    input_image.change(
+        fn=on_image_change_or_clear,
+        inputs=[session_audio_tracker],
+        outputs=[out_audio_lvl1, out_audio_lvl2, out_audio_lvl3, out_tts_status, session_audio_tracker]
+    )
+
+    input_image.clear(
+        fn=on_image_change_or_clear,
+        inputs=[session_audio_tracker],
+        outputs=[out_audio_lvl1, out_audio_lvl2, out_audio_lvl3, out_tts_status, session_audio_tracker]
+    )
+
+    # 4. Bấm nút Đặt lại: xóa file tạm và reset toàn bộ
     btn_clear.click(
-        fn=lambda: (None, "", pd.DataFrame(), pd.DataFrame(), "", "", "", "", None, ""),
-        inputs=[],
+        fn=on_reset_click,
+        inputs=[session_audio_tracker],
         outputs=[
             input_image,
             out_banner,
             out_meta_df,
             out_matrix_df,
             out_desc_5s,
+            out_audio_lvl1,
             out_desc_30s,
+            out_audio_lvl2,
             out_desc_study,
+            out_audio_lvl3,
             out_vichartfact,
-            out_audio,
-            out_phonetic
+            out_tts_status,
+            session_audio_tracker
         ]
     )
 

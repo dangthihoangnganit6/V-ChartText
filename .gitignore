@@ -13,6 +13,8 @@ ENV/
 
 # Audio test files (temporary audio generated during test scripts)
 audio_tests/
+temp_session_audio/
+*.mp3
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
