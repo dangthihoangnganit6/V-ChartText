@@ -1,5 +1,11 @@
 import os
 import sys
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 import re
 import json
 import csv
@@ -8,6 +14,7 @@ import asyncio
 import hashlib
 import uuid
 import atexit
+import html
 from typing import Dict, List, Any, Tuple, Optional
 from PIL import Image
 import pandas as pd
@@ -462,45 +469,321 @@ def generate_3level_descriptions(flagged_matrix: Dict[str, Any]) -> Dict[str, st
         "desc_study": desc_study
     }
 
-def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, Any]) -> Tuple[str, float, List[float]]:
-    full_text = f"{desc_dict['desc_5s']} {desc_dict['desc_30s']} {desc_dict['desc_study']}"
-    raw_nums = re.findall(r"\b\d+(?:[.,]\d+)?\b", full_text)
-    nums_in_text = []
-    for r in raw_nums:
-        v = clean_vietnamese_number(r)
-        if v is not None:
-            nums_in_text.append(v)
+def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Thước đo ViChartFact: Đo lường độ trung thực số liệu giữa nội dung mô tả 3 cấp độ
+    với bảng số liệu đã kiểm chứng, nhãn trục và cấu trúc siêu dữ liệu.
+    Công thức: Accuracy = (N_khớp / N_tổng đối chiếu) * 100%.
+    Dung sai cho phép: <= 5% sai số tương đối hoặc <= 0.05 sai số tuyệt đối.
+    Hỗ trợ chuẩn hóa số kiểu Việt (1.200 -> 1200, 12,5 -> 12.5).
+    """
+    title = flagged_matrix.get("chart_title", "")
+    unit = flagged_matrix.get("unit", "")
+    cats = flagged_matrix.get("categories", [])
+    series_data = flagged_matrix.get("series_data", {})
 
-    ground_truth_pool = set()
-    for s_name, vals in flagged_matrix.get("series_data", {}).items():
-        for v in vals:
+    # 1. Xây dựng tập đối chuẩn (Ground-truth pool)
+    # 1.1 Tập giá trị ô dữ liệu (Data Cells)
+    cell_pool = []
+    for s_name, vals in series_data.items():
+        for i, v in enumerate(vals):
             if v is not None and isinstance(v, (int, float)):
-                ground_truth_pool.add(round(v, 2))
+                c_label = cats[i] if i < len(cats) else f"Cột {i+1}"
+                cell_pool.append({
+                    "val": float(v),
+                    "series": str(s_name),
+                    "category": str(c_label)
+                })
 
-    for c in flagged_matrix.get("categories", []):
-        m = re.search(r"\b(19\d{2}|20\d{2})\b", str(c))
-        if m:
-            ground_truth_pool.add(float(m.group(1)))
+    # 1.2 Tập nhãn trục / năm / danh mục (Categories & Years)
+    cat_pool = []
+    for c in cats:
+        nums = re.findall(r"(?<!\w)(\d+(?:[.,]\d+)?)(?!\w)", str(c))
+        for n_str in nums:
+            n_val = clean_vietnamese_number(n_str)
+            if n_val is not None:
+                cat_pool.append({
+                    "val": n_val,
+                    "raw": n_str,
+                    "cat_name": str(c)
+                })
 
-    hallucinated = []
-    correct_count = 0
-    for num in nums_in_text:
-        if num in [1.0, 2.0, 3.0, 4.0, 5.0, 30.0]:
+    # 1.3 Tập số liệu cấu trúc / siêu dữ liệu (Structure & Metadata)
+    meta_pool = [
+        {"val": float(len(cats)), "desc": f"Số lượng mốc danh mục ({len(cats)} mốc)"},
+        {"val": float(len(series_data)), "desc": f"Số lượng chuỗi dữ liệu ({len(series_data)} chuỗi)"}
+    ]
+    if title:
+        for t_n in re.findall(r"(?<!\w)(\d+(?:[.,]\d+)?)(?!\w)", str(title)):
+            t_val = clean_vietnamese_number(t_n)
+            if t_val is not None:
+                meta_pool.append({"val": t_val, "desc": f"Số trong tiêu đề biểu đồ ('{title}')"})
+    if unit:
+        for u_n in re.findall(r"(?<!\w)(\d+(?:[.,]\d+)?)(?!\w)", str(unit)):
+            u_val = clean_vietnamese_number(u_n)
+            if u_val is not None:
+                meta_pool.append({"val": u_val, "desc": f"Số trong đơn vị tính ('{unit}')"})
+
+    # 2. Quét và đối chiếu số theo từng cấp mô tả
+    levels_config = [
+        ("Cấp 1: Tổng quan 5s", desc_dict.get("desc_5s", "")),
+        ("Cấp 2: Tóm tắt sư phạm 30s", desc_dict.get("desc_30s", "")),
+        ("Cấp 3: Phân tích học tập chuyên sâu", desc_dict.get("desc_study", ""))
+    ]
+
+    matched_items = []
+    unmatched_items = []
+
+    for level_name, level_text in levels_config:
+        if not level_text:
             continue
-        matched = False
-        for g_num in ground_truth_pool:
-            if abs(num - g_num) < 0.05 or (g_num > 0 and abs(num - g_num) / g_num < 0.02):
-                matched = True
-                break
-        if matched:
-            correct_count += 1
-        else:
-            hallucinated.append(num)
+        matches = list(re.finditer(r"(?<!\w)(\d+(?:[.,]\d+)?)(?!\w)", level_text))
+        for m in matches:
+            raw_str = m.group(1)
+            start_pos, end_pos = m.span()
+            clean_val = clean_vietnamese_number(raw_str)
+            if clean_val is None:
+                continue
 
-    total_checked = correct_count + len(hallucinated)
-    accuracy = (correct_count / total_checked) if total_checked > 0 else 1.0
-    status = "Đạt chuẩn ViChartFact (Khớp 100%)" if len(hallucinated) == 0 else f"Phát hiện {len(hallucinated)} số lạ"
-    return status, accuracy, hallucinated
+            c_start = max(0, level_text.rfind('\n', 0, start_pos) + 1)
+            dot_before = level_text.rfind('. ', 0, start_pos)
+            if dot_before != -1 and dot_before + 2 > c_start:
+                c_start = dot_before + 2
+
+            c_end = level_text.find('\n', end_pos)
+            if c_end == -1:
+                c_end = len(level_text)
+            dot_after = level_text.find('. ', end_pos)
+            if dot_after != -1 and dot_after + 1 < c_end:
+                c_end = dot_after + 1
+
+            snippet = level_text[c_start:c_end].strip()
+            if len(snippet) > 130:
+                rel_s = max(0, start_pos - c_start - 30)
+                rel_e = min(len(snippet), (end_pos - c_start) + 30)
+                snippet = ("..." if rel_s > 0 else "") + snippet[rel_s:rel_e] + ("..." if rel_e < len(snippet) else "")
+
+            matched = False
+            match_type = ""
+            gt_ref = ""
+
+            # Tầng 1: Khớp ô số liệu bảng gốc (dung sai sai số tương đối <= 5% hoặc sai số tuyệt đối <= 0.05)
+            for c_item in cell_pool:
+                g = c_item["val"]
+                abs_diff = abs(clean_val - g)
+                rel_diff = abs_diff / abs(g) if abs(g) > 1e-6 else abs_diff
+                if abs_diff <= 0.05 or rel_diff <= 0.05:
+                    matched = True
+                    match_type = "Ô số liệu bảng gốc (Data Cell)"
+                    gt_ref = f"Khớp chuỗi '{c_item['series']}', mốc '{c_item['category']}': {g} (sai số {rel_diff*100:.2f}%)"
+                    break
+
+            # Tầng 2: Khớp nhãn mốc thời gian / trục hoành
+            if not matched:
+                for cat_item in cat_pool:
+                    if abs(clean_val - cat_item["val"]) < 0.01:
+                        matched = True
+                        match_type = "Nhãn mốc thời gian / Trục hoành"
+                        gt_ref = f"Khớp danh mục '{cat_item['cat_name']}'"
+                        break
+
+            # Tầng 3: Khớp số cấu trúc / siêu dữ liệu biểu đồ
+            if not matched:
+                for m_item in meta_pool:
+                    if abs(clean_val - m_item["val"]) < 0.01:
+                        matched = True
+                        match_type = "Số cấu trúc / Siêu dữ liệu biểu đồ"
+                        gt_ref = f"Khớp {m_item['desc']}"
+                        break
+
+            item_data = {
+                "level": level_name,
+                "raw_str": raw_str,
+                "clean_val": clean_val,
+                "sentence": snippet,
+                "match_type": match_type,
+                "gt_ref": gt_ref
+            }
+
+            if matched:
+                matched_items.append(item_data)
+            else:
+                closest_cell = None
+                min_rel_err = float("inf")
+                for c_item in cell_pool:
+                    g = c_item["val"]
+                    err = abs(clean_val - g) / (abs(g) if abs(g) > 1e-6 else 1.0)
+                    if err < min_rel_err:
+                        min_rel_err = err
+                        closest_cell = c_item
+
+                if closest_cell and min_rel_err <= 0.35:
+                    classification = "Lệch giá trị / Sai khác đơn vị (> 5% so với bảng)"
+                    gt_explanation = f"Gần với ô '{closest_cell['series']}' - {closest_cell['category']} ({closest_cell['val']}) nhưng sai số là {min_rel_err*100:.1f}% (> 5%)."
+                else:
+                    classification = "Số ngoài bảng (Chưa đối chuẩn / Nghi vấn ảo giác)"
+                    gt_explanation = "Không tìm thấy trong bảng số liệu, trục tọa độ hay siêu dữ liệu biểu đồ."
+
+                item_data["classification"] = classification
+                item_data["gt_ref"] = gt_explanation
+                unmatched_items.append(item_data)
+
+    total_checked = len(matched_items) + len(unmatched_items)
+    accuracy = (len(matched_items) / total_checked * 100.0) if total_checked > 0 else 100.0
+    status_title = "Đạt chuẩn ViChartFact (Khớp 100% - Zero-Hallucination)" if len(unmatched_items) == 0 else f"Phát hiện {len(unmatched_items)} số lạ / chưa đối chuẩn"
+
+    return {
+        "accuracy": accuracy,
+        "total_checked": total_checked,
+        "matched_count": len(matched_items),
+        "unmatched_count": len(unmatched_items),
+        "status_title": status_title,
+        "cell_pool_count": len(cell_pool),
+        "cat_pool_count": len(cat_pool),
+        "meta_pool_count": len(meta_pool),
+        "matched_items": matched_items,
+        "unmatched_items": unmatched_items
+    }
+
+def render_vichartfact_html(fact_res: Dict[str, Any]) -> str:
+    """Render giao diện HTML chi tiết, minh bạch cho thước đo ViChartFact."""
+    acc = fact_res["accuracy"]
+    tot = fact_res["total_checked"]
+    m_cnt = fact_res["matched_count"]
+    u_cnt = fact_res["unmatched_count"]
+    cell_cnt = fact_res["cell_pool_count"]
+    cat_cnt = fact_res["cat_pool_count"]
+
+    if u_cnt == 0:
+        badge_bg = "#E8F8F5"
+        badge_color = "#1E8449"
+        badge_border = "#A9DFBF"
+        badge_text = "✅ 100% ZERO-HALLUCINATION"
+        conclusion_html = f"""
+        <div style="background-color: #E8F8F5; border-left: 5px solid #27AE60; padding: 12px 14px; border-radius: 4px; margin-bottom: 12px; font-size: 13.5px; color: #1E8449;">
+            <b>✅ Kết luận đối kiểm:</b> <b>Đạt chuẩn ViChartFact (Khớp 100% - Zero-Hallucination)</b>. Toàn bộ <b>{m_cnt}/{tot}</b> giá trị số xuất hiện trong cả 3 cấp mô tả đều khớp hoàn toàn với bảng số liệu đã kiểm chứng (sai số ≤ 5%), nhãn trục hoặc thông số cấu trúc biểu đồ. Không phát hiện bất kỳ số lạ hay hiện tượng ảo giác nào.
+        </div>
+        """
+        unmatched_table_html = """
+        <div style="background-color: #F4F6F6; border: 1px dashed #BDC3C7; border-radius: 5px; padding: 10px; text-align: center; color: #27AE60; font-size: 13px; font-weight: 500;">
+            ✓ Không phát hiện số lạ nào. Toàn bộ các giá trị số trong mô tả đều được xác minh hợp lệ với bảng chân lý.
+        </div>
+        """
+    else:
+        badge_bg = "#FDEDEC"
+        badge_color = "#922B21"
+        badge_border = "#F5B7B1"
+        badge_text = f"⚠️ CẢNH BÁO: PHÁT HIỆN {u_cnt} SỐ LẠ"
+        conclusion_html = f"""
+        <div style="background-color: #FEF9E7; border-left: 5px solid #E67E22; padding: 12px 14px; border-radius: 4px; margin-bottom: 12px; font-size: 13.5px; color: #935116;">
+            <b>⚠️ Kết luận đối kiểm:</b> Phát hiện <b>{u_cnt} giá trị số</b> trong mô tả chưa đối chuẩn được với bảng số liệu gốc (Độ trung thực: <b>{acc:.1f}%</b>). <b>TUYỆT ĐỐI KHÔNG XÁC NHẬN ZERO-HALLUCINATION</b> cho đến khi các số lạ này được rà soát và đối chuẩn. Vui lòng xem bảng chi tiết bên dưới.
+        </div>
+        """
+        rows_html = []
+        for u in fact_res["unmatched_items"]:
+            raw_esc = html.escape(u["raw_str"])
+            sent_esc = html.escape(u["sentence"])
+            highlighted_sent = sent_esc.replace(raw_esc, f"<mark style='background-color: #FADBD8; color: #78281F; font-weight: bold; padding: 1px 4px; border-radius: 2px;'>{raw_esc}</mark>")
+            rows_html.append(f"""
+            <tr style="border-bottom: 1px solid #F2D7D5; font-size: 12.5px;">
+                <td style="padding: 8px 10px; font-weight: bold; color: #1B4F72; border-right: 1px solid #FADBD8; white-space: nowrap;">{html.escape(u['level'])}</td>
+                <td style="padding: 8px 10px; border-right: 1px solid #FADBD8; white-space: nowrap;"><code style="background: #FDEDEC; color: #C0392B; padding: 2px 5px; border-radius: 3px; font-weight: bold;">{raw_esc}</code><br><span style="font-size: 11px; color: #7F8C8D;">(giá trị: {u['clean_val']})</span></td>
+                <td style="padding: 8px 10px; border-right: 1px solid #FADBD8; line-height: 1.4; color: #2C3E50;">{highlighted_sent}</td>
+                <td style="padding: 8px 10px; border-right: 1px solid #FADBD8; font-size: 12px; color: #5D6D7E; line-height: 1.4;">{html.escape(u['gt_ref'])}</td>
+                <td style="padding: 8px 10px; font-weight: bold; color: #C0392B; font-size: 12px;">{html.escape(u['classification'])}</td>
+            </tr>
+            """)
+        unmatched_table_html = f"""
+        <div style="margin-top: 10px;">
+            <div style="font-weight: bold; color: #C0392B; margin-bottom: 6px; font-size: 13.5px;">
+                🔍 Danh sách chi tiết các giá trị số lạ / chưa đối chuẩn ({u_cnt} mục):
+            </div>
+            <div style="overflow-x: auto; border: 1px solid #F5B7B1; border-radius: 4px;">
+                <table style="width: 100%; border-collapse: collapse; background: #FFFFFF;">
+                    <thead>
+                        <tr style="background-color: #FDEDEC; color: #78281F; text-align: left; border-bottom: 2px solid #F5B7B1; font-size: 12.5px;">
+                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Cấp mô tả</th>
+                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Số bắt được</th>
+                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Ngữ cảnh trong câu</th>
+                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Kết quả đối chiếu bảng gốc</th>
+                            <th style="padding: 8px 10px;">Nguyên nhân & Phân loại</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {''.join(rows_html)}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        """
+
+    matched_rows_html = []
+    for m in fact_res["matched_items"]:
+        matched_rows_html.append(f"""
+        <tr style="border-bottom: 1px solid #EAECEE; font-size: 12px;">
+            <td style="padding: 6px 8px; font-weight: 500; color: #2C3E50; border-right: 1px solid #EAECEE;">{html.escape(m['level'])}</td>
+            <td style="padding: 6px 8px; border-right: 1px solid #EAECEE;"><code style="background: #EAFAF1; color: #1E8449; padding: 2px 4px; border-radius: 3px; font-weight: bold;">{html.escape(m['raw_str'])}</code></td>
+            <td style="padding: 6px 8px; border-right: 1px solid #EAECEE; color: #2874A6; font-weight: 500;">{html.escape(m['match_type'])}</td>
+            <td style="padding: 6px 8px; color: #566573;">{html.escape(m['gt_ref'])}</td>
+        </tr>
+        """)
+
+    matched_details_html = f"""
+    <details style="margin-top: 12px; font-size: 12.5px; color: #566573;">
+        <summary style="cursor: pointer; font-weight: bold; color: #2874A6; padding: 4px 0;">
+            📋 Xem danh sách {m_cnt} giá trị số đã đối chiếu khớp hợp lệ...
+        </summary>
+        <div style="overflow-x: auto; margin-top: 8px; border: 1px solid #D4E6F1; border-radius: 4px;">
+            <table style="width: 100%; border-collapse: collapse; background: #FFFFFF;">
+                <thead>
+                    <tr style="background-color: #EAF2F8; color: #1B4F72; text-align: left; font-size: 12px; border-bottom: 1px solid #D4E6F1;">
+                        <th style="padding: 6px 8px; border-right: 1px solid #D4E6F1;">Cấp mô tả</th>
+                        <th style="padding: 6px 8px; border-right: 1px solid #D4E6F1;">Số bắt được</th>
+                        <th style="padding: 6px 8px; border-right: 1px solid #D4E6F1;">Tầng đối chuẩn</th>
+                        <th style="padding: 6px 8px;">Chi tiết khớp bảng gốc</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {''.join(matched_rows_html)}
+                </tbody>
+            </table>
+        </div>
+    </details>
+    """
+
+    out_html = f"""
+    <div style="background-color: #F8FBFD; border: 1px solid #D4E6F1; border-radius: 8px; padding: 16px; margin-top: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #EAECEE; padding-bottom: 10px; margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 22px;">🛡️</span>
+                <h4 style="margin: 0; color: #1B4F72; font-weight: bold; font-size: 15px;">
+                    ĐO KIỂM THƯỚC ĐO VICHARTFACT (DATA FAITHFULNESS AUDIT)
+                </h4>
+            </div>
+            <span style="background-color: {badge_bg}; color: {badge_color}; font-weight: bold; padding: 4px 12px; border-radius: 12px; font-size: 12.5px; border: 1px solid {badge_border};">
+                {badge_text}
+            </span>
+        </div>
+
+        <div style="background-color: #FFFFFF; border-left: 4px solid #2980B9; padding: 12px 16px; border-radius: 4px; margin-bottom: 14px; font-size: 13.5px; color: #2C3E50;">
+            <div style="margin-bottom: 6px;">
+                <b>📐 Công thức & Phương pháp tính độ trung thực:</b>
+            </div>
+            <div style="background-color: #F4F6F7; padding: 8px 12px; border-radius: 4px; font-family: monospace; font-size: 13px; color: #1A5276; margin-bottom: 6px;">
+                Độ trung thực (Accuracy) = (N_khớp / N_tổng đối chiếu) × 100% = ({m_cnt} / {tot}) × 100% = <b>{acc:.1f}%</b>
+            </div>
+            <div style="font-size: 12.5px; color: #566573; line-height: 1.5;">
+                • <b>Dung sai kiểm định:</b> Sai số tương đối ≤ 5.0% hoặc sai số tuyệt đối &lt; 0.05. Áp dụng chuẩn hóa số kiểu Việt (<code>1.200</code> → 1200, <code>12,5%</code> → 12.5%).<br>
+                • <b>Tập chân lý đối chuẩn (Ground-Truth Pool):</b> {cell_cnt} ô số liệu bảng từ các chuỗi dữ liệu, {cat_cnt} nhãn mốc thời gian/danh mục trục hoành, và các chỉ số cấu trúc/tiêu đề biểu đồ.
+            </div>
+        </div>
+
+        {conclusion_html}
+        {unmatched_table_html}
+        {matched_details_html}
+    </div>
+    """
+    return out_html
 
 # ==============================================================================
 # 8. CHUẨN HÓA NGỮ ÂM ĐỌC SỐ TIẾNG VIỆT & DUAL-ENGINE TTS (FALLBACK AN TOÀN)
@@ -653,63 +936,78 @@ def normalize_vietnamese_phonetics_for_tts(text: str) -> str:
     cleaned = re.sub(r"\.\s*\.+", ". ", cleaned)
     return re.sub(r"\s+", " ", cleaned).strip()
 
-def generate_tts_audio_sync(text: str, output_path: str, voice: str = "vi-VN-HoaiMyNeural") -> Tuple[bool, str]:
+# ==============================================================================
+# 8. CẤU HÌNH GIỌNG ĐỌC TIẾNG VIỆT HOÀI MY & BỘ TỔNG HỢP TTS
+# ==============================================================================
+HOAI_MY_VOICE_ID = "vi-VN-HoaiMyNeural"
+HOAI_MY_VOICE_LABEL = "Hoài My (Nữ - Truyền cảm, tự nhiên)"
+
+def generate_tts_audio_sync(text: str, output_path: str, voice_id: str = HOAI_MY_VOICE_ID) -> Tuple[bool, str]:
     """
-    Tạo âm thanh giọng đọc tiếng Việt với kiến trúc 3 tầng dự phòng:
-    Tầng 1: Edge-TTS (Chất lượng phòng thu Microsoft Neural Hoài My)
-    Tầng 2: gTTS (Google Translate TTS tiếng Việt)
-    Tầng 3: pyttsx3 (Offline SAPI5 hoàn toàn không cần internet)
-    Trả về: (thành công: bool, thông tin engine hoặc lỗi: str)
+    Tạo âm thanh giọng đọc tiếng Việt duy nhất: Hoài My (Nữ - Truyền cảm, tự nhiên):
+    - Ưu tiên gọi Microsoft Edge-TTS qua subprocess CLI độc lập (ổn định, không xung đột event loop của Gradio).
+    - Dự phòng 1: Gọi thư viện edge_tts với loop an toàn (nest_asyncio).
+    - Dự phòng 2: Fallback tự động sang gTTS tiếng Việt nếu mất kết nối mạng Microsoft.
+    Trả về: (thành công: bool, thông tin engine/giọng: str)
     """
     phonetic_text = normalize_vietnamese_phonetics_for_tts(text)
     if not phonetic_text.strip():
         return False, "Văn bản rỗng, không có nội dung để đọc"
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    out_dir = os.path.dirname(output_path)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
 
-    # Tầng 1: Edge-TTS
+    # 1. Thử gọi Edge-TTS (Hoài My) qua subprocess CLI để chạy độc lập tiến trình
+    import subprocess
+    cmd = [sys.executable, "-m", "edge_tts", "--voice", voice_id, "--text", phonetic_text, "--write-media", output_path]
+    for attempt in range(2):
+        try:
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=14)
+            if res.returncode == 0 and os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
+                return True, f"Edge-TTS ({HOAI_MY_VOICE_LABEL})"
+        except Exception:
+            pass
+        if os.path.exists(output_path) and os.path.getsize(output_path) < 1000:
+            try:
+                os.remove(output_path)
+            except Exception:
+                pass
+        time.sleep(0.5)
+
+    # 2. Thử qua thư viện edge_tts in-process
     try:
         import edge_tts
+        import nest_asyncio
+        nest_asyncio.apply()
+
         async def _speak():
-            comm = edge_tts.Communicate(phonetic_text, voice)
+            comm = edge_tts.Communicate(phonetic_text, voice_id)
             await comm.save(output_path)
+
         try:
             loop = asyncio.get_event_loop()
-            if loop.is_running():
-                import nest_asyncio
-                nest_asyncio.apply()
-            loop.run_until_complete(_speak())
-        except Exception:
-            asyncio.run(_speak())
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
 
+        loop.run_until_complete(_speak())
         if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
-            return True, "Edge-TTS (Giọng Hoài My Neural tự nhiên)"
+            return True, f"Edge-TTS ({HOAI_MY_VOICE_LABEL})"
     except Exception as e_edge:
-        print(f"⚠️ Edge-TTS không khả dụng, chuyển sang gTTS: {e_edge}")
+        print(f"Edge-TTS thư viện không phản hồi: {e_edge}")
 
-    # Tầng 2: Fallback gTTS
+    # 3. Fallback dự phòng sang gTTS (chỉ khi hoàn toàn không kết nối được Edge-TTS)
     try:
         from gtts import gTTS
         tts = gTTS(text=phonetic_text, lang='vi')
         tts.save(output_path)
         if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
-            return True, "gTTS (Google Text-to-Speech dự phòng)"
+            return True, "gTTS (Dự phòng)"
     except Exception as e_gtts:
-        print(f"⚠️ gTTS không khả dụng, chuyển sang pyttsx3: {e_gtts}")
+        print(f"gTTS fallback error: {e_gtts}")
 
-    # Tầng 3: Fallback pyttsx3 (Offline hoàn toàn)
-    try:
-        import pyttsx3
-        engine = pyttsx3.init()
-        engine.setProperty('rate', 150)
-        engine.save_to_file(phonetic_text, output_path)
-        engine.runAndWait()
-        if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
-            return True, "pyttsx3 (Offline SAPI5)"
-    except Exception as e_pyttsx:
-        print(f"⚠️ pyttsx3 offline lỗi: {e_pyttsx}")
-
-    return False, "Không thể kết nối các dịch vụ TTS lúc này (môi trường không có âm thanh hoặc mạng offline)"
+    return False, "Không thể kết nối dịch vụ TTS lúc này"
 
 def build_tts_content_by_level(level_choice: str, desc_5s: str, desc_30s: str, desc_study: str) -> str:
     """Xây dựng nội dung lời đọc tiếng Việt theo cấp độ lựa chọn."""
@@ -799,8 +1097,8 @@ def process_pipeline_demo(
             ])
             notice_msg = "Ảnh chưa có trong tập dữ liệu đã trích xuất sẵn & môi trường local chưa nạp model VLM (Qwen3-VL). Vui lòng chọn một biểu đồ mẫu trong tập dữ liệu sách giáo khoa bên dưới để trải nghiệm đầy đủ pipeline 4 bước."
             empty_vichartfact = """
-            <div style="background-color: #F8F9F9; border: 1px dashed #BDC3C7; border-radius: 6px; padding: 12px; text-align: center; color: #7F8C8D; font-size: 13.5px;">
-                ℹ️ Chưa thực hiện kiểm chứng ViChartFact do không có dữ liệu số liệu được trích xuất.
+            <div style="background-color: #F8F9F9; border: 1px dashed #BDC3C7; border-radius: 6px; padding: 14px; text-align: center; color: #7F8C8D; font-size: 13.5px; line-height: 1.5;">
+                ℹ️ <b>Chưa thực hiện đo kiểm ViChartFact:</b> Do hình ảnh tải lên chưa có ma trận dữ liệu trích xuất để làm bảng chân lý đối chuẩn. Vui lòng chọn một biểu đồ trong <i>Tập mẫu đại diện</i> bên dưới để quan sát quy trình đo kiểm ViChartFact chi tiết.
             </div>
             """
             return (
@@ -906,44 +1204,36 @@ def process_pipeline_demo(
     desc_30s = desc_dict["desc_30s"]
     desc_study = desc_dict["desc_study"]
 
-    # Đo kiểm ViChartFact
-    fact_status, fact_acc, hallucinated_nums = fact_check_vichartfact(desc_dict, flagged_matrix)
-    vichartfact_html = f"""
-    <div style="background-color: #EBF5FB; border-left: 5px solid #3498DB; padding: 12px; border-radius: 6px; margin-top: 10px;">
-        <h5 style="color: #2874A6; margin: 0 0 5px 0;">🛡️ Kết Quả Đo Kiểm Thước Đo ViChartFact:</h5>
-        <p style="margin: 0; font-size: 13.5px; color: #1B4F72;">
-            <b>Độ trung thực số liệu:</b> <span style="color: #27AE60; font-weight: bold;">{fact_acc*100:.1f}%</span> 
-            ({fact_status}). Số liệu được sinh ra hoàn toàn từ bảng số liệu đã kiểm chứng, không có ảo giác.
-        </p>
-    </div>
-    """
+    # Đo kiểm ViChartFact minh bạch & chi tiết
+    fact_report = fact_check_vichartfact(desc_dict, flagged_matrix)
+    vichartfact_html = render_vichartfact_html(fact_report)
 
-    # Bước 4: Chuẩn hóa ngữ âm & Xuất 3 file Audio TTS riêng biệt đặt ngay dưới từng cấp mô tả
+    # Bước 4: Chuẩn hóa ngữ âm & Xuất 3 file Audio TTS riêng biệt với giọng đọc Hoài My
     new_session_files = []
     tts_engines_used = set()
 
     # 1. Cấp 1: Tổng quan nhanh 5s
-    lvl1_text = f"Cấp độ một, tổng quan nhanh. {desc_5s}"
+    lvl1_text = desc_5s
     audio1_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl1_{uuid.uuid4().hex[:8]}.mp3")
-    ok1, eng1 = generate_tts_audio_sync(lvl1_text, audio1_path)
+    ok1, eng1 = generate_tts_audio_sync(lvl1_text, audio1_path, voice_id=HOAI_MY_VOICE_ID)
     res_audio1 = audio1_path if (ok1 and os.path.exists(audio1_path)) else None
     if res_audio1:
         new_session_files.append(res_audio1)
         tts_engines_used.add(eng1)
 
     # 2. Cấp 2: Tóm tắt sư phạm 30s
-    lvl2_text = f"Cấp độ hai, tóm tắt sư phạm. {desc_30s}"
+    lvl2_text = desc_30s
     audio2_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl2_{uuid.uuid4().hex[:8]}.mp3")
-    ok2, eng2 = generate_tts_audio_sync(lvl2_text, audio2_path)
+    ok2, eng2 = generate_tts_audio_sync(lvl2_text, audio2_path, voice_id=HOAI_MY_VOICE_ID)
     res_audio2 = audio2_path if (ok2 and os.path.exists(audio2_path)) else None
     if res_audio2:
         new_session_files.append(res_audio2)
         tts_engines_used.add(eng2)
 
     # 3. Cấp 3: Phân tích học tập chuyên sâu
-    lvl3_text = f"Cấp độ ba, phân tích học tập chuyên sâu. {desc_study}"
+    lvl3_text = desc_study
     audio3_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl3_{uuid.uuid4().hex[:8]}.mp3")
-    ok3, eng3 = generate_tts_audio_sync(lvl3_text, audio3_path)
+    ok3, eng3 = generate_tts_audio_sync(lvl3_text, audio3_path, voice_id=HOAI_MY_VOICE_ID)
     res_audio3 = audio3_path if (ok3 and os.path.exists(audio3_path)) else None
     if res_audio3:
         new_session_files.append(res_audio3)
@@ -951,7 +1241,7 @@ def process_pipeline_demo(
 
     if new_session_files:
         eng_summary = "; ".join(tts_engines_used)
-        tts_status_msg = f"✅ Đã tạo thành công giọng đọc riêng biệt cho cả 3 cấp độ (Động cơ: {eng_summary})."
+        tts_status_msg = f"✅ Đã tạo giọng đọc Hoài My (Nữ - Truyền cảm) cho cả 3 cấp độ (Động cơ: {eng_summary})."
     else:
         tts_status_msg = "⚠️ Không thể kết nối dịch vụ âm thanh TTS lúc này, mô tả 3 cấp độ vẫn sẵn sàng bên trên."
 
@@ -975,7 +1265,7 @@ def regenerate_single_level(
     text: str,
     current_session_files: List[str]
 ) -> Tuple[Optional[str], str, List[str]]:
-    """Tạo lại âm thanh riêng cho một cấp độ khi người dùng bấm nút Nghe lại."""
+    """Tạo lại âm thanh riêng cho một cấp độ khi người dùng bấm nút Nghe lại với giọng Hoài My."""
     if not text or not text.strip():
         return None, "ℹ️ Chưa có nội dung mô tả để tạo âm thanh.", current_session_files
 
@@ -994,17 +1284,12 @@ def regenerate_single_level(
         else:
             remaining_files.append(f)
 
-    level_titles = {
-        1: "Cấp độ một, tổng quan nhanh.",
-        2: "Cấp độ hai, tóm tắt sư phạm.",
-        3: "Cấp độ ba, phân tích học tập chuyên sâu."
-    }
-    speech_text = f"{level_titles.get(level_num, '')} {text}"
+    speech_text = text.strip()
     audio_path = os.path.join(TEMP_AUDIO_DIR, f"{prefix}{uuid.uuid4().hex[:8]}.mp3")
-    ok, eng = generate_tts_audio_sync(speech_text, audio_path)
+    ok, eng = generate_tts_audio_sync(speech_text, audio_path, voice_id=HOAI_MY_VOICE_ID)
     if ok and os.path.exists(audio_path):
         remaining_files.append(audio_path)
-        return audio_path, f"✅ Đã tạo giọng đọc Cấp {level_num} ({eng}).", remaining_files
+        return audio_path, f"✅ Đã tạo giọng đọc Hoài My Cấp {level_num}.", remaining_files
     else:
         return None, f"⚠️ Lỗi tạo giọng đọc Cấp {level_num} ({eng}).", remaining_files
 
@@ -1095,7 +1380,7 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
                 out_meta_df = gr.DataFrame(label="📋 Thông tin đặc tả biểu đồ", interactive=False)
                 out_matrix_df = gr.DataFrame(label="🔢 Ma trận số liệu chi tiết (Đã kiểm chứng)", interactive=False)
 
-            # Tab 2: Sinh mô tả 3 cấp độ & Giọng đọc TTS trực tiếp
+            # Tab 2: Sinh mô tả 3 cấp độ & Giọng đọc TTS trực tiếp (Giọng Hoài My)
             with gr.Tab("🧠 Bước 3 & 4: Mô Tả 3 Cấp Độ & Giọng Đọc Trực Tiếp (TTS)"):
                 # Cấp 1: Tổng quan 5s
                 with gr.Group():
@@ -1103,7 +1388,7 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
                     out_desc_5s = gr.Textbox(label="Nội dung mô tả Cấp 1", lines=2, interactive=False)
                     with gr.Row():
                         out_audio_lvl1 = gr.Audio(
-                            label="🎧 Trình phát giọng đọc Cấp 1 (Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            label="🎧 Trình phát giọng đọc Cấp 1 (Hoài My - Đọc chuẩn số Việt: 1.200, 12,5%)",
                             type="filepath",
                             interactive=False,
                             autoplay=False,
@@ -1117,7 +1402,7 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
                     out_desc_30s = gr.Textbox(label="Nội dung mô tả Cấp 2", lines=4, interactive=False)
                     with gr.Row():
                         out_audio_lvl2 = gr.Audio(
-                            label="🎧 Trình phát giọng đọc Cấp 2 (Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            label="🎧 Trình phát giọng đọc Cấp 2 (Hoài My - Đọc chuẩn số Việt: 1.200, 12,5%)",
                             type="filepath",
                             interactive=False,
                             autoplay=False,
@@ -1131,7 +1416,7 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
                     out_desc_study = gr.Textbox(label="Nội dung mô tả Cấp 3", lines=6, interactive=False)
                     with gr.Row():
                         out_audio_lvl3 = gr.Audio(
-                            label="🎧 Trình phát giọng đọc Cấp 3 (Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            label="🎧 Trình phát giọng đọc Cấp 3 (Hoài My - Đọc chuẩn số Việt: 1.200, 12,5%)",
                             type="filepath",
                             interactive=False,
                             autoplay=False,
@@ -1145,11 +1430,15 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
             # Tab 3: Hướng dẫn & Kiểm định ViChartFact
             with gr.Tab("📖 Hướng Dẫn & Kiểm Định ViChartFact"):
                 gr.Markdown(r"""
-                ### 🛡️ Nguyên Tắc Chống Ảo Giác & Trợ Năng Giáo Dục
+                ### 🛡️ Nguyên Tắc Chống Ảo Giác & Thước Đo ViChartFact
                 - **Bước 1 (Trích xuất ma trận)**: Bóc tách cấu trúc số liệu với cơ chế đọc số kiểu Việt (chấm hàng nghìn `1.200`, phẩy thập phân `12,5`).
                 - **Bước 2 (Kiểm chứng logic)**: Áp dụng tập luật sư phạm (tổng phần trăm tròn $100\% \pm 2\%$, tính đơn điệu chuỗi thời gian). Tự động gắn cờ `[chưa chắc chắn]` khi mờ hoặc thiếu số liệu.
-                - **Bước 3 (Mô tả 3 cấp độ Grounded)**: Sinh mô tả 5s, 30s và chuyên sâu bám sát 100% bảng số liệu đã kiểm chứng, đo kiểm độ trung thực bằng thước đo **ViChartFact**.
-                - **Bước 4 (Giọng đọc trợ năng TTS)**: Tích hợp 3 trình phát âm thanh riêng biệt đặt ngay dưới từng cấp mô tả. File âm thanh chỉ lưu tạm thời trong phiên và tự động dọn sạch khi đổi ảnh / tải lại, không lưu dồn rác ra dự án.
+                - **Bước 3 (Mô tả 3 cấp độ Grounded & Đo kiểm ViChartFact)**:
+                  - **Mô tả 3 cấp độ**: Sinh mô tả 5s (tổng quan nhanh), 30s (tóm tắt sư phạm), và chuyên sâu (phân tích chi tiết học tập) bám sát ma trận số liệu đã kiểm chứng.
+                  - **Công thức ViChartFact**: $\text{Độ trung thực (Accuracy)} = \frac{N_{\text{khớp}}}{N_{\text{tổng đối chiếu}}} \times 100\%$ với dung sai cho phép $\le 5.0\%$ (hoặc sai số tuyệt đối $< 0.05$).
+                  - **Tập chân lý đối chuẩn**: Toàn bộ ô số liệu bảng (`series_data`), nhãn mốc thời gian / danh mục (`categories`), và thông số cấu trúc / siêu dữ liệu biểu đồ.
+                  - **Minh bạch số lạ**: Hiển thị bảng chi tiết từng số lạ (Cấp mô tả, Giá trị số bắt được, Câu văn ngữ cảnh, Đối chiếu bảng gốc, Phân loại nguyên nhân). Tuyệt đối **không xác nhận Zero-Hallucination** khi danh sách số lạ chưa được đối chuẩn ($< 100\%$).
+                - **Bước 4 (Giọng đọc trợ năng TTS)**: Tích hợp 3 trình phát âm thanh riêng biệt đặt ngay dưới từng cấp mô tả bằng giọng đọc chuẩn Hoài My (Nữ - Truyền cảm, tự nhiên). Tự động chuẩn hóa số tiếng Việt khi đọc. File âm thanh chỉ lưu tạm thời trong phiên và tự động dọn sạch khi đổi ảnh / đặt lại.
                 """)
 
     # --------------------------------------------------------------------------
@@ -1175,7 +1464,7 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
         ]
     )
 
-    # 2. Nghe lại riêng lẻ từng cấp độ
+    # 2. Nghe lại riêng lẻ từng cấp độ với giọng Hoài My
     btn_read_lvl1.click(
         fn=lambda desc, s: regenerate_single_level(1, desc, s),
         inputs=[out_desc_5s, session_audio_tracker],
