@@ -1,0 +1,4435 @@
+﻿image_name,folder,chart_title,chart_type,unit,x_axis_label,categories,series_name,values,raw_output
+Biểu đồ cột_1.png,Biểu đồ cột_74 ảnh_đủ r,"Biểu đồ các nước có chiều dài đường ô tô lớn nhất thế giới, năm 2019",cột,Nghìn km,Nước,"Hoa Kỳ, Trung Quốc, Ấn Độ, Bra-xin Liên bang Nga",Nước,"{'Hoa Kỳ': 6586.6, 'Trung Quốc': 4860.6, 'Ấn Độ': 4699.0, 'Bra-xin Liên bang Nga': 2000.0, 'Nước': 1283.4}","```json
+{
+  ""chart_title"": ""Biểu đồ các nước có chiều dài đường ô tô lớn nhất thế giới, năm 2019"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn km"",
+  ""x_axis_label"": ""Nước"",
+  ""categories"": ""Hoa Kỳ, Trung Quốc, Ấn Độ, Bra-xin Liên bang Nga"",
+  ""series_name"": ""Nước"",
+  ""y_axis_ticks"": ""0 | 2000 | 4000 | 6000 | 8000"",
+  ""values"": {
+    ""Hoa Kỳ"": 6586.6,
+    ""Trung Quốc"": 4860.6,
+    ""Ấn Độ"": 4699.0,
+    ""Bra-xin Liên bang Nga"": 2000.0,
+    ""Nước"": 1283.4
+  }
+}
+```"
+Biểu đồ cột_10.png,Biểu đồ cột_74 ảnh_đủ r,"Diện tích cây công nghiệp lâu năm vùng Trung du và miền núi Bắc Bộ, Tây Nguyên và Đông Nam Bộ giai đoạn 2010 - 2021",cột,Nghìn ha,Năm,2010 | 2015 | 2021,Diện tích,"[{'trung du và miền núi Bắc Bộ': 116.8, 'tây nguyên': 820.4, 'đông nam Bộ': 802.1}, {'trung du và miền núi Bắc Bộ': 144.1, 'tây nguyên': 980.3, 'đông nam Bộ': 813.2}, {'trung du và miền núi Bắc Bộ': 149.2, 'tây nguyên': 1063.7, 'đông nam Bộ': 809.9}]","```json
+{
+  ""chart_title"": ""Diện tích cây công nghiệp lâu năm vùng Trung du và miền núi Bắc Bộ, Tây Nguyên và Đông Nam Bộ giai đoạn 2010 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2021"",
+  ""series_name"": ""Diện tích"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800 | 1000 | 1200"",
+  ""values"": [
+    {
+      ""trung du và miền núi Bắc Bộ"": 116.8,
+      ""tây nguyên"": 820.4,
+      ""đông nam Bộ"": 802.1
+    },
+    {
+      ""trung du và miền núi Bắc Bộ"": 144.1,
+      ""tây nguyên"": 980.3,
+      ""đông nam Bộ"": 813.2
+    },
+    {
+      ""trung du và miền núi Bắc Bộ"": 149.2,
+      ""tây nguyên"": 1063.7,
+      ""đông nam Bộ"": 809.9
+    }
+  ]
+}
+```"
+Biểu đồ cột_11.png,Biểu đồ cột_74 ảnh_đủ r,Diện tích một số loại cây công nghiệp lâu năm vùng Tây Nguyên giai đoạn 2010 - 2021,cột,nghìn ha,Năm,2010 | 2021,Diện tích,"{'2010': {'Cà phê': 526.7, 'Cao su': 214.8, 'Hồ tiêu': 88.1, 'Điều': 22.6}, '2021': {'Cà phê': 657.4, 'Cao su': 232.2, 'Hồ tiêu': 83.5, 'Điều': 90.3}}","```json
+{
+  ""chart_title"": ""Diện tích một số loại cây công nghiệp lâu năm vùng Tây Nguyên giai đoạn 2010 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2021"",
+  ""series_name"": ""Diện tích"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": {
+    ""2010"": {
+      ""Cà phê"": 526.7,
+      ""Cao su"": 214.8,
+      ""Hồ tiêu"": 88.1,
+      ""Điều"": 22.6
+    },
+    ""2021"": {
+      ""Cà phê"": 657.4,
+      ""Cao su"": 232.2,
+      ""Hồ tiêu"": 83.5,
+      ""Điều"": 90.3
+    }
+  }
+}
+```"
+Biểu đồ cột_12.png,Biểu đồ cột_74 ảnh_đủ r,Sản lượng thủy sản vùng Đông Nam Bộ giai đoạn 2010 - 2021,cột,Nghìn tấn,Năm,2010 | 2015 | 2021,Sản lượng thủy sản,"278,8 | 317,3 | 374,1","```json
+{
+  ""chart_title"": ""Sản lượng thủy sản vùng Đông Nam Bộ giai đoạn 2010 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2021"",
+  ""series_name"": ""Sản lượng thủy sản"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""278,8 | 317,3 | 374,1""
+}
+```"
+Biểu đồ cột_13.png,Biểu đồ cột_74 ảnh_đủ r,Sản lượng thủy sản của vùng Đồng bằng sông Cửu Long giai đoạn 2010 - 2021,cột,Nghìn tấn,Năm,2010 | 2015 | 2021,Sản lượng thủy sản,"{'2010': 1012.6, '2015': 1232.2, '2021': 1515.0, 'Nuôi trồng': 3377.1}","```json
+{
+  ""chart_title"": ""Sản lượng thủy sản của vùng Đồng bằng sông Cửu Long giai đoạn 2010 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2021"",
+  ""series_name"": ""Sản lượng thủy sản"",
+  ""y_axis_ticks"": ""0 | 500 | 1000 | 1500 | 2000 | 2500 | 3000 | 3500"",
+  ""values"": {
+    ""2010"": 1012.6,
+    ""2015"": 1232.2,
+    ""2021"": 1515.0,
+    ""Nuôi trồng"": 3377.1
+  }
+}
+```"
+Biểu đồ cột_14.png,Biểu đồ cột_74 ảnh_đủ r,"Tình hình nợ nước ngoài của một số quốc gia Mỹ La Tinh, năm 2017",cột,Ti USD,Quốc gia,"['Ac-hen-ti-na', 'Bra-xin', 'E-cua-đô', 'Ha-mai-ca', 'Mê-hi-cô', 'Pa-ra-goay', 'Pê-ru', 'Vê-nê-xu-ê-la']",Tình hình nợ nước ngoài,"[236.5, 543, 41.1, 14.7, 441.6, 15.9, 67.6, 148.9]","```json
+{
+  ""chart_title"": ""Tình hình nợ nước ngoài của một số quốc gia Mỹ La Tinh, năm 2017"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Ti USD"",
+  ""x_axis_label"": ""Quốc gia"",
+  ""categories"": [""Ac-hen-ti-na"", ""Bra-xin"", ""E-cua-đô"", ""Ha-mai-ca"", ""Mê-hi-cô"", ""Pa-ra-goay"", ""Pê-ru"", ""Vê-nê-xu-ê-la""],
+  ""series_name"": ""Tình hình nợ nước ngoài"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60"",
+  ""values"": [236.5, 543, 41.1, 14.7, 441.6, 15.9, 67.6, 148.9]
+}
+```"
+Biểu đồ cột_15.png,Biểu đồ cột_74 ảnh_đủ r,Biểu đồ thể hiện lượng mưa trung bình tháng ở TP. Hồ Chí Minh,cột,mm,Tháng,I | II | III | IV | V | VI | VII | VIII | IX | X | XII,Lượng mưa,"[13.8, 4.1, 10.5, 218.4, 311.7, 293.7, 269.8, 327, 266.7, 116.5, 48.3]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện lượng mưa trung bình tháng ở TP. Hồ Chí Minh"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""mm"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""I | II | III | IV | V | VI | VII | VIII | IX | X | XII"",
+  ""series_name"": ""Lượng mưa"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    13.8,
+    4.1,
+    10.5,
+    218.4,
+    311.7,
+    293.7,
+    269.8,
+    327,
+    266.7,
+    116.5,
+    48.3
+  ]
+}
+```"
+Biểu đồ cột_16.png,Biểu đồ cột_74 ảnh_đủ r,"Quy mô GDP của Ma-Lai-Xi-A và Xin-Ga-Po, giai đoạn 2010 - 2016",cột,Tỷ đô la Mỹ,Năm,2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016,Quy mô GDP,"[255, 236, 323, 303, 297, 297, 297]","```json
+{
+  ""chart_title"": ""Quy mô GDP của Ma-Lai-Xi-A và Xin-Ga-Po, giai đoạn 2010 - 2016"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỷ đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016"",
+  ""series_name"": ""Quy mô GDP"",
+  ""y_axis_ticks"": ""0 | 100 | 200 | 300 | 400"",
+  ""values"": [
+    255, 236, 323, 303, 297, 297, 297
+  ]
+}
+```"
+Biểu đồ cột_17.png,Biểu đồ cột_74 ảnh_đủ r,"Sản lượng gỗ khai thác của cả nước và một số vùng, giai đoạn 2012 - 2014",cột,Nghìn m³,Năm,2012 | 2013 | 2014,Sản lượng,"[{'cột': 'Cả nước', 'giá trị': 5251}, {'cột': 'Trung du và miền núi Bắc Bộ', 'giá trị': 1590}, {'cột': 'Tây Nguyên', 'giá trị': 2278}, {'cột': '2014', 'giá trị': 7701}]","```json
+{
+  ""chart_title"": ""Sản lượng gỗ khai thác của cả nước và một số vùng, giai đoạn 2012 - 2014"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn m³"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2012 | 2013 | 2014"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 2000 | 4000 | 6000 | 8000"",
+  ""values"": [
+    {""cột"": ""Cả nước"", ""giá trị"": 5251},
+    {""cột"": ""Trung du và miền núi Bắc Bộ"", ""giá trị"": 1590},
+    {""cột"": ""Tây Nguyên"", ""giá trị"": 2278},
+    {""cột"": ""2014"", ""giá trị"": 7701}
+  ]
+}
+```"
+Biểu đồ cột_18.png,Biểu đồ cột_74 ảnh_đủ r,"Lượng mưa, lượng bốc hơi và cân bằng ẩm của một số địa điểm ở nước ta",cột,mm,Tiêu chí,"['Hà Nội', 'Huế', 'TP. Hồ Chí Minh']","Lượng mưa, lượng bốc hơi và cân bằng ẩm","[{'x': 'Hà Nội', 'y': 1676}, {'x': 'Huế', 'y': 989}, {'x': 'TP. Hồ Chí Minh', 'y': 1686}]","```json
+{
+  ""chart_title"": ""Lượng mưa, lượng bốc hơi và cân bằng ẩm của một số địa điểm ở nước ta"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""mm"",
+  ""x_axis_label"": ""Tiêu chí"",
+  ""categories"": [""Hà Nội"", ""Huế"", ""TP. Hồ Chí Minh""],
+  ""series_name"": ""Lượng mưa, lượng bốc hơi và cân bằng ẩm"",
+  ""y_axis_ticks"": ""0 | 500 | 1000 | 1500 | 2000 | 2500 | 3000 | 3500"",
+  ""values"": [
+    {""x"": ""Hà Nội"", ""y"": 1676},
+    {""x"": ""Huế"", ""y"": 989},
+    {""x"": ""TP. Hồ Chí Minh"", ""y"": 1686}
+  ]
+}
+```"
+Biểu đồ cột_19.png,Biểu đồ cột_74 ảnh_đủ r,"Tình hình nợ nước ngoài của một số quốc gia Mỹ La Tinh, năm 2017",cột,Tỉ USD,Quốc gia,"['Ac-hen-ti-na', 'Bra-xin', 'É-cua-đô', 'Ha-mai-ca', 'Mê-hi-cô', 'Pa-ra-goay', 'Pê-ru', 'Vê-nê-xu-ê-la']",Quốc gia,"[236.5, 543, 41.1, 14.7, 441.6, 15.9, 67.6, 148.9]","```json
+{
+  ""chart_title"": ""Tình hình nợ nước ngoài của một số quốc gia Mỹ La Tinh, năm 2017"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỉ USD"",
+  ""x_axis_label"": ""Quốc gia"",
+  ""categories"": [""Ac-hen-ti-na"", ""Bra-xin"", ""É-cua-đô"", ""Ha-mai-ca"", ""Mê-hi-cô"", ""Pa-ra-goay"", ""Pê-ru"", ""Vê-nê-xu-ê-la""],
+  ""series_name"": ""Quốc gia"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60"",
+  ""values"": [236.5, 543, 41.1, 14.7, 441.6, 15.9, 67.6, 148.9]
+}
+```"
+Biểu đồ cột_2.png,Biểu đồ cột_74 ảnh_đủ r,"Biểu đồ các nước có chiều dài đường sắt lớn nhất thế giới, năm 2019",cột,Nghìn km,Nước,Hoa Kỳ | Trung Quốc | Liên bang Nga | Ca-na-đa | Ấn Độ,Nước,"[239.2, 131.0, 87.2, 77.9, 68.5]","```json
+{
+  ""chart_title"": ""Biểu đồ các nước có chiều dài đường sắt lớn nhất thế giới, năm 2019"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn km"",
+  ""x_axis_label"": ""Nước"",
+  ""categories"": ""Hoa Kỳ | Trung Quốc | Liên bang Nga | Ca-na-đa | Ấn Độ"",
+  ""series_name"": ""Nước"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250 | 300"",
+  ""values"": [
+    239.2,
+    131.0,
+    87.2,
+    77.9,
+    68.5
+  ]
+}
+```"
+Biểu đồ cột_20.png,Biểu đồ cột_74 ảnh_đủ r,Năm,cột,Nghìn m³,Năm,2012 | 2013 | 2014,Năm,"[{'cột': 'Cả nước', 'giá trị': 5251}, {'cột': 'Trung du và miền núi Bắc Bộ', 'giá trị': 1590}, {'cột': 'Tây Nguyên', 'giá trị': 620}, {'cột': '2013', 'giá trị': 1731}, {'cột': '2014', 'giá trị': 2278}, {'cột': '2014', 'giá trị': 7701}]","```json
+{
+  ""chart_title"": ""Năm"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn m³"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2012 | 2013 | 2014"",
+  ""series_name"": ""Năm"",
+  ""y_axis_ticks"": ""0 | 2000 | 4000 | 6000 | 8000"",
+  ""values"": [
+    {""cột"": ""Cả nước"", ""giá trị"": 5251},
+    {""cột"": ""Trung du và miền núi Bắc Bộ"", ""giá trị"": 1590},
+    {""cột"": ""Tây Nguyên"", ""giá trị"": 620},
+    {""cột"": ""2013"", ""giá trị"": 1731},
+    {""cột"": ""2014"", ""giá trị"": 2278},
+    {""cột"": ""2014"", ""giá trị"": 7701}
+  ]
+}
+```"
+Biểu đồ cột_21.png,Biểu đồ cột_74 ảnh_đủ r,Sản lượng lương thực,cột,triệu tấn,Năm,1995 | 1998 | 1999 | 2000 | 2001 | 2002 | 2005,Sản lượng lương thực,62 | 46.9 | 53.8 | 64.3 | 83.6 | 92 | 78.2,"```json
+{
+  ""chart_title"": ""Sản lượng lương thực"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 1998 | 1999 | 2000 | 2001 | 2002 | 2005"",
+  ""series_name"": ""Sản lượng lương thực"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": ""62 | 46.9 | 53.8 | 64.3 | 83.6 | 92 | 78.2""
+}
+```"
+Biểu đồ cột_22.png,Biểu đồ cột_74 ảnh_đủ r,Tỉ đô la Mỹ,cột,Tỉ đô la Mỹ,Năm,2010 | 2013 | 2016,Năm giám thống kê Việt Nam 2017,"[255, 323, 272, 297, 305]","```json
+{
+  ""chart_title"": ""Tỉ đô la Mỹ"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỉ đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2013 | 2016"",
+  ""series_name"": ""Năm giám thống kê Việt Nam 2017"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    255,
+    323,
+    272,
+    297,
+    305
+  ]
+}
+```"
+Biểu đồ cột_23.png,Biểu đồ cột_74 ảnh_đủ r,Tỉ đô la Mỹ,cột,Tỉ đô la Mỹ,Năm,2010 | 2013 | 2016,"Niên giám thống kê Việt Nam 2017, NXB Thống kê 2018","[{'cột': '2010', 'thái lan': 341, 'philippin': 200}, {'cột': '2013', 'thái lan': 421, 'philippin': 272}, {'cột': '2016', 'thái lan': 407, 'philippin': 305}]","```json
+{
+  ""chart_title"": ""Tỉ đô la Mỹ"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỉ đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2013 | 2016"",
+  ""series_name"": ""Niên giám thống kê Việt Nam 2017, NXB Thống kê 2018"",
+  ""y_axis_ticks"": ""0 | 100 | 200 | 300 | 400 | 500"",
+  ""values"": [
+    {""cột"": ""2010"", ""thái lan"": 341, ""philippin"": 200},
+    {""cột"": ""2013"", ""thái lan"": 421, ""philippin"": 272},
+    {""cột"": ""2016"", ""thái lan"": 407, ""philippin"": 305}
+  ]
+}
+```"
+Biểu đồ cột_24.png,Biểu đồ cột_74 ảnh_đủ r,Biểu đồ biểu diễn số đại biểu chọn mỗi loại nước uống,cột,Số đại biểu chọn,Loại nước uống,"['Nước cam', 'Nước dứa', 'Nước chanh', 'Nước dưa hấu']",Số đại biểu chọn,"[12, 8, 11, 8]","```json
+{
+  ""chart_title"": ""Biểu đồ biểu diễn số đại biểu chọn mỗi loại nước uống"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Số đại biểu chọn"",
+  ""x_axis_label"": ""Loại nước uống"",
+  ""categories"": [""Nước cam"", ""Nước dứa"", ""Nước chanh"", ""Nước dưa hấu""],
+  ""series_name"": ""Số đại biểu chọn"",
+  ""y_axis_ticks"": ""0 | 2 | 4 | 6 | 8 | 10 | 12 | 14"",
+  ""values"": [12, 8, 11, 8]
+}
+```"
+Biểu đồ cột_25.png,Biểu đồ cột_74 ảnh_đủ r,Số học viên CLB Tiếng Nhật của trường THCS Đoàn Kết,cột,Số học viên,Năm,2017 | 2018 | 2019 | 2020,CLB Tiếng Nhật,"30, 40, 50, 60","```json
+{
+  ""chart_title"": ""Số học viên CLB Tiếng Nhật của trường THCS Đoàn Kết"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Số học viên"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""CLB Tiếng Nhật"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60"",
+  ""values"": ""30, 40, 50, 60""
+}
+```"
+Biểu đồ cột_26.png,Biểu đồ cột_74 ảnh_đủ r,Trái cây yêu thích của học sinh lớp 6A,cột,Số học sinh,Trái cây,"['Cam', 'Xoài', 'Táo', 'Ôi', 'Quýt']",Trái cây yêu thích,"[8, 10, 8, 6, 5]","```json
+{
+  ""chart_title"": ""Trái cây yêu thích của học sinh lớp 6A"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Số học sinh"",
+  ""x_axis_label"": ""Trái cây"",
+  ""categories"": [""Cam"", ""Xoài"", ""Táo"", ""Ôi"", ""Quýt""],
+  ""series_name"": ""Trái cây yêu thích"",
+  ""y_axis_ticks"": ""12"",
+  ""values"": [8, 10, 8, 6, 5]
+}
+```"
+Biểu đồ cột_27.png,Biểu đồ cột_74 ảnh_đủ r,Ước tính dân số Việt Nam qua các thập niên (triệu người),cột,Triệu người,Năm,1979 | 1989 | 1999 | 2009 | 2019,Ước tính dân số Việt Nam,53 | 67 | 79 | 87 | 93,"```json
+{
+  ""chart_title"": ""Ước tính dân số Việt Nam qua các thập niên (triệu người)"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1979 | 1989 | 1999 | 2009 | 2019"",
+  ""series_name"": ""Ước tính dân số Việt Nam"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""53 | 67 | 79 | 87 | 93""
+}
+```"
+Biểu đồ cột_28.png,Biểu đồ cột_74 ảnh_đủ r,Số áo sơ mi bán được trong tháng đầu tiên,cột,Số áo,Số áo bán được,37 | 38 | 39 | 40 | 41 | 42,Số áo,20 | 29 | 56 | 65 | 47 | 18,"```json
+{
+  ""chart_title"": ""Số áo sơ mi bán được trong tháng đầu tiên"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Số áo"",
+  ""x_axis_label"": ""Số áo bán được"",
+  ""categories"": ""37 | 38 | 39 | 40 | 41 | 42"",
+  ""series_name"": ""Số áo"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": ""20 | 29 | 56 | 65 | 47 | 18""
+}
+```"
+Biểu đồ cột_29.png,Biểu đồ cột_74 ảnh_đủ r,Số con vật nuôi của học sinh lớp 6A1,cột,Số con vật,Nhóm,"['Chó', 'Mèo', 'Chim', 'Cá', 'Thỏ']",Số con vật,"[6, 4, 10, 14, 2]","```json
+{
+  ""chart_title"": ""Số con vật nuôi của học sinh lớp 6A1"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Số con vật"",
+  ""x_axis_label"": ""Nhóm"",
+  ""categories"": [""Chó"", ""Mèo"", ""Chim"", ""Cá"", ""Thỏ""],
+  ""series_name"": ""Số con vật"",
+  ""y_axis_ticks"": ""0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16"",
+  ""values"": [6, 4, 10, 14, 2]
+}
+```"
+Biểu đồ cột_3.png,Biểu đồ cột_74 ảnh_đủ r,GDP của các nền kinh tế hàng đầu thế giới năm 2020,cột,Tiền USD,Nền kinh tế,"['Hoa Kỳ', 'Trung Quốc', 'Nhật Bản', 'Đức', 'Anh', 'Nước']",GDP,"{'Hoa Kỳ': 20893.7, 'Trung Quốc': 14687.7, 'Nhật Bản': 5040.1, 'Đức': 3846.4, 'Anh': 2756.9, 'Nước': None}","```json
+{
+  ""chart_title"": ""GDP của các nền kinh tế hàng đầu thế giới năm 2020"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tiền USD"",
+  ""x_axis_label"": ""Nền kinh tế"",
+  ""categories"": [""Hoa Kỳ"", ""Trung Quốc"", ""Nhật Bản"", ""Đức"", ""Anh"", ""Nước""],
+  ""series_name"": ""GDP"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25"",
+  ""values"": {
+    ""Hoa Kỳ"": 20893.7,
+    ""Trung Quốc"": 14687.7,
+    ""Nhật Bản"": 5040.1,
+    ""Đức"": 3846.4,
+    ""Anh"": 2756.9,
+    ""Nước"": null
+  }
+}
+```"
+Biểu đồ cột_30.png,Biểu đồ cột_74 ảnh_đủ r,Tổng lượng mưa của thành phố Hà Nội,cột,mm,Tổng lượng mưa (mm),2015 | 2016 | 2017 | 2018 | 2019,Tổng lượng mưa,"[1520, 1631, 1858, 1695, 1311]","```json
+{
+  ""chart_title"": ""Tổng lượng mưa của thành phố Hà Nội"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""mm"",
+  ""x_axis_label"": ""Tổng lượng mưa (mm)"",
+  ""categories"": ""2015 | 2016 | 2017 | 2018 | 2019"",
+  ""series_name"": ""Tổng lượng mưa"",
+  ""y_axis_ticks"": ""0 | 500 | 1000 | 1500 | 2000"",
+  ""values"": [
+    1520,
+    1631,
+    1858,
+    1695,
+    1311
+  ]
+}
+```"
+Biểu đồ cột_31.png,Biểu đồ cột_74 ảnh_đủ r,Số học sinh giỏi Toán và Khoa học tự nhiên,cột,Số học sinh,Nhóm lớp,"['6A', '6B', '6C', '6D', '6E']",Số học sinh giỏi,"[{'toán': 9, 'khoa tự nhiên': 8}, {'toán': 11, 'khoa tự nhiên': 13}, {'toán': 16, 'khoa tự nhiên': 12}, {'toán': 12, 'khoa tự nhiên': 18}, {'toán': 20, 'khoa tự nhiên': 15}]","```json
+{
+  ""chart_title"": ""Số học sinh giỏi Toán và Khoa học tự nhiên"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Số học sinh"",
+  ""x_axis_label"": ""Nhóm lớp"",
+  ""categories"": [""6A"", ""6B"", ""6C"", ""6D"", ""6E""],
+  ""series_name"": ""Số học sinh giỏi"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25"",
+  ""values"": [
+    {""toán"": 9, ""khoa tự nhiên"": 8},
+    {""toán"": 11, ""khoa tự nhiên"": 13},
+    {""toán"": 16, ""khoa tự nhiên"": 12},
+    {""toán"": 12, ""khoa tự nhiên"": 18},
+    {""toán"": 20, ""khoa tự nhiên"": 15}
+  ]
+}
+```"
+Biểu đồ cột_32.png,Biểu đồ cột_74 ảnh_đủ r,Số cuốn truyện cửa hàng bán được trong tuần,cột,Số cuốn truyện,Thứ Hai,Thứ Hai | Thứ Ba | Thứ Tư | Thứ Năm | Thứ Sáu,Truyện thiếu nhi,"{'Thứ Hai': 25, 'Thứ Ba': 18, 'Thứ Tư': 12, 'Thứ Năm': 20, 'Thứ Sáu': 35}","```json
+{
+  ""chart_title"": ""Số cuốn truyện cửa hàng bán được trong tuần"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Số cuốn truyện"",
+  ""x_axis_label"": ""Thứ Hai"",
+  ""categories"": ""Thứ Hai | Thứ Ba | Thứ Tư | Thứ Năm | Thứ Sáu"",
+  ""series_name"": ""Truyện thiếu nhi"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20"",
+  ""values"": {
+    ""Thứ Hai"": 25,
+    ""Thứ Ba"": 18,
+    ""Thứ Tư"": 12,
+    ""Thứ Năm"": 20,
+    ""Thứ Sáu"": 35
+  }
+}
+```"
+Biểu đồ cột_33.png,Biểu đồ cột_74 ảnh_đủ r,Điểm kiểm tra học kì II môn Toán lớp 6A,cột,Điểm số,Điểm số,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,Điểm số,0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16,"```json
+{
+  ""chart_title"": ""Điểm kiểm tra học kì II môn Toán lớp 6A"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Điểm số"",
+  ""x_axis_label"": ""Điểm số"",
+  ""categories"": ""1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10"",
+  ""series_name"": ""Điểm số"",
+  ""y_axis_ticks"": ""0 | 2 | 4 | 6 | 8 | 10"",
+  ""values"": ""0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16""
+}
+```"
+Biểu đồ cột_34.png,Biểu đồ cột_74 ảnh_đủ r,Xanh da trời,cột,m,Xanh da trời,Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây,Xanh da trời,6,"```json
+{
+  ""chart_title"": ""Xanh da trời"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""m"",
+  ""x_axis_label"": ""Xanh da trời"",
+  ""categories"": ""Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây | Xanh lá cây"",
+  ""series_name"": ""Xanh da trời"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6 | 7"",
+  ""values"": ""6""
+}
+```"
+Biểu đồ cột_35.jpg,Biểu đồ cột_74 ảnh_đủ r,nghìn người,cột,nghìn người,Năm,2005 | 2007 | 2009 | 2011 | 2013 | 2015,nghìn người,82392.1 | 84218.5 | 86025 | 87860.4 | 89759.5 | 91713.3,"```json
+{
+  ""chart_title"": ""nghìn người"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""nghìn người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2007 | 2009 | 2011 | 2013 | 2015"",
+  ""series_name"": ""nghìn người"",
+  ""y_axis_ticks"": ""0 | 20000 | 40000 | 60000 | 80000 | 100000"",
+  ""values"": ""82392.1 | 84218.5 | 86025 | 87860.4 | 89759.5 | 91713.3""
+}
+```"
+Biểu đồ cột_36.jpg,Biểu đồ cột_74 ảnh_đủ r,Sản lượng lương thực,cột,triệu tấn,Năm,1995 | 1998 | 1999 | 2000 | 2001 | 2002 | 2005,Sản lượng lương thực,"[62.0, 46.9, 53.8, 64.3, 83.6, 92.0, 78.2]","```json
+{
+  ""chart_title"": ""Sản lượng lương thực"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 1998 | 1999 | 2000 | 2001 | 2002 | 2005"",
+  ""series_name"": ""Sản lượng lương thực"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": [
+    62.0,
+    46.9,
+    53.8,
+    64.3,
+    83.6,
+    92.0,
+    78.2
+  ]
+}
+```"
+Biểu đồ cột_37.jpg,Biểu đồ cột_74 ảnh_đủ r,Khai thác và nuôi trồng,cột,Triệu tấn,Năm,1990 | 1994 | 1998 | 2002,Khai thác và nuôi trồng,"{'1990': 728.5, '1994': 1120.9, '1998': 1357, '2002': 1802.6}","```json
+{
+  ""chart_title"": ""Khai thác và nuôi trồng"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 1994 | 1998 | 2002"",
+  ""series_name"": ""Khai thác và nuôi trồng"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800 | 1000 | 1200 | 1400 | 1600 | 1800 | 2000"",
+  ""values"": {
+    ""1990"": 728.5,
+    ""1994"": 1120.9,
+    ""1998"": 1357,
+    ""2002"": 1802.6
+  }
+}
+```"
+Biểu đồ cột_38.jpg,Biểu đồ cột_74 ảnh_đủ r,Tuổi thọ trung bình,cột,Tuổi,Năm,2016 | 2017 | 2018 | 2019 | 2020,Tuổi thọ trung bình,"70,8 | 70,9 | 70,9 | 71,1 | 71,4","```json
+{
+  ""chart_title"": ""Tuổi thọ trung bình"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tuổi"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2016 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Tuổi thọ trung bình"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""70,8 | 70,9 | 70,9 | 71,1 | 71,4""
+}
+```"
+Biểu đồ cột_39.jpg,Biểu đồ cột_74 ảnh_đủ r,Sản lượng (Nghìn tấn),cột,Nghìn tấn,Năm,2000 | 2005 | 2010 | 2016,Sản lượng,"{'2000': 1660.9, '2005': 1478, '2010': 2728.3, '2016': 3644.6}","```json
+{
+  ""chart_title"": ""Sản lượng (Nghìn tấn)"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2005 | 2010 | 2016"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 500 | 1000 | 1500 | 2000 | 2500 | 3000 | 3500 | 4000"",
+  ""values"": {
+    ""2000"": 1660.9,
+    ""2005"": 1478,
+    ""2010"": 2728.3,
+    ""2016"": 3644.6
+  }
+}
+```"
+Biểu đồ cột_4.png,Biểu đồ cột_74 ảnh_đủ r,Sản lượng thủy sản Liên bang Nga giai đoạn 2000 - 2020,cột,Nghìn tấn,Năm,2000 | 2010 | 2020,Sản lượng,"{'2000': 77.1, '2010': 121.0, '2020': 219.2, 'Năm': 5081.0}","```json
+{
+  ""chart_title"": ""Sản lượng thủy sản Liên bang Nga giai đoạn 2000 - 2020"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2010 | 2020"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 1000 | 2000 | 3000 | 4000 | 5000 | 6000"",
+  ""values"": {
+    ""2000"": 77.1,
+    ""2010"": 121.0,
+    ""2020"": 219.2,
+    ""Năm"": 5081.0
+  }
+}
+```"
+Biểu đồ cột_40.png,Biểu đồ cột_74 ảnh_đủ r,"Giá trị xuất khẩu tôm, 2021-2025",cột,tỷ USD,Năm,2021 | 2022 | 2023 | 2024 | 2025,Giá trị xuất khẩu tôm,"[{'2021': 3.9, 'Ecuador': 4.3}, {'2022': 5, 'Ecuador': 6.7}, {'2023': 3.45, 'Ecuador': 6.3}, {'2024': 3.9, 'Ecuador': 6.07}, {'2025': 7.47, 'Ecuador': 7.47}]","```json
+{
+  ""chart_title"": ""Giá trị xuất khẩu tôm, 2021-2025"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""tỷ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2021 | 2022 | 2023 | 2024 | 2025"",
+  ""series_name"": ""Giá trị xuất khẩu tôm"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4"",
+  ""values"": [
+    {""2021"": 3.9, ""Ecuador"": 4.3},
+    {""2022"": 5, ""Ecuador"": 6.7},
+    {""2023"": 3.45, ""Ecuador"": 6.3},
+    {""2024"": 3.9, ""Ecuador"": 6.07},
+    {""2025"": 7.47, ""Ecuador"": 7.47}
+  ]
+}
+```"
+Biểu đồ cột_41.png,Biểu đồ cột_74 ảnh_đủ r,Nhập khẩu xuất khẩu,cột,Triệu đô la Mỹ,Năm,2016 | 2017 | 2018 | 2019 | 2020,Nhập khẩu xuất khẩu,"[2990.6, 2617.9, 3660.4, 4936.8, 5720.3, 5381.8]","```json
+{
+  ""chart_title"": ""Nhập khẩu xuất khẩu"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2016 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Nhập khẩu xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6"",
+  ""values"": [
+    2990.6,
+    2617.9,
+    3660.4,
+    4936.8,
+    5720.3,
+    5381.8
+  ]
+}
+```"
+Biểu đồ cột_42.png,Biểu đồ cột_74 ảnh_đủ r,,,,,,,,"```json
+{
+  ""chart_title"": ""Xuất khẩu nông, lâm, thủy sản qua các năm"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""tỷ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024"",
+  ""series_name"": ""Xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90"",
+  ""values"": [
+    30,14,
+    32,1,
+    36,37,
+    40,0,
+    41,3,
+    41,0,
+    48,6,
+    53,2,
+    53,01,
+    62,5
+  ]
+}
+```"
+Biểu đồ cột_43.png,Biểu đồ cột_74 ảnh_đủ r,Vantage Logistics Corp. International Freight Forwarders,cột,Tỷ USD,Đối tượng,"['Điện thoại các loại & linh kiện', 'Máy vi tính sản phẩm điện tử & linh kiện', 'Máy móc thiết bị dụng cụ phụ tùng khác', 'Hàng dệt, may', 'Giày dép các loại', 'Gỗ và sản phẩm gỗ', 'Phương tiện vận tải và phụ tùng', 'Hàng thủy sản', 'Sắt thép các loại', 'Máy ảnh máy quay phim và linh kiện']",International Freight Forwarders,"[57000, 57999, 5080, 3833, 3757, 2390, 1775, 1481, 1601, 1199, 1179, 799, 522]","```json
+{
+  ""chart_title"": ""Vantage Logistics Corp. International Freight Forwarders"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỷ USD"",
+  ""x_axis_label"": ""Đối tượng"",
+  ""categories"": [
+    ""Điện thoại các loại & linh kiện"",
+    ""Máy vi tính sản phẩm điện tử & linh kiện"",
+    ""Máy móc thiết bị dụng cụ phụ tùng khác"",
+    ""Hàng dệt, may"",
+    ""Giày dép các loại"",
+    ""Gỗ và sản phẩm gỗ"",
+    ""Phương tiện vận tải và phụ tùng"",
+    ""Hàng thủy sản"",
+    ""Sắt thép các loại"",
+    ""Máy ảnh máy quay phim và linh kiện""
+  ],
+  ""series_name"": ""International Freight Forwarders"",
+  ""y_axis_ticks"": ""0 | 2000 | 4000 | 6000 | 8000 | 10000 | 12000 | 14000 | 16000 | 18000 | 20000"",
+  ""values"": [
+    57000,
+    57999,
+    5080,
+    3833,
+    3757,
+    2390,
+    1775,
+    1481,
+    1601,
+    1199,
+    1179,
+    799,
+    522
+  ]
+}
+```"
+Biểu đồ cột_44.webp,Biểu đồ cột_74 ảnh_đủ r,Những mặt hàng xuất khẩu hàng đầu sang Mỹ,cột,Năm,Những mặt hàng xuất khẩu hàng đầu sang Mỹ,"Máy móc, thiết bị, dụng cụ và phụ tùng | Hàng dệt may | Hàng vi tính sản phẩm điện tử và linh kiện | Điện thoại các loại và linh kiện | Giày dép các loại | Gỗ và sản phẩm từ gỗ | Hàng thủy sản",CAFEF,"[17.82, 16.1, 12.76, 9.69, 7.42, 8.8, 2.05]","```json
+{
+  ""chart_title"": ""Những mặt hàng xuất khẩu hàng đầu sang Mỹ"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Năm"",
+  ""x_axis_label"": ""Những mặt hàng xuất khẩu hàng đầu sang Mỹ"",
+  ""categories"": ""Máy móc, thiết bị, dụng cụ và phụ tùng | Hàng dệt may | Hàng vi tính sản phẩm điện tử và linh kiện | Điện thoại các loại và linh kiện | Giày dép các loại | Gỗ và sản phẩm từ gỗ | Hàng thủy sản"",
+  ""series_name"": ""CAFEF"",
+  ""y_axis_ticks"": ""0 | 2 | 4 | 6 | 8 | 10"",
+  ""values"": [
+    17.82,
+    16.1,
+    12.76,
+    9.69,
+    7.42,
+    8.8,
+    2.05
+  ]
+}
+```"
+Biểu đồ cột_45.webp,Biểu đồ cột_74 ảnh_đủ r,Xuất - Nhập khẩu hàng hóa qua các năm,cột,tỉ đô la Mỹ,Năm,2000 | 2002 | 2005 | 2007,Xuất khẩu,"{'2000': 32.4, '2002': 36.8, '2005': 48.6, '2007': 62.8}","```json
+{
+  ""chart_title"": ""Xuất - Nhập khẩu hàng hóa qua các năm"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""tỉ đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2002 | 2005 | 2007"",
+  ""series_name"": ""Xuất khẩu"",
+  ""y_axis_ticks"": ""-15 | -10 | -5 | 0 | 5 | 10 | 15"",
+  ""values"": {
+    ""2000"": 14.5,
+    ""2002"": 15.6,
+    ""2005"": 16.7,
+    ""2007"": 19.7,
+    ""2000"": 32.4,
+    ""2002"": 36.8,
+    ""2005"": 48.6,
+    ""2007"": 62.8
+  }
+}
+```"
+Biểu đồ cột_46.png,Biểu đồ cột_74 ảnh_đủ r,Biểu đồ tăng trưởng GDP Việt Nam giai đoạn 2012 - 2025,cột,%,Năm,2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | Quý I/2025 | Quý II/2025,GDP Việt Nam,"[5.25, 5.42, 5.98, 6.68, 6.81, 7.08, 7.02, 8.02, 7.09, 5.05, 2.91, 7.96, 7.93]","```json
+{
+  ""chart_title"": ""Biểu đồ tăng trưởng GDP Việt Nam giai đoạn 2012 - 2025"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | Quý I/2025 | Quý II/2025"",
+  ""series_name"": ""GDP Việt Nam"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8"",
+  ""values"": [
+    5.25,
+    5.42,
+    5.98,
+    6.68,
+    6.81,
+    7.08,
+    7.02,
+    8.02,
+    7.09,
+    5.05,
+    2.91,
+    7.96,
+    7.93
+  ]
+}
+```"
+Biểu đồ cột_47.png,Biểu đồ cột_74 ảnh_đủ r,Tăng trưởng GDP theo lĩnh vực svck,cột,%,Lĩnh vực,"['GDP', 'Nông, lâm, ngư nghiệp', 'Công nghệ & Xây dựng', 'Dịch vụ']",Tăng trưởng GDP theo lĩnh vực svck,"[{'2023': 5.0, '2024 (dự báo)': 6.9, '2025 (dự báo)': 6.9}, {'2023': 3.2, '2024 (dự báo)': 3.8, '2025 (dự báo)': 3.9}, {'2023': 3.5, '2024 (dự báo)': 3.7, '2025 (dự báo)': 3.7}, {'2023': 7.6, '2024 (dự báo)': 8.1, '2025 (dự báo)': 7.6}, {'2023': 6.8, '2024 (dự báo)': 7.1, '2025 (dự báo)': 7.5}]","```json
+{
+  ""chart_title"": ""Tăng trưởng GDP theo lĩnh vực svck"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Lĩnh vực"",
+  ""categories"": [""GDP"", ""Nông, lâm, ngư nghiệp"", ""Công nghệ & Xây dựng"", ""Dịch vụ""],
+  ""series_name"": ""Tăng trưởng GDP theo lĩnh vực svck"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9"",
+  ""values"": [
+    {""2023"": 5.0, ""2024 (dự báo)"": 6.9, ""2025 (dự báo)"": 6.9},
+    {""2023"": 3.2, ""2024 (dự báo)"": 3.8, ""2025 (dự báo)"": 3.9},
+    {""2023"": 3.5, ""2024 (dự báo)"": 3.7, ""2025 (dự báo)"": 3.7},
+    {""2023"": 7.6, ""2024 (dự báo)"": 8.1, ""2025 (dự báo)"": 7.6},
+    {""2023"": 6.8, ""2024 (dự báo)"": 7.1, ""2025 (dự báo)"": 7.5}
+  ]
+}
+```"
+Biểu đồ cột_48.png,Biểu đồ cột_74 ảnh_đủ r,Số tiền (tỉ đô la Mỹ),cột,tỉ đô la Mỹ,Năm,2016 | 2017 | 2018 | 2019 | 2020,Số tiền,"19,257 | 21,908 | 24,032 | 25,287 | 27,755","```json
+{
+  ""chart_title"": ""Số tiền (tỉ đô la Mỹ)"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""tỉ đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2016 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Số tiền"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35"",
+  ""values"": ""19,257 | 21,908 | 24,032 | 25,287 | 27,755""
+}
+```"
+Biểu đồ cột_49.webp,Biểu đồ cột_74 ảnh_đủ r,"Tổng giá trị kim ngạch xuất nhập khẩu năm 2025 đạt khoảng 930 tỷ USD, tăng 18,2% so với cùng kỳ năm trước",cột,tỷ USD,Năm,2020 | 2021 | 2022 | 2023 | 2024 | 2025,Tổng giá trị kim ngạch xuất nhập khẩu,"{'2020': 270, '2021': 320, '2022': 370, '2023': 340, '2024': 410, '2025': 470}","```json
+{
+  ""chart_title"": ""Tổng giá trị kim ngạch xuất nhập khẩu năm 2025 đạt khoảng 930 tỷ USD, tăng 18,2% so với cùng kỳ năm trước"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""tỷ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2020 | 2021 | 2022 | 2023 | 2024 | 2025"",
+  ""series_name"": ""Tổng giá trị kim ngạch xuất nhập khẩu"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250"",
+  ""values"": {
+    ""2020"": 270,
+    ""2021"": 320,
+    ""2022"": 370,
+    ""2023"": 340,
+    ""2024"": 410,
+    ""2025"": 470
+  }
+}
+```"
+Biểu đồ cột_5.png,Biểu đồ cột_74 ảnh_đủ r,Trị giá xuất nhập khẩu hàng hóa và dịch vụ của Nhật Bản giai đoạn 2000 - 2020,cột,Tỉ USD,Năm,2000 | 2005 | 2010 | 2015 | 2020,Trị giá xuất nhập khẩu,"[{'x': 2000, 'y': 519.9, 'series_name': 'Trị giá xuất khẩu', 'unit': 'Tỉ USD'}, {'x': 2005, 'y': 667.5, 'series_name': 'Trị giá xuất khẩu', 'unit': 'Tỉ USD'}, {'x': 2010, 'y': 859.2, 'series_name': 'Trị giá xuất khẩu', 'unit': 'Tỉ USD'}, {'x': 2015, 'y': 775.1, 'series_name': 'Trị giá xuất khẩu', 'unit': 'Tỉ USD'}, {'x': 2020, 'y': 784.2, 'series_name': 'Trị giá xuất khẩu', 'unit': 'Tỉ USD'}, {'x': 2020, 'y': 796.3, 'series_name': 'Trị giá nhập khẩu', 'unit': 'Tỉ USD'}]","```json
+{
+  ""chart_title"": ""Trị giá xuất nhập khẩu hàng hóa và dịch vụ của Nhật Bản giai đoạn 2000 - 2020"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỉ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2005 | 2010 | 2015 | 2020"",
+  ""series_name"": ""Trị giá xuất nhập khẩu"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800"",
+  ""values"": [
+    {
+      ""x"": 2000,
+      ""y"": 519.9,
+      ""series_name"": ""Trị giá xuất khẩu"",
+      ""unit"": ""Tỉ USD""
+    },
+    {
+      ""x"": 2005,
+      ""y"": 667.5,
+      ""series_name"": ""Trị giá xuất khẩu"",
+      ""unit"": ""Tỉ USD""
+    },
+    {
+      ""x"": 2010,
+      ""y"": 859.2,
+      ""series_name"": ""Trị giá xuất khẩu"",
+      ""unit"": ""Tỉ USD""
+    },
+    {
+      ""x"": 2015,
+      ""y"": 775.1,
+      ""series_name"": ""Trị giá xuất khẩu"",
+      ""unit"": ""Tỉ USD""
+    },
+    {
+      ""x"": 2020,
+      ""y"": 784.2,
+      ""series_name"": ""Trị giá xuất khẩu"",
+      ""unit"": ""Tỉ USD""
+    },
+    {
+      ""x"": 2020,
+      ""y"": 796.3,
+      ""series_name"": ""Trị giá nhập khẩu"",
+      ""unit"": ""Tỉ USD""
+    }
+  ]
+}
+```"
+Biểu đồ cột_50.png,Biểu đồ cột_74 ảnh_đủ r,Khách du lịch nội địa,cột,Khách du lịch nội địa,Năm,2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017,Khách du lịch nội địa,"[30000, 35000, 37000, 50000, 55000, 60000, 75000]","```json
+{
+  ""chart_title"": ""Khách du lịch nội địa"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Khách du lịch nội địa"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017"",
+  ""series_name"": ""Khách du lịch nội địa"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80"",
+  ""values"": [
+    30000,
+    35000,
+    37000,
+    50000,
+    55000,
+    60000,
+    75000
+  ]
+}
+```"
+Biểu đồ cột_51.png,Biểu đồ cột_74 ảnh_đủ r,Kim ngạch xuất khẩu 11 tháng qua các năm (Đơn vị: tỷ USD),cột,tỷ USD,11 tháng năm 2021,2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021,Việt Nam xuất siêu,"{'2013': 120.49, '2014': 119.9, '2015': 137.36, '2016': 134.06, '2017': 151.03, '2018': 192.8, '2019': 223.9, '2020': 214.74, '2021': 254.98}","```json
+{
+  ""chart_title"": ""Kim ngạch xuất khẩu 11 tháng qua các năm (Đơn vị: tỷ USD)"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""tỷ USD"",
+  ""x_axis_label"": ""11 tháng năm 2021"",
+  ""categories"": ""2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021"",
+  ""series_name"": ""Việt Nam xuất siêu"",
+  ""y_axis_ticks"": ""120,49 | 119,9 | 137,36 | 134,06 | 151,03 | 192,8 | 223,9 | 216,33 | 214,74 | 254,98"",
+  ""values"": {
+    ""2013"": 120.49,
+    ""2014"": 119.9,
+    ""2015"": 137.36,
+    ""2016"": 134.06,
+    ""2017"": 151.03,
+    ""2018"": 192.8,
+    ""2019"": 223.9,
+    ""2020"": 214.74,
+    ""2021"": 254.98
+  }
+}
+```"
+Biểu đồ cột_52.png,Biểu đồ cột_74 ảnh_đủ r,,,,,,,,"```json
+{
+  ""chart_title"": ""Xuất khẩu, nhập khẩu, xuất siêu của Việt Nam sang Mỹ (Tỷ USD)"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỷ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 4 tháng 2022"",
+  ""series_name"": ""Xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    38,46, 41,61, 47,53, 46,9, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33, 61,33,"
+Biểu đồ cột_53.png,Biểu đồ cột_74 ảnh_đủ r,Tỷ USD,cột,Tỷ USD,5 tháng/2021,"Điện thoại & linh kiện | Máy tính, sp & đ tử | Máy móc, tơ bị, dung cụ p. tùng | Hàng dệt, may | Giày dép, dưng | Gỗ và sp gỗ | Phương tiện vận tải và p. tùng | Hàng thủy sản | Sắt thép | Sp từ chất dẻo",Tỷ USD,"[21.76, 24.78, 19.8, 17.29, 15.0, 8.41, 6.68, 6.99, 4.48, 4.82, 3.28, 4.71, 3.58, 4.12, 1.89, 2.42]","```json
+{
+  ""chart_title"": ""Tỷ USD"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỷ USD"",
+  ""x_axis_label"": ""5 tháng/2021"",
+  ""categories"": ""Điện thoại & linh kiện | Máy tính, sp & đ tử | Máy móc, tơ bị, dung cụ p. tùng | Hàng dệt, may | Giày dép, dưng | Gỗ và sp gỗ | Phương tiện vận tải và p. tùng | Hàng thủy sản | Sắt thép | Sp từ chất dẻo"",
+  ""series_name"": ""Tỷ USD"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25"",
+  ""values"": [
+    21.76,
+    24.78,
+    19.80,
+    17.29,
+    15.00,
+    8.41,
+    6.68,
+    6.99,
+    4.48,
+    4.82,
+    3.28,
+    4.71,
+    3.58,
+    4.12,
+    1.89,
+    2.42
+  ]
+}
+```"
+Biểu đồ cột_54.png,Biểu đồ cột_74 ảnh_đủ r,GRDP bình quân đầu người các tỉnh ĐN2021,cột,triệu/người,Tỉnh,"['Bà Rịa Vũng Tàu', 'BRVT (trừ dầu khí)', 'Bình Dương TP. Hồ Chí Minh', 'Đồng Nai', 'Tây Ninh', 'Bình Phước']",GRDP bình quân đầu người,"[281.2, 165.2, 152.25, 146.2, 118.45, 76.5]","```json
+{
+  ""chart_title"": ""GRDP bình quân đầu người các tỉnh ĐN2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""triệu/người"",
+  ""x_axis_label"": ""Tỉnh"",
+  ""categories"": [""Bà Rịa Vũng Tàu"", ""BRVT (trừ dầu khí)"", ""Bình Dương TP. Hồ Chí Minh"", ""Đồng Nai"", ""Tây Ninh"", ""Bình Phước""],
+  ""series_name"": ""GRDP bình quân đầu người"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250 | 300"",
+  ""values"": [281.2, 165.2, 152.25, 146.2, 118.45, 76.5]
+}
+```"
+Biểu đồ cột_55.webp,Biểu đồ cột_74 ảnh_đủ r,Top 10 địa phương có giá trị xuất khẩu hàng hóa cao nhất cả nước năm 2021,cột,US,Địa phương,TP Hồ Chí Minh | Bắc Ninh | Bình Dương Thái Nguyên | Hải Phòng | Đồng Nai | Bắc Giang | Hà Nội | Hải Dương | Phú Thọ,Top 10,"[44, 43, 38, 29, 22, 17, 15, 8, 5]","```json
+{
+  ""chart_title"": ""Top 10 địa phương có giá trị xuất khẩu hàng hóa cao nhất cả nước năm 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""US"",
+  ""x_axis_label"": ""Địa phương"",
+  ""categories"": ""TP Hồ Chí Minh | Bắc Ninh | Bình Dương Thái Nguyên | Hải Phòng | Đồng Nai | Bắc Giang | Hà Nội | Hải Dương | Phú Thọ"",
+  ""series_name"": ""Top 10"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40"",
+  ""values"": [
+    44,
+    43,
+    38,
+    29,
+    22,
+    17,
+    15,
+    8,
+    5
+  ]
+}
+```"
+Biểu đồ cột_56.png,Biểu đồ cột_74 ảnh_đủ r,Cán cân thương mại hàng hóa giữa EU và Việt Nam qua các năm (đơn vị: tỷ USD),cột,tỷ USD,Năm,2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022,Cán cân thương mại,"{'2011': '-10', '2012': '-15', '2013': '-10', '2014': '-15', '2015': '-10', '2016': '-15', '2017': '-10', '2018': '-15', '2019': '-10', '2020': '-15', '2021': '-10', '2022': '-15'}","```json
+{
+  ""chart_title"": ""Cán cân thương mại hàng hóa giữa EU và Việt Nam qua các năm (đơn vị: tỷ USD)"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""tỷ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022"",
+  ""series_name"": ""Cán cân thương mại"",
+  ""y_axis_ticks"": ""-50 | -20 | 0 | 20 | 40 | 60 | 80 | 100 | 120 | 140 | 160 | 180"",
+  ""values"": {
+    ""2011"": ""-10"",
+    ""2012"": ""-15"",
+    ""2013"": ""-10"",
+    ""2014"": ""-15"",
+    ""2015"": ""-10"",
+    ""2016"": ""-15"",
+    ""2017"": ""-10"",
+    ""2018"": ""-15"",
+    ""2019"": ""-10"",
+    ""2020"": ""-15"",
+    ""2021"": ""-10"",
+    ""2022"": ""-15""
+  }
+}
+```"
+Biểu đồ cột_57.png,Biểu đồ cột_74 ảnh_đủ r,Thu nhập bình quân đầu người,cột,Đô la Mỹ,Năm,2015 | 2016 | 2017 | 2018 | 2019 | 2020,"Năm giám Thống kê 2020, NXB Thống kê, 2021","[2015, 2016, 2017, 2018, 2019, 2020]","```json
+{
+  ""chart_title"": ""Thu nhập bình quân đầu người"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2015 | 2016 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Năm giám Thống kê 2020, NXB Thống kê, 2021"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": [
+    2015, 2016, 2017, 2018, 2019, 2020
+  ]
+}
+```"
+Biểu đồ cột_58.png,Biểu đồ cột_74 ảnh_đủ r,Dòng vốn FDI theo khu vực,cột,Tỷ đô,Năm,2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023,Dòng vốn FDI,"1,300 | 1,300 | 1,300 | 1,300 | 1,300 | 1,300 | 1,300","```json
+{
+  ""chart_title"": ""Dòng vốn FDI theo khu vực"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỷ đô"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023"",
+  ""series_name"": ""Dòng vốn FDI"",
+  ""y_axis_ticks"": ""200 | 300 | 400 | 500 | 600 | 700 | 800"",
+  ""values"": ""1,300 | 1,300 | 1,300 | 1,300 | 1,300 | 1,300 | 1,300""
+}
+```"
+Biểu đồ cột_59.png,Biểu đồ cột_74 ảnh_đủ r,Vốn đầu tư của một số quốc gia vào Việt Nam,cột,Tỷ đô la,Năm,2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023,Vốn đầu tư,"[7, 2, 7, 9, 5, 9, 11, 6, 7, 6]","```json
+{
+  ""chart_title"": ""Vốn đầu tư của một số quốc gia vào Việt Nam"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỷ đô la"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023"",
+  ""series_name"": ""Vốn đầu tư"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10"",
+  ""values"": [
+    7,
+    2,
+    7,
+    9,
+    5,
+    9,
+    11,
+    6,
+    7,
+    6
+  ]
+}
+```"
+Biểu đồ cột_6.png,Biểu đồ cột_74 ảnh_đủ r,Sản lượng thủy sản Trung Quốc giai đoạn 2000 - 2020,cột,Triệu tấn,Năm,2000 | 2010 | 2020,Sản lượng thủy sản,"14,8 | 15,1 | 12,7 | 29,7 | 47,8 | 52,3","```json
+{
+  ""chart_title"": ""Sản lượng thủy sản Trung Quốc giai đoạn 2000 - 2020"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2010 | 2020"",
+  ""series_name"": ""Sản lượng thủy sản"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60"",
+  ""values"": ""14,8 | 15,1 | 12,7 | 29,7 | 47,8 | 52,3""
+}
+```"
+Biểu đồ cột_60.jpg,Biểu đồ cột_74 ảnh_đủ r,Hàng hóa khác,cột,thùng,Năm,2021 | 2022,Hàng hóa khác,100 | 120 | 140 | 160 | 180 | 200 | 220 | 240 | 260 | 280 | 300 | 320 | 340 | 360 | 380 | 400 | 420 | 440 | 460 | 480 | 500 | 520 | 540 | 560 | 580 | 600 | 620 | 640 | 660 | 680 | 700 | 720 | 740 | 760 | 780 | 800 | 820 | 840 | 860 | 880 | 900 | 920 | 940 | 960 | 980 | 1000,"```json
+{
+  ""chart_title"": ""Hàng hóa khác"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""thùng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2021 | 2022"",
+  ""series_name"": ""Hàng hóa khác"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60 | 65 | 70 | 75 | 80 | 85 | 90 | 95 | 100"",
+  ""values"": ""100 | 120 | 140 | 160 | 180 | 200 | 220 | 240 | 260 | 280 | 300 | 320 | 340 | 360 | 380 | 400 | 420 | 440 | 460 | 480 | 500 | 520 | 540 | 560 | 580 | 600 | 620 | 640 | 660 | 680 | 700 | 720 | 740 | 760 | 780 | 800 | 820 | 840 | 860 | 880 | 900 | 920 | 940 | 960 | 980 | 1000""
+}
+```"
+Biểu đồ cột_61.png,Biểu đồ cột_74 ảnh_đủ r,"Xuất khẩu, Nhập khẩu, Cán cân TM",cột,Triệu USD,10T/2010,10T/2010,Xuất khẩu,"{'10T/2010': 898, '10T/2011': 588, '10T/2012': 701, '10T/2013': 735, '10T/2014': 669}","```json
+{
+  ""chart_title"": ""Xuất khẩu, Nhập khẩu, Cán cân TM"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu USD"",
+  ""x_axis_label"": ""10T/2010"",
+  ""categories"": ""10T/2010"",
+  ""series_name"": ""Xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": {
+    ""10T/2010"": 898,
+    ""10T/2011"": 588,
+    ""10T/2012"": 701,
+    ""10T/2013"": 735,
+    ""10T/2014"": 669
+  }
+}
+```"
+Biểu đồ cột_62.jpg,Biểu đồ cột_74 ảnh_đủ r,nghìn người,cột,nghìn người,Năm,2005 | 2007 | 2009 | 2011 | 2013 | 2015,nghìn người,82392.1 | 84218.5 | 86025 | 87860.4 | 89759.5 | 91713.3,"```json
+{
+  ""chart_title"": ""nghìn người"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""nghìn người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2007 | 2009 | 2011 | 2013 | 2015"",
+  ""series_name"": ""nghìn người"",
+  ""y_axis_ticks"": ""0 | 20000 | 40000 | 60000 | 80000 | 100000"",
+  ""values"": ""82392.1 | 84218.5 | 86025 | 87860.4 | 89759.5 | 91713.3""
+}
+```"
+Biểu đồ cột_63.png,Biểu đồ cột_74 ảnh_đủ r,Tuổi thọ trung bình,cột,Tuổi,Năm,2016 | 2017 | 2018 | 2019 | 2020,Tuổi thọ,"[70.8, 70.9, 70.9, 71.3, 71.4]","```json
+{
+  ""chart_title"": ""Tuổi thọ trung bình"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tuổi"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2016 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Tuổi thọ"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    70.8, 70.9, 70.9, 71.3, 71.4
+  ]
+}
+```"
+Biểu đồ cột_64.png,Biểu đồ cột_74 ảnh_đủ r,,,,,,,,"```json
+{
+  ""chart_title"": ""Tăng trưởng GDP quý II giai đoạn 2011 - 2020"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""GDP"",
+  ""y_axis_ticks"": ""0 | 1,0 | 2,0 | 3,0 | 4,0 | 5,0 | 5,5 | 5,8 | 6,0 | 6,2 | 6,4 | 6,7 | 6,71 | 6,73 | 6,71 | 6,73 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,71 | 6,"
+Biểu đồ cột_65.png,Biểu đồ cột_74 ảnh_đủ r,Dầu thô khai thác và xuất khẩu,cột,Triệu tấn,Đối tượng,"['I-rắc', 'A-rập Xê-út', 'Các Tiểu vương quốc A-rập Thống Nhất', 'Quốc gia']",Dầu thô khai thác và xuất khẩu,"[{'cột': 'I-rắc', 'dầu thô': 202.2, 'dầu thô xuất khẩu': 178.8}, {'cột': 'A-rập Xê-út', 'dầu thô': 519.6, 'dầu thô xuất khẩu': 349.1}, {'cột': 'Các Tiểu vương quốc A-rập Thống Nhất', 'dầu thô': 165.6, 'dầu thô xuất khẩu': 142.7}, {'cột': 'Quốc gia', 'dầu thô': 0, 'dầu thô xuất khẩu': 0}]","```json
+{
+  ""chart_title"": ""Dầu thô khai thác và xuất khẩu"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu tấn"",
+  ""x_axis_label"": ""Đối tượng"",
+  ""categories"": [""I-rắc"", ""A-rập Xê-út"", ""Các Tiểu vương quốc A-rập Thống Nhất"", ""Quốc gia""],
+  ""series_name"": ""Dầu thô khai thác và xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    {""cột"": ""I-rắc"", ""dầu thô"": 202.2, ""dầu thô xuất khẩu"": 178.8},
+    {""cột"": ""A-rập Xê-út"", ""dầu thô"": 519.6, ""dầu thô xuất khẩu"": 349.1},
+    {""cột"": ""Các Tiểu vương quốc A-rập Thống Nhất"", ""dầu thô"": 165.6, ""dầu thô xuất khẩu"": 142.7},
+    {""cột"": ""Quốc gia"", ""dầu thô"": 0, ""dầu thô xuất khẩu"": 0}
+  ]
+}
+```"
+Biểu đồ cột_66.png,Biểu đồ cột_74 ảnh_đủ r,Xin-ga-po,cột,USD/người,Người,Brunei | Cam-pu-chia | In-đô-nê-nê | Lào | Ma-lai-xi-a | Philippines | Thái Lan | Việt Nam | Xin-ga-po,Xin-ga-po,12300 | 280 | 680 | 317 | 3680 | 930 | 1870 | 415,"```json
+{
+  ""chart_title"": ""Xin-ga-po"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""USD/người"",
+  ""x_axis_label"": ""Người"",
+  ""categories"": ""Brunei | Cam-pu-chia | In-đô-nê-nê | Lào | Ma-lai-xi-a | Philippines | Thái Lan | Việt Nam | Xin-ga-po"",
+  ""series_name"": ""Xin-ga-po"",
+  ""y_axis_ticks"": ""0 | 5000 | 10000 | 15000 | 20000"",
+  ""values"": ""12300 | 280 | 680 | 317 | 3680 | 930 | 1870 | 415""
+}
+```"
+Biểu đồ cột_67.jpg,Biểu đồ cột_74 ảnh_đủ r,Cá biển và hải sản,cột,Nghìn tấn,Năm,2010 | 2015 | 2020 | 2021,Cá biển và hải sản,"[707.1, 913.6, 940.4, 1148.4]","```json
+{
+  ""chart_title"": ""Cá biển và hải sản"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2020 | 2021"",
+  ""series_name"": ""Cá biển và hải sản"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800"",
+  ""values"": [
+    707.1,
+    913.6,
+    940.4,
+    1148.4
+  ]
+}
+```"
+Biểu đồ cột_68.png,Biểu đồ cột_74 ảnh_đủ r,Nhập khẩu xuất khẩu,cột,Triệu đô la Mỹ,Năm,2016 | 2017 | 2018 | 2019 | 2020,Nhập khẩu xuất khẩu,"[2990.6, 2617.9, 3660.4, 4936.8, 5720.3, 5381.8]","```json
+{
+  ""chart_title"": ""Nhập khẩu xuất khẩu"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2016 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Nhập khẩu xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6"",
+  ""values"": [
+    2990.6,
+    2617.9,
+    3660.4,
+    4936.8,
+    5720.3,
+    5381.8
+  ]
+}
+```"
+Biểu đồ cột_69.png,Biểu đồ cột_74 ảnh_đủ r,Thành thị và nông thôn,cột,%,Năm,1995 | 2000 | 2002,Thành thị và nông thôn,"{'1995': 25.3, '2000': 16.2, '2002': 15.6}","```json
+{
+  ""chart_title"": ""Thành thị và nông thôn"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 2000 | 2002"",
+  ""series_name"": ""Thành thị và nông thôn"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": {
+    ""1995"": 25.3,
+    ""2000"": 16.2,
+    ""2002"": 15.6
+  }
+}
+```"
+Biểu đồ cột_7.png,Biểu đồ cột_74 ảnh_đủ r,Lực lượng lao động từ 15 tuổi trở lên của nước ta giai đoạn 2000 - 2021,cột,triệu người,Năm,2000 | 2005 | 2010 | 2015 | 2019 | 2021,Lực lượng lao động,"[37.6, 44.9, 50.4, 54.3, 55.8, 50.6]","```json
+{
+  ""chart_title"": ""Lực lượng lao động từ 15 tuổi trở lên của nước ta giai đoạn 2000 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""triệu người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2005 | 2010 | 2015 | 2019 | 2021"",
+  ""series_name"": ""Lực lượng lao động"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50"",
+  ""values"": [
+    37.6,
+    44.9,
+    50.4,
+    54.3,
+    55.8,
+    50.6
+  ]
+}
+```"
+Biểu đồ cột_70.png,Biểu đồ cột_74 ảnh_đủ r,Cơ cấu giá trị sản xuất chăn nuôi năm 1990 và 2002,cột,%,Năm,1990 | 2002,Cơ cấu giá trị sản xuất chăn nuôi,"[{'cột': 'Gia súc', 'giá trị': 63.9}, {'cột': 'Gia cầm', 'giá trị': 17.3}, {'cột': 'Sản phẩm trứng, sữa', 'giá trị': 17.5}, {'cột': 'Phụ phẩm chăn nuôi', 'giá trị': 2.4}]","```json
+{
+  ""chart_title"": ""Cơ cấu giá trị sản xuất chăn nuôi năm 1990 và 2002"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 2002"",
+  ""series_name"": ""Cơ cấu giá trị sản xuất chăn nuôi"",
+  ""y_axis_ticks"": ""0 | 50 | 100"",
+  ""values"": [
+    {""cột"": ""Gia súc"", ""giá trị"": 63.9},
+    {""cột"": ""Gia cầm"", ""giá trị"": 17.3},
+    {""cột"": ""Sản phẩm trứng, sữa"", ""giá trị"": 17.5},
+    {""cột"": ""Phụ phẩm chăn nuôi"", ""giá trị"": 2.4}
+  ]
+}
+```"
+Biểu đồ cột_71.png,Biểu đồ cột_74 ảnh_đủ r,Điểm của Tiến và Mai,cột,Điểm,Trường học,"['Ngữ văn', 'Toán', 'Ngoại ngữ 1', 'GDCD', 'Lịch sử và Địa lí', 'Khoa học tự nhiên']",Điểm,"[{'tiền': 7, 'mai': 8}, {'tiền': 5, 'mai': 8}, {'tiền': 5, 'mai': 6}, {'tiền': 6, 'mai': 6}, {'tiền': 8, 'mai': 8}, {'tiền': 5, 'mai': 5}]","```json
+{
+  ""chart_title"": ""Điểm của Tiến và Mai"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Điểm"",
+  ""x_axis_label"": ""Trường học"",
+  ""categories"": [""Ngữ văn"", ""Toán"", ""Ngoại ngữ 1"", ""GDCD"", ""Lịch sử và Địa lí"", ""Khoa học tự nhiên""],
+  ""series_name"": ""Điểm"",
+  ""y_axis_ticks"": ""0"",
+  ""values"": [
+    {""tiền"": 7, ""mai"": 8},
+    {""tiền"": 5, ""mai"": 8},
+    {""tiền"": 5, ""mai"": 6},
+    {""tiền"": 6, ""mai"": 6},
+    {""tiền"": 8, ""mai"": 8},
+    {""tiền"": 5, ""mai"": 5}
+  ]
+}
+```"
+Biểu đồ cột_72.png,Biểu đồ cột_74 ảnh_đủ r,Sản lượng điện của TQ qua các năm (ĐV: Tỉ kWh),cột,Tỉ kWh,Năm,2001 | 2002 | 2003 | 2004 | 2005,Sản lượng điện,1500 | 1600 | 1700 | 1800 | 1900,"```json
+{
+  ""chart_title"": ""Sản lượng điện của TQ qua các năm (ĐV: Tỉ kWh)"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỉ kWh"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2001 | 2002 | 2003 | 2004 | 2005"",
+  ""series_name"": ""Sản lượng điện"",
+  ""y_axis_ticks"": ""0 | 500 | 1000 | 1500 | 2000"",
+  ""values"": ""1500 | 1600 | 1700 | 1800 | 1900""
+}
+```"
+Biểu đồ cột_73.png,Biểu đồ cột_74 ảnh_đủ r,Lượng mưa,cột,mm,Tháng,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,Địa lí 8,"[95.3, 104.0, 473.4, 795.6, 580.6, 297.4]","```json
+{
+  ""chart_title"": ""Lượng mưa"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""mm"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12"",
+  ""series_name"": ""Địa lí 8"",
+  ""y_axis_ticks"": ""0 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900"",
+  ""values"": [
+    95.3,
+    104.0,
+    473.4,
+    795.6,
+    580.6,
+    297.4
+  ]
+}
+```"
+Biểu đồ cột_74.png,Biểu đồ cột_74 ảnh_đủ r,,,,,,,,"```json
+{
+  ""chart_title"": ""Lượng mưa trung bình theo tháng của Hà Nội và Thành phố Hồ Chí Minh"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""mm"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""Tháng 1 | Tháng 2 | Tháng 3 | Tháng 4 | Tháng 5 | Tháng 6 | Tháng 7 | Tháng 8 | Tháng 9 | Tháng 10 | Tháng 11 | Tháng 12"",
+  ""series_name"": ""Hà Nội"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450 | 500 | 550"",
+  ""values"": [
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 48,
+    19, 14, 26, 44, 189, 218, 240, 288, 294, 312, 318, 327, 313, 131, 117, 4"
+Biểu đồ cột_8.png,Biểu đồ cột_74 ảnh_đủ r,"Sản lượng một số sản phẩm của ngành công nghiệp sản xuất giày, dép của nước ta giai đoạn 2000 - 2021",cột,triệu đợt,Năm,2000 | 2010 | 2021,Sản lượng,"{'2000': '107,9', '2010': '192,2', '2021': '873,5'}","```json
+{
+  ""chart_title"": ""Sản lượng một số sản phẩm của ngành công nghiệp sản xuất giày, dép của nước ta giai đoạn 2000 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""triệu đợt"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2010 | 2021"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800 | 1000"",
+  ""values"": {
+    ""2000"": ""107,9"",
+    ""2010"": ""192,2"",
+    ""2021"": ""317,0"",
+    ""2021"": ""873,5""
+  }
+}
+```"
+Biểu đồ cột_9.png,Biểu đồ cột_74 ảnh_đủ r,Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá thực tế của nước ta giai đoạn 2005 - 2021,cột,Nghìn tỷ đồng,Năm,2005 | 2010 | 2015 | 2021,Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá thực tế,"[480.3, 1677.3, 3223.2, 4407.8]","```json
+{
+  ""chart_title"": ""Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá thực tế của nước ta giai đoạn 2005 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tỷ đồng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2010 | 2015 | 2021"",
+  ""series_name"": ""Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá thực tế"",
+  ""y_axis_ticks"": ""0 | 1000 | 2000 | 3000 | 4000 | 5000"",
+  ""values"": [
+    480.3,
+    1677.3,
+    3223.2,
+    4407.8
+  ]
+}
+```"
+Biểu đồ kết hợp_1.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Biểu đồ thể hiện sản lượng và giá trị sản xuất thủy sản của nước ta, giai đoạn 2005 - 2017",cột,Nghìn tấn,Năm,2005 | 2010 | 2015 | 2017,Giá trị sản xuất,"{'2005': '3467', '2010': '4200', '2015': '4870', '2017': '5128'}","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện sản lượng và giá trị sản xuất thủy sản của nước ta, giai đoạn 2005 - 2017"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2010 | 2015 | 2017"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 1000 | 2000 | 3000 | 4000 | 5000 | 6000"",
+  ""values"": {
+    ""2005"": ""3467"",
+    ""2010"": ""4200"",
+    ""2015"": ""4870"",
+    ""2017"": ""5128""
+  },
+  ""series_name"": ""Giá trị sản xuất"",
+  ""y_axis_ticks"": ""0 | 20000 | 40000 | 60000""
+}
+```"
+Biểu đồ kết hợp_10.png,Biểu đồ kết hợp_21 ảnh_đủ r,Biểu đồ tình hình sản xuất lúa ở nước ta giai đoạn 2010 - 2021,cột,Triệu tấn,Năm,2010 | 2015 | 2020 | 2021,Diện tích gieo trồng,"40 | 45,1 | 42,7 | 43,9","```json
+{
+  ""chart_title"": ""Biểu đồ tình hình sản xuất lúa ở nước ta giai đoạn 2010 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2020 | 2021"",
+  ""series_name"": ""Diện tích gieo trồng"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""40 | 45,1 | 42,7 | 43,9""
+}
+```"
+Biểu đồ kết hợp_11.png,Biểu đồ kết hợp_21 ảnh_đủ r,Số dân thành thị và tỉ lệ dân thành thị trong dân số cả nước giai đoạn 1990 - 2005,cột,triệu người,Giai đoạn,1990 | 1995 | 2000 | 2005,Số dân thành thị,"{'1990': 12.9, '1995': 14.9, '2000': 18.8, '2005': 22.3}","```json
+{
+  ""chart_title"": ""Số dân thành thị và tỉ lệ dân thành thị trong dân số cả nước giai đoạn 1990 - 2005"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""triệu người"",
+  ""x_axis_label"": ""Giai đoạn"",
+  ""categories"": ""1990 | 1995 | 2000 | 2005"",
+  ""series_name"": ""Số dân thành thị"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25"",
+  ""values"": {
+    ""1990"": 12.9,
+    ""1995"": 14.9,
+    ""2000"": 18.8,
+    ""2005"": 22.3
+  }
+}
+```"
+Biểu đồ kết hợp_12.webp,Biểu đồ kết hợp_21 ảnh_đủ r,"Biểu đồ thể hiện GDP, tốc độ tăng trưởng GDP của Nhật Bản giai đoạn 1961 - 2020",cột,Tỉ USD,GDP (Tỉ USD),1961 | 1970 | 1990 | 2000 | 2010 | 2019 | 2020,GDP,53.5 | 212.6 | 3132 | 4968.4 | 5123.3 | 5040.1 | 12,"```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện GDP, tốc độ tăng trưởng GDP của Nhật Bản giai đoạn 1961 - 2020"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỉ USD"",
+  ""x_axis_label"": ""GDP (Tỉ USD)"",
+  ""categories"": ""1961 | 1970 | 1990 | 2000 | 2010 | 2019 | 2020"",
+  ""series_name"": ""GDP"",
+  ""y_axis_ticks"": ""0 | 1000 | 2000 | 3000 | 4000 | 5000 | 6000"",
+  ""values"": ""53.5 | 212.6 | 3132 | 4968.4 | 5123.3 | 5040.1 | 12""
+}
+```"
+Biểu đồ kết hợp_13.jpg,Biểu đồ kết hợp_21 ảnh_đủ r,Tổng tài sản,cột,Tỷ đồng,Năm,2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 (Kế hoạch),Tổng tài sản,"[4296, 7304, 10396, 14160, 24764, 33484, 93182]","```json
+{
+  ""chart_title"": ""Tổng tài sản"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Tỷ đồng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 (Kế hoạch)"",
+  ""series_name"": ""Tổng tài sản"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": [
+    4296,
+    7304,
+    10396,
+    14160,
+    24764,
+    33484,
+    93182
+  ]
+}
+```"
+Biểu đồ kết hợp_14.png,Biểu đồ kết hợp_21 ảnh_đủ r,Biểu đồ thể hiện số lượng khách và doanh thu du lịch ở nước ta giai đoạn 2010 - 2021,cột,Nghìn tỉ đồng,Năm,2010 | 2015 | 2019 | 2021,Khách du lịch,"{'2010': 28.9, '2015': 44.7, '2019': 63.6, '2021': 3.6}","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện số lượng khách và doanh thu du lịch ở nước ta giai đoạn 2010 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tỉ đồng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2019 | 2021"",
+  ""series_name"": ""Doanh thu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": {
+    ""2010"": 66.5,
+    ""2015"": 114,
+    ""2019"": 18.4,
+    ""2021"": 23.7
+  },
+  ""series_name"": ""Khách du lịch"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": {
+    ""2010"": 28.9,
+    ""2015"": 44.7,
+    ""2019"": 63.6,
+    ""2021"": 3.6
+  }
+}
+```"
+Biểu đồ kết hợp_15.png,Biểu đồ kết hợp_21 ảnh_đủ r,Biểu đồ tình hình phát triển dân số của nước ta trong giai đoạn 1995-2003,cột,nghìn người,Năm,1995 | 1998 | 2000 | 2001 | 2003,Tốc độ gia tăng DS,"{'1995': 3, '1998': 1, '2000': 1, '2001': 1, '2003': 1}","```json
+{
+  ""chart_title"": ""Biểu đồ tình hình phát triển dân số của nước ta trong giai đoạn 1995-2003"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""nghìn người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 1998 | 2000 | 2001 | 2003"",
+  ""series_name"": ""Tổng số dân"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80"",
+  ""values"": {
+    ""1995"": 71995.5,
+    ""1998"": 75456.3,
+    ""2000"": 77635.4,
+    ""2001"": 78685.8,
+    ""2003"": 80902.4
+  },
+  ""series_name"": ""Số dân thành thị"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4"",
+  ""values"": {
+    ""1995"": 1.65,
+    ""1998"": 1.55,
+    ""2000"": 1.36,
+    ""2001"": 1.35,
+    ""2003"": 1.47
+  },
+  ""series_name"": ""Tốc độ gia tăng DS"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4"",
+  ""values"": {
+    ""1995"": 3,
+    ""1998"": 1,
+    ""2000"": 1,
+    ""2001"": 1,
+    ""2003"": 1
+  }
+}
+```"
+Biểu đồ kết hợp_16.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Diện tích và giá trị sản xuất của ngành trồng cây công nghiệp ở nước ta, giai đoạn 2005 - 2012",cột,Nghìn ha,Năm,2005 | 2007 | 2010 | 2012,Diện tích và giá trị sản xuất,"[{'cột': '2005', 'diện tích': 862, 'giá trị': 1624}, {'cột': '2007', 'diện tích': 5845, 'giá trị': 1922}, {'cột': '2010', 'diện tích': 796, 'giá trị': 1916}, {'cột': '2012', 'diện tích': 730, 'giá trị': 116}]","```json
+{
+  ""chart_title"": ""Diện tích và giá trị sản xuất của ngành trồng cây công nghiệp ở nước ta, giai đoạn 2005 - 2012"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2007 | 2010 | 2012"",
+  ""series_name"": ""Diện tích và giá trị sản xuất"",
+  ""y_axis_ticks"": ""0 | 1000 | 2000 | 3000 | 4000 | 5000 | 6000 | 7000 | 8000 | 9000 | 10000 | 11000 | 12000"",
+  ""values"": [
+    {""cột"": ""2005"", ""diện tích"": 862, ""giá trị"": 1624},
+    {""cột"": ""2007"", ""diện tích"": 5845, ""giá trị"": 1922},
+    {""cột"": ""2010"", ""diện tích"": 796, ""giá trị"": 1916},
+    {""cột"": ""2012"", ""diện tích"": 730, ""giá trị"": 116}
+  ]
+}
+```"
+Biểu đồ kết hợp_17.png,Biểu đồ kết hợp_21 ảnh_đủ r,Nhiệt độ và lượng mưa trung bình tháng ở Hà Nội,cột,mm,Tháng,I | II | III | IV | V | VI | VII | VIII | IX | X | XI | XII,Lượng mưa,0 | 10 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60,"```json
+{
+  ""chart_title"": ""Nhiệt độ và lượng mưa trung bình tháng ở Hà Nội"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""mm"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""I | II | III | IV | V | VI | VII | VIII | IX | X | XI | XII"",
+  ""series_name"": ""Lượng mưa"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35"",
+  ""values"": ""0 | 10 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60""
+}
+```"
+Biểu đồ kết hợp_18.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Nhiệt độ, lượng mưa trung bình tháng của Hà Nội",đường,°C,Tháng,I | II | III | IV | V | VI | VII | VIII | IX | X | XI | XII,Nhiệt độ,"{'I': 18.6, 'II': 26.2, 'III': 43.8, 'IV': 90.1, 'V': 188.5, 'VI': 28.8, 'VII': 28.9, 'VIII': 318, 'IX': 28.2, 'X': 27.2, 'XI': 21.4, 'XII': 18.2}","```json
+{
+  ""chart_title"": ""Nhiệt độ, lượng mưa trung bình tháng của Hà Nội"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""°C"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""I | II | III | IV | V | VI | VII | VIII | IX | X | XI | XII"",
+  ""series_name"": ""Nhiệt độ"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35"",
+  ""values"": {
+    ""I"": 18.6,
+    ""II"": 26.2,
+    ""III"": 43.8,
+    ""IV"": 90.1,
+    ""V"": 188.5,
+    ""VI"": 28.8,
+    ""VII"": 28.9,
+    ""VIII"": 318,
+    ""IX"": 28.2,
+    ""X"": 27.2,
+    ""XI"": 21.4,
+    ""XII"": 18.2
+  }
+}
+```"
+Biểu đồ kết hợp_19.png,Biểu đồ kết hợp_21 ảnh_đủ r,Nhiệt độ và lượng mưa Hà Nội năm 2017,cột,°C,Tháng,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,Nhiệt độ,"[19.7, 20.1, 21.9, 25.1, 28.1, 30.8, 449.1, 283.2, 266.3, 259.7, 19.4, 47.5]","```json
+{
+  ""chart_title"": ""Nhiệt độ và lượng mưa Hà Nội năm 2017"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""°C"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12"",
+  ""series_name"": ""Nhiệt độ"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60"",
+  ""values"": [
+    19.7, 20.1, 21.9, 25.1, 28.1, 30.8, 449.1, 283.2, 266.3, 259.7, 19.4, 47.5
+  ]
+}
+```"
+Biểu đồ kết hợp_2.png,Biểu đồ kết hợp_21 ảnh_đủ r,Sản lượng lúa,đường,Tạ,Năm,2010 | 2013 | 2015 | 2017 | 2018,Sản lượng,"42,4 | 46,4 | 48,9 | 49,9 | 52,3","```json
+{
+  ""chart_title"": ""Sản lượng lúa"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Tạ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2013 | 2015 | 2017 | 2018"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""42,4 | 46,4 | 48,9 | 49,9 | 52,3""
+}
+```"
+Biểu đồ kết hợp_20.png,Biểu đồ kết hợp_21 ảnh_đủ r,Số dân và tỉ lệ tăng dân số của nước ta giai đoạn 1979 - 2021,cột,Triệu người,Năm,1979 | 1989 | 1999 | 2009 | 2019 | 2021,Số dân,"{'1979': 52.7, '1989': 2.16, '1999': 64.4, '2009': 76.5, '2019': 86.0, '2021': 106}","```json
+{
+  ""chart_title"": ""Số dân và tỉ lệ tăng dân số của nước ta giai đoạn 1979 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1979 | 1989 | 1999 | 2009 | 2019 | 2021"",
+  ""series_name"": ""Số dân"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 | 120"",
+  ""values"": {
+    ""1979"": 52.7,
+    ""1989"": 2.16,
+    ""1999"": 64.4,
+    ""2009"": 76.5,
+    ""2019"": 86.0,
+    ""2021"": 106
+  }
+}
+```"
+Biểu đồ kết hợp_21.png,Biểu đồ kết hợp_21 ảnh_đủ r,Diện tích gieo trồng và sản lượng lúa của nước ta giai đoạn 2005 - 2021,cột,Nghìn ha,Năm,2005 | 2010 | 2015 | 2021,Diện tích gieo trồng,"{'2005': 7329.9, '2010': 7489.4, '2015': 7828.0, '2021': 7238.9}","```json
+{
+  ""chart_title"": ""Diện tích gieo trồng và sản lượng lúa của nước ta giai đoạn 2005 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2010 | 2015 | 2021"",
+  ""series_name"": ""Diện tích gieo trồng"",
+  ""y_axis_ticks"": ""0 | 2000 | 4000 | 6000 | 8000"",
+  ""values"": {
+    ""2005"": 7329.9,
+    ""2010"": 7489.4,
+    ""2015"": 7828.0,
+    ""2021"": 7238.9
+  }
+}
+```"
+Biểu đồ kết hợp_3.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Sản lượng Than và sản lượng điện của Mi-an-ma, giai đoạn 2010 - 2015",cột,Nghìn tấn,Năm,2010 | 2012 | 2013 | 2015,Than,"{'2010': 240, '2012': 471, '2013': 380, '2015': 420}","```json
+{
+  ""chart_title"": ""Sản lượng Than và sản lượng điện của Mi-an-ma, giai đoạn 2010 - 2015"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2012 | 2013 | 2015"",
+  ""series_name"": ""Than"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50"",
+  ""values"": {
+    ""2010"": 240,
+    ""2012"": 471,
+    ""2013"": 380,
+    ""2015"": 420
+  }
+}
+```"
+Biểu đồ kết hợp_4.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Sản lượng dầu thô và sản lượng điện của Thái Lan, giai đoạn 2010 - 2015",cột,Nghìn tấn,Năm,2010 | 2012 | 2013 | 2015,Sản lượng,"{'2010': 7555, '2012': 7348, '2013': 7373, '2015': 7517}","```json
+{
+  ""chart_title"": ""Sản lượng dầu thô và sản lượng điện của Thái Lan, giai đoạn 2010 - 2015"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2012 | 2013 | 2015"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800"",
+  ""values"": {
+    ""2010"": 7555,
+    ""2012"": 7348,
+    ""2013"": 7373,
+    ""2015"": 7517
+  }
+}
+```"
+Biểu đồ kết hợp_5.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Sản lượng và giá trị sản xuất thủy sản của nước ta, giai đoạn 2005 - 2017",cột,Nghìn tấn,Năm,2005 | 2010 | 2015 | 2017,Sản lượng,"{'2005': 3467, '2010': 4200, '2015': 53654, '2017': 5128}","```json
+{
+  ""chart_title"": ""Sản lượng và giá trị sản xuất thủy sản của nước ta, giai đoạn 2005 - 2017"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2010 | 2015 | 2017"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 1000 | 2000 | 3000 | 4000 | 5000 | 6000 | 7000 | 8000 | 9000 | 10000"",
+  ""values"": {
+    ""2005"": 3467,
+    ""2010"": 4200,
+    ""2015"": 53654,
+    ""2017"": 5128
+  }
+}
+```"
+Biểu đồ kết hợp_6.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Sự biến động diện tích rừng và độ che phủ rừng ở nước ta, giai đoạn 2008 - 2018",cột,Nghìn ha,Năm,2008 | 2012 | 2014 | 2016 | 2018,Độ che phủ rừng,"[2770.2, 10423.8, 10413.3, 10413.6, 10413.5]","```json
+{
+  ""chart_title"": ""Sự biến động diện tích rừng và độ che phủ rừng ở nước ta, giai đoạn 2008 - 2018"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2008 | 2012 | 2014 | 2016 | 2018"",
+  ""series_name"": ""Diện tích rừng"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45"",
+  ""values"": [
+    2770.2,
+    10423.8,
+    10413.3,
+    10413.6,
+    10413.5
+  ],
+  ""series_name"": ""Độ che phủ rừng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2008 | 2012 | 2014 | 2016 | 2018"",
+  ""series_name"": ""Độ che phủ rừng"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45""
+}
+```"
+Biểu đồ kết hợp_7.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Diện tích cây hàng năm, cây lâu năm và tỉ trọng diện tích cây hàng năm của nước ta, giai đoạn 2000 - 2017",cột,Nghìn ha,Năm,2000 | 2005 | 2010 | 2015 | 2017,Diện tích cây lâu năm,"[2104.0, 2468.2, 2846.8, 3245.3, 3394.4]","```json
+{
+  ""chart_title"": ""Diện tích cây hàng năm, cây lâu năm và tỉ trọng diện tích cây hàng năm của nước ta, giai đoạn 2000 - 2017"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2005 | 2010 | 2015 | 2017"",
+  ""series_name"": ""Diện tích cây hàng năm"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90"",
+  ""values"": [
+    10540.3,
+    10818.8,
+    11214.3,
+    11700.0,
+    11703.4
+  ],
+  ""series_name"": ""Diện tích cây lâu năm"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90"",
+  ""values"": [
+    2104.0,
+    2468.2,
+    2846.8,
+    3245.3,
+    3394.4
+  ]
+}
+```"
+Biểu đồ kết hợp_8.png,Biểu đồ kết hợp_21 ảnh_đủ r,"Sản lượng Than và sản lượng điện của MI-AN-MA, giai đoạn 2010 - 2015",cột,Nghìn tấn,Năm,2010 | 2012 | 2013 | 2015,Sản lượng Than và điện,"{'2010': 240, '2012': 471, '2013': 380, '2015': 420}","```json
+{
+  ""chart_title"": ""Sản lượng Than và sản lượng điện của MI-AN-MA, giai đoạn 2010 - 2015"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2012 | 2013 | 2015"",
+  ""series_name"": ""Sản lượng Than và điện"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 200 | 300 | 400 | 500"",
+  ""values"": {
+    ""2010"": 240,
+    ""2012"": 471,
+    ""2013"": 380,
+    ""2015"": 420
+  }
+}
+```"
+Biểu đồ kết hợp_9.png,Biểu đồ kết hợp_21 ảnh_đủ r,Biểu đồ thể hiện diện tích và sản lượng sản xuất lúa gạo của vùng Đồng bằng sông Cửu Long giai đoạn 2010 - 2021,cột,Triệu tấn,Năm,2010 | 2015 | 2020 | 2021,Diện tích,21.6 | 3945.9 | 4301.5 | 3963.7 | 3898.6 | 23.8 | 24.3 | 25.6 | 21.6,"```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện diện tích và sản lượng sản xuất lúa gạo của vùng Đồng bằng sông Cửu Long giai đoạn 2010 - 2021"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2020 | 2021"",
+  ""series_name"": ""Diện tích"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45"",
+  ""values"": ""21.6 | 3945.9 | 4301.5 | 3963.7 | 3898.6 | 23.8 | 24.3 | 25.6 | 21.6""
+}
+```"
+Biểu đồ miền_1.webp,Biểu đồ miền_24 ảnh_đủ r,Dữ liệu về các ngành công nghiệp,cột,Trong tỷ lệ phần trăm,Năm,1995 | 2005 | 2010 | 2016,Dữ liệu,"[{'năm': 1995, 'Nông - lâm - ngư nghiệp': 27.2, 'Công nghiệp - xây dựng': 25.8, 'Dịch vụ': 21}, {'năm': 2005, 'Nông - lâm - ngư nghiệp': 28.8, 'Công nghiệp - xây dựng': 32.5, 'Dịch vụ': 21}, {'năm': 2010, 'Nông - lâm - ngư nghiệp': 38, 'Công nghiệp - xây dựng': 41, 'Dịch vụ': 28.3}, {'năm': 2016, 'Nông - lâm - ngư nghiệp': 43.3, 'Công nghiệp - xây dựng': 28.3, 'Dịch vụ': 18.4}]","```json
+{
+  ""chart_title"": ""Dữ liệu về các ngành công nghiệp"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 2005 | 2010 | 2016"",
+  ""series_name"": ""Dữ liệu"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": [
+    {""năm"": 1995, ""Nông - lâm - ngư nghiệp"": 27.2, ""Công nghiệp - xây dựng"": 25.8, ""Dịch vụ"": 21},
+    {""năm"": 2005, ""Nông - lâm - ngư nghiệp"": 28.8, ""Công nghiệp - xây dựng"": 32.5, ""Dịch vụ"": 21},
+    {""năm"": 2010, ""Nông - lâm - ngư nghiệp"": 38, ""Công nghiệp - xây dựng"": 41, ""Dịch vụ"": 28.3},
+    {""năm"": 2016, ""Nông - lâm - ngư nghiệp"": 43.3, ""Công nghiệp - xây dựng"": 28.3, ""Dịch vụ"": 18.4}
+  ]
+}
+```"
+Biểu đồ miền_10.png,Biểu đồ miền_24 ảnh_đủ r,"Chuyển dịch cơ cấu diện tích lúa phân theo mùa vụ của nước ta, giai đoạn 2005 - 2016",đường,%,Năm,2005 | 2010 | 2013 | 2016,Chuyển dịch,"['27,8', '26,3', '25,1', '24,4']","```json
+{
+  ""chart_title"": ""Chuyển dịch cơ cấu diện tích lúa phân theo mùa vụ của nước ta, giai đoạn 2005 - 2016"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2010 | 2013 | 2016"",
+  ""series_name"": ""Chuyển dịch"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": [
+    ""27,8"",
+    ""26,3"",
+    ""25,1"",
+    ""24,4""
+  ]
+}
+```"
+Biểu đồ miền_11.png,Biểu đồ miền_24 ảnh_đủ r,"Chuyển dịch cơ cấu khối lượng vận chuyển phân theo loại hàng hóa ở nước ta, giai đoạn 2010 - 2017",đường,%,Năm,2010 | 2013 | 2015 | 2017,Chuyển dịch,"['24,9', '20,9', '25,9', '25,2']","```json
+{
+  ""chart_title"": ""Chuyển dịch cơ cấu khối lượng vận chuyển phân theo loại hàng hóa ở nước ta, giai đoạn 2010 - 2017"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2013 | 2015 | 2017"",
+  ""series_name"": ""Chuyển dịch"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": [
+    ""24,9"",
+    ""20,9"",
+    ""25,9"",
+    ""25,2""
+  ]
+}
+```"
+Biểu đồ miền_12.png,Biểu đồ miền_24 ảnh_đủ r,,,,,,,,"```json
+{
+  ""chart_title"": ""Biểu đồ miền tổng sản phẩm trong nước phân theo nhóm ngành kinh tế Việt Nam giai đoạn 1985 - 2001"",
+  ""chart_type"": ""miền"",
+  ""unit"": ""trong"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""Nông, lâm, ngư nghiệp | Công nghiệp - xây dựng | Dịch vụ"",
+  ""series_name"": ""Sản phẩm"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""32,5 | 35,7 | 41,2 | 42,1 | 42,6 | 43,7 | 27,3 | 23,8 | 29,9 | 30,9 | 31,2 | 30,3 | 40,5 | 28,9 | 28,4 | 26,2 | 26 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,2 | 26,"
+Biểu đồ miền_13.png,Biểu đồ miền_24 ảnh_đủ r,Thay đổi cơ cấu giá trị xuất nhập khẩu của Campuchia,đường,Trọng lượng,Năm,2010 | 2012 | 2014 | 2016 | 2018 | 2020,Thay đổi cơ cấu giá trị xuất nhập khẩu,0.0 | 0.2 | 0.4 | 0.6 | 0.8 | 1,"```json
+{
+  ""chart_title"": ""Thay đổi cơ cấu giá trị xuất nhập khẩu của Campuchia"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Trọng lượng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2012 | 2014 | 2016 | 2018 | 2020"",
+  ""series_name"": ""Thay đổi cơ cấu giá trị xuất nhập khẩu"",
+  ""y_axis_ticks"": ""0 | 0.2 | 0.4 | 0.6 | 0.8 | 1"",
+  ""values"": ""0.0 | 0.2 | 0.4 | 0.6 | 0.8 | 1""
+}
+```"
+Biểu đồ miền_14.png,Biểu đồ miền_24 ảnh_đủ r,Hàng nông - lâm - thủy sản,đường,trong tỷ lệ phần trăm,Năm,1995 | 2000 | 2005 | 2010 | 2015,Hàng nông - lâm - thủy sản,"[25.3, 37.2, 36.1, 45.1, 48.1]","```json
+{
+  ""chart_title"": ""Hàng nông - lâm - thủy sản"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 2000 | 2005 | 2010 | 2015"",
+  ""series_name"": ""Hàng nông - lâm - thủy sản"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80"",
+  ""values"": [
+    25.3,
+    37.2,
+    36.1,
+    45.1,
+    48.1
+  ]
+}
+```"
+Biểu đồ miền_15.png,Biểu đồ miền_24 ảnh_đủ r,"Cơ cấu GDP các ngành kinh tế nước ta, thời kì 1991 - 2002",đường,trụ lượt,Năm,1991 | 1993 | 1995 | 1997 | 1999 | 2001 | 2002,Cơ cấu GDP,"['Nông, lâm, ngư nghiệp', 'Công nghiệp, xây dựng', 'Dịch vụ']","```json
+{
+  ""chart_title"": ""Cơ cấu GDP các ngành kinh tế nước ta, thời kì 1991 - 2002"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trụ lượt"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1991 | 1993 | 1995 | 1997 | 1999 | 2001 | 2002"",
+  ""series_name"": ""Cơ cấu GDP"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": [
+    ""Nông, lâm, ngư nghiệp"",
+    ""Công nghiệp, xây dựng"",
+    ""Dịch vụ""
+  ]
+}
+```"
+Biểu đồ miền_16.png,Biểu đồ miền_24 ảnh_đủ r,Biểu đồ thể hiện cơ cấu GDP phân theo ngành của nước ta giai đoạn 1991-2014,đường,trong tỷ lệ phần trăm,Giai đoạn,1991 | 1995 | 2002 | 2010 | 2014,Giai đoạn,"['Nông, lâm, ngư nghiệp', 'Công nghiệp, xây dựng', 'Dịch vụ', 'Công nghiệp, xây dựng', 'Dịch vụ']","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện cơ cấu GDP phân theo ngành của nước ta giai đoạn 1991-2014"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Giai đoạn"",
+  ""categories"": ""1991 | 1995 | 2002 | 2010 | 2014"",
+  ""series_name"": ""Giai đoạn"",
+  ""y_axis_ticks"": ""0% | 20% | 40% | 60% | 80% | 100%"",
+  ""values"": [
+    ""Nông, lâm, ngư nghiệp"",
+    ""Công nghiệp, xây dựng"",
+    ""Dịch vụ"",
+    ""Công nghiệp, xây dựng"",
+    ""Dịch vụ""
+  ]
+}
+```"
+Biểu đồ miền_17.jpg,Biểu đồ miền_24 ảnh_đủ r,Năm 1991 - 2005,đường,năm,Năm,1991 | 1995 | 1999 | 2005,Năm,"[35.7, 44, 27.2, 21]","```json
+{
+  ""chart_title"": ""Năm 1991 - 2005"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""năm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1991 | 1995 | 1999 | 2005"",
+  ""series_name"": ""Năm"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    35.7,
+    44,
+    27.2,
+    21
+  ]
+}
+```"
+Biểu đồ miền_18.jpg,Biểu đồ miền_24 ảnh_đủ r,Năm,đường,Năm,Năm,1991 | 1993 | 1995 | 1997 | 1999 | 2001 | 2002,Năm,"35,7 | 41,2 | 44,0 | 42,1 | 40,1 | 38,6 | 38,5","```json
+{
+  ""chart_title"": ""Năm"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Năm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1991 | 1993 | 1995 | 1997 | 1999 | 2001 | 2002"",
+  ""series_name"": ""Năm"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": ""35,7 | 41,2 | 44,0 | 42,1 | 40,1 | 38,6 | 38,5""
+}
+```"
+Biểu đồ miền_19.png,Biểu đồ miền_24 ảnh_đủ r,Năm 1990 - 2002,đường,Trong tỷ lệ phần trăm,Năm,"['Nông, lâm, ngư nghiệp', 'Công nghiệp - xây dựng', 'Dịch vụ']","Nông, lâm, ngư nghiệp","[38.6, 35.7, 44.0, 42.1, 41.7, 38.5]","```json
+{
+  ""chart_title"": ""Năm 1990 - 2002"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 1991 | 1995 | 1997 | 1998 | 2002"",
+  ""series_name"": ""Năm"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": [
+    38.6,
+    35.7,
+    44.0,
+    42.1,
+    41.7,
+    38.5
+  ],
+  ""series_name"": ""Nông, lâm, ngư nghiệp"",
+  ""categories"": [
+    ""Nông, lâm, ngư nghiệp"",
+    ""Công nghiệp - xây dựng"",
+    ""Dịch vụ""
+  ]
+}
+```"
+Biểu đồ miền_2.jpg,Biểu đồ miền_24 ảnh_đủ r,Hàng xuất khẩu,cột,%,Năm,2010 | 2013 | 2015 | 2017,Hàng xuất khẩu,"[24.9, 20.9, 25.9, 25.2]","```json
+{
+  ""chart_title"": ""Hàng xuất khẩu"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2013 | 2015 | 2017"",
+  ""series_name"": ""Hàng xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": [
+    24.9,
+    20.9,
+    25.9,
+    25.2
+  ]
+}
+```"
+Biểu đồ miền_20.png,Biểu đồ miền_24 ảnh_đủ r,Lực lượng lao động theo nhóm tuổi,đường,Số liệu theo niên giám sát Việt Nam 2020,Năm,2010 | 2018 | 2019 | 2020,Số liệu theo niên giám sát Việt Nam 2020,20.3 | 27 | 25.6 | 25.8,"```json
+{
+  ""chart_title"": ""Lực lượng lao động theo nhóm tuổi"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Số liệu theo niên giám sát Việt Nam 2020"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Số liệu theo niên giám sát Việt Nam 2020"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""20.3 | 27 | 25.6 | 25.8""
+}
+```"
+Biểu đồ miền_21.png,Biểu đồ miền_24 ảnh_đủ r,Cơ cấu GDP phân theo ngành kinh tế của nước ta giai đoạn 2010 - 2022,cột,Trong tỷ lệ phần trăm,Năm,2010 | 2015 | 2020 | 2022,Năm,"[11, 9.1, 8.8, 8.5, 41.8, 41.3, 36.7, 38.2, 12.7, 12.0]","```json
+{
+  ""chart_title"": ""Cơ cấu GDP phân theo ngành kinh tế của nước ta giai đoạn 2010 - 2022"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2020 | 2022"",
+  ""series_name"": ""Cơ cấu GDP"",
+  ""y_axis_ticks"": ""0% | 10% | 20% | 30% | 40% | 50% | 60% | 70% | 80% | 90% | 100%"",
+  ""values"": [
+    11,
+    9.1,
+    8.8,
+    8.5,
+    41.8,
+    41.3,
+    36.7,
+    38.2,
+    12.7,
+    12.0
+  ],
+  ""series_name"": ""Năm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2020 | 2022"",
+  ""series_name"": ""Năm"",
+  ""y_axis_ticks"": ""0% | 10% | 20% | 30% | 40% | 50% | 60% | 70% | 80% | 90% | 100%""
+}
+```"
+Biểu đồ miền_22.jpeg,Biểu đồ miền_24 ảnh_đủ r,Cơ cấu GDP của khu vực Mỹ La tỉnh giai đoạn 1990 - 2020,cột,Trong tỷ lệ phần trăm,Năm,1990 | 2000 | 2010 | 2020,Cơ cấu GDP,"[{'cột': 'Nông nghiệp, lâm nghiệp và thủy sản', 'tháng': '1990', 'tỷ lệ': 4.6}, {'cột': 'Công nghiệp và xây dựng', 'tháng': '1990', 'tỷ lệ': 10.4}, {'cột': 'Dịch vụ', 'tháng': '1990', 'tỷ lệ': 10.5}, {'cột': 'Thuế sản phẩm trừ trợ cấp sản phẩm', 'tháng': '1990', 'tỷ lệ': 4.9}, {'cột': 'Công nghiệp và xây dựng', 'tháng': '2000', 'tỷ lệ': 55.3}, {'cột': 'Dịch vụ', 'tháng': '2000', 'tỷ lệ': 55.7}, {'cột': 'Thuế sản phẩm trừ trợ cấp sản phẩm', 'tháng': '2000', 'tỷ lệ': 29.1}, {'cột': 'Công nghiệp và xây dựng', 'tháng': '2010', 'tỷ lệ': 29.4}, {'cột': 'Dịch vụ', 'tháng': '2010', 'tỷ lệ': 29.1}, {'cột': 'Thuế sản phẩm trừ trợ cấp sản phẩm', 'tháng': '2010', 'tỷ lệ': 28.3}, {'cột': 'Công nghiệp và xây dựng', 'tháng': '2010', 'tỷ lệ': 28.3}, {'cột': 'Dịch vụ', 'tháng': '2010', 'tỷ lệ': 4.7}, {'cột': 'Thuế sản phẩm trừ trợ cấp sản phẩm', 'tháng': '2010', 'tỷ lệ': 6.5}, {'cột': 'Công nghiệp và xây dựng', 'tháng': '2020', 'tỷ lệ': 6.5}, {'cột': 'Dịch vụ', 'tháng': '2020', 'tỷ lệ': 4.7}, {'cột': 'Thuế sản phẩm trừ trợ cấp sản phẩm', 'tháng': '2020', 'tỷ lệ': 6.5}]","```json
+{
+  ""chart_title"": ""Cơ cấu GDP của khu vực Mỹ La tỉnh giai đoạn 1990 - 2020"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 2000 | 2010 | 2020"",
+  ""series_name"": ""Cơ cấu GDP"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": [
+    {
+      ""cột"": ""Nông nghiệp, lâm nghiệp và thủy sản"",
+      ""tháng"": ""1990"",
+      ""tỷ lệ"": 4.6
+    },
+    {
+      ""cột"": ""Công nghiệp và xây dựng"",
+      ""tháng"": ""1990"",
+      ""tỷ lệ"": 10.4
+    },
+    {
+      ""cột"": ""Dịch vụ"",
+      ""tháng"": ""1990"",
+      ""tỷ lệ"": 10.5
+    },
+    {
+      ""cột"": ""Thuế sản phẩm trừ trợ cấp sản phẩm"",
+      ""tháng"": ""1990"",
+      ""tỷ lệ"": 4.9
+    },
+    {
+      ""cột"": ""Công nghiệp và xây dựng"",
+      ""tháng"": ""2000"",
+      ""tỷ lệ"": 55.3
+    },
+    {
+      ""cột"": ""Dịch vụ"",
+      ""tháng"": ""2000"",
+      ""tỷ lệ"": 55.7
+    },
+    {
+      ""cột"": ""Thuế sản phẩm trừ trợ cấp sản phẩm"",
+      ""tháng"": ""2000"",
+      ""tỷ lệ"": 29.1
+    },
+    {
+      ""cột"": ""Công nghiệp và xây dựng"",
+      ""tháng"": ""2010"",
+      ""tỷ lệ"": 29.4
+    },
+    {
+      ""cột"": ""Dịch vụ"",
+      ""tháng"": ""2010"",
+      ""tỷ lệ"": 29.1
+    },
+    {
+      ""cột"": ""Thuế sản phẩm trừ trợ cấp sản phẩm"",
+      ""tháng"": ""2010"",
+      ""tỷ lệ"": 28.3
+    },
+    {
+      ""cột"": ""Công nghiệp và xây dựng"",
+      ""tháng"": ""2010"",
+      ""tỷ lệ"": 28.3
+    },
+    {
+      ""cột"": ""Dịch vụ"",
+      ""tháng"": ""2010"",
+      ""tỷ lệ"": 4.7
+    },
+    {
+      ""cột"": ""Thuế sản phẩm trừ trợ cấp sản phẩm"",
+      ""tháng"": ""2010"",
+      ""tỷ lệ"": 6.5
+    },
+    {
+      ""cột"": ""Công nghiệp và xây dựng"",
+      ""tháng"": ""2020"",
+      ""tỷ lệ"": 6.5
+    },
+    {
+      ""cột"": ""Dịch vụ"",
+      ""tháng"": ""2020"",
+      ""tỷ lệ"": 4.7
+    },
+    {
+      ""cột"": ""Thuế sản phẩm trừ trợ cấp sản phẩm"",
+      ""tháng"": ""2020"",
+      ""tỷ lệ"": 6.5
+    }
+  ]
+}
+```"
+Biểu đồ miền_23.jpg,Biểu đồ miền_24 ảnh_đủ r,Biểu đồ thể hiện cơ cấu GDP của nước ta thời kì 1991 - 2002,đường,trụ lượt,Năm,1991 | 1993 | 1995 | 1997 | 1999 | 2001 | 2002,GDP,"[35.7, 41.2, 44, 42.1, 40.1, 38.6, 38.5, 29.9, 27.2, 25.8, 25.4, 23.3, 23]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện cơ cấu GDP của nước ta thời kì 1991 - 2002"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trụ lượt"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1991 | 1993 | 1995 | 1997 | 1999 | 2001 | 2002"",
+  ""series_name"": ""GDP"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100"",
+  ""values"": [
+    35.7,
+    41.2,
+    44,
+    42.1,
+    40.1,
+    38.6,
+    38.5,
+    29.9,
+    27.2,
+    25.8,
+    25.4,
+    23.3,
+    23
+  ]
+}
+```"
+Biểu đồ miền_24.png,Biểu đồ miền_24 ảnh_đủ r,Cơ cấu GDP phân theo khu vực kinh tế ở nước ta giai đoạn 1990 - 2014,đường,trụ,Năm,1990 | 1995 | 2000 | 2005 | 2010 | 2014,"Niên giám thống kê Việt Nam năm 2015, NXB Thống kê, 2016","['Nông - lâm - ngư nghiệp', 'Công nghiệp - xây dựng', 'Dịch vụ']","```json
+{
+  ""chart_title"": ""Cơ cấu GDP phân theo khu vực kinh tế ở nước ta giai đoạn 1990 - 2014"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trụ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 1995 | 2000 | 2005 | 2010 | 2014"",
+  ""series_name"": ""Niên giám thống kê Việt Nam năm 2015, NXB Thống kê, 2016"",
+  ""y_axis_ticks"": ""0% | 20% | 40% | 60% | 80% | 100%"",
+  ""values"": [
+    ""Nông - lâm - ngư nghiệp"",
+    ""Công nghiệp - xây dựng"",
+    ""Dịch vụ""
+  ]
+}
+```"
+Biểu đồ miền_3.jpg,Biểu đồ miền_24 ảnh_đủ r,Hàng nông - lâm - thủy sản,đường,trong tỷ lệ phần trăm,Năm,1995 | 2000 | 2005 | 2010 | 2015,Hàng nông - lâm - thủy sản,"25,3 | 28,4 | 33,9 | 37,2 | 36,1","```json
+{
+  ""chart_title"": ""Hàng nông - lâm - thủy sản"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 2000 | 2005 | 2010 | 2015"",
+  ""series_name"": ""Hàng nông - lâm - thủy sản"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80"",
+  ""values"": ""25,3 | 28,4 | 33,9 | 37,2 | 36,1""
+}
+```"
+Biểu đồ miền_4.jpg,Biểu đồ miền_24 ảnh_đủ r,Biểu đồ thể hiện cơ cấu dân số phần theo thành thị và nông thôn nước ta giai đoạn 2000 - 2014,đường,thành thị,Năm,2000 | 2005 | 2010 | 2014,Cơ cấu dân số,"[24.1, 72.9, 69.5, 66.9]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện cơ cấu dân số phần theo thành thị và nông thôn nước ta giai đoạn 2000 - 2014"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""thành thị"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2005 | 2010 | 2014"",
+  ""series_name"": ""Cơ cấu dân số"",
+  ""y_axis_ticks"": ""0 | 50 | 100"",
+  ""values"": [
+    24.1,
+    72.9,
+    69.5,
+    66.9
+  ]
+}
+```"
+Biểu đồ miền_5.png,Biểu đồ miền_24 ảnh_đủ r,Thành thị và nông thôn,đường,Triệu tấn,Năm,2010 | 2012 | 2014 | 2016 | 2018,Thành thị,"[69.5, 68.2, 66.9, 65.6, 64.3]","```json
+{
+  ""chart_title"": ""Thành thị và nông thôn"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2012 | 2014 | 2016 | 2018"",
+  ""series_name"": ""Thành thị"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80"",
+  ""values"": [
+    69.5,
+    68.2,
+    66.9,
+    65.6,
+    64.3
+  ]
+}
+```"
+Biểu đồ miền_6.png,Biểu đồ miền_24 ảnh_đủ r,Xuất khẩu và Nhập khẩu,đường,trong tỷ lệ phần trăm,Năm,1985 | 1995 | 2004 | 2012,Xuất khẩu | Nhập khẩu,"['60,7', '46,5', '48,6', '47']","```json
+{
+  ""chart_title"": ""Xuất khẩu và Nhập khẩu"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1985 | 1995 | 2004 | 2012"",
+  ""series_name"": ""Xuất khẩu | Nhập khẩu"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": [
+    ""60,7"",
+    ""46,5"",
+    ""48,6"",
+    ""47""
+  ]
+}
+```"
+Biểu đồ miền_7.jpg,Biểu đồ miền_24 ảnh_đủ r,Năm,cột,%,Năm,1986 | 1990 | 1995 | 2000 | 2005,Năm,"{'Nông - lâm - ngư nghiệp': 29, 'Công nghiệp - xây dựng': 22, 'Dịch vụ': 25}","```json
+{
+  ""chart_title"": ""Năm"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1986 | 1990 | 1995 | 2000 | 2005"",
+  ""series_name"": ""Năm"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": {
+    ""Nông - lâm - ngư nghiệp"": 29,
+    ""Công nghiệp - xây dựng"": 31,
+    ""Dịch vụ"": 42,
+    ""Công nghiệp - xây dựng"": 22,
+    ""Dịch vụ"": 25
+  }
+}
+```"
+Biểu đồ miền_8.jpg,Biểu đồ miền_24 ảnh_đủ r,Khu vực có vốn đầu tư nước ngoài,cột,Khu vực,Năm,2010 | 2015 | 2020 | 2021,Khu vực,"['15.2', '17.5', '20', '20']","```json
+{
+  ""chart_title"": ""Khu vực có vốn đầu tư nước ngoài"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Khu vực"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2015 | 2020 | 2021"",
+  ""series_name"": ""Khu vực"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""15.2"",
+    ""17.5"",
+    ""20"",
+    ""20""
+  ]
+}
+```"
+Biểu đồ miền_9.webp,Biểu đồ miền_24 ảnh_đủ r,Tổng quan phân tích,đường,%,Năm,2021 | 2022 | 2023 | 2024 | 2025,Tổng quan phân tích,570,"```json
+{
+  ""chart_title"": ""Tổng quan phân tích"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2021 | 2022 | 2023 | 2024 | 2025"",
+  ""series_name"": ""Tổng quan phân tích"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": ""570""
+}
+```"
+Biểu đồ tròn_1.jpeg,Biểu đồ tròn_42 ảnh_đủ,Tỷ trọng các nguồn điện tổng sản lượng điện sản xuất,tròn,%,Nguồn điện,"['Thủy điện', 'Nhiệt điện', 'Tua bin khí', 'Năng lượng tái tạo', 'Điện nhập khẩu']",Nguồn điện,"['27%', '44%', '11%', '17%', '0,8%']","```json
+{
+  ""chart_title"": ""Tỷ trọng các nguồn điện tổng sản lượng điện sản xuất"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Nguồn điện"",
+  ""categories"": [
+    ""Thủy điện"",
+    ""Nhiệt điện"",
+    ""Tua bin khí"",
+    ""Năng lượng tái tạo"",
+    ""Điện nhập khẩu""
+  ],
+  ""series_name"": ""Nguồn điện"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""27%"",
+    ""44%"",
+    ""11%"",
+    ""17%"",
+    ""0,8%""
+  ]
+}
+```"
+Biểu đồ tròn_10.png,Biểu đồ tròn_42 ảnh_đủ,"Cơ cấu tổng mức bán lẻ hàng hóa và doanh thu dịch vụ của nước ta phân theo thành phần kinh tế, năm 2005 và 2013 (%)",tròn,%,Năm,2005 | 2013,Cơ cấu tổng mức bán lẻ hàng hóa và doanh thu dịch vụ,"63,3 | 85,2","```json
+{
+  ""chart_title"": ""Cơ cấu tổng mức bán lẻ hàng hóa và doanh thu dịch vụ của nước ta phân theo thành phần kinh tế, năm 2005 và 2013 (%)"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2013"",
+  ""series_name"": ""Cơ cấu tổng mức bán lẻ hàng hóa và doanh thu dịch vụ"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""63,3 | 85,2""
+}
+```"
+Biểu đồ tròn_11.png,Biểu đồ tròn_42 ảnh_đủ,"Cơ cấu doanh thu du lịch lữ hành phân theo thành phần kinh tế của nước ta, năm 2010 và năm 2016 (%)",tròn,%,Năm,2010 | 2016,Cơ cấu doanh thu du lịch lữ hành,60.3 | 73.8,"```json
+{
+  ""chart_title"": ""Cơ cấu doanh thu du lịch lữ hành phân theo thành phần kinh tế của nước ta, năm 2010 và năm 2016 (%)"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2016"",
+  ""series_name"": ""Cơ cấu doanh thu du lịch lữ hành"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""60.3 | 73.8""
+}
+```"
+Biểu đồ tròn_12.png,Biểu đồ tròn_42 ảnh_đủ,Cơ cấu sản lượng thủy sản nuôi trồng của nước ta,tròn,thủy sản,Năm,2010 | 2017,Cơ cấu sản lượng thủy sản,"['6,6', '16,5', '18,9', '10,9', '70,2']","```json
+{
+  ""chart_title"": ""Cơ cấu sản lượng thủy sản nuôi trồng của nước ta"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""thủy sản"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2017"",
+  ""series_name"": ""Cơ cấu sản lượng thủy sản"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""6,6"",
+    ""16,5"",
+    ""18,9"",
+    ""10,9"",
+    ""70,2""
+  ]
+}
+```"
+Biểu đồ tròn_13.png,Biểu đồ tròn_42 ảnh_đủ,Biểu đồ quy mô và cơ cấu giá trị sản xuất công nghiệp phân theo ngành ở nước ta năm 2010 và năm 2021,tròn,%,Năm,"['2010', '2021']",Giá trị sản xuất công nghiệp,"['3,0', '10,2', '3,3', '3,0', '93,0']","```json
+{
+  ""chart_title"": ""Biểu đồ quy mô và cơ cấu giá trị sản xuất công nghiệp phân theo ngành ở nước ta năm 2010 và năm 2021"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": [""2010"", ""2021""],
+  ""series_name"": ""Giá trị sản xuất công nghiệp"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""3,0"",
+    ""10,2"",
+    ""3,3"",
+    ""3,0"",
+    ""93,0""
+  ]
+}
+```"
+Biểu đồ tròn_14.png,Biểu đồ tròn_42 ảnh_đủ,Biểu đồ thể hiện cơ cấu GDP của Cam-Pu-Chia năm 2017,tròn,Khoảng,Khu vực,Khu vực I | Khu vực II | Khu vực III,Cơ cấu GDP,42.2 | 24.9 | 32.9,"```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện cơ cấu GDP của Cam-Pu-Chia năm 2017"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Khoảng"",
+  ""x_axis_label"": ""Khu vực"",
+  ""categories"": ""Khu vực I | Khu vực II | Khu vực III"",
+  ""series_name"": ""Cơ cấu GDP"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100"",
+  ""values"": ""42.2 | 24.9 | 32.9""
+}
+```"
+Biểu đồ tròn_15.png,Biểu đồ tròn_42 ảnh_đủ,"Tỉ trọng GDP phân theo khu vực kinh tế của Hoa Kỳ, năm 1960 và năm 2016",tròn,trang,Năm,1960 | 2016,Tỉ trọng GDP,62 | 80,"```json
+{
+  ""chart_title"": ""Tỉ trọng GDP phân theo khu vực kinh tế của Hoa Kỳ, năm 1960 và năm 2016"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""trang"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1960 | 2016"",
+  ""series_name"": ""Tỉ trọng GDP"",
+  ""y_axis_ticks"": ""1960 | 2016"",
+  ""values"": ""62 | 80""
+}
+```"
+Biểu đồ tròn_16.png,Biểu đồ tròn_42 ảnh_đủ,"Cơ cấu diện tích lúa cả năm phân theo mùa vụ nước ta, năm 2010 và 2016",tròn,tháng,Năm,2010 | 2016,Cơ cấu diện tích lúa,26.3 | 41.2 | 32.5 | 36 | 39.6,"```json
+{
+  ""chart_title"": ""Cơ cấu diện tích lúa cả năm phân theo mùa vụ nước ta, năm 2010 và 2016"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""tháng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2016"",
+  ""series_name"": ""Cơ cấu diện tích lúa"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""26.3 | 41.2 | 32.5 | 36 | 39.6""
+}
+```"
+Biểu đồ tròn_17.png,Biểu đồ tròn_42 ảnh_đủ,Tỉ trọng xuất khẩu của EU và các trung tâm kinh tế với so với thế giới năm 2020,tròn,Tỉ trọng xuất khẩu,Năm,2020,Tỉ trọng xuất khẩu,43.8 | 31 | 9.2 | 12.7 | 3.3,"```json
+{
+  ""chart_title"": ""Tỉ trọng xuất khẩu của EU và các trung tâm kinh tế với so với thế giới năm 2020"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Tỉ trọng xuất khẩu"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2020"",
+  ""series_name"": ""Tỉ trọng xuất khẩu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""43.8 | 31 | 9.2 | 12.7 | 3.3""
+}
+```"
+Biểu đồ tròn_18.png,Biểu đồ tròn_42 ảnh_đủ,"Biểu đồ thể hiện cơ cấu trị giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ Trung Quốc năm 2000 và 2020",tròn,trang,Năm,2000 | 2020,Xuất khẩu | Nhập khẩu,"46,9 | 46,4","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện cơ cấu trị giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ Trung Quốc năm 2000 và 2020"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""trang"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2020"",
+  ""series_name"": ""Xuất khẩu | Nhập khẩu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""46,9 | 46,4""
+}
+```"
+Biểu đồ tròn_19.png,Biểu đồ tròn_42 ảnh_đủ,Biểu đồ cho biết tỉ lệ phần trăm thành phần của đất tốt cho cây trồng,tròn,%,Đất tốt,Không khí | Nước | Chất khoáng | Chất mùn,Đất tốt,"30, 35, 30, 5","```json
+{
+  ""chart_title"": ""Biểu đồ cho biết tỉ lệ phần trăm thành phần của đất tốt cho cây trồng"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Đất tốt"",
+  ""categories"": ""Không khí | Nước | Chất khoáng | Chất mùn"",
+  ""series_name"": ""Đất tốt"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20"",
+  ""values"": ""30, 35, 30, 5""
+}
+```"
+Biểu đồ tròn_2.jpeg,Biểu đồ tròn_42 ảnh_đủ,Cơ cấu công suất nguồn điện đến năm 2020,tròn,%,Công suất nguồn điện,"['Điện năng tái tạo', 'Nhiệt điện than', 'Thủy điện', 'Thủy điện tích năng', 'Nhiệt điện khí đốt', 'Nhiệt điện than', 'Năng lượng tái tạo', 'Điện hạt nhân', 'Điện nhập khẩu', 'Điện năng', 'Nhiệt điện', 'Nhiệt điện khí đốt']",Cơ cấu nguồn điện,"['1.30%', '5.60%', '3.10%', '23.10%', '2.40%', '16.90%', '2.40%', '23.10%', '3.10%', '5.60%', '1.30%']","```json
+{
+  ""chart_title"": ""Cơ cấu công suất nguồn điện đến năm 2020"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Công suất nguồn điện"",
+  ""categories"": [
+    ""Điện năng tái tạo"",
+    ""Nhiệt điện than"",
+    ""Thủy điện"",
+    ""Thủy điện tích năng"",
+    ""Nhiệt điện khí đốt"",
+    ""Nhiệt điện than"",
+    ""Năng lượng tái tạo"",
+    ""Điện hạt nhân"",
+    ""Điện nhập khẩu"",
+    ""Điện năng"",
+    ""Nhiệt điện"",
+    ""Nhiệt điện khí đốt""
+  ],
+  ""series_name"": ""Cơ cấu nguồn điện"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""1.30%"",
+    ""5.60%"",
+    ""3.10%"",
+    ""23.10%"",
+    ""2.40%"",
+    ""16.90%"",
+    ""2.40%"",
+    ""23.10%"",
+    ""3.10%"",
+    ""5.60%"",
+    ""1.30%""
+  ]
+}
+```"
+Biểu đồ tròn_20.png,Biểu đồ tròn_42 ảnh_đủ,Cơ cấu tiêu dùng năng lượng,tròn,%,Năm,2019 | 2020 | 2021,Cơ cấu tiêu dùng năng lượng,33.1 | 24.2 | 27,"```json
+{
+  ""chart_title"": ""Cơ cấu tiêu dùng năng lượng"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2019 | 2020 | 2021"",
+  ""series_name"": ""Cơ cấu tiêu dùng năng lượng"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""33.1 | 24.2 | 27""
+}
+```"
+Biểu đồ tròn_21.png,Biểu đồ tròn_42 ảnh_đủ,Sản lượng điện theo nguồn của Việt Nam năm 2019,tròn,thường,Nguồn,"['Thủy điện', 'Điện than', 'Điện khí', 'Điện tái tạo', 'Điện nhập khẩu']",Sản lượng điện,"['37.70%', '18.80%', '41.60%', '1.40%', '0.50%']","```json
+{
+  ""chart_title"": ""Sản lượng điện theo nguồn của Việt Nam năm 2019"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""thường"",
+  ""x_axis_label"": ""Nguồn"",
+  ""categories"": [
+    ""Thủy điện"",
+    ""Điện than"",
+    ""Điện khí"",
+    ""Điện tái tạo"",
+    ""Điện nhập khẩu""
+  ],
+  ""series_name"": ""Sản lượng điện"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""37.70%"",
+    ""18.80%"",
+    ""41.60%"",
+    ""1.40%"",
+    ""0.50%""
+  ]
+}
+```"
+Biểu đồ tròn_22.png,Biểu đồ tròn_42 ảnh_đủ,Doanh thu dịch vụ bưu chính và viễn thông,tròn,Doanh thu,Năm,2010 | 2021,Doanh thu,"96,7 | 92,2","```json
+{
+  ""chart_title"": ""Doanh thu dịch vụ bưu chính và viễn thông"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Doanh thu"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2021"",
+  ""series_name"": ""Doanh thu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""96,7 | 92,2""
+}
+```"
+Biểu đồ tròn_23.png,Biểu đồ tròn_42 ảnh_đủ,"Biểu đồ thể hiện sản lượng lúa, cà phê của khu vực Đông Nam Á và của châu Á so với thế giới năm 2000",tròn,Triệu tấn,Năm,2000,Sản lượng,71.3 | 26.2 | 26.1 | 24.7 | 19.2,"```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện sản lượng lúa, cà phê của khu vực Đông Nam Á và của châu Á so với thế giới năm 2000"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Triệu tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""71.3 | 26.2 | 26.1 | 24.7 | 19.2""
+}
+```"
+Biểu đồ tròn_24.png,Biểu đồ tròn_42 ảnh_đủ,Biểu đồ thể hiện cơ cấu GDP của khu vực Mỹ La-tinh năm 2010 và năm 2020,tròn,GDP,Năm,2010 | 2020,GDP,"55,7 | 60,3 | 28,3 | 4,9 | 6,5","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện cơ cấu GDP của khu vực Mỹ La-tinh năm 2010 và năm 2020"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""GDP"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2020"",
+  ""series_name"": ""GDP"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""55,7 | 60,3 | 28,3 | 4,9 | 6,5""
+}
+```"
+Biểu đồ tròn_25.png,Biểu đồ tròn_42 ảnh_đủ,Cơ cấu dân số theo tuổi,tròn,Tuổi,Năm,2000 | 2020,Cơ cấu dân số,"{'Dưới 15': 59.1, '15-64': 36.4, '65 trở lên': 28.7, 'Từ 65 trở lên': 5.7}","```json
+{
+  ""chart_title"": ""Cơ cấu dân số theo tuổi"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Tuổi"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2020"",
+  ""series_name"": ""Cơ cấu dân số"",
+  ""y_axis_ticks"": ""1 | 2 | 3 | 4 | 5"",
+  ""values"": {
+    ""Dưới 15"": 59.1,
+    ""15-64"": 36.4,
+    ""65 trở lên"": 28.7,
+    ""Từ 65 trở lên"": 5.7
+  }
+}
+```"
+Biểu đồ tròn_26.png,Biểu đồ tròn_42 ảnh_đủ,Các nguyên nhân gây tai nạn thương tích ở trẻ em Việt Nam,tròn,thành phần,Nguyên nhân gây tai nạn thương tích,"['Đuối nước', 'Tài nạn giao thông', 'Ngã', 'Ngộ độc', 'Thương tích khác (không phân loại)']",Các nguyên nhân gây tai nạn thương tích,"['20%', '2%', '28%', '48%', '28%']","```json
+{
+  ""chart_title"": ""Các nguyên nhân gây tai nạn thương tích ở trẻ em Việt Nam"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""thành phần"",
+  ""x_axis_label"": ""Nguyên nhân gây tai nạn thương tích"",
+  ""categories"": [
+    ""Đuối nước"",
+    ""Tài nạn giao thông"",
+    ""Ngã"",
+    ""Ngộ độc"",
+    ""Thương tích khác (không phân loại)""
+  ],
+  ""series_name"": ""Các nguyên nhân gây tai nạn thương tích"",
+  ""y_axis_ticks"": ""20%"",
+  ""values"": [
+    ""20%"",
+    ""2%"",
+    ""28%"",
+    ""48%"",
+    ""28%""
+  ]
+}
+```"
+Biểu đồ tròn_27.png,Biểu đồ tròn_42 ảnh_đủ,Dữ liệu về các hoạt động kinh tế,tròn,Trang trại,Năm,2005 | 2015,Dữ liệu,19.3 | 73.5 | 78.3 | 1.5,"```json
+{
+  ""chart_title"": ""Dữ liệu về các hoạt động kinh tế"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Trang trại"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2015"",
+  ""series_name"": ""Dữ liệu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""19.3 | 73.5 | 78.3 | 1.5""
+}
+```"
+Biểu đồ tròn_28.webp,Biểu đồ tròn_42 ảnh_đủ,Bán hàng,tròn,trong tỷ lệ phần trăm,Tổng,Bán hàng,Bán hàng,55%,"```json
+{
+  ""chart_title"": ""Bán hàng"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""Tổng"",
+  ""categories"": ""Bán hàng"",
+  ""series_name"": ""Bán hàng"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""55%""
+}
+```"
+Biểu đồ tròn_29.png,Biểu đồ tròn_42 ảnh_đủ,Rừng sản xuất,cột,Rừng,Rừng,Rừng sản xuất,Rừng,15.1,"```json
+{
+  ""chart_title"": ""Rừng sản xuất"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Rừng"",
+  ""x_axis_label"": ""Rừng"",
+  ""categories"": ""Rừng sản xuất"",
+  ""series_name"": ""Rừng"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""15.1""
+}
+```"
+Biểu đồ tròn_3.png,Biểu đồ tròn_42 ảnh_đủ,Diện tích rừng bị cháy theo vùng ở Việt Nam năm 2016,đường,tháng,Vùng,"['Tây Nguyên', 'Trung du và miền núi Bắc Bộ', 'Bắc Trung Bộ', 'Đông Nam bộ', 'Đồng bằn sông Hồng', 'Duyên hải Nam Trung Bộ']",Diện tích rừng bị cháy,"['15%', '2.80%', '1.20%', '32%', '40%', '9%']","```json
+{
+  ""chart_title"": ""Diện tích rừng bị cháy theo vùng ở Việt Nam năm 2016"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""tháng"",
+  ""x_axis_label"": ""Vùng"",
+  ""categories"": [
+    ""Tây Nguyên"",
+    ""Trung du và miền núi Bắc Bộ"",
+    ""Bắc Trung Bộ"",
+    ""Đông Nam bộ"",
+    ""Đồng bằn sông Hồng"",
+    ""Duyên hải Nam Trung Bộ""
+  ],
+  ""series_name"": ""Diện tích rừng bị cháy"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""15%"",
+    ""2.80%"",
+    ""1.20%"",
+    ""32%"",
+    ""40%"",
+    ""9%""
+  ]
+}
+```"
+Biểu đồ tròn_30.jpg,Biểu đồ tròn_42 ảnh_đủ,Diện tích,cột,ha,Diện tích,60.7,Diện tích,60.7,"```json
+{
+  ""chart_title"": ""Diện tích"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""ha"",
+  ""x_axis_label"": ""Diện tích"",
+  ""categories"": ""60.7"",
+  ""series_name"": ""Diện tích"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""60.7""
+}
+```"
+Biểu đồ tròn_31.png,Biểu đồ tròn_42 ảnh_đủ,Số liệu thống kê,tròn,Trong số,Số lượng,20% | 26% | 38% | 6% | 10%,Số liệu thống kê,20% | 26% | 38% | 6% | 10%,"```json
+{
+  ""chart_title"": ""Số liệu thống kê"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Trong số"",
+  ""x_axis_label"": ""Số lượng"",
+  ""categories"": ""20% | 26% | 38% | 6% | 10%"",
+  ""series_name"": ""Số liệu thống kê"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""20% | 26% | 38% | 6% | 10%""
+}
+```"
+Biểu đồ tròn_32.png,Biểu đồ tròn_42 ảnh_đủ,Khu vực I | Khu vực II | Khu vực III,tròn,Khu vực,Khu vực,Khu vực I | Khu vực II | Khu vực III,Khu vực,42.2 | 24.9 | 32.9,"```json
+{
+  ""chart_title"": ""Khu vực I | Khu vực II | Khu vực III"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Khu vực"",
+  ""x_axis_label"": ""Khu vực"",
+  ""categories"": ""Khu vực I | Khu vực II | Khu vực III"",
+  ""series_name"": ""Khu vực"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""42.2 | 24.9 | 32.9""
+}
+```"
+Biểu đồ tròn_34.png,Biểu đồ tròn_42 ảnh_đủ,Năm 2010,cột,Khoảng,Năm,2010,Kinh tế Nhà nước,"60,3","```json
+{
+  ""chart_title"": ""Năm 2010"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Khoảng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010"",
+  ""series_name"": ""Kinh tế Nhà nước"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""60,3""
+}
+```"
+Biểu đồ tròn_35.png,Biểu đồ tròn_42 ảnh_đủ,Thạc sĩ,tròn,thạc sĩ,Thạc sĩ,Đại học | Tiến sĩ | Cao đẳng | Thạc sĩ,Thạc sĩ,100%,"```json
+{
+  ""chart_title"": ""Thạc sĩ"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""thạc sĩ"",
+  ""x_axis_label"": ""Thạc sĩ"",
+  ""categories"": ""Đại học | Tiến sĩ | Cao đẳng | Thạc sĩ"",
+  ""series_name"": ""Thạc sĩ"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""100%""
+}
+```"
+Biểu đồ tròn_36.jpg,Biểu đồ tròn_42 ảnh_đủ,Năm 1990,cột,Cây lương thực,Năm,1990,Năm 1990,"2,3 | 10,1 | 13,5 | 7,0 | 13,5","```json
+{
+  ""chart_title"": ""Năm 1990"",
+  ""chart_type"": ""cột"",
+  ""unit"": ""Cây lương thực"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990"",
+  ""series_name"": ""Năm 1990"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""2,3 | 10,1 | 13,5 | 7,0 | 13,5""
+}
+```"
+Biểu đồ tròn_37.jpeg,Biểu đồ tròn_42 ảnh_đủ,Quy mô và cơ cấu diện tích cây công nghiệp lâu năm của nước ta giai đoạn 1995-2013,tròn,đơn vị,Năm,1995 | 2005 | 2013,Quy mô và cơ cấu diện tích cây công nghiệp lâu năm,"1,0 | 1,4 | 1,8%","```json
+{
+  ""chart_title"": ""Quy mô và cơ cấu diện tích cây công nghiệp lâu năm của nước ta giai đoạn 1995-2013"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""đơn vị"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1995 | 2005 | 2013"",
+  ""series_name"": ""Quy mô và cơ cấu diện tích cây công nghiệp lâu năm"",
+  ""y_axis_ticks"": ""55,6% | 57,5% | 36,9%"",
+  ""values"": ""1,0 | 1,4 | 1,8%""
+}
+```"
+Biểu đồ tròn_38.jpg,Biểu đồ tròn_42 ảnh_đủ,,,,,,,,"```json
+[
+  {""chart_title"": ""2011"", ""chart_type"": ""cột"", ""unit"": ""Triệu"", ""x_axis_label"": ""Năm"", ""categories"": ""2011 | 2012 | 2013"", ""series_name"": ""2011"", ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20"", ""values"": ""5 | 21 | 59""},
+  {""chart_title"": ""2012"", ""chart_type"": ""cột"", ""unit"": ""Triệu"", ""x_axis_label"": ""Năm"", ""categories"": ""2011 | 2012 | 2013"", ""series_name"": ""2012"", ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20"", ""values"": ""23 | 12 | 49""},
+  {""chart_title"": ""2013"", ""chart_type"": ""cột"", ""unit"": ""Triệu"", ""x_axis_label"": ""Năm"", ""categories"": ""2011 | 2012 | 2013"", ""series_name"": ""2013"", ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20"", ""values"": ""38 | 14 | 25""}
+]
+```"
+Biểu đồ tròn_39.png,Biểu đồ tròn_42 ảnh_đủ,"Tỷ lệ trung bình Natri, chất béo bão hòa và đường bổ sung trong các bữa ăn điển hình tại Hoa Kỳ",tròn,%,Đồ ăn nhẹ,Đồ ăn nhẹ,Đồ ăn nhẹ,43,"```json
+{
+  ""chart_title"": ""Tỷ lệ trung bình Natri, chất béo bão hòa và đường bổ sung trong các bữa ăn điển hình tại Hoa Kỳ"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Natri"",
+  ""categories"": ""Natri"",
+  ""series_name"": ""Natri"",
+  ""y_axis_ticks"": ""14 | 14 | 14 | 14 | 14"",
+  ""values"": ""14"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Chất béo bão hòa"",
+  ""categories"": ""Chất béo bão hòa"",
+  ""series_name"": ""Chất béo bão hòa"",
+  ""y_axis_ticks"": ""21 | 21 | 21 | 21 | 21"",
+  ""values"": ""21"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Đường bổ sung"",
+  ""categories"": ""Đường bổ sung"",
+  ""series_name"": ""Đường bổ sung"",
+  ""y_axis_ticks"": ""42 | 42 | 42 | 42 | 42"",
+  ""values"": ""42"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Bữa sáng"",
+  ""categories"": ""Bữa sáng"",
+  ""series_name"": ""Bữa sáng"",
+  ""y_axis_ticks"": ""16 | 16 | 16 | 16 | 16"",
+  ""values"": ""16"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Bữa trưa"",
+  ""categories"": ""Bữa trưa"",
+  ""series_name"": ""Bữa trưa"",
+  ""y_axis_ticks"": ""23 | 23 | 23 | 23 | 23"",
+  ""values"": ""23"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Bữa tối"",
+  ""categories"": ""Bữa tối"",
+  ""series_name"": ""Bữa tối"",
+  ""y_axis_ticks"": ""19 | 19 | 19 | 19 | 19"",
+  ""values"": ""19"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Đồ ăn nhẹ"",
+  ""categories"": ""Đồ ăn nhẹ"",
+  ""series_name"": ""Đồ ăn nhẹ"",
+  ""y_axis_ticks"": ""43 | 43 | 43 | 43 | 43"",
+  ""values"": ""43""
+}
+```"
+Biểu đồ tròn_4.png,Biểu đồ tròn_42 ảnh_đủ,Tỉ lệ khối lượng các nguyên tố trong cơ thể người,tròn,%,Các nguyên tố khác,Nitrogen | Hydrogen | Oxygen | Carbon,Tỉ lệ khối lượng,18.50% | 3% | 9.50% | 65%,"```json
+{
+  ""chart_title"": ""Tỉ lệ khối lượng các nguyên tố trong cơ thể người"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Các nguyên tố khác"",
+  ""categories"": ""Nitrogen | Hydrogen | Oxygen | Carbon"",
+  ""series_name"": ""Tỉ lệ khối lượng"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62 | 63 | 64 | 65 | 66 | 67 | 68 | 69 | 70 | 71 | 72 | 73 | 74 | 75 | 76 | 77 | 78 | 79 | 80 | 81 | 82 | 83 | 84 | 85 | 86 | 87 | 88 | 89 | 90 | 91 | 92 | 93 | 94 | 95 | 96 | 97 | 98 | 99 | 100"",
+  ""values"": ""18.50% | 3% | 9.50% | 65%""
+}
+```"
+Biểu đồ tròn_40.png,Biểu đồ tròn_42 ảnh_đủ,Tỷ lệ học viên tham gia các khóa học khác nhau,tròn,Khóa học,Năm 1985,"Thể dục và khiêu vũ, Nấu ăn, Ứng dụng âm nhạc, Lịch sử địa phương, Ngoại ngữ hiện đại",Tỷ lệ học viên,"22%, 14%, 17%, 15%, 17%, 15%, 17%","```json
+{
+  ""chart_title"": ""Tỷ lệ học viên tham gia các khóa học khác nhau"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Khóa học"",
+  ""x_axis_label"": ""Năm 1985"",
+  ""categories"": ""Thể dục và khiêu vũ, Nấu ăn, Ứng dụng âm nhạc, Lịch sử địa phương, Ngoại ngữ hiện đại"",
+  ""series_name"": ""Tỷ lệ học viên"",
+  ""y_axis_ticks"": ""22% | 14% | 17% | 15% | 17% | 15% | 17% | 15%"",
+  ""values"": ""22%, 14%, 17%, 15%, 17%, 15%, 17%""
+}
+```"
+Biểu đồ tròn_41.png,Biểu đồ tròn_42 ảnh_đủ,,,,,,,,"```json
+{
+  ""chart_title"": ""Cơ cấu tỷ lệ các loại thiết bị trong năm 2009 và 2019"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""thuộc"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2009 | 2019"",
+  ""series_name"": ""Cơ cấu tỷ lệ"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""34%"",
+    ""15%"",
+    ""18%"",
+    ""8%"",
+    ""15%"",
+    ""20%"",
+    ""27%"",
+    ""26%"",
+    ""12%"",
+    ""19%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"",
+    ""12%"","
+Biểu đồ tròn_42.png,Biểu đồ tròn_42 ảnh_đủ,Doanh số trực tuyến theo lĩnh vực bán lẻ tại Canada,tròn,Doanh số,Năm 2005,"['Điện tử & Thiết bị gia dụng', 'Thực phẩm & Đồ uống', 'Đồ nội thất', 'Trò chơi điện tử']",Doanh số,"['18', '25', '22', '35']","```json
+{
+  ""chart_title"": ""Doanh số trực tuyến theo lĩnh vực bán lẻ tại Canada"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""Doanh số"",
+  ""x_axis_label"": ""Năm 2005"",
+  ""categories"": [""Điện tử & Thiết bị gia dụng"", ""Thực phẩm & Đồ uống"", ""Đồ nội thất"", ""Trò chơi điện tử""],
+  ""series_name"": ""Doanh số"",
+  ""y_axis_ticks"": ""18 | 25 | 22 | 35"",
+  ""values"": [""18"", ""25"", ""22"", ""35""]
+}
+```"
+Biểu đồ tròn_5.jpg,Biểu đồ tròn_42 ảnh_đủ,Tỉ lệ dân số các châu lục (năm 2008),tròn,châu lục,Châu lục,"['Châu Á', 'Châu Âu', 'Châu Đại Dương', 'Châu Mỹ', 'Châu Phi']",Tỉ lệ dân số,"60,4%","```json
+{
+  ""chart_title"": ""Tỉ lệ dân số các châu lục (năm 2008)"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""châu lục"",
+  ""x_axis_label"": ""Châu lục"",
+  ""categories"": [""Châu Á"", ""Châu Âu"", ""Châu Đại Dương"", ""Châu Mỹ"", ""Châu Phi""],
+  ""series_name"": ""Tỉ lệ dân số"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""60,4%""
+}
+```"
+Biểu đồ tròn_6.jpg,Biểu đồ tròn_42 ảnh_đủ,Biểu đồ quy mô và cơ cấu lao động đang làm việc phân theo ngành kinh tế,tròn,%,Nông - lâm - thủy sản,"['Nông - lâm - thủy sản', 'Công nghiệp - xây dựng', 'Dịch vụ']",Cơ cấu lao động,"{'Nông - lâm - thủy sản': 65.1, 'Công nghiệp - xây dựng': 46.7, 'Dịch vụ': 21.2}","```json
+{
+  ""chart_title"": ""Biểu đồ quy mô và cơ cấu lao động đang làm việc phân theo ngành kinh tế"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Nông - lâm - thủy sản"",
+  ""categories"": [""Nông - lâm - thủy sản"", ""Công nghiệp - xây dựng"", ""Dịch vụ""],
+  ""series_name"": ""Cơ cấu lao động"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": {
+    ""Nông - lâm - thủy sản"": 65.1,
+    ""Công nghiệp - xây dựng"": 46.7,
+    ""Dịch vụ"": 21.2
+  }
+}
+```"
+Biểu đồ tròn_7.png,Biểu đồ tròn_42 ảnh_đủ,,,,,,,,"```json
+{
+  ""chart_title"": ""Tỉ lệ phần trăm các loại con vật nuôi tại nông trường Phong Phú"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Loại con vật"",
+  ""categories"": [""Bò"", ""Lợn"", ""Gà"", ""Thỏ""],
+  ""series_name"": ""Tỉ lệ phần trăm"",
+  ""y_axis_ticks"": ""0 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 | 14 |"
+Biểu đồ tròn_8.png,Biểu đồ tròn_42 ảnh_đủ,,,,,,,,"```json
+{
+  ""chart_title"": ""Tỉ lệ người đạt giải Nobel theo các lĩnh vực tính đến năm 2020"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""thành phần"",
+  ""x_axis_label"": ""Lĩnh vực"",
+  ""categories"": [
+    ""Vật lý"",
+    ""Y học"",
+    ""Hoá học"",
+    ""Kinh tế"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"",
+    ""Y học"",
+    ""Vật lý"","
+Biểu đồ tròn_9.png,Biểu đồ tròn_42 ảnh_đủ,Các yếu tố ảnh hưởng đến sự phát triển chiều cao của trẻ,tròn,%,Các yếu tố ảnh hưởng đến sự phát triển chiều cao của trẻ,"['Vận động', 'Di truyền', 'Dinh dưỡng', 'Giấc ngủ và môi trường', 'Yếu tố khác']",Các yếu tố ảnh hưởng đến sự phát triển chiều cao của trẻ,"['20%', '16%', '23%', '32%', '9%']","```json
+{
+  ""chart_title"": ""Các yếu tố ảnh hưởng đến sự phát triển chiều cao của trẻ"",
+  ""chart_type"": ""tròn"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Các yếu tố ảnh hưởng đến sự phát triển chiều cao của trẻ"",
+  ""categories"": [
+    ""Vận động"",
+    ""Di truyền"",
+    ""Dinh dưỡng"",
+    ""Giấc ngủ và môi trường"",
+    ""Yếu tố khác""
+  ],
+  ""series_name"": ""Các yếu tố ảnh hưởng đến sự phát triển chiều cao của trẻ"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    ""20%"",
+    ""16%"",
+    ""23%"",
+    ""32%"",
+    ""9%""
+  ]
+}
+```"
+Biểu đồ đường_1.png,Biểu đồ đường_52 ảnh_đủ,Thu nhập bình quân đầu người (đô la Mỹ),đường,Đô la Mỹ,Năm,1986 | 1991 | 2010 | 2017 | 2018 | 2019 | 2020,Thu nhập bình quân đầu người,"[423, 138, 2366, 2566, 2715, 2786]","```json
+{
+  ""chart_title"": ""Thu nhập bình quân đầu người (đô la Mỹ)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Đô la Mỹ"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1986 | 1991 | 2010 | 2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Thu nhập bình quân đầu người"",
+  ""y_axis_ticks"": ""0 | 500 | 1000 | 1500 | 2000 | 2500 | 3000"",
+  ""values"": [
+    423,
+    138,
+    2366,
+    2566,
+    2715,
+    2786
+  ]
+}
+```"
+Biểu đồ đường_10.jpeg,Biểu đồ đường_52 ảnh_đủ,Tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới từ 1950 đến 2003,đường,%,Năm,1950 | 1960 | 1970 | 1980 | 1990 | 2003,Than,"{'1950': 100, '1960': 1535, '1970': 746, '1980': 476, '1990': 291, '2003': 291}","```json
+{
+  ""chart_title"": ""Tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới từ 1950 đến 2003"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1950 | 1960 | 1970 | 1980 | 1990 | 2003"",
+  ""series_name"": ""Tốc độ tăng trưởng"",
+  ""y_axis_ticks"": ""0 | 100 | 200 | 400 | 600 | 800 | 1000 | 1200 | 1400 | 1600"",
+  ""values"": {
+    ""1950"": 100,
+    ""1960"": 143,
+    ""1970"": 161,
+    ""1980"": 207,
+    ""1990"": 637,
+    ""2003"": 1535
+  },
+  ""series_name"": ""Điện"",
+  ""values"": {
+    ""1950"": 238,
+    ""1960"": 513,
+    ""1970"": 361,
+    ""1980"": 407,
+    ""1990"": 460,
+    ""2003"": 291
+  },
+  ""series_name"": ""Dầu mỏ"",
+  ""values"": {
+    ""1950"": 143,
+    ""1960"": 515,
+    ""1970"": 314,
+    ""1980"": 477,
+    ""1990"": 637,
+    ""2003"": 746
+  },
+  ""series_name"": ""Thép"",
+  ""values"": {
+    ""1950"": 100,
+    ""1960"": 1224,
+    ""1970"": 586,
+    ""1980"": 657,
+    ""1990"": 460,
+    ""2003"": 291
+  },
+  ""series_name"": ""Than"",
+  ""values"": {
+    ""1950"": 100,
+    ""1960"": 1535,
+    ""1970"": 746,
+    ""1980"": 476,
+    ""1990"": 291,
+    ""2003"": 291
+  }
+}
+```"
+Biểu đồ đường_11.jpg,Biểu đồ đường_52 ảnh_đủ,"Biểu đồ thể hiện tình hình sản xuất của than, dầu, điện thế giới giai đoạn 1950 - 2003 (%)",đường,%,Năm,1950 | 1960 | 1970 | 1980 | 1990 | 2003,Than,"[100, 201, 238, 201, 207, 291, 186, 183, 143, 183, 1535, 1224, 513, 314, 161, 586, 407, 637, 291]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện tình hình sản xuất của than, dầu, điện thế giới giai đoạn 1950 - 2003 (%)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1950 | 1960 | 1970 | 1980 | 1990 | 2003"",
+  ""series_name"": ""Than"",
+  ""y_axis_ticks"": ""100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 1000"",
+  ""values"": [
+    100,
+    201,
+    238,
+    201,
+    207,
+    291,
+    186,
+    183,
+    143,
+    183,
+    1535,
+    1224,
+    513,
+    314,
+    161,
+    586,
+    407,
+    637,
+    291
+  ]
+}
+```"
+Biểu đồ đường_12.jpg,Biểu đồ đường_52 ảnh_đủ,Tăng trưởng GDP 10 năm gần đây,đường,%,Năm,2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019,GDP,"[5.32, 6.78, 6.24, 5.25, 5.42, 5.98, 6.68, 6.81, 7.08, 7.02]","```json
+{
+  ""chart_title"": ""Tăng trưởng GDP 10 năm gần đây"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2009 | 2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019"",
+  ""series_name"": ""GDP"",
+  ""y_axis_ticks"": ""5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16"",
+  ""values"": [
+    5.32,
+    6.78,
+    6.24,
+    5.25,
+    5.42,
+    5.98,
+    6.68,
+    6.81,
+    7.08,
+    7.02
+  ]
+}
+```"
+Biểu đồ đường_13.png,Biểu đồ đường_52 ảnh_đủ,Diện tích rừng tự nhiên của Việt Nam giai đoạn 2018 - 2021,đường,Triệu ha,Năm,2018 | 2019 | 2020 | 2021,Diện tích rừng tự nhiên,"[10.1, 10.26, 10.29, 10.28, 10.17]","```json
+{
+  ""chart_title"": ""Diện tích rừng tự nhiên của Việt Nam giai đoạn 2018 - 2021"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Triệu ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2018 | 2019 | 2020 | 2021"",
+  ""series_name"": ""Diện tích rừng tự nhiên"",
+  ""y_axis_ticks"": ""10,1 | 10,2 | 10,3 | 10,4 | 10,5 | 10,6 | 10,7 | 10,8 | 10,9 | 10,10"",
+  ""values"": [
+    10.1,
+    10.26,
+    10.29,
+    10.28,
+    10.17
+  ]
+}
+```"
+Biểu đồ đường_14.png,Biểu đồ đường_52 ảnh_đủ,Tỉ lệ đất rừng trên tổng diện tích đất,đường,%,Năm,2013 | 2014 | 2015 | 2016 | 2017,Việt Nam,"{'Việt Nam': 53.5, 'Indonesia': 52.5}","```json
+{
+  ""chart_title"": ""Tỉ lệ đất rừng trên tổng diện tích đất"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2013 | 2014 | 2015 | 2016 | 2017"",
+  ""series_name"": ""Việt Nam"",
+  ""y_axis_ticks"": ""40 | 42 | 44 | 46 | 50"",
+  ""values"": {
+    ""Việt Nam"": 53.5,
+    ""Indonesia"": 52.5
+  }
+}
+```"
+Biểu đồ đường_15.png,Biểu đồ đường_52 ảnh_đủ,Tỉ lệ phần trăm đóng góp của Việt Nam vào tổng thu nhập của thế giới,đường,%,Năm,2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018,Tỉ lệ phần trăm đóng góp,"[0.26, 0.28, 0.3, 0.32, 0.34, 0.35, 0.36]","```json
+{
+  ""chart_title"": ""Tỉ lệ phần trăm đóng góp của Việt Nam vào tổng thu nhập của thế giới"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018"",
+  ""series_name"": ""Tỉ lệ phần trăm đóng góp"",
+  ""y_axis_ticks"": ""0 | 0.1 | 0.2 | 0.3 | 0.34 | 0.35 | 0.36"",
+  ""values"": [0.26, 0.28, 0.3, 0.32, 0.34, 0.35, 0.36]
+}
+```"
+Biểu đồ đường_16.png,Biểu đồ đường_52 ảnh_đủ,Biến động chỉ số CPI Việt Nam giai đoạn từ 2018 đến nay,đường,%,Năm,2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024,CPI Việt Nam,"[3, 3, 3, 1, 3, 3, 3]","```json
+{
+  ""chart_title"": ""Biến động chỉ số CPI Việt Nam giai đoạn từ 2018 đến nay"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024"",
+  ""series_name"": ""CPI Việt Nam"",
+  ""y_axis_ticks"": ""0 | 0.5 | 1 | 1.5 | 2 | 2.5 | 3"",
+  ""values"": [3, 3, 3, 1, 3, 3, 3]
+}
+```"
+Biểu đồ đường_17.jpg,Biểu đồ đường_52 ảnh_đủ,Diễn biến giá vàng thế giới (Chiều 19.5 - Chiều 25.5),đường,USD,Thời gian,Chiều 19.5 | Chiều 20.5 | Chiều 21.5 | Chiều 22.5 | Chiều 22.5 | Chiều 23.5 | Chiều 23.5 | Chiều 24.5 | Chiều 24.5 | Chiều 25.5,Diễn biến giá vàng thế giới,"['Chiều 19.5', 'Sáng 20.5', 'Chiều 20.5', 'Sáng 21.5', 'Chiều 21.5', 'Sáng 22.5', 'Chiều 22.5', 'Sáng 23.5', 'Chiều 23.5', 'Sáng 24.5', 'Chiều 24.5', 'Sáng 25.5']","```json
+{
+  ""chart_title"": ""Diễn biến giá vàng thế giới (Chiều 19.5 - Chiều 25.5)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""USD"",
+  ""x_axis_label"": ""Thời gian"",
+  ""categories"": ""Chiều 19.5 | Chiều 20.5 | Chiều 21.5 | Chiều 22.5 | Chiều 22.5 | Chiều 23.5 | Chiều 23.5 | Chiều 24.5 | Chiều 24.5 | Chiều 25.5"",
+  ""series_name"": ""Diễn biến giá vàng thế giới"",
+  ""y_axis_ticks"": ""4500 | 4520 | 4540 | 4540 | 4520 | 4500 | 4500 | 4500 | 4500 | 4561"",
+  ""values"": [
+    ""Chiều 19.5"",
+    ""Sáng 20.5"",
+    ""Chiều 20.5"",
+    ""Sáng 21.5"",
+    ""Chiều 21.5"",
+    ""Sáng 22.5"",
+    ""Chiều 22.5"",
+    ""Sáng 23.5"",
+    ""Chiều 23.5"",
+    ""Sáng 24.5"",
+    ""Chiều 24.5"",
+    ""Sáng 25.5""
+  ]
+}
+```"
+Biểu đồ đường_18.jpg,Biểu đồ đường_52 ảnh_đủ,,,,,,,,"```json
+{
+  ""chart_title"": ""Biến động giá bạc miếng (triệu đồng/lượng)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""triệu đồng/lượng"",
+  ""x_axis_label"": ""Sáng"",
+  ""categories"": ""27/6 | 28/6 | 30/6 | 17/6 | 21/6 | 27/6 | 28/6 | 29/6 | 27/7 | 28/7 | 29/7 | 27/8 | 28/8 | 29/8 | 27/9 | 28/9 | 29/9 | 27/10 | 28/10 | 29/10 | 27/11 | 28/11 | 29/11 | 27/12 | 28/12 | 29/12 | 27/13 | 28/13 | 29/13 | 27/14 | 28/14 | 29/14 | 27/15 | 28/15 | 29/15 | 27/16 | 28/16 | 29/16 | 27/17 | 28/17 | 29/17 | 27/18 | 28/18 | 29/18 | 27/19 | 28/19 | 29/19 | 27/20 | 28/20 | 29/20 | 27/21 | 28/21 | 29/21 | 27/22 | 28/22 | 29/22 | 27/23 | 28/23 | 29/23 | 27/24 | 28/24 | 29/24 | 27/25 | 28/25 | 29/25 | 27/26 | 28/26 | 29/26 | 27/27 | 28/27 | 29/27 | 27/28 | 28/28 | 29/28"",
+  ""series_name"": ""Biến động giá bạc miếng"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": [
+    2245,
+    2241,
+    2249,
+    2346,
+    2352,
+    2352,
+    2352,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338,
+    2338"
+Biểu đồ đường_19.webp,Biểu đồ đường_52 ảnh_đủ,"Lãi suất điều hành của Mỹ, Việt Nam, Indonesia, Thailand và Philippines",đường,Duy,Trang,Jan 19 | Apr 19 | Jul 19 | Oct 19 | Jan 20 | Apr 20 | Jul 20 | Oct 20 | Jan 21 | Apr 21 | Jul 21 | Oct 21 | Jan 22 | Apr 22 | Jul 22 | Oct 22 | Jan 23 | Apr 23 | Jul 23 | Oct 23 | Jan 24 | Apr 24,Duy,"{'Mỹ': 6.5, 'Việt Nam': 5.5, 'Indonesia': 6.25, 'Thailand': 5.5, 'Philippines': 3}","```json
+{
+  ""chart_title"": ""Lãi suất điều hành của Mỹ, Việt Nam, Indonesia, Thailand và Philippines"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Duy"",
+  ""x_axis_label"": ""Trang"",
+  ""categories"": ""Jan 19 | Apr 19 | Jul 19 | Oct 19 | Jan 20 | Apr 20 | Jul 20 | Oct 20 | Jan 21 | Apr 21 | Jul 21 | Oct 21 | Jan 22 | Apr 22 | Jul 22 | Oct 22 | Jan 23 | Apr 23 | Jul 23 | Oct 23 | Jan 24 | Apr 24"",
+  ""series_name"": ""Duy"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10"",
+  ""values"": {
+    ""Mỹ"": 6.5,
+    ""Việt Nam"": 5.5,
+    ""Indonesia"": 6.25,
+    ""Thailand"": 5.5,
+    ""Philippines"": 3
+  },
+  ""flag"": {
+    ""Mỹ"": ""Cờ Mỹ"",
+    ""Việt Nam"": ""Cờ Việt Nam"",
+    ""Indonesia"": ""Cờ Indonesia"",
+    ""Thailand"": ""Cờ Thái Lan"",
+    ""Philippines"": ""Cờ Philippines""
+  }
+}
+```"
+Biểu đồ đường_2.png,Biểu đồ đường_52 ảnh_đủ,Nhiệt độ tại Hà Nội vào một ngày mùa thu,đường,°C,Thời điểm,8 | 10 | 12 | 14 | 16 | 18 | 20,Nhiệt độ,"[25, 23, 34, 32, 26, 22, 18]","```json
+{
+  ""chart_title"": ""Nhiệt độ tại Hà Nội vào một ngày mùa thu"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""°C"",
+  ""x_axis_label"": ""Thời điểm"",
+  ""categories"": ""8 | 10 | 12 | 14 | 16 | 18 | 20"",
+  ""series_name"": ""Nhiệt độ"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40"",
+  ""values"": [
+    25,
+    23,
+    34,
+    32,
+    26,
+    22,
+    18
+  ]
+}
+```"
+Biểu đồ đường_20.png,Biểu đồ đường_52 ảnh_đủ,,,,,,,,"```json
+{
+  ""chart_title"": ""Diễn biến tỷ giá USD/VND trong giai đoạn 1 năm gần đây"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""USD/VND"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""10/2024 | 11/2024 | 12/2024 | 13/2024 | 14/2024 | 15/2024 | 16/2024 | 17/2024 | 18/2024 | 19/2024 | 20/2024 | 21/2024 | 22/2024 | 23/2024 | 24/2024 | 25/2024 | 26/2024 | 27/2024 | 28/2024 | 29/2024 | 30/2024 | 31/2024 | 32/2024 | 33/2024 | 34/2024 | 35/2024 | 36/2024 | 37/2024 | 38/2024 | 39/2024 | 40/2024 | 41/2024 | 42/2024 | 43/2024 | 44/2024 | 45/2024 | 46/2024 | 47/2024 | 48/2024 | 49/2024 | 50/2024 | 51/2024 | 52/2024 | 53/2024 | 54/2024 | 55/2024 | 56/2024 | 57/2024 | 58/2024 | 59/2024 | 60/2024 | 61/2024 | 62/2024 | 63/2024 | 64/2024 | 65/2024 | 66/2024 | 67/2024 | 68/2024 | 69/2024 | 70/2024 | 71/2024 | 72/2024 | 73/2024 | 74/2024 | 75/2024 | 76/2024 | 77/2024 | 78/2024 | 79/2024 | 80/2024 | 81/2024 | 82/2024 | 83/2024 | 84/2024 | 85/2024 | 86/2024 | 87/2024 | 88/2024 | 89/2024 | 90/2024 | 91/2024 | 92/2024 | 93/2024 | 94/2024 | 95/2024 | 96/2024 | 97/2024 | 98/2024 | 99/2024 | 100/2024 | 101/2024 | 102/2024 | 103/2024 | 104/2024 | 105/2024 | 106/2024 | 107/2024 | 108/2024 | 109/2024 | 110/2024 | 111/2024 | 112/2024 | 113/2024 | 114/2024 | 115"
+Biểu đồ đường_21.png,Biểu đồ đường_52 ảnh_đủ,,,,,,,,"```json
+{
+  ""chart_title"": ""Tuổi thọ trung bình từ lúc sinh toàn quốc theo giới tính, giai đoạn 2009 - 2024 và dự báo giai đoạn 2029-2074"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Tuổi"",
+  ""x_axis_label"": ""Giai đoạn"",
+  ""categories"": ""2009 | 2014 | 2019 | 2024 | 2029 | 2034 | 2039 | 2044 | 2049 | 2054 | 2059 | 2064 | 2069 | 2074"",
+  ""series_name"": ""Tuổi thọ trung bình"",
+  ""y_axis_ticks"": ""64,0 | 66,0 | 68,0 | 70,0 | 72,0 | 74,0 | 75,0 | 76,0 | 77,0 | 78,0 | 79,0 | 80,0 | 81,0 | 82,0 | 82,4"",
+  ""values"": [
+    {""thực tế nam"": 75,6, 76,0, 76,3, 77,3, 77,9, 78,5, 79,1, 79,6, 80,1, 80,6, 81,1, 81,6, 82,0, 82,4},
+    {""thực tế nữ"": 70,2, 70,6, 71,1, 71,3, 72,3, 73,6, 73,9, 74,5, 75,0, 76,0, 76,5, 77,0, 77,5, 77,9},
+    {""dự báo nam"": 74,3, 74,9, 75,6, 76,5, 77,0, 77,5, 77,9, 78,0, 78,4, 78,6, 79,0, 79,6, 80,0, 80,6, 81,1, 81,6, 82,0, 82,4},
+    {""dự báo nữ"": 77,3, 77,9, 78,5, 79,1, 80,1, 80,6, 81,1, 81,6, 82,0, 82,4}
+  ]
+}
+```"
+Biểu đồ đường_22.jpg,Biểu đồ đường_52 ảnh_đủ,"Tỉ suất sinh và dân số Nhật Bản 1950 - 2020 và dự báo năm 2050, 2100 và 3000. Nguồn: Macrotrends",đường,triệu người,Năm,1950 | 1960 | 1970 | 1980 | 1990 | 2000 | 2010 | 2020 | 2050 | 2100 | 3000,Dân số,"{'1950': 105, '1960': 94, '1970': 2.1, '1980': 2.08, '1990': 1.8, '2000': 1.58, '2010': 1.34, '2020': 1.36, '2050': 1.67, '2100': 0.0005, '3000': 50}","```json
+{
+  ""chart_title"": ""Tỉ suất sinh và dân số Nhật Bản 1950 - 2020 và dự báo năm 2050, 2100 và 3000. Nguồn: Macrotrends"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""triệu người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1950 | 1960 | 1970 | 1980 | 1990 | 2000 | 2010 | 2020 | 2050 | 2100 | 3000"",
+  ""series_name"": ""Tỉ suất sinh"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10"",
+  ""values"": {
+    ""1950"": 84,
+    ""1960"": 3.5,
+    ""1970"": 2.1,
+    ""1980"": 2.08,
+    ""1990"": 1.8,
+    ""2000"": 1.58,
+    ""2010"": 1.34,
+    ""2020"": 1.36,
+    ""2050"": 1.67,
+    ""2100"": 0.0005,
+    ""3000"": 50
+  },
+  ""series_name"": ""Dân số"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": {
+    ""1950"": 105,
+    ""1960"": 94,
+    ""1970"": 2.1,
+    ""1980"": 2.08,
+    ""1990"": 1.8,
+    ""2000"": 1.58,
+    ""2010"": 1.34,
+    ""2020"": 1.36,
+    ""2050"": 1.67,
+    ""2100"": 0.0005,
+    ""3000"": 50
+  }
+}
+```"
+Biểu đồ đường_23.png,Biểu đồ đường_52 ảnh_đủ,"Biểu đồ thể hiện tốc độ tăng dân số, sản lượng lương thực và bình quân lương thực theo đầu người của vùng Đồng bằng sông Hồng giai đoạn 1995 - 2002",đường,%,Trạng quan,1995 | 1998 | 2000 | 2002,Bình quân lương thực theo đầu người,"[113.8, 128.6, 105.6, 108.2]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện tốc độ tăng dân số, sản lượng lương thực và bình quân lương thực theo đầu người của vùng Đồng bằng sông Hồng giai đoạn 1995 - 2002"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Trạng quan"",
+  ""categories"": ""1995 | 1998 | 2000 | 2002"",
+  ""series_name"": ""Dân số"",
+  ""y_axis_ticks"": ""100 | 100 | 100 | 100"",
+  ""values"": [
+    100,
+    117.7,
+    121.8,
+    131.1
+  ],
+  ""series_name"": ""Sản lượng lương thực"",
+  ""y_axis_ticks"": ""100 | 100 | 100 | 100"",
+  ""values"": [
+    113.8,
+    128.6,
+    105.6,
+    108.2
+  ],
+  ""series_name"": ""Bình quân lương thực theo đầu người"",
+  ""y_axis_ticks"": ""100 | 100 | 100 | 100""
+}
+```"
+Biểu đồ đường_24.png,Biểu đồ đường_52 ảnh_đủ,Biểu đồ thể hiện sự thay đổi GDP của Liên bang Nga giai đoạn 1990-2004,đường,tỉ USD,Năm,1990 | 1995 | 2000 | 2003 | 2004,GDP (tỉ USD),"[967.3, 363.9, 259.7, 432.9, 582.4]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện sự thay đổi GDP của Liên bang Nga giai đoạn 1990-2004"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""tỉ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 1995 | 2000 | 2003 | 2004"",
+  ""series_name"": ""GDP (tỉ USD)"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800 | 1000"",
+  ""values"": [
+    967.3,
+    363.9,
+    259.7,
+    432.9,
+    582.4
+  ]
+}
+```"
+Biểu đồ đường_25.png,Biểu đồ đường_52 ảnh_đủ,"Tăng trưởng GDP, Lạm phát và Tỷ lệ thất nghiệp toàn cầu (2010-2024)",đường,%,Năm,2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024,Tổng quan,"{'Tăng trưởng GDP (%)': 5.5, 'Lạm phát (%)': 3.5, 'Tỷ lệ thất nghiệp (%)': -2.5}","```json
+{
+  ""chart_title"": ""Tăng trưởng GDP, Lạm phát và Tỷ lệ thất nghiệp toàn cầu (2010-2024)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024"",
+  ""series_name"": ""Tổng quan"",
+  ""y_axis_ticks"": ""0 | 2 | 4 | 6"",
+  ""values"": {
+    ""Tăng trưởng GDP (%)"": 5.5,
+    ""Lạm phát (%)"": 3.5,
+    ""Tỷ lệ thất nghiệp (%)"": -2.5
+  }
+}
+```"
+Biểu đồ đường_26.png,Biểu đồ đường_52 ảnh_đủ,"Tốc độ tăng trưởng GDP của một số quốc gia, giai đoạn 2011 - 2015",đường,%,Năm,2011 | 2012 | 2013 | 2014 | 2015,Tốc độ tăng trưởng GDP,"[100, 138.8, 120.7, 129.4, 127.4, 121.8, 142.7, 165.5, 173.4, 151.5]","```json
+{
+  ""chart_title"": ""Tốc độ tăng trưởng GDP của một số quốc gia, giai đoạn 2011 - 2015"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2011 | 2012 | 2013 | 2014 | 2015"",
+  ""series_name"": ""Tốc độ tăng trưởng GDP"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100 | 120 | 140 | 160 | 180 | 200"",
+  ""values"": [
+    100,
+    138.8,
+    120.7,
+    129.4,
+    127.4,
+    121.8,
+    142.7,
+    165.5,
+    173.4,
+    151.5
+  ]
+}
+```"
+Biểu đồ đường_27.png,Biểu đồ đường_52 ảnh_đủ,"Khách quốc tế đến Việt Nam phân theo phương tiện đến, giai đoạn 2010 - 2015",đường,thường,Năm,2010 | 2011 | 2012 | 2013 | 2014 | 2015,Khách quốc tế đến Việt Nam,"[4091.7, 5575.9, 986.3, 1606.5, 1502.6, 133.2]","```json
+{
+  ""chart_title"": ""Khách quốc tế đến Việt Nam phân theo phương tiện đến, giai đoạn 2010 - 2015"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""thường"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2011 | 2012 | 2013 | 2014 | 2015"",
+  ""series_name"": ""Khách quốc tế đến Việt Nam"",
+  ""y_axis_ticks"": ""0 | 1000 | 2000 | 3000 | 4000 | 5000"",
+  ""values"": [
+    4091.7,
+    5575.9,
+    986.3,
+    1606.5,
+    1502.6,
+    133.2
+  ]
+}
+```"
+Biểu đồ đường_28.png,Biểu đồ đường_52 ảnh_đủ,Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta,đường,Nghìn ha,Năm,2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016,Diện tích,"[429.1, 339.8, 300.9, 285.8, 280.3, 288.3, 622.2]","```json
+{
+  ""chart_title"": ""Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016"",
+  ""series_name"": ""Diện tích"",
+  ""y_axis_ticks"": ""0 | 100 | 200 | 300 | 400 | 500 | 600 | 700"",
+  ""values"": [
+    429.1,
+    339.8,
+    300.9,
+    285.8,
+    280.3,
+    288.3,
+    622.2
+  ]
+}
+```"
+Biểu đồ đường_29.png,Biểu đồ đường_52 ảnh_đủ,Tốc độ tăng trưởng một số sản phẩm công nghiệp chế biến,đường,%,Năm,2005 | 2007 | 2009 | 2010 | 2013,Tốc độ tăng trưởng,"['100', '113.3', '117.4', '117.7', '144.3', '205.7', '214.7', '83']","```json
+{
+  ""chart_title"": ""Tốc độ tăng trưởng một số sản phẩm công nghiệp chế biến"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2007 | 2009 | 2010 | 2013"",
+  ""series_name"": ""Tốc độ tăng trưởng"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250"",
+  ""values"": [
+    ""100"",
+    ""113.3"",
+    ""117.4"",
+    ""117.7"",
+    ""144.3"",
+    ""205.7"",
+    ""214.7"",
+    ""83""
+  ]
+}
+```"
+Biểu đồ đường_3.jpg,Biểu đồ đường_52 ảnh_đủ,Số lượng quạt máy bán được trong năm vừa qua,đường,tháng,Tháng,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,Số lượng quạt máy bán được trong năm vừa qua,"[25, 35, 30, 120, 140, 130, 80, 50, 20]","```json
+{
+  ""chart_title"": ""Số lượng quạt máy bán được trong năm vừa qua"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""tháng"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12"",
+  ""series_name"": ""Số lượng quạt máy bán được trong năm vừa qua"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100 | 120 | 140 | 160"",
+  ""values"": [
+    25,
+    35,
+    30,
+    120,
+    140,
+    130,
+    80,
+    50,
+    20
+  ]
+}
+```"
+Biểu đồ đường_30.png,Biểu đồ đường_52 ảnh_đủ,"Tốc độ tăng trưởng tổng số dân, sản lượng lương thực và bình quân lương thực theo đầu người của nước ta, giai đoạn 1990 - 2015",đường,tháng,Năm,1990 | 2000 | 2005 | 2010 | 2015,Tốc độ tăng trưởng,"[{'series_name': 'Tổng số dân', 'x_axis': 1990, 'y': 100}, {'series_name': 'Sản lượng lương thực', 'x_axis': 1990, 'y': 100}, {'series_name': 'Bình quân lương thực theo đầu người', 'x_axis': 1990, 'y': 100}, {'series_name': 'Tổng số dân', 'x_axis': 2000, 'y': 100}, {'series_name': 'Sản lượng lương thực', 'x_axis': 2000, 'y': 100}, {'series_name': 'Bình quân lương thực theo đầu người', 'x_axis': 2000, 'y': 100}, {'series_name': 'Tổng số dân', 'x_axis': 2005, 'y': 100}, {'series_name': 'Sản lượng lương thực', 'x_axis': 2005, 'y': 100}, {'series_name': 'Bình quân lương thực theo đầu người', 'x_axis': 2005, 'y': 100}, {'series_name': 'Tổng số dân', 'x_axis': 2010, 'y': 100}, {'series_name': 'Sản lượng lương thực', 'x_axis': 2010, 'y': 100}, {'series_name': 'Bình quân lương thực theo đầu người', 'x_axis': 2010, 'y': 100}, {'series_name': 'Tổng số dân', 'x_axis': 2015, 'y': 100}, {'series_name': 'Sản lượng lương thực', 'x_axis': 2015, 'y': 100}, {'series_name': 'Bình quân lương thực theo đầu người', 'x_axis': 2015, 'y': 100}]","```json
+{
+  ""chart_title"": ""Tốc độ tăng trưởng tổng số dân, sản lượng lương thực và bình quân lương thực theo đầu người của nước ta, giai đoạn 1990 - 2015"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""tháng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 2000 | 2005 | 2010 | 2015"",
+  ""series_name"": ""Tốc độ tăng trưởng"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250 | 300"",
+  ""values"": [
+    {
+      ""series_name"": ""Tổng số dân"",
+      ""x_axis"": 1990,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Sản lượng lương thực"",
+      ""x_axis"": 1990,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Bình quân lương thực theo đầu người"",
+      ""x_axis"": 1990,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Tổng số dân"",
+      ""x_axis"": 2000,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Sản lượng lương thực"",
+      ""x_axis"": 2000,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Bình quân lương thực theo đầu người"",
+      ""x_axis"": 2000,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Tổng số dân"",
+      ""x_axis"": 2005,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Sản lượng lương thực"",
+      ""x_axis"": 2005,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Bình quân lương thực theo đầu người"",
+      ""x_axis"": 2005,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Tổng số dân"",
+      ""x_axis"": 2010,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Sản lượng lương thực"",
+      ""x_axis"": 2010,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Bình quân lương thực theo đầu người"",
+      ""x_axis"": 2010,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Tổng số dân"",
+      ""x_axis"": 2015,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Sản lượng lương thực"",
+      ""x_axis"": 2015,
+      ""y"": 100
+    },
+    {
+      ""series_name"": ""Bình quân lương thực theo đầu người"",
+      ""x_axis"": 2015,
+      ""y"": 100
+    }
+  ]
+}
+```"
+Biểu đồ đường_31.png,Biểu đồ đường_52 ảnh_đủ,"Biểu đồ thể hiện giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hòa Nam Phi giai đoạn 2000 - 2020",đường,%,Trạng quan,2000 | 2005 | 2010 | 2015 | 2020,"Giá xuất khẩu, nhập khẩu","[33.1, 68.2, 107.6, 102.8, 96.1]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hòa Nam Phi giai đoạn 2000 - 2020"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Trạng quan"",
+  ""categories"": ""2000 | 2005 | 2010 | 2015 | 2020"",
+  ""series_name"": ""Giá xuất khẩu, nhập khẩu"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100 | 120"",
+  ""values"": [
+    33.1,
+    68.2,
+    107.6,
+    102.8,
+    96.1
+  ]
+}
+```"
+Biểu đồ đường_32.png,Biểu đồ đường_52 ảnh_đủ,"Biểu đồ thể hiện tốc độ tăng trưởng sản lượng dầu mỏ và điện trên thế giới, giai đoạn 1990 - 2020",đường,%,Năm,1990 | 2000 | 2010 | 2020,Dầu mỏ,"[100, 113.9, 126, 131.9, 177.2, 217.5]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện tốc độ tăng trưởng sản lượng dầu mỏ và điện trên thế giới, giai đoạn 1990 - 2020"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 2000 | 2010 | 2020"",
+  ""series_name"": ""Dầu mỏ"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250"",
+  ""values"": [
+    100,
+    113.9,
+    126,
+    131.9,
+    177.2,
+    217.5
+  ]
+}
+```"
+Biểu đồ đường_33.png,Biểu đồ đường_52 ảnh_đủ,"Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta, giai đoạn 2010 - 2016",đường,Nghìn ha,Năm,2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016,Diện tích,"[518.2, 429.1, 339.8, 300.9, 285.8, 280.3, 288.3]","```json
+{
+  ""chart_title"": ""Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta, giai đoạn 2010 - 2016"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016"",
+  ""series_name"": ""Diện tích"",
+  ""y_axis_ticks"": ""0 | 100 | 200 | 300 | 400 | 500 | 600 | 700"",
+  ""values"": [
+    518.2,
+    429.1,
+    339.8,
+    300.9,
+    285.8,
+    280.3,
+    288.3
+  ]
+}
+```"
+Biểu đồ đường_34.png,Biểu đồ đường_52 ảnh_đủ,Biểu đồ thể hiện tổng nợ nước ngoài của nhóm nước đang phát triển giai đoạn 1990 - 2004,đường,tỉ USD,Năm,1990 | 1998 | 2000 | 2004 năm,Tổng nợ nước ngoài,"[1310, 2465, 2498, 2724]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện tổng nợ nước ngoài của nhóm nước đang phát triển giai đoạn 1990 - 2004"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""tỉ USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 1998 | 2000 | 2004 năm"",
+  ""series_name"": ""Tổng nợ nước ngoài"",
+  ""y_axis_ticks"": ""0 | 500 | 1000 | 1500 | 2000 | 2500 | 3000"",
+  ""values"": [
+    1310,
+    2465,
+    2498,
+    2724
+  ]
+}
+```"
+Biểu đồ đường_35.png,Biểu đồ đường_52 ảnh_đủ,Biểu đồ thể hiện tốc độ tăng GDP của Nhật Bản giai đoạn 1990 - 2005.,đường,%,Năm,1990 | 1995 | 1997 | 1999 | 2001 | 2003 | 2005,GDP,"[5.1, 1.5, 1.9, 0.8, 0.4, 2.7, 2.5]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện tốc độ tăng GDP của Nhật Bản giai đoạn 1990 - 2005."",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 1995 | 1997 | 1999 | 2001 | 2003 | 2005"",
+  ""series_name"": ""GDP"",
+  ""y_axis_ticks"": ""0 | 1 | 2 | 3 | 4 | 5 | 6"",
+  ""values"": [
+    5.1,
+    1.5,
+    1.9,
+    0.8,
+    0.4,
+    2.7,
+    2.5
+  ]
+}
+```"
+Biểu đồ đường_36.jpeg,Biểu đồ đường_52 ảnh_đủ,Sản lượng các loại,đường,%,Năm,2005 | 2007 | 2009 | 2010 | 2013,Sản lượng,"{'Muối biển': 100, 'Thủy sản ướp đông': 119.6, 'Gạo xay xát': 165.7, 'Bia các loại': 144.3}","```json
+{
+  ""chart_title"": ""Sản lượng các loại"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2005 | 2007 | 2009 | 2010 | 2013"",
+  ""series_name"": ""Sản lượng"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200"",
+  ""values"": {
+    ""Muối biển"": 100,
+    ""Thủy sản ướp đông"": 95.5,
+    ""Gạo xay xát"": 172.8,
+    ""Bia các loại"": 83,
+    ""Gạo xay xát"": 187.5,
+    ""Thủy sản ướp đông"": 113.3,
+    ""Bia các loại"": 117.7,
+    ""Gạo xay xát"": 165.7,
+    ""Thủy sản ướp đông"": 119.6,
+    ""Bia các loại"": 144.3
+  }
+}
+```"
+Biểu đồ đường_37.png,Biểu đồ đường_52 ảnh_đủ,Năm,đường,Nghìn ha,Năm,2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016,Năm,"[518.2, 429.1, 339.8, 300.9, 285.8, 280.3, 288.3]","```json
+{
+  ""chart_title"": ""Năm"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Nghìn ha"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2011 | 2012 | 2013 | 2014 | 2015 | 2016"",
+  ""series_name"": ""Năm"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50 | 60 | 70"",
+  ""values"": [
+    518.2,
+    429.1,
+    339.8,
+    300.9,
+    285.8,
+    280.3,
+    288.3
+  ]
+}
+```"
+Biểu đồ đường_38.png,Biểu đồ đường_52 ảnh_đủ,Than,đường,%,Năm,2000 | 2006 | 2010 | 2012 | 2014,Than,"[100, 221.3, 222.4, 246.6, 359.4]","```json
+{
+  ""chart_title"": ""Than"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2006 | 2010 | 2012 | 2014"",
+  ""series_name"": ""Than"",
+  ""y_axis_ticks"": ""0 | 100 | 200 | 300 | 400 | 500 | 600"",
+  ""values"": [
+    100,
+    221.3,
+    222.4,
+    246.6,
+    359.4
+  ]
+}
+```"
+Biểu đồ đường_39.png,Biểu đồ đường_52 ảnh_đủ,Điểm số của các quốc gia,đường,%,Năm,2011 | 2012 | 2013 | 2014 | 2015,Điểm số,"[100, 105, 102.4, 101.8, 100.1, 151.5, 173.4, 152.7, 129.4, 127.4, 121.8, 118.8, 142.7, 165.5, 120.5, 138.8]","```json
+{
+  ""chart_title"": ""Điểm số của các quốc gia"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2011 | 2012 | 2013 | 2014 | 2015"",
+  ""series_name"": ""Điểm số"",
+  ""y_axis_ticks"": ""0 | 20 | 40 | 60 | 80 | 100 | 120 | 140 | 160 | 180 | 200"",
+  ""values"": [
+    100,
+    105,
+    102.4,
+    101.8,
+    100.1,
+    151.5,
+    173.4,
+    152.7,
+    129.4,
+    127.4,
+    121.8,
+    118.8,
+    142.7,
+    165.5,
+    120.5,
+    138.8
+  ]
+}
+```"
+Biểu đồ đường_4.jpg,Biểu đồ đường_52 ảnh_đủ,Tổng sản lượng thủy sản của nước ta giai đoạn 2017 - 2020,đường,nghìn tấn,Năm,2017 | 2018 | 2019 | 2020,Tổng sản lượng thủy sản,"[7279, 7743, 8150, 8410]","```json
+{
+  ""chart_title"": ""Tổng sản lượng thủy sản của nước ta giai đoạn 2017 - 2020"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""nghìn tấn"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2017 | 2018 | 2019 | 2020"",
+  ""series_name"": ""Tổng sản lượng thủy sản"",
+  ""y_axis_ticks"": ""6600 | 6800 | 7000 | 7200 | 7400 | 7600 | 7800 | 8000 | 8200 | 8400"",
+  ""values"": [
+    7279,
+    7743,
+    8150,
+    8410
+  ]
+}
+```"
+Biểu đồ đường_40.jpg,Biểu đồ đường_52 ảnh_đủ,Số liệu dữ liệu,đường,Triệu,Năm,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10,Số liệu,"40, 40, 35, 35, 30, 25, 20, 20, 20","```json
+{
+  ""chart_title"": ""Số liệu dữ liệu"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Triệu"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10"",
+  ""series_name"": ""Số liệu"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": ""40, 40, 35, 35, 30, 25, 20, 20, 20""
+}
+```"
+Biểu đồ đường_41.jpg,Biểu đồ đường_52 ảnh_đủ,Tổng doanh thu,đường,USD,Năm,2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019,Tổng doanh thu,"1,800.00 | 1,200.00 | 1,000.00 | 800.00 | 600.00 | 400.00 | 200.00","```json
+{
+  ""chart_title"": ""Tổng doanh thu"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2011 | 2012 | 2013 | 2014 | 2015 | 2016 | 2017 | 2018 | 2019"",
+  ""series_name"": ""Tổng doanh thu"",
+  ""y_axis_ticks"": ""$"",
+  ""values"": ""1,800.00 | 1,200.00 | 1,000.00 | 800.00 | 600.00 | 400.00 | 200.00""
+}
+```"
+Biểu đồ đường_42.png,Biểu đồ đường_52 ảnh_đủ,Tần số tương đối,đường,%,Quãng đường (km),4.5 | 5.5 | 6.5 | 7.5 | 8.5,Tần số tương đối,20% | 40% | 26.7% | 10% | 3.3%,"```json
+{
+  ""chart_title"": ""Tần số tương đối"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Quãng đường (km)"",
+  ""categories"": ""4.5 | 5.5 | 6.5 | 7.5 | 8.5"",
+  ""series_name"": ""Tần số tương đối"",
+  ""y_axis_ticks"": ""0% | 5% | 10% | 15% | 20% | 25% | 30% | 35% | 40% | 45%"",
+  ""values"": ""20% | 40% | 26.7% | 10% | 3.3%""
+}
+```"
+Biểu đồ đường_43.jpg,Biểu đồ đường_52 ảnh_đủ,Mua vào | Bán ra,đường,k,Tháng,03/11 | 08/11 | 13/11 | 18/11 | 23/11 | 28/11 | 03/12,Mua vào | Bán ra,"65,500k | 66,000k | 66,500k | 67,000k | 67,500k | 68,000k","```json
+{
+  ""chart_title"": ""Mua vào | Bán ra"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""k"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""03/11 | 08/11 | 13/11 | 18/11 | 23/11 | 28/11 | 03/12"",
+  ""series_name"": ""Mua vào | Bán ra"",
+  ""y_axis_ticks"": ""65,500k | 66,000k | 66,500k | 67,000k | 67,500k | 68,000k"",
+  ""values"": ""65,500k | 66,000k | 66,500k | 67,000k | 67,500k | 68,000k""
+}
+```"
+Biểu đồ đường_44.png,Biểu đồ đường_52 ảnh_đủ,Tỷ lệ khách du lịch đến Scotland (nhóm quan các điểm du lịch khác nhau),đường,%,Trạng quan,1980 | 1985 | 1990 | 1995 | 2000 | 2005 | 2010,Tỷ lệ khách du lịch,"{'Thủy cung': 20, 'Lâu đài': 30, 'Sở thú': 15, 'Lễ hội': 10}","```json
+{
+  ""chart_title"": ""Tỷ lệ khách du lịch đến Scotland (nhóm quan các điểm du lịch khác nhau)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Trạng quan"",
+  ""categories"": ""1980 | 1985 | 1990 | 1995 | 2000 | 2005 | 2010"",
+  ""series_name"": ""Tỷ lệ khách du lịch"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45"",
+  ""values"": {
+    ""Thủy cung"": 20,
+    ""Lâu đài"": 30,
+    ""Sở thú"": 15,
+    ""Lễ hội"": 10
+  }
+}
+```"
+Biểu đồ đường_45.png,Biểu đồ đường_52 ảnh_đủ,"Chi tiêu hàng năm trung bình cho dịch vụ điện thoại di động và điện thoại cố định quốc tế, nội địa (2001-2010)",đường,USD,Năm,2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 | 2009 | 2010,Chi tiêu hàng năm,"[{'dịch vụ': 'Dịch vụ điện thoại di động', 'thời gian': '2001', 'điểm': 250}, {'dịch vụ': 'Dịch vụ điện thoại cố định quốc tế', 'thời gian': '2002', 'điểm': 300}, {'dịch vụ': 'Dịch vụ điện thoại cố định nội địa', 'thời gian': '2003', 'điểm': 350}, {'dịch vụ': 'Dịch vụ điện thoại di động', 'thời gian': '2004', 'điểm': 350}, {'dịch vụ': 'Dịch vụ điện thoại cố định quốc tế', 'thời gian': '2005', 'điểm': 350}, {'dịch vụ': 'Dịch vụ điện thoại cố định nội địa', 'thời gian': '2006', 'điểm': 350}, {'dịch vụ': 'Dịch vụ điện thoại di động', 'thời gian': '2007', 'điểm': 350}, {'dịch vụ': 'Dịch vụ điện thoại cố định quốc tế', 'thời gian': '2008', 'điểm': 350}, {'dịch vụ': 'Dịch vụ điện thoại cố định nội địa', 'thời gian': '2009', 'điểm': 350}, {'dịch vụ': 'Dịch vụ điện thoại di động', 'thời gian': '2010', 'điểm': 350}]","```json
+{
+  ""chart_title"": ""Chi tiêu hàng năm trung bình cho dịch vụ điện thoại di động và điện thoại cố định quốc tế, nội địa (2001-2010)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""USD"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 | 2009 | 2010"",
+  ""series_name"": ""Chi tiêu hàng năm"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250 | 300 | 350 | 400 | 450"",
+  ""values"": [
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại di động"",
+      ""thời gian"": ""2001"",
+      ""điểm"": 250
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại cố định quốc tế"",
+      ""thời gian"": ""2002"",
+      ""điểm"": 300
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại cố định nội địa"",
+      ""thời gian"": ""2003"",
+      ""điểm"": 350
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại di động"",
+      ""thời gian"": ""2004"",
+      ""điểm"": 350
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại cố định quốc tế"",
+      ""thời gian"": ""2005"",
+      ""điểm"": 350
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại cố định nội địa"",
+      ""thời gian"": ""2006"",
+      ""điểm"": 350
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại di động"",
+      ""thời gian"": ""2007"",
+      ""điểm"": 350
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại cố định quốc tế"",
+      ""thời gian"": ""2008"",
+      ""điểm"": 350
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại cố định nội địa"",
+      ""thời gian"": ""2009"",
+      ""điểm"": 350
+    },
+    {
+      ""dịch vụ"": ""Dịch vụ điện thoại di động"",
+      ""thời gian"": ""2010"",
+      ""điểm"": 350
+    }
+  ]
+}
+```"
+Biểu đồ đường_46.png,Biểu đồ đường_52 ảnh_đủ,Số người di chuyển từ nông thôn đến thành thị,đường,thiên dân,Năm,2000 | 2005 | 2010 | 2015 | 2020 | 2025,Số người,"{'Iran': 15, 'Indonesia': 10, 'Nga': 25}","```json
+{
+  ""chart_title"": ""Số người di chuyển từ nông thôn đến thành thị"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""thiên dân"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2005 | 2010 | 2015 | 2020 | 2025"",
+  ""series_name"": ""Số người"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40 | 50"",
+  ""values"": {
+    ""Iran"": 15,
+    ""Indonesia"": 10,
+    ""Nga"": 25
+  }
+}
+```"
+Biểu đồ đường_47.png,Biểu đồ đường_52 ảnh_đủ,Tỷ lệ dân số từ 65 tuổi trở lên,đường,%,Năm,1940 | 1960 | 1980 | 2000 | 2020 | 2040,Tỷ lệ dân số,"{'Hoa Kỳ': 5, 'Thụy Điển': 15, 'Nhật Bản': 22}","```json
+{
+  ""chart_title"": ""Tỷ lệ dân số từ 65 tuổi trở lên"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1940 | 1960 | 1980 | 2000 | 2020 | 2040"",
+  ""series_name"": ""Tỷ lệ dân số"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30"",
+  ""values"": {
+    ""Hoa Kỳ"": 5,
+    ""Thụy Điển"": 10,
+    ""Nhật Bản"": 25,
+    ""Thụy Điển"": 15,
+    ""Nhật Bản"": 20,
+    ""Nhật Bản"": 22
+  }
+}
+```"
+Biểu đồ đường_48.png,Biểu đồ đường_52 ảnh_đủ,Thu nhập của bốn quán cà phê tại New York trong năm qua,đường,nghìn USD,T,T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10 | T11 | T12,Quán Trà,"{'Quán Trà': 100, 'Quán Internet': 100, 'Quán Wi-Fi': 100, 'Quán Cafe Mát': 100}","```json
+{
+  ""chart_title"": ""Thu nhập của bốn quán cà phê tại New York trong năm qua"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""nghìn USD"",
+  ""x_axis_label"": ""T"",
+  ""categories"": ""T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10 | T11 | T12"",
+  ""series_name"": ""Quán Trà"",
+  ""y_axis_ticks"": ""0 | 10 | 20 | 30 | 40"",
+  ""values"": {
+    ""Quán Trà"": 100,
+    ""Quán Internet"": 100,
+    ""Quán Wi-Fi"": 100,
+    ""Quán Cafe Mát"": 100
+  }
+}
+```"
+Biểu đồ đường_49.png,Biểu đồ đường_52 ảnh_đủ,Tiêu thụ năng lượng tại Hoa Kỳ theo nhiên liệu (1980-2030),đường,Số lượng quadrillion BTU,Lịch sử,1980 | 1985 | 1990 | 1995 | 2000 | 2005 | 2010 | 2015 | 2020 | 2025 | 2030,Xăng dầu,"{'Xăng dầu': 20, 'Than': 25, 'Khí tự nhiên': 30, 'Điện hạt nhân': 5, 'Điện mặt trời/ Gió': 10, 'Thủy điện': 15}","```json
+{
+  ""chart_title"": ""Tiêu thụ năng lượng tại Hoa Kỳ theo nhiên liệu (1980-2030)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Số lượng quadrillion BTU"",
+  ""x_axis_label"": ""Lịch sử"",
+  ""categories"": ""1980 | 1985 | 1990 | 1995 | 2000 | 2005 | 2010 | 2015 | 2020 | 2025 | 2030"",
+  ""series_name"": ""Xăng dầu"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40"",
+  ""values"": {
+    ""Xăng dầu"": 20,
+    ""Than"": 25,
+    ""Khí tự nhiên"": 30,
+    ""Điện hạt nhân"": 5,
+    ""Điện mặt trời/ Gió"": 10,
+    ""Thủy điện"": 15
+  }
+}
+```"
+Biểu đồ đường_5.png,Biểu đồ đường_52 ảnh_đủ,Lượng mưa trung bình trong 12 tháng năm 2021 tại Hà Nội (mm),đường,mm,Tháng,1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12,Lượng mưa,"[19, 26, 44, 90, 288, 265, 131, 43, 23]","```json
+{
+  ""chart_title"": ""Lượng mưa trung bình trong 12 tháng năm 2021 tại Hà Nội (mm)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""mm"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12"",
+  ""series_name"": ""Lượng mưa"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250 | 300 | 350"",
+  ""values"": [
+    19,
+    26,
+    44,
+    90,
+    288,
+    265,
+    131,
+    43,
+    23
+  ]
+}
+```"
+Biểu đồ đường_50.png,Biểu đồ đường_52 ảnh_đủ,"Lượng khán giả truyền hình và phát thanh tại Anh, tháng 10-12/1992",đường,phần trăm,Thời gian trong ngày,1:00 | 3:00 | 5:00 | 7:00 | 9:00 | 11:00 | 13:00 | 15:00 | 17:00 | 19:00 | 21:00 | 23:00,Lượng khán giả,"{'TV': 5, 'Radio': 10}","```json
+{
+  ""chart_title"": ""Lượng khán giả truyền hình và phát thanh tại Anh, tháng 10-12/1992"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""phần trăm"",
+  ""x_axis_label"": ""Thời gian trong ngày"",
+  ""categories"": ""1:00 | 3:00 | 5:00 | 7:00 | 9:00 | 11:00 | 13:00 | 15:00 | 17:00 | 19:00 | 21:00 | 23:00"",
+  ""series_name"": ""Lượng khán giả"",
+  ""y_axis_ticks"": ""0 | 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45"",
+  ""values"": {
+    ""TV"": 5,
+    ""Radio"": 10
+  }
+}
+```"
+Biểu đồ đường_51.png,Biểu đồ đường_52 ảnh_đủ,"Dân số Ấn Độ và Trung Quốc, 2000-2050",đường,tỷ người,Năm,2000 | 2010 | 2020 | 2030 | 2040 | 2050,Dân số Ấn Độ,"{'Ấn Độ': {'2000': 1.0, '2010': 1.1, '2020': 1.2, '2030': 1.3, '2040': 1.4, '2050': 1.5}, 'Trung Quốc': {'2000': 1.0, '2010': 1.1, '2020': 1.2, '2030': 1.3, '2040': 1.4, '2050': 1.5}}","```json
+{
+  ""chart_title"": ""Dân số Ấn Độ và Trung Quốc, 2000-2050"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""tỷ người"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2000 | 2010 | 2020 | 2030 | 2040 | 2050"",
+  ""series_name"": ""Dân số Ấn Độ"",
+  ""y_axis_ticks"": ""1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1.5 | 1.6"",
+  ""values"": {
+    ""Ấn Độ"": {
+      ""2000"": 1.0,
+      ""2010"": 1.1,
+      ""2020"": 1.2,
+      ""2030"": 1.3,
+      ""2040"": 1.4,
+      ""2050"": 1.5
+    },
+    ""Trung Quốc"": {
+      ""2000"": 1.0,
+      ""2010"": 1.1,
+      ""2020"": 1.2,
+      ""2030"": 1.3,
+      ""2040"": 1.4,
+      ""2050"": 1.5
+    }
+  }
+}
+```"
+Biểu đồ đường_52.png,Biểu đồ đường_52 ảnh_đủ,"Số lượng liên hệ trực tiếp, qua thư/email và qua điện thoại theo tháng",đường,Số lượng,Tháng,Tháng 1 | Tháng 2 | Tháng 3 | Tháng 4 | Tháng 5 | Tháng 6,Số lượng,"[{'series_name': 'Trực tiếp', 'x': 0, 'y': 500}, {'series_name': 'Qua thư/email', 'x': 0, 'y': 700}, {'series_name': 'Qua điện thoại', 'x': 0, 'y': 800}, {'series_name': 'Trực tiếp', 'x': 0, 'y': 1000}, {'series_name': 'Qua thư/email', 'x': 0, 'y': 1200}, {'series_name': 'Qua điện thoại', 'x': 0, 'y': 1400}, {'series_name': 'Trực tiếp', 'x': 0, 'y': 1800}, {'series_name': 'Qua thư/email', 'x': 0, 'y': 2000}, {'series_name': 'Qua điện thoại', 'x': 0, 'y': 2200}]","```json
+{
+  ""chart_title"": ""Số lượng liên hệ trực tiếp, qua thư/email và qua điện thoại theo tháng"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""Số lượng"",
+  ""x_axis_label"": ""Tháng"",
+  ""categories"": ""Tháng 1 | Tháng 2 | Tháng 3 | Tháng 4 | Tháng 5 | Tháng 6"",
+  ""series_name"": ""Số lượng"",
+  ""y_axis_ticks"": ""0 | 200 | 400 | 600 | 800 | 1000"",
+  ""values"": [
+    {
+      ""series_name"": ""Trực tiếp"",
+      ""x"": 0,
+      ""y"": 500
+    },
+    {
+      ""series_name"": ""Qua thư/email"",
+      ""x"": 0,
+      ""y"": 700
+    },
+    {
+      ""series_name"": ""Qua điện thoại"",
+      ""x"": 0,
+      ""y"": 800
+    },
+    {
+      ""series_name"": ""Trực tiếp"",
+      ""x"": 0,
+      ""y"": 1000
+    },
+    {
+      ""series_name"": ""Qua thư/email"",
+      ""x"": 0,
+      ""y"": 1200
+    },
+    {
+      ""series_name"": ""Qua điện thoại"",
+      ""x"": 0,
+      ""y"": 1400
+    },
+    {
+      ""series_name"": ""Trực tiếp"",
+      ""x"": 0,
+      ""y"": 1800
+    },
+    {
+      ""series_name"": ""Qua thư/email"",
+      ""x"": 0,
+      ""y"": 2000
+    },
+    {
+      ""series_name"": ""Qua điện thoại"",
+      ""x"": 0,
+      ""y"": 2200
+    }
+  ]
+}
+```"
+Biểu đồ đường_53.png,Biểu đồ đường_52 ảnh_đủ,Tỷ lệ việc làm tại bốn ngành khác nhau (1990-2025),đường,%,Năm,1990 | 1995 | 2000 | 2005 | 2010 | 2015 | 2020 | 2025,Ngành A,"[{'series_name': 'Ngành A', 'x': 1990, 'y': 37.5}, {'series_name': 'Ngành A', 'x': 1995, 'y': 35.5}, {'series_name': 'Ngành A', 'x': 2000, 'y': 37.5}, {'series_name': 'Ngành A', 'x': 2005, 'y': 40}, {'series_name': 'Ngành A', 'x': 2010, 'y': 37.5}, {'series_name': 'Ngành A', 'x': 2015, 'y': 37.5}, {'series_name': 'Ngành A', 'x': 2020, 'y': 37.5}, {'series_name': 'Ngành A', 'x': 2025, 'y': 37.5}]","```json
+{
+  ""chart_title"": ""Tỷ lệ việc làm tại bốn ngành khác nhau (1990-2025)"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1990 | 1995 | 2000 | 2005 | 2010 | 2015 | 2020 | 2025"",
+  ""series_name"": ""Ngành A"",
+  ""y_axis_ticks"": ""20 | 25 | 30 | 35 | 40 | 45 | 50"",
+  ""values"": [
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 1990,
+      ""y"": 37.5
+    },
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 1995,
+      ""y"": 35.5
+    },
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 2000,
+      ""y"": 37.5
+    },
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 2005,
+      ""y"": 40
+    },
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 2010,
+      ""y"": 37.5
+    },
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 2015,
+      ""y"": 37.5
+    },
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 2020,
+      ""y"": 37.5
+    },
+    {
+      ""series_name"": ""Ngành A"",
+      ""x"": 2025,
+      ""y"": 37.5
+    }
+  ]
+}
+```"
+Biểu đồ đường_6.png,Biểu đồ đường_52 ảnh_đủ,Các nhóm nghề có nhu cầu tìm việc cao trong năm 2020,đường,%,Nhóm nghề,"['Kinh doanh thương mại', 'Kế toán - Kiểm toán', 'Nhân sự', 'Công nghệ thông tin', 'Hành chính - Văn phòng - Biên phiên dịch', 'Marketing']",Tỷ lệ (%),"[14.66, 13.56, 8.34, 5.89, 11.32, 6.44]","```json
+{
+  ""chart_title"": ""Các nhóm nghề có nhu cầu tìm việc cao trong năm 2020"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Nhóm nghề"",
+  ""categories"": [""Kinh doanh thương mại"", ""Kế toán - Kiểm toán"", ""Nhân sự"", ""Công nghệ thông tin"", ""Hành chính - Văn phòng - Biên phiên dịch"", ""Marketing""],
+  ""series_name"": ""Tỷ lệ (%)"",
+  ""y_axis_ticks"": ""0 | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16"",
+  ""values"": [14.66, 13.56, 8.34, 5.89, 11.32, 6.44]
+}
+```"
+Biểu đồ đường_7.png,Biểu đồ đường_52 ảnh_đủ,Đường hàng không,đường,thùng,Năm,2010 | 2012 | 2014 | 2015,Đường hàng không,"[3091.7, 5575.9, 6220.2, 6271.2]","```json
+{
+  ""chart_title"": ""Đường hàng không"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""thùng"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""2010 | 2012 | 2014 | 2015"",
+  ""series_name"": ""Đường hàng không"",
+  ""y_axis_ticks"": ""0 | 5000 | 10000 | 15000 | 20000"",
+  ""values"": [
+    3091.7,
+    5575.9,
+    6220.2,
+    6271.2
+  ]
+}
+```"
+Biểu đồ đường_8.png,Biểu đồ đường_52 ảnh_đủ,Biểu đồ thể hiện chỉ số phát triển công nghiệp của nước ta giai đoạn 2018 - 2021,đường,trong tỷ lệ phần trăm,2018 | 2019 | 2020 | 2021,"Công nghiệp khai khoáng | Công nghiệp chế biến, chế tạo | Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hòa không khí | Cung cấp nước, hoạt động quản lí và xử lý rác thải, nước thải | Toàn ngành",Công nghiệp khai khoáng,"[100, 103.2, 99.7, 98.6, 97.9, 93.4, 96.8, 95.1, 95, 96.4]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện chỉ số phát triển công nghiệp của nước ta giai đoạn 2018 - 2021"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""trong tỷ lệ phần trăm"",
+  ""x_axis_label"": ""2018 | 2019 | 2020 | 2021"",
+  ""categories"": ""Công nghiệp khai khoáng | Công nghiệp chế biến, chế tạo | Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hòa không khí | Cung cấp nước, hoạt động quản lí và xử lý rác thải, nước thải | Toàn ngành"",
+  ""series_name"": ""Công nghiệp khai khoáng"",
+  ""y_axis_ticks"": ""88 | 90 | 92 | 94 | 96 | 98 | 99 | 100 | 101 | 102 | 103 | 104"",
+  ""values"": [
+    100,
+    103.2,
+    99.7,
+    98.6,
+    97.9,
+    93.4,
+    96.8,
+    95.1,
+    95,
+    96.4
+  ]
+}
+```"
+Biểu đồ đường_9.png,Biểu đồ đường_52 ảnh_đủ,"Biểu đồ thể hiện tốc độ tăng trưởng diện tích, năng suất và sản lượng lúa của nước ta giai đoạn 1980 - 2005",đường,%,Năm,1980 | 1990 | 2000 | 2002 | 2005,Diện tích,"[100, 107.9, 136.7, 134, 130.9]","```json
+{
+  ""chart_title"": ""Biểu đồ thể hiện tốc độ tăng trưởng diện tích, năng suất và sản lượng lúa của nước ta giai đoạn 1980 - 2005"",
+  ""chart_type"": ""đường"",
+  ""unit"": ""%"",
+  ""x_axis_label"": ""Năm"",
+  ""categories"": ""1980 | 1990 | 2000 | 2002 | 2005"",
+  ""series_name"": ""Diện tích"",
+  ""y_axis_ticks"": ""0 | 50 | 100 | 150 | 200 | 250 | 300"",
+  ""values"": [
+    100,
+    107.9,
+    136.7,
+    134,
+    130.9
+  ]
+}
+```"
