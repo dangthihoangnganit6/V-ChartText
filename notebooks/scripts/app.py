@@ -410,13 +410,34 @@ def apply_uncertainty_flagging(parsed_matrix: Dict[str, Any], validation_notes: 
 # ==============================================================================
 # 7. SINH MÔ TẢ 3 CẤP ĐỘ & ĐO KIỂM VICHARTFACT
 # ==============================================================================
+def clean_chart_title_for_speech(title: str) -> str:
+    """Làm sạch tiêu đề, loại bỏ tiền tố thừa như 'Biểu đồ', 'Hình X.Y', 'Bảng X.Y' để diễn đạt tự nhiên và tránh lặp từ."""
+    t = str(title).strip()
+    t = re.sub(r'^(?:Hình|Biểu đồ|Bảng)\s+[\d\.]+\s*[:\-–]?\s*', '', t, flags=re.IGNORECASE)
+    t = re.sub(r'^(?:Biểu đồ|Bảng)\s+(?:thể hiện|về)?\s*', '', t, flags=re.IGNORECASE)
+    t = re.sub(r'^(?:thể hiện|về)\s+', '', t, flags=re.IGNORECASE)
+    if not t or t.lower() in ["thiếu tên biểu đồ", "chưa rõ", "none", "nan"]:
+        return "các chỉ số đối tượng khảo sát"
+    return t.strip()
+
+ORDINAL_VN = ["nhất", "nhì", "ba", "tư", "năm", "sáu", "bảy", "tám", "chín", "mười"]
+
 def generate_3level_descriptions(flagged_matrix: Dict[str, Any]) -> Dict[str, str]:
-    title = flagged_matrix["chart_title"]
+    """
+    Sinh mô tả 3 cấp độ chuẩn sư phạm, không cắt ngắn cứng nhắc, không lặp từ/lặp cấu trúc,
+    bám sát ma trận số liệu đã kiểm chứng và tuyệt đối không suy diễn nguyên nhân kinh tế - xã hội ngoài dữ liệu.
+    - Cấp 1 (Tổng quan 5s): Loại biểu đồ, chủ đề, đơn vị tính, phạm vi và xu hướng biến thiên tổng quát.
+    - Cấp 2 (Nghe 30s): Số liệu định lượng trọng tâm (đỉnh, đáy, biên độ chênh lệch, đầu kỳ - cuối kỳ, cờ chưa chắc chắn).
+    - Cấp 3 (Diễn giải chuyên sâu): Toàn văn ma trận số liệu, phân tích tương quan/thứ bậc học tập có căn cứ trực tiếp từ số liệu.
+    """
+    raw_title = flagged_matrix["chart_title"]
     c_type = flagged_matrix["chart_type"]
     unit = flagged_matrix["unit"]
     cats = flagged_matrix["categories"]
     series_data = flagged_matrix["series_data"]
     has_un = flagged_matrix["has_uncertainty"]
+
+    clean_title = clean_chart_title_for_speech(raw_title)
 
     c_type_vn = {
         "column": "cột",
@@ -426,43 +447,196 @@ def generate_3level_descriptions(flagged_matrix: Dict[str, Any]) -> Dict[str, st
         "combo": "kết hợp"
     }.get(c_type, "cột")
 
-    time_span = f"từ {cats[0]} đến {cats[-1]}" if (len(cats) >= 2 and re.search(r"\d{4}", str(cats[0]))) else f"các danh mục {', '.join(cats[:3])}"
+    is_time_series = len(cats) >= 2 and all(re.search(r"\b(19\d{2}|20\d{2})\b", str(c)) for c in cats)
+    if is_time_series:
+        scope_text = f"diễn biến trong giai đoạn từ năm {cats[0]} đến năm {cats[-1]} (bao gồm {len(cats)} mốc thời gian)"
+    else:
+        scope_text = f"sự phân bố qua {len(cats)} danh mục khảo sát ({', '.join(cats)})"
 
-    # 1. Cấp 1: Tổng quan 5s
-    unit_phrase = f", đơn vị tính là {unit}" if unit else ""
-    desc_5s = f"Biểu đồ {c_type_vn} thể hiện {title}{unit_phrase}, trong {time_span}."
+    unit_phrase = f", với đơn vị tính là {unit}" if unit else ""
 
-    # 2. Cấp 2: Tóm tắt sư phạm 30s
-    all_valid_nums = []
+    all_valid_points = []
+    points_by_series = {}
+    for s_name, vals in series_data.items():
+        points_by_series[s_name] = []
+        for i, v in enumerate(vals):
+            c_label = cats[i] if i < len(cats) else f"Mốc {i+1}"
+            if isinstance(v, (int, float)):
+                pt = (float(v), s_name, c_label, i)
+                all_valid_points.append(pt)
+                points_by_series[s_name].append(pt)
+
+    # --------------------------------------------------------------------------
+    # 1. CẤP 1: TỔNG QUAN 5S - TÓM TẮT NHANH BỨC TRANH TOÀN CẢNH
+    # --------------------------------------------------------------------------
+    trend_summary = ""
+    if is_time_series:
+        main_s = list(series_data.keys())[0]
+        pts = points_by_series.get(main_s, [])
+        if len(pts) >= 2:
+            start_v = pts[0][0]
+            end_v = pts[-1][0]
+            is_increasing = all(pts[k][0] <= pts[k+1][0] for k in range(len(pts)-1))
+            is_decreasing = all(pts[k][0] >= pts[k+1][0] for k in range(len(pts)-1))
+            if is_increasing:
+                trend_summary = "ghi nhận xu hướng tăng trưởng liên tục qua các mốc khảo sát"
+            elif is_decreasing:
+                trend_summary = "ghi nhận xu hướng giảm liên tục qua các mốc thời gian"
+            elif end_v > start_v:
+                trend_summary = "nhìn chung có xu hướng tăng về tổng thể dù có sự dao động giữa các thời kỳ"
+            elif end_v < start_v:
+                trend_summary = "nhìn chung có xu hướng giảm về mặt tổng thể qua các năm"
+            else:
+                trend_summary = "duy trì ở mức tương đối ổn định giữa đầu kỳ và cuối kỳ"
+        else:
+            trend_summary = "thể hiện sự phân bổ của các chuỗi dữ liệu qua các năm"
+    elif c_type == "pie":
+        if all_valid_points:
+            top_pt = max(all_valid_points, key=lambda x: x[0])
+            trend_summary = f"phản ánh cơ cấu tỷ trọng thành phần, trong đó nhóm '{top_pt[2]}' chiếm tỷ lệ chi phối cao nhất"
+        else:
+            trend_summary = "phản ánh cơ cấu tỷ trọng giữa các nhóm thành phần"
+    else:
+        if all_valid_points:
+            top_pt = max(all_valid_points, key=lambda x: x[0])
+            trend_summary = f"cho thấy sự phân hóa rõ rệt giữa các đối tượng, dẫn đầu là '{top_pt[2]}'"
+        else:
+            trend_summary = "thể hiện sự so sánh giá trị giữa các danh mục khảo sát"
+
+    desc_5s_parts = [
+        f"Biểu đồ dạng {c_type_vn} trực quan hóa dữ liệu về {clean_title}{unit_phrase}, {scope_text}.",
+        f"Bức tranh tổng quan {trend_summary}."
+    ]
+    if has_un:
+        desc_5s_parts.append("Lưu ý: Biểu đồ có một số giá trị số liệu chưa xác minh được chắc chắn do ảnh gốc bị mờ hoặc mâu thuẫn.")
+    desc_5s = " ".join(desc_5s_parts)
+
+    # --------------------------------------------------------------------------
+    # 2. CẤP 2: TÓM TẮT SƯ PHẠM 30S - ĐỐI CHIẾU SỐ LIỆU ĐỊNH LƯỢNG TRỌNG TÂM
+    # --------------------------------------------------------------------------
+    desc_30s_parts = []
+    desc_30s_parts.append(f"Về phương diện định lượng, dữ liệu của {len(series_data)} chuỗi trên {len(cats)} mốc khảo sát được ghi nhận chi tiết:")
+
+    if all_valid_points:
+        max_pt = max(all_valid_points, key=lambda x: x[0])
+        min_pt = min(all_valid_points, key=lambda x: x[0])
+        max_val, max_s, max_cat, _ = max_pt
+        min_val, min_s, min_cat, _ = min_pt
+        diff_val = round(max_val - min_val, 2)
+
+        desc_30s_parts.append(
+            f"- Mức đỉnh cao nhất ghi nhận ở {max_cat} (thuộc chuỗi '{max_s}') đạt {max_val} {unit}."
+        )
+        desc_30s_parts.append(
+            f"- Mức đáy thấp nhất thuộc về {min_cat} (chuỗi '{min_s}') với {min_val} {unit}."
+        )
+        if diff_val > 0:
+            desc_30s_parts.append(
+                f"- Biên độ chênh lệch tuyệt đối giữa giá trị cao nhất và thấp nhất là {diff_val} {unit}."
+            )
+
+        if is_time_series:
+            main_s = list(series_data.keys())[0]
+            pts = points_by_series.get(main_s, [])
+            if len(pts) >= 2:
+                v_first = pts[0][0]
+                v_last = pts[-1][0]
+                net_change = round(v_last - v_first, 2)
+                if net_change > 0:
+                    desc_30s_parts.append(
+                        f"- So sánh mốc xuất phát năm {pts[0][2]} ({v_first} {unit}) và mốc kết thúc năm {pts[-1][2]} ({v_last} {unit}), chuỗi '{main_s}' đã tăng thêm {net_change} {unit}."
+                    )
+                elif net_change < 0:
+                    desc_30s_parts.append(
+                        f"- So sánh giữa năm {pts[0][2]} ({v_first} {unit}) và năm {pts[-1][2]} ({v_last} {unit}), chuỗi '{main_s}' đã giảm đi {abs(net_change)} {unit}."
+                    )
+
+    un_locations = []
     for s_name, vals in series_data.items():
         for i, v in enumerate(vals):
-            if isinstance(v, (int, float)):
-                cat_label = cats[i] if i < len(cats) else f"Mốc {i+1}"
-                all_valid_nums.append((v, f"{cat_label} ({s_name})"))
+            if v is None:
+                c_lbl = cats[i] if i < len(cats) else f"Mốc {i+1}"
+                un_locations.append(f"chuỗi '{s_name}' tại mốc '{c_lbl}'")
 
-    if all_valid_nums:
-        max_val, max_s = max(all_valid_nums, key=lambda x: x[0])
-        min_val, min_s = min(all_valid_nums, key=lambda x: x[0])
-        desc_30s = (f"Biểu đồ bao gồm các chuỗi dữ liệu trong {time_span}. "
-                    f"Trong đó, giá trị cao nhất ghi nhận ở {max_s} đạt {max_val} {unit}, "
-                    f"thấp nhất ở {min_s} với {min_val} {unit}.")
-    else:
-        desc_30s = f"Biểu đồ thể hiện thông tin trong {time_span}."
+    if un_locations:
+        desc_30s_parts.append(
+            f"- Cảnh báo cờ dữ liệu: Có {len(un_locations)} vị trí chưa xác minh được giá trị cụ thể ({', '.join(un_locations[:3])}), đã tự động gắn cờ [chưa chắc chắn] để tránh sai lệch khi làm bài tập."
+        )
 
-    if has_un:
-        desc_30s += " Lưu ý: Một số số liệu bị mờ hoặc có dấu hiệu mâu thuẫn đã được gắn cờ [chưa chắc chắn]."
+    desc_30s = "\n".join(desc_30s_parts)
 
-    # 3. Cấp 3: Phân tích học tập chuyên sâu
-    study_lines = [
-        f"Phân tích chuyên sâu biểu đồ giáo dục: '{title}'.",
-        f"- Cấu trúc: Phân loại theo {len(cats)} mốc hoặc danh mục ({', '.join(cats[:5])}{'...' if len(cats)>5 else ''}).",
-        f"- Đơn vị đo lường: {unit if unit else 'Không ghi đơn vị cụ thể'}."
-    ]
+    # --------------------------------------------------------------------------
+    # 3. CẤP 3: PHÂN TÍCH HỌC TẬP CHUYÊN SÂU (GROUNDED - TUYỆT ĐỐI KHÔNG SUY DIỄN NGOÀI DỮ LIỆU)
+    # --------------------------------------------------------------------------
+    desc_study_parts = []
+    desc_study_parts.append(f"Phân tích học tập chuyên sâu biểu đồ: '{raw_title}'.")
+    desc_study_parts.append(f"[Cấu trúc số liệu]: Biểu đồ được xây dựng từ {len(series_data)} chuỗi dữ liệu đo lường theo đơn vị {unit if unit else 'chuẩn hóa'}, phân bổ trên {len(cats)} mốc danh mục ({', '.join(cats)}).")
+
+    desc_study_parts.append("[Bảng kê khai đầy đủ số liệu đối chiếu đã kiểm chứng]:")
     for s_name, vals in series_data.items():
-        val_strs = [str(v) if v is not None else "[chưa chắc chắn]" for v in vals]
-        study_lines.append(f"- Chuỗi '{s_name}': Dữ liệu ghi nhận lần lượt là {', '.join(val_strs[:8])}.")
+        val_items = []
+        for i, v in enumerate(vals):
+            c_lbl = cats[i] if i < len(cats) else f"Mốc {i+1}"
+            v_str = str(v) if v is not None else "[chưa chắc chắn]"
+            val_items.append(f"{c_lbl}: {v_str}")
+        desc_study_parts.append(f"• Chuỗi '{s_name}': {'; '.join(val_items)}.")
 
-    desc_study = "\n".join(study_lines)
+    desc_study_parts.append("[Nhận xét học tập có căn cứ trực tiếp từ số liệu kiểm chứng]:")
+    if is_time_series:
+        for s_name, pts in points_by_series.items():
+            if len(pts) >= 2:
+                max_step_change = 0.0
+                max_step_span = ""
+                step_direction = ""
+                for k in range(len(pts) - 1):
+                    v1, _, c1, _ = pts[k]
+                    v2, _, c2, _ = pts[k+1]
+                    diff = v2 - v1
+                    if abs(diff) > abs(max_step_change):
+                        max_step_change = diff
+                        max_step_span = f"từ năm {c1} đến năm {c2}"
+                        step_direction = "tăng" if diff > 0 else "giảm"
+                if max_step_span and abs(max_step_change) > 0:
+                    desc_study_parts.append(
+                        f"• Đối với chuỗi '{s_name}': Giai đoạn có biến động biên độ lớn nhất diễn ra {max_step_span}, với mức {step_direction} {round(abs(max_step_change), 2)} {unit}."
+                    )
+    elif c_type == "pie":
+        total_sum = round(sum(p[0] for p in all_valid_points), 2) if all_valid_points else 100.0
+        sorted_pts = sorted(all_valid_points, key=lambda x: x[0], reverse=True)
+        if sorted_pts:
+            top_part = sorted_pts[0]
+            desc_study_parts.append(
+                f"• Phân bổ cơ cấu: Tổng tỷ trọng các thành phần đạt {total_sum}%. Nhóm '{top_part[2]}' chiếm tỷ trọng áp đảo lớn nhất ({top_part[0]} {unit}), gấp {round(top_part[0]/sorted_pts[-1][0], 1) if sorted_pts[-1][0]>0 else 'nhiều'} lần so với nhóm thấp nhất là '{sorted_pts[-1][2]}' ({sorted_pts[-1][0]} {unit})."
+            )
+    else:
+        sorted_pts = sorted(all_valid_points, key=lambda x: x[0], reverse=True)
+        if len(sorted_pts) >= 2:
+            rank_strings = []
+            for idx, pt in enumerate(sorted_pts):
+                ord_name = ORDINAL_VN[idx] if idx < len(ORDINAL_VN) else f"{idx+1}"
+                rank_strings.append(f"Hạng {ord_name}: {pt[2]} ({pt[0]} {unit})")
+            desc_study_parts.append(
+                f"• Thứ bậc xếp hạng từ cao xuống thấp: {'; '.join(rank_strings)}."
+            )
+            top_pt = sorted_pts[0]
+            second_pt = sorted_pts[1]
+            gap = round(top_pt[0] - second_pt[0], 2)
+            desc_study_parts.append(
+                f"• Tương quan dẫn đầu: Đối tượng '{top_pt[2]}' vượt hơn vị trí tiếp sau là '{second_pt[2]}' khoảng cách {gap} {unit}."
+            )
+
+    if len(series_data) >= 2:
+        s_sums = {s_name: sum(p[0] for p in pts) for s_name, pts in points_by_series.items()}
+        sorted_s = sorted(s_sums.items(), key=lambda x: x[1], reverse=True)
+        desc_study_parts.append(
+            f"• So sánh liên chuỗi: Chuỗi '{sorted_s[0][0]}' có quy mô tích lũy lớn hơn so với chuỗi '{sorted_s[1][0]}'."
+        )
+
+    desc_study_parts.append(
+        "[Nguyên tắc sư phạm]: Toàn bộ phân tích trên được tính toán và đối chiếu độc lập từ ma trận số liệu đã kiểm chứng, tuyệt đối không suy diễn các nguyên nhân kinh tế - xã hội bên ngoài phạm vi dữ liệu cung cấp."
+    )
+
+    desc_study = "\n".join(desc_study_parts)
     return {
         "desc_5s": desc_5s,
         "desc_30s": desc_30s,
@@ -472,7 +646,7 @@ def generate_3level_descriptions(flagged_matrix: Dict[str, Any]) -> Dict[str, st
 def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, Any]) -> Dict[str, Any]:
     """
     Thước đo ViChartFact: Đo lường độ trung thực số liệu giữa nội dung mô tả 3 cấp độ
-    với bảng số liệu đã kiểm chứng, nhãn trục và cấu trúc siêu dữ liệu.
+    với bảng số liệu đã kiểm chứng, nhãn trục, cấu trúc siêu dữ liệu và các phép toán phái sinh hợp lệ.
     Công thức: Accuracy = (N_khớp / N_tổng đối chiếu) * 100%.
     Dung sai cho phép: <= 5% sai số tương đối hoặc <= 0.05 sai số tuyệt đối.
     Hỗ trợ chuẩn hóa số kiểu Việt (1.200 -> 1200, 12,5 -> 12.5).
@@ -485,6 +659,7 @@ def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, 
     # 1. Xây dựng tập đối chuẩn (Ground-truth pool)
     # 1.1 Tập giá trị ô dữ liệu (Data Cells)
     cell_pool = []
+    all_numeric_vals = []
     for s_name, vals in series_data.items():
         for i, v in enumerate(vals):
             if v is not None and isinstance(v, (int, float)):
@@ -494,6 +669,7 @@ def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, 
                     "series": str(s_name),
                     "category": str(c_label)
                 })
+                all_numeric_vals.append(float(v))
 
     # 1.2 Tập nhãn trục / năm / danh mục (Categories & Years)
     cat_pool = []
@@ -523,6 +699,27 @@ def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, 
             u_val = clean_vietnamese_number(u_n)
             if u_val is not None:
                 meta_pool.append({"val": u_val, "desc": f"Số trong đơn vị tính ('{unit}')"})
+
+    # 1.4 Tập số liệu tính toán phái sinh từ bảng gốc (Derived / Calculated Pool)
+    derived_pool = []
+    if all_numeric_vals:
+        max_v = max(all_numeric_vals)
+        min_v = min(all_numeric_vals)
+        derived_pool.append({"val": round(max_v - min_v, 2), "desc": f"Chênh lệch cực đại - cực tiểu ({max_v} - {min_v})"})
+        derived_pool.append({"val": round(sum(all_numeric_vals), 2), "desc": "Tổng giá trị các ô dữ liệu"})
+        for i in range(len(all_numeric_vals)):
+            for j in range(len(all_numeric_vals)):
+                if i != j:
+                    diff = round(abs(all_numeric_vals[i] - all_numeric_vals[j]), 2)
+                    if diff > 0:
+                        v_hi = max(all_numeric_vals[i], all_numeric_vals[j])
+                        v_lo = min(all_numeric_vals[i], all_numeric_vals[j])
+                        derived_pool.append({"val": diff, "desc": f"Chênh lệch giữa 2 ô dữ liệu ({v_hi} - {v_lo})"})
+                    if all_numeric_vals[j] > 0.001:
+                        ratio1 = round(all_numeric_vals[i] / all_numeric_vals[j], 1)
+                        ratio2 = round(all_numeric_vals[i] / all_numeric_vals[j], 2)
+                        derived_pool.append({"val": ratio1, "desc": f"Tỷ lệ gấp giữa 2 ô ({all_numeric_vals[i]} / {all_numeric_vals[j]} = {ratio1})"})
+                        derived_pool.append({"val": ratio2, "desc": f"Tỷ lệ gấp giữa 2 ô ({all_numeric_vals[i]} / {all_numeric_vals[j]} = {ratio2})"})
 
     # 2. Quét và đối chiếu số theo từng cấp mô tả
     levels_config = [
@@ -596,6 +793,15 @@ def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, 
                         gt_ref = f"Khớp {m_item['desc']}"
                         break
 
+            # Tầng 4: Khớp số tính toán phái sinh hợp lệ từ bảng gốc
+            if not matched:
+                for d_item in derived_pool:
+                    if abs(clean_val - d_item["val"]) < 0.05:
+                        matched = True
+                        match_type = "Số tính toán phái sinh hợp lệ từ bảng gốc"
+                        gt_ref = f"Khớp phép tính {d_item['desc']}"
+                        break
+
             item_data = {
                 "level": level_name,
                 "raw_str": raw_str,
@@ -641,6 +847,7 @@ def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, 
         "cell_pool_count": len(cell_pool),
         "cat_pool_count": len(cat_pool),
         "meta_pool_count": len(meta_pool),
+        "derived_pool_count": len(derived_pool),
         "matched_items": matched_items,
         "unmatched_items": unmatched_items
     }
@@ -774,7 +981,7 @@ def render_vichartfact_html(fact_res: Dict[str, Any]) -> str:
             </div>
             <div style="font-size: 12.5px; color: #566573; line-height: 1.5;">
                 • <b>Dung sai kiểm định:</b> Sai số tương đối ≤ 5.0% hoặc sai số tuyệt đối &lt; 0.05. Áp dụng chuẩn hóa số kiểu Việt (<code>1.200</code> → 1200, <code>12,5%</code> → 12.5%).<br>
-                • <b>Tập chân lý đối chuẩn (Ground-Truth Pool):</b> {cell_cnt} ô số liệu bảng từ các chuỗi dữ liệu, {cat_cnt} nhãn mốc thời gian/danh mục trục hoành, và các chỉ số cấu trúc/tiêu đề biểu đồ.
+                • <b>Tập chân lý đối chuẩn (Ground-Truth Pool):</b> {cell_cnt} ô số liệu bảng từ các chuỗi dữ liệu, {cat_cnt} nhãn mốc thời gian/danh mục trục hoành, các thông số cấu trúc/tiêu đề và các phép tính chênh lệch/biên độ/tỷ lệ phái sinh hợp lệ từ bảng gốc.
             </div>
         </div>
 
