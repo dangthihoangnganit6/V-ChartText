@@ -853,67 +853,82 @@ def fact_check_vichartfact(desc_dict: Dict[str, str], flagged_matrix: Dict[str, 
     }
 
 def render_vichartfact_html(fact_res: Dict[str, Any]) -> str:
-    """Render giao diện HTML chi tiết, minh bạch cho thước đo ViChartFact."""
+    """Render giao diện HTML chi tiết, minh bạch cho thước đo ViChartFact bám sát thiết kế UI stitch_v_charttext_ui_redesign_3."""
     acc = fact_res["accuracy"]
     tot = fact_res["total_checked"]
     m_cnt = fact_res["matched_count"]
     u_cnt = fact_res["unmatched_count"]
     cell_cnt = fact_res["cell_pool_count"]
     cat_cnt = fact_res["cat_pool_count"]
+    unmatched_pct = max(0.0, 100.0 - acc)
 
     if u_cnt == 0:
-        badge_bg = "#E8F8F5"
-        badge_color = "#1E8449"
-        badge_border = "#A9DFBF"
-        badge_text = "✅ 100% ZERO-HALLUCINATION"
+        icon_box_bg = "#DEF7EC"
+        icon_box_color = "#03543F"
+        badge_bg = "#0E9F6E"
+        badge_color = "#FFFFFF"
+        badge_border = "#0E9F6E"
+        badge_icon = "✓"
+        badge_text = "100% Zero-Hallucination"
         conclusion_html = f"""
-        <div style="background-color: #E8F8F5; border-left: 5px solid #27AE60; padding: 12px 14px; border-radius: 4px; margin-bottom: 12px; font-size: 13.5px; color: #1E8449;">
-            <b>✅ Kết luận đối kiểm:</b> <b>Đạt chuẩn ViChartFact (Khớp 100% - Zero-Hallucination)</b>. Toàn bộ <b>{m_cnt}/{tot}</b> giá trị số xuất hiện trong cả 3 cấp mô tả đều khớp hoàn toàn với bảng số liệu đã kiểm chứng (sai số ≤ 5%), nhãn trục hoặc thông số cấu trúc biểu đồ. Không phát hiện bất kỳ số lạ hay hiện tượng ảo giác nào.
+        <div style="background-color: #DEF7EC; border: 1px solid #BCF0DA; border-radius: 8px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 12px; margin-top: 14px;">
+            <span style="font-size: 20px; color: #03543F; line-height: 1.2; flex-shrink: 0;">✓</span>
+            <p style="margin: 0; font-size: 13.5px; color: #03543F; line-height: 1.55;">
+                <strong style="font-weight: 700;">Kết luận đối kiểm:</strong> Toàn bộ <b>{m_cnt}/{tot}</b> giá trị số xuất hiện trong cả 3 cấp mô tả đều khớp hoàn toàn với bảng số liệu đã kiểm chứng (sai số tối đa 5%) và nhãn trục biểu đồ. Không phát hiện bất kỳ số lạ hay hiện tượng ảo giác nào.
+            </p>
         </div>
         """
-        unmatched_table_html = """
-        <div style="background-color: #F4F6F6; border: 1px dashed #BDC3C7; border-radius: 5px; padding: 10px; text-align: center; color: #27AE60; font-size: 13px; font-weight: 500;">
-            ✓ Không phát hiện số lạ nào. Toàn bộ các giá trị số trong mô tả đều được xác minh hợp lệ với bảng chân lý.
-        </div>
-        """
+        unmatched_table_html = ""
     else:
-        badge_bg = "#FDEDEC"
-        badge_color = "#922B21"
-        badge_border = "#F5B7B1"
-        badge_text = f"⚠️ CẢNH BÁO: PHÁT HIỆN {u_cnt} SỐ LẠ"
+        icon_box_bg = "#FDE8E8"
+        icon_box_color = "#9B1C1C"
+        badge_bg = "#E02424"
+        badge_color = "#FFFFFF"
+        badge_border = "#E02424"
+        badge_icon = "⚠️"
+        badge_text = f"Cảnh báo: Phát hiện {u_cnt} số lạ"
         conclusion_html = f"""
-        <div style="background-color: #FEF9E7; border-left: 5px solid #E67E22; padding: 12px 14px; border-radius: 4px; margin-bottom: 12px; font-size: 13.5px; color: #935116;">
-            <b>⚠️ Kết luận đối kiểm:</b> Phát hiện <b>{u_cnt} giá trị số</b> trong mô tả chưa đối chuẩn được với bảng số liệu gốc (Độ trung thực: <b>{acc:.1f}%</b>). <b>TUYỆT ĐỐI KHÔNG XÁC NHẬN ZERO-HALLUCINATION</b> cho đến khi các số lạ này được rà soát và đối chuẩn. Vui lòng xem bảng chi tiết bên dưới.
+        <div style="background-color: #FEF7E0; border: 1px solid #FAD2CF; border-left: 5px solid #C5221F; border-radius: 8px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 12px; margin-top: 14px;">
+            <span style="font-size: 20px; color: #C5221F; line-height: 1.2; flex-shrink: 0;">⚠️</span>
+            <p style="margin: 0; font-size: 13.5px; color: #8A4B00; line-height: 1.55;">
+                <strong style="font-weight: 700; color: #C5221F;">Kết luận đối kiểm:</strong> Phát hiện <b>{u_cnt} giá trị số</b> trong mô tả chưa đối chuẩn được với bảng số liệu gốc (Độ trung thực: <b>{acc:.1f}%</b>). <b>Tuyệt đối không xác nhận Zero-Hallucination</b> cho đến khi các số lạ này được rà soát và đối chuẩn. Vui lòng xem bảng chi tiết bên dưới.
+            </p>
         </div>
         """
         rows_html = []
         for u in fact_res["unmatched_items"]:
             raw_esc = html.escape(u["raw_str"])
             sent_esc = html.escape(u["sentence"])
-            highlighted_sent = sent_esc.replace(raw_esc, f"<mark style='background-color: #FADBD8; color: #78281F; font-weight: bold; padding: 1px 4px; border-radius: 2px;'>{raw_esc}</mark>")
+            highlighted_sent = sent_esc.replace(raw_esc, f"<mark style='background-color: #FAD2CF; color: #C5221F; font-weight: bold; padding: 1px 4px; border-radius: 3px;'>{raw_esc}</mark>")
+            lvl_display = html.escape(u['level'])
+            if "Cấp 1" in lvl_display: lvl_display = "Cấp 1 (5s)"
+            elif "Cấp 2" in lvl_display: lvl_display = "Cấp 2 (30s)"
+            elif "Cấp 3" in lvl_display: lvl_display = "Cấp 3 (Chi tiết)"
+
             rows_html.append(f"""
-            <tr style="border-bottom: 1px solid #F2D7D5; font-size: 12.5px;">
-                <td style="padding: 8px 10px; font-weight: bold; color: #1B4F72; border-right: 1px solid #FADBD8; white-space: nowrap;">{html.escape(u['level'])}</td>
-                <td style="padding: 8px 10px; border-right: 1px solid #FADBD8; white-space: nowrap;"><code style="background: #FDEDEC; color: #C0392B; padding: 2px 5px; border-radius: 3px; font-weight: bold;">{raw_esc}</code><br><span style="font-size: 11px; color: #7F8C8D;">(giá trị: {u['clean_val']})</span></td>
-                <td style="padding: 8px 10px; border-right: 1px solid #FADBD8; line-height: 1.4; color: #2C3E50;">{highlighted_sent}</td>
-                <td style="padding: 8px 10px; border-right: 1px solid #FADBD8; font-size: 12px; color: #5D6D7E; line-height: 1.4;">{html.escape(u['gt_ref'])}</td>
-                <td style="padding: 8px 10px; font-weight: bold; color: #C0392B; font-size: 12px;">{html.escape(u['classification'])}</td>
+            <tr style="border-bottom: 1px solid #FDE8E8; font-size: 12.5px;">
+                <td style="padding: 9px 12px; font-weight: 700; color: #1A40C2; border-right: 1px solid #FDE8E8; white-space: nowrap;">{lvl_display}</td>
+                <td style="padding: 9px 12px; border-right: 1px solid #FDE8E8; white-space: nowrap;"><code style="background: #FDE8E8; color: #9B1C1C; padding: 2px 6px; border-radius: 4px; font-weight: 700; font-family: monospace;">{raw_esc}</code><br><span style="font-size: 11px; color: #6B7280;">(giá trị: {u['clean_val']})</span></td>
+                <td style="padding: 9px 12px; border-right: 1px solid #FDE8E8; line-height: 1.45; color: #374151;">{highlighted_sent}</td>
+                <td style="padding: 9px 12px; border-right: 1px solid #FDE8E8; font-size: 12px; color: #4B5563; line-height: 1.45;">{html.escape(u['gt_ref'])}</td>
+                <td style="padding: 9px 12px; font-weight: 700; color: #C5221F; font-size: 12px;">{html.escape(u['classification'])}</td>
             </tr>
             """)
         unmatched_table_html = f"""
-        <div style="margin-top: 10px;">
-            <div style="font-weight: bold; color: #C0392B; margin-bottom: 6px; font-size: 13.5px;">
-                🔍 Danh sách chi tiết các giá trị số lạ / chưa đối chuẩn ({u_cnt} mục):
+        <div style="margin-top: 14px; border: 1px solid #F8B4B4; border-radius: 8px; overflow: hidden; background: #FFFFFF;">
+            <div style="padding: 10px 14px; background: #FDE8E8; border-bottom: 1px solid #F8B4B4; font-weight: 700; color: #9B1C1C; font-size: 13.5px; display: flex; align-items: center; gap: 8px;">
+                <span>🔍</span>
+                <span>Danh sách chi tiết các giá trị số lạ / chưa đối chuẩn ({u_cnt} mục):</span>
             </div>
-            <div style="overflow-x: auto; border: 1px solid #F5B7B1; border-radius: 4px;">
-                <table style="width: 100%; border-collapse: collapse; background: #FFFFFF;">
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; background: #FFFFFF; text-align: left;">
                     <thead>
-                        <tr style="background-color: #FDEDEC; color: #78281F; text-align: left; border-bottom: 2px solid #F5B7B1; font-size: 12.5px;">
-                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Cấp mô tả</th>
-                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Số bắt được</th>
-                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Ngữ cảnh trong câu</th>
-                            <th style="padding: 8px 10px; border-right: 1px solid #F5B7B1;">Kết quả đối chiếu bảng gốc</th>
-                            <th style="padding: 8px 10px;">Nguyên nhân & Phân loại</th>
+                        <tr style="background-color: #FDF2F2; color: #9B1C1C; border-bottom: 1px solid #F8B4B4; font-size: 12px;">
+                            <th style="padding: 8px 12px; border-right: 1px solid #F8B4B4; white-space: nowrap;">Cấp mô tả</th>
+                            <th style="padding: 8px 12px; border-right: 1px solid #F8B4B4; white-space: nowrap;">Số bắt được</th>
+                            <th style="padding: 8px 12px; border-right: 1px solid #F8B4B4;">Ngữ cảnh trong câu</th>
+                            <th style="padding: 8px 12px; border-right: 1px solid #F8B4B4;">Kết quả đối chiếu bảng gốc</th>
+                            <th style="padding: 8px 12px; white-space: nowrap;">Nguyên nhân &amp; Phân loại</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -926,28 +941,45 @@ def render_vichartfact_html(fact_res: Dict[str, Any]) -> str:
 
     matched_rows_html = []
     for m in fact_res["matched_items"]:
+        lvl_display = html.escape(m['level'])
+        if "Cấp 1" in lvl_display: lvl_display = "Cấp 1 (5s)"
+        elif "Cấp 2" in lvl_display: lvl_display = "Cấp 2 (30s)"
+        elif "Cấp 3" in lvl_display: lvl_display = "Cấp 3 (Chi tiết)"
+
+        mtype_display = html.escape(m['match_type'])
+        if "Ô số liệu" in mtype_display: mtype_display = "Ô số liệu bảng gốc"
+        elif "Nhãn mốc" in mtype_display: mtype_display = "Mốc thời gian / Trục hoành"
+        elif "Số cấu trúc" in mtype_display: mtype_display = "Cấu trúc biểu đồ"
+        elif "Số tính toán" in mtype_display: mtype_display = "Phép tính suy luận"
+
         matched_rows_html.append(f"""
-        <tr style="border-bottom: 1px solid #EAECEE; font-size: 12px;">
-            <td style="padding: 6px 8px; font-weight: 500; color: #2C3E50; border-right: 1px solid #EAECEE;">{html.escape(m['level'])}</td>
-            <td style="padding: 6px 8px; border-right: 1px solid #EAECEE;"><code style="background: #EAFAF1; color: #1E8449; padding: 2px 4px; border-radius: 3px; font-weight: bold;">{html.escape(m['raw_str'])}</code></td>
-            <td style="padding: 6px 8px; border-right: 1px solid #EAECEE; color: #2874A6; font-weight: 500;">{html.escape(m['match_type'])}</td>
-            <td style="padding: 6px 8px; color: #566573;">{html.escape(m['gt_ref'])}</td>
+        <tr style="border-bottom: 1px solid #F1F5F9; font-size: 12.5px;">
+            <td style="padding: 8px 14px; font-weight: 600; color: #1E293B; white-space: nowrap;">{lvl_display}</td>
+            <td style="padding: 8px 14px; white-space: nowrap;">
+                <code style="background: #DEF7EC; color: #03543F; font-weight: 700; padding: 2px 6px; border-radius: 4px; font-family: monospace;">{html.escape(m['raw_str'])}</code>
+            </td>
+            <td style="padding: 8px 14px; color: #1A40C2; font-weight: 600; white-space: nowrap;">{mtype_display}</td>
+            <td style="padding: 8px 14px; color: #475569; line-height: 1.45;">{html.escape(m['gt_ref'])}</td>
         </tr>
         """)
 
     matched_details_html = f"""
-    <details style="margin-top: 12px; font-size: 12.5px; color: #566573;">
-        <summary style="cursor: pointer; font-weight: bold; color: #2874A6; padding: 4px 0;">
-            📋 Xem danh sách {m_cnt} giá trị số đã đối chiếu khớp hợp lệ...
+    <details open class="v-fact-details" style="border: 1px solid #E2E6F0; border-radius: 8px; background: #FFFFFF; overflow: hidden; margin-top: 14px;">
+        <summary style="padding: 12px 16px; background-color: #F8F9FC; border-bottom: 1px solid #E2E6F0; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; font-weight: 700; font-size: 13.5px; color: #1E293B;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="color: #1A40C2; font-size: 16px;">📋</span>
+                <span>Bảng đối chiếu chi tiết ({m_cnt} giá trị khớp hợp lệ)</span>
+            </div>
+            <span class="v-expand-icon">▼</span>
         </summary>
-        <div style="overflow-x: auto; margin-top: 8px; border: 1px solid #D4E6F1; border-radius: 4px;">
-            <table style="width: 100%; border-collapse: collapse; background: #FFFFFF;">
-                <thead>
-                    <tr style="background-color: #EAF2F8; color: #1B4F72; text-align: left; font-size: 12px; border-bottom: 1px solid #D4E6F1;">
-                        <th style="padding: 6px 8px; border-right: 1px solid #D4E6F1;">Cấp mô tả</th>
-                        <th style="padding: 6px 8px; border-right: 1px solid #D4E6F1;">Số bắt được</th>
-                        <th style="padding: 6px 8px; border-right: 1px solid #D4E6F1;">Tầng đối chuẩn</th>
-                        <th style="padding: 6px 8px;">Chi tiết khớp bảng gốc</th>
+        <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; text-align: left;">
+                <thead style="background: #F8F9FC; border-bottom: 1px solid #E2E6F0; color: #475569;">
+                    <tr>
+                        <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap;">Cấp mô tả</th>
+                        <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap;">Giá trị / Số bắt được</th>
+                        <th style="padding: 10px 14px; font-weight: 700; white-space: nowrap;">Loại đối chiếu</th>
+                        <th style="padding: 10px 14px; font-weight: 700;">Kết quả kiểm tra</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -958,36 +990,102 @@ def render_vichartfact_html(fact_res: Dict[str, Any]) -> str:
     </details>
     """
 
-    out_html = f"""
-    <div style="background-color: #F8FBFD; border: 1px solid #D4E6F1; border-radius: 8px; padding: 16px; margin-top: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #EAECEE; padding-bottom: 10px; margin-bottom: 12px;">
+    rules_formula_html = """
+    <details class="v-fact-details" style="border: 1px solid #E2E6F0; border-radius: 8px; background: #FFFFFF; overflow: hidden; margin-top: 14px;">
+        <summary style="padding: 12px 16px; background-color: #F8F9FC; border-bottom: 1px solid #E2E6F0; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; font-weight: 700; font-size: 13.5px; color: #1E293B;">
             <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 22px;">🛡️</span>
-                <h4 style="margin: 0; color: #1B4F72; font-weight: bold; font-size: 15px;">
-                    ĐO KIỂM THƯỚC ĐO VICHARTFACT (DATA FAITHFULNESS AUDIT)
-                </h4>
+                <span style="color: #4F46E5; font-size: 16px;">📖</span>
+                <span>Quy chuẩn &amp; Công thức kiểm định ViChartFact</span>
             </div>
-            <span style="background-color: {badge_bg}; color: {badge_color}; font-weight: bold; padding: 4px 12px; border-radius: 12px; font-size: 12.5px; border: 1px solid {badge_border};">
-                {badge_text}
+            <span class="v-expand-icon">▼</span>
+        </summary>
+        <div style="padding: 18px 20px; display: flex; flex-direction: column; gap: 14px; font-size: 13.5px; color: #475569; line-height: 1.6; background: #FFFFFF;">
+            <div>
+                <h4 style="margin: 0 0 6px 0; font-size: 14px; font-weight: 700; color: #0F172A;">
+                    Cách tính độ trung thực
+                </h4>
+                <p style="margin: 0 0 6px 0;">
+                    Độ trung thực (Factuality) được tính bằng số lượng giá trị khớp bảng gốc chia cho tổng số giá trị xuất hiện trong mô tả để đối chiếu, sau đó nhân với 100%:
+                </p>
+                <div style="display: inline-block; padding: 6px 12px; background: #F1F5F9; border-radius: 6px; font-weight: 700; color: #1E293B; font-size: 13px;">
+                    Độ trung thực (Factuality) = (Số giá trị khớp / Tổng số giá trị đối chiếu) × 100%
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <h4 style="margin: 0 0 6px 0; font-size: 14px; font-weight: 700; color: #0F172A;">
+                    Ngưỡng sai số và chuẩn hóa số tiếng Việt
+                </h4>
+                <p style="margin: 0;">
+                    Hệ thống chấp nhận sai số tương đối tối đa 5% hoặc sai số tuyệt đối nhỏ hơn 0,05. Khi đọc số kiểu Việt, hệ thống tự động chuẩn hóa dấu chấm hàng nghìn và dấu phẩy thập phân (ví dụ chuyển từ 1.200 thành 1200, từ 12,5% thành 12.5%), đồng thời kiểm tra tổng phần trăm với sai số cho phép ±2%.
+                </p>
+            </div>
+
+            <div style="border-top: 1px solid #F1F5F9; padding-top: 12px;">
+                <h4 style="margin: 0 0 6px 0; font-size: 14px; font-weight: 700; color: #0F172A;">
+                    Tập dữ liệu gốc đối chiếu và nguyên tắc chống ảo giác
+                </h4>
+                <p style="margin: 0;">
+                    Dữ liệu gốc bao gồm toàn bộ ô số liệu từ các chuỗi dữ liệu, nhãn danh mục trục hoành, thông số cấu trúc và các phép tính chênh lệch, biên độ, tỷ lệ suy luận hợp lệ. Hệ thống tuyệt đối không công nhận đạt chuẩn Zero-Hallucination nếu vẫn còn bất kỳ số lạ nào chưa khớp với dữ liệu gốc.
+                </p>
+            </div>
+        </div>
+    </details>
+    """
+
+    out_html = f"""
+    <div style="background-color: #FFFFFF; border: 1px solid #E2E6F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); display: flex; flex-direction: column; gap: 4px;">
+        <!-- 1. Phần tổng quan đầu mục -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 16px;">
+            <div style="display: flex; align-items: flex-start; gap: 12px; min-width: 0;">
+                <div style="width: 40px; height: 40px; border-radius: 8px; background-color: {icon_box_bg}; color: {icon_box_color}; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px;">
+                    🛡️
+                </div>
+                <div>
+                    <h3 style="margin: 0; font-size: 18px; font-weight: 800; color: #1E293B; letter-spacing: -0.3px;">
+                        3. Kiểm Định ViChartFact
+                    </h3>
+                    <p style="margin: 4px 0 0 0; font-size: 13px; color: #64748B;">
+                        Đánh giá độ trung thực số liệu của mô tả biểu đồ so với dữ liệu đã kiểm chứng.
+                    </p>
+                </div>
+            </div>
+            <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 9999px; background-color: {badge_bg}; color: {badge_color}; border: 1px solid {badge_border}; font-size: 12.5px; font-weight: 700; white-space: nowrap;">
+                <span>{badge_icon}</span>
+                <span>{badge_text}</span>
             </span>
         </div>
 
-        <div style="background-color: #FFFFFF; border-left: 4px solid #2980B9; padding: 12px 16px; border-radius: 4px; margin-bottom: 14px; font-size: 13.5px; color: #2C3E50;">
-            <div style="margin-bottom: 6px;">
-                <b>📐 Công thức & Phương pháp tính độ trung thực:</b>
+        <!-- Hàng 3 thẻ chỉ số chính nằm ngang (Theo layout chuẩn code.html) -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 6px;">
+            <div style="border-radius: 8px; background: #F8F9FC; border: 1px solid #E2E6F0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 600; color: #64748B; text-transform: uppercase;">Số liệu khớp bảng gốc</span>
+                <span style="font-size: 26px; font-weight: 800; color: #1A40C2; font-variant-numeric: tabular-nums;">{m_cnt} / {tot}</span>
+                <span style="font-size: 12px; color: #64748B;">{cell_cnt} ô số liệu, {cat_cnt} nhãn trục</span>
             </div>
-            <div style="background-color: #F4F6F7; padding: 8px 12px; border-radius: 4px; font-family: monospace; font-size: 13px; color: #1A5276; margin-bottom: 6px;">
-                Độ trung thực (Accuracy) = (N_khớp / N_tổng đối chiếu) × 100% = ({m_cnt} / {tot}) × 100% = <b>{acc:.1f}%</b>
+
+            <div style="border-radius: 8px; background: #F8F9FC; border: 1px solid #E2E6F0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 600; color: #64748B; text-transform: uppercase;">Độ trung thực Factuality</span>
+                <span style="font-size: 26px; font-weight: 800; color: {'#0E9F6E' if acc >= 90 else '#D97706'}; font-variant-numeric: tabular-nums;">{acc:.1f}%</span>
+                <span style="font-size: 12px; color: #64748B;">Sai số cho phép tối đa 5%</span>
             </div>
-            <div style="font-size: 12.5px; color: #566573; line-height: 1.5;">
-                • <b>Dung sai kiểm định:</b> Sai số tương đối ≤ 5.0% hoặc sai số tuyệt đối &lt; 0.05. Áp dụng chuẩn hóa số kiểu Việt (<code>1.200</code> → 1200, <code>12,5%</code> → 12.5%).<br>
-                • <b>Tập chân lý đối chuẩn (Ground-Truth Pool):</b> {cell_cnt} ô số liệu bảng từ các chuỗi dữ liệu, {cat_cnt} nhãn mốc thời gian/danh mục trục hoành, các thông số cấu trúc/tiêu đề và các phép tính chênh lệch/biên độ/tỷ lệ phái sinh hợp lệ từ bảng gốc.
+
+            <div style="border-radius: 8px; background: #F8F9FC; border: 1px solid #E2E6F0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 600; color: #64748B; text-transform: uppercase;">Tỷ lệ sai lệch / số lạ</span>
+                <span style="font-size: 26px; font-weight: 800; color: {'#0E9F6E' if u_cnt == 0 else '#E02424'}; font-variant-numeric: tabular-nums;">{unmatched_pct:.1f}%</span>
+                <span style="font-size: 12px; color: #64748B;">{u_cnt} số lạ bị gắn cờ</span>
             </div>
         </div>
 
+        <!-- Khung tóm tắt kết luận ngắn gọn -->
         {conclusion_html}
         {unmatched_table_html}
+
+        <!-- 2. Bảng đối chiếu chi tiết (thu gọn / mở rộng) -->
         {matched_details_html}
+
+        <!-- 3. Quy chuẩn & Công thức kiểm định ViChartFact (1 mục thu gọn/mở rộng duy nhất ở cuối) -->
+        {rules_formula_html}
     </div>
     """
     return out_html
@@ -1232,6 +1330,55 @@ def build_tts_content_by_level(level_choice: str, desc_5s: str, desc_30s: str, d
             f"Cấp độ ba, phân tích học tập chuyên sâu. {desc_study}"
         )
 
+def make_toast_html(title: str, message: str, toast_type: str = "success") -> str:
+    """Tạo thông báo nổi (toast) ở góc dưới bên phải màn hình, tự động biến mất sau 10 giây."""
+    if not title and not message:
+        return ""
+    
+    type_configs = {
+        "success": {
+            "icon": "✅",
+            "border_color": "#1A40C2",
+            "title_color": "#1A40C2"
+        },
+        "info": {
+            "icon": "🔊",
+            "border_color": "#0F766E",
+            "title_color": "#0F766E"
+        },
+        "warning": {
+            "icon": "⚠️",
+            "border_color": "#B06000",
+            "title_color": "#8A4B00"
+        },
+        "error": {
+            "icon": "❌",
+            "border_color": "#C5221F",
+            "title_color": "#C5221F"
+        }
+    }
+    cfg = type_configs.get(toast_type, type_configs["success"])
+    toast_id = f"toast_{uuid.uuid4().hex[:6]}"
+
+    return f"""
+    <div id="{toast_id}" class="v-toast-wrapper">
+        <div class="v-toast-card" style="border-left: 5px solid {cfg['border_color']};">
+            <div style="font-size: 20px; line-height: 1; flex-shrink: 0; padding-top: 2px;">{cfg['icon']}</div>
+            <div style="flex: 1; min-width: 0;">
+                <div style="font-weight: 700; color: {cfg['title_color']}; font-size: 13.5px; margin-bottom: 2px;">
+                    {html.escape(title)}
+                </div>
+                <div style="font-size: 12.5px; color: #4B5563; line-height: 1.45;">
+                    {message}
+                </div>
+            </div>
+            <button onclick="document.getElementById('{toast_id}').style.display='none'" 
+                    style="background: transparent; border: none; font-size: 18px; color: #9CA3AF; cursor: pointer; padding: 0 4px; line-height: 1; margin-left: 4px;"
+                    title="Đóng thông báo">&times;</button>
+        </div>
+    </div>
+    """
+
 # ==============================================================================
 # 9. HÀM XỬ LÝ CHÍNH CỦA PIPELINE DEMO GRADIO
 # ==============================================================================
@@ -1239,7 +1386,7 @@ def process_pipeline_demo(
     input_image_path: Optional[str],
     current_session_files: List[str]
 ) -> Tuple[
-    str, pd.DataFrame, pd.DataFrame, str, Optional[str], str, Optional[str], str, Optional[str], str, str, List[str]
+    pd.DataFrame, pd.DataFrame, str, Optional[str], str, Optional[str], str, Optional[str], str, str, List[str]
 ]:
     """
     Hàm xử lý Pipeline 4 bước khi người dùng tải ảnh hoặc chọn ví dụ:
@@ -1253,13 +1400,8 @@ def process_pipeline_demo(
     cleanup_temp_files_list(current_session_files)
 
     if not input_image_path or not os.path.exists(input_image_path):
-        err_banner = """
-        <div style="background-color: #FDEDEC; border-left: 5px solid #E74C3C; padding: 15px; border-radius: 6px;">
-            <h4 style="color: #C0392B; margin: 0 0 5px 0;">❌ Vui lòng tải lên một hình ảnh biểu đồ hợp lệ!</h4>
-            <p style="color: #555; margin: 0;">Hãy chọn ảnh mẫu ở bên dưới hoặc kéo thả ảnh biểu đồ SGK vào khung bên trái.</p>
-        </div>
-        """
-        return err_banner, pd.DataFrame(), pd.DataFrame(), "", None, "", None, "", None, "", "", []
+        err_toast = make_toast_html("Lỗi Tải Ảnh", "Vui lòng chọn hoặc tải lên một hình ảnh biểu đồ SGK hợp lệ.", "error")
+        return pd.DataFrame(), pd.DataFrame(), "", None, "", None, "", None, "", err_toast, []
 
     # Tra cứu chính xác ảnh qua bộ Resolver đa tầng
     matched_image_name, match_method = resolve_image_match(input_image_path)
@@ -1272,27 +1414,7 @@ def process_pipeline_demo(
             # Nếu có model VLM đang chạy trong bộ nhớ GPU, gọi suy luận trực tiếp ở đây
             pass
         else:
-            # Môi trường local không có GPU: Hiển thị cảnh báo trung thực, TUYỆT ĐỐI KHÔNG sinh dữ liệu giả
-            err_banner = f"""
-            <div style="background-color: #FDEDEC; border-left: 6px solid #E74C3C; padding: 18px; border-radius: 8px; margin-bottom: 20px;">
-                <div style="display: flex; align-items: flex-start;">
-                    <span style="font-size: 28px; margin-right: 12px; line-height: 1;">⚠️</span>
-                    <div>
-                        <h3 style="color: #C0392B; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">
-                            ẢNH CHƯA CÓ TRONG TẬP DỮ LIỆU ĐÃ TRÍCH XUẤT SẴN & MÔI TRƯỜNG LOCAL CHƯA NẠP MODEL VLM
-                        </h3>
-                        <p style="color: #444; margin: 0 0 8px 0; font-size: 14px; line-height: 1.5;">
-                            <b>Kết quả nhận diện:</b> {match_method}. Hình ảnh tải lên không khớp với bất kỳ biểu đồ nào trong 214 biểu đồ sách giáo khoa đã được lập chỉ mục và kiểm chứng.
-                        </p>
-                        <p style="color: #666; margin: 0; font-size: 13.5px; line-height: 1.5;">
-                            Hệ thống V-ChartText tuân thủ nguyên tắc <b>Zero-Hallucination (Tuyệt đối không bịa đặt số liệu)</b>: 
-                            KHÔNG tự ý sinh dữ liệu giả định hay báo kiểm chứng hợp lệ khi chưa suy luận mô hình thực tế. 
-                            Để thực hiện trích xuất suy luận động trên ảnh biểu đồ mới bất kỳ, vui lòng triển khai hệ thống trên máy chủ GPU (Google Colab T4/A100 hoặc GPU Space) có nạp mô hình <i>Qwen3-VL (Qwen2.5-VL-7B-Instruct)</i>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            """
+            # Môi trường local không có GPU: Hiển thị cảnh báo trung thực qua Toast & bảng thuộc tính, TUYỆT ĐỐI KHÔNG sinh dữ liệu giả
             empty_meta = pd.DataFrame([
                 {"Thuộc tính": "Trạng thái tra cứu", "Nội dung": "Không tìm thấy trong 214 biểu đồ SGK đã kiểm chứng"},
                 {"Thuộc tính": "Chi tiết đối sánh", "Nội dung": match_method},
@@ -1304,12 +1426,12 @@ def process_pipeline_demo(
             ])
             notice_msg = "Ảnh chưa có trong tập dữ liệu đã trích xuất sẵn & môi trường local chưa nạp model VLM (Qwen3-VL). Vui lòng chọn một biểu đồ mẫu trong tập dữ liệu sách giáo khoa bên dưới để trải nghiệm đầy đủ pipeline 4 bước."
             empty_vichartfact = """
-            <div style="background-color: #F8F9F9; border: 1px dashed #BDC3C7; border-radius: 6px; padding: 14px; text-align: center; color: #7F8C8D; font-size: 13.5px; line-height: 1.5;">
-                ℹ️ <b>Chưa thực hiện đo kiểm ViChartFact:</b> Do hình ảnh tải lên chưa có ma trận dữ liệu trích xuất để làm bảng chân lý đối chuẩn. Vui lòng chọn một biểu đồ trong <i>Tập mẫu đại diện</i> bên dưới để quan sát quy trình đo kiểm ViChartFact chi tiết.
+            <div style="background-color: #F8F9FC; border: 1px dashed #CBD5E1; border-radius: 8px; padding: 20px; text-align: center; color: #64748B; font-size: 13.5px; line-height: 1.5; margin-top: 10px;">
+                🛡️ <b>Chưa thực hiện đo kiểm ViChartFact:</b> Do hình ảnh tải lên chưa có ma trận dữ liệu trích xuất để làm bảng chân lý đối chuẩn. Vui lòng chọn một biểu đồ trong <i>Tập mẫu đại diện</i> ở cột trái để quan sát quy trình đo kiểm ViChartFact chi tiết.
             </div>
             """
+            warn_toast = make_toast_html("Ảnh Ngoài Tập Dữ Liệu", "Ảnh chưa có trong 214 biểu đồ SGK đã kiểm chứng & máy chưa nạp Qwen3-VL.", "warning")
             return (
-                err_banner,
                 empty_meta,
                 empty_matrix,
                 notice_msg,
@@ -1319,7 +1441,7 @@ def process_pipeline_demo(
                 notice_msg,
                 None,
                 empty_vichartfact,
-                "⚠️ Không có nội dung để đọc.",
+                warn_toast,
                 []
             )
 
@@ -1337,55 +1459,11 @@ def process_pipeline_demo(
         "values": raw_data.get("values", "")
     }
 
-    # Bước 2: Kiểm chứng logic & Gắn cờ
+    # Bước 2: Kiểm chứng dữ liệu & Gắn cờ bất định (Bảo toàn 100% logic kiểm chứng)
     val_status, val_notes, parsed_matrix = validate_chart_data(step1_dict)
     flagged_matrix = apply_uncertainty_flagging(parsed_matrix, val_notes)
-    has_uncertainty = flagged_matrix["has_uncertainty"]
 
-    # Banner thông báo tra cứu thành công
-    match_badge_html = f"""
-    <div style="margin-bottom: 12px; font-size: 13.5px; color: #1B4F72; background: #EBF5FB; padding: 10px 14px; border-radius: 6px; border-left: 5px solid #2980B9;">
-        🔍 <b>Đối chiếu thành công:</b> Đã khớp biểu đồ <b><code>{matched_image_name}</code></b> ({match_method}).
-    </div>
-    """
-
-    # Tạo biểu ngữ Cờ bất định trực quan (Status Banner)
-    if has_uncertainty or val_status != "Hợp lệ":
-        status_banner = match_badge_html + f"""
-        <div style="background-color: #FEF9E7; border-left: 6px solid #F39C12; padding: 15px; border-radius: 6px; margin-bottom: 15px;">
-            <div style="display: flex; align-items: center;">
-                <span style="font-size: 24px; margin-right: 10px;">⚠️</span>
-                <div>
-                    <h4 style="color: #B7950B; margin: 0 0 5px 0; font-weight: bold;">
-                        CẢNH BÁO: PHÁT HIỆN CỜ 'CHƯA CHẮC CHẮN' - {val_status.upper()}
-                    </h4>
-                    <p style="color: #6E5B09; margin: 0; font-size: 13.5px;">
-                        <b>Chi tiết kiểm tra:</b> {val_notes}. Các giá trị không xác minh được đã tự động gắn cờ 
-                        <code style="background: #F9E79F; padding: 2px 5px; border-radius: 3px; font-weight: bold; color: #7D6608;">[chưa chắc chắn]</code>
-                        nhằm triệt tiêu hoàn toàn hiện tượng ảo giác số liệu.
-                    </p>
-                </div>
-            </div>
-        </div>
-        """
-    else:
-        status_banner = match_badge_html + """
-        <div style="background-color: #E8F8F5; border-left: 6px solid #2ECC71; padding: 15px; border-radius: 6px; margin-bottom: 15px;">
-            <div style="display: flex; align-items: center;">
-                <span style="font-size: 24px; margin-right: 10px;">✅</span>
-                <div>
-                    <h4 style="color: #1E8449; margin: 0 0 5px 0; font-weight: bold;">
-                        KIỂM CHỨNG HỢP LỆ (RULE-BASED VALIDATION PASS)
-                    </h4>
-                    <p style="color: #145A32; margin: 0; font-size: 13.5px;">
-                        Số liệu đã được đối chiếu khớp 100% với các luật logic sư phạm (tổng phần trăm, tính đơn điệu thời gian và kích thước chuỗi).
-                    </p>
-                </div>
-            </div>
-        </div>
-        """
-
-    # Bảng 1: Metadata chung
+    # Bảng 1: Metadata chung (Hiển thị đầy đủ trạng thái kiểm chứng và ghi chú)
     meta_df = pd.DataFrame([
         {"Thuộc tính": "Tiêu đề biểu đồ", "Nội dung": step1_dict["chart_title"]},
         {"Thuộc tính": "Loại biểu đồ", "Nội dung": step1_dict["chart_type"]},
@@ -1448,12 +1526,19 @@ def process_pipeline_demo(
 
     if new_session_files:
         eng_summary = "; ".join(tts_engines_used)
-        tts_status_msg = f"✅ Đã tạo giọng đọc Hoài My (Nữ - Truyền cảm) cho cả 3 cấp độ (Động cơ: {eng_summary})."
+        tts_status_msg = make_toast_html(
+            title="Đã Hoàn Thành Pipeline 4 Bước",
+            message=f"Đã trích xuất ma trận, kiểm chứng logic và tạo giọng đọc Hoài My ({html.escape(eng_summary)}) cho cả 3 cấp độ thành công.",
+            toast_type="success"
+        )
     else:
-        tts_status_msg = "⚠️ Không thể kết nối dịch vụ âm thanh TTS lúc này, mô tả 3 cấp độ vẫn sẵn sàng bên trên."
+        tts_status_msg = make_toast_html(
+            title="Hoàn Thành Pipeline (Cảnh Báo TTS)",
+            message="Đã sinh mô tả 3 cấp độ và đối kiểm ViChartFact, nhưng không thể kết nối dịch vụ âm thanh TTS lúc này.",
+            toast_type="warning"
+        )
 
     return (
-        status_banner,
         meta_df,
         data_matrix_df,
         desc_5s,
@@ -1474,7 +1559,8 @@ def regenerate_single_level(
 ) -> Tuple[Optional[str], str, List[str]]:
     """Tạo lại âm thanh riêng cho một cấp độ khi người dùng bấm nút Nghe lại với giọng Hoài My."""
     if not text or not text.strip():
-        return None, "ℹ️ Chưa có nội dung mô tả để tạo âm thanh.", current_session_files
+        info_toast = make_toast_html(f"Cấp {level_num}", "Chưa có nội dung mô tả để tạo âm thanh.", "warning")
+        return None, info_toast, current_session_files
 
     prefix_map = {1: "tts_lvl1_", 2: "tts_lvl2_", 3: "tts_lvl3_"}
     prefix = prefix_map.get(level_num, "tts_")
@@ -1496,21 +1582,63 @@ def regenerate_single_level(
     ok, eng = generate_tts_audio_sync(speech_text, audio_path, voice_id=HOAI_MY_VOICE_ID)
     if ok and os.path.exists(audio_path):
         remaining_files.append(audio_path)
-        return audio_path, f"✅ Đã tạo giọng đọc Hoài My Cấp {level_num}.", remaining_files
+        msg_toast = make_toast_html(
+            title=f"Đã Tạo Lại Giọng Đọc Cấp {level_num}",
+            message=f"Đã tổng hợp âm thanh giọng đọc Hoài My ({html.escape(eng)}) thành công.",
+            toast_type="info"
+        )
+        return audio_path, msg_toast, remaining_files
     else:
-        return None, f"⚠️ Lỗi tạo giọng đọc Cấp {level_num} ({eng}).", remaining_files
+        err_toast = make_toast_html(
+            title=f"Lỗi Tạo Giọng Đọc Cấp {level_num}",
+            message=f"Không thể tạo âm thanh cho Cấp {level_num}: {html.escape(eng)}.",
+            toast_type="error"
+        )
+        return None, err_toast, remaining_files
 
-def on_image_change_or_clear(current_session_files: List[str]) -> Tuple[Optional[str], Optional[str], Optional[str], str, List[str]]:
-    """Khi đổi ảnh hoặc xóa ảnh: xóa sạch file âm thanh tạm của cả 3 cấp và reset cả 3 audio player."""
+def select_sample_chart(sample_filename: str, current_session_files: List[str]):
+    """Khi bấm chọn một trong 6 ảnh mẫu đại diện: xóa sạch dữ liệu cũ và nạp ảnh mới."""
     cleanup_temp_files_list(current_session_files)
-    return None, None, None, "", []
+    sample_path = DATASET_FILEPATHS.get(sample_filename)
+    if not sample_path or not os.path.exists(sample_path):
+        sample_path = os.path.join(DATASET_DIR, sample_filename)
+    return (
+        sample_path,      # input_image
+        pd.DataFrame(),   # out_meta_df
+        pd.DataFrame(),   # out_matrix_df
+        "",               # out_desc_5s
+        None,             # out_audio_lvl1
+        "",               # out_desc_30s
+        None,             # out_audio_lvl2
+        "",               # out_desc_study
+        None,             # out_audio_lvl3
+        "",               # out_vichartfact
+        "",               # out_tts_status
+        []                # session_audio_tracker
+    )
+
+def on_image_uploaded(current_session_files: List[str]):
+    """Khi người dùng tải ảnh mới từ máy tính lên: xóa sạch output cũ ngay lập tức."""
+    cleanup_temp_files_list(current_session_files)
+    return (
+        pd.DataFrame(),   # out_meta_df
+        pd.DataFrame(),   # out_matrix_df
+        "",               # out_desc_5s
+        None,             # out_audio_lvl1
+        "",               # out_desc_30s
+        None,             # out_audio_lvl2
+        "",               # out_desc_study
+        None,             # out_audio_lvl3
+        "",               # out_vichartfact
+        "",               # out_tts_status
+        []                # session_audio_tracker
+    )
 
 def on_reset_click(current_session_files: List[str]):
-    """Khi bấm nút Đặt lại: xóa sạch file tạm của cả 3 cấp, xóa toàn bộ output."""
+    """Khi bấm nút Đặt lại: xóa sạch file tạm của cả 3 cấp và xóa toàn bộ dữ liệu trên giao diện."""
     cleanup_temp_files_list(current_session_files)
     return (
         None,             # input_image
-        "",               # out_banner
         pd.DataFrame(),   # out_meta_df
         pd.DataFrame(),   # out_matrix_df
         "",               # out_desc_5s
@@ -1525,16 +1653,229 @@ def on_reset_click(current_session_files: List[str]):
     )
 
 # ==============================================================================
-# 10. GIAO DIỆN NGƯỜI DÙNG GRADIO BLOCKS
+# 10. GIAO DIỆN NGƯỜI DÙNG GRADIO BLOCKS (REDESIGNED THEO BẢN THIẾT KẾ CODE.HTML)
 # ==============================================================================
 custom_css = """
-.container { max-width: 1250px; margin: auto; }
-.main-header { text-align: center; margin-bottom: 20px; }
-.badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
-.tts-panel { background: #F8F9FA; border-radius: 8px; padding: 15px; margin-top: 15px; border: 1px solid #E9ECEF; }
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300..900;1,300..900&family=Recursive:wght@400..700&family=Source+Code+Pro:wght@400;600;700&display=swap');
+
+:root {
+    --primary-color: #1A40C2;
+    --primary-hover: #133299;
+    --bg-surface: #F7F8FC;
+    --card-bg: #FFFFFF;
+    --border-color: #E2E6F0;
+    --text-primary: #1F2937;
+    --text-secondary: #4B5563;
+}
+
+body, .gradio-container {
+    font-family: 'Mulish', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    background-color: #F7F8FC !important;
+    color: #1F2937 !important;
+}
+
+.gradio-container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 16px 20px !important;
+}
+
+/* Tab Bar: 3 Tab gọn gàng trên 1 hàng duy nhất, tuyệt đối không bị tràn hay nhảy menu ... trên màn hình desktop */
+.tab-nav {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    border-bottom: 2px solid #E2E6F0 !important;
+    gap: 6px !important;
+    margin-bottom: 16px !important;
+    overflow-x: auto !important;
+}
+
+.tab-nav button {
+    font-family: 'Mulish', sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    padding: 9px 16px !important;
+    border-radius: 8px 8px 0 0 !important;
+    border: none !important;
+    background: transparent !important;
+    color: #4B5563 !important;
+    transition: all 0.2s ease !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+.tab-nav button.selected {
+    color: #1A40C2 !important;
+    border-bottom: 3px solid #1A40C2 !important;
+    background: #FFFFFF !important;
+}
+
+/* Toast Notification - Nổi góc dưới bên phải màn hình, tự động biến mất sau 10 giây */
+.v-toast-wrapper {
+    position: fixed !important;
+    bottom: 24px !important;
+    right: 24px !important;
+    z-index: 999999 !important;
+    max-width: 400px !important;
+    width: calc(100vw - 48px) !important;
+    pointer-events: none !important;
+    animation: toastFadeInOut 10s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+.v-toast-card {
+    pointer-events: auto !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E2E6F0 !important;
+    border-radius: 10px !important;
+    padding: 12px 16px !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.08) !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+}
+
+@keyframes toastFadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(24px) scale(0.96);
+    }
+    4% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    88% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.96);
+        visibility: hidden;
+    }
+}
+
+/* Thẻ khung hiển thị & Card phong cách code.html */
+.v-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E6F0 !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+    margin-bottom: 14px !important;
+}
+
+/* Nút chọn biểu đồ mẫu trong grid */
+.sample-card-btn {
+    background: #FFFFFF !important;
+    border: 1px solid #E2E6F0 !important;
+    border-radius: 8px !important;
+    padding: 8px 10px !important;
+    text-align: left !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    color: #1F2937 !important;
+    transition: all 0.15s ease !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02) !important;
+}
+
+.sample-card-btn:hover {
+    border-color: #1A40C2 !important;
+    background: #F0F4FF !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Nút Thực thi chính & Nút Đặt lại */
+.btn-primary-action {
+    background: #1A40C2 !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    font-size: 14.5px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 6px rgba(26, 64, 194, 0.25) !important;
+}
+
+.btn-primary-action:hover {
+    background: #133299 !important;
+}
+
+.btn-secondary-action {
+    background: #FFFFFF !important;
+    border: 1px solid #C9CDDC !important;
+    color: #374151 !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+}
+
+.btn-secondary-action:hover {
+    background: #F9FAFB !important;
+    border-color: #9CA3AF !important;
+}
+
+/* Bật tự động xuống dòng cho bảng DataFrame để không bị cắt cụt chữ */
+.gradio-dataframe table td,
+.gradio-dataframe table th,
+div[data-testid="dataframe"] table td,
+div[data-testid="dataframe"] table th {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    line-height: 1.55 !important;
+}
+
+textarea {
+    font-family: 'Mulish', sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* Mục 3 ViChartFact Collapsible Details */
+details.v-fact-details {
+    border: 1px solid #E2E6F0 !important;
+    border-radius: 8px !important;
+    background: #FFFFFF !important;
+    overflow: hidden !important;
+}
+
+details.v-fact-details summary {
+    padding: 12px 16px !important;
+    background-color: #F8F9FC !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
+    color: #1E293B !important;
+    list-style: none !important;
+    transition: background 0.15s ease !important;
+}
+
+details.v-fact-details summary:hover {
+    background-color: #F1F5F9 !important;
+}
+
+details.v-fact-details summary::-webkit-details-marker {
+    display: none !important;
+}
+
+details.v-fact-details summary .v-expand-icon {
+    transition: transform 0.2s ease !important;
+    display: inline-block !important;
+    color: #64748B !important;
+    font-size: 12px !important;
+}
+
+details.v-fact-details[open] summary .v-expand-icon {
+    transform: rotate(180deg) !important;
+}
+
+details.v-fact-details[open] summary {
+    border-bottom: 1px solid #E2E6F0 !important;
+}
 """
 
-# Chọn 6 ảnh mẫu đại diện có trên đĩa và map chính xác 100% với các loại biểu đồ
+# 6 ảnh mẫu đại diện có trên đĩa và map chính xác 100% với các dạng biểu đồ SGK
 SAMPLE_TARGETS = [
     "Biểu đồ cột_1.png",       # Cột đơn (Hoa Kỳ, Trung Quốc, Ấn Độ - Hình 34.3)
     "Biểu đồ cột_48.png",      # Cột nhóm (Số tiền 19.257 tỉ đô la Mỹ - Chuẩn số Việt)
@@ -1553,110 +1894,191 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
     # State theo dõi danh sách file audio tạm của phiên để dọn rác tự động
     session_audio_tracker = gr.State(value=[])
 
+    # Header chuẩn theo phong cách code.html
     gr.HTML("""
-    <div class="main-header">
-        <h1 style="color: #1A5276; margin-bottom: 5px;">📊 V-ChartText: Trích Xuất, Kiểm Chứng & Đọc Biểu Đồ Giáo Dục</h1>
-        <p style="color: #5D6D7E; font-size: 15px; margin-top: 0;">
-            Hệ thống ứng dụng kiến trúc <b>Pipeline 4 Bước</b> khắc phục hiện tượng ảo giác (hallucination) của VLM trực tiếp, 
-            tích hợp đọc số tiếng Việt tự nhiên và hỗ trợ học sinh khiếm thị tiếp cận sách giáo khoa.
-        </p>
+    <div style="background: #FFFFFF; border-bottom: 1px solid #E2E6F0; border-radius: 12px; padding: 18px 24px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.03);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <div style="width: 44px; height: 44px; border-radius: 10px; background: #1A40C2; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22px; box-shadow: 0 2px 6px rgba(26,64,194,0.3);">
+                    V
+                </div>
+                <div>
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                        <h1 style="margin: 0; font-size: 21px; font-weight: 800; color: #1F2937; letter-spacing: -0.4px;">
+                            V-ChartText
+                        </h1>
+                        <span style="background: #EEF2FF; color: #1A40C2; font-weight: 700; font-size: 11.5px; padding: 3px 10px; border-radius: 9999px; border: 1px solid #C4D4FF;">
+                            Sư phạm &amp; Trợ năng SGK
+                        </span>
+                    </div>
+                    <p style="margin: 3px 0 0 0; font-size: 13.5px; color: #4B5563;">
+                        Hệ thống trích xuất, kiểm chứng logic &amp; thuyết minh biểu đồ Địa lí qua Pipeline 4 Bước
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <span style="display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 9999px; font-size: 12px; font-weight: 600; background: #E6F4EA; color: #137333; border: 1px solid #CEEAD6;">
+                    <span style="width: 7px; height: 7px; border-radius: 50%; background: #137333;"></span>
+                    Pipeline 4 Bước Active
+                </span>
+                <span style="font-size: 12px; color: #6B7280; border-left: 1px solid #E2E6F0; padding-left: 10px;">
+                    Giọng đọc Hoài My (Nữ - Truyền cảm)
+                </span>
+            </div>
+        </div>
     </div>
     """)
 
     with gr.Row():
-        # Cột Trái: Tải ảnh và Danh sách biểu đồ mẫu
-        with gr.Column(scale=4):
-            input_image = gr.Image(type="filepath", label="🖼️ Tải ảnh biểu đồ học tập SGK lên")
-            with gr.Row():
-                btn_run = gr.Button("🚀 Thực Thi Pipeline 4 Bước", variant="primary", size="lg")
-                btn_clear = gr.Button("🔄 Đặt lại", size="lg")
+        # ----------------------------------------------------------------------
+        # CỘT TRÁI (SCALE 5): TẢI ẢNH, ĐIỀU KHIỂN & BỘ CHỌN MẪU SGK
+        # ----------------------------------------------------------------------
+        with gr.Column(scale=5):
+            with gr.Group(elem_classes=["v-card"]):
+                gr.HTML("""
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <div style="display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 13px; color: #1F2937; text-transform: uppercase;">
+                        <span>🖼️</span> ẢNH BIỂU ĐỒ ĐẦU VÀO
+                    </div>
+                    <span style="font-size: 11px; color: #6B7280;">Hỗ trợ PNG, JPG, WEBP</span>
+                </div>
+                """)
+                input_image = gr.Image(type="filepath", show_label=False)
 
-            if sample_examples:
-                gr.Markdown("### 📂 Hoặc chọn nhanh biểu đồ mẫu đa dạng:")
-                gr.Examples(
-                    examples=[[ex] for ex in sample_examples],
-                    inputs=input_image,
-                    label="Tập mẫu đại diện (Cột đơn, Cột nhóm, Tròn, Đường, Miền, Kết hợp)"
-                )
+                with gr.Row():
+                    btn_run = gr.Button("🚀 Thực Thi Pipeline 4 Bước", variant="primary", scale=7, elem_classes=["btn-primary-action"])
+                    btn_clear = gr.Button("🔄 Đặt lại", scale=3, elem_classes=["btn-secondary-action"])
 
-        # Cột Phải: Kết quả 4 bước
-        with gr.Column(scale=6):
+            # Khối chọn nhanh 6 dạng biểu đồ SGK theo phong cách grid cards của code.html
+            with gr.Group(elem_classes=["v-card"]):
+                gr.HTML("""
+                <div style="margin-bottom: 10px;">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <span style="font-weight: 700; font-size: 13px; color: #1F2937; text-transform: uppercase; letter-spacing: 0.3px;">
+                            TẬP MẪU ĐẠI DIỆN SGK (6 DẠNG CHUẨN)
+                        </span>
+                        <span style="font-size: 11px; background: #EEF2FF; color: #1A40C2; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">
+                            6 mẫu chuẩn
+                        </span>
+                    </div>
+                    <p style="margin: 4px 0 0 0; font-size: 12px; color: #6B7280;">
+                        Bấm chọn nhanh để thử nghiệm các dạng biểu đồ trong chương trình Địa lí
+                    </p>
+                </div>
+                """)
+                with gr.Row():
+                    btn_sample_1 = gr.Button("📊 Cột đơn\nHoa Kỳ, TQ, Ấn Độ", size="sm", elem_classes=["sample-card-btn"])
+                    btn_sample_2 = gr.Button("📶 Cột ghép\nXuất nhập khẩu", size="sm", elem_classes=["sample-card-btn"])
+                    btn_sample_3 = gr.Button("🥧 Tròn\nCơ cấu nguồn điện", size="sm", elem_classes=["sample-card-btn"])
+                with gr.Row():
+                    btn_sample_4 = gr.Button("📈 Đường\nThu nhập bình quân", size="sm", elem_classes=["sample-card-btn"])
+                    btn_sample_5 = gr.Button("🏔️ Miền\nCơ cấu GDP 3 ngành", size="sm", elem_classes=["sample-card-btn"])
+                    btn_sample_6 = gr.Button("📉 Kết hợp\nSản lượng & giá trị", size="sm", elem_classes=["sample-card-btn"])
+
+                if sample_examples:
+                    gr.HTML("<div style='margin-top: 12px; font-size: 12px; color: #6B7280; font-weight: 600;'>Hoặc duyệt dạng danh sách ảnh:</div>")
+                    gr.Examples(
+                        examples=[[ex] for ex in sample_examples],
+                        inputs=input_image,
+                        label=None
+                    )
+
+        # ----------------------------------------------------------------------
+        # CỘT PHẢI (SCALE 7): 2 TAB DUY NHẤT (BẢNG & KIỂM CHỨNG | MÔ TẢ 3 CẤP & TTS)
+        # ----------------------------------------------------------------------
+        with gr.Column(scale=7):
             # Tab 1: Bảng dữ liệu & Kiểm chứng
-            with gr.Tab("🛡️ Bước 1 & 2: Bảng Số Liệu & Cờ Bất Định"):
-                out_banner = gr.HTML(label="Trạng thái kiểm chứng")
-                out_meta_df = gr.DataFrame(label="📋 Thông tin đặc tả biểu đồ", interactive=False)
-                out_matrix_df = gr.DataFrame(label="🔢 Ma trận số liệu chi tiết (Đã kiểm chứng)", interactive=False)
+            with gr.Tab("📊 1. Bảng & Kiểm Chứng"):
+                with gr.Group(elem_classes=["v-card"]):
+                    gr.HTML("<div style='font-weight: 700; color: #1F2937; margin-bottom: 8px; font-size: 13.5px;'>📋 ĐẶC TẢ THUỘC TÍNH BIỂU ĐỒ</div>")
+                    out_meta_df = gr.DataFrame(headers=["Thuộc tính", "Nội dung"], datatype=["str", "str"], wrap=True, interactive=False)
+                with gr.Group(elem_classes=["v-card"]):
+                    gr.HTML("<div style='font-weight: 700; color: #1F2937; margin-bottom: 8px; font-size: 13.5px;'>🔢 MA TRẬN SỐ LIỆU ĐÃ KIỂM CHỨNG &amp; GẮN CỜ BẤT ĐỊNH</div>")
+                    out_matrix_df = gr.DataFrame(wrap=True, interactive=False)
 
-            # Tab 2: Sinh mô tả 3 cấp độ & Giọng đọc TTS trực tiếp (Giọng Hoài My)
-            with gr.Tab("🧠 Bước 3 & 4: Mô Tả 3 Cấp Độ & Giọng Đọc Trực Tiếp (TTS)"):
+            # Tab 2: Sinh mô tả 3 cấp độ & Giọng đọc TTS trực tiếp
+            with gr.Tab("🎧 2. Mô Tả 3 Cấp & Giọng Đọc"):
                 # Cấp 1: Tổng quan 5s
-                with gr.Group():
-                    gr.Markdown("#### ⚡ Cấp 1: Tổng quan 5s (Dành cho học sinh xem nhanh)")
-                    out_desc_5s = gr.Textbox(label="Nội dung mô tả Cấp 1", lines=2, interactive=False)
+                with gr.Group(elem_classes=["v-card"]):
+                    gr.HTML("""
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="background: #1A40C2; color: #FFFFFF; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800;">1</span>
+                            <span style="font-weight: 800; color: #1A40C2; font-size: 14px;">CẤP 1 • TỔNG QUAN 5 GIÂY</span>
+                        </div>
+                        <span style="font-size: 11px; background: #EEF2FF; color: #1A40C2; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">NHẬN THỨC NHANH</span>
+                    </div>
+                    """)
+                    out_desc_5s = gr.Textbox(lines=2, show_label=False, interactive=False, placeholder="Nội dung mô tả Cấp 1 sẽ xuất hiện tại đây sau khi chạy pipeline...")
                     with gr.Row():
                         out_audio_lvl1 = gr.Audio(
-                            label="🎧 Trình phát giọng đọc Cấp 1 (Hoài My - Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            label="🎧 Trình phát Cấp 1 (Hoài My)",
                             type="filepath",
                             interactive=False,
                             autoplay=False,
                             scale=8
                         )
-                        btn_read_lvl1 = gr.Button("🔊 Nghe lại Cấp 1", variant="secondary", size="sm", scale=2)
+                        btn_read_lvl1 = gr.Button("🔊 Nghe lại", variant="secondary", size="sm", scale=2, elem_classes=["btn-secondary-action"])
 
                 # Cấp 2: Tóm tắt sư phạm 30s
-                with gr.Group():
-                    gr.Markdown("#### 🎯 Cấp 2: Tóm tắt sư phạm 30s (Trọng tâm cực trị & xu hướng)")
-                    out_desc_30s = gr.Textbox(label="Nội dung mô tả Cấp 2", lines=4, interactive=False)
+                with gr.Group(elem_classes=["v-card"]):
+                    gr.HTML("""
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="background: #0F766E; color: #FFFFFF; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800;">2</span>
+                            <span style="font-weight: 800; color: #0F766E; font-size: 14px;">CẤP 2 • TÓM TẮT SƯ PHẠM 30 GIÂY</span>
+                        </div>
+                        <span style="font-size: 11px; background: #E6FFFA; color: #0F766E; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">TRỌNG TÂM &amp; CỰC TRỊ</span>
+                    </div>
+                    """)
+                    out_desc_30s = gr.Textbox(lines=4, show_label=False, interactive=False, placeholder="Nội dung mô tả Cấp 2 sẽ xuất hiện tại đây sau khi chạy pipeline...")
                     with gr.Row():
                         out_audio_lvl2 = gr.Audio(
-                            label="🎧 Trình phát giọng đọc Cấp 2 (Hoài My - Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            label="🎧 Trình phát Cấp 2 (Hoài My)",
                             type="filepath",
                             interactive=False,
                             autoplay=False,
                             scale=8
                         )
-                        btn_read_lvl2 = gr.Button("🔊 Nghe lại Cấp 2", variant="secondary", size="sm", scale=2)
+                        btn_read_lvl2 = gr.Button("🔊 Nghe lại", variant="secondary", size="sm", scale=2, elem_classes=["btn-secondary-action"])
 
                 # Cấp 3: Phân tích học tập chuyên sâu
-                with gr.Group():
-                    gr.Markdown("#### 📚 Cấp 3: Phân tích học tập chuyên sâu (Đào sâu kiến thức)")
-                    out_desc_study = gr.Textbox(label="Nội dung mô tả Cấp 3", lines=6, interactive=False)
+                with gr.Group(elem_classes=["v-card"]):
+                    gr.HTML("""
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="background: #6D28D9; color: #FFFFFF; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800;">3</span>
+                            <span style="font-weight: 800; color: #6D28D9; font-size: 14px;">CẤP 3 • PHÂN TÍCH HỌC TẬP CHUYÊN SÂU</span>
+                        </div>
+                        <span style="font-size: 11px; background: #F3E8FF; color: #6D28D9; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">TOÀN DIỆN SỐ LIỆU</span>
+                    </div>
+                    """)
+                    out_desc_study = gr.Textbox(lines=6, show_label=False, interactive=False, placeholder="Nội dung mô tả Cấp 3 sẽ xuất hiện tại đây sau khi chạy pipeline...")
                     with gr.Row():
                         out_audio_lvl3 = gr.Audio(
-                            label="🎧 Trình phát giọng đọc Cấp 3 (Hoài My - Đọc chuẩn số Việt: 1.200, 12,5%)",
+                            label="🎧 Trình phát Cấp 3 (Hoài My)",
                             type="filepath",
                             interactive=False,
                             autoplay=False,
                             scale=8
                         )
-                        btn_read_lvl3 = gr.Button("🔊 Nghe lại Cấp 3", variant="secondary", size="sm", scale=2)
+                        btn_read_lvl3 = gr.Button("🔊 Nghe lại", variant="secondary", size="sm", scale=2, elem_classes=["btn-secondary-action"])
 
-                out_vichartfact = gr.HTML(label="Đánh giá ViChartFact")
-                out_tts_status = gr.Markdown("")
+            # Tab 3: Đo kiểm ViChartFact độc lập (Mục 3 theo thiết kế stitch_v_charttext_ui_redesign_3)
+            with gr.Tab("🛡️ 3. ViChartFact"):
+                out_vichartfact = gr.HTML(value="")
 
-            # Tab 3: Hướng dẫn & Kiểm định ViChartFact
-            with gr.Tab("📖 Hướng Dẫn & Kiểm Định ViChartFact"):
-                gr.Markdown(r"""
-                ### 🛡️ Nguyên Tắc Chống Ảo Giác & Thước Đo ViChartFact
-                - **Bước 1 (Trích xuất ma trận)**: Bóc tách cấu trúc số liệu với cơ chế đọc số kiểu Việt (chấm hàng nghìn `1.200`, phẩy thập phân `12,5`).
-                - **Bước 2 (Kiểm chứng logic)**: Áp dụng tập luật sư phạm (tổng phần trăm tròn $100\% \pm 2\%$, tính đơn điệu chuỗi thời gian). Tự động gắn cờ `[chưa chắc chắn]` khi mờ hoặc thiếu số liệu.
-                - **Bước 3 (Mô tả 3 cấp độ Grounded & Đo kiểm ViChartFact)**:
-                  - **Mô tả 3 cấp độ**: Sinh mô tả 5s (tổng quan nhanh), 30s (tóm tắt sư phạm), và chuyên sâu (phân tích chi tiết học tập) bám sát ma trận số liệu đã kiểm chứng.
-                  - **Công thức ViChartFact**: $\text{Độ trung thực (Accuracy)} = \frac{N_{\text{khớp}}}{N_{\text{tổng đối chiếu}}} \times 100\%$ với dung sai cho phép $\le 5.0\%$ (hoặc sai số tuyệt đối $< 0.05$).
-                  - **Tập chân lý đối chuẩn**: Toàn bộ ô số liệu bảng (`series_data`), nhãn mốc thời gian / danh mục (`categories`), và thông số cấu trúc / siêu dữ liệu biểu đồ.
-                  - **Minh bạch số lạ**: Hiển thị bảng chi tiết từng số lạ (Cấp mô tả, Giá trị số bắt được, Câu văn ngữ cảnh, Đối chiếu bảng gốc, Phân loại nguyên nhân). Tuyệt đối **không xác nhận Zero-Hallucination** khi danh sách số lạ chưa được đối chuẩn ($< 100\%$).
-                - **Bước 4 (Giọng đọc trợ năng TTS)**: Tích hợp 3 trình phát âm thanh riêng biệt đặt ngay dưới từng cấp mô tả bằng giọng đọc chuẩn Hoài My (Nữ - Truyền cảm, tự nhiên). Tự động chuẩn hóa số tiếng Việt khi đọc. File âm thanh chỉ lưu tạm thời trong phiên và tự động dọn sạch khi đổi ảnh / đặt lại.
-                """)
+        # Khung thông báo nổi Toast (Bottom-Right, fixed, tự động biến mất sau 10 giây)
+        out_tts_status = gr.HTML(value="")
 
     # --------------------------------------------------------------------------
-    # RÀNG BUỘC SỰ KIỆN (EVENT LISTENERS)
+    # RÀNG BUỘC SỰ KIỆN (EVENT LISTENERS ĐỒNG BỘ 100%)
     # --------------------------------------------------------------------------
-    # 1. Thực thi Pipeline 4 bước
+    # 1. Nút Thực thi Pipeline 4 bước
     btn_run.click(
         fn=process_pipeline_demo,
         inputs=[input_image, session_audio_tracker],
         outputs=[
-            out_banner,
             out_meta_df,
             out_matrix_df,
             out_desc_5s,
@@ -1671,7 +2093,181 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
         ]
     )
 
-    # 2. Nghe lại riêng lẻ từng cấp độ với giọng Hoài My
+    # 2. 6 Nút chọn nhanh biểu đồ mẫu: Tự động tải ảnh & xóa trắng output cũ
+    btn_sample_1.click(
+        fn=lambda s: select_sample_chart("Biểu đồ cột_1.png", s),
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    btn_sample_2.click(
+        fn=lambda s: select_sample_chart("Biểu đồ cột_48.png", s),
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    btn_sample_3.click(
+        fn=lambda s: select_sample_chart("Biểu đồ tròn_1.jpeg", s),
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    btn_sample_4.click(
+        fn=lambda s: select_sample_chart("Biểu đồ đường_1.png", s),
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    btn_sample_5.click(
+        fn=lambda s: select_sample_chart("Biểu đồ miền_1.webp", s),
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    btn_sample_6.click(
+        fn=lambda s: select_sample_chart("Biểu đồ kết hợp_1.png", s),
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    # 3. Khi tải ảnh mới lên: xóa trắng kết quả cũ ngay lập tức
+    input_image.upload(
+        fn=on_image_uploaded,
+        inputs=[session_audio_tracker],
+        outputs=[
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    # 4. Khi bấm xóa ảnh trên khung tải: reset toàn bộ giao diện
+    input_image.clear(
+        fn=on_reset_click,
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    # 5. Nút Đặt lại: reset ảnh & toàn bộ kết quả về trạng thái ban đầu
+    btn_clear.click(
+        fn=on_reset_click,
+        inputs=[session_audio_tracker],
+        outputs=[
+            input_image,
+            out_meta_df,
+            out_matrix_df,
+            out_desc_5s,
+            out_audio_lvl1,
+            out_desc_30s,
+            out_audio_lvl2,
+            out_desc_study,
+            out_audio_lvl3,
+            out_vichartfact,
+            out_tts_status,
+            session_audio_tracker
+        ]
+    )
+
+    # 6. Nghe lại riêng lẻ từng cấp độ với giọng Hoài My
     btn_read_lvl1.click(
         fn=lambda desc, s: regenerate_single_level(1, desc, s),
         inputs=[out_desc_5s, session_audio_tracker],
@@ -1690,43 +2286,10 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
         outputs=[out_audio_lvl3, out_tts_status, session_audio_tracker]
     )
 
-    # 3. Khi đổi ảnh hoặc xóa ảnh: xóa sạch file tạm cũ của cả 3 cấp và clear cả 3 audio player
-    input_image.change(
-        fn=on_image_change_or_clear,
-        inputs=[session_audio_tracker],
-        outputs=[out_audio_lvl1, out_audio_lvl2, out_audio_lvl3, out_tts_status, session_audio_tracker]
-    )
-
-    input_image.clear(
-        fn=on_image_change_or_clear,
-        inputs=[session_audio_tracker],
-        outputs=[out_audio_lvl1, out_audio_lvl2, out_audio_lvl3, out_tts_status, session_audio_tracker]
-    )
-
-    # 4. Bấm nút Đặt lại: xóa file tạm và reset toàn bộ
-    btn_clear.click(
-        fn=on_reset_click,
-        inputs=[session_audio_tracker],
-        outputs=[
-            input_image,
-            out_banner,
-            out_meta_df,
-            out_matrix_df,
-            out_desc_5s,
-            out_audio_lvl1,
-            out_desc_30s,
-            out_audio_lvl2,
-            out_desc_study,
-            out_audio_lvl3,
-            out_vichartfact,
-            out_tts_status,
-            session_audio_tracker
-        ]
-    )
-
+    # Footer theo chuẩn code.html
     gr.HTML("""
-    <div style="text-align: center; margin-top: 30px; padding: 12px; border-top: 1px solid #E5E8E8; color: #7F8C8D; font-size: 13px;">
-        Đề tài nghiên cứu khoa học V-ChartText © 2026 | Nhóm nghiên cứu AI Sư phạm & Trợ năng | Sẵn sàng triển khai Hugging Face Spaces & Colab
+    <div style="text-align: center; margin-top: 32px; padding: 16px; border-top: 1px solid #E2E6F0; color: #6B7280; font-size: 13px;">
+        Đề tài nghiên cứu khoa học V-ChartText © 2026 | Nhóm nghiên cứu AI Sư phạm &amp; Trợ năng | Sẵn sàng triển khai Hugging Face Spaces &amp; Colab
     </div>
     """)
 
