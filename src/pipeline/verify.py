@@ -11,9 +11,10 @@ Luật:
   R2 trùng: cùng (chuỗi, x) lặp lại cùng giá trị -> bỏ bản lặp; khác giá trị -> cờ "mâu thuẫn" cho cả hai
   R3 giá trị mẫu của prompt (123.4, 567.8, 1234, 5678) -> cờ
   R4 lệch bậc: giá trị gấp/kém >= 8 lần trung vị chuỗi và chia/nhân 10^k thì về gần trung vị -> cờ
-  R5 tổng %: biểu đồ tròn (mỗi hình) / miền (mỗi mốc) / đơn vị % có cấu trúc 100%: tổng lệch > 3 -> cờ cả nhóm
+  R5 tổng %: biểu đồ tròn (mỗi hình) / miền (mỗi mốc) / đơn vị % có cấu trúc 100%: tổng vượt 100 + 3 -> cờ cả nhóm;
+     tổng thiếu (< 97, thường do sót thành phần, số còn lại vẫn đúng) -> chỉ cờ mức biểu đồ
   R6 thiếu ô: biểu đồ nhiều chuỗi mà một chuỗi thiếu mốc x -> cờ mức biểu đồ (không bịa ô thiếu)
-  R7 chuỗi hằng: >= 4 mốc cùng một giá trị trong khi chuỗi khác thay đổi -> cờ (dấu hiệu chép/lặp)
+  R7 chuỗi hằng: >= 4 mốc cùng một giá trị trong khi chuỗi khác thay đổi -> cờ mức biểu đồ (dấu hiệu chép/lặp)
   R8 loại biểu đồ ngoài tập cho phép / đơn vị trống / tiêu đề mẫu -> sửa nhẹ hoặc cờ mức biểu đồ
 """
 import math
@@ -31,6 +32,7 @@ PLACEHOLDER_VALUES = {123.4, 567.8, 1234.0, 5678.0}
 PLACEHOLDER_TITLES = {"pie chart", "bar chart", "line chart", "biểu đồ", "dữ liệu biểu đồ", "tiêu đề", "...",
                       "chart", "title", "tên biểu đồ"}
 PCT_TOL = 3.0
+UNIT_FIX = {"ti": "tỉ", "ty": "tỷ", "nghin": "nghìn", "ngàn": "nghìn", "trieu": "triệu"}
 
 
 def nfc(s):
@@ -111,6 +113,8 @@ def verify(raw):
         unit = m.group(1).strip() if m else None
     if unit:
         unit = unit.strip().strip("()[]").strip() or None
+    if unit:   # mô hình hay bỏ dấu: "Ti USD" -> "Tỉ USD"
+        unit = " ".join(UNIT_FIX.get(w.lower(), w) for w in unit.split())
     if not unit and ct == "pie":
         unit = "%"
     if not unit:
@@ -198,9 +202,8 @@ def verify(raw):
     # R7: chuỗi hằng
     if len(by_series) > 1:
         for s, ps in by_series.items():
-            if len(ps) >= 4 and len({p["y"] for p in ps}) == 1:
-                for p in ps:
-                    p["flags"].append("chuỗi không đổi bất thường")
+            if len(ps) >= 4 and len({p["y"] for p in ps}) == 1:   # đo trên 200 ảnh: 100% điểm bị cờ vẫn đúng
+                flags.append(f"chuỗi '{s}' không đổi qua {len(ps)} mốc, cần kiểm tra")
 
     xs = list(dict.fromkeys(p["x"] for p in pts))
     series = list(by_series)
@@ -238,9 +241,11 @@ def verify(raw):
             for name, v in g.items():
                 tot = sum(q["y"] for q in v)
                 groups[name] = round(tot, 3)
-                if abs(tot - 100) > PCT_TOL and unit == "%":
+                if unit == "%" and tot > 100 + PCT_TOL:      # vượt 100%: chắc chắn có số sai
                     for q in v:
-                        q["flags"].append(f"tổng nhóm '{name}' = {round(tot, 1)}, khác 100")
+                        q["flags"].append(f"tổng nhóm '{name}' = {round(tot, 1)}, vượt 100")
+                elif unit == "%" and tot < 100 - PCT_TOL:    # thiếu: thường do sót thành phần, số còn lại vẫn đúng
+                    flags.append(f"nhóm '{name}' chỉ cộng được {round(tot, 1)}%, có thể thiếu thành phần")
 
     # R6: thiếu ô
     if len(series) > 1 and group_key != "series":

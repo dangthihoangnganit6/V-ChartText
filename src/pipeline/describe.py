@@ -252,6 +252,7 @@ def _describe_parts(t, w):
     parts = list(dict.fromkeys(p[other] for p in pts))
     intro += f" Các thành phần: {', '.join(map(str, parts[:8]))}" + (" và các thành phần khác." if len(parts) > 8 else ".")
     unit = t["unit"] or "%"
+    intro += f" Đơn vị: {unit}."   # luôn nêu đơn vị, kể cả khi số bị bỏ vì chưa xác minh
 
     g0 = groups[gnames[0]]
     s0 = w.sure(g0)

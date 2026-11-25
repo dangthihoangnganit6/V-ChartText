@@ -101,6 +101,7 @@ def to_speech(text):
     for a, b in UNIT_WORDS:
         t = re.sub(r"(?<=\w)\s*" + re.escape(a) + r"(?![\w])", b, t) if a == "%" else \
             re.sub(r"(?<![\w])" + re.escape(a) + r"(?![\w])", b.strip(), t)
+    t = re.sub(r"(?<![\w])%", "phần trăm", t)   # "%" đứng riêng, vd "Đơn vị: %."
     t = re.sub(r"\s+", " ", t).strip()
     return t
 
