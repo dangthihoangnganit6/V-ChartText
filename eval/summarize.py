@@ -35,7 +35,9 @@ def mean(xs):
 
 
 def model_of(stem):
-    return stem.split("__")[0]
+    """'Qwen..__extract__v2__charts' -> 'Qwen..@v2' (prompt v1 giữ tên cũ để không đổi bảng cũ)."""
+    parts = stem.split("__")
+    return parts[0] + (f"@{parts[2]}" if len(parts) > 2 and parts[2] != "v1" else "")
 
 
 def main():

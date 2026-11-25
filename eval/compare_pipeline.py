@@ -179,7 +179,7 @@ def main():
     for name in per:
         if not name.startswith(("B_", "B'_")):
             continue
-        model = name.split("_", 1)[1]
+        model = name.split("_", 1)[1].split("@")[0]   # B_Qwen..@v2 so với A_Qwen.. (mô tả trực tiếp)
         a = per.get("A_" + model)
         if not a:
             continue

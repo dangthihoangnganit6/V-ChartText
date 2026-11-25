@@ -83,7 +83,9 @@ def nfc(s):
 
 
 def model_of(p):
-    return Path(p).stem.split("__")[0]
+    """'Qwen..__extract__v2' -> 'Qwen..@v2' (prompt v1 giữ tên cũ)."""
+    parts = Path(p).stem.split("__")
+    return parts[0] + (f"@{parts[2]}" if len(parts) > 2 and parts[2] != "v1" else "")
 
 
 def extract_errors(path, done):

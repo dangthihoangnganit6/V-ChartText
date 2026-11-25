@@ -15,7 +15,7 @@ from PIL import Image
 from transformers import AutoModelForImageTextToText, AutoProcessor
 
 from common import Timer, append_result, done_ids, list_images
-from prompts import PROMPT_VERSION, PROMPTS
+from prompts import PROMPTS, PROMPTS_BY_VERSION
 
 
 def pick_dtype(name):
@@ -49,8 +49,12 @@ def main():
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--dtype", default="auto", choices=["auto", "fp16", "bf16", "fp32"])
     ap.add_argument("--ids", default="", help="chỉ chạy các id này, cách nhau bởi dấu phẩy")
+    ap.add_argument("--prompt_version", default="v1", choices=list(PROMPTS_BY_VERSION))
+    ap.add_argument("--shard", default="", help="'i/n': chỉ chạy phần thứ i (0..n-1) trong n phần, để chạy song song nhiều GPU")
     args = ap.parse_args()
 
+    PROMPT_VERSION = args.prompt_version
+    prompts = PROMPTS_BY_VERSION[PROMPT_VERSION]
     short = args.model.split("/")[-1]
     out = args.out or f"outputs/{short}__{args.task}__{PROMPT_VERSION}.jsonl"
 
@@ -65,6 +69,9 @@ def main():
     if args.ids:
         want = {x.strip() for x in args.ids.split(",")}
         items = [it for it in items if it[0] in want]
+    if args.shard:
+        i, n = map(int, args.shard.split("/"))
+        items = items[i::n]
     if args.limit:
         items = items[: args.limit]
     print(f"{len(items)} ảnh cần chạy -> {out}")
@@ -72,7 +79,7 @@ def main():
     for cid, path in items:
         messages = [{"role": "user", "content": [
             {"type": "image", "image": load_img(path, args.max_side)},
-            {"type": "text", "text": PROMPTS[args.task]},
+            {"type": "text", "text": prompts[args.task]},
         ]}]
         inputs = processor.apply_chat_template(
             messages, tokenize=True, add_generation_prompt=True,

@@ -39,3 +39,30 @@ EXTRACT_TABLE = (
 
 
 PROMPTS = {"describe": DESCRIBE, "extract": EXTRACT_TABLE}
+
+# ---------------------------------------------------------------- v2 (25/11): chỉ đổi prompt trích xuất
+# Sửa các lỗi đo được ở v1 (eval/results/error_stats.md, phân tích pipeline):
+#   - mất tiền tố bậc số của đơn vị ("Nghìn tấn" -> "tấn"): 28/41 trường hợp thiếu đơn vị ở pipeline B
+#   - tự đặt tiêu đề khi ảnh không có (L7: 41%)
+#   - tên lát / chuỗi viết khác ảnh (RA@5% biểu đồ tròn: chặt 0,17 so với nới 0,50)
+#   - đảo series và x ở biểu đồ miền / tròn nhiều hình
+EXTRACT_TABLE_V2 = EXTRACT_TABLE + (
+    "\nQuy tắc bắt buộc:\n"
+    "1. Đơn vị: chép NGUYÊN VĂN, giữ cả từ chỉ bậc số như nghìn, triệu, tỉ, tỷ. Ví dụ trục ghi "
+    "\"Nghìn tấn\" thì unit là \"Nghìn tấn\", KHÔNG được viết \"tấn\"; trục ghi \"Tỉ USD\" thì unit là "
+    "\"Tỉ USD\", KHÔNG được viết \"USD\". Nếu đơn vị nằm trong tiêu đề, ví dụ \"(Đơn vị: triệu người)\", "
+    "thì lấy đơn vị đó. Giữ đủ dấu tiếng Việt.\n"
+    "2. Tiêu đề: chỉ chép dòng tiêu đề thực sự in trên ảnh. Ảnh không có tiêu đề thì title là \"\"; "
+    "KHÔNG tự đặt tiêu đề. Chữ như \"Hình 2\", \"Biểu đồ 1\" đứng một mình không phải tiêu đề.\n"
+    "3. Tên chuỗi, tên lát, nhãn trục hoành: chép nguyên văn như trên ảnh, giữ dấu tiếng Việt, "
+    "không dịch, không viết tắt, không đổi chữ hoa thường.\n"
+    "4. Biểu đồ tròn: x là tên lát (thành phần), series là tên hình tròn ghi dưới hoặc trên hình "
+    "(ví dụ \"Năm 2010\"); chỉ có một hình tròn thì series là \"\".\n"
+    "5. Biểu đồ miền và biểu đồ có trục thời gian: x là các mốc trên trục hoành (thường là năm), "
+    "series là các thành phần trong chú giải. Không đảo hai trường này."
+)
+
+PROMPTS_BY_VERSION = {
+    "v1": PROMPTS,
+    "v2": {"describe": DESCRIBE, "extract": EXTRACT_TABLE_V2},
+}

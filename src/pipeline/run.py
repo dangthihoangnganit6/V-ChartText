@@ -67,7 +67,8 @@ def main():
         for cid, rec in labels.items():
             rows.append(run_one(cid, from_gold(rec), "gold", a.uncertain))
     else:
-        name = Path(a.extract).stem.split("__")[0]
+        parts = Path(a.extract).stem.split("__")   # <model>__extract__<prompt>
+        name = parts[0] + (f"@{parts[2]}" if len(parts) > 2 and parts[2] != "v1" else "")
         for line in open(a.extract, encoding="utf-8"):
             if not line.strip():
                 continue
