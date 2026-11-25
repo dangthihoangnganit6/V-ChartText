@@ -27,131 +27,131 @@
     "2020",
     "2021"
   ],
-  "values_shown_on_chart": true,
+  "values_shown_on_chart": false,
   "data": [
     {
       "series": "2020",
       "x": "TP Hồ Chí Minh",
-      "y": 44.0,
-      "y_raw": "44"
+      "y": 44.3,
+      "y_raw": "44,3"
     },
     {
       "series": "2020",
       "x": "Bắc Ninh",
       "y": 39.0,
-      "y_raw": "39"
+      "y_raw": "39,0"
     },
     {
       "series": "2020",
       "x": "Bình Dương",
-      "y": 27.0,
-      "y_raw": "27"
+      "y": 27.7,
+      "y_raw": "27,7"
     },
     {
       "series": "2020",
       "x": "Thái Nguyên",
-      "y": 23.0,
-      "y_raw": "23"
+      "y": 24.4,
+      "y_raw": "24,4"
     },
     {
       "series": "2020",
       "x": "Hải Phòng",
-      "y": 17.0,
-      "y_raw": "17"
+      "y": 18.8,
+      "y_raw": "18,8"
     },
     {
       "series": "2020",
       "x": "Đồng Nai",
-      "y": 17.0,
-      "y_raw": "17"
+      "y": 18.7,
+      "y_raw": "18,7"
     },
     {
       "series": "2020",
       "x": "Bắc Giang",
-      "y": 10.0,
-      "y_raw": "10"
+      "y": 10.8,
+      "y_raw": "10,8"
     },
     {
       "series": "2020",
       "x": "Hà Nội",
-      "y": 15.0,
-      "y_raw": "15"
+      "y": 15.1,
+      "y_raw": "15,1"
     },
     {
       "series": "2020",
       "x": "Hải Dương",
-      "y": 7.0,
-      "y_raw": "7"
+      "y": 7.8,
+      "y_raw": "7,8"
     },
     {
       "series": "2020",
       "x": "Phú Thọ",
-      "y": 5.0,
-      "y_raw": "5"
+      "y": 4.3,
+      "y_raw": "4,3"
     },
     {
       "series": "2021",
       "x": "TP Hồ Chí Minh",
-      "y": 45.0,
-      "y_raw": "45"
+      "y": 44.9,
+      "y_raw": "44,9"
     },
     {
       "series": "2021",
       "x": "Bắc Ninh",
-      "y": 45.0,
-      "y_raw": "45"
+      "y": 44.8,
+      "y_raw": "44,8"
     },
     {
       "series": "2021",
       "x": "Bình Dương",
-      "y": 33.0,
-      "y_raw": "33"
+      "y": 32.7,
+      "y_raw": "32,7"
     },
     {
       "series": "2021",
       "x": "Thái Nguyên",
-      "y": 30.0,
-      "y_raw": "30"
+      "y": 29.1,
+      "y_raw": "29,1"
     },
     {
       "series": "2021",
       "x": "Hải Phòng",
-      "y": 25.0,
-      "y_raw": "25"
+      "y": 23.8,
+      "y_raw": "23,8"
     },
     {
       "series": "2021",
       "x": "Đồng Nai",
-      "y": 23.0,
-      "y_raw": "23"
+      "y": 21.7,
+      "y_raw": "21,7"
     },
     {
       "series": "2021",
       "x": "Bắc Giang",
-      "y": 15.0,
-      "y_raw": "15"
+      "y": 16.1,
+      "y_raw": "16,1"
     },
     {
       "series": "2021",
       "x": "Hà Nội",
-      "y": 14.0,
-      "y_raw": "14"
+      "y": 15.5,
+      "y_raw": "15,5"
     },
     {
       "series": "2021",
       "x": "Hải Dương",
-      "y": 9.0,
-      "y_raw": "9"
+      "y": 10.0,
+      "y_raw": "10,0"
     },
     {
       "series": "2021",
       "x": "Phú Thọ",
-      "y": 7.0,
-      "y_raw": "7"
+      "y": 8.2,
+      "y_raw": "8,2"
     }
   ],
   "reviewer": "Ngân",
-  "notes": "",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này [25/11] Đọc lại giá trị theo vạch trục (ảnh không in số).",
   "bar_mode": "grouped",
   "imported_at": "2026-11-20"
 }

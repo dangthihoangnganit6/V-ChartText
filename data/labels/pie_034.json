@@ -67,6 +67,7 @@
     }
   ],
   "reviewer": "Giang",
-  "notes": "Ảnh không có tiêu đề",
-  "imported_at": "2026-11-20"
+  "notes": "Ảnh không có tiêu đề [25/11] Trùng ảnh/số liệu với pie_011 (Biểu đồ tròn_11).",
+  "imported_at": "2026-11-20",
+  "duplicate_of": "pie_011"
 }

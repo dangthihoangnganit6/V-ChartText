@@ -29,7 +29,7 @@
     "Ngành C",
     "Ngành D"
   ],
-  "values_shown_on_chart": true,
+  "values_shown_on_chart": false,
   "data": [
     {
       "series": "Ngành A",
@@ -130,8 +130,8 @@
     {
       "series": "Ngành C",
       "x": "1990",
-      "y": 15.0,
-      "y_raw": "15"
+      "y": 17.0,
+      "y_raw": "17"
     },
     {
       "series": "Ngành C",
@@ -178,8 +178,8 @@
     {
       "series": "Ngành D",
       "x": "1990",
-      "y": 28.0,
-      "y_raw": "28"
+      "y": 38.0,
+      "y_raw": "38"
     },
     {
       "series": "Ngành D",
@@ -225,6 +225,6 @@
     }
   ],
   "reviewer": "Nhi",
-  "notes": "",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
   "imported_at": "2026-11-20"
 }

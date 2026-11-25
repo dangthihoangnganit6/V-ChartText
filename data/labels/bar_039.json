@@ -20,7 +20,7 @@
     "unit": null
   },
   "y_axis": {
-    "label": null,
+    "label": "Sản lượng",
     "unit": "Nghìn tấn"
   },
   "legend": [
@@ -62,8 +62,8 @@
     {
       "series": "Nuôi trồng",
       "x": "2005",
-      "y": 1487.0,
-      "y_raw": "1487"
+      "y": 1478.0,
+      "y_raw": "1478"
     },
     {
       "series": "Nuôi trồng",

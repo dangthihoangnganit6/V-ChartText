@@ -21,7 +21,7 @@
   },
   "y_axis": {
     "label": null,
-    "unit": "Đơn vị đo"
+    "unit": null
   },
   "legend": [
     "Công nghiệp khai khoáng",
@@ -154,6 +154,6 @@
     }
   ],
   "reviewer": "Nhi",
-  "notes": "",
+  "notes": "[25/11] Chỉ số phát triển (năm 2018 = 100), ảnh không ghi đơn vị.",
   "imported_at": "2026-11-20"
 }

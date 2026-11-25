@@ -10,10 +10,13 @@
   },
   "annotator": "giang",
   "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 120,
   "chart_type": "area",
   "title": "",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
@@ -42,7 +45,7 @@
     {
       "series": "Nông - lâm - ngư nghiệp",
       "x": "2010",
-      "y": 21,
+      "y": 21.0,
       "y_raw": "21"
     },
     {
@@ -66,7 +69,7 @@
     {
       "series": "Công nghiệp - xây dựng",
       "x": "2010",
-      "y": 41,
+      "y": 41.0,
       "y_raw": "41"
     },
     {
@@ -78,7 +81,7 @@
     {
       "series": "Dịch vụ",
       "x": "1995",
-      "y": 44,
+      "y": 44.0,
       "y_raw": "44"
     },
     {
@@ -90,7 +93,7 @@
     {
       "series": "Dịch vụ",
       "x": "2010",
-      "y": 38,
+      "y": 38.0,
       "y_raw": "38"
     },
     {
@@ -99,5 +102,8 @@
       "y": 43.3,
       "y_raw": "43,3"
     }
-  ]
+  ],
+  "reviewer": "Giang",
+  "notes": "Mấy cái biểu đồ miền này không có tiêu đề nên model đoán sai hết luôn á",
+  "imported_at": "2026-11-25"
 }

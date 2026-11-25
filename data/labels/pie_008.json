@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 64,
   "chart_type": "pie",
-  "title": "Tỷ lệ người đạt giải Nobel theo các lĩnh vực năm 2020",
+  "title": "Tỉ lệ người đạt giải Nobel theo các lĩnh vực tính đến năm 2020",
   "x_axis": {
     "label": "Lĩnh vực",
     "unit": null

@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 12,
   "chart_type": "line",
-  "title": "Biểu đồ thể hiện tốc độ tăng trưởng diện tích, năng suất và sản lượng lúa cà nam của nước ta giai đoạn 1980 - 2005",
+  "title": "Biểu đồ thể hiện tốc độ tăng trưởng diện tích, năng suất và sản lượng lúa cả năm của nước ta giai đoạn 1980 - 2005",
   "x_axis": {
     "label": "Năm",
     "unit": null

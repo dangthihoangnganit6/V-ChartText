@@ -28,7 +28,7 @@
     "Qua thư/email",
     "Trực tiếp"
   ],
-  "values_shown_on_chart": true,
+  "values_shown_on_chart": false,
   "data": [
     {
       "series": "Qua điện thoại",
@@ -93,14 +93,14 @@
     {
       "series": "Qua thư/email",
       "x": "Tháng 5",
-      "y": 395.0,
-      "y_raw": "395"
+      "y": 370.0,
+      "y_raw": "370"
     },
     {
       "series": "Qua thư/email",
       "x": "Tháng 6",
-      "y": 385.0,
-      "y_raw": "385"
+      "y": 340.0,
+      "y_raw": "340"
     },
     {
       "series": "Trực tiếp",
@@ -111,8 +111,8 @@
     {
       "series": "Trực tiếp",
       "x": "Tháng 2",
-      "y": 650.0,
-      "y_raw": "650"
+      "y": 680.0,
+      "y_raw": "680"
     },
     {
       "series": "Trực tiếp",
@@ -140,6 +140,6 @@
     }
   ],
   "reviewer": "Nhi",
-  "notes": "",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
   "imported_at": "2026-11-20"
 }

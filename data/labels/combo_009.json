@@ -20,8 +20,8 @@
     "unit": null
   },
   "y_axis": {
-    "label": null,
-    "unit": "Nghìn ha"
+    "label": "Sản lượng",
+    "unit": "Triệu tấn"
   },
   "legend": [
     "Diện tích",
@@ -79,10 +79,10 @@
     }
   ],
   "reviewer": "Giang",
-  "notes": "Diện tích (cột) theo trục phải Nghìn ha; Sản lượng (đường) theo trục trái Triệu tấn",
+  "notes": "Diện tích (cột) theo trục phải Nghìn ha; Sản lượng (đường) theo trục trái Triệu tấn. [25/11] Sửa y_axis/y2_axis cho khớp ảnh: y_axis = trục trái (Sản lượng, Triệu tấn), y2_axis = trục phải (Diện tích, Nghìn ha); số liệu đã soát, đúng.",
   "y2_axis": {
-    "label": null,
-    "unit": "Triệu tấn"
+    "label": "Diện tích",
+    "unit": "Nghìn ha"
   },
   "imported_at": "2026-11-20"
 }

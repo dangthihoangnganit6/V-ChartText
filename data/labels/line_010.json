@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 13,
   "chart_type": "line",
-  "title": "Biểu đồ tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới từ năm 1950 đến 2003",
+  "title": "Biểu đồ thể hiện tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới thời kì 1950 - 2003",
   "x_axis": {
     "label": "Năm",
     "unit": null
@@ -177,6 +177,6 @@
     }
   ],
   "reviewer": "Nhi",
-  "notes": "",
+  "notes": "[25/11] Dầu mỏ 1960 và Thép 1960 không in số trên ảnh (200, 150 là ước lượng).",
   "imported_at": "2026-11-20"
 }

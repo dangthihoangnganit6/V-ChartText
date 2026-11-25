@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 27,
   "chart_type": "line",
-  "title": "Biểu đồ tỷ lệ thay đổi GDP của Liên bang Nga giai đoạn 1990-2004",
+  "title": "Biểu đồ sự thay đổi GDP của Liên bang Nga giai đoạn 1990-2004",
   "x_axis": {
     "label": "Năm",
     "unit": null

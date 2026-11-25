@@ -1,0 +1,42 @@
+﻿id,anh,ten_goc,dong_sheet,loai,so_diem,nguoi_gan,nguoi_soat,ket_qua,so_diem_sai,loi_khac,ghi_chu
+bar_010,data/images/bar_010.png,Biểu đồ cột_10.png,153,bar,9,ngan,giang,sua,3,truc_x tieu_de chu_giai,"[Claude 22/11] Mốc đầu là 2010, nhãn ghi 2000 (cả 3 chuỗi). Chính tả: 'vung'->'vùng', 'Bô'->'Bộ' (tiêu đề, chuỗi Trung du và miền núi Bắc Bộ, Đông Nam Bộ). Giá trị đúng."
+bar_011,data/images/bar_011.png,Biểu đồ cột_11.png,154,bar,8,ngan,giang,sua,0,chu_giai,[Claude 22/11] Chuỗi 'Hỗ trợ' phải là 'Hồ tiêu'. Giá trị đúng.
+bar_016,data/images/bar_016.png,Biểu đồ cột_16.png,159,bar,6,ngan,giang,sua,0,chu_giai tieu_de,"[Claude 22/11] Ảnh ghi 'Ma-lai-xi-a', 'Xin-ga-po' (nhãn: Malaysia, Singapore); tiêu đề ảnh: 'Quy mô GDP của Ma-lai-xi-a và Xin-ga-po, giai đoạn 2010 - 2016'. Giá trị đúng."
+bar_024,data/images/bar_024.png,Biểu đồ cột_24.png,167,bar,4,ngan,giang,sua,0,khong_ghi_so,"[Claude 22/11] Giá trị đúng theo vạch chia, nhưng ảnh KHÔNG in số trên cột -> thêm 'ẢNH KHÔNG GHI SỐ' (đang values_shown_on_chart = true)."
+bar_028,data/images/bar_028.png,Biểu đồ cột_28.png,171,bar,6,ngan,giang,dat,0,,"[Claude 22/11] Đúng. Ảnh gốc tự đặt nhầm tên trục (tung 'Cỡ áo', hoành 'Số áo bán được'); nhãn giữ theo ảnh."
+bar_029,data/images/bar_029.png,Biểu đồ cột_29.png,172,bar,5,ngan,giang,sua,0,truc_x khong_ghi_so,[Claude 22/11] 'Thò' -> 'Thỏ'. Ảnh không in số trên cột -> thêm 'ẢNH KHÔNG GHI SỐ'. Giá trị đúng theo vạch chia.
+bar_041,data/images/bar_041.png,Biểu đồ cột_41.png,184,bar,10,ngan,giang,dat,0,,[Claude 22/11] Đúng.
+bar_043,data/images/bar_043.png,Biểu đồ cột_43.png,186,bar,20,ngan,giang,dat,0,,[Claude 22/11] Đúng.
+bar_053,data/images/bar_053.png,Biểu đồ cột_52.png,195,bar,21,ngan,giang,sua,1,,"[Claude 22/11] Xuất siêu 2017: ảnh in 32,26, nhãn 32,36."
+bar_060,data/images/bar_060.png,Biểu đồ cột_59.png,202,bar,30,ngan,giang,sua,5,khong_ghi_so,"[Claude 22/11] Ảnh không in số (ước lượng theo vạch) -> thêm 'ẢNH KHÔNG GHI SỐ'. Lệch rõ: Hàn Quốc 2016 ≈ 7,0 (nhãn 5,5); Hàn Quốc 2023 ≈ 4,4 (6,7); Singapore 2015 ≈ 1,2 (2,3); Singapore 2018 ≈ 5,1 (2,8); Nhật Bản 2014 ≈ 2,0 (5,9)."
+bar_062,data/images/bar_062.png,Biểu đồ cột_61.png,204,bar,15,ngan,giang,dat,0,,[Claude 22/11] Đúng (kể cả -254).
+line_010,data/images/line_010.jpeg,Biểu đồ đường_10.jpeg,13,line,24,nhi,giang,sua,0,tieu_de,"[Claude 22/11] Tiêu đề ảnh: 'Biểu đồ thể hiện tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới thời kì 1950 – 2003'. Dầu mỏ 1960 và Thép 1960 không in số (nhãn 200, 150 là ước lượng; theo hình có vẻ ≈ 220, ≈ 170, cần người xem)."
+pie_003,data/images/pie_003.png,Biểu đồ tròn_3.png,59,pie,6,nhi,giang,sua,0,tieu_de,[Claude 22/11] Tiêu đề ảnh: 'Diện tích rừng bị cháy theo vùng ở Việt Nam năm 2016' (nhãn thiếu 'theo vùng'). Giá trị và thứ tự lát đúng.
+pie_020,data/images/pie_020.png,Biểu đồ tròn_20.png,76,pie,6,nhi,giang,dat,0,,"[Claude 22/11] Đúng. Ảnh không có tiêu đề riêng, tiêu đề lấy từ câu hỏi là hợp lý."
+pie_022,data/images/pie_022.png,Biểu đồ tròn_22.png,78,pie,4,nhi,giang,sua,0,truc_x,[Claude 22/11] 'Vễn thông' -> 'Viễn thông' (ảnh: 'Doanh thu dịch vụ viễn thông'). Giá trị đúng.
+area_001,data/images/area_001.webp,Biểu đồ miền_1.webp,,area,12,giang,ngan,dat,0,,[Claude 22/11] Đúng.
+area_016,data/images/area_016.png,Biểu đồ miền_16.png,135,area,15,giang,ngan,dat,0,,[Claude 22/11] Đúng.
+combo_005,data/images/combo_005.png,Biểu đồ kết hợp_5.png,103,combo,8,giang,ngan,dat,0,,[Claude 22/11] Đúng. Ảnh là cột chồng Khai thác + Nuôi trồng chỉ in tổng; nhãn lấy tổng là hợp lý.
+combo_020,data/images/combo_020.png,Biểu đồ kết hợp_20.png,118,combo,12,giang,ngan,dat,0,,[Claude 22/11] Đúng.
+line_008,data/images/line_008.png,Biểu đồ đường_8.png,11,line,20,nhi,ngan,sua,0,don_vi,"[Claude 22/11] unit = 'Đơn vị đo' là chữ mẫu của Sheet; ảnh không ghi đơn vị (chỉ số, 2018 = 100) -> để trống. Giá trị đúng."
+line_016,data/images/line_016.png,Biểu đồ đường_16.png,19,line,7,nhi,ngan,dat,0,,"[Claude 22/11] Đúng. Ảnh in nhầm 'Năm 2029' ở mốc thứ 2, nhãn ghi 2019 (nên ghi chú lỗi in)."
+line_020,data/images/line_020.png,Biểu đồ đường_20.png,23,line,10,nhi,ngan,sua,0,tieu_de,"[Claude 22/11] Tiêu đề ảnh có thêm 'gần đây'. Tên chuỗi trên ảnh: 'Tỷ giá USD/VND (Vietcombank)', 'Tỷ giá USD/VND (Tự do)'. Giá trị đúng."
+line_021,data/images/line_021.png,Biểu đồ đường_21.png,24,line,28,nhi,ngan,dat,0,,"[Claude 22/11] Đúng. Nhãn gộp 'Thực tế' + 'Dự báo' thành chuỗi Nam / Nữ, chấp nhận được."
+line_032,data/images/line_032.png,Biểu đồ đường_32.png,35,line,8,nhi,ngan,dat,0,,[Claude 22/11] Đúng.
+line_051,data/images/line_051.png,Biểu đồ đường_51.png,50,line,22,nhi,ngan,dat,0,,"[Claude 22/11] Ảnh không in số, đã có cờ; các ước lượng nằm trong ±5% theo vạch chia."
+line_053,data/images/line_053.png,Biểu đồ đường_53.png,52,line,32,nhi,ngan,sua,2,khong_ghi_so,[Claude 22/11] Ảnh không in số -> thêm 'ẢNH KHÔNG GHI SỐ'. Ngành C 1990 ≈ 17 (nhãn 15); Ngành D 1990 ≈ 38 (nhãn 28). Các điểm khác trong ±5%.
+pie_007,data/images/pie_007.png,Biểu đồ tròn_7.png,63,pie,4,nhi,ngan,sua,0,tieu_de,[Claude 22/11] Tiêu đề ảnh: 'Tỉ lệ phần trăm các loại con vật nuôi tại nông trường Phong Phú' (nhãn thiếu 'con'). Giá trị đúng.
+pie_010,data/images/pie_010.png,Biểu đồ tròn_10.png,66,pie,6,nhi,ngan,sua,2,truc_x,"[Claude 22/11] 'Kinh tế nước ngoài' phải là 'Kinh tế ngoài Nhà nước' (lát 83,3 / 85,2), sai nghĩa. 'Kinh tế có vốn đầu tư nước ngoài' -> ảnh ghi 'Khu vực có vốn đầu tư nước ngoài'. Giá trị đúng."
+pie_036,data/images/pie_036.jpg,Biểu đồ tròn_36.jpg,92,pie,10,giang,ngan,dat,0,,[Claude 22/11] Đúng.
+pie_038,data/images/pie_038.jpg,Biểu đồ tròn_38.jpg,94,pie,15,giang,ngan,dat,0,,"[Claude 22/11] Đúng. Ảnh không có chú giải, đặt tên lát theo màu là hợp lý."
+area_002,data/images/area_002.jpg,Biểu đồ miền_2.jpg,121,area,12,giang,nhi,dat,0,,"[Claude 22/11] Đúng. Nhãn này do Claude soạn nháp: lần soát này không độc lập, cần người xem lại."
+area_006,data/images/area_006.png,Biểu đồ miền_6.png,125,area,8,giang,nhi,dat,0,,"[Claude 22/11] CẦN NGƯỜI XÁC NHẬN: số Xuất khẩu 1985 in mờ trông như '30,3', nhưng 39,3 khớp tổng 100% (60,7 + 39,3) và vị trí ranh giới (~39%). Nhãn do Claude soạn nháp: lần soát này không độc lập."
+bar_006,data/images/bar_006.png,Biểu đồ cột_6.png,149,bar,6,ngan,nhi,dat,0,,[Claude 22/11] Đúng.
+bar_009,data/images/bar_009.png,Biểu đồ cột_9.png,152,bar,4,ngan,nhi,dat,0,,[Claude 22/11] Đúng.
+bar_072,data/images/bar_072.png,Biểu đồ cột_71.png,214,bar,12,ngan,nhi,dat,0,,"[Claude 22/11] Đúng theo vạch chia, đã có cờ không ghi số."
+bar_074,data/images/bar_074.png,Biểu đồ cột_73.png,216,bar,6,ngan,nhi,sua,0,tieu_de,[Claude 22/11] Ảnh không có tiêu đề (chỉ 'Hình 2'); nhãn tự đặt 'Dữ liệu về lượng mưa (mm)' -> để trống (ảnh hưởng chỉ số L7 bịa tiêu đề). Giá trị đúng.
+combo_002,data/images/combo_002.png,Biểu đồ kết hợp_2.png,100,combo,10,giang,nhi,dat,0,,"[Claude 22/11] Đúng. Ảnh in 'Nghìn/ha' (lỗi in), nhãn 'Nghìn ha' hợp lý."
+combo_010,data/images/combo_010.png,Biểu đồ kết hợp_10.png,108,combo,8,giang,nhi,sua,0,don_vi,"[Claude 22/11] Trục trái 'Triệu tấn' (Sản lượng), trục phải 'Triệu ha' (Diện tích); nhãn đặt y_axis = Triệu ha, y2_axis = Triệu tấn, ngược với ảnh. Giá trị đúng."
+combo_017,data/images/combo_017.png,Biểu đồ kết hợp_17.png,115,combo,24,giang,nhi,dat,0,,"[Claude 22/11] Ảnh không in số, đã có cờ; ước lượng khớp vạch chia."
+pie_024,data/images/pie_024.png,Biểu đồ tròn_24.png,80,pie,8,giang,nhi,dat,0,,[Claude 22/11] Đúng.
+pie_029,data/images/pie_029.png,Biểu đồ tròn_29.png,85,pie,4,giang,nhi,dat,0,,[Claude 22/11] Đúng.

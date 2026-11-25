@@ -25,7 +25,7 @@
   },
   "legend": [
     "Khai thác",
-    "Nước Trong"
+    "Nuôi trồng"
   ],
   "values_shown_on_chart": true,
   "data": [
@@ -54,25 +54,25 @@
       "y_raw": "1802,6"
     },
     {
-      "series": "Nước Trong",
+      "series": "Nuôi trồng",
       "x": "1990",
       "y": 162.1,
       "y_raw": "162,1"
     },
     {
-      "series": "Nước Trong",
+      "series": "Nuôi trồng",
       "x": "1994",
       "y": 344.1,
       "y_raw": "344,1"
     },
     {
-      "series": "Nước Trong",
+      "series": "Nuôi trồng",
       "x": "1998",
       "y": 425.0,
       "y_raw": "425"
     },
     {
-      "series": "Nước Trong",
+      "series": "Nuôi trồng",
       "x": "2002",
       "y": 844.8,
       "y_raw": "844,8"

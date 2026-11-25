@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 72,
   "chart_type": "pie",
-  "title": "Cơ cấu diện tích lúa cà năm phân theo mùa vụ nước ta, năm 2010 và 2016",
+  "title": "Cơ cấu diện tích lúa cả năm phân theo mùa vụ nước ta, năm 2010 và 2016",
   "x_axis": {
     "label": "Mùa vụ",
     "unit": null
@@ -31,37 +31,37 @@
   "data": [
     {
       "series": "Cơ cấu năm 2010",
-      "x": "Lúa đồng Xuân",
+      "x": "Lúa đông xuân",
       "y": 41.2,
       "y_raw": "41,2"
     },
     {
       "series": "Cơ cấu năm 2010",
-      "x": "Lúa hè Thu",
+      "x": "Lúa hè thu",
       "y": 32.5,
       "y_raw": "32,5"
     },
     {
       "series": "Cơ cấu năm 2010",
-      "x": "Lúa Mùa",
+      "x": "Lúa mùa",
       "y": 26.3,
       "y_raw": "26,3"
     },
     {
       "series": "Cơ cấu năm 2016",
-      "x": "Lúa đồng Xuân",
+      "x": "Lúa đông xuân",
       "y": 39.6,
       "y_raw": "39,6"
     },
     {
       "series": "Cơ cấu năm 2016",
-      "x": "Lúa hè Thu",
+      "x": "Lúa hè thu",
       "y": 36.0,
       "y_raw": "36"
     },
     {
       "series": "Cơ cấu năm 2016",
-      "x": "Lúa Mùa",
+      "x": "Lúa mùa",
       "y": 24.4,
       "y_raw": "24,4"
     }

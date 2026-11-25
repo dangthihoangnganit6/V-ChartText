@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 34,
   "chart_type": "line",
-  "title": "Biểu đồ thể hiện tỷ giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hoà Nam Phi giai đoạn 2000-2020",
+  "title": "Biểu đồ thể hiện trị giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hoà Nam Phi giai đoạn 2000-2020",
   "x_axis": {
     "label": "Năm",
     "unit": null

@@ -27,43 +27,43 @@
   "values_shown_on_chart": true,
   "data": [
     {
-      "series": "Số lượng lương thực",
+      "series": "Sản lượng lương thực",
       "x": "1995",
       "y": 62.0,
       "y_raw": "62,0"
     },
     {
-      "series": "Số lượng lương thực",
+      "series": "Sản lượng lương thực",
       "x": "1998",
       "y": 46.9,
       "y_raw": "46,9"
     },
     {
-      "series": "Số lượng lương thực",
+      "series": "Sản lượng lương thực",
       "x": "1999",
       "y": 53.8,
       "y_raw": "53,8"
     },
     {
-      "series": "Số lượng lương thực",
+      "series": "Sản lượng lương thực",
       "x": "2000",
       "y": 64.3,
       "y_raw": "64,3"
     },
     {
-      "series": "Số lượng lương thực",
+      "series": "Sản lượng lương thực",
       "x": "2001",
       "y": 83.6,
       "y_raw": "83,6"
     },
     {
-      "series": "Số lượng lương thực",
+      "series": "Sản lượng lương thực",
       "x": "2002",
       "y": 92.0,
       "y_raw": "92,0"
     },
     {
-      "series": "Số lượng lương thực",
+      "series": "Sản lượng lương thực",
       "x": "2005",
       "y": 78.2,
       "y_raw": "78,2"

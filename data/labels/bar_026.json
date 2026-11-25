@@ -20,11 +20,11 @@
     "unit": null
   },
   "y_axis": {
-    "label": null,
-    "unit": "Số học sinh"
+    "label": "Số học sinh",
+    "unit": null
   },
   "legend": [],
-  "values_shown_on_chart": true,
+  "values_shown_on_chart": false,
   "data": [
     {
       "series": "Số học sinh",
@@ -58,7 +58,7 @@
     }
   ],
   "reviewer": "Ngân",
-  "notes": "",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
   "bar_mode": "single",
   "imported_at": "2026-11-20"
 }

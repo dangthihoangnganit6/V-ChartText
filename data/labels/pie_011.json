@@ -31,7 +31,7 @@
   "data": [
     {
       "series": "Cơ cấu năm 2010",
-      "x": "Kinh tế nước ngoài",
+      "x": "Kinh tế ngoài Nhà nước",
       "y": 60.3,
       "y_raw": "60,3"
     },
@@ -43,13 +43,13 @@
     },
     {
       "series": "Cơ cấu năm 2010",
-      "x": "Kinh tế có vốn đầu tư nước ngoài",
+      "x": "Khu vực có vốn đầu tư nước ngoài",
       "y": 7.9,
       "y_raw": "7,9"
     },
     {
       "series": "Cơ cấu năm 2016",
-      "x": "Kinh tế nước ngoài",
+      "x": "Kinh tế ngoài Nhà nước",
       "y": 73.8,
       "y_raw": "73,8"
     },
@@ -61,7 +61,7 @@
     },
     {
       "series": "Cơ cấu năm 2016",
-      "x": "Kinh tế có vốn đầu tư nước ngoài",
+      "x": "Khu vực có vốn đầu tư nước ngoài",
       "y": 11.2,
       "y_raw": "11,2"
     }

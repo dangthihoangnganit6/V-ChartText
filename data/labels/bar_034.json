@@ -24,47 +24,47 @@
     "unit": null
   },
   "legend": [],
-  "values_shown_on_chart": true,
+  "values_shown_on_chart": false,
   "data": [
     {
-      "series": "không có",
+      "series": "Giá trị",
       "x": "Đỏ",
       "y": 3.0,
       "y_raw": "3"
     },
     {
-      "series": "không có",
+      "series": "Giá trị",
       "x": "Xanh da trời",
       "y": 6.0,
       "y_raw": "6"
     },
     {
-      "series": "không có",
+      "series": "Giá trị",
       "x": "Xanh lá cây",
       "y": 2.0,
       "y_raw": "2"
     },
     {
-      "series": "không có",
+      "series": "Giá trị",
       "x": "vàng",
       "y": 3.0,
       "y_raw": "3"
     },
     {
-      "series": "không có",
+      "series": "Giá trị",
       "x": "Da Cam",
       "y": 5.0,
       "y_raw": "5"
     },
     {
-      "series": "không có",
+      "series": "Giá trị",
       "x": "Hồng",
       "y": 4.0,
       "y_raw": "4"
     }
   ],
   "reviewer": "Ngân",
-  "notes": "",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
   "bar_mode": "single",
   "imported_at": "2026-11-20"
 }

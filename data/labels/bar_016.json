@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 159,
   "chart_type": "bar",
-  "title": "Quy mô GDP của Malaysia và Singapo, giai đoạn 2010 - 2016",
+  "title": "Quy mô GDP của Ma-lai-xi-a và Xin-ga-po, giai đoạn 2010 - 2016",
   "x_axis": {
     "label": "Năm",
     "unit": null
@@ -24,43 +24,43 @@
     "unit": "Tỷ đô la Mỹ"
   },
   "legend": [
-    "Malaysia",
-    "Singapore"
+    "Ma-lai-xi-a",
+    "Xin-ga-po"
   ],
   "values_shown_on_chart": true,
   "data": [
     {
-      "series": "Malaysia",
+      "series": "Ma-lai-xi-a",
       "x": "2010",
       "y": 255.0,
       "y_raw": "255"
     },
     {
-      "series": "Malaysia",
+      "series": "Ma-lai-xi-a",
       "x": "2013",
       "y": 323.0,
       "y_raw": "323"
     },
     {
-      "series": "Malaysia",
+      "series": "Ma-lai-xi-a",
       "x": "2016",
       "y": 297.0,
       "y_raw": "297"
     },
     {
-      "series": "Singapore",
+      "series": "Xin-ga-po",
       "x": "2010",
       "y": 236.0,
       "y_raw": "236"
     },
     {
-      "series": "Singapore",
+      "series": "Xin-ga-po",
       "x": "2013",
       "y": 303.0,
       "y_raw": "303"
     },
     {
-      "series": "Singapore",
+      "series": "Xin-ga-po",
       "x": "2016",
       "y": 297.0,
       "y_raw": "297"

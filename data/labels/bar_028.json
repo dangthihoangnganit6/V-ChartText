@@ -16,12 +16,12 @@
   "chart_type": "bar",
   "title": "Số áo sơ mi bán được trong tháng đầu tiên",
   "x_axis": {
-    "label": "Số áo sơ mi bán được",
+    "label": "Cỡ áo",
     "unit": null
   },
   "y_axis": {
-    "label": null,
-    "unit": "Cỡ áo"
+    "label": "Số áo bán được",
+    "unit": null
   },
   "legend": [],
   "values_shown_on_chart": true,
@@ -64,7 +64,7 @@
     }
   ],
   "reviewer": "Ngân",
-  "notes": "",
+  "notes": "[24/11] Ảnh gốc ghi đảo tên trục (trục tung 'Cỡ áo', trục hoành 'Số áo bán được'). Nhãn sửa theo nghĩa: x = cỡ áo (37-42), y = số áo bán được; ảnh không ghi đơn vị nên unit = null. Giá trị đã soát lại, đúng.",
   "bar_mode": "single",
   "imported_at": "2026-11-20"
 }

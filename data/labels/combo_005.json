@@ -84,5 +84,6 @@
     "label": null,
     "unit": "Tỉ đồng"
   },
-  "imported_at": "2026-11-20"
+  "imported_at": "2026-11-20",
+  "duplicate_of": "combo_001"
 }

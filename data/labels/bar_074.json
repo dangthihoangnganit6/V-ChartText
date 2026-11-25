@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 216,
   "chart_type": "bar",
-  "title": "Dữ liệu về lượng mưa (mm)",
+  "title": "",
   "x_axis": {
     "label": "Tháng",
     "unit": null

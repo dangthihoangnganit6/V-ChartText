@@ -26,7 +26,7 @@
   "legend": [
     "Cà phê",
     "Cao su",
-    "Hỗ trợ",
+    "Hồ tiêu",
     "Điều"
   ],
   "values_shown_on_chart": true,
@@ -56,13 +56,13 @@
       "y_raw": "232,2"
     },
     {
-      "series": "Hỗ trợ",
+      "series": "Hồ tiêu",
       "x": "2010",
       "y": 22.6,
       "y_raw": "22,6"
     },
     {
-      "series": "Hỗ trợ",
+      "series": "Hồ tiêu",
       "x": "2021",
       "y": 83.5,
       "y_raw": "83,5"

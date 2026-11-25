@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 63,
   "chart_type": "pie",
-  "title": "Tỉ lệ phần trăm các loại vật nuôi tại nông trường Phong Phú",
+  "title": "Tỉ lệ phần trăm các loại con vật nuôi tại nông trường Phong Phú",
   "x_axis": {
     "label": "Loài",
     "unit": null

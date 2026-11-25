@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 59,
   "chart_type": "pie",
-  "title": "Diện tích rừng bị cháy ở Việt Nam năm 2016",
+  "title": "Diện tích rừng bị cháy theo vùng ở Việt Nam năm 2016",
   "x_axis": {
     "label": "Vùng",
     "unit": null

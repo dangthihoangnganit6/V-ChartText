@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 5,
   "chart_type": "line",
-  "title": "Nhiệt độ Hà Nội trong một ngày mùa thu",
+  "title": "Nhiệt độ tại Hà Nội vào một ngày mùa thu",
   "x_axis": {
     "label": "Giờ",
     "unit": null

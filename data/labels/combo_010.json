@@ -20,8 +20,8 @@
     "unit": null
   },
   "y_axis": {
-    "label": null,
-    "unit": "Triệu ha"
+    "label": "Sản lượng",
+    "unit": "Triệu tấn"
   },
   "legend": [
     "Diện tích gieo trồng",
@@ -81,8 +81,8 @@
   "reviewer": "Giang",
   "notes": "Diện tích (cột) theo trục phải Triệu ha; Sản lượng (đường) theo trục trái Triệu tấn",
   "y2_axis": {
-    "label": null,
-    "unit": "Triệu tấn"
+    "label": "Diện tích gieo trồng",
+    "unit": "Triệu ha"
   },
   "imported_at": "2026-11-20"
 }

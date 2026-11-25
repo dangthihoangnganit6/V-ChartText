@@ -28,7 +28,7 @@
     "Singapore",
     "Nhật Bản"
   ],
-  "values_shown_on_chart": true,
+  "values_shown_on_chart": false,
   "data": [
     {
       "series": "Hàn Quốc",
@@ -45,8 +45,8 @@
     {
       "series": "Hàn Quốc",
       "x": "2016",
-      "y": 5.5,
-      "y_raw": "5,5"
+      "y": 7.0,
+      "y_raw": "7,0"
     },
     {
       "series": "Hàn Quốc",
@@ -87,8 +87,8 @@
     {
       "series": "Hàn Quốc",
       "x": "2023",
-      "y": 6.7,
-      "y_raw": "6,7"
+      "y": 4.4,
+      "y_raw": "4,4"
     },
     {
       "series": "Singapore",
@@ -99,8 +99,8 @@
     {
       "series": "Singapore",
       "x": "2015",
-      "y": 2.3,
-      "y_raw": "2,3"
+      "y": 1.2,
+      "y_raw": "1,2"
     },
     {
       "series": "Singapore",
@@ -117,8 +117,8 @@
     {
       "series": "Singapore",
       "x": "2018",
-      "y": 2.8,
-      "y_raw": "2,8"
+      "y": 5.1,
+      "y_raw": "5,1"
     },
     {
       "series": "Singapore",
@@ -153,8 +153,8 @@
     {
       "series": "Nhật Bản",
       "x": "2014",
-      "y": 5.9,
-      "y_raw": "5,9"
+      "y": 2.0,
+      "y_raw": "2,0"
     },
     {
       "series": "Nhật Bản",
@@ -212,7 +212,7 @@
     }
   ],
   "reviewer": "Ngân",
-  "notes": "",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
   "bar_mode": "grouped",
   "imported_at": "2026-11-20"
 }

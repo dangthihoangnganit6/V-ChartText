@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 23,
   "chart_type": "line",
-  "title": "Diễn biến tỷ giá USD/VND trong giai đoạn 1 năm",
+  "title": "Diễn biến tỷ giá USD/VND trong giai đoạn 1 năm gần đây",
   "x_axis": {
     "label": "Thời điểm",
     "unit": null
@@ -24,67 +24,67 @@
     "unit": "USD/VND"
   },
   "legend": [
-    "Tỷ giá Vietcombank",
-    "Tỷ giá Tự do"
+    "Tỷ giá USD/VND (Vietcombank)",
+    "Tỷ giá USD/VND (Tự do)"
   ],
   "values_shown_on_chart": true,
   "data": [
     {
-      "series": "Tỷ giá Vietcombank",
+      "series": "Tỷ giá USD/VND (Vietcombank)",
       "x": "Oct-24",
       "y": 25000.0,
       "y_raw": "25000"
     },
     {
-      "series": "Tỷ giá Vietcombank",
+      "series": "Tỷ giá USD/VND (Vietcombank)",
       "x": "Dec-24",
       "y": 25523.0,
       "y_raw": "25523"
     },
     {
-      "series": "Tỷ giá Vietcombank",
+      "series": "Tỷ giá USD/VND (Vietcombank)",
       "x": "May-25",
       "y": 26110.0,
       "y_raw": "26110"
     },
     {
-      "series": "Tỷ giá Vietcombank",
+      "series": "Tỷ giá USD/VND (Vietcombank)",
       "x": "Sep-25",
       "y": 26497.0,
       "y_raw": "26497"
     },
     {
-      "series": "Tỷ giá Vietcombank",
+      "series": "Tỷ giá USD/VND (Vietcombank)",
       "x": "Oct-25",
       "y": 26352.0,
       "y_raw": "26352"
     },
     {
-      "series": "Tỷ giá Tự do",
+      "series": "Tỷ giá USD/VND (Tự do)",
       "x": "Oct-24",
       "y": 25360.0,
       "y_raw": "25360"
     },
     {
-      "series": "Tỷ giá Tự do",
+      "series": "Tỷ giá USD/VND (Tự do)",
       "x": "Dec-24",
       "y": 25900.0,
       "y_raw": "25900"
     },
     {
-      "series": "Tỷ giá Tự do",
+      "series": "Tỷ giá USD/VND (Tự do)",
       "x": "May-25",
       "y": 26550.0,
       "y_raw": "26550"
     },
     {
-      "series": "Tỷ giá Tự do",
+      "series": "Tỷ giá USD/VND (Tự do)",
       "x": "Sep-25",
       "y": 27015.0,
       "y_raw": "27015"
     },
     {
-      "series": "Tỷ giá Tự do",
+      "series": "Tỷ giá USD/VND (Tự do)",
       "x": "Oct-25",
       "y": 27620.0,
       "y_raw": "27620"

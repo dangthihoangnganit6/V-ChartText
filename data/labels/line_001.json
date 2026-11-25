@@ -10,10 +10,13 @@
   },
   "annotator": "nhi",
   "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 4,
   "chart_type": "line",
   "title": "Thu nhập bình quân đầu người/năm (đô la Mỹ)",
   "x_axis": {
-    "label": null,
+    "label": "Năm",
     "unit": null
   },
   "y_axis": {
@@ -26,44 +29,47 @@
     {
       "series": "Thu nhập bình quân đầu người",
       "x": "1986",
-      "y": 423,
+      "y": 423.0,
       "y_raw": "423"
     },
     {
       "series": "Thu nhập bình quân đầu người",
       "x": "1991",
-      "y": 138,
+      "y": 138.0,
       "y_raw": "138"
     },
     {
       "series": "Thu nhập bình quân đầu người",
       "x": "2010",
-      "y": 1318,
+      "y": 1318.0,
       "y_raw": "1318"
     },
     {
       "series": "Thu nhập bình quân đầu người",
       "x": "2017",
-      "y": 2366,
+      "y": 2366.0,
       "y_raw": "2366"
     },
     {
       "series": "Thu nhập bình quân đầu người",
       "x": "2018",
-      "y": 2566,
+      "y": 2566.0,
       "y_raw": "2566"
     },
     {
       "series": "Thu nhập bình quân đầu người",
       "x": "2019",
-      "y": 2715,
+      "y": 2715.0,
       "y_raw": "2715"
     },
     {
       "series": "Thu nhập bình quân đầu người",
       "x": "2020",
-      "y": 2786,
+      "y": 2786.0,
       "y_raw": "2786"
     }
-  ]
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-25"
 }

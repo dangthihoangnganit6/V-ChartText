@@ -24,19 +24,19 @@
     "unit": "Tỷ kWh"
   },
   "legend": [],
-  "values_shown_on_chart": true,
+  "values_shown_on_chart": false,
   "data": [
     {
       "series": "Sản lượng điện",
       "x": "2001",
-      "y": 1500.0,
-      "y_raw": "1500"
+      "y": 1480.0,
+      "y_raw": "1480"
     },
     {
       "series": "Sản lượng điện",
       "x": "2002",
-      "y": 1700.0,
-      "y_raw": "1700"
+      "y": 1650.0,
+      "y_raw": "1650"
     },
     {
       "series": "Sản lượng điện",
@@ -47,18 +47,18 @@
     {
       "series": "Sản lượng điện",
       "x": "2004",
-      "y": 2100.0,
-      "y_raw": "2100"
+      "y": 2200.0,
+      "y_raw": "2200"
     },
     {
       "series": "Sản lượng điện",
       "x": "2005",
-      "y": 2300.0,
-      "y_raw": "2300"
+      "y": 2470.0,
+      "y_raw": "2470"
     }
   ],
   "reviewer": "Ngân",
-  "notes": "",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này [25/11] Đọc lại giá trị theo vạch trục (ảnh không in số).",
   "bar_mode": "single",
   "imported_at": "2026-11-20"
 }

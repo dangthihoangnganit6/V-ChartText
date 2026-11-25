@@ -14,7 +14,7 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 175,
   "chart_type": "bar",
-  "title": "Số cuốn truyện cửa hàng bán ra trong tuần",
+  "title": "Số cuốn truyện cửa hàng bán được trong tuần",
   "x_axis": {
     "label": null,
     "unit": null

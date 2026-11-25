@@ -14,14 +14,14 @@
   "label_source": "sheet:Data_Labeling",
   "sheet_row": 6,
   "chart_type": "line",
-  "title": "Số lượng sản xuất máy bán được trong năm qua",
+  "title": "Số lượng quạt máy bán được trong năm vừa qua",
   "x_axis": {
     "label": "Tháng",
     "unit": null
   },
   "y_axis": {
-    "label": null,
-    "unit": "Tháng"
+    "label": "Số lượng",
+    "unit": null
   },
   "legend": [],
   "values_shown_on_chart": true,

@@ -10,54 +10,54 @@
   },
   "annotator": "nhi",
   "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 57,
   "chart_type": "pie",
-  "title": "Tỷ trọng các nguồn điện tổng sản lượng điện sản xuất",
+  "title": "Tỷ trọng các nguồn điện trên tổng sản lượng điện sản xuất",
   "x_axis": {
-    "label": null,
+    "label": "Nguồn điện",
     "unit": null
   },
   "y_axis": {
     "label": null,
     "unit": "%"
   },
-  "legend": [
-    "Thủy điện",
-    "Nhiệt điện",
-    "Tua bin khí",
-    "Năng lượng tái tạo",
-    "Điện nhập khẩu"
-  ],
+  "legend": [],
   "values_shown_on_chart": true,
   "data": [
     {
-      "series": "Thủy điện",
+      "series": "Tỷ trọng",
       "x": "Thủy điện",
-      "y": 27,
+      "y": 27.0,
       "y_raw": "27"
     },
     {
-      "series": "Nhiệt điện",
+      "series": "Tỷ trọng",
       "x": "Nhiệt điện",
-      "y": 44,
+      "y": 44.0,
       "y_raw": "44"
     },
     {
-      "series": "Tua bin khí",
+      "series": "Tỷ trọng",
       "x": "Tua bin khí",
-      "y": 11,
+      "y": 11.0,
       "y_raw": "11"
     },
     {
-      "series": "Năng lượng tái tạo",
+      "series": "Tỷ trọng",
       "x": "Năng lượng tái tạo",
-      "y": 17,
+      "y": 17.0,
       "y_raw": "17"
     },
     {
-      "series": "Điện nhập khẩu",
+      "series": "Tỷ trọng",
       "x": "Điện nhập khẩu",
       "y": 0.8,
       "y_raw": "0,8"
     }
-  ]
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-25"
 }
