@@ -33,3 +33,24 @@ python eval/check_describe.py outputs/Qwen3-VL-2B-Instruct__describe__v1.jsonl
 Script chạy tiếp được khi Colab ngắt (bỏ qua id đã có trong file kết quả).
 
 Mã gốc Qwen3-VL: https://github.com/QwenLM/Qwen3-VL (chỉ tham khảo, không cần chép vào repo).
+
+## Mức 2: pipeline 4 bước, thí nghiệm A/B/C, demo
+
+```
+src/pipeline/verify.py    bước 2: kiểm chứng bảng (luật R1-R8, gắn cờ "chưa chắc chắn", không đoán số)
+src/pipeline/describe.py  bước 3: mô tả 3 cấp bằng mẫu câu, chỉ dùng số trong bảng đã kiểm chứng
+src/pipeline/vn.py        đọc số kiểu Việt ("12,5" -> "mười hai phẩy năm")
+src/pipeline/speech.py    bước 4: văn bản để đọc + TTS (edge-tts / gTTS)
+src/pipeline/run.py       chạy cả bộ dữ liệu; bước 1 = output extract đã có trong outputs/
+eval/compare_pipeline.py  so sánh A (mô tả trực tiếp) / B (pipeline) / C (pipeline + nhãn đúng)
+demo/app.py               demo Gradio + giọng đọc
+```
+
+```bash
+python src/pipeline/run.py --source gold
+python src/pipeline/run.py --source pred --extract outputs/Qwen3-VL-2B-Instruct__extract__v1.jsonl
+python src/pipeline/run.py --source pred --extract outputs/Vintern-1B-v3_5__extract__v1.jsonl
+python src/pipeline/run.py --source pred --extract outputs/Qwen3-VL-2B-Instruct__extract__v1.jsonl --uncertain hedge
+python eval/compare_pipeline.py          # bảng + CI bootstrap + eval/results/compare_examples.md
+pip install gradio edge-tts && python demo/app.py
+```
