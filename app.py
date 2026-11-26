@@ -1407,23 +1407,21 @@ def generate_tts_audio_sync(text: str, output_path: str, voice_id: str = HOAI_MY
                 pass
         time.sleep(0.5)
 
-    # 2. Thử qua thư viện edge_tts in-process
+    # 2. Thử qua thư viện edge_tts in-process (an toàn với uvicorn/uvloop trên server cloud)
     try:
         import edge_tts
-        import nest_asyncio
-        nest_asyncio.apply()
 
         async def _speak():
             comm = edge_tts.Communicate(phonetic_text, voice_id)
             await comm.save(output_path)
 
         try:
-            loop = asyncio.get_event_loop()
+            asyncio.run(_speak())
         except RuntimeError:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+                pool.submit(asyncio.run, _speak()).result(timeout=15)
 
-        loop.run_until_complete(_speak())
         if os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
             return True, f"Edge-TTS ({HOAI_MY_VOICE_LABEL})"
     except Exception as e_edge:
@@ -2444,6 +2442,13 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
     </div>
     """)
 
-# Cho phép khởi chạy độc lập
+# Cho phép khởi chạy độc lập & triển khai Render Web Service
 if __name__ == "__main__":
-    demo.launch(server_name="127.0.0.1", server_port=7860, share=False, theme=gr.themes.Soft(), css=custom_css)
+    demo.queue()
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860)),
+        share=False,
+        theme=gr.themes.Soft(),
+        css=custom_css
+    )
