@@ -666,102 +666,279 @@ def generate_3level_descriptions(flagged_matrix: Dict[str, Any]) -> Dict[str, st
     desc_30s = " ".join(desc_30s_parts)
 
     # --------------------------------------------------------------------------
-    # 3. CẤP 3: PHÂN TÍCH CHI TIẾT (SÁT SỐ LIỆU, KHÔNG NHÃN NGOẶC VUÔNG, KHÔNG LẶP)
+    # 3. CẤP 3: PHÂN TÍCH HỌC TẬP CHUYÊN SÂU (ĐOẠN VĂN LIỀN MẠCH THEO TRÌNH TỰ MỐC, KHÔNG TÁCH NHÓM)
     # --------------------------------------------------------------------------
-    desc_study_parts = []
-    if is_time_series:
-        desc_study_parts.append(f"Số liệu theo từng nhóm qua các năm ({cats[0]}–{cats[-1]}):")
-        for s_name, vals in series_data.items():
-            val_items = []
-            for i, v in enumerate(vals):
-                c_lbl = cats[i] if i < len(cats) else f"Mốc {i+1}"
-                val_items.append(f"năm {c_lbl} đạt {fmt_vn(v)}")
-            desc_study_parts.append(f"{s_name}: {'; '.join(val_items)}.")
-    else:
-        desc_study_parts.append(f"Số liệu chi tiết theo từng danh mục{unit_paren}:")
-        for s_name, vals in series_data.items():
-            val_items = []
-            for i, v in enumerate(vals):
-                c_lbl = cats[i] if i < len(cats) else f"Mốc {i+1}"
-                val_items.append(f"{c_lbl} đạt {fmt_vn(v)}{unit_suffix}")
-            if len(series_data) == 1:
-                desc_study_parts.append(f"{'; '.join(val_items)}.")
-            else:
-                desc_study_parts.append(f"{s_name}: {'; '.join(val_items)}.")
+    def _clean_s(name: str) -> str:
+        s_c = name.strip()
+        if s_c.count("(") > s_c.count(")"):
+            s_c += ")"
+        return s_c
 
-    desc_study_parts.append("Nhận xét biến động & so sánh:")
-    if is_time_series:
-        for s_name, pts in points_by_series.items():
-            if len(pts) >= 2:
-                flat_spans = []
-                max_step_change = 0.0
-                max_step_span = ""
-                step_direction = ""
-                for k in range(len(pts) - 1):
-                    v1, _, c1, _ = pts[k]
-                    v2, _, c2, _ = pts[k+1]
-                    diff = round(v2 - v1, 2)
-                    if diff == 0:
-                        flat_spans.append(f"giai đoạn {c1}–{c2} giữ nguyên mức {fmt_vn(v1)}")
-                    elif abs(diff) > abs(max_step_change):
-                        max_step_change = diff
-                        max_step_span = f"từ năm {c1} đến năm {c2}"
-                        step_direction = "tăng" if diff > 0 else "giảm"
+    def _extract_phases(pts_list: List[Tuple[float, str, str, int]]) -> List[Dict[str, Any]]:
+        """Gom các bước liên tiếp cùng chiều (tăng/giảm/giữ nguyên) thành từng chặng."""
+        phases = []
+        if len(pts_list) < 2:
+            return phases
+        cur_dir = None
+        start_idx = 0
+        for k in range(1, len(pts_list)):
+            d = round(pts_list[k][0] - pts_list[k - 1][0], 2)
+            step_dir = "up" if d > 0 else ("down" if d < 0 else "flat")
+            if cur_dir is None:
+                cur_dir = step_dir
+                start_idx = k - 1
+            elif step_dir != cur_dir:
+                phases.append({
+                    "dir": cur_dir,
+                    "start_c": pts_list[start_idx][2],
+                    "end_c": pts_list[k - 1][2],
+                    "start_v": pts_list[start_idx][0],
+                    "end_v": pts_list[k - 1][0],
+                    "delta": round(pts_list[k - 1][0] - pts_list[start_idx][0], 2),
+                    "steps": (k - 1) - start_idx
+                })
+                cur_dir = step_dir
+                start_idx = k - 1
+        phases.append({
+            "dir": cur_dir,
+            "start_c": pts_list[start_idx][2],
+            "end_c": pts_list[-1][2],
+            "start_v": pts_list[start_idx][0],
+            "end_v": pts_list[-1][0],
+            "delta": round(pts_list[-1][0] - pts_list[start_idx][0], 2),
+            "steps": (len(pts_list) - 1) - start_idx
+        })
+        return phases
 
-                if max_step_span and abs(max_step_change) > 0:
-                    flat_note = f" (riêng {', '.join(flat_spans)})" if flat_spans else ""
-                    desc_study_parts.append(
-                        f"Chuỗi {s_name} có bước biến động lớn nhất {max_step_span}, {step_direction} {fmt_vn(abs(max_step_change))}{unit_suffix}{flat_note}."
+    desc_study_sentences = []
+    unit_parts = [u.strip() for u in unit.split("|")] if "|" in unit else []
+
+    if is_time_series:
+        if len(series_names) == 1:
+            # --- CHUỖI THỜI GIAN 1 CHUỖI: Bám sát phong cách ví dụ 1995-2005 ---
+            s0 = series_names[0]
+            vals0 = series_data[s0]
+            pts0 = points_by_series.get(s0, [])
+            max_v0 = max(p[0] for p in pts0) if pts0 else None
+            min_v0 = min(p[0] for p in pts0) if pts0 else None
+
+            # Câu 1: Liệt kê trình tự từng mốc thời gian liền mạch
+            seq_parts = []
+            prev_v = None
+            for i, v in enumerate(vals0):
+                ck = cats[i] if i < len(cats) else f"mốc {i+1}"
+                if i == 0:
+                    seq_parts.append(f"Qua giai đoạn {cats[0]}–{cats[-1]}, chuỗi dữ liệu bắt đầu ở mức {fmt_vn(v)}{unit_suffix} năm {ck}")
+                elif v is None:
+                    seq_parts.append(f"chưa xác minh được giá trị năm {ck}")
+                elif isinstance(prev_v, (int, float)) and isinstance(v, (int, float)):
+                    d = round(float(v) - float(prev_v), 2)
+                    if d == 0:
+                        seq_parts.append(f"giữ nguyên mức {fmt_vn(v)}{unit_suffix} năm {ck}")
+                    elif d > 0:
+                        if max_v0 is not None and float(v) == max_v0 and i < len(vals0) - 1:
+                            seq_parts.append(f"chạm đỉnh {fmt_vn(v)}{unit_suffix} năm {ck}")
+                        elif i >= 2 and isinstance(vals0[i - 2], (int, float)) and float(prev_v) < float(vals0[i - 2]):
+                            seq_parts.append(f"đảo chiều tăng lên {fmt_vn(v)}{unit_suffix} năm {ck}")
+                        else:
+                            seq_parts.append(f"{fmt_vn(v)}{unit_suffix} năm {ck}")
+                    else:
+                        if min_v0 is not None and float(v) == min_v0 and i < len(vals0) - 1:
+                            seq_parts.append(f"giảm xuống đáy {fmt_vn(v)}{unit_suffix} năm {ck}")
+                        elif i == len(vals0) - 1:
+                            seq_parts.append(f"sau đó hạ xuống {fmt_vn(v)}{unit_suffix} năm {ck}")
+                        else:
+                            seq_parts.append(f"giảm xuống {fmt_vn(v)}{unit_suffix} năm {ck}")
+                else:
+                    seq_parts.append(f"{fmt_vn(v)}{unit_suffix} năm {ck}")
+                prev_v = v
+
+            if len(seq_parts) >= 2:
+                s_timeline = seq_parts[0] + ", " + ", ".join(seq_parts[1:-1]) + (", " if len(seq_parts) > 2 else "") + seq_parts[-1] + "."
+                s_timeline = re.sub(r",\s+(sau đó|giữ nguyên|đảo chiều)\s+", r", \1 ", s_timeline)
+                desc_study_sentences.append(s_timeline)
+
+            # Câu 2 & 3: Phân tích theo từng chặng tăng/giảm/chững & chặng biến động mạnh nhất
+            if len(pts0) >= 2:
+                phases = _extract_phases(pts0)
+                phase_clauses = []
+                for ph in phases:
+                    if ph["dir"] == "up":
+                        phase_clauses.append(f"pha tăng từ {ph['start_c']} đến {ph['end_c']} (tăng {fmt_vn(abs(ph['delta']))}{unit_suffix})")
+                    elif ph["dir"] == "down":
+                        phase_clauses.append(f"nhịp giảm giai đoạn {ph['start_c']}–{ph['end_c']} (hạ {fmt_vn(abs(ph['delta']))}{unit_suffix})")
+                    else:
+                        phase_clauses.append(f"giai đoạn đi ngang {ph['start_c']}–{ph['end_c']} ở mức {fmt_vn(ph['start_v'])}{unit_suffix}")
+
+                if phase_clauses:
+                    desc_study_sentences.append(f"Xét theo từng chặng, diễn biến gồm {', nối tiếp bởi '.join(phase_clauses)}.")
+
+                # Tìm bước nhảy mạnh nhất giữa 2 mốc liên tiếp
+                max_step = 0.0
+                max_span = ("", "")
+                max_dir = ""
+                for k in range(len(pts0) - 1):
+                    diff_s = round(pts0[k + 1][0] - pts0[k][0], 2)
+                    if abs(diff_s) > abs(max_step):
+                        max_step = diff_s
+                        max_span = (pts0[k][2], pts0[k + 1][2])
+                        max_dir = "tăng" if diff_s > 0 else "giảm"
+
+                v_first, v_last = pts0[0][0], pts0[-1][0]
+                net_0 = round(v_last - v_first, 2)
+                net_clause = ""
+                if net_0 > 0:
+                    net_clause = f", giúp mặt bằng cuối kỳ vẫn cao hơn mốc khởi đầu {fmt_vn(net_0)}{unit_suffix}"
+                elif net_0 < 0:
+                    net_clause = f", khiến mặt bằng cuối kỳ thấp hơn mốc khởi đầu {fmt_vn(abs(net_0))}{unit_suffix}"
+
+                if abs(max_step) > 0:
+                    desc_study_sentences.append(
+                        f"Đáng chú ý, bước biến động mạnh nhất diễn ra từ năm {max_span[0]} sang {max_span[1]} ({max_dir} {fmt_vn(abs(max_step))}{unit_suffix}){net_clause}."
                     )
-                elif flat_spans:
-                    desc_study_parts.append(f"Chuỗi {s_name} duy trì ổn định: {', '.join(flat_spans)}.")
 
-        if len(series_data) >= 2:
+                # Câu 4: Nhận xét tổng kết nhịp độ & ý nghĩa ôn tập
+                if net_0 > 0 and any(ph["dir"] == "down" for ph in phases):
+                    overall_note = "xu hướng chung cả giai đoạn là đi lên dù xen kẽ nhịp suy giảm hoặc điều chỉnh"
+                elif net_0 > 0:
+                    overall_note = "xu hướng chủ đạo là tăng trưởng tích cực qua từng chặng"
+                elif net_0 < 0:
+                    overall_note = "xu hướng chung cả giai đoạn là đi xuống rõ rệt"
+                else:
+                    overall_note = "giá trị có dao động giữa kỳ nhưng kết thúc cân bằng với điểm xuất phát"
+                desc_study_sentences.append(
+                    f"Điều này cho thấy {overall_note}, là cơ sở để người học đối chiếu các điểm ngoặt và biên độ thay đổi giữa từng chặng."
+                )
+        else:
+            # --- CHUỖI THỜI GIAN NHIỀU CHUỖI: Liệt kê theo trình tự từng mốc thời gian, KHÔNG tách nhóm ---
+            year_clauses = []
+            for i, ck in enumerate(cats):
+                items_at_year = []
+                for idx_s, s_name in enumerate(series_names):
+                    u_s = f" {unit_parts[idx_s].lower()}" if (unit_parts and idx_s < len(unit_parts) and unit_parts[idx_s]) else unit_suffix
+                    vals_s = series_data[s_name]
+                    v = vals_s[i] if i < len(vals_s) else None
+                    s_lbl = _clean_s(s_name)
+                    if i > 0 and v is not None and isinstance(vals_s[i - 1], (int, float)) and round(float(v) - float(vals_s[i - 1]), 2) == 0:
+                        items_at_year.append(f"{s_lbl} giữ nguyên {fmt_vn(v)}{u_s}")
+                    else:
+                        items_at_year.append(f"{s_lbl} {fmt_vn(v)}{u_s}")
+                if i == 0:
+                    year_clauses.append(f"Qua giai đoạn {cats[0]}–{cats[-1]}, số liệu khởi đầu năm {ck} với {', '.join(items_at_year)}")
+                else:
+                    year_clauses.append(f"năm {ck} ghi nhận {', '.join(items_at_year)}")
+
+            desc_study_sentences.append("; ".join(year_clauses) + ".")
+
+            # Câu phân tích chặng tăng/giảm/chững của các chuỗi
+            phase_summaries = []
+            for idx_s, s_name in enumerate(series_names):
+                u_s = f" {unit_parts[idx_s].lower()}" if (unit_parts and idx_s < len(unit_parts) and unit_parts[idx_s]) else unit_suffix
+                pts_s = points_by_series.get(s_name, [])
+                if len(pts_s) >= 2:
+                    net_s = round(pts_s[-1][0] - pts_s[0][0], 2)
+                    flat_spans = [
+                        f"{pts_s[k][2]}–{pts_s[k + 1][2]}"
+                        for k in range(len(pts_s) - 1)
+                        if round(pts_s[k + 1][0] - pts_s[k][0], 2) == 0
+                    ]
+                    flat_str = f" (đi ngang chặng {', '.join(flat_spans)})" if flat_spans else ""
+                    dir_str = f"tăng {fmt_vn(net_s)}{u_s}" if net_s > 0 else (f"giảm {fmt_vn(abs(net_s))}{u_s}" if net_s < 0 else "không đổi")
+                    phase_summaries.append(f"{_clean_s(s_name)} {dir_str}{flat_str}")
+
+            if phase_summaries:
+                desc_study_sentences.append(f"Tính trên toàn chặng từ {cats[0]} đến {cats[-1]}, mức thay đổi ghi nhận ở {'; '.join(phase_summaries)}.")
+
+            # Câu so sánh tương quan chênh lệch đầu-cuối giữa 2 chuỗi chính
             s_means = {s: (sum(p[0] for p in pts) / len(pts)) for s, pts in points_by_series.items() if pts}
             sorted_s = sorted(s_means.keys(), key=lambda x: s_means[x], reverse=True)
-            s_hi, s_lo = sorted_s[0], sorted_s[1]
-            pts_hi = points_by_series.get(s_hi, [])
-            pts_lo = points_by_series.get(s_lo, [])
-            if len(pts_hi) >= 2 and len(pts_lo) >= 2:
-                gap_start = round(abs(pts_hi[0][0] - pts_lo[0][0]), 2)
-                gap_end = round(abs(pts_hi[-1][0] - pts_lo[-1][0]), 2)
-                always_higher = len(pts_hi) == len(pts_lo) and all(pts_hi[k][0] > pts_lo[k][0] for k in range(len(pts_hi)))
-                if always_higher:
-                    desc_study_parts.append(
-                        f"Trong toàn giai đoạn, mức của {s_hi} luôn cao hơn {s_lo} (chênh lệch từ {fmt_vn(gap_start)}{unit_suffix} vào năm {pts_hi[0][2]} đến {fmt_vn(gap_end)}{unit_suffix} vào năm {pts_hi[-1][2]})."
-                    )
-                else:
-                    desc_study_parts.append(
-                        f"So sánh hai chuỗi ở hai đầu giai đoạn, mức chênh lệch giữa {s_hi} và {s_lo} là {fmt_vn(gap_start)}{unit_suffix} vào năm {pts_hi[0][2]} và {fmt_vn(gap_end)}{unit_suffix} vào năm {pts_hi[-1][2]}."
-                    )
-    elif c_type == "pie":
-        total_sum = round(sum(p[0] for p in all_valid_points), 2) if all_valid_points else 100.0
-        sorted_pts = sorted(all_valid_points, key=lambda x: x[0], reverse=True)
-        if sorted_pts:
-            top_part = sorted_pts[0]
-            low_part = sorted_pts[-1]
-            gap_pie = round(top_part[0] - low_part[0], 2)
-            desc_study_parts.append(
-                f"Tổng tỷ trọng các thành phần đạt {fmt_vn(total_sum)}{unit_suffix}. Nhóm {top_part[2]} chiếm tỷ trọng lớn nhất ({fmt_vn(top_part[0])}{unit_suffix}), cao hơn nhóm thấp nhất là {low_part[2]} ({fmt_vn(low_part[0])}{unit_suffix}) là {fmt_vn(gap_pie)}{unit_suffix}."
+            if len(sorted_s) >= 2:
+                s_hi, s_lo = sorted_s[0], sorted_s[1]
+                pts_hi, pts_lo = points_by_series.get(s_hi, []), points_by_series.get(s_lo, [])
+                if len(pts_hi) >= 2 and len(pts_lo) >= 2:
+                    gap_start = round(abs(pts_hi[0][0] - pts_lo[0][0]), 2)
+                    gap_end = round(abs(pts_hi[-1][0] - pts_lo[-1][0]), 2)
+                    u_comp = "" if unit_parts else unit_suffix
+                    always_higher = len(pts_hi) == len(pts_lo) and all(pts_hi[k][0] > pts_lo[k][0] for k in range(len(pts_hi)))
+                    if always_higher:
+                        trend_gap = "nới rộng" if gap_end > gap_start else ("thu hẹp" if gap_end < gap_start else "giữ ổn định")
+                        desc_study_sentences.append(
+                            f"Xét tương quan giữa các chặng, {_clean_s(s_hi)} luôn cao hơn {_clean_s(s_lo)} tại mọi mốc, với khoảng cách {trend_gap} từ {fmt_vn(gap_start)}{u_comp} năm {pts_hi[0][2]} sang {fmt_vn(gap_end)}{u_comp} năm {pts_hi[-1][2]}."
+                        )
+                    else:
+                        desc_study_sentences.append(
+                            f"So sánh hai đầu giai đoạn, chênh lệch giữa {_clean_s(s_hi)} và {_clean_s(s_lo)} chuyển từ {fmt_vn(gap_start)}{u_comp} năm {pts_hi[0][2]} sang {fmt_vn(gap_end)}{u_comp} năm {pts_hi[-1][2]}."
+                        )
+
+            desc_study_sentences.append(
+                "Nhìn chung, việc đối chiếu song song từng mốc giúp làm rõ nhịp độ biến động và mức độ phân hóa giữa các đối tượng phục vụ ôn tập."
             )
-    else:
+
+    elif c_type == "pie":
+        # --- BIỂU ĐỒ TRÒN: 1 đoạn văn liền mạch theo trình tự các mục ---
+        total_sum = round(sum(p[0] for p in all_valid_points), 2) if all_valid_points else 100.0
+        s0 = series_names[0]
+        vals0 = series_data[s0]
+        item_strs = [
+            f"{cats[i] if i < len(cats) else f'Mục {i+1}'} chiếm {fmt_vn(v)}{unit_suffix}"
+            for i, v in enumerate(vals0)
+        ]
+        desc_study_sentences.append(
+            f"Theo trình tự cơ cấu trên biểu đồ, {', '.join(item_strs)}, đạt tổng tỷ trọng {fmt_vn(total_sum)}{unit_suffix}."
+        )
         sorted_pts = sorted(all_valid_points, key=lambda x: x[0], reverse=True)
         if len(sorted_pts) >= 2:
-            rank_strings = [f"{pt[2]} ({fmt_vn(pt[0])}{unit_suffix})" for pt in sorted_pts]
-            desc_study_parts.append(f"Thứ tự giá trị từ cao xuống thấp: {', '.join(rank_strings)}.")
-            top_pt = sorted_pts[0]
-            second_pt = sorted_pts[1]
-            gap = round(top_pt[0] - second_pt[0], 2)
-            desc_study_parts.append(
-                f"Nhóm dẫn đầu là {top_pt[2]} vượt lên trên vị trí tiếp theo ({second_pt[2]}) khoảng cách {fmt_vn(gap)}{unit_suffix}."
+            top_part, second_part, low_part = sorted_pts[0], sorted_pts[1], sorted_pts[-1]
+            gap_12 = round(top_part[0] - second_part[0], 2)
+            gap_pie = round(top_part[0] - low_part[0], 2)
+            ratio_pie = round(top_part[0] / low_part[0], 1) if low_part[0] > 0 else None
+            ratio_clause = f" (gấp {fmt_vn(ratio_pie)} lần)" if ratio_pie else ""
+            desc_study_sentences.append(
+                f"Xét thứ bậc cơ cấu, {top_part[2]} giữ vị trí chi phối lớn nhất, cao hơn nhóm đứng thứ hai là {second_part[2]} khoảng {fmt_vn(gap_12)}{unit_suffix}."
+            )
+            desc_study_sentences.append(
+                f"Khoảng cách giữa hai thái cực lớn nhất ({top_part[2]}) và nhỏ nhất ({low_part[2]}) lên tới {fmt_vn(gap_pie)}{unit_suffix}{ratio_clause}."
+            )
+            desc_study_sentences.append(
+                "Sự chênh lệch này cho thấy cơ cấu phân bổ tập trung rõ vào nhóm dẫn đầu, là trọng tâm cần ghi nhớ khi phân tích tỷ trọng."
+            )
+    else:
+        # --- BIỂU ĐỒ DANH MỤC (CỘT ĐƠN / GHÉP PHI THỜI GIAN): 1 đoạn văn liền mạch ---
+        cat_clauses = []
+        for i, ck in enumerate(cats):
+            if len(series_names) == 1:
+                v = series_data[series_names[0]][i] if i < len(series_data[series_names[0]]) else None
+                cat_clauses.append(f"{ck} đạt {fmt_vn(v)}{unit_suffix}")
+            else:
+                sub_items = []
+                for idx_s, s_name in enumerate(series_names):
+                    u_s = f" {unit_parts[idx_s].lower()}" if (unit_parts and idx_s < len(unit_parts) and unit_parts[idx_s]) else unit_suffix
+                    v = series_data[s_name][i] if i < len(series_data[s_name]) else None
+                    sub_items.append(f"{_clean_s(s_name)} {fmt_vn(v)}{u_s}")
+                cat_clauses.append(f"{ck} ({', '.join(sub_items)})")
+
+        desc_study_sentences.append(f"Theo trình tự các mục dữ liệu, giá trị ghi nhận lần lượt ở {', '.join(cat_clauses)}.")
+        sorted_pts = sorted(all_valid_points, key=lambda x: x[0], reverse=True)
+        if len(sorted_pts) >= 2:
+            top_pt, second_pt, low_pt = sorted_pts[0], sorted_pts[1], sorted_pts[-1]
+            gap_12 = round(top_pt[0] - second_pt[0], 2)
+            gap_max_min = round(top_pt[0] - low_pt[0], 2)
+            desc_study_sentences.append(
+                f"Xét tương quan giữa các mốc, {top_pt[2]} vượt lên trên vị trí kế tiếp ({second_pt[2]}) khoảng cách {fmt_vn(gap_12)}{unit_suffix}."
+            )
+            desc_study_sentences.append(
+                f"So sánh hai đầu bảng xếp hạng, biên độ chênh lệch từ mức cao nhất ({fmt_vn(top_pt[0])}{unit_suffix}) đến mức thấp nhất ở {low_pt[2]} ({fmt_vn(low_pt[0])}{unit_suffix}) đạt {fmt_vn(gap_max_min)}{unit_suffix}."
+            )
+            desc_study_sentences.append(
+                "Nhịp phân hóa này phản ánh sự khác biệt rõ rệt về quy mô giữa nhóm dẫn đầu và phần còn lại trong quá trình đối chiếu số liệu."
             )
 
     if un_locations:
-        desc_study_parts.append(
-            f"Ghi chú dữ liệu: Các vị trí {', '.join(un_locations)} chưa xác minh được số liệu cụ thể."
+        desc_study_sentences.append(
+            f"Lưu ý về độ tin cậy: Các vị trí {', '.join(un_locations)} chưa xác minh được chính xác từ ảnh gốc."
         )
 
-    desc_study = "\n\n".join(desc_study_parts)
+    desc_study = " ".join(desc_study_sentences)
     return {
         "desc_5s": desc_5s,
         "desc_30s": desc_30s,
@@ -1507,26 +1684,55 @@ def make_toast_html(title: str, message: str, toast_type: str = "success") -> st
 # ==============================================================================
 # 9. HÀM XỬ LÝ CHÍNH CỦA PIPELINE DEMO GRADIO
 # ==============================================================================
+def render_loading_vichartfact_html(status_text: str) -> str:
+    """Render hiệu ứng spinner + shimmer tự viết cho Mục 3 ViChartFact khi đang xử lý."""
+    return f"""
+    <div style="background-color: #FFFFFF; border: 1px solid #E2E6F0; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <span class="v-spinner"></span>
+            <div>
+                <div style="font-size: 16px; font-weight: 800; color: #1E293B;">3. Kiểm Định ViChartFact</div>
+                <div style="font-size: 13px; color: #1A40C2; font-weight: 600;">{html.escape(status_text)}</div>
+            </div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+            <div class="v-shimmer-bar" style="height: 82px;"></div>
+            <div class="v-shimmer-bar" style="height: 82px;"></div>
+            <div class="v-shimmer-bar" style="height: 82px;"></div>
+        </div>
+        <div class="v-shimmer-bar" style="height: 48px;"></div>
+    </div>
+    """
+
 def process_pipeline_demo(
     input_image_path: Optional[str],
     current_session_files: List[str]
-) -> Tuple[
-    pd.DataFrame, pd.DataFrame, str, Optional[str], str, Optional[str], str, Optional[str], str, str, List[str]
-]:
+):
     """
-    Hàm xử lý Pipeline 4 bước khi người dùng tải ảnh hoặc chọn ví dụ:
-    1. Đọc và nhận diện chính xác biểu đồ bằng mã băm (MD5 / dHash / aHash).
-    2. Kiểm chứng logic và gắn cờ [chưa chắc chắn].
-    3. Sinh mô tả 3 cấp độ và đo kiểm ViChartFact.
-    4. Chuẩn hóa ngữ âm và tổng hợp 3 audio TTS riêng biệt đặt ngay dưới từng cấp mô tả.
-    5. Xóa sạch file âm thanh tạm của lượt trước để tránh dồn rác bộ nhớ.
+    Hàm xử lý Pipeline 4 bước dạng generator (progressive/streaming output qua `yield` & `gr.update`):
+    - Mục nào chưa xong ở từng nhịp `yield` sẽ hiển thị hiệu ứng đang tải (CSS shimmer/spinner) + trạng thái chờ/xử lý.
+    - Mục nào đã xong thì tắt hiệu ứng tải, hiện kết quả thật và giữ nguyên ở các nhịp tiếp theo.
+    - Các nhánh dừng sớm tắt sạch toàn bộ hiệu ứng tải.
     """
     # Xóa file âm thanh tạm của lượt xử lý trước
     cleanup_temp_files_list(current_session_files)
 
     if not input_image_path or not os.path.exists(input_image_path):
         err_toast = make_toast_html("Lỗi Tải Ảnh", "Vui lòng chọn hoặc tải lên một hình ảnh biểu đồ SGK hợp lệ.", "error")
-        return pd.DataFrame(), pd.DataFrame(), "", None, "", None, "", None, "", err_toast, []
+        yield (
+            gr.update(value=pd.DataFrame()),
+            gr.update(value=pd.DataFrame()),
+            gr.update(value="", placeholder="Nội dung mô tả Cấp 1 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+            gr.update(value=None, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
+            gr.update(value="", placeholder="Nội dung mô tả Cấp 2 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+            gr.update(value=None, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
+            gr.update(value="", placeholder="Nội dung mô tả Cấp 3 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+            gr.update(value=None, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
+            gr.update(value=""),
+            gr.update(value=err_toast),
+            []
+        )
+        return
 
     # Tra cứu chính xác ảnh qua bộ Resolver đa tầng
     matched_image_name, match_method = resolve_image_match(input_image_path)
@@ -1539,7 +1745,7 @@ def process_pipeline_demo(
             # Nếu có model VLM đang chạy trong bộ nhớ GPU, gọi suy luận trực tiếp ở đây
             pass
         else:
-            # Môi trường local không có GPU: Hiển thị cảnh báo trung thực qua Toast & bảng thuộc tính, TUYỆT ĐỐI KHÔNG sinh dữ liệu giả
+            # Môi trường local/cloud chưa nạp VLM: Tắt sạch hiệu ứng tải và báo cảnh báo trung thực
             empty_meta = pd.DataFrame([
                 {"Thuộc tính": "Trạng thái tra cứu", "Nội dung": "Không tìm thấy trong 214 biểu đồ SGK đã kiểm chứng"},
                 {"Thuộc tính": "Chi tiết đối sánh", "Nội dung": match_method},
@@ -1556,19 +1762,20 @@ def process_pipeline_demo(
             </div>
             """
             warn_toast = make_toast_html("Ảnh Ngoài Tập Dữ Liệu", "Ảnh chưa có trong 214 biểu đồ SGK đã kiểm chứng & máy chưa nạp Qwen3-VL.", "warning")
-            return (
-                empty_meta,
-                empty_matrix,
-                notice_msg,
-                None,
-                notice_msg,
-                None,
-                notice_msg,
-                None,
-                empty_vichartfact,
-                warn_toast,
+            yield (
+                gr.update(value=empty_meta),
+                gr.update(value=empty_matrix),
+                gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
+                gr.update(value=None, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
+                gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
+                gr.update(value=None, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
+                gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
+                gr.update(value=None, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
+                gr.update(value=empty_vichartfact),
+                gr.update(value=warn_toast),
                 []
             )
+            return
 
     # --------------------------------------------------------------------------
     # TRƯỜNG HỢP 2: ẢNH KHỚP CHÍNH XÁC VỚI BẢN GHI TRONG DATASET
@@ -1608,42 +1815,98 @@ def process_pipeline_demo(
         matrix_rows.append(row_dict)
     data_matrix_df = pd.DataFrame(matrix_rows)
 
-    # Bước 3: Sinh mô tả 3 cấp độ
+    # YIELD 1: Xong Bước 1 & 2 -> Hiện ngay Bảng đặc tả & Ma trận; bật hiệu ứng loading cho Mô tả 3 cấp, Audio & ViChartFact
+    yield (
+        gr.update(value=meta_df),
+        gr.update(value=data_matrix_df),
+        gr.update(value="", placeholder="⏳ Đang sinh mô tả Cấp 1 (Tổng quan 5s)...", elem_classes=["v-desc-box", "v-loading-box"]),
+        gr.update(value=None, label="⏳ Đang chờ tạo giọng đọc Cấp 1 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(value="", placeholder="⏳ Đang sinh mô tả Cấp 2 (Tóm tắt 30s)...", elem_classes=["v-desc-box", "v-loading-box"]),
+        gr.update(value=None, label="⏳ Đang chờ tạo giọng đọc Cấp 2 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(value="", placeholder="⏳ Đang sinh mô tả Cấp 3 (Phân tích chi tiết)...", elem_classes=["v-desc-box", "v-loading-box"]),
+        gr.update(value=None, label="⏳ Đang chờ tạo giọng đọc Cấp 3 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(value=render_loading_vichartfact_html("Đang tổng hợp mô tả 3 cấp & đo kiểm độ trung thực ViChartFact...")),
+        gr.update(value=""),
+        []
+    )
+
+    # Bước 3: Sinh mô tả 3 cấp độ & Đo kiểm ViChartFact
     desc_dict = generate_3level_descriptions(flagged_matrix)
     desc_5s = desc_dict["desc_5s"]
     desc_30s = desc_dict["desc_30s"]
     desc_study = desc_dict["desc_study"]
 
-    # Đo kiểm ViChartFact minh bạch & chi tiết
     fact_report = fact_check_vichartfact(desc_dict, flagged_matrix)
     vichartfact_html = render_vichartfact_html(fact_report)
 
-    # Bước 4: Chuẩn hóa ngữ âm & Xuất 3 file Audio TTS riêng biệt với giọng đọc Hoài My
+    # YIELD 2: Xong Bước 3 & ViChartFact -> Tắt loading cho 3 cấp mô tả & ViChartFact; chuyển Audio Cấp 1 sang đang tổng hợp
+    yield (
+        gr.update(),
+        gr.update(),
+        gr.update(value=desc_5s, placeholder="", elem_classes=["v-desc-box"]),
+        gr.update(label="⏳ Đang tổng hợp giọng đọc Cấp 1 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(value=desc_30s, placeholder="", elem_classes=["v-desc-box"]),
+        gr.update(),
+        gr.update(value=desc_study, placeholder="", elem_classes=["v-desc-box"]),
+        gr.update(),
+        gr.update(value=vichartfact_html),
+        gr.update(),
+        []
+    )
+
+    # Bước 4: Chuẩn hóa ngữ âm & Xuất tuần tự 3 file Audio TTS riêng biệt với giọng đọc Hoài My
     new_session_files = []
     tts_engines_used = set()
 
-    # 1. Cấp 1: Tổng quan nhanh 5s
-    lvl1_text = desc_5s
+    # 4.1. Cấp 1: Tổng quan nhanh 5s
     audio1_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl1_{uuid.uuid4().hex[:8]}.mp3")
-    ok1, eng1 = generate_tts_audio_sync(lvl1_text, audio1_path, voice_id=HOAI_MY_VOICE_ID)
+    ok1, eng1 = generate_tts_audio_sync(desc_5s, audio1_path, voice_id=HOAI_MY_VOICE_ID)
     res_audio1 = audio1_path if (ok1 and os.path.exists(audio1_path)) else None
     if res_audio1:
         new_session_files.append(res_audio1)
         tts_engines_used.add(eng1)
 
-    # 2. Cấp 2: Tóm tắt sư phạm 30s
-    lvl2_text = desc_30s
+    # YIELD 3: Xong Audio Cấp 1 -> Tắt loading Audio Cấp 1 & hiện trình phát; chuyển Audio Cấp 2 sang đang tổng hợp
+    yield (
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(value=res_audio1, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
+        gr.update(),
+        gr.update(label="⏳ Đang tổng hợp giọng đọc Cấp 2 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        list(new_session_files)
+    )
+
+    # 4.2. Cấp 2: Tóm tắt sư phạm 30s
     audio2_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl2_{uuid.uuid4().hex[:8]}.mp3")
-    ok2, eng2 = generate_tts_audio_sync(lvl2_text, audio2_path, voice_id=HOAI_MY_VOICE_ID)
+    ok2, eng2 = generate_tts_audio_sync(desc_30s, audio2_path, voice_id=HOAI_MY_VOICE_ID)
     res_audio2 = audio2_path if (ok2 and os.path.exists(audio2_path)) else None
     if res_audio2:
         new_session_files.append(res_audio2)
         tts_engines_used.add(eng2)
 
-    # 3. Cấp 3: Phân tích học tập chuyên sâu
-    lvl3_text = desc_study
+    # YIELD 4: Xong Audio Cấp 2 -> Tắt loading Audio Cấp 2 & hiện trình phát; chuyển Audio Cấp 3 sang đang tổng hợp
+    yield (
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(value=res_audio2, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
+        gr.update(),
+        gr.update(label="⏳ Đang tổng hợp giọng đọc Cấp 3 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(),
+        gr.update(),
+        list(new_session_files)
+    )
+
+    # 4.3. Cấp 3: Phân tích học tập chuyên sâu
     audio3_path = os.path.join(TEMP_AUDIO_DIR, f"tts_lvl3_{uuid.uuid4().hex[:8]}.mp3")
-    ok3, eng3 = generate_tts_audio_sync(lvl3_text, audio3_path, voice_id=HOAI_MY_VOICE_ID)
+    ok3, eng3 = generate_tts_audio_sync(desc_study, audio3_path, voice_id=HOAI_MY_VOICE_ID)
     res_audio3 = audio3_path if (ok3 and os.path.exists(audio3_path)) else None
     if res_audio3:
         new_session_files.append(res_audio3)
@@ -1663,18 +1926,19 @@ def process_pipeline_demo(
             toast_type="warning"
         )
 
-    return (
-        meta_df,
-        data_matrix_df,
-        desc_5s,
-        res_audio1,
-        desc_30s,
-        res_audio2,
-        desc_study,
-        res_audio3,
-        vichartfact_html,
-        tts_status_msg,
-        new_session_files
+    # YIELD 5 (Cuối cùng): Tắt loading Audio Cấp 3 & hiện trình phát + thông báo Toast hoàn tất
+    yield (
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(),
+        gr.update(value=res_audio3, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
+        gr.update(),
+        gr.update(value=tts_status_msg),
+        list(new_session_files)
     )
 
 def regenerate_single_level(
@@ -1731,12 +1995,12 @@ def select_sample_chart(sample_filename: str, current_session_files: List[str]):
         sample_path,      # input_image
         pd.DataFrame(),   # out_meta_df
         pd.DataFrame(),   # out_matrix_df
-        "",               # out_desc_5s
-        None,             # out_audio_lvl1
-        "",               # out_desc_30s
-        None,             # out_audio_lvl2
-        "",               # out_desc_study
-        None,             # out_audio_lvl3
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 1 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 2 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 3 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
         "",               # out_vichartfact
         "",               # out_tts_status
         []                # session_audio_tracker
@@ -1748,12 +2012,12 @@ def on_image_uploaded(current_session_files: List[str]):
     return (
         pd.DataFrame(),   # out_meta_df
         pd.DataFrame(),   # out_matrix_df
-        "",               # out_desc_5s
-        None,             # out_audio_lvl1
-        "",               # out_desc_30s
-        None,             # out_audio_lvl2
-        "",               # out_desc_study
-        None,             # out_audio_lvl3
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 1 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 2 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 3 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
         "",               # out_vichartfact
         "",               # out_tts_status
         []                # session_audio_tracker
@@ -1766,12 +2030,12 @@ def on_reset_click(current_session_files: List[str]):
         None,             # input_image
         pd.DataFrame(),   # out_meta_df
         pd.DataFrame(),   # out_matrix_df
-        "",               # out_desc_5s
-        None,             # out_audio_lvl1
-        "",               # out_desc_30s
-        None,             # out_audio_lvl2
-        "",               # out_desc_study
-        None,             # out_audio_lvl3
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 1 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 2 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
+        gr.update(value="", placeholder="Nội dung mô tả Cấp 3 sẽ xuất hiện tại đây sau khi chạy pipeline...", elem_classes=["v-desc-box"]),
+        gr.update(value=None, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
         "",               # out_vichartfact
         "",               # out_tts_status
         []                # session_audio_tracker
@@ -1975,6 +2239,65 @@ textarea {
     resize: none !important;
     field-sizing: content !important;
     padding: 10px 12px 12px 12px !important;
+}
+
+/* Hiệu ứng đang tải tự viết (CSS Shimmer & Spinner thuần, không dùng link ngoài) */
+@keyframes vShimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@keyframes vSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.v-spinner {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #E2E8F0;
+    border-top-color: #1A40C2;
+    border-radius: 50%;
+    animation: vSpin 0.8s linear infinite;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.v-shimmer-bar {
+    background: linear-gradient(90deg, #F1F5F9 25%, #E2E8F0 50%, #F1F5F9 75%);
+    background-size: 200% 100%;
+    animation: vShimmer 1.4s ease-in-out infinite;
+    border-radius: 6px;
+}
+
+.v-desc-box.v-loading-box textarea {
+    background: linear-gradient(90deg, #F8FAFC 25%, #EEF2FF 50%, #F8FAFC 75%) !important;
+    background-size: 200% 100% !important;
+    animation: vShimmer 1.4s ease-in-out infinite !important;
+    border-left: 4px solid #1A40C2 !important;
+    color: #475569 !important;
+}
+
+.v-loading-audio {
+    position: relative !important;
+    background: linear-gradient(90deg, #F8FAFC 25%, #EEF2FF 50%, #F8FAFC 75%) !important;
+    background-size: 200% 100% !important;
+    animation: vShimmer 1.4s ease-in-out infinite !important;
+    border: 1px dashed #93C5FD !important;
+    border-radius: 8px !important;
+}
+
+.v-loading-audio label::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    border: 2px solid #CBD5E1;
+    border-top-color: #1A40C2;
+    border-radius: 50%;
+    animation: vSpin 0.8s linear infinite;
+    vertical-align: middle;
 }
 
 /* Mục 3 ViChartFact Collapsible Details */
