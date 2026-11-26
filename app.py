@@ -2438,7 +2438,7 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
     # Footer theo chuẩn code.html
     gr.HTML("""
     <div style="text-align: center; margin-top: 32px; padding: 16px; border-top: 1px solid #E2E6F0; color: #6B7280; font-size: 13px;">
-        Đề tài nghiên cứu khoa học V-ChartText © 2026 | Nhóm nghiên cứu AI Sư phạm &amp; Trợ năng | Sẵn sàng triển khai Hugging Face Spaces &amp; Colab
+        V-ChartText © 2026 | Phát triển bởi Nhóm 7 – Vấn đề hiện đại của CNTT | Bản Web Demo
     </div>
     """)
 

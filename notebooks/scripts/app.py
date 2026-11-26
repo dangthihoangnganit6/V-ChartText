@@ -1726,7 +1726,7 @@ with gr.Blocks(title="V-ChartText Web Demo") as demo:
 
     gr.HTML("""
     <div style="text-align: center; margin-top: 30px; padding: 12px; border-top: 1px solid #E5E8E8; color: #7F8C8D; font-size: 13px;">
-        Đề tài nghiên cứu khoa học V-ChartText © 2026 | Nhóm nghiên cứu AI Sư phạm & Trợ năng | Sẵn sàng triển khai Hugging Face Spaces & Colab
+        V-ChartText © 2026 | Phát triển bởi Nhóm 7 - Vấn đề hiện đại của CNTT | Bản Web Demo
     </div>
     """)
 
