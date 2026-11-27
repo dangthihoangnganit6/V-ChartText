@@ -19,6 +19,9 @@ temp_session_audio/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# Pytest cache
+.pytest_cache/
+
 # Operating System & IDE files
 .DS_Store
 Thumbs.db
