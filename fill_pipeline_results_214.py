@@ -18,8 +18,16 @@ import csv
 import time
 from typing import Dict, List, Any, Tuple, Optional
 import pandas as pd
-import openpyxl
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+
+from vichartfact_metrics import (
+    validate_chart_data,
+    apply_uncertainty_flagging,
+    generate_3level_descriptions,
+    fact_check_vichartfact,
+    evaluate_description_completeness,
+    normalize_chart_type,
+)
+from xlsx_utils import write_xlsx_sheets
 
 # Đảm bảo UTF-8 trên Windows PowerShell
 if sys.platform == "win32":
@@ -42,15 +50,7 @@ OUTPUT_XLSX = os.path.join(DATA_DIR, "pipeline_4_steps_results_214_filled.xlsx")
 OUTPUT_CSV = os.path.join(DATA_DIR, "pipeline_4_steps_results_214_filled.csv")
 CHECKPOINT_CSV = os.path.join(DATA_DIR, "pipeline_4_steps_results_214_filled_checkpoint.csv")
 
-# Nhập các hàm logic thuần túy của pipeline từ app.py (Bước 2, Bước 3, Bước 4)
-# Lưu ý: Tuyệt đối không sử dụng DATABASE_RECORDS hay BENCHMARK_PATH của app.py
-from app import (
-    validate_chart_data,
-    apply_uncertainty_flagging,
-    generate_3level_descriptions,
-    fact_check_vichartfact,
-    normalize_chart_type
-)
+# Các hàm logic thuần túy đã được import từ vichartfact_metrics (không tham chiếu Benchmark)
 
 def natural_sort_key(s: str) -> List[Any]:
     """Tách số và chữ để sắp xếp tự nhiên (ví dụ: Biểu đồ cột_2 đứng trước Biểu đồ cột_10)."""
@@ -202,8 +202,13 @@ def run_pipeline():
                 # BƯỚC 3: Sinh mô tả 3 cấp độ (5s, 30s, Phân tích học tập chuyên sâu)
                 desc_dict = generate_3level_descriptions(flagged_matrix)
 
-                # BƯỚC 4: Đo kiểm độ trung thực ViChartFact
+                # BƯỚC 4: Đo kiểm độ trung thực ViChartFact & Độ đầy đủ mô tả (so với bảng Bước 2)
                 fact_res = fact_check_vichartfact(desc_dict, flagged_matrix)
+                comp_res = evaluate_description_completeness(
+                    desc_dict,
+                    step1_dict,
+                    has_uncertainty=flagged_matrix.get("has_uncertainty", False),
+                )
 
                 exec_status = "Thành công"
                 err_msg = ""
@@ -214,6 +219,7 @@ def run_pipeline():
                 flagged_matrix = {"has_uncertainty": False}
                 desc_dict = {"desc_5s": "", "desc_30s": "", "desc_study": ""}
                 fact_res = {"status_title": "Lỗi", "accuracy": 0.0}
+                comp_res = {"completeness_score": 0.0}
                 exec_status = "Thất bại"
                 err_msg = str(e)
                 error_count += 1
@@ -223,6 +229,7 @@ def run_pipeline():
             flagged_matrix = {"has_uncertainty": False}
             desc_dict = {"desc_5s": "", "desc_30s": "", "desc_study": ""}
             fact_res = {"status_title": "Chưa đối chuẩn (thiếu số liệu)", "accuracy": 0.0}
+            comp_res = {"completeness_score": 0.0}
             exec_status = "Lỗi trích xuất (Không fallback benchmark)"
             err_msg = "Không có số liệu trích xuất từ Bước 1; để trống theo yêu cầu Không tham chiếu Benchmark"
             error_count += 1
@@ -251,6 +258,7 @@ def run_pipeline():
             "step3_desc_study": desc_dict.get("desc_study", ""),
             "step4_vichartfact_status": fact_res.get("status_title", ""),
             "step4_vichartfact_accuracy": fact_res.get("accuracy", 0.0),
+            "step4_completeness_score": comp_res.get("completeness_score", 0.0),
             "execution_status": exec_status,
             "error_log": err_msg
         }
@@ -277,79 +285,23 @@ def run_pipeline():
 
     # 4. XUẤT FILE EXCEL THEO ĐÚNG BỐ CỤC YÊU CẦU
     print(f"Đang ghi file Excel: {OUTPUT_XLSX} ...")
-    
-    # 9 cột chính bắt buộc
+
     main_9_cols = [
         "STT", "image_name", "chart_title", "chart_type",
         "unit", "x_axis_label", "categories", "series_name", "values"
     ]
     all_cols = list(df_final.columns)
 
-    wb = openpyxl.Workbook()
-    # Sheet1: Chứa 9 cột chính A..I + các cột chi tiết Bước 2/3/4 từ cột J trở đi
-    ws1 = wb.active
-    ws1.title = "Sheet1"
-
-    # Định dạng Header
-    header_fill = PatternFill(start_color="1F497D", end_color="1F497D", fill_type="solid")
-    step_fill = PatternFill(start_color="2E75B6", end_color="2E75B6", fill_type="solid")
-    header_font = Font(name="Segoe UI", size=11, bold=True, color="FFFFFF")
-    data_font = Font(name="Segoe UI", size=10)
-    thin_border = Border(
-        left=Side(style='thin', color='D9D9D9'),
-        right=Side(style='thin', color='D9D9D9'),
-        top=Side(style='thin', color='D9D9D9'),
-        bottom=Side(style='thin', color='D9D9D9')
+    sheet1_rows = [all_cols] + [
+        [r_data.get(col_name, "") for col_name in all_cols] for r_data in results
+    ]
+    sheet2_rows = [main_9_cols] + [
+        [r_data.get(col_name, "") for col_name in main_9_cols] for r_data in results
+    ]
+    write_xlsx_sheets(
+        OUTPUT_XLSX,
+        [("Sheet1", sheet1_rows), ("9_Cot_Chinh_Trich_Xuat", sheet2_rows)],
     )
-
-    # Ghi Header Sheet1
-    for col_idx, col_name in enumerate(all_cols, start=1):
-        cell = ws1.cell(row=1, column=col_idx, value=col_name)
-        cell.font = header_font
-        cell.fill = header_fill if col_idx <= 9 else step_fill
-        cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
-
-    # Ghi Dữ liệu Sheet1
-    for row_idx, r_data in enumerate(results, start=2):
-        for col_idx, col_name in enumerate(all_cols, start=1):
-            val = r_data.get(col_name, "")
-            cell = ws1.cell(row=row_idx, column=col_idx, value=val)
-            cell.font = data_font
-            cell.border = thin_border
-            if col_idx in [1, 4]:
-                cell.alignment = Alignment(horizontal="center", vertical="center")
-            elif col_idx in [2, 5, 6]:
-                cell.alignment = Alignment(horizontal="left", vertical="center")
-            else:
-                cell.alignment = Alignment(horizontal="left", vertical="top", wrap_text=True)
-
-    # Sheet2 (Sheet phụ): CHỈ CHỨA DUY NHẤT 9 CỘT CHÍNH (Thuần dữ liệu trích xuất)
-    ws2 = wb.create_sheet(title="9_Cot_Chinh_Trich_Xuat")
-    for col_idx, col_name in enumerate(main_9_cols, start=1):
-        cell = ws2.cell(row=1, column=col_idx, value=col_name)
-        cell.font = header_font
-        cell.fill = header_fill
-        cell.alignment = Alignment(horizontal="center", vertical="center")
-
-    for row_idx, r_data in enumerate(results, start=2):
-        for col_idx, col_name in enumerate(main_9_cols, start=1):
-            val = r_data.get(col_name, "")
-            cell = ws2.cell(row=row_idx, column=col_idx, value=val)
-            cell.font = data_font
-            cell.border = thin_border
-            if col_idx in [1, 4]:
-                cell.alignment = Alignment(horizontal="center", vertical="center")
-            else:
-                cell.alignment = Alignment(horizontal="left", vertical="top", wrap_text=True)
-
-    # Tự căn chỉnh chiều rộng cột vừa vặn
-    for ws in [ws1, ws2]:
-        for col in ws.columns:
-            max_len = max(len(str(cell.value or '')) for cell in col[:15])
-            col_letter = openpyxl.utils.get_column_letter(col[0].column)
-            ws.column_dimensions[col_letter].width = min(max(max_len + 3, 12), 45)
-
-    wb.save(OUTPUT_XLSX)
     print(f"✓ Đã lưu file Excel: {OUTPUT_XLSX}")
 
     # Xuất file CSV UTF-8 BOM
