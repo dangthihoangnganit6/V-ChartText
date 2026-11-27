@@ -72,8 +72,94 @@ def cleanup_temp_files_list(file_paths: Optional[List[str]]):
 cleanup_all_temp_audio()
 atexit.register(cleanup_all_temp_audio)
 
-# Trạng thái nạp mô hình VLM thực tế (chỉ khả dụng khi có CUDA/GPU rời)
-VLM_MODEL_LOADED = False
+# Cấu hình & nạp mô hình Qwen3-VL (tách biệt khỏi vòng lặp xử lý từng ảnh)
+import threading
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
+
+QWEN3_VL_UTILS_SRC = os.path.join(WORKSPACE_DIR, "Qwen3-VL", "qwen-vl-utils", "src")
+if os.path.isdir(QWEN3_VL_UTILS_SRC) and QWEN3_VL_UTILS_SRC not in sys.path:
+    sys.path.insert(0, QWEN3_VL_UTILS_SRC)
+
+QWEN3_VL_MODEL_ID = os.environ.get("QWEN3_VL_MODEL_ID", "Qwen/Qwen3-VL-2B-Instruct")
+QWEN3_VL_REMOTE_URL = os.environ.get("QWEN3_VL_REMOTE_URL", "").strip()
+QWEN3_VL_AUTOLOAD = os.environ.get("QWEN3_VL_AUTOLOAD", "0") == "1"
+QWEN3_VL_ALLOW_CPU = os.environ.get("QWEN3_VL_ALLOW_CPU", "0") == "1"
+QWEN3_VL_TIMEOUT = float(os.environ.get("QWEN3_VL_TIMEOUT", "120"))
+
+QWEN3_VL_PROMPT_JSON = """Bạn là chuyên gia trích xuất dữ liệu biểu đồ giáo dục tiếng Việt (SGK Địa lí, Lịch sử, tài liệu ôn thi THPT Quốc gia).
+Đọc hình ảnh biểu đồ và trích xuất thành DUY NHẤT một chuỗi JSON hợp lệ gồm 7 trường:
+{
+  "chart_title": "Tên đầy đủ của biểu đồ (nguyên văn tiếng Việt có dấu, nếu không có ghi 'Không có tên')",
+  "chart_type": "Chỉ chọn 1 trong: column | cột ghép | cột chồng | đường | miền | tròn | kết hợp",
+  "unit": "Đơn vị đo lường (ví dụ: %, nghìn ha, triệu tấn, USD/người...)",
+  "x_axis_label": "Nhãn trục hoành (ví dụ: Năm, Vùng kinh tế, Quốc gia...)",
+  "categories": "Các mốc/danh mục trục hoành phân tách bằng ' | '",
+  "series_name": "Tên các chuỗi dữ liệu phân tách bằng ' || '",
+  "values": "Giá trị số tương ứng; cùng chuỗi phân tách bằng ' | ', giữa các chuỗi phân tách bằng ' || '"
+}
+Giữ nguyên định dạng số tiếng Việt (dấu ',' thập phân, dấu '.' hàng nghìn). Chỉ trả về JSON, không giải thích thêm."""
+
+_QWEN3_VL_LOCK = threading.Lock()
+_QWEN3_VL_STATE: Dict[str, Any] = {
+    "model": None,
+    "processor": None,
+    "model_id": QWEN3_VL_MODEL_ID,
+    "device": "cpu",
+    "loaded": False,
+    "error": None,
+}
+
+
+def init_qwen3_vl_model(model_id: Optional[str] = None) -> Tuple[bool, str]:
+    """
+    Nạp mô hình Qwen3-VL một lần duy nhất (singleton).
+    Không tự động tải model nặng nếu thiếu GPU CUDA và chưa bật QWEN3_VL_ALLOW_CPU=1.
+    """
+    target_id = (model_id or QWEN3_VL_MODEL_ID).strip()
+    if _QWEN3_VL_STATE["loaded"] and _QWEN3_VL_STATE["model"] is not None and _QWEN3_VL_STATE["model_id"] == target_id:
+        return True, f"Qwen3-VL ({target_id}) đã sẵn sàng trên {_QWEN3_VL_STATE['device']}."
+
+    with _QWEN3_VL_LOCK:
+        if _QWEN3_VL_STATE["loaded"] and _QWEN3_VL_STATE["model"] is not None and _QWEN3_VL_STATE["model_id"] == target_id:
+            return True, f"Qwen3-VL ({target_id}) đã sẵn sàng trên {_QWEN3_VL_STATE['device']}."
+
+        _QWEN3_VL_STATE["model_id"] = target_id
+        try:
+            import torch
+            from transformers import AutoProcessor, AutoModelForImageTextToText
+
+            has_cuda = torch.cuda.is_available()
+            if not has_cuda and not QWEN3_VL_ALLOW_CPU:
+                msg = "Thiếu GPU CUDA và chưa bật cờ QWEN3_VL_ALLOW_CPU=1; bỏ qua nạp Qwen3-VL để tránh tải model nặng."
+                _QWEN3_VL_STATE["error"] = msg
+                return False, msg
+
+            device = "cuda" if has_cuda else "cpu"
+            _QWEN3_VL_STATE["device"] = device
+            processor = AutoProcessor.from_pretrained(target_id)
+            model = AutoModelForImageTextToText.from_pretrained(
+                target_id,
+                dtype="auto",
+                device_map="auto" if has_cuda else "cpu",
+            )
+            model.eval()
+            _QWEN3_VL_STATE["processor"] = processor
+            _QWEN3_VL_STATE["model"] = model
+            _QWEN3_VL_STATE["loaded"] = True
+            _QWEN3_VL_STATE["error"] = None
+            return True, f"Đã nạp thành công {target_id} trên {device.upper()}."
+        except Exception as e:
+            msg = f"Không thể nạp Qwen3-VL ({target_id}): {e}"
+            _QWEN3_VL_STATE["loaded"] = False
+            _QWEN3_VL_STATE["model"] = None
+            _QWEN3_VL_STATE["processor"] = None
+            _QWEN3_VL_STATE["error"] = msg
+            return False, msg
+
+
+if QWEN3_VL_AUTOLOAD:
+    _ok_q3, _msg_q3 = init_qwen3_vl_model()
+    print(f"{'✓' if _ok_q3 else '⚠️'} {_msg_q3}")
 
 # ==============================================================================
 # 2. CÁC HÀM BĂM ẢNH & THỊ GIÁC (HASHING & PERCEPTUAL MATCHING)
@@ -115,9 +201,9 @@ def hamming_distance(h1: int, h2: int) -> int:
     return bin(h1 ^ h2).count("1")
 
 # ==============================================================================
-# 3. NẠP CƠ SỞ DỮ LIỆU ĐÃ KIỂM CHỨNG & LẬP CHỈ MỤC TẬP DỮ LIỆU
+# 3. NẠP TẬP ĐỐI CHUẨN BENCHMARK (CHỈ PHỤC VỤ ĐÁNH GIÁ / ĐỐI CHIẾU BƯỚC 3)
 # ==============================================================================
-DATABASE_RECORDS: Dict[str, Dict[str, Any]] = {}
+BENCHMARK_RECORDS: Dict[str, Dict[str, Any]] = {}
 MD5_INDEX: Dict[str, str] = {}
 DHASH_INDEX: Dict[int, Tuple[str, float]] = {}
 FILENAME_INDEX: Dict[str, str] = {}
@@ -137,7 +223,7 @@ from vichartfact_metrics import (
     render_vichartfact_html,
 )
 
-# Nạp Benchmark ground truth
+# Nạp Benchmark ground truth (chỉ dùng cho đánh giá/đối chiếu, KHÔNG dùng điền sẵn Bước 1)
 if os.path.exists(BENCHMARK_PATH):
     try:
         df_bm = pd.read_excel(BENCHMARK_PATH, header=2)
@@ -155,47 +241,17 @@ if os.path.exists(BENCHMARK_PATH):
                     "values": str(row.get("values", "")).strip() if pd.notna(row.get("values")) else "",
                     "source": "benchmark"
                 }
-                DATABASE_RECORDS[img_n] = rec
-                DATABASE_RECORDS[img_n.lower()] = rec
+                BENCHMARK_RECORDS[img_n] = rec
+                BENCHMARK_RECORDS[img_n.lower()] = rec
                 if img_n.endswith(".png"):
-                    DATABASE_RECORDS[img_n.replace(".png", ".jpg")] = rec
+                    BENCHMARK_RECORDS[img_n.replace(".png", ".jpg")] = rec
                 elif img_n.endswith(".jpg"):
-                    DATABASE_RECORDS[img_n.replace(".jpg", ".png")] = rec
-        print(f"✓ Đã nạp {len(df_bm)} bản ghi đối chuẩn từ benchmark.xlsx.")
+                    BENCHMARK_RECORDS[img_n.replace(".jpg", ".png")] = rec
+        print(f"✓ Đã nạp {len(df_bm)} bản ghi đối chuẩn từ benchmark.xlsx (chỉ dùng để đánh giá).")
     except Exception as e:
         print(f"⚠️ Cảnh báo nạp benchmark.xlsx: {e}")
 
-# Nạp Extracted Results
-if os.path.exists(EXTRACTED_RESULTS_PATH):
-    try:
-        df_ext = pd.read_csv(EXTRACTED_RESULTS_PATH)
-        for _, row in df_ext.iterrows():
-            img_n = str(row.get("image_name", "")).strip()
-            if img_n and img_n != "nan":
-                if img_n not in DATABASE_RECORDS:
-                    rec = {
-                        "image_name": img_n,
-                        "chart_title": str(row.get("chart_title", "")).strip() if pd.notna(row.get("chart_title")) else "Biểu đồ học tập SGK",
-                        "chart_type": normalize_chart_type(row.get("chart_type", "column")),
-                        "unit": str(row.get("unit", "")).strip() if pd.notna(row.get("unit")) else "",
-                        "x_axis_label": str(row.get("x_axis_label", "")).strip() if pd.notna(row.get("x_axis_label")) else "Danh mục",
-                        "categories": str(row.get("categories", "")).strip() if pd.notna(row.get("categories")) else "",
-                        "series_name": str(row.get("series_name", "")).strip() if pd.notna(row.get("series_name")) else "Giá trị",
-                        "values": str(row.get("values", "")).strip() if pd.notna(row.get("values")) else "",
-                        "source": "extracted"
-                    }
-                    DATABASE_RECORDS[img_n] = rec
-                    DATABASE_RECORDS[img_n.lower()] = rec
-                else:
-                    if pd.notna(row.get("validation_status")):
-                        DATABASE_RECORDS[img_n]["validation_status"] = str(row.get("validation_status")).strip()
-                    if pd.notna(row.get("validation_notes")):
-                        DATABASE_RECORDS[img_n]["validation_notes"] = str(row.get("validation_notes")).strip()
-        print(f"✓ Đã đồng bộ kết quả kiểm chứng từ {len(df_ext)} bản ghi extracted results.")
-    except Exception as e:
-        print(f"⚠️ Cảnh báo nạp extracted results: {e}")
-
-# Lập chỉ mục toàn bộ ảnh trong thư mục dataset
+# Lập chỉ mục ảnh trong thư mục dataset để phục vụ đối chiếu đánh giá & tập mẫu giao diện
 if os.path.exists(DATASET_DIR):
     for root, _, files in os.walk(DATASET_DIR):
         for f in files:
@@ -223,15 +279,15 @@ if os.path.exists(DATASET_DIR):
 print(f"✓ Lập chỉ mục thành công: {len(DATASET_FILEPATHS)} ảnh SGK ({len(MD5_INDEX)} mã MD5, {len(DHASH_INDEX)} mã dHash).")
 
 # ==============================================================================
-# 4. BỘ TRA CỨU ẢNH THÔNG MINH (IMAGE RESOLVER)
+# 4. BỘ TRA CỨU ĐỐI CHUẨN BENCHMARK (CHỈ DÙNG CHO ĐÁNH GIÁ METRIC)
 # ==============================================================================
 def resolve_image_match(input_image_path: str) -> Tuple[Optional[str], str]:
     """
-    Khớp chính xác hình ảnh người dùng tải lên với tập dữ liệu SGK:
-    1. Kiểm tra tên file trực tiếp (nếu giữ nguyên).
-    2. Mã băm MD5 nguyên bản (100% byte-for-byte).
+    Đối chiếu ảnh đầu vào với tập chuẩn benchmark.xlsx để lấy Ground Truth phục vụ đánh giá ở Bước 3:
+    1. Kiểm tra tên file trực tiếp.
+    2. Mã băm MD5 nguyên bản.
     3. Mã băm thị giác dHash khớp tuyệt đối.
-    4. Mã băm thị giác dHash lân cận gần nhất (Hamming Distance <= 6, sai lệch tỉ lệ khung hình < 0.25).
+    4. Mã băm thị giác dHash lân cận gần nhất (Hamming Distance <= 6).
     """
     if not input_image_path or not os.path.exists(input_image_path):
         return None, "File không tồn tại"
@@ -239,8 +295,8 @@ def resolve_image_match(input_image_path: str) -> Tuple[Optional[str], str]:
     base_name = os.path.basename(input_image_path).strip()
 
     # 1. Tên file trực tiếp
-    if base_name in DATABASE_RECORDS:
-        return DATABASE_RECORDS[base_name]["image_name"], f"Khớp trực tiếp tên file gốc: '{base_name}'"
+    if base_name in BENCHMARK_RECORDS:
+        return BENCHMARK_RECORDS[base_name]["image_name"], f"Khớp trực tiếp tên file gốc: '{base_name}'"
     if base_name.lower() in FILENAME_INDEX:
         real_n = FILENAME_INDEX[base_name.lower()]
         return real_n, f"Khớp theo danh mục chuẩn: '{real_n}'"
@@ -593,6 +649,171 @@ def render_loading_vichartfact_html(status_text: str) -> str:
     </div>
     """
 
+def _normalize_qwen3_vl_output(raw_or_dict: Any) -> Tuple[Optional[Dict[str, Any]], Optional[str]]:
+    """Parse JSON (nếu là chuỗi) và chuẩn hóa đầu ra Qwen3-VL về 7 trường chuẩn trước khi qua Bước 2."""
+    if isinstance(raw_or_dict, dict):
+        parsed = raw_or_dict
+    else:
+        raw_text = str(raw_or_dict) if raw_or_dict is not None else ""
+        if not raw_text.strip():
+            return None, "Output rỗng từ Qwen3-VL."
+
+        m = re.search(r"```(?:json)?\s*(\{[\s\S]*?\})\s*```", raw_text)
+        m_brace = re.search(r"(\{[\s\S]*\})", raw_text)
+        json_str = m.group(1).strip() if m else (m_brace.group(1).strip() if m_brace else "")
+        if not json_str:
+            return None, f"Không tìm thấy JSON hợp lệ trong đầu ra Qwen3-VL: {raw_text[:120]}"
+
+        json_str = re.sub(r",\s*\}", "}", re.sub(r",\s*\]", "]", json_str))
+        try:
+            parsed = json.loads(json_str)
+        except Exception as e:
+            try:
+                parsed = json.loads(json_str.replace("'", '"'))
+            except Exception:
+                return None, f"Lỗi cú pháp JSON từ Qwen3-VL: {e}"
+
+        if not isinstance(parsed, dict):
+            return None, "Đầu ra JSON của Qwen3-VL không phải dạng dict."
+
+    def _norm_sep(v: Any, sep: str, default: str = "") -> str:
+        if v is None:
+            return default
+        if isinstance(v, list):
+            if sep == " || " and v and isinstance(v[0], list):
+                return " || ".join(" | ".join(str(x).strip() for x in sub if str(x).strip()) for sub in v)
+            return sep.join(str(x).strip() for x in v if str(x).strip()) or default
+        s = str(v).strip()
+        if not s or s.lower() in {"none", "null", "nan"}:
+            return default
+        if ";" in s and "|" not in s:
+            return sep.join(p.strip() for p in s.split(";") if p.strip()) or default
+        return s
+
+    title = str(parsed.get("chart_title") or "").strip()
+    if not title or title.lower() in {"none", "null", "nan", "không có tên"}:
+        title = "Biểu đồ học tập SGK"
+    unit = str(parsed.get("unit") or "").strip()
+    if unit.lower() in {"none", "null", "nan", "không có"}:
+        unit = ""
+    x_label = str(parsed.get("x_axis_label") or "").strip()
+    if not x_label or x_label.lower() in {"none", "null", "nan", "không có"}:
+        x_label = "Danh mục"
+
+    categories = _norm_sep(parsed.get("categories"), " | ", "")
+    series_name = _norm_sep(parsed.get("series_name"), " || ", "Giá trị")
+    values = _norm_sep(parsed.get("values"), " | ", "")
+    if isinstance(parsed.get("values"), list) and parsed["values"] and isinstance(parsed["values"][0], list):
+        values = _norm_sep(parsed.get("values"), " || ", "")
+
+    if not categories and not values:
+        return None, "Qwen3-VL trả về thiếu cả danh mục (categories) và giá trị (values)."
+
+    return {
+        "chart_title": title,
+        "chart_type": normalize_chart_type(parsed.get("chart_type", "column")),
+        "unit": unit,
+        "x_axis_label": x_label,
+        "categories": categories,
+        "series_name": series_name,
+        "values": values,
+    }, None
+
+
+def extract_chart_data_vlm(image_path: str, timeout_sec: float = QWEN3_VL_TIMEOUT) -> Dict[str, Any]:
+    """Bước 1: Chạy Qwen3-VL trực tiếp trên ảnh (qua remote Colab endpoint hoặc model cục bộ)."""
+    t0 = time.time()
+    if not image_path or not os.path.exists(image_path):
+        return {"ok": False, "data": None, "error": "Ảnh không tồn tại.", "error_type": "invalid_image",
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": 0.0}
+
+    try:
+        with Image.open(image_path) as im:
+            im.verify()
+    except Exception as e:
+        return {"ok": False, "data": None, "error": f"Ảnh không hợp lệ: {e}", "error_type": "invalid_image",
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+
+    remote_url = os.environ.get("QWEN3_VL_REMOTE_URL", "").strip() or QWEN3_VL_REMOTE_URL
+    if remote_url:
+        import requests
+
+        try:
+            with open(image_path, "rb") as img_f:
+                resp = requests.post(
+                    remote_url,
+                    files={"file": (os.path.basename(image_path), img_f, "application/octet-stream")},
+                    timeout=timeout_sec,
+                )
+            resp.raise_for_status()
+            payload = resp.json()
+        except requests.exceptions.Timeout:
+            return {"ok": False, "data": None, "error": f"Gọi endpoint từ xa vượt quá {timeout_sec:.0f}s.", "error_type": "timeout",
+                    "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+        except requests.exceptions.RequestException as e:
+            return {"ok": False, "data": None, "error": f"Lỗi kết nối endpoint từ xa ({remote_url}): {e}", "error_type": "remote_error",
+                    "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+        except ValueError as e:
+            return {"ok": False, "data": None, "error": f"Endpoint từ xa trả về không phải JSON hợp lệ: {e}", "error_type": "invalid_output",
+                    "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+
+        if not isinstance(payload, dict) or not payload.get("ok"):
+            err_msg = payload.get("error") if isinstance(payload, dict) else "Phản hồi từ endpoint từ xa không hợp lệ."
+            err_type = (payload.get("error_type") if isinstance(payload, dict) else None) or "remote_error"
+            return {"ok": False, "data": None, "error": err_msg or "Endpoint từ xa trả về lỗi.", "error_type": err_type,
+                    "model_id": (payload.get("model_id") if isinstance(payload, dict) else None) or "Qwen3-VL-Remote",
+                    "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+
+        data, norm_err = _normalize_qwen3_vl_output(payload.get("data"))
+        if norm_err or data is None:
+            return {"ok": False, "data": None, "error": norm_err, "error_type": "invalid_output",
+                    "model_id": payload.get("model_id", "Qwen3-VL-Remote"), "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+
+        return {"ok": True, "data": data, "error": None, "error_type": None,
+                "model_id": payload.get("model_id", "Qwen3-VL-Remote"), "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+
+    ok_load, load_msg = init_qwen3_vl_model()
+    if not ok_load:
+        return {"ok": False, "data": None, "error": load_msg, "error_type": "model_not_ready",
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+
+    def _infer() -> str:
+        import torch
+        from qwen_vl_utils import process_vision_info
+
+        processor = _QWEN3_VL_STATE["processor"]
+        model = _QWEN3_VL_STATE["model"]
+        messages = [{"role": "user", "content": [{"type": "image", "image": image_path}, {"type": "text", "text": QWEN3_VL_PROMPT_JSON}]}]
+        text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+        image_inputs, video_inputs = process_vision_info(messages)
+        inputs = processor(text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt").to(model.device)
+        with torch.no_grad():
+            gen_ids = model.generate(**inputs, max_new_tokens=1024, do_sample=False)
+        trimmed = [out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, gen_ids)]
+        return processor.batch_decode(trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+
+    executor = ThreadPoolExecutor(max_workers=1)
+    future = executor.submit(_infer)
+    try:
+        raw_text = future.result(timeout=timeout_sec)
+    except FuturesTimeoutError:
+        return {"ok": False, "data": None, "error": f"Suy luận Qwen3-VL vượt quá {timeout_sec:.0f}s.", "error_type": "timeout",
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+    except Exception as e:
+        return {"ok": False, "data": None, "error": f"Lỗi suy luận Qwen3-VL: {e}", "error_type": "runtime_error",
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+    finally:
+        executor.shutdown(wait=False)
+
+    data, norm_err = _normalize_qwen3_vl_output(raw_text)
+    if norm_err or data is None:
+        return {"ok": False, "data": None, "error": norm_err, "error_type": "invalid_output",
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+
+    return {"ok": True, "data": data, "error": None, "error_type": None,
+            "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+
+
 def process_pipeline_demo(
     input_image_path: Optional[str],
     current_session_files: List[str]
@@ -623,62 +844,49 @@ def process_pipeline_demo(
         )
         return
 
-    # Tra cứu chính xác ảnh qua bộ Resolver đa tầng
-    matched_image_name, match_method = resolve_image_match(input_image_path)
+    # --------------------------------------------------------------------------
+    # BƯỚC 1: SUY LUẬN VLM TRỰC TIẾP TỪ ẢNH ĐẦU VÀO (KHÔNG TRA CỨU CACHE/BENCHMARK)
+    # --------------------------------------------------------------------------
+    vlm_res = extract_chart_data_vlm(input_image_path)
 
-    # --------------------------------------------------------------------------
-    # TRƯỜNG HỢP 1: ẢNH NGOÀI TẬP MẪU (CHƯA CÓ TRONG CACHE)
-    # --------------------------------------------------------------------------
-    if not matched_image_name or matched_image_name not in DATABASE_RECORDS:
-        if VLM_MODEL_LOADED:
-            # Nếu có model VLM đang chạy trong bộ nhớ GPU, gọi suy luận trực tiếp ở đây
-            pass
-        else:
-            # Môi trường local/cloud chưa nạp VLM: Tắt sạch hiệu ứng tải và báo cảnh báo trung thực
-            empty_meta = pd.DataFrame([
-                {"Thuộc tính": "Trạng thái tra cứu", "Nội dung": "Không tìm thấy trong 214 biểu đồ SGK đã kiểm chứng"},
-                {"Thuộc tính": "Chi tiết đối sánh", "Nội dung": match_method},
-                {"Thuộc tính": "Mô hình VLM cục bộ", "Nội dung": "Chưa nạp trọng số Qwen3-VL (yêu cầu GPU)"},
-                {"Thuộc tính": "Khuyến nghị người dùng", "Nội dung": "Vui lòng chọn ảnh trong 'Tập mẫu đại diện' bên dưới hoặc tải ảnh thuộc dataset SGK"}
-            ])
-            empty_matrix = pd.DataFrame([
-                {"Thông báo": "Không có ma trận số liệu trích xuất cho ảnh ngoài tập mẫu khi chưa nạp mô hình VLM."}
-            ])
-            notice_msg = "Ảnh chưa có trong tập dữ liệu đã trích xuất sẵn & môi trường local chưa nạp model VLM (Qwen3-VL). Vui lòng chọn một biểu đồ mẫu trong tập dữ liệu sách giáo khoa bên dưới để trải nghiệm đầy đủ pipeline 4 bước."
-            empty_vichartfact = """
-            <div style="background-color: #F8F9FC; border: 1px dashed #CBD5E1; border-radius: 8px; padding: 20px; text-align: center; color: #64748B; font-size: 13.5px; line-height: 1.5; margin-top: 10px;">
-                🛡️ <b>Chưa thực hiện đo kiểm ViChartFact:</b> Do hình ảnh tải lên chưa có ma trận dữ liệu trích xuất để làm bảng chân lý đối chuẩn. Vui lòng chọn một biểu đồ trong <i>Tập mẫu đại diện</i> ở cột trái để quan sát quy trình đo kiểm ViChartFact chi tiết.
-            </div>
-            """
-            warn_toast = make_toast_html("Ảnh Ngoài Tập Dữ Liệu", "Ảnh chưa có trong 214 biểu đồ SGK đã kiểm chứng & máy chưa nạp Qwen3-VL.", "warning")
-            yield (
-                gr.update(value=empty_meta),
-                gr.update(value=empty_matrix),
-                gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
-                gr.update(value=None, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
-                gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
-                gr.update(value=None, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
-                gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
-                gr.update(value=None, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
-                gr.update(value=empty_vichartfact),
-                gr.update(value=warn_toast),
-                []
-            )
-            return
+    if not vlm_res.get("ok") or not vlm_res.get("data"):
+        err_detail = vlm_res.get("error") or "Không thể trích xuất dữ liệu từ ảnh."
+        err_type = vlm_res.get("error_type") or "runtime_error"
+        model_name = vlm_res.get("model_id", QWEN3_VL_MODEL_ID)
+        elapsed = vlm_res.get("elapsed_sec", 0.0)
 
-    # --------------------------------------------------------------------------
-    # TRƯỜNG HỢP 2: ẢNH KHỚP CHÍNH XÁC VỚI BẢN GHI TRONG DATASET
-    # --------------------------------------------------------------------------
-    raw_data = DATABASE_RECORDS[matched_image_name]
-    step1_dict = {
-        "chart_title": raw_data.get("chart_title", "Biểu đồ học tập SGK"),
-        "chart_type": raw_data.get("chart_type", "column"),
-        "unit": raw_data.get("unit", ""),
-        "x_axis_label": raw_data.get("x_axis_label", "Danh mục"),
-        "categories": raw_data.get("categories", ""),
-        "series_name": raw_data.get("series_name", "Giá trị"),
-        "values": raw_data.get("values", "")
-    }
+        empty_meta = pd.DataFrame([
+            {"Thuộc tính": "Trạng thái Bước 1 (VLM)", "Nội dung": f"Lỗi ({err_type})"},
+            {"Thuộc tính": "Mô hình VLM", "Nội dung": f"{model_name} ({vlm_res.get('device', 'cpu')})"},
+            {"Thuộc tính": "Thời gian xử lý", "Nội dung": f"{elapsed}s"},
+            {"Thuộc tính": "Chi tiết lỗi", "Nội dung": err_detail},
+        ])
+        empty_matrix = pd.DataFrame([
+            {"Thông báo": f"Không trích xuất được ma trận số liệu từ VLM: {err_detail}"}
+        ])
+        notice_msg = f"Bước 1 (VLM trực tiếp) gặp lỗi ({err_type}): {err_detail}"
+        empty_vichartfact = f"""
+        <div style="background-color: #FEF2F2; border: 1px dashed #FCA5A5; border-radius: 8px; padding: 20px; text-align: center; color: #991B1B; font-size: 13.5px; line-height: 1.5; margin-top: 10px;">
+            ⚠️ <b>Chưa thực hiện Bước 3 & ViChartFact:</b> Bước 1 (suy luận VLM trực tiếp) không thành công — {html.escape(err_detail)}
+        </div>
+        """
+        err_toast = make_toast_html("Lỗi Trích Xuất VLM (Bước 1)", err_detail, "error")
+        yield (
+            gr.update(value=empty_meta),
+            gr.update(value=empty_matrix),
+            gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
+            gr.update(value=None, label="🎧 Trình phát Cấp 1 (Hoài My)", elem_classes=[]),
+            gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
+            gr.update(value=None, label="🎧 Trình phát Cấp 2 (Hoài My)", elem_classes=[]),
+            gr.update(value=notice_msg, placeholder="", elem_classes=["v-desc-box"]),
+            gr.update(value=None, label="🎧 Trình phát Cấp 3 (Hoài My)", elem_classes=[]),
+            gr.update(value=empty_vichartfact),
+            gr.update(value=err_toast),
+            []
+        )
+        return
+
+    step1_dict = vlm_res["data"]
 
     # Bước 2: Kiểm chứng dữ liệu & Gắn cờ bất định (Bảo toàn 100% logic kiểm chứng)
     val_status, val_notes, parsed_matrix = validate_chart_data(step1_dict)
@@ -690,6 +898,7 @@ def process_pipeline_demo(
         {"Thuộc tính": "Loại biểu đồ", "Nội dung": step1_dict["chart_type"]},
         {"Thuộc tính": "Đơn vị tính", "Nội dung": step1_dict["unit"] if step1_dict["unit"] else "Không ghi đơn vị"},
         {"Thuộc tính": "Trục hoành (Categories)", "Nội dung": " | ".join(flagged_matrix["categories"])},
+        {"Thuộc tính": "Nguồn trích xuất (Bước 1)", "Nội dung": f"VLM trực tiếp ({vlm_res['model_id']}, {vlm_res['elapsed_sec']}s)"},
         {"Thuộc tính": "Trạng thái kiểm chứng", "Nội dung": val_status},
         {"Thuộc tính": "Ghi chú kiểm tra", "Nội dung": val_notes}
     ])
@@ -726,9 +935,17 @@ def process_pipeline_demo(
     desc_study = desc_dict["desc_study"]
 
     fact_report = fact_check_vichartfact(desc_dict, flagged_matrix)
+
+    # Đối chiếu tập chuẩn benchmark.xlsx (nếu ảnh khớp) chỉ để phục vụ đánh giá/metric
+    matched_bm_name, _ = resolve_image_match(input_image_path)
+    eval_gt_record = (
+        BENCHMARK_RECORDS[matched_bm_name]
+        if matched_bm_name and matched_bm_name in BENCHMARK_RECORDS
+        else step1_dict
+    )
     completeness_report = evaluate_description_completeness(
         desc_dict,
-        step1_dict,
+        eval_gt_record,
         has_uncertainty=flagged_matrix.get("has_uncertainty", False),
     )
     vichartfact_html = render_vichartfact_html(fact_report, completeness_res=completeness_report)
