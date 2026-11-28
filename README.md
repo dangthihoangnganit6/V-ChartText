@@ -52,5 +52,8 @@ python src/pipeline/run.py --source pred --extract outputs/Qwen3-VL-2B-Instruct_
 python src/pipeline/run.py --source pred --extract outputs/Vintern-1B-v3_5__extract__v1.jsonl
 python src/pipeline/run.py --source pred --extract outputs/Qwen3-VL-2B-Instruct__extract__v1.jsonl --uncertain hedge
 python eval/compare_pipeline.py          # bảng + CI bootstrap + eval/results/compare_examples.md
-pip install gradio edge-tts && python demo/app.py
+# demo web: tải ảnh lên -> mô tả + giọng đọc (GPU 4 GB dùng 4-bit tự động)
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+pip install -r demo/requirements.txt
+python demo/app.py              # hoặc --no-model: chỉ thư viện 200 biểu đồ tính sẵn, không cần GPU
 ```

@@ -1,0 +1,10 @@
+# Demo web (demo/app.py). Cài torch có CUDA TRƯỚC, theo trang pytorch.org:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+gradio>=5
+edge-tts
+transformers>=4.57.0
+accelerate
+bitsandbytes>=0.45      # lượng tử 4-bit cho GPU 4 GB (Windows được hỗ trợ từ 0.43)
+pillow
+numpy
+scipy

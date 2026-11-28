@@ -16,6 +16,8 @@ Luật:
   R6 thiếu ô: biểu đồ nhiều chuỗi mà một chuỗi thiếu mốc x -> cờ mức biểu đồ (không bịa ô thiếu)
   R7 chuỗi hằng: >= 4 mốc cùng một giá trị trong khi chuỗi khác thay đổi -> cờ mức biểu đồ (dấu hiệu chép/lặp)
   R8 loại biểu đồ ngoài tập cho phép / đơn vị trống / tiêu đề mẫu -> sửa nhẹ hoặc cờ mức biểu đồ
+     (R8b: nhãn trục hoành chỉ là 1..N -> cờ mức biểu đồ; đơn vị / tên trục là chữ mẫu -> bỏ)
+  R9 hai chuỗi trùng số ở >= 3 mốc (và >= 30% số mốc chung) -> cờ các ô trùng (nghi gán nhầm số giữa chuỗi)
 """
 import math
 import re
@@ -33,6 +35,10 @@ PLACEHOLDER_TITLES = {"pie chart", "bar chart", "line chart", "biểu đồ", "d
                       "chart", "title", "tên biểu đồ"}
 PCT_TOL = 3.0
 UNIT_FIX = {"ti": "tỉ", "ty": "tỷ", "nghin": "nghìn", "ngàn": "nghìn", "trieu": "triệu"}
+# chữ mẫu mô hình hay điền khi không đọc được đơn vị / tên trục (không phải thông tin trên ảnh)
+PLACEHOLDER_UNITS = {"đơn vị", "đơn vị đo", "đơn vị tính", "unit", "units", "giá trị", "value", "values", "số liệu", "y"}
+PLACEHOLDER_XLABELS = {"thứ tự", "stt", "số thứ tự", "x", "nhãn", "label", "category", "categories", "danh mục",
+                       "trục x", "trục hoành", "hạng mục"}
 
 
 def nfc(s):
@@ -115,13 +121,19 @@ def verify(raw):
         unit = unit.strip().strip("()[]").strip() or None
     if unit:   # mô hình hay bỏ dấu: "Ti USD" -> "Tỉ USD"
         unit = " ".join(UNIT_FIX.get(w.lower(), w) for w in unit.split())
+    if unit and unit.lower() in PLACEHOLDER_UNITS:
+        flags.append(f"đơn vị '{unit}' là chữ mẫu, bỏ")
+        unit = None
     if not unit and ct == "pie":
         unit = "%"
     if not unit:
         flags.append("không rõ đơn vị")
     unit2 = _clean_label(raw.get("unit2"))
-    if unit2 and unit and unit2.lower() == unit.lower():
+    if unit2 and (unit2.lower() in PLACEHOLDER_UNITS or (unit and unit2.lower() == unit.lower())):
         unit2 = None
+    x_label = _clean_label(raw.get("x_label"))
+    if x_label and x_label.lower() in PLACEHOLDER_XLABELS:
+        x_label = None
 
     # R1, R3: đọc số
     pts = []
@@ -205,6 +217,21 @@ def verify(raw):
             if len(ps) >= 4 and len({p["y"] for p in ps}) == 1:   # đo trên 200 ảnh: 100% điểm bị cờ vẫn đúng
                 flags.append(f"chuỗi '{s}' không đổi qua {len(ps)} mốc, cần kiểm tra")
 
+    # R9: hai chuỗi trùng số ở nhiều mốc -> mô hình đọc số thành một dãy rồi chia nhầm cho các chuỗi
+    #     (vd biểu đồ cột ghép bar_075: tháng 6-10 hai chuỗi giống hệt nhau). Gắn cờ các ô trùng.
+    names_ = list(by_series)
+    for i, s1 in enumerate(names_):
+        for s2 in names_[i + 1:]:
+            m1 = {str(p["x"]): p for p in by_series[s1]}
+            m2 = {str(p["x"]): p for p in by_series[s2]}
+            common = [x for x in m1 if x in m2]
+            same = [x for x in common if m1[x]["y"] == m2[x]["y"] and m1[x]["y"] != 0]
+            if len(same) >= 3 and len(same) >= 0.3 * len(common):
+                for x in same:
+                    for p, other in ((m1[x], s2), (m2[x], s1)):
+                        p["flags"].append(f"trùng số với chuỗi '{other}' ở cùng mốc, nghi đọc nhầm chuỗi")
+                flags.append(f"'{s1}' và '{s2}' trùng số ở {len(same)}/{len(common)} mốc, nghi gán nhầm số giữa các chuỗi")
+
     xs = list(dict.fromkeys(p["x"] for p in pts))
     series = list(by_series)
     # mỗi "chuỗi" chỉ có 1 điểm: mô hình đã tách từng cột thành một chuỗi -> gộp thành 1 chuỗi
@@ -247,6 +274,10 @@ def verify(raw):
                 elif unit == "%" and tot < 100 - PCT_TOL:    # thiếu: thường do sót thành phần, số còn lại vẫn đúng
                     flags.append(f"nhóm '{name}' chỉ cộng được {round(tot, 1)}%, có thể thiếu thành phần")
 
+    # R8b: nhãn trục hoành chỉ là 1, 2, ..., N ở biểu đồ không phải đường -> nghi mô hình đánh số thay vì chép nhãn
+    if ct not in ("line", "area") and len(xs) >= 2 and [str(x) for x in xs] == [str(i) for i in range(1, len(xs) + 1)]:
+        flags.append("nhãn trục hoành chỉ là số thứ tự 1..N, có thể chưa chép đúng nhãn trên ảnh")
+
     # R6: thiếu ô
     if len(series) > 1 and group_key != "series":
         missing = sum(len(xs) - len({p["x"] for p in ps}) for ps in by_series.values())
@@ -255,7 +286,7 @@ def verify(raw):
 
     for p in pts:
         p.pop("alts", None)
-    return {"chart_type": ct, "title": title, "x_label": _clean_label(raw.get("x_label")), "unit": unit,
+    return {"chart_type": ct, "title": title, "x_label": x_label, "unit": unit,
             "unit2": unit2, "single": single, "series": series, "xs": xs, "group_key": group_key,
             "groups": groups, "points": pts, "flags": flags,
             "n_uncertain": sum(bool(p["flags"]) for p in pts)}

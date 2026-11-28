@@ -30,6 +30,7 @@ Mã lỗi điểm dữ liệu:
   E8  thiếu điểm dữ liệu (output hoàn chỉnh nhưng không có điểm này)
 Cờ mức biểu đồ (file __all.csv): hit_limit (chạm max_new_tokens), loop (một điểm hoặc một cặp
 series × x lặp >= 5 lần), type_valid (chart_type thuộc tập cho phép; "bar|line" là không hợp lệ).
+type_ok_norm (file __charts.csv): như type_ok nhưng quy "bar|line", "cột và đường"... về combo (xem canon_type).
 """
 import csv
 import json
@@ -51,6 +52,17 @@ VALID_TYPES = {"bar", "line", "pie", "combo", "area", "other"}
 LOOP_MIN = 5          # một điểm lặp từ 5 lần trở lên -> coi là lặp
 LIMIT_MARGIN = 8      # n_new_tokens >= max_new_tokens - 8 -> coi là chạm giới hạn
 Y2I = str.maketrans("ỳýỷỹỵ", "ìíỉĩị")
+
+
+def canon_type(t):
+    """Quy chart_type về tập hợp lệ: mô hình hay chép nguyên mẫu "bar|line" (hoặc line|bar, bar+line,
+    cột và đường) cho biểu đồ kết hợp -> coi là combo. Dùng cho type_ok_norm; type_ok giữ nguyên cách chấm cũ."""
+    t = norm(t)
+    parts = set(re.split(r"\s*(?:\||\+|/|,|&| và | and )\s*", t)) - {""}
+    parts = {{"cột": "bar", "đường": "line", "column": "bar"}.get(x, x) for x in parts}
+    if len(parts) >= 2 and parts <= VALID_TYPES - {"other"}:
+        return "combo"
+    return t
 
 
 # ---------------------------------------------------------------- chuẩn hoá
@@ -228,7 +240,7 @@ def score_chart(gt, rec, lenient):
         code = "E0b_bi_cat_hoac_hong" if lenient else "E0_khong_parse_duoc_JSON"
         for g in gt_pts:
             rows.append({**_base(gt, g), "pred_raw": "", "pred": "", "err": code})
-        return rows, {"json_ok": 0, "salvaged": 0, "rnss": 0.0, "type_ok": 0, "unit_ok": 0,
+        return rows, {"json_ok": 0, "salvaged": 0, "rnss": 0.0, "type_ok": 0, "type_ok_norm": 0, "unit_ok": 0,
                       "legend_ok": 0, "n_extra_points": 0}
 
     pts = pred_points(pred)
@@ -266,6 +278,7 @@ def score_chart(gt, rec, lenient):
         "salvaged": int(status == "salvaged"),
         "rnss": rnss([g["y"] for g in gt_pts], [p["y"] for p in pts]),
         "type_ok": int(norm(pred.get("chart_type")) == norm(gt["chart_type"])),
+        "type_ok_norm": int(canon_type(pred.get("chart_type")) == norm(gt["chart_type"])),
         "unit_ok": unit_ok(gt, pred, lenient),
         "legend_ok": int(gt_leg == pr_leg) if gt_leg else None,
         "n_extra_points": len(pts) - len(used),
@@ -351,7 +364,7 @@ def score_file(path, every, done):
         charts.append({"id": o["id"], "chart_type": gt["chart_type"],
                        "values_shown": int(gt.get("values_shown_on_chart") is not False),
                        "duplicate": int(bool(gt.get("duplicate_of"))), **c_s, "ra5": ra(r_s),
-                       **{k + "_lenient": v for k, v in c_l.items() if k not in ("json_ok", "type_ok")},
+                       **{k + "_lenient": v for k, v in c_l.items() if k not in ("json_ok", "type_ok", "type_ok_norm")},
                        "ra5_lenient": ra(r_l)})
 
     res = Path("eval/results")

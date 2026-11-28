@@ -24,9 +24,14 @@ MAX_LIST = 7
 def _xn(t, x):
     """Tên mốc để đọc: '3' -> 'tháng 3' nếu trục x ghi 'Tháng'; năm giữ nguyên."""
     xs = str(x).strip()
+    if any(f.startswith("nhãn trục hoành chỉ là số thứ tự") for f in t.get("flags") or []):
+        word = {"bar": "cột", "combo": "cột", "pie": "phần"}.get(t["chart_type"], "mốc")
+        return f"{word} thứ {xs}"            # không bịa tên: nói rõ đây là vị trí, chưa đọc được nhãn
     xl = (t["x_label"] or "").strip().lower()
     if re.fullmatch(r"\d{1,2}", xs) and xl and len(xl) <= 12 and not xl.startswith("năm"):
         return f"{xl} {xs}"
+    if re.match(r"(Tháng|Quý|Năm|Ngày|Tuần|Giờ|Sáng|Trưa|Chiều|Tối) ", xs):   # 'Tháng 1' giữa câu -> 'tháng 1'
+        return xs[0].lower() + xs[1:]
     return xs
 
 
@@ -52,10 +57,45 @@ def _head(t):
     return f"{name} thể hiện {core[0].lower() + core[1:] if not core[:2].isupper() else core}"
 
 
-def _is_time(xs):
-    hits = sum(bool(re.fullmatch(r"(năm\s*)?\d{4}|\d{1,2}/\d{1,2}|t?\d{1,2}|tháng \d{1,2}|[ivx]{1,4}|quý.*",
-                                 str(x).strip().lower())) for x in xs)
-    return len(xs) >= 3 and hits >= 0.7 * len(xs)
+TIME_LABEL = re.compile(r"^(năm|tháng|quý|tuần|ngày|giờ|thời gian|thời điểm|kì|kỳ|học kì|học kỳ|giai đoạn)", re.I)
+
+
+def _is_time(xs, t=None):
+    """Trục x là thời gian? Số trơn 1..12 / số La Mã chỉ tính là thời gian khi tên trục là thời gian hoặc là
+    biểu đồ đường/miền; ở biểu đồ cột chúng thường là tên hạng mục (lớp 1, cỡ 37...) -> không nói 'từ ... đến', 'xu hướng'."""
+    t = t or {}
+    seq_ok = t.get("chart_type") in ("line", "area") or bool(TIME_LABEL.match((t.get("x_label") or "").strip()))
+
+    def hit(x):
+        s = str(x).strip().lower()
+        if re.fullmatch(r"(năm\s*)?\d{4}|\d{1,2}/\d{1,2}|t\d{1,2}|tháng \d{1,2}|quý.*|(năm|kì|kỳ)\s*\d+.*", s):
+            return True
+        return bool(seq_ok and re.fullmatch(r"\d{1,2}|[ivx]{1,4}", s))
+    return len(xs) >= 3 and sum(hit(x) for x in xs) >= 0.7 * len(xs)
+
+
+def _join(items):
+    """['a', 'b', 'c'] -> 'a, b và c'."""
+    items = [i for i in items if i]
+    return items[0] if len(items) == 1 else ", ".join(items[:-1]) + " và " + items[-1] if items else ""
+
+
+def _list_vals(w, ps, unit):
+    """'5A là 34 học sinh, 5B là 38, ... và 5E là 35': đơn vị chỉ nói ở số đầu (trừ %), đỡ lặp khi nghe."""
+    out = []
+    for i, p in enumerate(ps):
+        u = unit if (i == 0 or (unit or "").strip() == "%") else ""
+        out.append(f"{_xn(w.t, p['x'])} là {w.val(p, u)}")
+    return _join(out)
+
+
+def _u(unit):
+    """Đơn vị đứng sau số viết thường chữ đầu ('Học sinh' -> 'học sinh', 'Tỉ USD' -> 'tỉ USD'), giữ từ viết hoa
+    toàn bộ (USD, GDP) và %."""
+    if not unit or len(unit) < 2:
+        return unit
+    first = unit.split()[0]
+    return unit if first.isupper() else unit[0].lower() + unit[1:]
 
 
 def _ratio_words(a, b):
@@ -84,7 +124,7 @@ class Writer:
         self.omitted = 0
 
     def val(self, p, unit=None):
-        unit = self.t["unit"] if unit is None else unit
+        unit = _u(self.t["unit"] if unit is None else unit)
         if p["flags"]:
             if self.mode == "omit":
                 self.omitted += 1
@@ -104,6 +144,8 @@ def _series_points(t):
 
 
 def _x_word(t):
+    if any(f.startswith("nhãn trục hoành chỉ là số thứ tự") for f in t.get("flags") or []):
+        return {"bar": "cột", "combo": "cột", "pie": "phần"}.get(t["chart_type"], "mốc")
     xl = (t["x_label"] or "").lower()
     return xl if xl and len(xl) < 20 else "mốc"
 
@@ -136,7 +178,7 @@ def _describe_series(t, w):
     ct, title, xs = t["chart_type"], t["title"], t["xs"]
     sp = _series_points(t)
     names = list(sp)
-    time = _is_time(xs)
+    time = _is_time(xs, t)
     head = _head(t)
     if t["unit2"]:
         unit_txt = f"Đơn vị: {t['unit']} và {t['unit2']}."
@@ -158,6 +200,9 @@ def _describe_series(t, w):
         trend = _ratio_words(sure[0]["y"], sure[-1]["y"])
         if trend:
             key = f" Nhìn chung, {main.lower() if len(names) > 1 else 'giá trị'} {trend} trong giai đoạn này."
+    elif sure and len(names) == 1 and len(sure) >= 2:
+        top, low = max(sure, key=lambda p: p["y"]), min(sure, key=lambda p: p["y"])
+        key = f" Cao nhất là {_xn(t, top['x'])} với {w.val(top)}, thấp nhất là {_xn(t, low['x'])} với {w.val(low)}."
     elif sure:
         top = max(sure, key=lambda p: p["y"])
         key = f" Lớn nhất là {top['x']}."
@@ -184,7 +229,7 @@ def _describe_series(t, w):
             txt = lead + (txt if lead else _cap(txt))
         else:
             if len(ps) <= MAX_LIST:
-                txt = lead + "; ".join(f"{p['x']}: {w.val(p, unit)}" for p in ps)
+                txt = lead + ("" if lead else "Cụ thể, ") + _list_vals(w, ps, unit)
             else:
                 srt = sorted(sure, key=lambda p: -p["y"])
                 txt = lead + (f"cao nhất là {srt[0]['x']}: {w.val(srt[0], unit)}, thấp nhất là "
@@ -227,7 +272,17 @@ def _describe_series(t, w):
         su = w.sure(sp[main])
         if len(su) >= 2:
             srt = sorted(su, key=lambda p: -p["y"])
-            ins.append(f"Xếp từ cao xuống thấp: {', '.join(str(p['x']) for p in srt[:MAX_LIST])}.")
+            ins.append(f"Xếp từ cao xuống thấp: {_join([_xn(t, p['x']) for p in srt[:MAX_LIST]])}.")
+            hi, lo = srt[0], srt[-1]
+            hx, lx = _xn(t, hi["x"]), _xn(t, lo["x"])
+            if lo["y"] > 0 and hi["y"] > 0:       # so sánh bằng lời, không sinh chữ số mới
+                r = hi["y"] / lo["y"]
+                if r < 1.15:
+                    ins.append(f"Các {_x_word(t)} chênh lệch không nhiều.")
+                elif r >= 1.9:
+                    ins.append(f"{_cap(hx)} {_ratio_words(lo['y'], hi['y'])} {lx}.")
+                else:
+                    ins.append(f"{_cap(hx)} cao hơn rõ rệt so với {lx}.")
     if t["unit2"]:
         ins.append("Biểu đồ có hai trục tung với hai đơn vị khác nhau, cần đọc mỗi chuỗi theo trục của nó.")
     l_dg = l30 + " " + " ".join(ins) + _caveat(t, w)
