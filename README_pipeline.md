@@ -10,6 +10,7 @@ Lịch sử commit đầy đủ: repo `rangha26/V-ChartText`, nhánh `dev`.
 |---|---|
 | `app.py`, `vichartfact_metrics.py`, `notebooks/VChartText_*` (gốc repo) | **Demo web chính thức** (Gradio, Render, Qwen3-VL qua Colab), bước 2–3 của nhóm, thước đo ViChartFact và Độ đầy đủ |
 | `src/`, `eval/`, `outputs/`, `data/labels/` | **Bộ thực nghiệm**: chạy mô hình trên 200 ảnh, pipeline dùng cho thực nghiệm, chấm điểm. Mọi số liệu trong báo cáo đến từ đây |
+| `eval/run_team_pipeline.py` | Đưa bước 2–3 của nhóm (`vichartfact_metrics.py`) vào **cùng bộ thực nghiệm**, chấm bằng cả hai bộ chỉ số |
 
 **Nhãn chuẩn để chấm điểm là `data/labels/*.json`.** Đây là 200 biểu đồ đã soát lại theo ảnh gốc ngày 24–25/11, xem `data/DATA_CARD.md`.
 `docs/Benchmark.xlsx` là bản cũ, trước đợt soát, không dùng để chấm.
@@ -30,6 +31,7 @@ Lịch sử commit đầy đủ: repo `rangha26/V-ChartText`, nhánh `dev`.
 | D28 | Chạy toàn pipeline | `src/pipeline/run.py` |
 | E29 | Đo trích xuất bảng (RA@5%) | `eval/score_extract.py`, `eval/summarize.py` → `eval/results/summary_models.md` |
 | E31 | So sánh pipeline với baseline | `eval/compare_pipeline.py` → `eval/results/compare_pipeline.md`; `eval/paired_test.py` |
+| E30 + E31 | Hai bản bước 2–3, hai bộ chỉ số, cùng dữ liệu | `eval/run_team_pipeline.py` → `eval/results/compare_team_pipeline.md` |
 | F33, F34 | Demo web có giọng đọc | `app.py` ở gốc repo |
 
 ## Kết quả chính (200 biểu đồ, nhãn đã soát)
@@ -63,6 +65,36 @@ Lịch sử các lần sửa luật: `eval/results/lich_su_pipeline.md`. Độ c
 
 **Hạn chế của thước đo:** "% số sai" chỉ kiểm con số có nằm trong bảng nhãn hay không, **không** kiểm số đó có đặt đúng chuỗi hay mốc không.
 
+### Hai bản cài đặt bước 2–3, chấm bằng hai bộ chỉ số (`eval/results/compare_team_pipeline.md`)
+
+Hai bản dùng **cùng bảng bước 1**. **B-nhóm** là `vichartfact_metrics.py`; **B** là `src/pipeline/` với luật R1–R9.
+Thước đo của nhóm (ViChartFact, Độ đầy đủ) được tính lại trên nhãn đã soát.
+
+| Nhánh (Qwen3-VL) | % bđ có số sai (gồm số phái sinh đúng)¹ | ViChartFact (so với nhãn) | Số thực thể lệch / bđ | Độ đầy đủ | Số từ |
+|---|---|---|---|---|---|
+| A – mô tả thẳng | 24,5 | 96,2 | 0,84 | 81,9 | 172 |
+| B-nhóm | 18,5 | 97,6 | 1,12 | **94,0** | 255 |
+| B | **8,5** | **98,9** | **0,30** | 78,3 | 88 |
+| C-nhóm (nhãn đúng) | 10,5 | 100,0 | 0,00 | 99,4 | 163 |
+| C (nhãn đúng) | 0,0 | 99,7 | 0,17 | 83,7 | 94 |
+
+¹ Mô tả của nhóm có nêu chênh lệch và mức tăng ("tăng thêm 32,4 nghìn ha"). Vì vậy cột này chấp nhận số phái sinh đúng
+(hiệu, tổng, % thay đổi, số lần) tính từ bảng nhãn. Nếu chỉ chấp nhận giá trị ô, B-nhóm có 95,5% biểu đồ chứa số sai.
+
+Cách đọc:
+- **B ít lỗi số hơn B-nhóm** trên mọi mô hình, kể cả khi tính theo thước đo của nhóm. % biểu đồ có số sai giảm 10 điểm [−15,5; −4],
+  ViChartFact tăng 1,4 [0,4; 2,5]. Với Vintern, khoảng cách còn rõ hơn (−27 điểm).
+- **B-nhóm đầy đủ hơn hẳn**: Độ đầy đủ cao hơn khoảng 15 điểm, vì mô tả dài gấp khoảng 3 lần và nêu cả phân tích. Đây là
+  đánh đổi giữa nói ít mà chắc và nói nhiều mà dễ sai.
+- B-nhóm so với A: với Qwen, chênh lệch không có ý nghĩa thống kê (−6 [−14; +2]); với Vintern, B-nhóm kém hơn (+15),
+  vì bộ luật đơn giản không bắt được bảng đọc sai.
+- Ngay cả trên nhãn đúng (C-nhóm), khuôn câu của nhóm vẫn sai ở **biểu đồ có nhiều hình tròn**: cộng lát của các năm khác nhau
+  ("đạt tổng tỷ trọng 200%") hoặc so lát năm này với lát năm khác ("gấp 22,4 lần").
+- Hướng kết hợp: dùng bộ luật R1–R9 của B làm bước 2, giữ phần phân tích của B-nhóm nhưng chỉ tính trong cùng một hình tròn.
+
+Lưu ý khi đo: `vichartfact_metrics` đọc số có dấu chấm nghìn ("6.586,6") thành hai số "6" và "586,6", nên script bỏ dấu chấm nghìn
+khỏi mọi văn bản trước khi đưa vào thước đo của nhóm. Việc này chỉ đổi cách viết, không đổi giá trị. Mã bước 2–3 của nhóm không bị sửa.
+
 ## Chạy lại
 
 ```bash
@@ -86,6 +118,7 @@ python eval/summarize.py
 python eval/error_stats.py
 python eval/compare_pipeline.py
 python eval/paired_test.py
+python eval/run_team_pipeline.py                 # bước 2–3 của nhóm, chấm bằng cả hai bộ chỉ số
 ```
 
 PowerShell không có vòng `for` kiểu bash. Trên Windows, chạy trong Git Bash, hoặc gõ từng lệnh một.

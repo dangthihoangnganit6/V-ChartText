@@ -1,2 +1,4 @@
 # sinh ra bởi src/pipeline/run.py, tạo lại được
 pipeline/
+# sinh ra bởi eval/run_team_pipeline.py
+pipeline_nhom/
