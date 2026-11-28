@@ -12,7 +12,7 @@ Bộ dữ liệu biểu đồ học tập tiếng Việt dùng để đánh giá
 | Ảnh đã xoá trước khi gán vì trùng ảnh khác (`bar_063`, `bar_069`) | 2 |
 | File nhãn | 213 |
 | Bị loại khỏi benchmark (`status = excluded`) | 13 |
-| **Dùng để chấm điểm** | **200 biểu đồ, 2.234 điểm dữ liệu** |
+| **Dùng để chấm điểm** | **200 biểu đồ, 2.230 điểm dữ liệu** |
 | Trong đó: tập "sạch" (có in số trên hình và không trùng số liệu) | 160 |
 
 Phân bố 200 biểu đồ dùng để chấm:
@@ -23,7 +23,7 @@ Phân bố 200 biểu đồ dùng để chấm:
 | `pie` (tròn) | 42 | 267 | nhiều ảnh có 2-3 hình tròn (mỗi hình là một `series`) |
 | `line` (đường) | 41 | 606 | |
 | `area` (miền) | 24 | 346 | |
-| `combo` (cột + đường) | 21 | 266 | 21 ảnh có trục tung thứ hai (`y2_axis`), tính cả 1 ảnh đường |
+| `combo` (cột + đường) | 21 | 262 | 21 ảnh có trục tung thứ hai (`y2_axis`), tính cả 1 ảnh đường |
 
 - 138/200 biểu đồ có từ 2 chuỗi số liệu trở lên; trung vị 9 điểm/biểu đồ, nhiều nhất 62.
 - 89 biểu đồ đơn vị `%`; 42 biểu đồ có giá trị ≥ 1.000; 144 biểu đồ có số thập phân; 5 biểu đồ có giá trị âm.
