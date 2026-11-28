@@ -236,6 +236,16 @@ from vichartfact_metrics import (
     render_vichartfact_html,
 )
 
+# Bước 2–3: mặc định dùng src/pipeline (luật kiểm chứng R1–R9 + mô tả 3 mức), cùng bản với thực nghiệm
+# trong README_pipeline.md. Đặt biến môi trường VCHART_STEP23=nhom để quay về bộ luật trong vichartfact_metrics.py.
+VCHART_STEP23 = os.environ.get("VCHART_STEP23", "r1r9").strip().lower()
+try:
+    sys.path.insert(0, os.path.join(WORKSPACE_DIR, "src", "pipeline"))
+    from team_adapter import run_step23 as run_step23_r1r9
+except Exception as _e:  # thiếu src/pipeline -> dùng bộ luật cũ, demo vẫn chạy
+    print(f"⚠️ Không nạp được src/pipeline ({_e}); dùng bộ luật kiểm chứng trong vichartfact_metrics.py.")
+    VCHART_STEP23 = "nhom"
+
 # Nạp Benchmark ground truth (chỉ dùng cho đánh giá/đối chiếu, KHÔNG dùng điền sẵn Bước 1)
 if os.path.exists(BENCHMARK_PATH):
     try:
@@ -1013,9 +1023,19 @@ def process_pipeline_demo(
 
     step1_dict = vlm_res["data"]
 
-    # Bước 2: Kiểm chứng dữ liệu & Gắn cờ bất định (Bảo toàn 100% logic kiểm chứng)
-    val_status, val_notes, parsed_matrix = validate_chart_data(step1_dict)
-    flagged_matrix = apply_uncertainty_flagging(parsed_matrix, val_notes)
+    # Bước 2: Kiểm chứng dữ liệu & Gắn cờ bất định
+    desc_dict = None
+    step23_name = "Bộ luật cơ sở (vichartfact_metrics.py)"
+    if VCHART_STEP23 != "nhom":
+        try:   # R1–R9 (src/pipeline): trả luôn mô tả 3 mức cho Bước 3
+            val_status, val_notes, flagged_matrix, desc_dict = run_step23_r1r9(step1_dict)
+            step23_name = "Luật R1–R9 (src/pipeline)"
+        except Exception as e:  # lỗi bất ngờ -> dùng bộ luật cơ sở, không dừng demo
+            print(f"⚠️ Bước 2–3 R1–R9 lỗi ({type(e).__name__}: {e}); chuyển sang bộ luật cơ sở.")
+            desc_dict = None
+    if desc_dict is None:
+        val_status, val_notes, parsed_matrix = validate_chart_data(step1_dict)
+        flagged_matrix = apply_uncertainty_flagging(parsed_matrix, val_notes)
 
     # Bảng 1: Metadata chung (Hiển thị đầy đủ trạng thái kiểm chứng và ghi chú)
     meta_df = pd.DataFrame([
@@ -1024,6 +1044,7 @@ def process_pipeline_demo(
         {"Thuộc tính": "Đơn vị tính", "Nội dung": step1_dict["unit"] if step1_dict["unit"] else "Không ghi đơn vị"},
         {"Thuộc tính": "Trục hoành (Categories)", "Nội dung": " | ".join(flagged_matrix["categories"])},
         {"Thuộc tính": "Nguồn trích xuất (Bước 1)", "Nội dung": f"VLM trực tiếp ({vlm_res['model_id']}, {vlm_res['elapsed_sec']}s)"},
+        {"Thuộc tính": "Bước 2–3", "Nội dung": step23_name},
         {"Thuộc tính": "Trạng thái kiểm chứng", "Nội dung": val_status},
         {"Thuộc tính": "Ghi chú kiểm tra", "Nội dung": val_notes}
     ])
@@ -1054,7 +1075,8 @@ def process_pipeline_demo(
     )
 
     # Bước 3: Sinh mô tả 3 cấp độ & Đo kiểm ViChartFact
-    desc_dict = generate_3level_descriptions(flagged_matrix)
+    if desc_dict is None:
+        desc_dict = generate_3level_descriptions(flagged_matrix)
     desc_5s = desc_dict["desc_5s"]
     desc_30s = desc_dict["desc_30s"]
     desc_study = desc_dict["desc_study"]
