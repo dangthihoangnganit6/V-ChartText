@@ -8,12 +8,15 @@ Lịch sử commit đầy đủ: repo `rangha26/V-ChartText`, nhánh `dev`.
 
 | Phần | Vai trò |
 |---|---|
-| `app.py`, `vichartfact_metrics.py`, `notebooks/VChartText_*` (gốc repo) | **Demo web chính thức** (Gradio, Render, Qwen3-VL qua Colab), bước 2–3 của nhóm, thước đo ViChartFact và Độ đầy đủ |
-| `src/`, `eval/`, `outputs/`, `data/labels/` | **Bộ thực nghiệm**: chạy mô hình trên 200 ảnh, pipeline dùng cho thực nghiệm, chấm điểm. Mọi số liệu trong báo cáo đến từ đây |
+| `app.py`, `notebooks/VChartText_*` (gốc repo) | **Demo web chính thức** (Gradio, Render, Qwen3-VL qua Colab, TTS Hoài My). Bước 2–3 gọi `src/pipeline` qua `src/pipeline/team_adapter.py` |
+| `vichartfact_metrics.py` | Thước đo ViChartFact và Độ đầy đủ (dùng trong demo và thực nghiệm); bộ luật cơ sở của bước 2–3 (đối chứng B-nhóm, và là bản dự phòng của demo khi đặt `VCHART_STEP23=nhom`) |
+| `src/`, `eval/`, `outputs/`, `data/labels/` | **Pipeline và bộ thực nghiệm**: bước 2–3 (R1–R9) dùng chung cho demo và thực nghiệm, chạy mô hình trên 200 ảnh, chấm điểm. Mọi số liệu trong báo cáo đến từ đây |
 | `eval/run_team_pipeline.py` | Đưa bước 2–3 của nhóm (`vichartfact_metrics.py`) vào **cùng bộ thực nghiệm**, chấm bằng cả hai bộ chỉ số |
 
-**Nhãn chuẩn để chấm điểm là `data/labels/*.json`.** Đây là 200 biểu đồ đã soát lại theo ảnh gốc ngày 24–25/11, xem `data/DATA_CARD.md`.
-`docs/Benchmark.xlsx` là bản cũ, trước đợt soát, không dùng để chấm.
+**Một nguồn nhãn: `data/labels/*.json`** (200 biểu đồ đã soát lại theo ảnh gốc ngày 24–25/11, xem `data/DATA_CARD.md`).
+`docs/Benchmark.xlsx` được **xuất từ các file JSON này** bằng `python src/export_benchmark.py`, giữ đúng bố cục cũ để `app.py`
+và các script của nhóm đọc như trước. Muốn sửa nhãn: sửa JSON rồi chạy lại lệnh trên, không sửa tay file Excel.
+Bản Benchmark cũ (trước đợt soát) và các báo cáo chấm trên nó nằm ở `docs/archive/`.
 
 ## Mục checklist → file
 
@@ -24,7 +27,7 @@ Lịch sử commit đầy đủ: repo `rangha26/V-ChartText`, nhánh `dev`.
 | C19 | Chạy Vintern-1B trên bộ dữ liệu | `outputs/Vintern-1B-v3_5__*.jsonl`, `notebooks/run_full_kaggle.ipynb` |
 | C20 | Thống kê lỗi thường gặp | `eval/error_stats.py` → `eval/results/error_stats.md` |
 | D22 | Parser JSON, chuẩn hoá số kiểu Việt | `eval/score_extract.py` (`read_pred`), `eval/vn_number.py` |
-| D23–D24 | Luật kiểm chứng, gắn cờ "chưa chắc chắn" | `src/pipeline/verify.py` (luật R1–R9, bản dùng cho thực nghiệm) |
+| D23–D24 | Luật kiểm chứng, gắn cờ "chưa chắc chắn" | `src/pipeline/verify.py` (luật R1–R9, dùng cho demo và thực nghiệm) |
 | D25 | Mô tả 3 cấp từ bảng đã kiểm chứng | `src/pipeline/describe.py` |
 | D26 | Kiểm tra mọi con số trong mô tả | `eval/check_describe.py`, `eval/compare_pipeline.py` |
 | D27 | Đọc số kiểu Việt, TTS | `src/pipeline/vn.py`, `src/pipeline/speech.py` |
@@ -32,7 +35,7 @@ Lịch sử commit đầy đủ: repo `rangha26/V-ChartText`, nhánh `dev`.
 | E29 | Đo trích xuất bảng (RA@5%) | `eval/score_extract.py`, `eval/summarize.py` → `eval/results/summary_models.md` |
 | E31 | So sánh pipeline với baseline | `eval/compare_pipeline.py` → `eval/results/compare_pipeline.md`; `eval/paired_test.py` |
 | E30 + E31 | Hai bản bước 2–3, hai bộ chỉ số, cùng dữ liệu | `eval/run_team_pipeline.py` → `eval/results/compare_team_pipeline.md` |
-| F33, F34 | Demo web có giọng đọc | `app.py` ở gốc repo |
+| F33, F34 | Demo web có giọng đọc | `app.py` ở gốc repo (bước 2–3 qua `src/pipeline/team_adapter.py`) |
 
 ## Kết quả chính (200 biểu đồ, nhãn đã soát)
 
@@ -91,6 +94,14 @@ Cách đọc:
 - Ngay cả trên nhãn đúng (C-nhóm), khuôn câu của nhóm vẫn sai ở **biểu đồ có nhiều hình tròn**: cộng lát của các năm khác nhau
   ("đạt tổng tỷ trọng 200%") hoặc so lát năm này với lát năm khác ("gấp 22,4 lần").
 - Hướng kết hợp: dùng bộ luật R1–R9 của B làm bước 2, giữ phần phân tích của B-nhóm nhưng chỉ tính trong cùng một hình tròn.
+
+### Lỗi đã biết trong bộ đọc số của `vichartfact_metrics.py` (chưa sửa, để người viết thước đo quyết định)
+
+- `clean_vietnamese_number` hiểu mọi số có đúng 3 chữ số sau dấu chấm hoặc dấu phẩy là số nguyên có dấu phân cách nghìn:
+  '19,257' và '19.257' đều thành 19257. `docs/Benchmark.xlsx` mới tránh lỗi này bằng cách ghi '19,2570'. Tuy nhiên ViChartFact
+  trên demo vẫn chấm sai mô tả có số như vậy (bar_049, line_018, area_013: mô tả đúng nhưng điểm 71–89%).
+- Bộ tách số của ViChartFact đọc '6.586,6' thành hai số '6' và '586,6'. `team_adapter.py` bỏ dấu chấm nghìn trong mô tả của demo
+  ('6586,6'), và `eval/run_team_pipeline.py` làm như vậy cho mọi nhánh trước khi chấm.
 
 Lưu ý khi đo: `vichartfact_metrics` đọc số có dấu chấm nghìn ("6.586,6") thành hai số "6" và "586,6", nên script bỏ dấu chấm nghìn
 khỏi mọi văn bản trước khi đưa vào thước đo của nhóm. Việc này chỉ đổi cách viết, không đổi giá trị. Mã bước 2–3 của nhóm không bị sửa.
