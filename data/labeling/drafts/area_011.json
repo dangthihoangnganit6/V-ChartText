@@ -1,0 +1,83 @@
+{
+ "id": "area_011",
+ "title": "CHUYỂN DỊCH CƠ CẤU KHỐI LƯỢNG VẬN CHUYỂN PHÂN THEO LOẠI HÀNG HÓA Ở NƯỚC TA, GIAI ĐOẠN 2010 - 2017",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Hàng xuất khẩu",
+  "Hàng nhập khẩu",
+  "Hàng nội địa"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Hàng xuất khẩu",
+   "x": "2010",
+   "y_raw": "24,9"
+  },
+  {
+   "series": "Hàng xuất khẩu",
+   "x": "2013",
+   "y_raw": "20,9"
+  },
+  {
+   "series": "Hàng xuất khẩu",
+   "x": "2015",
+   "y_raw": "25,9"
+  },
+  {
+   "series": "Hàng xuất khẩu",
+   "x": "2017",
+   "y_raw": "25,2"
+  },
+  {
+   "series": "Hàng nhập khẩu",
+   "x": "2010",
+   "y_raw": "42,4"
+  },
+  {
+   "series": "Hàng nhập khẩu",
+   "x": "2013",
+   "y_raw": "39,9"
+  },
+  {
+   "series": "Hàng nhập khẩu",
+   "x": "2015",
+   "y_raw": "38,8"
+  },
+  {
+   "series": "Hàng nhập khẩu",
+   "x": "2017",
+   "y_raw": "38,6"
+  },
+  {
+   "series": "Hàng nội địa",
+   "x": "2010",
+   "y_raw": "32,7"
+  },
+  {
+   "series": "Hàng nội địa",
+   "x": "2013",
+   "y_raw": "39,2"
+  },
+  {
+   "series": "Hàng nội địa",
+   "x": "2015",
+   "y_raw": "35,3"
+  },
+  {
+   "series": "Hàng nội địa",
+   "x": "2017",
+   "y_raw": "36,2"
+  }
+ ],
+ "notes": "[Claude nháp] Cùng số liệu với area_002."
+}

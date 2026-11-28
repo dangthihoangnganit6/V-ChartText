@@ -1,0 +1,109 @@
+{
+  "id": "area_017",
+  "image": "images/area_017.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_17.jpg"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 136,
+  "chart_type": "area",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Nông - lâm - ngư nghiệp",
+    "Công nghiệp - xây dựng",
+    "Dịch vụ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1991",
+      "y": 40.5,
+      "y_raw": "40,5"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1995",
+      "y": 27.2,
+      "y_raw": "27,2"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1999",
+      "y": 25.4,
+      "y_raw": "25,4"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2005",
+      "y": 21.0,
+      "y_raw": "21"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1991",
+      "y": 23.8,
+      "y_raw": "23,8"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1995",
+      "y": 28.8,
+      "y_raw": "28,8"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1999",
+      "y": 34.5,
+      "y_raw": "34,5"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2005",
+      "y": 41.0,
+      "y_raw": "41"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1991",
+      "y": 35.7,
+      "y_raw": "35,7"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1995",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1999",
+      "y": 40.1,
+      "y_raw": "40,1"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2005",
+      "y": 38.0,
+      "y_raw": "38"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

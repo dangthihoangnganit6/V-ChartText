@@ -1,0 +1,73 @@
+{
+  "id": "bar_070",
+  "image": "images/bar_070.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_69.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 212,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "thành thị",
+    "nông thôn"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "thành thị",
+      "x": "1995",
+      "y": 74.7,
+      "y_raw": "74,7"
+    },
+    {
+      "series": "thành thị",
+      "x": "2000",
+      "y": 83.8,
+      "y_raw": "83,8"
+    },
+    {
+      "series": "thành thị",
+      "x": "2002",
+      "y": 84.4,
+      "y_raw": "84,4"
+    },
+    {
+      "series": "nông thôn",
+      "x": "1995",
+      "y": 25.3,
+      "y_raw": "25,3"
+    },
+    {
+      "series": "nông thôn",
+      "x": "2000",
+      "y": 16.2,
+      "y_raw": "16,2"
+    },
+    {
+      "series": "nông thôn",
+      "x": "2002",
+      "y": 15.6,
+      "y_raw": "15,6"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "stacked",
+  "imported_at": "2026-11-20"
+}

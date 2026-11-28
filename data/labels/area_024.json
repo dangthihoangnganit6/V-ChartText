@@ -1,0 +1,145 @@
+{
+  "id": "area_024",
+  "image": "images/area_024.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_24.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 143,
+  "chart_type": "area",
+  "title": "Cơ cấu GDP phân theo khu vực kinh tế ở nước ta giai đoạn 1990 - 2014",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Nông - lâm - ngư nghiệp",
+    "Công nghiệp - xây dựng",
+    "Dịch vụ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1990",
+      "y": 38.7,
+      "y_raw": "38,7"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1995",
+      "y": 37.2,
+      "y_raw": "37,2"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2000",
+      "y": 24.5,
+      "y_raw": "24,5"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2005",
+      "y": 19.3,
+      "y_raw": "19,3"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2010",
+      "y": 21.0,
+      "y_raw": "21"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2014",
+      "y": 19.7,
+      "y_raw": "19,7"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1990",
+      "y": 22.7,
+      "y_raw": "22,7"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1995",
+      "y": 28.8,
+      "y_raw": "28,8"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2000",
+      "y": 36.7,
+      "y_raw": "36,7"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2005",
+      "y": 38.1,
+      "y_raw": "38,1"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2010",
+      "y": 36.7,
+      "y_raw": "36,7"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2014",
+      "y": 36.9,
+      "y_raw": "36,9"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1990",
+      "y": 38.6,
+      "y_raw": "38,6"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1995",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2000",
+      "y": 38.8,
+      "y_raw": "38,8"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2005",
+      "y": 42.6,
+      "y_raw": "42,6"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2010",
+      "y": 42.3,
+      "y_raw": "42,3"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2014",
+      "y": 43.4,
+      "y_raw": "43,4"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

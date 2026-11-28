@@ -1,0 +1,94 @@
+{
+  "id": "bar_042",
+  "image": "images/bar_042.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_42.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 185,
+  "chart_type": "bar",
+  "title": "Xuất khẩu nông, lâm, thủy sản qua các năm",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ USD"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2015",
+      "y": 30.14,
+      "y_raw": "30,14"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2016",
+      "y": 32.1,
+      "y_raw": "32,1"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2017",
+      "y": 36.37,
+      "y_raw": "36,37"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2018",
+      "y": 40.0,
+      "y_raw": "40,0"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2019",
+      "y": 41.3,
+      "y_raw": "41,3"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2020",
+      "y": 41.0,
+      "y_raw": "41,0"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2021",
+      "y": 48.6,
+      "y_raw": "48,6"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2022",
+      "y": 53.2,
+      "y_raw": "53,2"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2023",
+      "y": 53.01,
+      "y_raw": "53,01"
+    },
+    {
+      "series": "Kim ngạch xuất khẩu (tỷ USD)",
+      "x": "2024",
+      "y": 62.5,
+      "y_raw": "62,5"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "area_008",
+  "image": "images/area_008.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_8.jpg"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 127,
+  "chart_type": "area",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Khu vực có vốn đầu tư nước ngoài",
+    "Kinh tế ngoài Nhà nước",
+    "Kinh tế Nhà nước"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Khu vực có vốn đầu tư nước ngoài",
+      "x": "2010",
+      "y": 15.2,
+      "y_raw": "15,2"
+    },
+    {
+      "series": "Khu vực có vốn đầu tư nước ngoài",
+      "x": "2015",
+      "y": 17.5,
+      "y_raw": "17,5"
+    },
+    {
+      "series": "Khu vực có vốn đầu tư nước ngoài",
+      "x": "2020",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Khu vực có vốn đầu tư nước ngoài",
+      "x": "2021",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Kinh tế ngoài Nhà nước",
+      "x": "2010",
+      "y": 43.0,
+      "y_raw": "43"
+    },
+    {
+      "series": "Kinh tế ngoài Nhà nước",
+      "x": "2015",
+      "y": 50.6,
+      "y_raw": "50,6"
+    },
+    {
+      "series": "Kinh tế ngoài Nhà nước",
+      "x": "2020",
+      "y": 50.5,
+      "y_raw": "50,5"
+    },
+    {
+      "series": "Kinh tế ngoài Nhà nước",
+      "x": "2021",
+      "y": 50.1,
+      "y_raw": "50,1"
+    },
+    {
+      "series": "Kinh tế Nhà nước",
+      "x": "2010",
+      "y": 29.3,
+      "y_raw": "29,3"
+    },
+    {
+      "series": "Kinh tế Nhà nước",
+      "x": "2015",
+      "y": 22.8,
+      "y_raw": "22,8"
+    },
+    {
+      "series": "Kinh tế Nhà nước",
+      "x": "2020",
+      "y": 20.7,
+      "y_raw": "20,7"
+    },
+    {
+      "series": "Kinh tế Nhà nước",
+      "x": "2021",
+      "y": 21.2,
+      "y_raw": "21,2"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

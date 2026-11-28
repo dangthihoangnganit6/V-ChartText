@@ -1,0 +1,62 @@
+{
+ "id": "area_006",
+ "title": "",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Xuất khẩu",
+  "Nhập khẩu"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Xuất khẩu",
+   "x": "1985",
+   "y_raw": "39,3"
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "1995",
+   "y_raw": "53,5"
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "2004",
+   "y_raw": "51,4"
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "2012",
+   "y_raw": "53"
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "1985",
+   "y_raw": "60,7"
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "1995",
+   "y_raw": "46,5"
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2004",
+   "y_raw": "48,6"
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2012",
+   "y_raw": "47"
+  }
+ ],
+ "notes": "[Claude nháp] Ảnh mờ: số 1985 của Xuất khẩu trông như 30,3 nhưng đường ranh ở ~39% và tổng với 60,7 phải bằng 100 nên ghi 39,3. Soát kỹ."
+}

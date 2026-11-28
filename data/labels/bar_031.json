@@ -1,0 +1,97 @@
+{
+  "id": "bar_031",
+  "image": "images/bar_031.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_31.png"
+  },
+  "annotator": "ngan",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 174,
+  "chart_type": "bar",
+  "title": "Số học sinh giỏi Toán và Khoa học tự nhiên",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Số học sinh"
+  },
+  "legend": [
+    "Toán",
+    "Khoa học tự nhiên"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Toán",
+      "x": "6A",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "Toán",
+      "x": "6B",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "Toán",
+      "x": "6C",
+      "y": 16.0,
+      "y_raw": "16"
+    },
+    {
+      "series": "Toán",
+      "x": "6D",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Toán",
+      "x": "6E",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Khoa học tự nhiên",
+      "x": "6A",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Khoa học tự nhiên",
+      "x": "6B",
+      "y": 13.0,
+      "y_raw": "13"
+    },
+    {
+      "series": "Khoa học tự nhiên",
+      "x": "6C",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Khoa học tự nhiên",
+      "x": "6D",
+      "y": 18.0,
+      "y_raw": "18"
+    },
+    {
+      "series": "Khoa học tự nhiên",
+      "x": "6E",
+      "y": 15.0,
+      "y_raw": "15"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

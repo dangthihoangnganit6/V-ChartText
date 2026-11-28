@@ -1,0 +1,127 @@
+{
+  "id": "line_009",
+  "image": "images/line_009.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_9.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 12,
+  "chart_type": "line",
+  "title": "Biểu đồ thể hiện tốc độ tăng trưởng diện tích, năng suất và sản lượng lúa cả năm của nước ta giai đoạn 1980 - 2005",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Diện tích",
+    "Năng suất cả năm",
+    "Sản lượng cả năm"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diện tích",
+      "x": "1980",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Diện tích",
+      "x": "1990",
+      "y": 107.9,
+      "y_raw": "107,9"
+    },
+    {
+      "series": "Diện tích",
+      "x": "2000",
+      "y": 136.7,
+      "y_raw": "136,7"
+    },
+    {
+      "series": "Diện tích",
+      "x": "2002",
+      "y": 134.0,
+      "y_raw": "134"
+    },
+    {
+      "series": "Diện tích",
+      "x": "2005",
+      "y": 130.9,
+      "y_raw": "130,9"
+    },
+    {
+      "series": "Năng suất cả năm",
+      "x": "1980",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Năng suất cả năm",
+      "x": "1990",
+      "y": 152.8,
+      "y_raw": "152,8"
+    },
+    {
+      "series": "Năng suất cả năm",
+      "x": "2000",
+      "y": 204.3,
+      "y_raw": "204,3"
+    },
+    {
+      "series": "Năng suất cả năm",
+      "x": "2002",
+      "y": 220.7,
+      "y_raw": "220,7"
+    },
+    {
+      "series": "Năng suất cả năm",
+      "x": "2005",
+      "y": 235.6,
+      "y_raw": "235,6"
+    },
+    {
+      "series": "Sản lượng cả năm",
+      "x": "1980",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Sản lượng cả năm",
+      "x": "1990",
+      "y": 165.5,
+      "y_raw": "165,5"
+    },
+    {
+      "series": "Sản lượng cả năm",
+      "x": "2000",
+      "y": 281.0,
+      "y_raw": "281"
+    },
+    {
+      "series": "Sản lượng cả năm",
+      "x": "2002",
+      "y": 296.6,
+      "y_raw": "296,6"
+    },
+    {
+      "series": "Sản lượng cả năm",
+      "x": "2005",
+      "y": 308.6,
+      "y_raw": "308,6"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "pie_011",
+  "image": "images/pie_011.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_11.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 67,
+  "chart_type": "pie",
+  "title": "Cơ cấu doanh thu du lịch Lữ Hành Phân Theo Thành phần Kinh Tế Của Nước Ta, Năm 2010 Và Năm 2016",
+  "x_axis": {
+    "label": "Thành phần kinh tế",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Cơ cấu năm 2010",
+    "Cơ cấu năm 2016"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Kinh tế ngoài Nhà nước",
+      "y": 60.3,
+      "y_raw": "60,3"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Kinh tế nhà nước",
+      "y": 31.8,
+      "y_raw": "31,8"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Khu vực có vốn đầu tư nước ngoài",
+      "y": 7.9,
+      "y_raw": "7,9"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Kinh tế ngoài Nhà nước",
+      "y": 73.8,
+      "y_raw": "73,8"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Kinh tế nhà nước",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Cơ cấu năm 2016",
+      "x": "Khu vực có vốn đầu tư nước ngoài",
+      "y": 11.2,
+      "y_raw": "11,2"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

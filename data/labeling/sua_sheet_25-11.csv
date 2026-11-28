@@ -1,0 +1,84 @@
+﻿dong_sheet,cot,ten_cot,id,gia_tri_cu,gia_tri_moi
+4,H,series_name,line_001,Thu nhập bình quân đầu người/năm (đô la Mỹ,Thu nhập bình quân đầu người
+5,C,chart_title,line_002,Nhiệt độ Hà Nội trong một ngày mùa thu,Nhiệt độ tại Hà Nội vào một ngày mùa thu
+6,C,chart_title,line_003,Số lượng sản xuất máy bán được trong năm qua,Số lượng quạt máy bán được trong năm vừa qua
+6,E,unit,line_003,Tháng,
+9,G,categories,line_006,Kinh doanh | Kế toán - Kiểm toán | Nhân sự | Công nghệ thông tin | Hành chính - Văn phòng - Biên phiên dịch | Marketing,Kinh doanh thương mại | Kế toán - Kiểm toán | Nhân sự | Công nghệ thông tin | Hành chính - Văn phòng - Biên phiên dịch | Marketing
+11,E,unit,line_008,Đơn vị đo,
+11,M,Ghi chú nhãn,line_008,,"[25/11] Chỉ số phát triển (năm 2018 = 100), ảnh không ghi đơn vị."
+12,C,chart_title,line_009,"Biểu đồ thể hiện tốc độ tăng trưởng diện tích, năng suất và sản lượng lúa cà nam của nước ta giai đoạn 1980 - 2005","Biểu đồ thể hiện tốc độ tăng trưởng diện tích, năng suất và sản lượng lúa cả năm của nước ta giai đoạn 1980 - 2005"
+13,C,chart_title,line_010,Biểu đồ tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới từ năm 1950 đến 2003,Biểu đồ thể hiện tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới thời kì 1950 - 2003
+13,M,Ghi chú nhãn,line_010,,"[25/11] Dầu mỏ 1960 và Thép 1960 không in số trên ảnh (200, 150 là ước lượng)."
+16,C,chart_title,line_013,Diễn tích rừng tự nhiên của Việt Nam giai đoạn 2018 - 2021,Diện tích rừng tự nhiên của Việt Nam giai đoạn 2018 - 2021
+16,H,series_name,line_013,Diễn tích,Diện tích
+18,C,chart_title,line_015,Tỉ lệ phần trăm dòng góp của Việt Nam vào tổng thu nhập của thế giới,Tỉ lệ phần trăm đóng góp của Việt Nam vào tổng thu nhập của thế giới
+19,M,Ghi chú nhãn,line_016,,"[25/11] Ảnh in nhầm 'Năm 2029' ở mốc thứ 2, nhãn ghi 2019."
+20,G,categories,line_017,Chiều 19/5 | Sáng 20/5 | Chiều 20/5 | Sáng 21/5 | Chiề 21/5 | Sáng 22/5 | Trưa 22/5 | Chiều 22/5 | Sáng 23/5 | Chiều 23/5 | Sáng 24/5 | Chiều 24/5 | Sáng 25/5 | Chiều 25/5,Chiều 19/5 | Sáng 20/5 | Chiều 20/5 | Sáng 21/5 | Chiều 21/5 | Sáng 22/5 | Trưa 22/5 | Chiều 22/5 | Sáng 23/5 | Chiều 23/5 | Sáng 24/5 | Chiều 24/5 | Sáng 25/5 | Chiều 25/5
+23,C,chart_title,line_020,Diễn biến tỷ giá USD/VND trong giai đoạn 1 năm,Diễn biến tỷ giá USD/VND trong giai đoạn 1 năm gần đây
+23,H,series_name,line_020,Tỷ giá Vietcombank | Tỷ giá Tự do,Tỷ giá USD/VND (Vietcombank) | Tỷ giá USD/VND (Tự do)
+27,C,chart_title,line_024,Biểu đồ tỷ lệ thay đổi GDP của Liên bang Nga giai đoạn 1990-2004,Biểu đồ sự thay đổi GDP của Liên bang Nga giai đoạn 1990-2004
+34,C,chart_title,line_031,"Biểu đồ thể hiện tỷ giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hoà Nam Phi giai đoạn 2000-2020","Biểu đồ thể hiện trị giá xuất khẩu, nhập khẩu hàng hóa và dịch vụ của Cộng hoà Nam Phi giai đoạn 2000-2020"
+36,C,chart_title,line_033,Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta gia đoạn 2010 - 2016,Diện tích cho sản phẩm một số cây công nghiệp lâu năm nước ta giai đoạn 2010 - 2016
+37,C,chart_title,line_034,Biểu đồ thể hiện tổng số nước ngoài của nhóm nước đang phát triển 1990 - 2004,Biểu đồ thể hiện tổng nợ nước ngoài của nhóm nước đang phát triển 1990 - 2004
+51,I,values,line_052,1000 | 900 | 1100 | 1050 | 1425 | 1625 || 800 | 800 | 795 | 595 | 395 | 385 || 450 | 650 | 850 | 1400 | 1750 | 1950,1000 | 900 | 1100 | 1050 | 1425 | 1625 || 800 | 800 | 795 | 595 | 370 | 340 || 450 | 680 | 850 | 1400 | 1750 | 1950
+51,M,Ghi chú nhãn,line_052,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+52,I,values,line_053,50 | 48 | 44 | 46 | 43 | 39 | 40 | 35 || 25 | 28 | 31 | 29 | 35 | 38 | 33 | 35 || 15 | 18 | 20 | 23 | 25 | 28 | 30 | 29 || 28 | 36 | 34 | 32 | 29 | 26 | 25 | 24,50 | 48 | 44 | 46 | 43 | 39 | 40 | 35 || 25 | 28 | 31 | 29 | 35 | 38 | 33 | 35 || 17 | 18 | 20 | 23 | 25 | 28 | 30 | 29 || 38 | 36 | 34 | 32 | 29 | 26 | 25 | 24
+52,M,Ghi chú nhãn,line_053,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+59,C,chart_title,pie_003,Diện tích rừng bị cháy ở Việt Nam năm 2016,Diện tích rừng bị cháy theo vùng ở Việt Nam năm 2016
+63,C,chart_title,pie_007,Tỉ lệ phần trăm các loại vật nuôi tại nông trường Phong Phú,Tỉ lệ phần trăm các loại con vật nuôi tại nông trường Phong Phú
+64,C,chart_title,pie_008,Tỷ lệ người đạt giải Nobel theo các lĩnh vực năm 2020,Tỉ lệ người đạt giải Nobel theo các lĩnh vực tính đến năm 2020
+65,G,categories,pie_009,Vận đồng | Di truyền | Dinh dưỡng | Giấc ngủ và môi trường | Yếu tố khác,Vận động | Di truyền | Dinh dưỡng | Giấc ngủ và môi trường | Yếu tố khác
+66,G,categories,pie_010,Kinh tế nước ngoài | Kinh tế nhà nước | Kinh tế có vốn đầu tư nước ngoài,Kinh tế ngoài Nhà nước | Kinh tế nhà nước | Khu vực có vốn đầu tư nước ngoài
+67,G,categories,pie_011,Kinh tế nước ngoài | Kinh tế nhà nước | Kinh tế có vốn đầu tư nước ngoài,Kinh tế ngoài Nhà nước | Kinh tế nhà nước | Khu vực có vốn đầu tư nước ngoài
+69,G,categories,pie_013,"Công nghiệp khai khoáng | Công nghiẹp chế biến, chế tạo | Sản xuất và phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí | Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải","Công nghiệp khai khoáng | Công nghiệp chế biến, chế tạo | Sản xuất và phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí | Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải"
+72,C,chart_title,pie_016,"Cơ cấu diện tích lúa cà năm phân theo mùa vụ nước ta, năm 2010 và 2016","Cơ cấu diện tích lúa cả năm phân theo mùa vụ nước ta, năm 2010 và 2016"
+72,G,categories,pie_016,Lúa đồng Xuân | Lúa hè Thu | Lúa Mùa,Lúa đông xuân | Lúa hè thu | Lúa mùa
+78,G,categories,pie_022,Bưu chính | Vễn thông,Bưu chính | Viễn thông
+90,M,Ghi chú nhãn,pie_034,Ảnh không có tiêu đề,Ảnh không có tiêu đề [25/11] Trùng ảnh/số liệu với pie_011 (Biểu đồ tròn_11).
+107,E,unit,combo_009,Nghìn ha | Triệu tấn,Triệu tấn | Nghìn ha
+107,M,Ghi chú nhãn,combo_009,Diện tích (cột) theo trục phải Nghìn ha; Sản lượng (đường) theo trục trái Triệu tấn,"Diện tích (cột) theo trục phải Nghìn ha; Sản lượng (đường) theo trục trái Triệu tấn. [25/11] Sửa y_axis/y2_axis cho khớp ảnh: y_axis = trục trái (Sản lượng, Triệu tấn), y2_axis = trục phải (Diện tích, Nghìn ha); số liệu đã soát, đúng."
+108,E,unit,combo_010,Triệu ha | Triệu tấn,Triệu tấn | Triệu ha
+144,C,chart_title,bar_001,Biểu đồ các nước có chiều dài đường ô tô lớn nhất thế giới,"Biểu đồ các nước có chiều dài đường ô tô lớn nhất thế giới, năm 2019"
+144,E,unit,bar_001,nghìn km,Nghìn km
+144,H,series_name,bar_001,chiều dài đường ô tô,Chiều dài đường ô tô
+145,C,chart_title,bar_002,Biểu đồ về độ dài đường sắt lớn nhất thế giới,"Biểu đồ các nước có chiều dài đường sắt lớn nhất thế giới, năm 2019"
+153,C,chart_title,bar_010,"Diện tích cây công nghiệp lâu năm vung Trung du và miền núi Bắc Bô, Tây Nguyên và Đông Nam Bộ giai đoạn 2010 - 2021","Diện tích cây công nghiệp lâu năm vùng Trung du và miền núi Bắc Bộ, Tây Nguyên và Đông Nam Bộ giai đoạn 2010 - 2021"
+153,G,categories,bar_010,2000 | 2015 | 2021,2010 | 2015 | 2021
+153,H,series_name,bar_010,Trung du và miền núi Bắc Bô | Tây Nguyên | Đông Nam Bô,Trung du và miền núi Bắc Bộ | Tây Nguyên | Đông Nam Bộ
+154,H,series_name,bar_011,Cà phê | Cao su | Hỗ trợ | Điều,Cà phê | Cao su | Hồ tiêu | Điều
+159,C,chart_title,bar_016,"Quy mô GDP của Malaysia và Singapo, giai đoạn 2010 - 2016","Quy mô GDP của Ma-lai-xi-a và Xin-ga-po, giai đoạn 2010 - 2016"
+159,H,series_name,bar_016,Malaysia | Singapore,Ma-lai-xi-a | Xin-ga-po
+167,M,Ghi chú nhãn,bar_024,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+168,M,Ghi chú nhãn,bar_025,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+169,E,unit,bar_026,Số học sinh,
+169,M,Ghi chú nhãn,bar_026,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+171,E,unit,bar_028,Cỡ áo,
+171,F,x_axis_label,bar_028,Số áo sơ mi bán được,Cỡ áo
+171,M,Ghi chú nhãn,bar_028,,"[24/11] Ảnh gốc ghi đảo tên trục (trục tung 'Cỡ áo', trục hoành 'Số áo bán được'). Nhãn sửa theo nghĩa: x = cỡ áo (37-42), y = số áo bán được; ảnh không ghi đơn vị nên unit = null. Giá trị đã soát lại, đúng."
+172,E,unit,bar_029,Số con vật,
+172,G,categories,bar_029,Chó | Mèo | Chim | Cá | Thò,Chó | Mèo | Chim | Cá | Thỏ
+172,M,Ghi chú nhãn,bar_029,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+175,C,chart_title,bar_032,Số cuốn truyện cửa hàng bán ra trong tuần,Số cuốn truyện cửa hàng bán được trong tuần
+177,H,series_name,bar_034,không có,
+177,M,Ghi chú nhãn,bar_034,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+178,C,chart_title,bar_035,Người dân,Thiếu tên biểu đồ
+179,H,series_name,bar_036,Số lượng lương thực,Sản lượng lương thực
+180,H,series_name,bar_037,Khai thác | Nước Trong,Khai thác | Nuôi trồng
+182,I,values,bar_039,1660.9 | 1987.9 | 2414.4 | 3226.1 || 589.6 | 1487 | 2728.3 | 3644.6,1660.9 | 1987.9 | 2414.4 | 3226.1 || 589.6 | 1478 | 2728.3 | 3644.6
+192,M,Ghi chú nhãn,bar_050,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+193,I,values,bar_051,30000 | 32000 | 35000 | 38000 | 58000 | 62000 | 74000 || 6000 | 6500 | 7000 | 7500 | 7500 | 10000 | 13000,30000 | 32000 | 35000 | 38000 | 57000 | 62000 | 74000 || 6000 | 6800 | 7500 | 7800 | 8000 | 10000 | 13000
+193,M,Ghi chú nhãn,bar_051,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+195,I,values,bar_053,38.46 | 41.61 | 47.53 | 61.33 | 77.08 | 96.29 | 36.2 || 8.7 | 9.35 | 12.75 | 14.43 |  13.71 | 15.27 | 4.6 || 29.76 | 32.36 | 34.78 | 46.9 | 63.37 | 81.02 | 31.6,38.46 | 41.61 | 47.53 | 61.33 | 77.08 | 96.29 | 36.2 || 8.7 | 9.35 | 12.75 | 14.43 | 13.71 | 15.27 | 4.6 || 29.76 | 32.26 | 34.78 | 46.9 | 63.37 | 81.02 | 31.6
+198,I,values,bar_056,44 | 39 | 27 | 23 | 17 | 17 | 10 | 15 | 7 | 5 || 45 | 45 | 33 | 30 | 25 | 23 | 15 | 14 | 9 | 7,44.3 | 39.0 | 27.7 | 24.4 | 18.8 | 18.7 | 10.8 | 15.1 | 7.8 | 4.3 || 44.9 | 44.8 | 32.7 | 29.1 | 23.8 | 21.7 | 16.1 | 15.5 | 10.0 | 8.2
+198,M,Ghi chú nhãn,bar_056,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này [25/11] Đọc lại giá trị theo vạch trục (ảnh không in số).
+199,I,values,bar_057,5 | 5 | 5 | 6 | 8 | 9 | 11 | 11 | 12 | 9 | 12 | 13 || 12 | 16 | 20 | 22 | 27 | 29 | 32 | 33 | 36 | 36 | 41 | 53 || -7 | -11.5 | -13.5 | -14.5 | -17 | -19 | -22 | -24 | -25 | -27.5 | -30 | -42,5 | 5 | 5 | 6 | 8 | 9 | 11 | 11 | 12 | 9 | 12 | 13 || 12 | 16 | 20 | 22 | 27 | 29 | 32 | 35 | 36 | 36 | 41 | 55 || -7 | -11.5 | -13.5 | -14.5 | -17 | -19 | -22 | -24 | -25 | -27.5 | -30 | -42
+201,I,values,bar_059,1600 | 1500 | 1550 | 1000 | 1600 | 1350 | 1350|| 500 | 500 | 500 | 550 | 650 | 650 | 650|| 300 | 250 | 300 | 150 | 400 | 300 | 350|| 150 | 150 | 150 | 100 | 150 | 200 | 200|| 50 | 50 | 50 | 40 | 100 | 50 | 50|| 400 | 450 | 450 | -150 | 300 | -100 | 50,1650 | 1380 | 1730 | 990 | 1620 | 1350 | 1340 || 500 | 500 | 490 | 510 | 660 | 680 | 620 || 330 | 240 | 280 | 120 | 450 | 370 | 360 || 150 | 150 | 150 | 100 | 140 | 200 | 190 || 40 | 40 | 40 | 40 | 90 | 60 | 60 || 530 | 320 | 660 | 170 | 180 | -110 | 20
+201,M,Ghi chú nhãn,bar_059,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này [25/11] Đọc lại giá trị theo vạch trục (ảnh không in số).
+202,I,values,bar_060,7.3 | 6.7 | 5.5 | 8.5 | 7.2 | 7.9 | 3.9 | 5.0 | 4.9 | 6.7 || 2.8 | 2.3 | 2.4 | 5.3 | 2.8 | 4.5 | 9.0 | 10.7 | 6.5 | 6.8 || 5.9 | 1.8 | 2.6 | 9.1 | 8.6 | 4.1 | 2.4 | 3.9 | 4.8 | 6.6,7.3 | 6.7 | 7.0 | 8.5 | 7.2 | 7.9 | 3.9 | 5.0 | 4.9 | 4.4 || 2.8 | 1.2 | 2.4 | 5.3 | 5.1 | 4.5 | 9.0 | 10.7 | 6.5 | 6.8 || 2.0 | 1.8 | 2.6 | 9.1 | 8.6 | 4.1 | 2.4 | 3.9 | 4.8 | 6.6
+202,M,Ghi chú nhãn,bar_060,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này
+203,I,values,bar_061,15.0 | 11.5 | 2.5 | 2.5 | 2.5 | 1.8 | 1.2 | 1.0 | 1.1 | 1.3 | 0.8 | 0.5 | 9.0 || 16.2 | 12.0 | 2.0 | 3.0 | 3.5 | 2.2 | 1.5 | 1.5 | 1.5 | 1.2 | 0.7 | 0.5 | 10.5,15.2 | 11.1 | 3.0 | 2.9 | 2.9 | 2.3 | 1.9 | 1.0 | 1.6 | 1.5 | 1.3 | 1.1 | 10.2 || 16.3 | 11.9 | 2.2 | 3.8 | 3.7 | 2.4 | 1.5 | 1.7 | 1.7 | 2.2 | 1.2 | 1.3 | 7.9
+203,M,Ghi chú nhãn,bar_061,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này [25/11] Đọc lại giá trị theo vạch trục (ảnh không in số).
+215,I,values,bar_073,1500 | 1700 | 1900 | 2100 | 2300,1480 | 1650 | 1900 | 2200 | 2470
+215,M,Ghi chú nhãn,bar_073,,ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này [25/11] Đọc lại giá trị theo vạch trục (ảnh không in số).
+216,C,chart_title,bar_074,Dữ liệu về lượng mưa (mm),Thiếu tên biểu đồ
+217,H,series_name,bar_075,Hà Nội | Thành phố Hồ Chí Mình,Hà Nội | Thành phố Hồ Chí Minh

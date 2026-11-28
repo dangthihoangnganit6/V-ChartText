@@ -1,0 +1,97 @@
+{
+  "id": "bar_005",
+  "image": "images/bar_005.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_5.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 148,
+  "chart_type": "bar",
+  "title": "Trị giá xuất nhập khẩu hàng hóa và dịch vụ của Nhật Bản giai đoạn 2000 - 2020",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỉ USD"
+  },
+  "legend": [
+    "Trị giá xuất khẩu",
+    "Trị giá nhập khẩu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Trị giá xuất khẩu",
+      "x": "2000",
+      "y": 519.9,
+      "y_raw": "519,9"
+    },
+    {
+      "series": "Trị giá xuất khẩu",
+      "x": "2005",
+      "y": 667.5,
+      "y_raw": "667,5"
+    },
+    {
+      "series": "Trị giá xuất khẩu",
+      "x": "2010",
+      "y": 859.2,
+      "y_raw": "859,2"
+    },
+    {
+      "series": "Trị giá xuất khẩu",
+      "x": "2015",
+      "y": 775.1,
+      "y_raw": "775,1"
+    },
+    {
+      "series": "Trị giá xuất khẩu",
+      "x": "2020",
+      "y": 784.2,
+      "y_raw": "784,2"
+    },
+    {
+      "series": "Trị giá nhập khẩu",
+      "x": "2000",
+      "y": 452.1,
+      "y_raw": "452,1"
+    },
+    {
+      "series": "Trị giá nhập khẩu",
+      "x": "2005",
+      "y": 599.8,
+      "y_raw": "599,8"
+    },
+    {
+      "series": "Trị giá nhập khẩu",
+      "x": "2010",
+      "y": 782.1,
+      "y_raw": "782,1"
+    },
+    {
+      "series": "Trị giá nhập khẩu",
+      "x": "2015",
+      "y": 799.7,
+      "y_raw": "799,7"
+    },
+    {
+      "series": "Trị giá nhập khẩu",
+      "x": "2020",
+      "y": 796.3,
+      "y_raw": "796,3"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "[20/11] Categories là các năm, series là 2 chú giải (trước đó bị đảo)",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

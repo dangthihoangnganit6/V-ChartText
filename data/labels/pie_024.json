@@ -1,0 +1,84 @@
+{
+  "id": "pie_024",
+  "image": "images/pie_024.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_24.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 80,
+  "chart_type": "pie",
+  "title": "Biểu đồ thể hiện cơ cấu GDP của khu vực Mỹ La-tinh năm 2010 và năm 2020",
+  "x_axis": {
+    "label": "Ngành kinh tế",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Năm 2010",
+    "Năm 2020"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 2010",
+      "x": "Nông nghiệp, lâm nghiệp, thủy sản",
+      "y": 4.7,
+      "y_raw": "4,7"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Công nghiệp, xây dựng",
+      "y": 29.1,
+      "y_raw": "29,1"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Dịch vụ",
+      "y": 55.7,
+      "y_raw": "55,7"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "y": 10.5,
+      "y_raw": "10,5"
+    },
+    {
+      "series": "Năm 2020",
+      "x": "Nông nghiệp, lâm nghiệp, thủy sản",
+      "y": 6.5,
+      "y_raw": "6,5"
+    },
+    {
+      "series": "Năm 2020",
+      "x": "Công nghiệp, xây dựng",
+      "y": 28.3,
+      "y_raw": "28,3"
+    },
+    {
+      "series": "Năm 2020",
+      "x": "Dịch vụ",
+      "y": 60.3,
+      "y_raw": "60,3"
+    },
+    {
+      "series": "Năm 2020",
+      "x": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+      "y": 4.9,
+      "y_raw": "4,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

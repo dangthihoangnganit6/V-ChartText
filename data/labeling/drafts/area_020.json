@@ -1,0 +1,83 @@
+{
+ "id": "area_020",
+ "title": "Cho biểu đồ về lực lượng lao động phân theo nhóm tuổi của nước ta, giai đoạn 2010 - 2020",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": null,
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "15-24 tuổi",
+  "25-49 tuổi",
+  "Trên 50 tuổi"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "15-24 tuổi",
+   "x": "2010",
+   "y_raw": "18,3"
+  },
+  {
+   "series": "15-24 tuổi",
+   "x": "2018",
+   "y_raw": "12,8"
+  },
+  {
+   "series": "15-24 tuổi",
+   "x": "2019",
+   "y_raw": "12,8"
+  },
+  {
+   "series": "15-24 tuổi",
+   "x": "2020",
+   "y_raw": "11,4"
+  },
+  {
+   "series": "25-49 tuổi",
+   "x": "2010",
+   "y_raw": "61,4"
+  },
+  {
+   "series": "25-49 tuổi",
+   "x": "2018",
+   "y_raw": "61,5"
+  },
+  {
+   "series": "25-49 tuổi",
+   "x": "2019",
+   "y_raw": "61,5"
+  },
+  {
+   "series": "25-49 tuổi",
+   "x": "2020",
+   "y_raw": "61,3"
+  },
+  {
+   "series": "Trên 50 tuổi",
+   "x": "2010",
+   "y_raw": "20,3"
+  },
+  {
+   "series": "Trên 50 tuổi",
+   "x": "2018",
+   "y_raw": "27"
+  },
+  {
+   "series": "Trên 50 tuổi",
+   "x": "2019",
+   "y_raw": "25,6"
+  },
+  {
+   "series": "Trên 50 tuổi",
+   "x": "2020",
+   "y_raw": "25,8"
+  }
+ ],
+ "notes": "[Claude nháp] Ảnh ghi dấu chấm thập phân kiểu Anh (vd 35.7); y_raw đã đổi sang kiểu VN. Tiêu đề là câu hỏi đề thi (giữ nguyên văn, bỏ dấu ':'). Tổng 2018 = 101,3%, 2020 = 98,5% (đúng như ảnh). Nguồn số liệu: Niên giám thống kê 2020."
+}

@@ -1,0 +1,83 @@
+{
+ "id": "area_008",
+ "title": "",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Khu vực có vốn đầu tư nước ngoài",
+  "Kinh tế ngoài Nhà nước",
+  "Kinh tế Nhà nước"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Khu vực có vốn đầu tư nước ngoài",
+   "x": "2010",
+   "y_raw": "15,2"
+  },
+  {
+   "series": "Khu vực có vốn đầu tư nước ngoài",
+   "x": "2015",
+   "y_raw": "17,5"
+  },
+  {
+   "series": "Khu vực có vốn đầu tư nước ngoài",
+   "x": "2020",
+   "y_raw": "20"
+  },
+  {
+   "series": "Khu vực có vốn đầu tư nước ngoài",
+   "x": "2021",
+   "y_raw": "20"
+  },
+  {
+   "series": "Kinh tế ngoài Nhà nước",
+   "x": "2010",
+   "y_raw": "43"
+  },
+  {
+   "series": "Kinh tế ngoài Nhà nước",
+   "x": "2015",
+   "y_raw": "50,6"
+  },
+  {
+   "series": "Kinh tế ngoài Nhà nước",
+   "x": "2020",
+   "y_raw": "50,5"
+  },
+  {
+   "series": "Kinh tế ngoài Nhà nước",
+   "x": "2021",
+   "y_raw": "50,1"
+  },
+  {
+   "series": "Kinh tế Nhà nước",
+   "x": "2010",
+   "y_raw": "29,3"
+  },
+  {
+   "series": "Kinh tế Nhà nước",
+   "x": "2015",
+   "y_raw": "22,8"
+  },
+  {
+   "series": "Kinh tế Nhà nước",
+   "x": "2020",
+   "y_raw": "20,7"
+  },
+  {
+   "series": "Kinh tế Nhà nước",
+   "x": "2021",
+   "y_raw": "21,2"
+  }
+ ],
+ "notes": "[Claude nháp] Ảnh ghi dấu chấm thập phân kiểu Anh (vd 35.7); y_raw đã đổi sang kiểu VN. Tổng 3 thành phần chỉ 87,5-91,3% (số liệu gốc còn phần thuế sản phẩm); ghi đúng như ảnh."
+}

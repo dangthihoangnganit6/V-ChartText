@@ -1,0 +1,72 @@
+{
+  "id": "pie_027",
+  "image": "images/pie_027.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_27.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 83,
+  "chart_type": "pie",
+  "title": "",
+  "x_axis": {
+    "label": "Ngành",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Năm 2005",
+    "Năm 2015"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 2005",
+      "x": "Trồng trọt",
+      "y": 2.4,
+      "y_raw": "2,4"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Chăn nuôi",
+      "y": 19.3,
+      "y_raw": "19,3"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Dịch vụ",
+      "y": 78.3,
+      "y_raw": "78,3"
+    },
+    {
+      "series": "Năm 2015",
+      "x": "Trồng trọt",
+      "y": 1.5,
+      "y_raw": "1,5"
+    },
+    {
+      "series": "Năm 2015",
+      "x": "Chăn nuôi",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Năm 2015",
+      "x": "Dịch vụ",
+      "y": 73.5,
+      "y_raw": "73,5"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "bar_008",
+  "image": "images/bar_008.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_8.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 151,
+  "chart_type": "bar",
+  "title": "Sản lượng sản phẩm của ngành công nghiệp sản xuất giai đoạn 2000 - 2021",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Triệu đôi"
+  },
+  "legend": [
+    "Giày, dép da",
+    "Giày thể thao"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Giày, dép da",
+      "x": "2000",
+      "y": 107.9,
+      "y_raw": "107,9"
+    },
+    {
+      "series": "Giày, dép da",
+      "x": "2010",
+      "y": 192.2,
+      "y_raw": "192,2"
+    },
+    {
+      "series": "Giày, dép da",
+      "x": "2021",
+      "y": 317.0,
+      "y_raw": "317,0"
+    },
+    {
+      "series": "Giày thể thao",
+      "x": "2000",
+      "y": 109.2,
+      "y_raw": "109,2"
+    },
+    {
+      "series": "Giày thể thao",
+      "x": "2010",
+      "y": 347.0,
+      "y_raw": "347,0"
+    },
+    {
+      "series": "Giày thể thao",
+      "x": "2021",
+      "y": 873.5,
+      "y_raw": "873,5"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

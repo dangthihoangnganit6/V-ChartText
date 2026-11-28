@@ -1,0 +1,2 @@
+id,model,task,error_code,span,correct_value,severity,reviewer,note
+dl_c01_001,Qwen3-VL-2B-Instruct,describe,E1,"1,2 triệu tấn","1.200 nghìn tấn",cao,giang,đọc 1.200 thành 1.2

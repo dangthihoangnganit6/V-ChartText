@@ -1,0 +1,108 @@
+{
+  "id": "pie_040",
+  "image": "images/pie_040.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_40.png"
+  },
+  "annotator": "giang",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 98,
+  "chart_type": "pie",
+  "title": "Tỷ lệ học viên tham gia các khóa học khác nhau",
+  "x_axis": {
+    "label": "Khóa học",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Năm 1985",
+    "Năm nay"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 1985",
+      "x": "Mỹ thuật",
+      "y": 17.0,
+      "y_raw": "17"
+    },
+    {
+      "series": "Năm 1985",
+      "x": "Ngoại ngữ hiện đại",
+      "y": 24.0,
+      "y_raw": "24"
+    },
+    {
+      "series": "Năm 1985",
+      "x": "Lịch sử địa phương",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Năm 1985",
+      "x": "Ứng dụng âm nhạc",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Năm 1985",
+      "x": "Nấu ăn",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Năm 1985",
+      "x": "Thể dục và khiêu vũ",
+      "y": 22.0,
+      "y_raw": "22"
+    },
+    {
+      "series": "Năm nay",
+      "x": "Mỹ thuật",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Năm nay",
+      "x": "Ngoại ngữ hiện đại",
+      "y": 17.0,
+      "y_raw": "17"
+    },
+    {
+      "series": "Năm nay",
+      "x": "Lịch sử địa phương",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Năm nay",
+      "x": "Ứng dụng âm nhạc",
+      "y": 0.0,
+      "y_raw": "0"
+    },
+    {
+      "series": "Năm nay",
+      "x": "Nấu ăn",
+      "y": 19.0,
+      "y_raw": "19"
+    },
+    {
+      "series": "Năm nay",
+      "x": "Thể dục và khiêu vũ",
+      "y": 22.0,
+      "y_raw": "22"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Năm nay không có lát Ứng dụng âm nhạc (ghi 0); nhãn trên ảnh có ký tự '\\n' thừa",
+  "imported_at": "2026-11-20"
+}

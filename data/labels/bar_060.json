@@ -1,0 +1,218 @@
+{
+  "id": "bar_060",
+  "image": "images/bar_060.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_59.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 202,
+  "chart_type": "bar",
+  "title": "Vốn đầu tư của một số quốc gia vào Việt Nam",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ đô"
+  },
+  "legend": [
+    "Hàn Quốc",
+    "Singapore",
+    "Nhật Bản"
+  ],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Hàn Quốc",
+      "x": "2014",
+      "y": 7.3,
+      "y_raw": "7,3"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2015",
+      "y": 6.7,
+      "y_raw": "6,7"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2016",
+      "y": 7.0,
+      "y_raw": "7,0"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2017",
+      "y": 8.5,
+      "y_raw": "8,5"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2018",
+      "y": 7.2,
+      "y_raw": "7,2"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2019",
+      "y": 7.9,
+      "y_raw": "7,9"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2020",
+      "y": 3.9,
+      "y_raw": "3,9"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2021",
+      "y": 5.0,
+      "y_raw": "5,0"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2022",
+      "y": 4.9,
+      "y_raw": "4,9"
+    },
+    {
+      "series": "Hàn Quốc",
+      "x": "2023",
+      "y": 4.4,
+      "y_raw": "4,4"
+    },
+    {
+      "series": "Singapore",
+      "x": "2014",
+      "y": 2.8,
+      "y_raw": "2,8"
+    },
+    {
+      "series": "Singapore",
+      "x": "2015",
+      "y": 1.2,
+      "y_raw": "1,2"
+    },
+    {
+      "series": "Singapore",
+      "x": "2016",
+      "y": 2.4,
+      "y_raw": "2,4"
+    },
+    {
+      "series": "Singapore",
+      "x": "2017",
+      "y": 5.3,
+      "y_raw": "5,3"
+    },
+    {
+      "series": "Singapore",
+      "x": "2018",
+      "y": 5.1,
+      "y_raw": "5,1"
+    },
+    {
+      "series": "Singapore",
+      "x": "2019",
+      "y": 4.5,
+      "y_raw": "4,5"
+    },
+    {
+      "series": "Singapore",
+      "x": "2020",
+      "y": 9.0,
+      "y_raw": "9,0"
+    },
+    {
+      "series": "Singapore",
+      "x": "2021",
+      "y": 10.7,
+      "y_raw": "10,7"
+    },
+    {
+      "series": "Singapore",
+      "x": "2022",
+      "y": 6.5,
+      "y_raw": "6,5"
+    },
+    {
+      "series": "Singapore",
+      "x": "2023",
+      "y": 6.8,
+      "y_raw": "6,8"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2014",
+      "y": 2.0,
+      "y_raw": "2,0"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2015",
+      "y": 1.8,
+      "y_raw": "1,8"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2016",
+      "y": 2.6,
+      "y_raw": "2,6"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2017",
+      "y": 9.1,
+      "y_raw": "9,1"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2018",
+      "y": 8.6,
+      "y_raw": "8,6"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2019",
+      "y": 4.1,
+      "y_raw": "4,1"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2020",
+      "y": 2.4,
+      "y_raw": "2,4"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2021",
+      "y": 3.9,
+      "y_raw": "3,9"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2022",
+      "y": 4.8,
+      "y_raw": "4,8"
+    },
+    {
+      "series": "Nhật Bản",
+      "x": "2023",
+      "y": 6.6,
+      "y_raw": "6,6"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

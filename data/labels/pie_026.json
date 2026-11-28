@@ -1,0 +1,63 @@
+{
+  "id": "pie_026",
+  "image": "images/pie_026.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_26.png"
+  },
+  "annotator": "giang",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 82,
+  "chart_type": "pie",
+  "title": "Các nguyên nhân gây tai nạn thương tích ở trẻ em Việt Nam",
+  "x_axis": {
+    "label": "Nguyên nhân",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỉ lệ",
+      "x": "Đuối nước",
+      "y": 48.0,
+      "y_raw": "48"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Tai nạn giao thông",
+      "y": 28.0,
+      "y_raw": "28"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Ngã",
+      "y": 2.0,
+      "y_raw": "2"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Ngộ độc",
+      "y": 2.0,
+      "y_raw": "2"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Thương tích khác (không phân loại)",
+      "y": 20.0,
+      "y_raw": "20"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

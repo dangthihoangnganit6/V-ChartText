@@ -1,0 +1,2231 @@
+﻿id,chart_type,series,x,gt_raw,gt,pred_raw,pred,rel_err,err,pred_raw_lenient,pred_lenient,err_lenient
+area_001,area,Nông - lâm - ngư nghiệp,1995,"27,2",27.2,"27,2",27.2,0.0,,"27,2",27.2,
+area_001,area,Nông - lâm - ngư nghiệp,2005,"25,8",25.8,"25,8",25.8,0.0,,"25,8",25.8,
+area_001,area,Nông - lâm - ngư nghiệp,2010,21,21.0,21,21.0,0.0,,21,21.0,
+area_001,area,Nông - lâm - ngư nghiệp,2016,"18,4",18.4,"18,4",18.4,0.0,,"18,4",18.4,
+area_001,area,Công nghiệp - xây dựng,1995,"28,8",28.8,"25,8",25.8,0.1042,E2_sai_gia_tri,"25,8",25.8,E2_sai_gia_tri
+area_001,area,Công nghiệp - xây dựng,2005,"32,5",32.5,"32,5",32.5,0.0,,"32,5",32.5,
+area_001,area,Công nghiệp - xây dựng,2010,41,41.0,41,41.0,0.0,,41,41.0,
+area_001,area,Công nghiệp - xây dựng,2016,"28,3",28.3,"28,3",28.3,0.0,,"28,3",28.3,
+area_001,area,Dịch vụ,1995,44,44.0,"28,8",28.8,0.3455,E2_sai_gia_tri,"28,8",28.8,E2_sai_gia_tri
+area_001,area,Dịch vụ,2005,"41,7",41.7,"32,5",32.5,0.2206,E2_sai_gia_tri,"32,5",32.5,E2_sai_gia_tri
+area_001,area,Dịch vụ,2010,38,38.0,41,41.0,0.0789,E2_sai_gia_tri,41,41.0,E2_sai_gia_tri
+area_001,area,Dịch vụ,2016,"43,3",43.3,"28,3",28.3,0.3464,E2_sai_gia_tri,"28,3",28.3,E2_sai_gia_tri
+area_002,area,Hàng xuất khẩu,2010,"24,9",24.9,"32,7",32.7,0.3133,E2_sai_gia_tri,"32,7",32.7,E2_sai_gia_tri
+area_002,area,Hàng xuất khẩu,2013,"20,9",20.9,"39,2",39.2,0.8756,E2_sai_gia_tri,"39,2",39.2,E2_sai_gia_tri
+area_002,area,Hàng xuất khẩu,2015,"25,9",25.9,"35,3",35.3,0.3629,E2_sai_gia_tri,"35,3",35.3,E2_sai_gia_tri
+area_002,area,Hàng xuất khẩu,2017,"25,2",25.2,"36,2",36.2,0.4365,E2_sai_gia_tri,"36,2",36.2,E2_sai_gia_tri
+area_002,area,Hàng nhập khẩu,2010,"42,4",42.4,"42,4",42.4,0.0,,"42,4",42.4,
+area_002,area,Hàng nhập khẩu,2013,"39,9",39.9,"39,9",39.9,0.0,,"39,9",39.9,
+area_002,area,Hàng nhập khẩu,2015,"38,8",38.8,"38,6",38.6,0.0052,,"38,6",38.6,
+area_002,area,Hàng nhập khẩu,2017,"38,6",38.6,"38,6",38.6,0.0,,"38,6",38.6,
+area_002,area,Hàng nội địa,2010,"32,7",32.7,"24,9",24.9,0.2385,E2_sai_gia_tri,"24,9",24.9,E2_sai_gia_tri
+area_002,area,Hàng nội địa,2013,"39,2",39.2,"20,9",20.9,0.4668,E2_sai_gia_tri,"20,9",20.9,E2_sai_gia_tri
+area_002,area,Hàng nội địa,2015,"35,3",35.3,"25,9",25.9,0.2663,E2_sai_gia_tri,"25,9",25.9,E2_sai_gia_tri
+area_002,area,Hàng nội địa,2017,"36,2",36.2,"25,2",25.2,0.3039,E2_sai_gia_tri,"25,2",25.2,E2_sai_gia_tri
+area_003,area,Hàng nông - lâm - thủy sản,1995,"46,3",46.3,46.3,46.3,0.0,,46.3,46.3,
+area_003,area,Hàng nông - lâm - thủy sản,2000,"28,9",28.9,28.4,28.4,0.0173,,28.4,28.4,
+area_003,area,Hàng nông - lâm - thủy sản,2005,"22,9",22.9,33.9,33.9,0.4803,E2_sai_gia_tri,33.9,33.9,E2_sai_gia_tri
+area_003,area,Hàng nông - lâm - thủy sản,2010,"20,8",20.8,41.0,41.0,0.9712,E2_sai_gia_tri,41.0,41.0,E2_sai_gia_tri
+area_003,area,Hàng nông - lâm - thủy sản,2015,"19,2",19.2,28.9,28.9,0.5052,E2_sai_gia_tri,28.9,28.9,E2_sai_gia_tri
+area_003,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,1995,"28,4",28.4,28.4,28.4,0.0,,28.4,28.4,
+area_003,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2000,"33,9",33.9,34.1,34.1,0.0059,,34.1,34.1,
+area_003,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2005,41,41.0,36.1,36.1,0.1195,E2_sai_gia_tri,36.1,36.1,E2_sai_gia_tri
+area_003,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2010,"34,1",34.1,45.1,45.1,0.3226,E2_sai_gia_tri,45.1,45.1,E2_sai_gia_tri
+area_003,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2015,"32,7",32.7,19.2,19.2,0.4128,E2_sai_gia_tri,19.2,19.2,E2_sai_gia_tri
+area_003,area,Hàng công nghiệp nặng và khoáng sản,1995,"25,3",25.3,25.3,25.3,0.0,,25.3,25.3,
+area_003,area,Hàng công nghiệp nặng và khoáng sản,2000,"37,2",37.2,37.2,37.2,0.0,,37.2,37.2,
+area_003,area,Hàng công nghiệp nặng và khoáng sản,2005,"36,1",36.1,32.7,32.7,0.0942,E2_sai_gia_tri,32.7,32.7,E2_sai_gia_tri
+area_003,area,Hàng công nghiệp nặng và khoáng sản,2010,"45,1",45.1,20.8,20.8,0.5388,E2_sai_gia_tri,20.8,20.8,E2_sai_gia_tri
+area_003,area,Hàng công nghiệp nặng và khoáng sản,2015,"48,1",48.1,48.1,48.1,0.0,,48.1,48.1,
+area_004,area,Thành thị,2000,"24,1",24.1,"75,9",75.9,2.1494,E2_sai_gia_tri,"75,9",75.9,E2_sai_gia_tri
+area_004,area,Thành thị,2005,"27,1",27.1,"72,9",72.9,1.69,E2_sai_gia_tri,"72,9",72.9,E2_sai_gia_tri
+area_004,area,Thành thị,2010,"30,5",30.5,"69,5",69.5,1.2787,E2_sai_gia_tri,"69,5",69.5,E2_sai_gia_tri
+area_004,area,Thành thị,2014,"33,1",33.1,"66,9",66.9,1.0211,E2_sai_gia_tri,"66,9",66.9,E2_sai_gia_tri
+area_004,area,Nông thôn,2000,"75,9",75.9,"24,1",24.1,0.6825,E2_sai_gia_tri,"24,1",24.1,E2_sai_gia_tri
+area_004,area,Nông thôn,2005,"72,9",72.9,"27,1",27.1,0.6283,E2_sai_gia_tri,"27,1",27.1,E2_sai_gia_tri
+area_004,area,Nông thôn,2010,"69,5",69.5,"30,5",30.5,0.5612,E2_sai_gia_tri,"30,5",30.5,E2_sai_gia_tri
+area_004,area,Nông thôn,2014,"66,9",66.9,"33,1",33.1,0.5052,E2_sai_gia_tri,"33,1",33.1,E2_sai_gia_tri
+area_005,area,Thành thị,2010,"30,5",30.5,"30,5",30.5,0.0,,"30,5",30.5,
+area_005,area,Thành thị,2012,"31,8",31.8,"31,8",31.8,0.0,,"31,8",31.8,
+area_005,area,Thành thị,2014,"33,1",33.1,"33,1",33.1,0.0,,"33,1",33.1,
+area_005,area,Thành thị,2016,"34,4",34.4,"34,4",34.4,0.0,,"34,4",34.4,
+area_005,area,Thành thị,2018,"35,7",35.7,"35,7",35.7,0.0,,"35,7",35.7,
+area_005,area,Nông thôn,2010,"69,5",69.5,"69,5",69.5,0.0,,"69,5",69.5,
+area_005,area,Nông thôn,2012,"68,2",68.2,"68,2",68.2,0.0,,"68,2",68.2,
+area_005,area,Nông thôn,2014,"66,9",66.9,"66,9",66.9,0.0,,"66,9",66.9,
+area_005,area,Nông thôn,2016,"65,6",65.6,"65,6",65.6,0.0,,"65,6",65.6,
+area_005,area,Nông thôn,2018,"64,3",64.3,"64,3",64.3,0.0,,"64,3",64.3,
+area_006,area,Xuất khẩu,1985,"39,3",39.3,30.3,30.3,0.229,E2_sai_gia_tri,30.3,30.3,E2_sai_gia_tri
+area_006,area,Xuất khẩu,1995,"53,5",53.5,46.5,46.5,0.1308,E2_sai_gia_tri,46.5,46.5,E2_sai_gia_tri
+area_006,area,Xuất khẩu,2004,"51,4",51.4,48.6,48.6,0.0545,E2_sai_gia_tri,48.6,48.6,E2_sai_gia_tri
+area_006,area,Xuất khẩu,2012,53,53.0,47,47.0,0.1132,E2_sai_gia_tri,47,47.0,E2_sai_gia_tri
+area_006,area,Nhập khẩu,1985,"60,7",60.7,60.7,60.7,0.0,,60.7,60.7,
+area_006,area,Nhập khẩu,1995,"46,5",46.5,53.5,53.5,0.1505,E2_sai_gia_tri,53.5,53.5,E2_sai_gia_tri
+area_006,area,Nhập khẩu,2004,"48,6",48.6,51.4,51.4,0.0576,E2_sai_gia_tri,51.4,51.4,E2_sai_gia_tri
+area_006,area,Nhập khẩu,2012,47,47.0,53,53.0,0.1277,E2_sai_gia_tri,53,53.0,E2_sai_gia_tri
+area_007,area,Nông - lâm - ngư nghiệp,1986,"49,5",49.5,49.5,49.5,0.0,,49.5,49.5,
+area_007,area,Nông - lâm - ngư nghiệp,1990,"45,6",45.6,45.6,45.6,0.0,,45.6,45.6,
+area_007,area,Nông - lâm - ngư nghiệp,1995,"32,6",32.6,32.6,32.6,0.0,,32.6,32.6,
+area_007,area,Nông - lâm - ngư nghiệp,2000,"23,4",23.4,32.7,32.7,0.3974,E2_sai_gia_tri,32.7,32.7,E2_sai_gia_tri
+area_007,area,Nông - lâm - ngư nghiệp,2005,"16,8",16.8,39.3,39.3,1.3393,E2_sai_gia_tri,39.3,39.3,E2_sai_gia_tri
+area_007,area,Công nghiệp - xây dựng,1986,"21,5",21.5,21.5,21.5,0.0,,21.5,21.5,
+area_007,area,Công nghiệp - xây dựng,1990,"22,7",22.7,22.7,22.7,0.0,,22.7,22.7,
+area_007,area,Công nghiệp - xây dựng,1995,"25,4",25.4,25.4,25.4,0.0,,25.4,25.4,
+area_007,area,Công nghiệp - xây dựng,2000,"32,7",32.7,23.4,23.4,0.2844,E2_sai_gia_tri,23.4,23.4,E2_sai_gia_tri
+area_007,area,Công nghiệp - xây dựng,2005,"39,3",39.3,32.6,32.6,0.1705,E2_sai_gia_tri,32.6,32.6,E2_sai_gia_tri
+area_007,area,Dịch vụ,1986,29,29.0,29.0,29.0,0.0,,29.0,29.0,
+area_007,area,Dịch vụ,1990,"31,7",31.7,31.7,31.7,0.0,,31.7,31.7,
+area_007,area,Dịch vụ,1995,42,42.0,42.0,42.0,0.0,,42.0,42.0,
+area_007,area,Dịch vụ,2000,"43,9",43.9,43.9,43.9,0.0,,43.9,43.9,
+area_007,area,Dịch vụ,2005,"43,9",43.9,43.9,43.9,0.0,,43.9,43.9,
+area_008,area,Khu vực có vốn đầu tư nước ngoài,2010,"15,2",15.2,43,43.0,1.8289,E2_sai_gia_tri,43,43.0,E2_sai_gia_tri
+area_008,area,Khu vực có vốn đầu tư nước ngoài,2015,"17,5",17.5,50.6,50.6,1.8914,E2_sai_gia_tri,50.6,50.6,E2_sai_gia_tri
+area_008,area,Khu vực có vốn đầu tư nước ngoài,2020,20,20.0,22.8,22.8,0.14,E2_sai_gia_tri,22.8,22.8,E2_sai_gia_tri
+area_008,area,Khu vực có vốn đầu tư nước ngoài,2021,20,20.0,20,20.0,0.0,,20,20.0,
+area_008,area,Kinh tế ngoài Nhà nước,2010,43,43.0,29.3,29.3,0.3186,E2_sai_gia_tri,29.3,29.3,E2_sai_gia_tri
+area_008,area,Kinh tế ngoài Nhà nước,2015,"50,6",50.6,50.5,50.5,0.002,,50.5,50.5,
+area_008,area,Kinh tế ngoài Nhà nước,2020,"50,5",50.5,21.2,21.2,0.5802,E2_sai_gia_tri,21.2,21.2,E2_sai_gia_tri
+area_008,area,Kinh tế ngoài Nhà nước,2021,"50,1",50.1,20,20.0,0.6008,E2_sai_gia_tri,20,20.0,E2_sai_gia_tri
+area_008,area,Kinh tế Nhà nước,2010,"29,3",29.3,15.2,15.2,0.4812,E2_sai_gia_tri,15.2,15.2,E2_sai_gia_tri
+area_008,area,Kinh tế Nhà nước,2015,"22,8",22.8,50.1,50.1,1.1974,E2_sai_gia_tri,50.1,50.1,E2_sai_gia_tri
+area_008,area,Kinh tế Nhà nước,2020,"20,7",20.7,20.7,20.7,0.0,,20.7,20.7,
+area_008,area,Kinh tế Nhà nước,2021,"21,2",21.2,20,20.0,0.0566,E2_sai_gia_tri,20,20.0,E2_sai_gia_tri
+area_009,area,Bán hàng,2021,"47,5",47.5,45,45.0,0.0526,E2_sai_gia_tri,45,45.0,E2_sai_gia_tri
+area_009,area,Bán hàng,2022,51,51.0,50,50.0,0.0196,,50,50.0,
+area_009,area,Bán hàng,2023,"38,5",38.5,38,38.0,0.013,,38,38.0,
+area_009,area,Bán hàng,2024,44,44.0,42,42.0,0.0455,,42,42.0,
+area_009,area,Bán hàng,2025,"38,5",38.5,38,38.0,0.013,,38,38.0,
+area_009,area,Marketing,2021,21,21.0,65,65.0,2.0952,E2_sai_gia_tri,65,65.0,E2_sai_gia_tri
+area_009,area,Marketing,2022,"25,5",25.5,70,70.0,1.7451,E2_sai_gia_tri,70,70.0,E2_sai_gia_tri
+area_009,area,Marketing,2023,34,34.0,72,72.0,1.1176,E2_sai_gia_tri,72,72.0,E2_sai_gia_tri
+area_009,area,Marketing,2024,"37,5",37.5,78,78.0,1.08,E2_sai_gia_tri,78,78.0,E2_sai_gia_tri
+area_009,area,Marketing,2025,46,46.0,82,82.0,0.7826,E2_sai_gia_tri,82,82.0,E2_sai_gia_tri
+area_009,area,Tài chính,2021,"31,5",31.5,100,100.0,2.1746,E2_sai_gia_tri,100,100.0,E2_sai_gia_tri
+area_009,area,Tài chính,2022,"23,5",23.5,95,95.0,3.0426,E2_sai_gia_tri,95,95.0,E2_sai_gia_tri
+area_009,area,Tài chính,2023,"27,5",27.5,85,85.0,2.0909,E2_sai_gia_tri,85,85.0,E2_sai_gia_tri
+area_009,area,Tài chính,2024,"18,5",18.5,88,88.0,3.7568,E2_sai_gia_tri,88,88.0,E2_sai_gia_tri
+area_009,area,Tài chính,2025,"15,5",15.5,89,89.0,4.7419,E2_sai_gia_tri,89,89.0,E2_sai_gia_tri
+area_010,area,Lúa đông xuân,2005,"40,1",40.1,27.8,27.8,0.3067,E2_sai_gia_tri,27.8,27.8,E2_sai_gia_tri
+area_010,area,Lúa đông xuân,2010,"41,2",41.2,26.3,26.3,0.3617,E2_sai_gia_tri,26.3,26.3,E2_sai_gia_tri
+area_010,area,Lúa đông xuân,2013,"39,3",39.3,25.1,25.1,0.3613,E2_sai_gia_tri,25.1,25.1,E2_sai_gia_tri
+area_010,area,Lúa đông xuân,2016,"39,6",39.6,24.4,24.4,0.3838,E2_sai_gia_tri,24.4,24.4,E2_sai_gia_tri
+area_010,area,Lúa hè thu và thu đông,2005,"32,1",32.1,32.1,32.1,0.0,,32.1,32.1,
+area_010,area,Lúa hè thu và thu đông,2010,"32,5",32.5,32.5,32.5,0.0,,32.5,32.5,
+area_010,area,Lúa hè thu và thu đông,2013,"35,6",35.6,35.6,35.6,0.0,,35.6,35.6,
+area_010,area,Lúa hè thu và thu đông,2016,36,36.0,36.0,36.0,0.0,,36.0,36.0,
+area_010,area,Lúa mùa,2005,"27,8",27.8,40.1,40.1,0.4424,E2_sai_gia_tri,40.1,40.1,E2_sai_gia_tri
+area_010,area,Lúa mùa,2010,"26,3",26.3,41.2,41.2,0.5665,E2_sai_gia_tri,41.2,41.2,E2_sai_gia_tri
+area_010,area,Lúa mùa,2013,"25,1",25.1,39.3,39.3,0.5657,E2_sai_gia_tri,39.3,39.3,E2_sai_gia_tri
+area_010,area,Lúa mùa,2016,"24,4",24.4,39.6,39.6,0.623,E2_sai_gia_tri,39.6,39.6,E2_sai_gia_tri
+area_011,area,Hàng xuất khẩu,2010,"24,9",24.9,32.7,32.7,0.3133,E2_sai_gia_tri,32.7,32.7,E2_sai_gia_tri
+area_011,area,Hàng xuất khẩu,2013,"20,9",20.9,39.2,39.2,0.8756,E2_sai_gia_tri,39.2,39.2,E2_sai_gia_tri
+area_011,area,Hàng xuất khẩu,2015,"25,9",25.9,35.3,35.3,0.3629,E2_sai_gia_tri,35.3,35.3,E2_sai_gia_tri
+area_011,area,Hàng xuất khẩu,2017,"25,2",25.2,36.2,36.2,0.4365,E2_sai_gia_tri,36.2,36.2,E2_sai_gia_tri
+area_011,area,Hàng nhập khẩu,2010,"42,4",42.4,42.4,42.4,0.0,,42.4,42.4,
+area_011,area,Hàng nhập khẩu,2013,"39,9",39.9,39.9,39.9,0.0,,39.9,39.9,
+area_011,area,Hàng nhập khẩu,2015,"38,8",38.8,38.8,38.8,0.0,,38.8,38.8,
+area_011,area,Hàng nhập khẩu,2017,"38,6",38.6,38.6,38.6,0.0,,38.6,38.6,
+area_011,area,Hàng nội địa,2010,"32,7",32.7,24.9,24.9,0.2385,E2_sai_gia_tri,24.9,24.9,E2_sai_gia_tri
+area_011,area,Hàng nội địa,2013,"39,2",39.2,20.9,20.9,0.4668,E2_sai_gia_tri,20.9,20.9,E2_sai_gia_tri
+area_011,area,Hàng nội địa,2015,"35,3",35.3,25.9,25.9,0.2663,E2_sai_gia_tri,25.9,25.9,E2_sai_gia_tri
+area_011,area,Hàng nội địa,2017,"36,2",36.2,25.2,25.2,0.3039,E2_sai_gia_tri,25.2,25.2,E2_sai_gia_tri
+area_012,area,"Nông, lâm, ngư nghiệp",1985,"40,2",40.2,"40,2",40.2,0.0,,"40,2",40.2,
+area_012,area,"Nông, lâm, ngư nghiệp",1991,"40,5",40.5,"40,5",40.5,0.0,,"40,5",40.5,
+area_012,area,"Nông, lâm, ngư nghiệp",1995,"28,9",28.9,"28,9",28.9,0.0,,"28,9",28.9,
+area_012,area,"Nông, lâm, ngư nghiệp",1997,"28,4",28.4,"28,4",28.4,0.0,,"28,4",28.4,
+area_012,area,"Nông, lâm, ngư nghiệp",1999,"26,2",26.2,"26,2",26.2,0.0,,"26,2",26.2,
+area_012,area,"Nông, lâm, ngư nghiệp",2001,26,26.0,26,26.0,0.0,,26,26.0,
+area_012,area,Công nghiệp - xây dựng,1985,"27,3",27.3,"27,3",27.3,0.0,,"27,3",27.3,
+area_012,area,Công nghiệp - xây dựng,1991,"23,8",23.8,"23,8",23.8,0.0,,"23,8",23.8,
+area_012,area,Công nghiệp - xây dựng,1995,"29,9",29.9,"29,9",29.9,0.0,,"29,9",29.9,
+area_012,area,Công nghiệp - xây dựng,1997,30,30.0,30,30.0,0.0,,30,30.0,
+area_012,area,Công nghiệp - xây dựng,1999,"31,2",31.2,"31,2",31.2,0.0,,"31,2",31.2,
+area_012,area,Công nghiệp - xây dựng,2001,"30,3",30.3,"30,3",30.3,0.0,,"30,3",30.3,
+area_012,area,Dịch vụ,1985,"32,5",32.5,"32,5",32.5,0.0,,"32,5",32.5,
+area_012,area,Dịch vụ,1991,"35,7",35.7,"35,7",35.7,0.0,,"35,7",35.7,
+area_012,area,Dịch vụ,1995,"41,2",41.2,"41,2",41.2,0.0,,"41,2",41.2,
+area_012,area,Dịch vụ,1997,"42,1",42.1,"42,1",42.1,0.0,,"42,1",42.1,
+area_012,area,Dịch vụ,1999,"42,6",42.6,"42,6",42.6,0.0,,"42,6",42.6,
+area_012,area,Dịch vụ,2001,"43,7",43.7,"43,7",43.7,0.0,,"43,7",43.7,
+area_013,area,Xuất khẩu,2010,"0,375",0.375,0.38,0.38,0.0133,,0.38,0.38,
+area_013,area,Xuất khẩu,2012,"0,42",0.42,0.41,0.41,0.0238,,0.41,0.41,
+area_013,area,Xuất khẩu,2014,"0,455",0.455,0.44,0.44,0.033,,0.44,0.44,
+area_013,area,Xuất khẩu,2016,"0,475",0.475,0.47,0.47,0.0105,,0.47,0.47,
+area_013,area,Xuất khẩu,2018,"0,48",0.48,0.49,0.49,0.0208,,0.49,0.49,
+area_013,area,Xuất khẩu,2020,"0,48",0.48,0.51,0.51,0.0625,E2_sai_gia_tri,0.51,0.51,E2_sai_gia_tri
+area_013,area,Nhập khẩu,2010,"0,625",0.625,0.52,0.52,0.168,E2_sai_gia_tri,0.52,0.52,E2_sai_gia_tri
+area_013,area,Nhập khẩu,2012,"0,58",0.58,0.55,0.55,0.0517,E2_sai_gia_tri,0.55,0.55,E2_sai_gia_tri
+area_013,area,Nhập khẩu,2014,"0,545",0.545,0.58,0.58,0.0642,E2_sai_gia_tri,0.58,0.58,E2_sai_gia_tri
+area_013,area,Nhập khẩu,2016,"0,525",0.525,0.61,0.61,0.1619,E2_sai_gia_tri,0.61,0.61,E2_sai_gia_tri
+area_013,area,Nhập khẩu,2018,"0,52",0.52,0.64,0.64,0.2308,E2_sai_gia_tri,0.64,0.64,E2_sai_gia_tri
+area_013,area,Nhập khẩu,2020,"0,52",0.52,0.67,0.67,0.2885,E2_sai_gia_tri,0.67,0.67,E2_sai_gia_tri
+area_014,area,Hàng nông - lâm - thủy sản,1995,"46,3",46.3,46.3,46.3,0.0,,46.3,46.3,
+area_014,area,Hàng nông - lâm - thủy sản,2000,"28,9",28.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng nông - lâm - thủy sản,2005,"22,9",22.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng nông - lâm - thủy sản,2010,"20,8",20.8,28.4,28.4,0.3654,E2_sai_gia_tri,28.4,28.4,E2_sai_gia_tri
+area_014,area,Hàng nông - lâm - thủy sản,2015,"19,2",19.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,1995,"28,4",28.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2000,"33,9",33.9,33.9,33.9,0.0,,33.9,33.9,
+area_014,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2005,41,41.0,37.2,37.2,0.0927,E2_sai_gia_tri,37.2,37.2,E2_sai_gia_tri
+area_014,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2010,"34,1",34.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng công nghiệp nhẹ và tiểu thủ công nghiệp,2015,"32,7",32.7,41.0,41.0,0.2538,E2_sai_gia_tri,41.0,41.0,E2_sai_gia_tri
+area_014,area,Hàng công nghiệp nặng và khoáng sản,1995,"25,3",25.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng công nghiệp nặng và khoáng sản,2000,"37,2",37.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng công nghiệp nặng và khoáng sản,2005,"36,1",36.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng công nghiệp nặng và khoáng sản,2010,"45,1",45.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+area_014,area,Hàng công nghiệp nặng và khoáng sản,2015,"48,1",48.1,48.1,48.1,0.0,,48.1,48.1,
+area_015,area,"Nông, lâm, ngư nghiệp",1991,"40,5",40.5,40.5,40.5,0.0,,40.5,40.5,
+area_015,area,"Nông, lâm, ngư nghiệp",1993,"29,9",29.9,29.9,29.9,0.0,,29.9,29.9,
+area_015,area,"Nông, lâm, ngư nghiệp",1995,"27,2",27.2,27.2,27.2,0.0,,27.2,27.2,
+area_015,area,"Nông, lâm, ngư nghiệp",1997,"25,8",25.8,25.8,25.8,0.0,,25.8,25.8,
+area_015,area,"Nông, lâm, ngư nghiệp",1999,"25,4",25.4,25.4,25.4,0.0,,25.4,25.4,
+area_015,area,"Nông, lâm, ngư nghiệp",2001,"23,3",23.3,23.3,23.3,0.0,,23.3,23.3,
+area_015,area,"Nông, lâm, ngư nghiệp",2002,23,23.0,23,23.0,0.0,,23,23.0,
+area_015,area,"Công nghiệp, xây dựng",1991,"23,8",23.8,40.5,40.5,0.7017,E2_sai_gia_tri,40.5,40.5,E2_sai_gia_tri
+area_015,area,"Công nghiệp, xây dựng",1993,"28,9",28.9,32.1,32.1,0.1107,E2_sai_gia_tri,32.1,32.1,E2_sai_gia_tri
+area_015,area,"Công nghiệp, xây dựng",1995,"28,8",28.8,34.5,34.5,0.1979,E2_sai_gia_tri,34.5,34.5,E2_sai_gia_tri
+area_015,area,"Công nghiệp, xây dựng",1997,"32,1",32.1,38.1,38.1,0.1869,E2_sai_gia_tri,38.1,38.1,E2_sai_gia_tri
+area_015,area,"Công nghiệp, xây dựng",1999,"34,5",34.5,38.5,38.5,0.1159,E2_sai_gia_tri,38.5,38.5,E2_sai_gia_tri
+area_015,area,"Công nghiệp, xây dựng",2001,"38,1",38.1,38.6,38.6,0.0131,,38.6,38.6,
+area_015,area,"Công nghiệp, xây dựng",2002,"38,5",38.5,38.5,38.5,0.0,,38.5,38.5,
+area_015,area,Dịch vụ,1991,"35,7",35.7,35.7,35.7,0.0,,35.7,35.7,
+area_015,area,Dịch vụ,1993,"41,2",41.2,41.2,41.2,0.0,,41.2,41.2,
+area_015,area,Dịch vụ,1995,44,44.0,44,44.0,0.0,,44,44.0,
+area_015,area,Dịch vụ,1997,"42,1",42.1,42.1,42.1,0.0,,42.1,42.1,
+area_015,area,Dịch vụ,1999,"40,1",40.1,40.1,40.1,0.0,,40.1,40.1,
+area_015,area,Dịch vụ,2001,"38,6",38.6,38.6,38.6,0.0,,38.6,38.6,
+area_015,area,Dịch vụ,2002,"38,5",38.5,38.5,38.5,0.0,,38.5,38.5,
+area_016,area,"Nông, lâm, ngư nghiệp",1991,"40,5",40.5,40.5,40.5,0.0,,40.5,40.5,
+area_016,area,"Nông, lâm, ngư nghiệp",1995,"27,2",27.2,27.2,27.2,0.0,,27.2,27.2,
+area_016,area,"Nông, lâm, ngư nghiệp",2002,23,23.0,23,23.0,0.0,,23,23.0,
+area_016,area,"Nông, lâm, ngư nghiệp",2010,21,21.0,21,21.0,0.0,,21,21.0,
+area_016,area,"Nông, lâm, ngư nghiệp",2014,"19,7",19.7,19.7,19.7,0.0,,19.7,19.7,
+area_016,area,"Công nghiệp, xây dựng",1991,"23,8",23.8,23.8,23.8,0.0,,23.8,23.8,
+area_016,area,"Công nghiệp, xây dựng",1995,"28,8",28.8,28.8,28.8,0.0,,28.8,28.8,
+area_016,area,"Công nghiệp, xây dựng",2002,"38,5",38.5,38.5,38.5,0.0,,38.5,38.5,
+area_016,area,"Công nghiệp, xây dựng",2010,"36,7",36.7,36.7,36.7,0.0,,36.7,36.7,
+area_016,area,"Công nghiệp, xây dựng",2014,"36,9",36.9,36.9,36.9,0.0,,36.9,36.9,
+area_016,area,Dịch vụ,1991,"35,7",35.7,35.7,35.7,0.0,,35.7,35.7,
+area_016,area,Dịch vụ,1995,44,44.0,44,44.0,0.0,,44,44.0,
+area_016,area,Dịch vụ,2002,"38,5",38.5,38.5,38.5,0.0,,38.5,38.5,
+area_016,area,Dịch vụ,2010,"42,3",42.3,42.3,42.3,0.0,,42.3,42.3,
+area_016,area,Dịch vụ,2014,"43,4",43.4,43.4,43.4,0.0,,43.4,43.4,
+area_017,area,Nông - lâm - ngư nghiệp,1991,"40,5",40.5,40.5,40.5,0.0,,40.5,40.5,
+area_017,area,Nông - lâm - ngư nghiệp,1995,"27,2",27.2,23.8,23.8,0.125,E2_sai_gia_tri,23.8,23.8,E2_sai_gia_tri
+area_017,area,Nông - lâm - ngư nghiệp,1999,"25,4",25.4,28.8,28.8,0.1339,E2_sai_gia_tri,28.8,28.8,E2_sai_gia_tri
+area_017,area,Nông - lâm - ngư nghiệp,2005,21,21.0,35.7,35.7,0.7,E2_sai_gia_tri,35.7,35.7,E2_sai_gia_tri
+area_017,area,Công nghiệp - xây dựng,1991,"23,8",23.8,40.1,40.1,0.6849,E2_sai_gia_tri,40.1,40.1,E2_sai_gia_tri
+area_017,area,Công nghiệp - xây dựng,1995,"28,8",28.8,27.2,27.2,0.0556,E2_sai_gia_tri,27.2,27.2,E2_sai_gia_tri
+area_017,area,Công nghiệp - xây dựng,1999,"34,5",34.5,25.4,25.4,0.2638,E2_sai_gia_tri,25.4,25.4,E2_sai_gia_tri
+area_017,area,Công nghiệp - xây dựng,2005,41,41.0,34.5,34.5,0.1585,E2_sai_gia_tri,34.5,34.5,E2_sai_gia_tri
+area_017,area,Dịch vụ,1991,"35,7",35.7,41,41.0,0.1485,E2_sai_gia_tri,41,41.0,E2_sai_gia_tri
+area_017,area,Dịch vụ,1995,44,44.0,21,21.0,0.5227,E2_sai_gia_tri,21,21.0,E2_sai_gia_tri
+area_017,area,Dịch vụ,1999,"40,1",40.1,38,38.0,0.0524,E2_sai_gia_tri,38,38.0,E2_sai_gia_tri
+area_017,area,Dịch vụ,2005,38,38.0,44,44.0,0.1579,E2_sai_gia_tri,44,44.0,E2_sai_gia_tri
+area_018,area,"Nông, lâm, ngư nghiệp",1991,"40,5",40.5,"35,7",35.7,0.1185,E2_sai_gia_tri,"35,7",35.7,E2_sai_gia_tri
+area_018,area,"Nông, lâm, ngư nghiệp",1993,"29,9",29.9,"28,9",28.9,0.0334,,"28,9",28.9,
+area_018,area,"Nông, lâm, ngư nghiệp",1995,"27,2",27.2,"28,8",28.8,0.0588,E2_sai_gia_tri,"28,8",28.8,E2_sai_gia_tri
+area_018,area,"Nông, lâm, ngư nghiệp",1997,"25,8",25.8,"32,1",32.1,0.2442,E2_sai_gia_tri,"32,1",32.1,E2_sai_gia_tri
+area_018,area,"Nông, lâm, ngư nghiệp",1999,"25,4",25.4,"34,5",34.5,0.3583,E2_sai_gia_tri,"34,5",34.5,E2_sai_gia_tri
+area_018,area,"Nông, lâm, ngư nghiệp",2001,"23,3",23.3,"38,5",38.5,0.6524,E2_sai_gia_tri,"38,5",38.5,E2_sai_gia_tri
+area_018,area,"Nông, lâm, ngư nghiệp",2002,23,23.0,"38,5",38.5,0.6739,E2_sai_gia_tri,"38,5",38.5,E2_sai_gia_tri
+area_018,area,Công nghiệp - xây dựng,1991,"23,8",23.8,"40,5",40.5,0.7017,E2_sai_gia_tri,"40,5",40.5,E2_sai_gia_tri
+area_018,area,Công nghiệp - xây dựng,1993,"28,9",28.9,"29,9",29.9,0.0346,,"29,9",29.9,
+area_018,area,Công nghiệp - xây dựng,1995,"28,8",28.8,"27,2",27.2,0.0556,E2_sai_gia_tri,"27,2",27.2,E2_sai_gia_tri
+area_018,area,Công nghiệp - xây dựng,1997,"32,1",32.1,"25,8",25.8,0.1963,E2_sai_gia_tri,"25,8",25.8,E2_sai_gia_tri
+area_018,area,Công nghiệp - xây dựng,1999,"34,5",34.5,"25,4",25.4,0.2638,E2_sai_gia_tri,"25,4",25.4,E2_sai_gia_tri
+area_018,area,Công nghiệp - xây dựng,2001,"38,1",38.1,"23,3",23.3,0.3885,E2_sai_gia_tri,"23,3",23.3,E2_sai_gia_tri
+area_018,area,Công nghiệp - xây dựng,2002,"38,5",38.5,23,23.0,0.4026,E2_sai_gia_tri,23,23.0,E2_sai_gia_tri
+area_018,area,Dịch vụ,1991,"35,7",35.7,"40,5",40.5,0.1345,E2_sai_gia_tri,"40,5",40.5,E2_sai_gia_tri
+area_018,area,Dịch vụ,1993,"41,2",41.2,"29,9",29.9,0.2743,E2_sai_gia_tri,"29,9",29.9,E2_sai_gia_tri
+area_018,area,Dịch vụ,1995,44,44.0,"27,2",27.2,0.3818,E2_sai_gia_tri,"27,2",27.2,E2_sai_gia_tri
+area_018,area,Dịch vụ,1997,"42,1",42.1,"25,8",25.8,0.3872,E2_sai_gia_tri,"25,8",25.8,E2_sai_gia_tri
+area_018,area,Dịch vụ,1999,"40,1",40.1,"25,4",25.4,0.3666,E2_sai_gia_tri,"25,4",25.4,E2_sai_gia_tri
+area_018,area,Dịch vụ,2001,"38,6",38.6,"23,3",23.3,0.3964,E2_sai_gia_tri,"23,3",23.3,E2_sai_gia_tri
+area_018,area,Dịch vụ,2002,"38,5",38.5,23,23.0,0.4026,E2_sai_gia_tri,23,23.0,E2_sai_gia_tri
+area_019,area,"Nông, lâm, ngư nghiệp",1990,"38,7",38.7,"38,7",38.7,0.0,,"38,7",38.7,
+area_019,area,"Nông, lâm, ngư nghiệp",1991,"40,5",40.5,"35,7",35.7,0.1185,E2_sai_gia_tri,"35,7",35.7,E2_sai_gia_tri
+area_019,area,"Nông, lâm, ngư nghiệp",1995,"27,2",27.2,"28,8",28.8,0.0588,E2_sai_gia_tri,"28,8",28.8,E2_sai_gia_tri
+area_019,area,"Nông, lâm, ngư nghiệp",1997,"25,8",25.8,"25,8",25.8,0.0,,"25,8",25.8,
+area_019,area,"Nông, lâm, ngư nghiệp",1998,"25,8",25.8,"23,8",23.8,0.0775,E2_sai_gia_tri,"23,8",23.8,E2_sai_gia_tri
+area_019,area,"Nông, lâm, ngư nghiệp",2002,23,23.0,23,23.0,0.0,,23,23.0,
+area_019,area,Công nghiệp - xây dựng,1990,"22,7",22.7,"22,7",22.7,0.0,,"22,7",22.7,
+area_019,area,Công nghiệp - xây dựng,1991,"23,8",23.8,"23,8",23.8,0.0,,"23,8",23.8,
+area_019,area,Công nghiệp - xây dựng,1995,"28,8",28.8,"32,1",32.1,0.1146,E2_sai_gia_tri,"32,1",32.1,E2_sai_gia_tri
+area_019,area,Công nghiệp - xây dựng,1997,"32,1",32.1,"32,5",32.5,0.0125,,"32,5",32.5,
+area_019,area,Công nghiệp - xây dựng,1998,"32,5",32.5,"41,7",41.7,0.2831,E2_sai_gia_tri,"41,7",41.7,E2_sai_gia_tri
+area_019,area,Công nghiệp - xây dựng,2002,"38,5",38.5,"38,5",38.5,0.0,,"38,5",38.5,
+area_019,area,Dịch vụ,1990,"38,6",38.6,"40,5",40.5,0.0492,,"40,5",40.5,
+area_019,area,Dịch vụ,1991,"35,7",35.7,"27,2",27.2,0.2381,E2_sai_gia_tri,"27,2",27.2,E2_sai_gia_tri
+area_019,area,Dịch vụ,1995,44,44.0,"25,8",25.8,0.4136,E2_sai_gia_tri,"25,8",25.8,E2_sai_gia_tri
+area_019,area,Dịch vụ,1997,"42,1",42.1,"25,8",25.8,0.3872,E2_sai_gia_tri,"25,8",25.8,E2_sai_gia_tri
+area_019,area,Dịch vụ,1998,"41,7",41.7,"25,8",25.8,0.3813,E2_sai_gia_tri,"25,8",25.8,E2_sai_gia_tri
+area_019,area,Dịch vụ,2002,"38,5",38.5,23,23.0,0.4026,E2_sai_gia_tri,23,23.0,E2_sai_gia_tri
+area_020,area,15-24 tuổi,2010,"18,3",18.3,18.3,18.3,0.0,,18.3,18.3,
+area_020,area,15-24 tuổi,2018,"12,8",12.8,12.8,12.8,0.0,,12.8,12.8,
+area_020,area,15-24 tuổi,2019,"12,8",12.8,12.8,12.8,0.0,,12.8,12.8,
+area_020,area,15-24 tuổi,2020,"11,4",11.4,11.4,11.4,0.0,,11.4,11.4,
+area_020,area,25-49 tuổi,2010,"61,4",61.4,61.4,61.4,0.0,,61.4,61.4,
+area_020,area,25-49 tuổi,2018,"61,5",61.5,61.5,61.5,0.0,,61.5,61.5,
+area_020,area,25-49 tuổi,2019,"61,5",61.5,61.5,61.5,0.0,,61.5,61.5,
+area_020,area,25-49 tuổi,2020,"61,3",61.3,61.3,61.3,0.0,,61.3,61.3,
+area_020,area,Trên 50 tuổi,2010,"20,3",20.3,20.3,20.3,0.0,,20.3,20.3,
+area_020,area,Trên 50 tuổi,2018,27,27.0,27,27.0,0.0,,27,27.0,
+area_020,area,Trên 50 tuổi,2019,"25,6",25.6,25.6,25.6,0.0,,25.6,25.6,
+area_020,area,Trên 50 tuổi,2020,"25,8",25.8,25.8,25.8,0.0,,25.8,25.8,
+area_021,area,"Nông nghiệp, lâm nghiệp và thủy sản",2010,"15,4",15.4,15.4,15.4,0.0,,15.4,15.4,
+area_021,area,"Nông nghiệp, lâm nghiệp và thủy sản",2015,"14,5",14.5,14.5,14.5,0.0,,14.5,14.5,
+area_021,area,"Nông nghiệp, lâm nghiệp và thủy sản",2020,"12,7",12.7,12.7,12.7,0.0,,12.7,12.7,
+area_021,area,"Nông nghiệp, lâm nghiệp và thủy sản",2022,12,12.0,12.0,12.0,0.0,,12.0,12.0,
+area_021,area,Công nghiệp và xây dựng,2010,33,33.0,33.0,33.0,0.0,,33.0,33.0,
+area_021,area,Công nghiệp và xây dựng,2015,"34,3",34.3,34.3,34.3,0.0,,34.3,34.3,
+area_021,area,Công nghiệp và xây dựng,2020,"36,7",36.7,36.7,36.7,0.0,,36.7,36.7,
+area_021,area,Công nghiệp và xây dựng,2022,"38,2",38.2,38.2,38.2,0.0,,38.2,38.2,
+area_021,area,Dịch vụ,2010,"40,6",40.6,40.6,40.6,0.0,,40.6,40.6,
+area_021,area,Dịch vụ,2015,"42,2",42.2,42.2,42.2,0.0,,42.2,42.2,
+area_021,area,Dịch vụ,2020,"41,8",41.8,41.8,41.8,0.0,,41.8,41.8,
+area_021,area,Dịch vụ,2022,"41,3",41.3,41.3,41.3,0.0,,41.3,41.3,
+area_021,area,Thuế sản phẩm trừ trợ cấp sản phẩm,2010,11,11.0,11,11.0,0.0,,11,11.0,
+area_021,area,Thuế sản phẩm trừ trợ cấp sản phẩm,2015,"9,1",9.1,9.1,9.1,0.0,,9.1,9.1,
+area_021,area,Thuế sản phẩm trừ trợ cấp sản phẩm,2020,"8,8",8.8,8.8,8.8,0.0,,8.8,8.8,
+area_021,area,Thuế sản phẩm trừ trợ cấp sản phẩm,2022,"8,5",8.5,8.5,8.5,0.0,,8.5,8.5,
+area_022,area,"Nông nghiệp, lâm nghiệp và thuỷ sản",1990,"8,2",8.2,"8,2",8.2,0.0,,"8,2",8.2,
+area_022,area,"Nông nghiệp, lâm nghiệp và thuỷ sản",2000,"4,9",4.9,"4,9",4.9,0.0,,"4,9",4.9,
+area_022,area,"Nông nghiệp, lâm nghiệp và thuỷ sản",2010,"4,7",4.7,"4,7",4.7,0.0,,"4,7",4.7,
+area_022,area,"Nông nghiệp, lâm nghiệp và thuỷ sản",2020,"6,5",6.5,"6,5",6.5,0.0,,"6,5",6.5,
+area_022,area,Công nghiệp và xây dựng,1990,"32,4",32.4,"32,4",32.4,0.0,,"32,4",32.4,
+area_022,area,Công nghiệp và xây dựng,2000,"29,4",29.4,"29,4",29.4,0.0,,"29,4",29.4,
+area_022,area,Công nghiệp và xây dựng,2010,"29,1",29.1,"29,1",29.1,0.0,,"29,1",29.1,
+area_022,area,Công nghiệp và xây dựng,2020,"28,3",28.3,"28,3",28.3,0.0,,"28,3",28.3,
+area_022,area,Dịch vụ,1990,"54,8",54.8,"54,8",54.8,0.0,,"54,8",54.8,
+area_022,area,Dịch vụ,2000,"55,3",55.3,"55,3",55.3,0.0,,"55,3",55.3,
+area_022,area,Dịch vụ,2010,"55,7",55.7,"55,7",55.7,0.0,,"55,7",55.7,
+area_022,area,Dịch vụ,2020,"60,3",60.3,"60,3",60.3,0.0,,"60,3",60.3,
+area_022,area,Thuế sản phẩm trừ trợ cấp sản phẩm,1990,"4,6",4.6,"4,6",4.6,0.0,,"4,6",4.6,
+area_022,area,Thuế sản phẩm trừ trợ cấp sản phẩm,2000,"10,4",10.4,"10,4",10.4,0.0,,"10,4",10.4,
+area_022,area,Thuế sản phẩm trừ trợ cấp sản phẩm,2010,"10,5",10.5,"10,5",10.5,0.0,,"10,5",10.5,
+area_022,area,Thuế sản phẩm trừ trợ cấp sản phẩm,2020,"4,9",4.9,"4,9",4.9,0.0,,"4,9",4.9,
+area_023,area,"Nông, lâm, ngư nghiệp",1991,"40,5",40.5,40.5,40.5,0.0,,40.5,40.5,
+area_023,area,"Nông, lâm, ngư nghiệp",1993,"29,9",29.9,28.9,28.9,0.0334,,28.9,28.9,
+area_023,area,"Nông, lâm, ngư nghiệp",1995,"27,2",27.2,28.8,28.8,0.0588,E2_sai_gia_tri,28.8,28.8,E2_sai_gia_tri
+area_023,area,"Nông, lâm, ngư nghiệp",1997,"25,8",25.8,32.1,32.1,0.2442,E2_sai_gia_tri,32.1,32.1,E2_sai_gia_tri
+area_023,area,"Nông, lâm, ngư nghiệp",1999,"25,4",25.4,34.5,34.5,0.3583,E2_sai_gia_tri,34.5,34.5,E2_sai_gia_tri
+area_023,area,"Nông, lâm, ngư nghiệp",2001,"23,3",23.3,38.1,38.1,0.6352,E2_sai_gia_tri,38.1,38.1,E2_sai_gia_tri
+area_023,area,"Nông, lâm, ngư nghiệp",2002,23,23.0,38.5,38.5,0.6739,E2_sai_gia_tri,38.5,38.5,E2_sai_gia_tri
+area_023,area,Công nghiệp - xây dựng,1991,"23,8",23.8,23.8,23.8,0.0,,23.8,23.8,
+area_023,area,Công nghiệp - xây dựng,1993,"28,9",28.9,29.9,29.9,0.0346,,29.9,29.9,
+area_023,area,Công nghiệp - xây dựng,1995,"28,8",28.8,27.2,27.2,0.0556,E2_sai_gia_tri,27.2,27.2,E2_sai_gia_tri
+area_023,area,Công nghiệp - xây dựng,1997,"32,1",32.1,25.8,25.8,0.1963,E2_sai_gia_tri,25.8,25.8,E2_sai_gia_tri
+area_023,area,Công nghiệp - xây dựng,1999,"34,5",34.5,25.4,25.4,0.2638,E2_sai_gia_tri,25.4,25.4,E2_sai_gia_tri
+area_023,area,Công nghiệp - xây dựng,2001,"38,1",38.1,23.3,23.3,0.3885,E2_sai_gia_tri,23.3,23.3,E2_sai_gia_tri
+area_023,area,Công nghiệp - xây dựng,2002,"38,5",38.5,23,23.0,0.4026,E2_sai_gia_tri,23,23.0,E2_sai_gia_tri
+area_023,area,Dịch vụ,1991,"35,7",35.7,35.7,35.7,0.0,,35.7,35.7,
+area_023,area,Dịch vụ,1993,"41,2",41.2,41.2,41.2,0.0,,41.2,41.2,
+area_023,area,Dịch vụ,1995,44,44.0,44,44.0,0.0,,44,44.0,
+area_023,area,Dịch vụ,1997,"42,1",42.1,42.1,42.1,0.0,,42.1,42.1,
+area_023,area,Dịch vụ,1999,"40,1",40.1,40.1,40.1,0.0,,40.1,40.1,
+area_023,area,Dịch vụ,2001,"38,6",38.6,38.6,38.6,0.0,,38.6,38.6,
+area_023,area,Dịch vụ,2002,"38,5",38.5,38.5,38.5,0.0,,38.5,38.5,
+area_024,area,Nông - lâm - ngư nghiệp,1990,"38,7",38.7,38.7,38.7,0.0,,38.7,38.7,
+area_024,area,Nông - lâm - ngư nghiệp,1995,"37,2",37.2,28.8,28.8,0.2258,E2_sai_gia_tri,28.8,28.8,E2_sai_gia_tri
+area_024,area,Nông - lâm - ngư nghiệp,2000,"24,5",24.5,37.2,37.2,0.5184,E2_sai_gia_tri,37.2,37.2,E2_sai_gia_tri
+area_024,area,Nông - lâm - ngư nghiệp,2005,"19,3",19.3,24.5,24.5,0.2694,E2_sai_gia_tri,24.5,24.5,E2_sai_gia_tri
+area_024,area,Nông - lâm - ngư nghiệp,2010,21,21.0,19.3,19.3,0.081,E2_sai_gia_tri,19.3,19.3,E2_sai_gia_tri
+area_024,area,Nông - lâm - ngư nghiệp,2014,"19,7",19.7,21,21.0,0.066,E2_sai_gia_tri,21,21.0,E2_sai_gia_tri
+area_024,area,Công nghiệp - xây dựng,1990,"22,7",22.7,44,44.0,0.9383,E2_sai_gia_tri,44,44.0,E2_sai_gia_tri
+area_024,area,Công nghiệp - xây dựng,1995,"28,8",28.8,36.7,36.7,0.2743,E2_sai_gia_tri,36.7,36.7,E2_sai_gia_tri
+area_024,area,Công nghiệp - xây dựng,2000,"36,7",36.7,38.1,38.1,0.0381,,38.1,38.1,
+area_024,area,Công nghiệp - xây dựng,2005,"38,1",38.1,19.3,19.3,0.4934,E2_sai_gia_tri,19.3,19.3,E2_sai_gia_tri
+area_024,area,Công nghiệp - xây dựng,2010,"36,7",36.7,21,21.0,0.4278,E2_sai_gia_tri,21,21.0,E2_sai_gia_tri
+area_024,area,Công nghiệp - xây dựng,2014,"36,9",36.9,19.7,19.7,0.4661,E2_sai_gia_tri,19.7,19.7,E2_sai_gia_tri
+area_024,area,Dịch vụ,1990,"38,6",38.6,38.6,38.6,0.0,,38.6,38.6,
+area_024,area,Dịch vụ,1995,44,44.0,36.7,36.7,0.1659,E2_sai_gia_tri,36.7,36.7,E2_sai_gia_tri
+area_024,area,Dịch vụ,2000,"38,8",38.8,38.8,38.8,0.0,,38.8,38.8,
+area_024,area,Dịch vụ,2005,"42,6",42.6,42.6,42.6,0.0,,42.6,42.6,
+area_024,area,Dịch vụ,2010,"42,3",42.3,42.3,42.3,0.0,,42.3,42.3,
+area_024,area,Dịch vụ,2014,"43,4",43.4,43.4,43.4,0.0,,43.4,43.4,
+bar_001,bar,Chiều dài đường ô tô,Hoa Kỳ,"6586,6",6586.6,"6586,6",6586.6,0.0,,"6586,6",6586.6,
+bar_001,bar,Chiều dài đường ô tô,Trung Quốc,"4860,6",4860.6,"4860,6",4860.6,0.0,,"4860,6",4860.6,
+bar_001,bar,Chiều dài đường ô tô,Ấn Độ,"4699,0",4699.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_001,bar,Chiều dài đường ô tô,Bra-xin,"2000,0",2000.0,"2000,0",2000.0,0.0,,"2000,0",2000.0,
+bar_001,bar,Chiều dài đường ô tô,Liên bang Nga,"1283,4",1283.4,"1283,4",1283.4,0.0,,"1283,4",1283.4,
+bar_002,bar,độ dài đường sắt,Hoa Kỳ,"239,2",239.2,239.2,239.2,0.0,,239.2,239.2,
+bar_002,bar,độ dài đường sắt,Trung Quốc,"131,0",131.0,131.0,131.0,0.0,,131.0,131.0,
+bar_002,bar,độ dài đường sắt,Liên bang Nga,"87,2",87.2,87.2,87.2,0.0,,87.2,87.2,
+bar_002,bar,độ dài đường sắt,Ca-na-da,"77,9",77.9,77.9,77.9,0.0,,77.9,77.9,
+bar_002,bar,độ dài đường sắt,Ấn Độ,"68,5",68.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_003,bar,GDP,Hoa Kỳ,"20893,7",20893.7,"20 893,7",20893.7,0.0,,"20 893,7",20893.7,
+bar_003,bar,GDP,Trung Quốc,"14687,7",14687.7,"14 687,7",14687.7,0.0,,"14 687,7",14687.7,
+bar_003,bar,GDP,Nhật Bản,"5040,1",5040.1,"5 040,1",5040.1,0.0,,"5 040,1",5040.1,
+bar_003,bar,GDP,Đức,"3846,4",3846.4,"3 846,4",3846.4,0.0,,"3 846,4",3846.4,
+bar_003,bar,GDP,Anh,"2756,9",2756.9,"2 756,9",2756.9,0.0,,"2 756,9",2756.9,
+bar_004,bar,Sản lượng thủy sản khai thác,2000,"4027,4",4027.4,"4027,4",4027.4,0.0,,"4027,4",4027.4,
+bar_004,bar,Sản lượng thủy sản khai thác,2010,"4075,8",4075.8,"4075,8",4075.8,0.0,,"4075,8",4075.8,
+bar_004,bar,Sản lượng thủy sản khai thác,2020,"5081,0",5081.0,"5081,0",5081.0,0.0,,"5081,0",5081.0,
+bar_004,bar,Sản lượng thuỷ sản nuôi trồng,2000,"77,1",77.1,"77,1",77.1,0.0,,"77,1",77.1,
+bar_004,bar,Sản lượng thuỷ sản nuôi trồng,2010,"121,0",121.0,"121,0",121.0,0.0,,"121,0",121.0,
+bar_004,bar,Sản lượng thuỷ sản nuôi trồng,2020,"219,2",219.2,"219,2",219.2,0.0,,"219,2",219.2,
+bar_005,bar,Trị giá xuất khẩu,2000,"519,9",519.9,"519,9",519.9,0.0,,"519,9",519.9,
+bar_005,bar,Trị giá xuất khẩu,2005,"667,5",667.5,"667,5",667.5,0.0,,"667,5",667.5,
+bar_005,bar,Trị giá xuất khẩu,2010,"859,2",859.2,"859,2",859.2,0.0,,"859,2",859.2,
+bar_005,bar,Trị giá xuất khẩu,2015,"775,1",775.1,"775,1",775.1,0.0,,"775,1",775.1,
+bar_005,bar,Trị giá xuất khẩu,2020,"784,2",784.2,"784,2",784.2,0.0,,"784,2",784.2,
+bar_005,bar,Trị giá nhập khẩu,2000,"452,1",452.1,"452,1",452.1,0.0,,"452,1",452.1,
+bar_005,bar,Trị giá nhập khẩu,2005,"599,8",599.8,"599,8",599.8,0.0,,"599,8",599.8,
+bar_005,bar,Trị giá nhập khẩu,2010,"782,1",782.1,"782,1",782.1,0.0,,"782,1",782.1,
+bar_005,bar,Trị giá nhập khẩu,2015,"799,7",799.7,"799,7",799.7,0.0,,"799,7",799.7,
+bar_005,bar,Trị giá nhập khẩu,2020,"796,3",796.3,"796,3",796.3,0.0,,"796,3",796.3,
+bar_006,bar,Thủy sản khai thác,2000,"14,8",14.8,"14,8",14.8,0.0,,"14,8",14.8,
+bar_006,bar,Thủy sản khai thác,2010,"15,1",15.1,"15,1",15.1,0.0,,"15,1",15.1,
+bar_006,bar,Thủy sản khai thác,2020,"12,7",12.7,"12,7",12.7,0.0,,"12,7",12.7,
+bar_006,bar,Thủy sản nuôi trồng,2000,"29,7",29.7,"29,7",29.7,0.0,,"29,7",29.7,
+bar_006,bar,Thủy sản nuôi trồng,2010,"47,8",47.8,"47,8",47.8,0.0,,"47,8",47.8,
+bar_006,bar,Thủy sản nuôi trồng,2020,"52,3",52.3,"52,3",52.3,0.0,,"52,3",52.3,
+bar_007,bar,Lực lượng lao động,2000,"37,6",37.6,"37,6",37.6,0.0,,"37,6",37.6,
+bar_007,bar,Lực lượng lao động,2005,"44,9",44.9,"44,9",44.9,0.0,,"44,9",44.9,
+bar_007,bar,Lực lượng lao động,2010,"50,4",50.4,"50,4",50.4,0.0,,"50,4",50.4,
+bar_007,bar,Lực lượng lao động,2015,"54,3",54.3,"54,3",54.3,0.0,,"54,3",54.3,
+bar_007,bar,Lực lượng lao động,2019,"55,8",55.8,"55,8",55.8,0.0,,"55,8",55.8,
+bar_007,bar,Lực lượng lao động,2021,"50,6",50.6,"50,6",50.6,0.0,,"50,6",50.6,
+bar_008,bar,"Giày, dép da",2000,"107,9",107.9,"107,9",107.9,0.0,,"107,9",107.9,
+bar_008,bar,"Giày, dép da",2010,"192,2",192.2,"192,2",192.2,0.0,,"192,2",192.2,
+bar_008,bar,"Giày, dép da",2021,"317,0",317.0,"317,0",317.0,0.0,,"317,0",317.0,
+bar_008,bar,Giày thể thao,2000,"109,2",109.2,"109,2",109.2,0.0,,"109,2",109.2,
+bar_008,bar,Giày thể thao,2010,"347,0",347.0,"347,0",347.0,0.0,,"347,0",347.0,
+bar_008,bar,Giày thể thao,2021,"873,5",873.5,"873,5",873.5,0.0,,"873,5",873.5,
+bar_009,bar,Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng,2005,"480,3",480.3,"480,3",480.3,0.0,,"480,3",480.3,
+bar_009,bar,Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng,2010,"1677,3",1677.3,"1677,3",1677.3,0.0,,"1677,3",1677.3,
+bar_009,bar,Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng,2015,"3223,2",3223.2,"3223,2",3223.2,0.0,,"3223,2",3223.2,
+bar_009,bar,Tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng,2021,"4407,8",4407.8,"4407,8",4407.8,0.0,,"4407,8",4407.8,
+bar_010,bar,Trung du và miền núi Bắc Bộ,2010,"116,8",116.8,"116,8",116.8,0.0,,"116,8",116.8,
+bar_010,bar,Trung du và miền núi Bắc Bộ,2015,"144,1",144.1,"144,1",144.1,0.0,,"144,1",144.1,
+bar_010,bar,Trung du và miền núi Bắc Bộ,2021,"149,2",149.2,"149,2",149.2,0.0,,"149,2",149.2,
+bar_010,bar,Tây Nguyên,2010,"820,4",820.4,"820,4",820.4,0.0,,"820,4",820.4,
+bar_010,bar,Tây Nguyên,2015,"980,3",980.3,"980,3",980.3,0.0,,"980,3",980.3,
+bar_010,bar,Tây Nguyên,2021,"1063,7",1063.7,"1063,7",1063.7,0.0,,"1063,7",1063.7,
+bar_010,bar,Đông Nam Bộ,2010,"802,1",802.1,"802,1",802.1,0.0,,"802,1",802.1,
+bar_010,bar,Đông Nam Bộ,2015,"813,2",813.2,"813,2",813.2,0.0,,"813,2",813.2,
+bar_010,bar,Đông Nam Bộ,2021,"809,9",809.9,"809,9",809.9,0.0,,"809,9",809.9,
+bar_011,bar,Cà phê,2010,"526,7",526.7,"526,7",526.7,0.0,,"526,7",526.7,
+bar_011,bar,Cà phê,2021,"657,4",657.4,"657,4",657.4,0.0,,"657,4",657.4,
+bar_011,bar,Cao su,2010,"214,8",214.8,"214,8",214.8,0.0,,"214,8",214.8,
+bar_011,bar,Cao su,2021,"232,2",232.2,"232,2",232.2,0.0,,"232,2",232.2,
+bar_011,bar,Hồ tiêu,2010,"22,6",22.6,"22,6",22.6,0.0,,"22,6",22.6,
+bar_011,bar,Hồ tiêu,2021,"83,5",83.5,"83,5",83.5,0.0,,"83,5",83.5,
+bar_011,bar,Điều,2010,"88,1",88.1,"88,1",88.1,0.0,,"88,1",88.1,
+bar_011,bar,Điều,2021,"90,3",90.3,"90,3",90.3,0.0,,"90,3",90.3,
+bar_012,bar,Khai thác,2010,"278,8",278.8,"278,8",278.8,0.0,,"278,8",278.8,
+bar_012,bar,Khai thác,2015,"317,3",317.3,"317,3",317.3,0.0,,"317,3",317.3,
+bar_012,bar,Khai thác,2021,"374,1",374.1,"374,1",374.1,0.0,,"374,1",374.1,
+bar_012,bar,Nuôi trồng,2010,"85,7",85.7,"85,7",85.7,0.0,,"85,7",85.7,
+bar_012,bar,Nuôi trồng,2015,"119,1",119.1,"119,1",119.1,0.0,,"119,1",119.1,
+bar_012,bar,Nuôi trồng,2021,"144,2",144.2,"144,2",144.2,0.0,,"144,2",144.2,
+bar_013,bar,Khai thác,2010,"1012,6",1012.6,"1012,6",1012.6,0.0,,"1012,6",1012.6,
+bar_013,bar,Khai thác,2015,"1232,2",1232.2,"1232,2",1232.2,0.0,,"1232,2",1232.2,
+bar_013,bar,Khai thác,2021,"1515,0",1515.0,"1515,0",1515.0,0.0,,"1515,0",1515.0,
+bar_013,bar,Nuôi trồng,2010,"1986,5",1986.5,"1986,5",1986.5,0.0,,"1986,5",1986.5,
+bar_013,bar,Nuôi trồng,2015,"2471,3",2471.3,"2471,3",2471.3,0.0,,"2471,3",2471.3,
+bar_013,bar,Nuôi trồng,2021,"3377,1",3377.1,"3377,1",3377.1,0.0,,"3377,1",3377.1,
+bar_014,bar,nợ nước ngoài,Ac-hen-ti-na,"236,5",236.5,236.5,236.5,0.0,,236.5,236.5,
+bar_014,bar,nợ nước ngoài,Bra-xin,"543,0",543.0,543,543.0,0.0,,543,543.0,
+bar_014,bar,nợ nước ngoài,E-cua-do,"41,1",41.1,,,,E8_thieu_diem_du_lieu,41.1,41.1,
+bar_014,bar,nợ nước ngoài,Ha-mai-ca,"14,7",14.7,14.7,14.7,0.0,,14.7,14.7,
+bar_014,bar,nợ nước ngoài,Me-hi-co,"441,6",441.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_014,bar,nợ nước ngoài,Pa-ra-goay,"15,9",15.9,15.9,15.9,0.0,,15.9,15.9,
+bar_014,bar,nợ nước ngoài,Pe-ru,"67,6",67.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_014,bar,nợ nước ngoài,Ve-ne-xu-ê-la,"148,9",148.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,I,"13,8",13.8,13.8,13.8,0.0,,13.8,13.8,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,II,"4,1",4.1,4.1,4.1,0.0,,4.1,4.1,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,III,"10,5",10.5,10.5,10.5,0.0,,10.5,10.5,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,IV,"50,4",50.4,50.4,50.4,0.0,,50.4,50.4,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,V,"218,4",218.4,218.4,218.4,0.0,,218.4,218.4,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,VI,"311,7",311.7,311.7,311.7,0.0,,311.7,311.7,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,VII,"293,7",293.7,293.7,293.7,0.0,,293.7,293.7,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,VIII,"269,8",269.8,269.8,269.8,0.0,,269.8,269.8,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,IX,327,327.0,327,327.0,0.0,,327,327.0,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,X,"266,7",266.7,266.7,266.7,0.0,,266.7,266.7,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,XI,"116,5",116.5,116.5,116.5,0.0,,116.5,116.5,
+bar_015,bar,lượng mưa trung bình tháng ở TP. Hồ Chí Minh,XII,"48,3",48.3,48.3,48.3,0.0,,48.3,48.3,
+bar_016,bar,Ma-lai-xi-a,2010,255,255.0,255,255.0,0.0,,255,255.0,
+bar_016,bar,Ma-lai-xi-a,2013,323,323.0,323,323.0,0.0,,323,323.0,
+bar_016,bar,Ma-lai-xi-a,2016,297,297.0,297297,297297.0,1000.0,E1_sai_dinh_dang_hoac_bac_so,297297,297297.0,E1_sai_dinh_dang_hoac_bac_so
+bar_016,bar,Xin-ga-po,2010,236,236.0,236,236.0,0.0,,236,236.0,
+bar_016,bar,Xin-ga-po,2013,303,303.0,303,303.0,0.0,,303,303.0,
+bar_016,bar,Xin-ga-po,2016,297,297.0,297297,297297.0,1000.0,E1_sai_dinh_dang_hoac_bac_so,297297,297297.0,E1_sai_dinh_dang_hoac_bac_so
+bar_017,bar,Cả nước,2012,5251,5251.0,5251,5251.0,0.0,,5251,5251.0,
+bar_017,bar,Cả nước,2013,5908,5908.0,5908,5908.0,0.0,,5908,5908.0,
+bar_017,bar,Cả nước,2014,7701,7701.0,7701,7701.0,0.0,,7701,7701.0,
+bar_017,bar,Trung du và miền núi Bắc bộ,2012,1590,1590.0,1590,1590.0,0.0,,1590,1590.0,
+bar_017,bar,Trung du và miền núi Bắc bộ,2013,1731,1731.0,1731,1731.0,0.0,,1731,1731.0,
+bar_017,bar,Trung du và miền núi Bắc bộ,2014,2278,2278.0,2278,2278.0,0.0,,2278,2278.0,
+bar_017,bar,Tây Nguyên,2012,620,620.0,620,620.0,0.0,,620,620.0,
+bar_017,bar,Tây Nguyên,2013,540,540.0,540,540.0,0.0,,540,540.0,
+bar_017,bar,Tây Nguyên,2014,447,447.0,447,447.0,0.0,,447,447.0,
+bar_018,bar,Hà Nội,Lượng mưa,1676,1676.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,Hà Nội,Lượng bốc hơi,989,989.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,Hà Nội,Cân bằng ẩm,687,687.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,Huế,Lượng mưa,2868,2868.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,Huế,Lượng bốc hơi,1000,1000.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,Huế,Cân bằng ẩm,1868,1868.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,TP. Hồ Chí Minh,Lượng mưa,1931,1931.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,TP. Hồ Chí Minh,Lượng bốc hơi,1686,1686.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_018,bar,TP. Hồ Chí Minh,Cân bằng ẩm,245,245.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_019,bar,Tình hình Nợ nước Ngoài,Ac-hen-ti-na,"236,5",236.5,236.5,236.5,0.0,,236.5,236.5,
+bar_019,bar,Tình hình Nợ nước Ngoài,Bra-xin,543,543.0,543,543.0,0.0,,543,543.0,
+bar_019,bar,Tình hình Nợ nước Ngoài,E-cua-do,"41,1",41.1,,,,E8_thieu_diem_du_lieu,41.1,41.1,
+bar_019,bar,Tình hình Nợ nước Ngoài,Ha-mai-ca,"14,7",14.7,14.7,14.7,0.0,,14.7,14.7,
+bar_019,bar,Tình hình Nợ nước Ngoài,Me-hi-co,"441,6",441.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_019,bar,Tình hình Nợ nước Ngoài,Pa-ra-goay,"15,9",15.9,15.9,15.9,0.0,,15.9,15.9,
+bar_019,bar,Tình hình Nợ nước Ngoài,Pe-ru,"67,6",67.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_019,bar,Tình hình Nợ nước Ngoài,Ve-ne-xu-ê-la,"148,9",148.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_020,bar,Cả nước,2012,5251,5251.0,5251,5251.0,0.0,,5251,5251.0,
+bar_020,bar,Cả nước,2013,5908,5908.0,5908,5908.0,0.0,,5908,5908.0,
+bar_020,bar,Cả nước,2014,7701,7701.0,7701,7701.0,0.0,,7701,7701.0,
+bar_020,bar,Trung du và miền núi Bắc bộ,2012,1590,1590.0,1590,1590.0,0.0,,1590,1590.0,
+bar_020,bar,Trung du và miền núi Bắc bộ,2013,1731,1731.0,1731,1731.0,0.0,,1731,1731.0,
+bar_020,bar,Trung du và miền núi Bắc bộ,2014,2278,2278.0,2278,2278.0,0.0,,2278,2278.0,
+bar_020,bar,Tây Nguyên,2012,620,620.0,620,620.0,0.0,,620,620.0,
+bar_020,bar,Tây Nguyên,2013,540,540.0,540,540.0,0.0,,540,540.0,
+bar_020,bar,Tây Nguyên,2014,447,447.0,447,447.0,0.0,,447,447.0,
+bar_021,bar,Sản lượng lương thực,1995,"62,0",62.0,62.0,62.0,0.0,,62.0,62.0,
+bar_021,bar,Sản lượng lương thực,1998,"46,9",46.9,46.9,46.9,0.0,,46.9,46.9,
+bar_021,bar,Sản lượng lương thực,1999,"53,8",53.8,53.8,53.8,0.0,,53.8,53.8,
+bar_021,bar,Sản lượng lương thực,2000,"64,3",64.3,64.3,64.3,0.0,,64.3,64.3,
+bar_021,bar,Sản lượng lương thực,2001,"83,6",83.6,83.6,83.6,0.0,,83.6,83.6,
+bar_021,bar,Sản lượng lương thực,2002,"92,0",92.0,92.0,92.0,0.0,,92.0,92.0,
+bar_021,bar,Sản lượng lương thực,2005,"78,2",78.2,78.2,78.2,0.0,,78.2,78.2,
+bar_022,bar,Ma-lai-xi-a,2010,255,255.0,255,255.0,0.0,,255,255.0,
+bar_022,bar,Ma-lai-xi-a,2013,323,323.0,323,323.0,0.0,,323,323.0,
+bar_022,bar,Ma-lai-xi-a,2016,297,297.0,297,297.0,0.0,,297,297.0,
+bar_022,bar,Phi-lip-pin,2010,200,200.0,200,200.0,0.0,,200,200.0,
+bar_022,bar,Phi-lip-pin,2013,272,272.0,272,272.0,0.0,,272,272.0,
+bar_022,bar,Phi-lip-pin,2016,305,305.0,305,305.0,0.0,,305,305.0,
+bar_023,bar,Thái Lan,2010,341,341.0,341,341.0,0.0,,341,341.0,
+bar_023,bar,Thái Lan,2013,421,421.0,421,421.0,0.0,,421,421.0,
+bar_023,bar,Thái Lan,2016,407,407.0,407,407.0,0.0,,407,407.0,
+bar_023,bar,Phi-lip-pin,2010,200,200.0,200,200.0,0.0,,200,200.0,
+bar_023,bar,Phi-lip-pin,2013,272,272.0,272,272.0,0.0,,272,272.0,
+bar_023,bar,Phi-lip-pin,2016,305,305.0,305,305.0,0.0,,305,305.0,
+bar_024,bar,Số đại biểu chọn mỗi loại nước uống,Nước cam,12,12.0,12,12.0,0.0,,12,12.0,
+bar_024,bar,Số đại biểu chọn mỗi loại nước uống,Nước dứa,8,8.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_024,bar,Số đại biểu chọn mỗi loại nước uống,Nước chanh,11,11.0,11,11.0,0.0,,11,11.0,
+bar_024,bar,Số đại biểu chọn mỗi loại nước uống,Nước dưa hấu,8,8.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_025,bar,Số học viên,2017,30,30.0,30,30.0,0.0,,30,30.0,
+bar_025,bar,Số học viên,2018,40,40.0,40,40.0,0.0,,40,40.0,
+bar_025,bar,Số học viên,2019,50,50.0,50,50.0,0.0,,50,50.0,
+bar_025,bar,Số học viên,2020,60,60.0,60,60.0,0.0,,60,60.0,
+bar_026,bar,Số học sinh,Cam,8,8.0,8,8.0,0.0,,8,8.0,
+bar_026,bar,Số học sinh,Xoài,10,10.0,10,10.0,0.0,,10,10.0,
+bar_026,bar,Số học sinh,Táo,8,8.0,8,8.0,0.0,,8,8.0,
+bar_026,bar,Số học sinh,Ổi,6,6.0,6,6.0,0.0,,6,6.0,
+bar_026,bar,Số học sinh,Quýt,5,5.0,5,5.0,0.0,,5,5.0,
+bar_027,bar,Số dân (triệu người),1979,53,53.0,53,53.0,0.0,,53,53.0,
+bar_027,bar,Số dân (triệu người),1989,67,67.0,67,67.0,0.0,,67,67.0,
+bar_027,bar,Số dân (triệu người),1999,79,79.0,79,79.0,0.0,,79,79.0,
+bar_027,bar,Số dân (triệu người),2009,87,87.0,87,87.0,0.0,,87,87.0,
+bar_027,bar,Số dân (triệu người),2019,93,93.0,93,93.0,0.0,,93,93.0,
+bar_028,bar,Số áo sơ mi bán được,37,20,20.0,20,20.0,0.0,,20,20.0,
+bar_028,bar,Số áo sơ mi bán được,38,29,29.0,29,29.0,0.0,,29,29.0,
+bar_028,bar,Số áo sơ mi bán được,39,56,56.0,56,56.0,0.0,,56,56.0,
+bar_028,bar,Số áo sơ mi bán được,40,65,65.0,65,65.0,0.0,,65,65.0,
+bar_028,bar,Số áo sơ mi bán được,41,47,47.0,47,47.0,0.0,,47,47.0,
+bar_028,bar,Số áo sơ mi bán được,42,18,18.0,18,18.0,0.0,,18,18.0,
+bar_029,bar,Số con vật,Chó,6,6.0,6,6.0,0.0,,6,6.0,
+bar_029,bar,Số con vật,Mèo,4,4.0,4,4.0,0.0,,4,4.0,
+bar_029,bar,Số con vật,Chim,10,10.0,10,10.0,0.0,,10,10.0,
+bar_029,bar,Số con vật,Cá,14,14.0,14,14.0,0.0,,14,14.0,
+bar_029,bar,Số con vật,Thỏ,2,2.0,2,2.0,0.0,,2,2.0,
+bar_030,bar,Tổng lượng mưa (mm),2015,1520,1520.0,1520,1520.0,0.0,,1520,1520.0,
+bar_030,bar,Tổng lượng mưa (mm),2016,1631,1631.0,1631,1631.0,0.0,,1631,1631.0,
+bar_030,bar,Tổng lượng mưa (mm),2017,1858,1858.0,1858,1858.0,0.0,,1858,1858.0,
+bar_030,bar,Tổng lượng mưa (mm),2018,1695,1695.0,1695,1695.0,0.0,,1695,1695.0,
+bar_030,bar,Tổng lượng mưa (mm),2019,1311,1311.0,1311,1311.0,0.0,,1311,1311.0,
+bar_031,bar,Toán,6A,9,9.0,9,9.0,0.0,,9,9.0,
+bar_031,bar,Toán,6B,11,11.0,11,11.0,0.0,,11,11.0,
+bar_031,bar,Toán,6C,16,16.0,16,16.0,0.0,,16,16.0,
+bar_031,bar,Toán,6D,12,12.0,12,12.0,0.0,,12,12.0,
+bar_031,bar,Toán,6E,20,20.0,20,20.0,0.0,,20,20.0,
+bar_031,bar,Khoa học tự nhiên,6A,8,8.0,8,8.0,0.0,,8,8.0,
+bar_031,bar,Khoa học tự nhiên,6B,13,13.0,13,13.0,0.0,,13,13.0,
+bar_031,bar,Khoa học tự nhiên,6C,12,12.0,12,12.0,0.0,,12,12.0,
+bar_031,bar,Khoa học tự nhiên,6D,18,18.0,18,18.0,0.0,,18,18.0,
+bar_031,bar,Khoa học tự nhiên,6E,15,15.0,15,15.0,0.0,,15,15.0,
+bar_032,bar,Truyện tranh thiếu nhi,Thứ Hai,25,25.0,,,,E8_thieu_diem_du_lieu,25,25.0,
+bar_032,bar,Truyện tranh thiếu nhi,Thứ Ba,18,18.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_032,bar,Truyện tranh thiếu nhi,Thứ Tư,12,12.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_032,bar,Truyện tranh thiếu nhi,Thứ Năm,20,20.0,,,,E8_thieu_diem_du_lieu,20,20.0,
+bar_032,bar,Truyện tranh thiếu nhi,Thứ Sáu,35,35.0,,,,E8_thieu_diem_du_lieu,35,35.0,
+bar_032,bar,Truyện đọc thiếu nhi,Thứ Hai,15,15.0,,,,E8_thieu_diem_du_lieu,15,15.0,
+bar_032,bar,Truyện đọc thiếu nhi,Thứ Ba,10,10.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_032,bar,Truyện đọc thiếu nhi,Thứ Tư,5,5.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_032,bar,Truyện đọc thiếu nhi,Thứ Năm,5,5.0,,,,E8_thieu_diem_du_lieu,5,5.0,
+bar_032,bar,Truyện đọc thiếu nhi,Thứ Sáu,15,15.0,,,,E8_thieu_diem_du_lieu,15,15.0,
+bar_033,bar,Số HS,1,0,0.0,0,0.0,0.0,,0,0.0,
+bar_033,bar,Số HS,2,0,0.0,0,0.0,0.0,,0,0.0,
+bar_033,bar,Số HS,3,0,0.0,0,0.0,0.0,,0,0.0,
+bar_033,bar,Số HS,4,2,2.0,2,2.0,0.0,,2,2.0,
+bar_033,bar,Số HS,5,2,2.0,2,2.0,0.0,,2,2.0,
+bar_033,bar,Số HS,6,3,3.0,3,3.0,0.0,,3,3.0,
+bar_033,bar,Số HS,7,4,4.0,4,4.0,0.0,,4,4.0,
+bar_033,bar,Số HS,8,14,14.0,14,14.0,0.0,,14,14.0,
+bar_033,bar,Số HS,9,9,9.0,9,9.0,0.0,,9,9.0,
+bar_033,bar,Số HS,10,6,6.0,6,6.0,0.0,,6,6.0,
+bar_034,bar,Giá trị,Đỏ,3,3.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_034,bar,Giá trị,Xanh da trời,6,6.0,6,6.0,0.0,,6,6.0,
+bar_034,bar,Giá trị,Xanh lá cây,2,2.0,2,2.0,0.0,,2,2.0,
+bar_034,bar,Giá trị,vàng,3,3.0,3,3.0,0.0,,3,3.0,
+bar_034,bar,Giá trị,Da Cam,5,5.0,5,5.0,0.0,,5,5.0,
+bar_034,bar,Giá trị,Hồng,4,4.0,4,4.0,0.0,,4,4.0,
+bar_035,bar,Người dân,2005,"82392,1",82392.1,82392.1,82392.1,0.0,,82392.1,82392.1,
+bar_035,bar,Người dân,2007,"84218,5",84218.5,84218.5,84218.5,0.0,,84218.5,84218.5,
+bar_035,bar,Người dân,2009,86025,86025.0,86025,86025.0,0.0,,86025,86025.0,
+bar_035,bar,Người dân,2011,"87860,4",87860.4,87860.4,87860.4,0.0,,87860.4,87860.4,
+bar_035,bar,Người dân,2013,"89759,5",89759.5,89759.5,89759.5,0.0,,89759.5,89759.5,
+bar_035,bar,Người dân,2015,"91713,3",91713.3,91713.3,91713.3,0.0,,91713.3,91713.3,
+bar_036,bar,Sản lượng lương thực,1995,"62,0",62.0,62.0,62.0,0.0,,62.0,62.0,
+bar_036,bar,Sản lượng lương thực,1998,"46,9",46.9,46.9,46.9,0.0,,46.9,46.9,
+bar_036,bar,Sản lượng lương thực,1999,"53,8",53.8,53.8,53.8,0.0,,53.8,53.8,
+bar_036,bar,Sản lượng lương thực,2000,"64,3",64.3,64.3,64.3,0.0,,64.3,64.3,
+bar_036,bar,Sản lượng lương thực,2001,"83,6",83.6,83.6,83.6,0.0,,83.6,83.6,
+bar_036,bar,Sản lượng lương thực,2002,"92,0",92.0,92.0,92.0,0.0,,92.0,92.0,
+bar_036,bar,Sản lượng lương thực,2005,"78,2",78.2,78.2,78.2,0.0,,78.2,78.2,
+bar_037,bar,Khai thác,1990,"728,5",728.5,728.5,728.5,0.0,,728.5,728.5,
+bar_037,bar,Khai thác,1994,"1120,9",1120.9,1120.9,1120.9,0.0,,1120.9,1120.9,
+bar_037,bar,Khai thác,1998,1357,1357.0,1357,1357.0,0.0,,1357,1357.0,
+bar_037,bar,Khai thác,2002,"1802,6",1802.6,1802.6,1802.6,0.0,,1802.6,1802.6,
+bar_037,bar,Nuôi trồng,1990,"162,1",162.1,162.1,162.1,0.0,,162.1,162.1,
+bar_037,bar,Nuôi trồng,1994,"344,1",344.1,344.1,344.1,0.0,,344.1,344.1,
+bar_037,bar,Nuôi trồng,1998,425,425.0,425,425.0,0.0,,425,425.0,
+bar_037,bar,Nuôi trồng,2002,"844,8",844.8,844.8,844.8,0.0,,844.8,844.8,
+bar_038,bar,Nam,2016,"70,8",70.8,70.8,70.8,0.0,,70.8,70.8,
+bar_038,bar,Nam,2017,"70,9",70.9,70.9,70.9,0.0,,70.9,70.9,
+bar_038,bar,Nam,2018,"70,9",70.9,70.9,70.9,0.0,,70.9,70.9,
+bar_038,bar,Nam,2019,71,71.0,71,71.0,0.0,,71,71.0,
+bar_038,bar,Nam,2020,71,71.0,71,71.0,0.0,,71,71.0,
+bar_038,bar,Nữ,2016,"76,1",76.1,76.1,76.1,0.0,,76.1,76.1,
+bar_038,bar,Nữ,2017,"76,2",76.2,76.2,76.2,0.0,,76.2,76.2,
+bar_038,bar,Nữ,2018,"76,2",76.2,76.2,76.2,0.0,,76.2,76.2,
+bar_038,bar,Nữ,2019,"76,3",76.3,76.3,76.3,0.0,,76.3,76.3,
+bar_038,bar,Nữ,2020,"76,4",76.4,76.4,76.4,0.0,,76.4,76.4,
+bar_039,bar,Khai thác,2000,"1660,9",1660.9,1660.9,1660.9,0.0,,1660.9,1660.9,
+bar_039,bar,Khai thác,2005,"1987,9",1987.9,1987.9,1987.9,0.0,,1987.9,1987.9,
+bar_039,bar,Khai thác,2010,"2414,4",2414.4,2414.4,2414.4,0.0,,2414.4,2414.4,
+bar_039,bar,Khai thác,2016,"3226,1",3226.1,3226.1,3226.1,0.0,,3226.1,3226.1,
+bar_039,bar,Nuôi trồng,2000,"589,6",589.6,589.6,589.6,0.0,,589.6,589.6,
+bar_039,bar,Nuôi trồng,2005,1478,1478.0,1478,1478.0,0.0,,1478,1478.0,
+bar_039,bar,Nuôi trồng,2010,"2728,3",2728.3,2728.3,2728.3,0.0,,2728.3,2728.3,
+bar_039,bar,Nuôi trồng,2016,"3644,6",3644.6,3644.6,3644.6,0.0,,3644.6,3644.6,
+bar_040,bar,Việt Nam,2021,"3,9",3.9,3.9,3.9,0.0,,3.9,3.9,
+bar_040,bar,Việt Nam,2022,"4,3",4.3,4.3,4.3,0.0,,4.3,4.3,
+bar_040,bar,Việt Nam,2023,"3,45",3.45,3.45,3.45,0.0,,3.45,3.45,
+bar_040,bar,Việt Nam,2024,"3,9",3.9,3.9,3.9,0.0,,3.9,3.9,
+bar_040,bar,Việt Nam,2025,"4,6",4.6,4.6,4.6,0.0,,4.6,4.6,
+bar_040,bar,Ecuador,2021,5,5.0,5,5.0,0.0,,5,5.0,
+bar_040,bar,Ecuador,2022,"6,7",6.7,6.7,6.7,0.0,,6.7,6.7,
+bar_040,bar,Ecuador,2023,"6,3",6.3,6.3,6.3,0.0,,6.3,6.3,
+bar_040,bar,Ecuador,2024,"6,07",6.07,6.07,6.07,0.0,,6.07,6.07,
+bar_040,bar,Ecuador,2025,"7,47",7.47,7.47,7.47,0.0,,7.47,7.47,
+bar_041,bar,Nhập khẩu,2016,"2990,6",2990.6,"2990,6",2990.6,0.0,,"2990,6",2990.6,
+bar_041,bar,Nhập khẩu,2017,"3660,4",3660.4,"3660,4",3660.4,0.0,,"3660,4",3660.4,
+bar_041,bar,Nhập khẩu,2018,"4936,8",4936.8,"4936,8",4936.8,0.0,,"4936,8",4936.8,
+bar_041,bar,Nhập khẩu,2019,"5720,3",5720.3,"5720,3",5720.3,0.0,,"5720,3",5720.3,
+bar_041,bar,Nhập khẩu,2020,"5381,8",5381.8,"5381,8",5381.8,0.0,,"5381,8",5381.8,
+bar_041,bar,Xuất khẩu,2016,"2617,9",2617.9,"2617,9",2617.9,0.0,,"2617,9",2617.9,
+bar_041,bar,Xuất khẩu,2017,"2862,6",2862.6,"2862,6",2862.6,0.0,,"2862,6",2862.6,
+bar_041,bar,Xuất khẩu,2018,"3533,7",3533.7,"3533,7",3533.7,0.0,,"3533,7",3533.7,
+bar_041,bar,Xuất khẩu,2019,"3369,2",3369.2,"3369,2",3369.2,0.0,,"3369,2",3369.2,
+bar_041,bar,Xuất khẩu,2020,"2826,1",2826.1,"2826,1",2826.1,0.0,,"2826,1",2826.1,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2015,"30,14",30.14,"30,14",30.14,0.0,,"30,14",30.14,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2016,"32,1",32.1,"32,1",32.1,0.0,,"32,1",32.1,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2017,"36,37",36.37,"36,37",36.37,0.0,,"36,37",36.37,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2018,"40,0",40.0,"40,0",40.0,0.0,,"40,0",40.0,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2019,"41,3",41.3,"41,3",41.3,0.0,,"41,3",41.3,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2020,"41,0",41.0,"41,0",41.0,0.0,,"41,0",41.0,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2021,"48,6",48.6,"48,6",48.6,0.0,,"48,6",48.6,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2022,"53,2",53.2,"53,2",53.2,0.0,,"53,2",53.2,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2023,"53,01",53.01,"53,01",53.01,0.0,,"53,01",53.01,
+bar_042,bar,Kim ngạch xuất khẩu (tỷ USD),2024,"62,5",62.5,"62,5",62.5,0.0,,"62,5",62.5,
+bar_043,bar,2021,Điện thoại các loại & linh kiện,"57,53",57.53,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Máy vi tính sản phẩm điện tử & linh kiện,"50,8",50.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Máy móc thiết bị dụng cụ phụ tùng khác,"38,33",38.33,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,"Hàng dệt, may","32,75",32.75,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Giày dép các loại,"17,75",17.75,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Gỗ và sản phẩm gỗ,"14,81",14.81,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Phương tiện vận tải và phụ tùng,"10,62",10.62,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Hàng thuỷ sản,"8,88",8.88,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Sắt thép các loại,"11,79",11.79,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2021,Máy ảnh máy quay phim và linh kiện,"5,22",5.22,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Điện thoại các loại & linh kiện,"57,99",57.99,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Máy vi tính sản phẩm điện tử & linh kiện,"55,54",55.54,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Máy móc thiết bị dụng cụ phụ tùng khác,"45,75",45.75,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,"Hàng dệt, may","37,57",37.57,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Giày dép các loại,"23,9",23.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Gỗ và sản phẩm gỗ,"16,01",16.01,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Phương tiện vận tải và phụ tùng,"11,99",11.99,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Hàng thuỷ sản,"10,92",10.92,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Sắt thép các loại,"7,99",7.99,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_043,bar,2022,Máy ảnh máy quay phim và linh kiện,"6,37",6.37,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_044,bar,những mặt hàng xuất khẩu,"Máy móc, thiết bị, dụng cụ và phụ tùng khác","17,82",17.82,17.82,17.82,0.0,,17.82,17.82,
+bar_044,bar,những mặt hàng xuất khẩu,Hàng dệt may,"16,1",16.1,16.1,16.1,0.0,,16.1,16.1,
+bar_044,bar,những mặt hàng xuất khẩu,Máy vi tính sản phẩm điện tử và linh kiện,"12,76",12.76,12.76,12.76,0.0,,12.76,12.76,
+bar_044,bar,những mặt hàng xuất khẩu,Điện thoại các loại và linh kiện,"9,69",9.69,9.69,9.69,0.0,,9.69,9.69,
+bar_044,bar,những mặt hàng xuất khẩu,Giày dép các loại,"7,42",7.42,7.42,7.42,0.0,,7.42,7.42,
+bar_044,bar,những mặt hàng xuất khẩu,Gỗ và sản phẩm từ gỗ,"8,8",8.8,8.8,8.8,0.0,,8.8,8.8,
+bar_044,bar,những mặt hàng xuất khẩu,Hàng thủy sản,"2,05",2.05,2.05,2.05,0.0,,2.05,2.05,
+bar_045,bar,Xuất khẩu,2000,"14,5",14.5,"14,5",14.5,0.0,,"14,5",14.5,
+bar_045,bar,Xuất khẩu,2002,"16,7",16.7,"16,7",16.7,0.0,,"16,7",16.7,
+bar_045,bar,Xuất khẩu,2005,"32,4",32.4,"32,4",32.4,0.0,,"32,4",32.4,
+bar_045,bar,Xuất khẩu,2007,"48,6",48.6,"48,6",48.6,0.0,,"48,6",48.6,
+bar_045,bar,Nhập khẩu,2000,"15,6",15.6,"15,6",15.6,0.0,,"15,6",15.6,
+bar_045,bar,Nhập khẩu,2002,"19,7",19.7,"19,7",19.7,0.0,,"19,7",19.7,
+bar_045,bar,Nhập khẩu,2005,"36,8",36.8,"36,8",36.8,0.0,,"36,8",36.8,
+bar_045,bar,Nhập khẩu,2007,"62,8",62.8,"62,8",62.8,0.0,,"62,8",62.8,
+bar_045,bar,Nhập Siêu,2000,"-1,1",-1.1,"-1,1",-1.1,0.0,,"-1,1",-1.1,
+bar_045,bar,Nhập Siêu,2002,"-3,0",-3.0,"-3,0",-3.0,0.0,,"-3,0",-3.0,
+bar_045,bar,Nhập Siêu,2005,"-4,4",-4.4,"-4,4",-4.4,0.0,,"-4,4",-4.4,
+bar_045,bar,Nhập Siêu,2007,"-14,2",-14.2,"-14,2",-14.2,0.0,,"-14,2",-14.2,
+bar_047,bar,GDP Việt Nam,2012,"5,25",5.25,"5,25",5.25,0.0,,"5,25",5.25,
+bar_047,bar,GDP Việt Nam,2013,"5,42",5.42,"5,42",5.42,0.0,,"5,42",5.42,
+bar_047,bar,GDP Việt Nam,2014,"5,98",5.98,"5,98",5.98,0.0,,"5,98",5.98,
+bar_047,bar,GDP Việt Nam,2015,"6,68",6.68,"6,68",6.68,0.0,,"6,68",6.68,
+bar_047,bar,GDP Việt Nam,2016,"6,21",6.21,"6,21",6.21,0.0,,"6,21",6.21,
+bar_047,bar,GDP Việt Nam,2017,"6,81",6.81,"6,81",6.81,0.0,,"6,81",6.81,
+bar_047,bar,GDP Việt Nam,2018,"7,08",7.08,"7,08",7.08,0.0,,"7,08",7.08,
+bar_047,bar,GDP Việt Nam,2019,"7,02",7.02,"7,02",7.02,0.0,,"7,02",7.02,
+bar_047,bar,GDP Việt Nam,2020,"2,91",2.91,"2,91",2.91,0.0,,"2,91",2.91,
+bar_047,bar,GDP Việt Nam,2021,"2,58",2.58,"2,58",2.58,0.0,,"2,58",2.58,
+bar_047,bar,GDP Việt Nam,2022,"8,02",8.02,"8,02",8.02,0.0,,"8,02",8.02,
+bar_047,bar,GDP Việt Nam,2023,"5,05",5.05,"5,05",5.05,0.0,,"5,05",5.05,
+bar_047,bar,GDP Việt Nam,2024,"7,09",7.09,"7,09",7.09,0.0,,"7,09",7.09,
+bar_047,bar,GDP Việt Nam,Quý I/2025,"6,93",6.93,"6,93",6.93,0.0,,"6,93",6.93,
+bar_047,bar,GDP Việt Nam,Quý II/2025,"7,96",7.96,"7,96",7.96,0.0,,"7,96",7.96,
+bar_048,bar,2023,GDP,"5,0",5.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2023,"Nông, lâm, ngư nghiệp","3,8",3.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2023,Công nghiệp & Xây dựng,"3,7",3.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2023,Dịch vụ,"6,8",6.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2024 (dự báo),GDP,"6,9",6.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2024 (dự báo),"Nông, lâm, ngư nghiệp","3,2",3.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2024 (dự báo),Công nghiệp & Xây dựng,"8,1",8.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2024 (dự báo),Dịch vụ,"7,1",7.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2025 (dự báo),GDP,"6,9",6.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2025 (dự báo),"Nông, lâm, ngư nghiệp","3,5",3.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2025 (dự báo),Công nghiệp & Xây dựng,"7,6",7.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_048,bar,2025 (dự báo),Dịch vụ,"7,5",7.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_049,bar,Số tiền (tiền đô la Mỹ),2016,"19,257",19.257,"19,257",19257.0,999.0,E1_sai_dinh_dang_hoac_bac_so,"19,257",19257.0,E1_sai_dinh_dang_hoac_bac_so
+bar_049,bar,Số tiền (tiền đô la Mỹ),2017,"21,908",21.908,"21,908",21908.0,999.0,E1_sai_dinh_dang_hoac_bac_so,"21,908",21908.0,E1_sai_dinh_dang_hoac_bac_so
+bar_049,bar,Số tiền (tiền đô la Mỹ),2018,"24,032",24.032,"24,032",24032.0,999.0,E1_sai_dinh_dang_hoac_bac_so,"24,032",24032.0,E1_sai_dinh_dang_hoac_bac_so
+bar_049,bar,Số tiền (tiền đô la Mỹ),2019,"25,287",25.287,"25,287",25287.0,999.0,E1_sai_dinh_dang_hoac_bac_so,"25,287",25287.0,E1_sai_dinh_dang_hoac_bac_so
+bar_049,bar,Số tiền (tiền đô la Mỹ),2020,"27,755",27.755,"27,755",27755.0,999.0,E1_sai_dinh_dang_hoac_bac_so,"27,755",27755.0,E1_sai_dinh_dang_hoac_bac_so
+bar_050,bar,Xuất khẩu,2020,280,280.0,280,280.0,0.0,,280,280.0,
+bar_050,bar,Xuất khẩu,2021,335,335.0,335,335.0,0.0,,335,335.0,
+bar_050,bar,Xuất khẩu,2022,370,370.0,370,370.0,0.0,,370,370.0,
+bar_050,bar,Xuất khẩu,2023,355,355.0,350,350.0,0.0141,,350,350.0,
+bar_050,bar,Xuất khẩu,2024,405,405.0,400,400.0,0.0123,,400,400.0,
+bar_050,bar,Xuất khẩu,2025,475,475.0,470,470.0,0.0105,,470,470.0,
+bar_050,bar,Nhập khẩu,2020,260,260.0,255,255.0,0.0192,,255,255.0,
+bar_050,bar,Nhập khẩu,2021,332,332.0,330,330.0,0.006,,330,330.0,
+bar_050,bar,Nhập khẩu,2022,355,355.0,360,360.0,0.0141,,360,360.0,
+bar_050,bar,Nhập khẩu,2023,325,325.0,325,325.0,0.0,,325,325.0,
+bar_050,bar,Nhập khẩu,2024,376,376.0,385,385.0,0.0239,,385,385.0,
+bar_050,bar,Nhập khẩu,2025,455,455.0,450,450.0,0.011,,450,450.0,
+bar_051,bar,Khách du lịch nội địa,2011,30000,30000.0,"30,000",30000.0,0.0,,"30,000",30000.0,
+bar_051,bar,Khách du lịch nội địa,2012,32000,32000.0,"32,000",32000.0,0.0,,"32,000",32000.0,
+bar_051,bar,Khách du lịch nội địa,2013,35000,35000.0,"35,000",35000.0,0.0,,"35,000",35000.0,
+bar_051,bar,Khách du lịch nội địa,2014,38000,38000.0,"39,000",39000.0,0.0263,,"39,000",39000.0,
+bar_051,bar,Khách du lịch nội địa,2015,57000,57000.0,"57,000",57000.0,0.0,,"57,000",57000.0,
+bar_051,bar,Khách du lịch nội địa,2016,62000,62000.0,"62,000",62000.0,0.0,,"62,000",62000.0,
+bar_051,bar,Khách du lịch nội địa,2017,74000,74000.0,"73,000",73000.0,0.0135,,"73,000",73000.0,
+bar_051,bar,Khách quốc tế đến Việt Nam,2011,6000,6000.0,"7,000",7000.0,0.1667,E2_sai_gia_tri,"7,000",7000.0,E2_sai_gia_tri
+bar_051,bar,Khách quốc tế đến Việt Nam,2012,6800,6800.0,"8,000",8000.0,0.1765,E2_sai_gia_tri,"8,000",8000.0,E2_sai_gia_tri
+bar_051,bar,Khách quốc tế đến Việt Nam,2013,7500,7500.0,"9,000",9000.0,0.2,E2_sai_gia_tri,"9,000",9000.0,E2_sai_gia_tri
+bar_051,bar,Khách quốc tế đến Việt Nam,2014,7800,7800.0,"10,000",10000.0,0.2821,E2_sai_gia_tri,"10,000",10000.0,E2_sai_gia_tri
+bar_051,bar,Khách quốc tế đến Việt Nam,2015,8000,8000.0,"11,000",11000.0,0.375,E2_sai_gia_tri,"11,000",11000.0,E2_sai_gia_tri
+bar_051,bar,Khách quốc tế đến Việt Nam,2016,10000,10000.0,"12,000",12000.0,0.2,E2_sai_gia_tri,"12,000",12000.0,E2_sai_gia_tri
+bar_051,bar,Khách quốc tế đến Việt Nam,2017,13000,13000.0,"15,000",15000.0,0.1538,E2_sai_gia_tri,"15,000",15000.0,E2_sai_gia_tri
+bar_052,bar,Xuất khẩu,2013,"120,49",120.49,120.49,120.49,0.0,,120.49,120.49,
+bar_052,bar,Xuất khẩu,2014,"137,36",137.36,119.9,119.9,0.1271,E2_sai_gia_tri,119.9,119.9,E2_sai_gia_tri
+bar_052,bar,Xuất khẩu,2015,"138,33",138.33,137.36,137.36,0.007,,137.36,137.36,
+bar_052,bar,Xuất khẩu,2016,"160,03",160.03,134.06,134.06,0.1623,E2_sai_gia_tri,134.06,134.06,E2_sai_gia_tri
+bar_052,bar,Xuất khẩu,2017,"195,4",195.4,138.33,138.33,0.2921,E2_sai_gia_tri,138.33,138.33,E2_sai_gia_tri
+bar_052,bar,Xuất khẩu,2018,"223,9",223.9,151.33,151.33,0.3241,E2_sai_gia_tri,151.33,151.33,E2_sai_gia_tri
+bar_052,bar,Xuất khẩu,2019,"2141,74",2141.74,160.03,160.03,0.9253,E2_sai_gia_tri,160.03,160.03,E2_sai_gia_tri
+bar_052,bar,Xuất khẩu,2020,"254,98",254.98,157.8,157.8,0.3811,E2_sai_gia_tri,157.8,157.8,E2_sai_gia_tri
+bar_052,bar,Xuất khẩu,2021,"299,67",299.67,299.67,299.67,0.0,,299.67,299.67,
+bar_052,bar,Nhập khẩu,2013,"119,9",119.9,119.9,119.9,0.0,,119.9,119.9,
+bar_052,bar,Nhập khẩu,2014,"134,06",134.06,134.06,134.06,0.0,,134.06,134.06,
+bar_052,bar,Nhập khẩu,2015,"151,33",151.33,138.33,138.33,0.0859,E2_sai_gia_tri,138.33,138.33,E2_sai_gia_tri
+bar_052,bar,Nhập khẩu,2016,"157,8",157.8,151.33,151.33,0.041,,151.33,151.33,
+bar_052,bar,Nhập khẩu,2017,"192,88",192.88,195.4,195.4,0.0131,,195.4,195.4,
+bar_052,bar,Nhập khẩu,2018,"216,33",216.33,192.88,192.88,0.1084,E2_sai_gia_tri,192.88,192.88,E2_sai_gia_tri
+bar_052,bar,Nhập khẩu,2019,"230,98",230.98,216.33,216.33,0.0634,E2_sai_gia_tri,216.33,216.33,E2_sai_gia_tri
+bar_052,bar,Nhập khẩu,2020,"234,79",234.79,230.98,230.98,0.0162,,230.98,230.98,
+bar_052,bar,Nhập khẩu,2021,"299,45",299.45,234.79,234.79,0.2159,E2_sai_gia_tri,234.79,234.79,E2_sai_gia_tri
+bar_053,bar,Xuất khẩu,2016,"38,46",38.46,"38,46",38.46,0.0,,"38,46",38.46,
+bar_053,bar,Xuất khẩu,2017,"41,61",41.61,"41,61",41.61,0.0,,"41,61",41.61,
+bar_053,bar,Xuất khẩu,2018,"47,53",47.53,"47,53",47.53,0.0,,"47,53",47.53,
+bar_053,bar,Xuất khẩu,2019,"61,33",61.33,"61,33",61.33,0.0,,"61,33",61.33,
+bar_053,bar,Xuất khẩu,2020,"77,08",77.08,"77,08",77.08,0.0,,"77,08",77.08,
+bar_053,bar,Xuất khẩu,2021,"96,29",96.29,"96,29",96.29,0.0,,"96,29",96.29,
+bar_053,bar,Xuất khẩu,4 tháng 2022,"36,2",36.2,"36,2",36.2,0.0,,"36,2",36.2,
+bar_053,bar,Nhập khẩu,2016,"8,7",8.7,"8,7",8.7,0.0,,"8,7",8.7,
+bar_053,bar,Nhập khẩu,2017,"9,35",9.35,"9,35",9.35,0.0,,"9,35",9.35,
+bar_053,bar,Nhập khẩu,2018,"12,75",12.75,"12,75",12.75,0.0,,"12,75",12.75,
+bar_053,bar,Nhập khẩu,2019,"14,43",14.43,"14,43",14.43,0.0,,"14,43",14.43,
+bar_053,bar,Nhập khẩu,2020,"13,71",13.71,"13,71",13.71,0.0,,"13,71",13.71,
+bar_053,bar,Nhập khẩu,2021,"15,27",15.27,"15,27",15.27,0.0,,"15,27",15.27,
+bar_053,bar,Nhập khẩu,4 tháng 2022,"4,6",4.6,"4,6",4.6,0.0,,"4,6",4.6,
+bar_053,bar,Xuất Siêu,2016,"29,76",29.76,"34,78",34.78,0.1687,E2_sai_gia_tri,"34,78",34.78,E2_sai_gia_tri
+bar_053,bar,Xuất Siêu,2017,"32,26",32.26,"32,26",32.26,0.0,,"32,26",32.26,
+bar_053,bar,Xuất Siêu,2018,"34,78",34.78,"46,9",46.9,0.3485,E2_sai_gia_tri,"46,9",46.9,E2_sai_gia_tri
+bar_053,bar,Xuất Siêu,2019,"46,9",46.9,"63,37",63.37,0.3512,E2_sai_gia_tri,"63,37",63.37,E2_sai_gia_tri
+bar_053,bar,Xuất Siêu,2020,"63,37",63.37,"77,08",77.08,0.2163,E2_sai_gia_tri,"77,08",77.08,E2_sai_gia_tri
+bar_053,bar,Xuất Siêu,2021,"81,02",81.02,"81,02",81.02,0.0,,"81,02",81.02,
+bar_053,bar,Xuất Siêu,4 tháng 2022,"31,6",31.6,"31,6",31.6,0.0,,"31,6",31.6,
+bar_054,bar,5 tháng/2021,Điện thoại & linh kiện,"21,76",21.76,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,"Máy vi tính, sp đ.tử & LK","19,80",19.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,"Máy móc, t.bị, dụng cụ p.tùng","14,77",14.77,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,"Hàng dệt, may","12,27",12.27,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,Giày dép,"8,41",8.41,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,Gỗ và sp gỗ,"6,68",6.68,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,Phương tiện vận tải và p.tùng,"4,48",4.48,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,Hàng thuỷ sản,"3,28",3.28,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,Sắt thép,"3,58",3.58,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2021,Sp từ chất dẻo,"1,89",1.89,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,Điện thoại & linh kiện,"24,78",24.78,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,"Máy vi tính, sp đ.tử & LK","22,51",22.51,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,"Máy móc, t.bị, dụng cụ p.tùng","17,29",17.29,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,"Hàng dệt, may","15,00",15.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,Giày dép,"9,43",9.43,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,Gỗ và sp gỗ,"6,99",6.99,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,Phương tiện vận tải và p.tùng,"4,82",4.82,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,Hàng thuỷ sản,"4,71",4.71,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,Sắt thép,"4,12",4.12,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_054,bar,5 tháng/2022,Sp từ chất dẻo,"2,42",2.42,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_055,bar,GRDP bình quân đầu người,Bà Rịa Vũng Tàu,"281,2",281.2,281.2,281.2,0.0,,281.2,281.2,
+bar_055,bar,GRDP bình quân đầu người,BRVT (trừ dầu khí),"165,2",165.2,,,,E8_thieu_diem_du_lieu,165.2,165.2,
+bar_055,bar,GRDP bình quân đầu người,Bình Dương,"152,25",152.25,152.25,152.25,0.0,,152.25,152.25,
+bar_055,bar,GRDP bình quân đầu người,TP.HCM,"146,2",146.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_055,bar,GRDP bình quân đầu người,Đồng Nai,"118,45",118.45,118.45,118.45,0.0,,118.45,118.45,
+bar_055,bar,GRDP bình quân đầu người,Tây Ninh,"76,5",76.5,76.5,76.5,0.0,,76.5,76.5,
+bar_055,bar,GRDP bình quân đầu người,Bình Phước,"75,99",75.99,75.99,75.99,0.0,,75.99,75.99,
+bar_056,bar,2020,TP Hồ Chí Minh,"44,3",44.3,44.5,44.5,0.0045,,44.5,44.5,
+bar_056,bar,2020,Bắc Ninh,"39,0",39.0,39.2,39.2,0.0051,,39.2,39.2,
+bar_056,bar,2020,Bình Dương,"27,7",27.7,27.5,27.5,0.0072,,27.5,27.5,
+bar_056,bar,2020,Thái Nguyên,"24,4",24.4,24.5,24.5,0.0041,,24.5,24.5,
+bar_056,bar,2020,Hải Phòng,"18,8",18.8,19.2,19.2,0.0213,,19.2,19.2,
+bar_056,bar,2020,Đồng Nai,"18,7",18.7,19.1,19.1,0.0214,,19.1,19.1,
+bar_056,bar,2020,Bắc Giang,"10,8",10.8,11.2,11.2,0.037,,11.2,11.2,
+bar_056,bar,2020,Hà Nội,"15,1",15.1,15.2,15.2,0.0066,,15.2,15.2,
+bar_056,bar,2020,Hải Dương,"7,8",7.8,8.0,8.0,0.0256,,8.0,8.0,
+bar_056,bar,2020,Phú Thọ,"4,3",4.3,4.5,4.5,0.0465,,4.5,4.5,
+bar_056,bar,2021,TP Hồ Chí Minh,"44,9",44.9,45.0,45.0,0.0022,,45.0,45.0,
+bar_056,bar,2021,Bắc Ninh,"44,8",44.8,45.0,45.0,0.0045,,45.0,45.0,
+bar_056,bar,2021,Bình Dương,"32,7",32.7,32.5,32.5,0.0061,,32.5,32.5,
+bar_056,bar,2021,Thái Nguyên,"29,1",29.1,29.0,29.0,0.0034,,29.0,29.0,
+bar_056,bar,2021,Hải Phòng,"23,8",23.8,23.0,23.0,0.0336,,23.0,23.0,
+bar_056,bar,2021,Đồng Nai,"21,7",21.7,22.0,22.0,0.0138,,22.0,22.0,
+bar_056,bar,2021,Bắc Giang,"16,1",16.1,16.0,16.0,0.0062,,16.0,16.0,
+bar_056,bar,2021,Hà Nội,"15,5",15.5,15.5,15.5,0.0,,15.5,15.5,
+bar_056,bar,2021,Hải Dương,"10,0",10.0,10.0,10.0,0.0,,10.0,10.0,
+bar_056,bar,2021,Phú Thọ,"8,2",8.2,8.5,8.5,0.0366,,8.5,8.5,
+bar_057,bar,EU xuất khẩu sang Việt Nam,2011,5,5.0,8.5,8.5,0.7,E2_sai_gia_tri,8.5,8.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2012,5,5.0,12.5,12.5,1.5,E2_sai_gia_tri,12.5,12.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2013,5,5.0,14.5,14.5,1.9,E2_sai_gia_tri,14.5,14.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2014,6,6.0,16.5,16.5,1.75,E2_sai_gia_tri,16.5,16.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2015,8,8.0,18.5,18.5,1.3125,E2_sai_gia_tri,18.5,18.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2016,9,9.0,20.5,20.5,1.2778,E2_sai_gia_tri,20.5,20.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2017,11,11.0,22.5,22.5,1.0455,E2_sai_gia_tri,22.5,22.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2018,11,11.0,24.5,24.5,1.2273,E2_sai_gia_tri,24.5,24.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2019,12,12.0,26.5,26.5,1.2083,E2_sai_gia_tri,26.5,26.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2020,9,9.0,28.5,28.5,2.1667,E2_sai_gia_tri,28.5,28.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2021,12,12.0,30.5,30.5,1.5417,E2_sai_gia_tri,30.5,30.5,E2_sai_gia_tri
+bar_057,bar,EU xuất khẩu sang Việt Nam,2022,13,13.0,50.5,50.5,2.8846,E2_sai_gia_tri,50.5,50.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2011,12,12.0,-10.5,-10.5,1.875,E2_sai_gia_tri,-10.5,-10.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2012,16,16.0,-12.5,-12.5,1.7812,E2_sai_gia_tri,-12.5,-12.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2013,20,20.0,-14.5,-14.5,1.725,E2_sai_gia_tri,-14.5,-14.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2014,22,22.0,-16.5,-16.5,1.75,E2_sai_gia_tri,-16.5,-16.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2015,27,27.0,-18.5,-18.5,1.6852,E2_sai_gia_tri,-18.5,-18.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2016,29,29.0,-20.5,-20.5,1.7069,E2_sai_gia_tri,-20.5,-20.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2017,32,32.0,-22.5,-22.5,1.7031,E2_sai_gia_tri,-22.5,-22.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2018,35,35.0,-24.5,-24.5,1.7,E2_sai_gia_tri,-24.5,-24.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2019,36,36.0,-26.5,-26.5,1.7361,E2_sai_gia_tri,-26.5,-26.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2020,36,36.0,-28.5,-28.5,1.7917,E2_sai_gia_tri,-28.5,-28.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2021,41,41.0,-30.5,-30.5,1.7439,E2_sai_gia_tri,-30.5,-30.5,E2_sai_gia_tri
+bar_057,bar,EU nhập khẩu từ Việt Nam,2022,55,55.0,-32.5,-32.5,1.5909,E2_sai_gia_tri,-32.5,-32.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2011,-7,-7.0,-15.5,-15.5,1.2143,E2_sai_gia_tri,-15.5,-15.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2012,"-11,5",-11.5,-17.5,-17.5,0.5217,E2_sai_gia_tri,-17.5,-17.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2013,"-13,5",-13.5,-19.5,-19.5,0.4444,E2_sai_gia_tri,-19.5,-19.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2014,"-14,5",-14.5,-21.5,-21.5,0.4828,E2_sai_gia_tri,-21.5,-21.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2015,-17,-17.0,-23.5,-23.5,0.3824,E2_sai_gia_tri,-23.5,-23.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2016,-19,-19.0,-25.5,-25.5,0.3421,E2_sai_gia_tri,-25.5,-25.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2017,-22,-22.0,-27.5,-27.5,0.25,E2_sai_gia_tri,-27.5,-27.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2018,-24,-24.0,-29.5,-29.5,0.2292,E2_sai_gia_tri,-29.5,-29.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2019,-25,-25.0,-31.5,-31.5,0.26,E2_sai_gia_tri,-31.5,-31.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2020,"-27,5",-27.5,-33.5,-33.5,0.2182,E2_sai_gia_tri,-33.5,-33.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2021,-30,-30.0,-35.5,-35.5,0.1833,E2_sai_gia_tri,-35.5,-35.5,E2_sai_gia_tri
+bar_057,bar,Cán cân thương mại,2022,-42,-42.0,-40.5,-40.5,0.0357,,-40.5,-40.5,
+bar_058,bar,Việt Nam,2015,2097,2097.0,2097,2097.0,0.0,,2097,2097.0,
+bar_058,bar,Việt Nam,2016,2202,2202.0,2202,2202.0,0.0,,2202,2202.0,
+bar_058,bar,Việt Nam,2017,2373,2373.0,2373,2373.0,0.0,,2373,2373.0,
+bar_058,bar,Việt Nam,2018,2570,2570.0,2570,2570.0,0.0,,2570,2570.0,
+bar_058,bar,Việt Nam,2019,2714,2714.0,2714,2714.0,0.0,,2714,2714.0,
+bar_058,bar,Việt Nam,2020,2779,2779.0,2779,2779.0,0.0,,2779,2779.0,
+bar_058,bar,Singapore,2015,55647,55647.0,55647,55647.0,0.0,,55647,55647.0,
+bar_058,bar,Singapore,2016,56848,56848.0,56848,56848.0,0.0,,56848,56848.0,
+bar_058,bar,Singapore,2017,61176,61176.0,61176,61176.0,0.0,,61176,61176.0,
+bar_058,bar,Singapore,2018,66679,66679.0,66679,66679.0,0.0,,66679,66679.0,
+bar_058,bar,Singapore,2019,65233,65233.0,65233,65233.0,0.0,,65233,65233.0,
+bar_058,bar,Singapore,2020,59798,59798.0,59798,59798.0,0.0,,59798,59798.0,
+bar_059,bar,Thế giới,2017,1650,1650.0,"1,550",1550.0,0.0606,E2_sai_gia_tri,"1,550",1550.0,E2_sai_gia_tri
+bar_059,bar,Thế giới,2018,1380,1380.0,"1,300",1300.0,0.058,E2_sai_gia_tri,"1,300",1300.0,E2_sai_gia_tri
+bar_059,bar,Thế giới,2019,1730,1730.0,"1,700",1700.0,0.0173,,"1,700",1700.0,
+bar_059,bar,Thế giới,2020,990,990.0,800,800.0,0.1919,E2_sai_gia_tri,800,800.0,E2_sai_gia_tri
+bar_059,bar,Thế giới,2021,1620,1620.0,"1,500",1500.0,0.0741,E2_sai_gia_tri,"1,500",1500.0,E2_sai_gia_tri
+bar_059,bar,Thế giới,2022,1350,1350.0,"1,200",1200.0,0.1111,E2_sai_gia_tri,"1,200",1200.0,E2_sai_gia_tri
+bar_059,bar,Thế giới,2023,1340,1340.0,"1,200",1200.0,0.1045,E2_sai_gia_tri,"1,200",1200.0,E2_sai_gia_tri
+bar_059,bar,Châu Á,2017,500,500.0,300,300.0,0.4,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Châu Á,2018,500,500.0,300,300.0,0.4,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Châu Á,2019,490,490.0,400,400.0,0.1837,E2_sai_gia_tri,400,400.0,E2_sai_gia_tri
+bar_059,bar,Châu Á,2020,510,510.0,200,200.0,0.6078,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Á,2021,660,660.0,500,500.0,0.2424,E2_sai_gia_tri,500,500.0,E2_sai_gia_tri
+bar_059,bar,Châu Á,2022,680,680.0,600,600.0,0.1176,E2_sai_gia_tri,600,600.0,E2_sai_gia_tri
+bar_059,bar,Châu Á,2023,620,620.0,400,400.0,0.3548,E2_sai_gia_tri,400,400.0,E2_sai_gia_tri
+bar_059,bar,Bắc Mỹ,2017,330,330.0,200,200.0,0.3939,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Bắc Mỹ,2018,240,240.0,200,200.0,0.1667,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Bắc Mỹ,2019,280,280.0,200,200.0,0.2857,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Bắc Mỹ,2020,120,120.0,200,200.0,0.6667,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Bắc Mỹ,2021,450,450.0,300,300.0,0.3333,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Bắc Mỹ,2022,370,370.0,300,300.0,0.1892,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Bắc Mỹ,2023,360,360.0,300,300.0,0.1667,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Latinh & Caribe,2017,150,150.0,300,300.0,1.0,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Latinh & Caribe,2018,150,150.0,300,300.0,1.0,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Latinh & Caribe,2019,150,150.0,400,400.0,1.6667,E2_sai_gia_tri,400,400.0,E2_sai_gia_tri
+bar_059,bar,Latinh & Caribe,2020,100,100.0,500,500.0,4.0,E2_sai_gia_tri,500,500.0,E2_sai_gia_tri
+bar_059,bar,Latinh & Caribe,2021,140,140.0,400,400.0,1.8571,E2_sai_gia_tri,400,400.0,E2_sai_gia_tri
+bar_059,bar,Latinh & Caribe,2022,200,200.0,300,300.0,0.5,E2_sai_gia_tri,300,300.0,E2_sai_gia_tri
+bar_059,bar,Latinh & Caribe,2023,190,190.0,200,200.0,0.0526,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Phi,2017,40,40.0,200,200.0,4.0,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Phi,2018,40,40.0,200,200.0,4.0,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Phi,2019,40,40.0,200,200.0,4.0,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Phi,2020,40,40.0,200,200.0,4.0,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Phi,2021,90,90.0,200,200.0,1.2222,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Phi,2022,60,60.0,200,200.0,2.3333,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Phi,2023,60,60.0,200,200.0,2.3333,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Âu,2017,530,530.0,200,200.0,0.6226,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Âu,2018,320,320.0,200,200.0,0.375,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Âu,2019,660,660.0,200,200.0,0.697,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Âu,2020,170,170.0,200,200.0,0.1765,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Âu,2021,180,180.0,200,200.0,0.1111,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Âu,2022,-110,-110.0,200,200.0,2.8182,E2_sai_gia_tri,200,200.0,E2_sai_gia_tri
+bar_059,bar,Châu Âu,2023,20,20.0,200,200.0,9.0,E1_sai_dinh_dang_hoac_bac_so,200,200.0,E1_sai_dinh_dang_hoac_bac_so
+bar_060,bar,Hàn Quốc,2014,"7,3",7.3,7.5,7.5,0.0274,,7.5,7.5,
+bar_060,bar,Hàn Quốc,2015,"6,7",6.7,6.5,6.5,0.0299,,6.5,6.5,
+bar_060,bar,Hàn Quốc,2016,"7,0",7.0,7.0,7.0,0.0,,7.0,7.0,
+bar_060,bar,Hàn Quốc,2017,"8,5",8.5,8.5,8.5,0.0,,8.5,8.5,
+bar_060,bar,Hàn Quốc,2018,"7,2",7.2,7.0,7.0,0.0278,,7.0,7.0,
+bar_060,bar,Hàn Quốc,2019,"7,9",7.9,8.0,8.0,0.0127,,8.0,8.0,
+bar_060,bar,Hàn Quốc,2020,"3,9",3.9,4.0,4.0,0.0256,,4.0,4.0,
+bar_060,bar,Hàn Quốc,2021,"5,0",5.0,5.0,5.0,0.0,,5.0,5.0,
+bar_060,bar,Hàn Quốc,2022,"4,9",4.9,4.5,4.5,0.0816,E2_sai_gia_tri,4.5,4.5,E2_sai_gia_tri
+bar_060,bar,Hàn Quốc,2023,"4,4",4.4,5.5,5.5,0.25,E2_sai_gia_tri,5.5,5.5,E2_sai_gia_tri
+bar_060,bar,Singapore,2014,"2,8",2.8,2.5,2.5,0.1071,E2_sai_gia_tri,2.5,2.5,E2_sai_gia_tri
+bar_060,bar,Singapore,2015,"1,2",1.2,2.0,2.0,0.6667,E2_sai_gia_tri,2.0,2.0,E2_sai_gia_tri
+bar_060,bar,Singapore,2016,"2,4",2.4,2.5,2.5,0.0417,,2.5,2.5,
+bar_060,bar,Singapore,2017,"5,3",5.3,5.0,5.0,0.0566,E2_sai_gia_tri,5.0,5.0,E2_sai_gia_tri
+bar_060,bar,Singapore,2018,"5,1",5.1,4.5,4.5,0.1176,E2_sai_gia_tri,4.5,4.5,E2_sai_gia_tri
+bar_060,bar,Singapore,2019,"4,5",4.5,4.0,4.0,0.1111,E2_sai_gia_tri,4.0,4.0,E2_sai_gia_tri
+bar_060,bar,Singapore,2020,"9,0",9.0,4.5,4.5,0.5,E2_sai_gia_tri,4.5,4.5,E2_sai_gia_tri
+bar_060,bar,Singapore,2021,"10,7",10.7,10.0,10.0,0.0654,E2_sai_gia_tri,10.0,10.0,E2_sai_gia_tri
+bar_060,bar,Singapore,2022,"6,5",6.5,6.0,6.0,0.0769,E2_sai_gia_tri,6.0,6.0,E2_sai_gia_tri
+bar_060,bar,Singapore,2023,"6,8",6.8,6.5,6.5,0.0441,,6.5,6.5,
+bar_060,bar,Nhật Bản,2014,"2,0",2.0,1.5,1.5,0.25,E2_sai_gia_tri,1.5,1.5,E2_sai_gia_tri
+bar_060,bar,Nhật Bản,2015,"1,8",1.8,1.0,1.0,0.4444,E2_sai_gia_tri,1.0,1.0,E2_sai_gia_tri
+bar_060,bar,Nhật Bản,2016,"2,6",2.6,2.0,2.0,0.2308,E2_sai_gia_tri,2.0,2.0,E2_sai_gia_tri
+bar_060,bar,Nhật Bản,2017,"9,1",9.1,9.0,9.0,0.011,,9.0,9.0,
+bar_060,bar,Nhật Bản,2018,"8,6",8.6,8.0,8.0,0.0698,E2_sai_gia_tri,8.0,8.0,E2_sai_gia_tri
+bar_060,bar,Nhật Bản,2019,"4,1",4.1,6.0,6.0,0.4634,E2_sai_gia_tri,6.0,6.0,E2_sai_gia_tri
+bar_060,bar,Nhật Bản,2020,"2,4",2.4,2.5,2.5,0.0417,,2.5,2.5,
+bar_060,bar,Nhật Bản,2021,"3,9",3.9,10.5,10.5,1.6923,E2_sai_gia_tri,10.5,10.5,E2_sai_gia_tri
+bar_060,bar,Nhật Bản,2022,"4,8",4.8,5.5,5.5,0.1458,E2_sai_gia_tri,5.5,5.5,E2_sai_gia_tri
+bar_060,bar,Nhật Bản,2023,"6,6",6.6,6.5,6.5,0.0152,,6.5,6.5,
+bar_061,bar,2021,Điện thoại các loại và linh kiện,"15,2",15.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,"Máy vi tính, sản phẩm điện tử và linh kiện","11,1",11.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,"Xơ, sợi dệt các loại","3,0",3.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,"Máy ảnh, máy quay phim và linh kiện","2,9",2.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,"Máy móc, thiết bị dụng cụ phụ tùng khác","2,9",2.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,Cao su,"2,3",2.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,Hàng rau quả,"1,9",1.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,Thủy sản,"1,0",1.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,Giày dép các loại,"1,6",1.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,"Gỗ, sản phẩm gỗ","1,5",1.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,Hàng dệt may,"1,3",1.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,Sắn,"1,1",1.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2021,Hàng hóa khác,"10,2",10.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Điện thoại các loại và linh kiện,"16,3",16.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,"Máy vi tính, sản phẩm điện tử và linh kiện","11,9",11.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,"Xơ, sợi dệt các loại","2,2",2.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,"Máy ảnh, máy quay phim và linh kiện","3,8",3.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,"Máy móc, thiết bị dụng cụ phụ tùng khác","3,7",3.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Cao su,"2,4",2.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Hàng rau quả,"1,5",1.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Thủy sản,"1,7",1.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Giày dép các loại,"1,7",1.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,"Gỗ, sản phẩm gỗ","2,2",2.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Hàng dệt may,"1,2",1.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Sắn,"1,3",1.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_061,bar,2022,Hàng hóa khác,"7,9",7.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_062,bar,Xuất khẩu,10T/2010,644,644.0,644,644.0,0.0,,644,644.0,
+bar_062,bar,Xuất khẩu,10T/2011,1047,1047.0,1047,1047.0,0.0,,1047,1047.0,
+bar_062,bar,Xuất khẩu,10T/2012,1279,1279.0,1279,1279.0,0.0,,1279,1279.0,
+bar_062,bar,Xuất khẩu,10T/2013,1608,1608.0,1608,1608.0,0.0,,1608,1608.0,
+bar_062,bar,Xuất khẩu,10T/2014,1437,1437.0,1437,1437.0,0.0,,1437,1437.0,
+bar_062,bar,Nhập khẩu,10T/2010,898,898.0,898,898.0,0.0,,898,898.0,
+bar_062,bar,Nhập khẩu,10T/2011,588,588.0,588,588.0,0.0,,588,588.0,
+bar_062,bar,Nhập khẩu,10T/2012,701,701.0,701,701.0,0.0,,701,701.0,
+bar_062,bar,Nhập khẩu,10T/2013,735,735.0,735,735.0,0.0,,735,735.0,
+bar_062,bar,Nhập khẩu,10T/2014,768,768.0,768,768.0,0.0,,768,768.0,
+bar_062,bar,Cán cân TM,10T/2010,-254,-254.0,-254,-254.0,0.0,,-254,-254.0,
+bar_062,bar,Cán cân TM,10T/2011,459,459.0,459,459.0,0.0,,459,459.0,
+bar_062,bar,Cán cân TM,10T/2012,578,578.0,578,578.0,0.0,,578,578.0,
+bar_062,bar,Cán cân TM,10T/2013,872,872.0,872,872.0,0.0,,872,872.0,
+bar_062,bar,Cán cân TM,10T/2014,669,669.0,669,669.0,0.0,,669,669.0,
+bar_064,bar,Nam,2016,"70,8",70.8,70.8,70.8,0.0,,70.8,70.8,
+bar_064,bar,Nam,2017,"70,9",70.9,70.9,70.9,0.0,,70.9,70.9,
+bar_064,bar,Nam,2018,"70,9",70.9,70.9,70.9,0.0,,70.9,70.9,
+bar_064,bar,Nam,2019,"71,0",71.0,71.0,71.0,0.0,,71.0,71.0,
+bar_064,bar,Nam,2020,"71,0",71.0,71.0,71.0,0.0,,71.0,71.0,
+bar_064,bar,Nữ,2016,"76,1",76.1,76.1,76.1,0.0,,76.1,76.1,
+bar_064,bar,Nữ,2017,"76,2",76.2,76.2,76.2,0.0,,76.2,76.2,
+bar_064,bar,Nữ,2018,"76,2",76.2,76.2,76.2,0.0,,76.2,76.2,
+bar_064,bar,Nữ,2019,"76,3",76.3,76.3,76.3,0.0,,76.3,76.3,
+bar_064,bar,Nữ,2020,"76,4",76.4,76.4,76.4,0.0,,76.4,76.4,
+bar_065,bar,Tăng trưởng GDP,2011,"5,93",5.93,"5,93",5.93,0.0,,"5,93",5.93,
+bar_065,bar,Tăng trưởng GDP,2012,"5,08",5.08,"5,08",5.08,0.0,,"5,08",5.08,
+bar_065,bar,Tăng trưởng GDP,2013,5,5.0,"5,08",5.08,0.016,,"5,08",5.08,
+bar_065,bar,Tăng trưởng GDP,2014,"5,34",5.34,"5,34",5.34,0.0,,"5,34",5.34,
+bar_065,bar,Tăng trưởng GDP,2015,"6,47",6.47,"6,47",6.47,0.0,,"6,47",6.47,
+bar_065,bar,Tăng trưởng GDP,2016,"5,78",5.78,"5,78",5.78,0.0,,"5,78",5.78,
+bar_065,bar,Tăng trưởng GDP,2017,"6,26",6.26,"6,26",6.26,0.0,,"6,26",6.26,
+bar_065,bar,Tăng trưởng GDP,2018,"6,73",6.73,"6,73",6.73,0.0,,"6,73",6.73,
+bar_065,bar,Tăng trưởng GDP,2019,"6,71",6.71,"6,71",6.71,0.0,,"6,71",6.71,
+bar_065,bar,Tăng trưởng GDP,2020,"0,36",0.36,"0,36",0.36,0.0,,"0,36",0.36,
+bar_066,bar,Dầu thô khai thác,I-rắc,"202,2",202.2,202.2,202.2,0.0,,202.2,202.2,
+bar_066,bar,Dầu thô khai thác,A-rập Xê-út,"519,6",519.6,519.6,519.6,0.0,,519.6,519.6,
+bar_066,bar,Dầu thô khai thác,Các Tiểu vương quốc A-rập Thống Nhất,"165,6",165.6,,,,E8_thieu_diem_du_lieu,165.6,165.6,
+bar_066,bar,Dầu thô xuất khẩu,I-rắc,"178,8",178.8,178.8,178.8,0.0,,178.8,178.8,
+bar_066,bar,Dầu thô xuất khẩu,A-rập Xê-út,"349,1",349.1,349.1,349.1,0.0,,349.1,349.1,
+bar_066,bar,Dầu thô xuất khẩu,Các Tiểu vương quốc A-rập Thống Nhất,"142,7",142.7,,,,E8_thieu_diem_du_lieu,142.7,142.7,
+bar_067,bar,USD/người,Bru-nây,12300,12300.0,,,,E8_thieu_diem_du_lieu,12300,12300.0,
+bar_067,bar,USD/người,Cam-pu-chia,280,280.0,280,280.0,0.0,,280,280.0,
+bar_067,bar,USD/người,In-đô-nê-xi-a,680,680.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_067,bar,USD/người,Lào,317,317.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_067,bar,USD/người,Ma-lai-xi-a,3680,3680.0,3680,3680.0,0.0,,3680,3680.0,
+bar_067,bar,USD/người,Phi-lip-pin,930,930.0,930,930.0,0.0,,930,930.0,
+bar_067,bar,USD/người,Thái Lan,1870,1870.0,1870,1870.0,0.0,,1870,1870.0,
+bar_067,bar,USD/người,Việt Nam,415,415.0,415,415.0,0.0,,415,415.0,
+bar_067,bar,USD/người,Xin-ga-po,20740,20740.0,20740,20740.0,0.0,,20740,20740.0,
+bar_068,bar,Cá biển,2010,"516,9",516.9,516.9,516.9,0.0,,516.9,516.9,
+bar_068,bar,Cá biển,2015,"721,9",721.9,721.9,721.9,0.0,,721.9,721.9,
+bar_068,bar,Cá biển,2020,"940,4",940.4,940.4,940.4,0.0,,940.4,940.4,
+bar_068,bar,Cá biển,2021,"966,0",966.0,966,966.0,0.0,,966,966.0,
+bar_068,bar,Hải sản khác,2010,"190,2",190.2,190.2,190.2,0.0,,190.2,190.2,
+bar_068,bar,Hải sản khác,2015,"191,7",191.7,191.7,191.7,0.0,,191.7,191.7,
+bar_068,bar,Hải sản khác,2020,"204,4",204.4,204.4,204.4,0.0,,204.4,204.4,
+bar_068,bar,Hải sản khác,2021,"201,9",201.9,201.9,201.9,0.0,,201.9,201.9,
+bar_070,bar,thành thị,1995,"74,7",74.7,74.7,74.7,0.0,,74.7,74.7,
+bar_070,bar,thành thị,2000,"83,8",83.8,83.8,83.8,0.0,,83.8,83.8,
+bar_070,bar,thành thị,2002,"84,4",84.4,84.4,84.4,0.0,,84.4,84.4,
+bar_070,bar,nông thôn,1995,"25,3",25.3,25.3,25.3,0.0,,25.3,25.3,
+bar_070,bar,nông thôn,2000,"16,2",16.2,16.2,16.2,0.0,,16.2,16.2,
+bar_070,bar,nông thôn,2002,"15,6",15.6,15.6,15.6,0.0,,15.6,15.6,
+bar_071,bar,Gia súc,1990,"63,9",63.9,"63,9",63.9,0.0,,"63,9",63.9,
+bar_071,bar,Gia súc,2002,"62,8",62.8,"62,8",62.8,0.0,,"62,8",62.8,
+bar_071,bar,Gia cầm,1990,"12,9",12.9,"12,9",12.9,0.0,,"12,9",12.9,
+bar_071,bar,Gia cầm,2002,"17,5",17.5,"17,3",17.3,0.0114,,"17,3",17.3,
+bar_071,bar,"Sản phẩm trứng, sữa",1990,"19,3",19.3,"19,3",19.3,0.0,,"19,3",19.3,
+bar_071,bar,"Sản phẩm trứng, sữa",2002,"17,3",17.3,"17,5",17.5,0.0116,,"17,5",17.5,
+bar_071,bar,Phụ phẩm chăn nuôi,1990,"3,9",3.9,"3,9",3.9,0.0,,"3,9",3.9,
+bar_071,bar,Phụ phẩm chăn nuôi,2002,"2,4",2.4,"2,4",2.4,0.0,,"2,4",2.4,
+bar_072,bar,Tiến,Ngữ văn,7,7.0,7,7.0,0.0,,7,7.0,
+bar_072,bar,Tiến,Toán,8,8.0,8,8.0,0.0,,8,8.0,
+bar_072,bar,Tiến,Ngoại ngữ 1,5,5.0,5,5.0,0.0,,5,5.0,
+bar_072,bar,Tiến,GDCD,6,6.0,6,6.0,0.0,,6,6.0,
+bar_072,bar,Tiến,Lịch sử và Địa lí,8,8.0,,,,E8_thieu_diem_du_lieu,8,8.0,
+bar_072,bar,Tiến,Khoa học tự nhiên,5,5.0,8,8.0,0.6,E2_sai_gia_tri,8,8.0,E2_sai_gia_tri
+bar_072,bar,Mai,Ngữ văn,5,5.0,5,5.0,0.0,,5,5.0,
+bar_072,bar,Mai,Toán,8,8.0,8,8.0,0.0,,8,8.0,
+bar_072,bar,Mai,Ngoại ngữ 1,8,8.0,7,7.0,0.125,E2_sai_gia_tri,7,7.0,E2_sai_gia_tri
+bar_072,bar,Mai,GDCD,6,6.0,6,6.0,0.0,,6,6.0,
+bar_072,bar,Mai,Lịch sử và Địa lí,5,5.0,,,,E8_thieu_diem_du_lieu,5,5.0,
+bar_072,bar,Mai,Khoa học tự nhiên,8,8.0,5,5.0,0.375,E2_sai_gia_tri,5,5.0,E2_sai_gia_tri
+bar_073,bar,Sản lượng điện,2001,1480,1480.0,1450,1450.0,0.0203,,1450,1450.0,
+bar_073,bar,Sản lượng điện,2002,1650,1650.0,1600,1600.0,0.0303,,1600,1600.0,
+bar_073,bar,Sản lượng điện,2003,1900,1900.0,1850,1850.0,0.0263,,1850,1850.0,
+bar_073,bar,Sản lượng điện,2004,2200,2200.0,2100,2100.0,0.0455,,2100,2100.0,
+bar_073,bar,Sản lượng điện,2005,2470,2470.0,2400,2400.0,0.0283,,2400,2400.0,
+bar_074,bar,Lượng mưa (mm),7,"95,3",95.3,95.3,95.3,0.0,,95.3,95.3,
+bar_074,bar,Lượng mưa (mm),8,"104,0",104.0,104.0,104.0,0.0,,104.0,104.0,
+bar_074,bar,Lượng mưa (mm),9,"473,4",473.4,473.4,473.4,0.0,,473.4,473.4,
+bar_074,bar,Lượng mưa (mm),10,"795,6",795.6,795.6,795.6,0.0,,795.6,795.6,
+bar_074,bar,Lượng mưa (mm),11,"580,6",580.6,580.6,580.6,0.0,,580.6,580.6,
+bar_074,bar,Lượng mưa (mm),12,"297,4",297.4,297.4,297.4,0.0,,297.4,297.4,
+bar_075,bar,Hà Nội,Tháng 1,19,19.0,19,19.0,0.0,,19,19.0,
+bar_075,bar,Hà Nội,Tháng 2,26,26.0,14,14.0,0.4615,E2_sai_gia_tri,26,26.0,
+bar_075,bar,Hà Nội,Tháng 3,44,44.0,26,26.0,0.4091,E2_sai_gia_tri,44,44.0,
+bar_075,bar,Hà Nội,Tháng 4,90,90.0,44,44.0,0.5111,E2_sai_gia_tri,14,14.0,E2_sai_gia_tri
+bar_075,bar,Hà Nội,Tháng 5,189,189.0,11,11.0,0.9418,E2_sai_gia_tri,270,270.0,E2_sai_gia_tri
+bar_075,bar,Hà Nội,Tháng 6,240,240.0,312,312.0,0.3,E2_sai_gia_tri,288,288.0,E2_sai_gia_tri
+bar_075,bar,Hà Nội,Tháng 7,288,288.0,288,288.0,0.0,,294,294.0,
+bar_075,bar,Hà Nội,Tháng 8,318,318.0,294,294.0,0.0755,E2_sai_gia_tri,312,312.0,
+bar_075,bar,Hà Nội,Tháng 9,265,265.0,270,270.0,0.0189,,11,11.0,E2_sai_gia_tri
+bar_075,bar,Hà Nội,Tháng 10,131,131.0,265,265.0,1.0229,E2_sai_gia_tri,131,131.0,
+bar_075,bar,Hà Nội,Tháng 11,43,43.0,131,131.0,2.0465,E2_sai_gia_tri,117,117.0,E2_sai_gia_tri
+bar_075,bar,Hà Nội,Tháng 12,23,23.0,117,117.0,4.087,E2_sai_gia_tri,265,265.0,E2_sai_gia_tri
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 1,14,14.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 2,4,4.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 3,11,11.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 4,50,50.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 5,218,218.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 6,312,312.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 7,294,294.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 8,270,270.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 9,327,327.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 10,267,267.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 11,117,117.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+bar_075,bar,Thành phố Hồ Chí Minh,Tháng 12,48,48.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_001,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2005,3467,3467.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_001,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2010,4200,4200.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_001,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2015,4870,4870.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_001,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2017,5128,5128.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_001,combo,Giá trị sản xuất,2005,38784,38784.0,38784,38784.0,0.0,,38784,38784.0,
+combo_001,combo,Giá trị sản xuất,2010,47014,47014.0,47014,47014.0,0.0,,47014,47014.0,
+combo_001,combo,Giá trị sản xuất,2015,53654,53654.0,53654,53654.0,0.0,,53654,53654.0,
+combo_001,combo,Giá trị sản xuất,2017,56966,56966.0,56966,56966.0,0.0,,56966,56966.0,
+combo_002,combo,Diện tích lúa cả năm,2010,7666,7666.0,7666,7666.0,0.0,,7666,7666.0,
+combo_002,combo,Diện tích lúa cả năm,2013,7452,7452.0,7452,7452.0,0.0,,7452,7452.0,
+combo_002,combo,Diện tích lúa cả năm,2015,7329,7329.0,7329,7329.0,0.0,,7329,7329.0,
+combo_002,combo,Diện tích lúa cả năm,2017,7207,7207.0,7207,7207.0,0.0,,7207,7207.0,
+combo_002,combo,Diện tích lúa cả năm,2018,7400,7400.0,7400,7400.0,0.0,,7400,7400.0,
+combo_002,combo,Năng suất lúa cả năm,2010,"42,4",42.4,42.4,42.4,0.0,,42.4,42.4,
+combo_002,combo,Năng suất lúa cả năm,2013,"46,4",46.4,48.9,48.9,0.0539,E2_sai_gia_tri,48.9,48.9,E2_sai_gia_tri
+combo_002,combo,Năng suất lúa cả năm,2015,"48,9",48.9,49.9,49.9,0.0204,,49.9,49.9,
+combo_002,combo,Năng suất lúa cả năm,2017,"49,9",49.9,52.3,52.3,0.0481,,52.3,52.3,
+combo_002,combo,Năng suất lúa cả năm,2018,"52,3",52.3,52.3,52.3,0.0,,52.3,52.3,
+combo_003,combo,Than,2010,240,240.0,240,240.0,0.0,,240,240.0,
+combo_003,combo,Than,2012,471,471.0,471,471.0,0.0,,471,471.0,
+combo_003,combo,Than,2013,380,380.0,380,380.0,0.0,,380,380.0,
+combo_003,combo,Than,2015,420,420.0,420,420.0,0.0,,420,420.0,
+combo_003,combo,Điện,2010,"8,6",8.6,8.6,8.6,0.0,,8.6,8.6,
+combo_003,combo,Điện,2012,11,11.0,11.0,11.0,0.0,,11.0,11.0,
+combo_003,combo,Điện,2013,"12,2",12.2,12.2,12.2,0.0,,12.2,12.2,
+combo_003,combo,Điện,2015,16,16.0,16.0,16.0,0.0,,16.0,16.0,
+combo_004,combo,Dầu thô,2010,7555,7555.0,7555,7555.0,0.0,,7555,7555.0,
+combo_004,combo,Dầu thô,2012,7348,7348.0,7348,7348.0,0.0,,7348,7348.0,
+combo_004,combo,Dầu thô,2013,7373,7373.0,7373,7373.0,0.0,,7373,7373.0,
+combo_004,combo,Dầu thô,2015,7517,7517.0,7517,7517.0,0.0,,7517,7517.0,
+combo_004,combo,Điện,2010,158,158.0,158,158.0,0.0,,158,158.0,
+combo_004,combo,Điện,2012,169,169.0,169,169.0,0.0,,169,169.0,
+combo_004,combo,Điện,2013,169,169.0,169,169.0,0.0,,169,169.0,
+combo_004,combo,Điện,2015,178,178.0,178,178.0,0.0,,178,178.0,
+combo_005,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2005,3467,3467.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_005,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2010,4200,4200.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_005,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2015,4870,4870.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_005,combo,Tổng sản lượng (Khai thác + Nuôi trồng),2017,5128,5128.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_005,combo,Giá trị sản xuất,2005,38784,38784.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_005,combo,Giá trị sản xuất,2010,47014,47014.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_005,combo,Giá trị sản xuất,2015,53654,53654.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_005,combo,Giá trị sản xuất,2017,56966,56966.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_006,combo,Rừng tự nhiên,2008,"10348,6",10348.6,10239.8,10239.8,0.0105,,10239.8,10239.8,
+combo_006,combo,Rừng tự nhiên,2012,"10423,8",10423.8,10438.8,10438.8,0.0014,,10438.8,10438.8,
+combo_006,combo,Rừng tự nhiên,2014,"10100,2",10100.2,10100.2,10100.2,0.0,,10100.2,10100.2,
+combo_006,combo,Rừng tự nhiên,2016,"10242,1",10242.1,10132.1,10132.1,0.0107,,10132.1,10132.1,
+combo_006,combo,Rừng tự nhiên,2018,"10255,5",10255.5,10239.5,10239.5,0.0016,,10239.5,10239.5,
+combo_006,combo,Rừng trồng,2008,"2770,2",2770.2,2770.2,2770.2,0.0,,2770.2,2770.2,
+combo_006,combo,Rừng trồng,2012,"3438,2",3438.2,10438.8,10438.8,2.0361,E2_sai_gia_tri,10438.8,10438.8,E2_sai_gia_tri
+combo_006,combo,Rừng trồng,2014,"3696,3",3696.3,10100.2,10100.2,1.7325,E2_sai_gia_tri,10100.2,10100.2,E2_sai_gia_tri
+combo_006,combo,Rừng trồng,2016,"4135,6",4135.6,10132.1,10132.1,1.45,E2_sai_gia_tri,10132.1,10132.1,E2_sai_gia_tri
+combo_006,combo,Rừng trồng,2018,"4235,8",4235.8,10239.5,10239.5,1.4174,E2_sai_gia_tri,10239.5,10239.5,E2_sai_gia_tri
+combo_006,combo,Độ che phủ rừng,2008,"38,7",38.7,10.7,10.7,0.7235,E2_sai_gia_tri,10.7,10.7,E2_sai_gia_tri
+combo_006,combo,Độ che phủ rừng,2012,"40,7",40.7,40.7,40.7,0.0,,40.7,40.7,
+combo_006,combo,Độ che phủ rừng,2014,"40,4",40.4,40.4,40.4,0.0,,40.4,40.4,
+combo_006,combo,Độ che phủ rừng,2016,"41,2",41.2,41.2,41.2,0.0,,41.2,41.2,
+combo_006,combo,Độ che phủ rừng,2018,"41,7",41.7,41.7,41.7,0.0,,41.7,41.7,
+combo_007,combo,Diện tích cây hàng năm,2000,"10540,3",10540.3,10540.3,10540.3,0.0,,10540.3,10540.3,
+combo_007,combo,Diện tích cây hàng năm,2005,"10818,8",10818.8,10618.8,10618.8,0.0185,,10618.8,10618.8,
+combo_007,combo,Diện tích cây hàng năm,2010,"11214,3",11214.3,11214.3,11214.3,0.0,,11214.3,11214.3,
+combo_007,combo,Diện tích cây hàng năm,2015,11700,11700.0,11700.0,11700.0,0.0,,11700.0,11700.0,
+combo_007,combo,Diện tích cây hàng năm,2017,"11703,4",11703.4,11703.4,11703.4,0.0,,11703.4,11703.4,
+combo_007,combo,Diện tích cây lâu năm,2000,2104,2104.0,2104.0,2104.0,0.0,,2104.0,2104.0,
+combo_007,combo,Diện tích cây lâu năm,2005,"2468,2",2468.2,2468.2,2468.2,0.0,,2468.2,2468.2,
+combo_007,combo,Diện tích cây lâu năm,2010,"2846,8",2846.8,2646.8,2646.8,0.0703,E2_sai_gia_tri,2646.8,2646.8,E2_sai_gia_tri
+combo_007,combo,Diện tích cây lâu năm,2015,"3245,3",3245.3,1245.3,1245.3,0.6163,E2_sai_gia_tri,1245.3,1245.3,E2_sai_gia_tri
+combo_007,combo,Diện tích cây lâu năm,2017,"3394,4",3394.4,3994.4,3994.4,0.1768,E2_sai_gia_tri,3994.4,3994.4,E2_sai_gia_tri
+combo_007,combo,Tỉ trọng diện tích cây hàng năm,2000,"83,4",83.4,83.4,83.4,0.0,,83.4,83.4,
+combo_007,combo,Tỉ trọng diện tích cây hàng năm,2005,"81,4",81.4,81.4,81.4,0.0,,81.4,81.4,
+combo_007,combo,Tỉ trọng diện tích cây hàng năm,2010,"79,8",79.8,78.8,78.8,0.0125,,78.8,78.8,
+combo_007,combo,Tỉ trọng diện tích cây hàng năm,2015,"78,3",78.3,78.3,78.3,0.0,,78.3,78.3,
+combo_007,combo,Tỉ trọng diện tích cây hàng năm,2017,"77,5",77.5,77.5,77.5,0.0,,77.5,77.5,
+combo_008,combo,Than,2010,240,240.0,240,240.0,0.0,,240,240.0,
+combo_008,combo,Than,2012,471,471.0,471,471.0,0.0,,471,471.0,
+combo_008,combo,Than,2013,380,380.0,380,380.0,0.0,,380,380.0,
+combo_008,combo,Than,2015,420,420.0,420,420.0,0.0,,420,420.0,
+combo_008,combo,Điện,2010,"8,6",8.6,8.6,8.6,0.0,,8.6,8.6,
+combo_008,combo,Điện,2012,11,11.0,11.0,11.0,0.0,,11.0,11.0,
+combo_008,combo,Điện,2013,"12,2",12.2,12.2,12.2,0.0,,12.2,12.2,
+combo_008,combo,Điện,2015,16,16.0,16.0,16.0,0.0,,16.0,16.0,
+combo_009,combo,Diện tích,2010,"3945,9",3945.9,3945.9,3945.9,0.0,,3945.9,3945.9,
+combo_009,combo,Diện tích,2015,"4301,5",4301.5,4301.5,4301.5,0.0,,4301.5,4301.5,
+combo_009,combo,Diện tích,2020,"3963,7",3963.7,3963.7,3963.7,0.0,,3963.7,3963.7,
+combo_009,combo,Diện tích,2021,"3898,6",3898.6,3898.6,3898.6,0.0,,3898.6,3898.6,
+combo_009,combo,Sản lượng,2010,"21,6",21.6,21.6,21.6,0.0,,21.6,21.6,
+combo_009,combo,Sản lượng,2015,"25,6",25.6,25.6,25.6,0.0,,25.6,25.6,
+combo_009,combo,Sản lượng,2020,"23,8",23.8,23.8,23.8,0.0,,23.8,23.8,
+combo_009,combo,Sản lượng,2021,"24,3",24.3,24.3,24.3,0.0,,24.3,24.3,
+combo_010,combo,Diện tích gieo trồng,2010,"7,5",7.5,40,40.0,4.3333,E2_sai_gia_tri,40,40.0,E2_sai_gia_tri
+combo_010,combo,Diện tích gieo trồng,2015,"7,8",7.8,45.1,45.1,4.7821,E2_sai_gia_tri,45.1,45.1,E2_sai_gia_tri
+combo_010,combo,Diện tích gieo trồng,2020,"7,3",7.3,42.7,42.7,4.8493,E2_sai_gia_tri,42.7,42.7,E2_sai_gia_tri
+combo_010,combo,Diện tích gieo trồng,2021,"7,2",7.2,43.9,43.9,5.0972,E2_sai_gia_tri,43.9,43.9,E2_sai_gia_tri
+combo_010,combo,Sản lượng,2010,40,40.0,7.5,7.5,0.8125,E2_sai_gia_tri,7.5,7.5,E2_sai_gia_tri
+combo_010,combo,Sản lượng,2015,"45,1",45.1,7.8,7.8,0.8271,E2_sai_gia_tri,7.8,7.8,E2_sai_gia_tri
+combo_010,combo,Sản lượng,2020,"42,7",42.7,7.3,7.3,0.829,E2_sai_gia_tri,7.3,7.3,E2_sai_gia_tri
+combo_010,combo,Sản lượng,2021,"43,9",43.9,7.2,7.2,0.836,E2_sai_gia_tri,7.2,7.2,E2_sai_gia_tri
+combo_011,combo,Số dân thành thị,1990,"12,9",12.9,12.9,12.9,0.0,,12.9,12.9,
+combo_011,combo,Số dân thành thị,1995,"14,9",14.9,14.9,14.9,0.0,,14.9,14.9,
+combo_011,combo,Số dân thành thị,2000,"18,8",18.8,18.8,18.8,0.0,,18.8,18.8,
+combo_011,combo,Số dân thành thị,2005,"22,3",22.3,22.3,22.3,0.0,,22.3,22.3,
+combo_011,combo,Tỉ lệ dân thành thị,1990,"19,5",19.5,19.5,19.5,0.0,,19.5,19.5,
+combo_011,combo,Tỉ lệ dân thành thị,1995,"20,8",20.8,20.8,20.8,0.0,,20.8,20.8,
+combo_011,combo,Tỉ lệ dân thành thị,2000,"24,2",24.2,24.2,24.2,0.0,,24.2,24.2,
+combo_011,combo,Tỉ lệ dân thành thị,2005,"26,9",26.9,26.9,26.9,0.0,,26.9,26.9,
+combo_012,combo,GDP,1961,"53,5",53.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_012,combo,GDP,1970,"212,6",212.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_012,combo,GDP,1990,3132,3132.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_012,combo,GDP,2000,"4968,4",4968.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_012,combo,GDP,2010,"5759,1",5759.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_012,combo,GDP,2019,"5123,3",5123.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_012,combo,GDP,2020,"5040,1",5040.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_012,combo,Tốc độ tăng trưởng GDP,1961,12,12.0,12,12.0,0.0,,12,12.0,
+combo_012,combo,Tốc độ tăng trưởng GDP,1970,"2,5",2.5,2.5,2.5,0.0,,2.5,2.5,
+combo_012,combo,Tốc độ tăng trưởng GDP,1990,"4,8",4.8,4.8,4.8,0.0,,4.8,4.8,
+combo_012,combo,Tốc độ tăng trưởng GDP,2000,"2,7",2.7,4.7,4.7,0.7407,E2_sai_gia_tri,4.7,4.7,E2_sai_gia_tri
+combo_012,combo,Tốc độ tăng trưởng GDP,2010,"4,1",4.1,4.1,4.1,0.0,,4.1,4.1,
+combo_012,combo,Tốc độ tăng trưởng GDP,2019,"0,3",0.3,0.3,0.3,0.0,,0.3,0.3,
+combo_012,combo,Tốc độ tăng trưởng GDP,2020,"-4,5",-4.5,-4.5,-4.5,0.0,,-4.5,-4.5,
+combo_013,combo,Tổng tài sản,2002,4296,4296.0,4296,4296.0,0.0,,4296,4296.0,
+combo_013,combo,Tổng tài sản,2003,7304,7304.0,7304,7304.0,0.0,,7304,7304.0,
+combo_013,combo,Tổng tài sản,2004,10395,10395.0,10396,10396.0,0.0001,,10396,10396.0,
+combo_013,combo,Tổng tài sản,2005,14156,14156.0,14166,14166.0,0.0007,,14166,14166.0,
+combo_013,combo,Tổng tài sản,2006,24764,24764.0,24764,24764.0,0.0,,24764,24764.0,
+combo_013,combo,Tổng tài sản,2007,63484,63484.0,63484,63484.0,0.0,,63484,63484.0,
+combo_013,combo,Tổng tài sản,2008 (Kế hoạch),93182,93182.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_013,combo,Tăng trưởng,2002,37,37.0,37,37.0,0.0,,37,37.0,
+combo_013,combo,Tăng trưởng,2003,70,70.0,70,70.0,0.0,,70,70.0,
+combo_013,combo,Tăng trưởng,2004,42,42.0,42,42.0,0.0,,42,42.0,
+combo_013,combo,Tăng trưởng,2005,36,36.0,36,36.0,0.0,,36,36.0,
+combo_013,combo,Tăng trưởng,2006,75,75.0,76,76.0,0.0133,,76,76.0,
+combo_013,combo,Tăng trưởng,2007,156,156.0,160,160.0,0.0256,,160,160.0,
+combo_013,combo,Tăng trưởng,2008 (Kế hoạch),47,47.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_014,combo,Khách do các cơ sở lưu trú phục vụ,2010,"66,5",66.5,66.5,66.5,0.0,,66.5,66.5,
+combo_014,combo,Khách do các cơ sở lưu trú phục vụ,2015,114,114.0,114,114.0,0.0,,114,114.0,
+combo_014,combo,Khách do các cơ sở lưu trú phục vụ,2019,"179,4",179.4,179.4,179.4,0.0,,179.4,179.4,
+combo_014,combo,Khách do các cơ sở lưu trú phục vụ,2021,"63,6",63.6,63.6,63.6,0.0,,63.6,63.6,
+combo_014,combo,Khách do các cơ sở lữ hành phục vụ,2010,"8,2",8.2,0.2,0.2,0.9756,E2_sai_gia_tri,0.2,0.2,E2_sai_gia_tri
+combo_014,combo,Khách do các cơ sở lữ hành phục vụ,2015,"12,6",12.6,12.6,12.6,0.0,,12.6,12.6,
+combo_014,combo,Khách do các cơ sở lữ hành phục vụ,2019,"18,4",18.4,44.7,44.7,1.4293,E2_sai_gia_tri,44.7,44.7,E2_sai_gia_tri
+combo_014,combo,Khách do các cơ sở lữ hành phục vụ,2021,"3,6",3.6,3.6,3.6,0.0,,3.6,3.6,
+combo_014,combo,Doanh thu của các cơ sở lưu trú,2010,"28,9",28.9,15.5,15.5,0.4637,E2_sai_gia_tri,15.5,15.5,E2_sai_gia_tri
+combo_014,combo,Doanh thu của các cơ sở lưu trú,2015,"44,7",44.7,30.4,30.4,0.3199,E2_sai_gia_tri,30.4,30.4,E2_sai_gia_tri
+combo_014,combo,Doanh thu của các cơ sở lưu trú,2019,67,67.0,67,67.0,0.0,,67,67.0,
+combo_014,combo,Doanh thu của các cơ sở lưu trú,2021,"23,7",23.7,23.7,23.7,0.0,,23.7,23.7,
+combo_014,combo,Doanh thu của các cơ sở lữ hành,2010,"15,5",15.5,28.9,28.9,0.8645,E2_sai_gia_tri,28.9,28.9,E2_sai_gia_tri
+combo_014,combo,Doanh thu của các cơ sở lữ hành,2015,"30,4",30.4,44.7,44.7,0.4704,E2_sai_gia_tri,44.7,44.7,E2_sai_gia_tri
+combo_014,combo,Doanh thu của các cơ sở lữ hành,2019,"44,7",44.7,18.4,18.4,0.5884,E2_sai_gia_tri,18.4,18.4,E2_sai_gia_tri
+combo_014,combo,Doanh thu của các cơ sở lữ hành,2021,9,9.0,9,9.0,0.0,,9,9.0,
+combo_015,combo,Tổng số dân,1995,"71995,5",71995.5,71995.5,71995.5,0.0,,71995.5,71995.5,
+combo_015,combo,Tổng số dân,1998,"75456,3",75456.3,75456.3,75456.3,0.0,,75456.3,75456.3,
+combo_015,combo,Tổng số dân,2000,"77635,4",77635.4,77635.4,77635.4,0.0,,77635.4,77635.4,
+combo_015,combo,Tổng số dân,2001,"78685,8",78685.8,78685.8,78685.8,0.0,,78685.8,78685.8,
+combo_015,combo,Tổng số dân,2003,"80902,4",80902.4,80902.4,80902.4,0.0,,80902.4,80902.4,
+combo_015,combo,Tốc độ gia tăng dân số,1995,"1,65",1.65,1.65,1.65,0.0,,1.65,1.65,
+combo_015,combo,Tốc độ gia tăng dân số,1998,"1,55",1.55,1.55,1.55,0.0,,1.55,1.55,
+combo_015,combo,Tốc độ gia tăng dân số,2000,"1,36",1.36,1.36,1.36,0.0,,1.36,1.36,
+combo_015,combo,Tốc độ gia tăng dân số,2001,"1,35",1.35,1.35,1.35,0.0,,1.35,1.35,
+combo_015,combo,Tốc độ gia tăng dân số,2003,"1,47",1.47,1.47,1.47,0.0,,1.47,1.47,
+combo_016,combo,Diện tích cây công nghiệp hằng năm,2005,862,862.0,862,862.0,0.0,,862,862.0,
+combo_016,combo,Diện tích cây công nghiệp hằng năm,2007,846,846.0,846,846.0,0.0,,846,846.0,
+combo_016,combo,Diện tích cây công nghiệp hằng năm,2010,798,798.0,796,796.0,0.0025,,796,796.0,
+combo_016,combo,Diện tích cây công nghiệp hằng năm,2012,730,730.0,730,730.0,0.0,,730,730.0,
+combo_016,combo,Diện tích cây công nghiệp lâu năm,2005,1634,1634.0,1634,1634.0,0.0,,1634,1634.0,
+combo_016,combo,Diện tích cây công nghiệp lâu năm,2007,1822,1822.0,91,91.0,0.9501,E2_sai_gia_tri,91,91.0,E2_sai_gia_tri
+combo_016,combo,Diện tích cây công nghiệp lâu năm,2010,2011,2011.0,846,846.0,0.5793,E2_sai_gia_tri,846,846.0,E2_sai_gia_tri
+combo_016,combo,Diện tích cây công nghiệp lâu năm,2012,2223,2223.0,2223,2223.0,0.0,,2223,2223.0,
+combo_016,combo,Giá trị sản xuất của ngành trồng cây công nghiệp,2005,79,79.0,79,79.0,0.0,,79,79.0,
+combo_016,combo,Giá trị sản xuất của ngành trồng cây công nghiệp,2007,91,91.0,105,105.0,0.1538,E2_sai_gia_tri,105,105.0,E2_sai_gia_tri
+combo_016,combo,Giá trị sản xuất của ngành trồng cây công nghiệp,2010,105,105.0,105,105.0,0.0,,105,105.0,
+combo_016,combo,Giá trị sản xuất của ngành trồng cây công nghiệp,2012,116,116.0,116,116.0,0.0,,116,116.0,
+combo_017,combo,Lượng mưa,I,"18,6",18.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,II,"26,2",26.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,III,"43,8",43.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,IV,"90,1",90.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,V,"188,5",188.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,VI,"230,9",230.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,VII,"288,2",288.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,VIII,318,318.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,IX,"265,4",265.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,X,"130,7",130.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,XI,"43,4",43.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Lượng mưa,XII,"23,4",23.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+combo_017,combo,Nhiệt độ,I,"16,4",16.4,18,18.0,0.0976,E2_sai_gia_tri,18,18.0,E2_sai_gia_tri
+combo_017,combo,Nhiệt độ,II,17,17.0,20,20.0,0.1765,E2_sai_gia_tri,20,20.0,E2_sai_gia_tri
+combo_017,combo,Nhiệt độ,III,"20,2",20.2,22,22.0,0.0891,E2_sai_gia_tri,22,22.0,E2_sai_gia_tri
+combo_017,combo,Nhiệt độ,IV,"23,7",23.7,24,24.0,0.0127,,24,24.0,
+combo_017,combo,Nhiệt độ,V,"27,3",27.3,26,26.0,0.0476,,26,26.0,
+combo_017,combo,Nhiệt độ,VI,"28,8",28.8,28,28.0,0.0278,,28,28.0,
+combo_017,combo,Nhiệt độ,VII,"28,9",28.9,29,29.0,0.0035,,29,29.0,
+combo_017,combo,Nhiệt độ,VIII,"28,2",28.2,28,28.0,0.0071,,28,28.0,
+combo_017,combo,Nhiệt độ,IX,"27,2",27.2,27,27.0,0.0074,,27,27.0,
+combo_017,combo,Nhiệt độ,X,"24,6",24.6,25,25.0,0.0163,,25,25.0,
+combo_017,combo,Nhiệt độ,XI,"21,4",21.4,23,23.0,0.0748,E2_sai_gia_tri,23,23.0,E2_sai_gia_tri
+combo_017,combo,Nhiệt độ,XII,"18,2",18.2,21,21.0,0.1538,E2_sai_gia_tri,21,21.0,E2_sai_gia_tri
+combo_018,combo,Lượng mưa,I,"18,6",18.6,18.6,18.6,0.0,,18.6,18.6,
+combo_018,combo,Lượng mưa,II,"26,2",26.2,26.2,26.2,0.0,,26.2,26.2,
+combo_018,combo,Lượng mưa,III,"43,8",43.8,43.8,43.8,0.0,,43.8,43.8,
+combo_018,combo,Lượng mưa,IV,"90,1",90.1,90.1,90.1,0.0,,90.1,90.1,
+combo_018,combo,Lượng mưa,V,"188,5",188.5,188.5,188.5,0.0,,188.5,188.5,
+combo_018,combo,Lượng mưa,VI,"230,9",230.9,230.9,230.9,0.0,,230.9,230.9,
+combo_018,combo,Lượng mưa,VII,"288,2",288.2,288.2,288.2,0.0,,288.2,288.2,
+combo_018,combo,Lượng mưa,VIII,318,318.0,318,318.0,0.0,,318,318.0,
+combo_018,combo,Lượng mưa,IX,"265,4",265.4,265.4,265.4,0.0,,265.4,265.4,
+combo_018,combo,Lượng mưa,X,"130,7",130.7,130.7,130.7,0.0,,130.7,130.7,
+combo_018,combo,Lượng mưa,XI,"43,4",43.4,43.4,43.4,0.0,,43.4,43.4,
+combo_018,combo,Lượng mưa,XII,"23,4",23.4,23.4,23.4,0.0,,23.4,23.4,
+combo_018,combo,Nhiệt độ,I,"16,4",16.4,16.4,16.4,0.0,,16.4,16.4,
+combo_018,combo,Nhiệt độ,II,17,17.0,17,17.0,0.0,,17,17.0,
+combo_018,combo,Nhiệt độ,III,"20,2",20.2,20.2,20.2,0.0,,20.2,20.2,
+combo_018,combo,Nhiệt độ,IV,"23,7",23.7,23.7,23.7,0.0,,23.7,23.7,
+combo_018,combo,Nhiệt độ,V,"27,3",27.3,27.3,27.3,0.0,,27.3,27.3,
+combo_018,combo,Nhiệt độ,VI,"28,8",28.8,28.8,28.8,0.0,,28.8,28.8,
+combo_018,combo,Nhiệt độ,VII,"28,9",28.9,28.9,28.9,0.0,,28.9,28.9,
+combo_018,combo,Nhiệt độ,VIII,"28,2",28.2,28.2,28.2,0.0,,28.2,28.2,
+combo_018,combo,Nhiệt độ,IX,"27,2",27.2,27.2,27.2,0.0,,27.2,27.2,
+combo_018,combo,Nhiệt độ,X,"24,6",24.6,24.6,24.6,0.0,,24.6,24.6,
+combo_018,combo,Nhiệt độ,XI,"21,4",21.4,21.4,21.4,0.0,,21.4,21.4,
+combo_018,combo,Nhiệt độ,XII,"18,2",18.2,18.2,18.2,0.0,,18.2,18.2,
+combo_019,combo,Lượng mưa,1,"70,9",70.9,70.9,70.9,0.0,,70.9,70.9,
+combo_019,combo,Lượng mưa,2,"12,3",12.3,12.3,12.3,0.0,,12.3,12.3,
+combo_019,combo,Lượng mưa,3,"112,4",112.4,112.4,112.4,0.0,,112.4,112.4,
+combo_019,combo,Lượng mưa,4,"19,1",19.1,19.1,19.1,0.0,,19.1,19.1,
+combo_019,combo,Lượng mưa,5,"105,4",105.4,105.4,105.4,0.0,,105.4,105.4,
+combo_019,combo,Lượng mưa,6,"212,9",212.9,212.9,212.9,0.0,,212.9,212.9,
+combo_019,combo,Lượng mưa,7,"449,1",449.1,449.1,449.1,0.0,,449.1,449.1,
+combo_019,combo,Lượng mưa,8,"283,2",283.2,283.2,283.2,0.0,,283.2,283.2,
+combo_019,combo,Lượng mưa,9,"266,9",266.9,266.9,266.9,0.0,,266.9,266.9,
+combo_019,combo,Lượng mưa,10,"259,7",259.7,259.7,259.7,0.0,,259.7,259.7,
+combo_019,combo,Lượng mưa,11,"19,4",19.4,19.4,19.4,0.0,,19.4,19.4,
+combo_019,combo,Lượng mưa,12,"47,5",47.5,47.5,47.5,0.0,,47.5,47.5,
+combo_019,combo,Nhiệt độ,1,"19,7",19.7,19.7,19.7,0.0,,19.7,19.7,
+combo_019,combo,Nhiệt độ,2,"20,1",20.1,20.1,20.1,0.0,,20.1,20.1,
+combo_019,combo,Nhiệt độ,3,"21,9",21.9,21.9,21.9,0.0,,21.9,21.9,
+combo_019,combo,Nhiệt độ,4,"25,1",25.1,28.1,28.1,0.1195,E2_sai_gia_tri,28.1,28.1,E2_sai_gia_tri
+combo_019,combo,Nhiệt độ,5,"28,1",28.1,30.8,30.8,0.0961,E2_sai_gia_tri,30.8,30.8,E2_sai_gia_tri
+combo_019,combo,Nhiệt độ,6,"30,8",30.8,29.4,29.4,0.0455,,29.4,29.4,
+combo_019,combo,Nhiệt độ,7,"29,4",29.4,29.5,29.5,0.0034,,29.5,29.5,
+combo_019,combo,Nhiệt độ,8,"29,5",29.5,29.3,29.3,0.0068,,29.3,29.3,
+combo_019,combo,Nhiệt độ,9,"29,3",29.3,26.0,26.0,0.1126,E2_sai_gia_tri,26.0,26.0,E2_sai_gia_tri
+combo_019,combo,Nhiệt độ,10,26,26.0,22.7,22.7,0.1269,E2_sai_gia_tri,22.7,22.7,E2_sai_gia_tri
+combo_019,combo,Nhiệt độ,11,"22,7",22.7,18.1,18.1,0.2026,E2_sai_gia_tri,18.1,18.1,E2_sai_gia_tri
+combo_019,combo,Nhiệt độ,12,"18,1",18.1,18.1,18.1,0.0,,18.1,18.1,
+combo_020,combo,Số dân,1979,"52,7",52.7,"52,7",52.7,0.0,,"52,7",52.7,
+combo_020,combo,Số dân,1989,"64,4",64.4,"64,4",64.4,0.0,,"64,4",64.4,
+combo_020,combo,Số dân,1999,"76,5",76.5,"76,5",76.5,0.0,,"76,5",76.5,
+combo_020,combo,Số dân,2009,86,86.0,"86,0",86.0,0.0,,"86,0",86.0,
+combo_020,combo,Số dân,2019,"96,5",96.5,"96,5",96.5,0.0,,"96,5",96.5,
+combo_020,combo,Số dân,2021,"98,5",98.5,"98,5",98.5,0.0,,"98,5",98.5,
+combo_020,combo,Tỉ lệ tăng dân số,1979,"2,16",2.16,"2,16",2.16,0.0,,"2,16",2.16,
+combo_020,combo,Tỉ lệ tăng dân số,1989,"2,1",2.1,"2,10",2.1,0.0,,"2,10",2.1,
+combo_020,combo,Tỉ lệ tăng dân số,1999,"1,51",1.51,"1,51",1.51,0.0,,"1,51",1.51,
+combo_020,combo,Tỉ lệ tăng dân số,2009,"1,06",1.06,"1,06",1.06,0.0,,"1,06",1.06,
+combo_020,combo,Tỉ lệ tăng dân số,2019,"1,15",1.15,"1,15",1.15,0.0,,"1,15",1.15,
+combo_020,combo,Tỉ lệ tăng dân số,2021,"0,94",0.94,"0,94",0.94,0.0,,"0,94",0.94,
+combo_021,combo,Diện tích gieo trồng,2005,"7329,9",7329.9,"7329,9",7329.9,0.0,,"7329,9",7329.9,
+combo_021,combo,Diện tích gieo trồng,2010,"7489,4",7489.4,"7489,4",7489.4,0.0,,"7489,4",7489.4,
+combo_021,combo,Diện tích gieo trồng,2015,7828,7828.0,"7828,0",7828.0,0.0,,"7828,0",7828.0,
+combo_021,combo,Diện tích gieo trồng,2021,"7238,9",7238.9,"7238,9",7238.9,0.0,,"7238,9",7238.9,
+combo_021,combo,Sản lượng,2005,"35,8",35.8,"35,8",35.8,0.0,,"35,8",35.8,
+combo_021,combo,Sản lượng,2010,40,40.0,"40,0",40.0,0.0,,"40,0",40.0,
+combo_021,combo,Sản lượng,2015,"45,1",45.1,"45,1",45.1,0.0,,"45,1",45.1,
+combo_021,combo,Sản lượng,2021,"43,9",43.9,"43,9",43.9,0.0,,"43,9",43.9,
+line_001,line,Thu nhập bình quân đầu người,1986,423,423.0,423,423.0,0.0,,423,423.0,
+line_001,line,Thu nhập bình quân đầu người,1991,138,138.0,138,138.0,0.0,,138,138.0,
+line_001,line,Thu nhập bình quân đầu người,2010,1318,1318.0,1318,1318.0,0.0,,1318,1318.0,
+line_001,line,Thu nhập bình quân đầu người,2017,2366,2366.0,2366,2366.0,0.0,,2366,2366.0,
+line_001,line,Thu nhập bình quân đầu người,2018,2566,2566.0,2566,2566.0,0.0,,2566,2566.0,
+line_001,line,Thu nhập bình quân đầu người,2019,2715,2715.0,2715,2715.0,0.0,,2715,2715.0,
+line_001,line,Thu nhập bình quân đầu người,2020,2786,2786.0,2786,2786.0,0.0,,2786,2786.0,
+line_002,line,Nhiệt độ,8,25,25.0,25,25.0,0.0,,25,25.0,
+line_002,line,Nhiệt độ,10,23,23.0,23,23.0,0.0,,23,23.0,
+line_002,line,Nhiệt độ,12,34,34.0,34,34.0,0.0,,34,34.0,
+line_002,line,Nhiệt độ,14,32,32.0,32,32.0,0.0,,32,32.0,
+line_002,line,Nhiệt độ,16,26,26.0,26,26.0,0.0,,26,26.0,
+line_002,line,Nhiệt độ,18,22,22.0,22,22.0,0.0,,22,22.0,
+line_002,line,Nhiệt độ,20,18,18.0,18,18.0,0.0,,18,18.0,
+line_003,line,Số lượng bán ra,1,25,25.0,25,25.0,0.0,,25,25.0,
+line_003,line,Số lượng bán ra,2,35,35.0,35,35.0,0.0,,35,35.0,
+line_003,line,Số lượng bán ra,3,30,30.0,30,30.0,0.0,,30,30.0,
+line_003,line,Số lượng bán ra,4,120,120.0,120,120.0,0.0,,120,120.0,
+line_003,line,Số lượng bán ra,5,140,140.0,140,140.0,0.0,,140,140.0,
+line_003,line,Số lượng bán ra,6,150,150.0,150,150.0,0.0,,150,150.0,
+line_003,line,Số lượng bán ra,7,130,130.0,130,130.0,0.0,,130,130.0,
+line_003,line,Số lượng bán ra,8,140,140.0,140,140.0,0.0,,140,140.0,
+line_003,line,Số lượng bán ra,9,80,80.0,80,80.0,0.0,,80,80.0,
+line_003,line,Số lượng bán ra,10,50,50.0,50,50.0,0.0,,50,50.0,
+line_003,line,Số lượng bán ra,11,35,35.0,35,35.0,0.0,,35,35.0,
+line_003,line,Số lượng bán ra,12,20,20.0,20,20.0,0.0,,20,20.0,
+line_004,line,Tổng sản lượng,2017,7279,7279.0,7279,7279.0,0.0,,7279,7279.0,
+line_004,line,Tổng sản lượng,2018,7743,7743.0,7743,7743.0,0.0,,7743,7743.0,
+line_004,line,Tổng sản lượng,2019,8150,8150.0,8150,8150.0,0.0,,8150,8150.0,
+line_004,line,Tổng sản lượng,2020,8410,8410.0,8410,8410.0,0.0,,8410,8410.0,
+line_005,line,Lượng mưa trung bình,1,19,19.0,19,19.0,0.0,,19,19.0,
+line_005,line,Lượng mưa trung bình,2,26,26.0,26,26.0,0.0,,26,26.0,
+line_005,line,Lượng mưa trung bình,3,44,44.0,44,44.0,0.0,,44,44.0,
+line_005,line,Lượng mưa trung bình,4,90,90.0,90,90.0,0.0,,90,90.0,
+line_005,line,Lượng mưa trung bình,5,189,189.0,189,189.0,0.0,,189,189.0,
+line_005,line,Lượng mưa trung bình,6,231,231.0,231,231.0,0.0,,231,231.0,
+line_005,line,Lượng mưa trung bình,7,288,288.0,288,288.0,0.0,,288,288.0,
+line_005,line,Lượng mưa trung bình,8,318,318.0,318,318.0,0.0,,318,318.0,
+line_005,line,Lượng mưa trung bình,9,265,265.0,265,265.0,0.0,,265,265.0,
+line_005,line,Lượng mưa trung bình,10,131,131.0,131,131.0,0.0,,131,131.0,
+line_005,line,Lượng mưa trung bình,11,43,43.0,43,43.0,0.0,,43,43.0,
+line_005,line,Lượng mưa trung bình,12,23,23.0,23,23.0,0.0,,23,23.0,
+line_006,line,Tỉ lệ,Kinh doanh thương mại,"14,66",14.66,14.66,14.66,0.0,,14.66,14.66,
+line_006,line,Tỉ lệ,Kế toán - Kiểm toán,"13,56",13.56,13.56,13.56,0.0,,13.56,13.56,
+line_006,line,Tỉ lệ,Nhân sự,"8,34",8.34,8.34,8.34,0.0,,8.34,8.34,
+line_006,line,Tỉ lệ,Công nghệ thông tin,"5,89",5.89,5.89,5.89,0.0,,5.89,5.89,
+line_006,line,Tỉ lệ,Hành chính - Văn phòng - Biên phiên dịch,"11,32",11.32,11.32,11.32,0.0,,11.32,11.32,
+line_006,line,Tỉ lệ,Marketing,"6,44",6.44,6.44,6.44,0.0,,6.44,6.44,
+line_007,line,Đường hàng không,2010,"4091,7",4091.7,4091.7,4091.7,0.0,,4091.7,4091.7,
+line_007,line,Đường hàng không,2012,"5575,9",5575.9,5575.9,5575.9,0.0,,5575.9,5575.9,
+line_007,line,Đường hàng không,2014,"6220,2",6220.2,6220.2,6220.2,0.0,,6220.2,6220.2,
+line_007,line,Đường hàng không,2015,"6271,2",6271.2,6271.2,6271.2,0.0,,6271.2,6271.2,
+line_007,line,Đường thuỷ,2010,"50,5",50.5,50.5,50.5,0.0,,50.5,50.5,
+line_007,line,Đường thuỷ,2012,"285,8",285.8,285.8,285.8,0.0,,285.8,285.8,
+line_007,line,Đường thuỷ,2014,"133,2",133.2,133.2,133.2,0.0,,133.2,133.2,
+line_007,line,Đường thuỷ,2015,"169,8",169.8,169.8,169.8,0.0,,169.8,169.8,
+line_007,line,Đường bộ,2010,"937,6",937.6,937.6,937.6,0.0,,937.6,937.6,
+line_007,line,Đường bộ,2012,"986,3",986.3,986.3,986.3,0.0,,986.3,986.3,
+line_007,line,Đường bộ,2014,"1606,5",1606.5,1606.5,1606.5,0.0,,1606.5,1606.5,
+line_007,line,Đường bộ,2015,"1502,6",1502.6,1502.6,1502.6,0.0,,1502.6,1502.6,
+line_008,line,Công nghiệp khai khoáng,2018,100,100.0,100,100.0,0.0,,100,100.0,
+line_008,line,Công nghiệp khai khoáng,2019,"103,2",103.2,103.2,103.2,0.0,,103.2,103.2,
+line_008,line,Công nghiệp khai khoáng,2020,"94,6",94.6,94.6,94.6,0.0,,94.6,94.6,
+line_008,line,Công nghiệp khai khoáng,2021,"96,4",96.4,96.4,96.4,0.0,,96.4,96.4,
+line_008,line,"Công nghiệp chế biến, chế tạo",2018,100,100.0,100,100.0,0.0,,100,100.0,
+line_008,line,"Công nghiệp chế biến, chế tạo",2019,"98,4",98.4,99.7,99.7,0.0132,,99.7,99.7,
+line_008,line,"Công nghiệp chế biến, chế tạo",2020,"93,4",93.4,93.7,93.7,0.0032,,93.7,93.7,
+line_008,line,"Công nghiệp chế biến, chế tạo",2021,"94,4",94.4,94.4,94.4,0.0,,94.4,94.4,
+line_008,line,"Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",2018,100,100.0,100,100.0,0.0,,100,100.0,
+line_008,line,"Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",2019,"98,6",98.6,98.6,98.6,0.0,,98.6,98.6,
+line_008,line,"Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",2020,"93,7",93.7,93.8,93.8,0.0011,,93.8,93.8,
+line_008,line,"Sản xuất, phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",2021,95,95.0,95,95.0,0.0,,95,95.0,
+line_008,line,"Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",2018,100,100.0,100,100.0,0.0,,100,100.0,
+line_008,line,"Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",2019,"99,7",99.7,99.1,99.1,0.006,,99.1,99.1,
+line_008,line,"Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",2020,"97,9",97.9,97.9,97.9,0.0,,97.9,97.9,
+line_008,line,"Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",2021,"96,8",96.8,96.8,96.8,0.0,,96.8,96.8,
+line_008,line,Toàn ngành,2018,100,100.0,100,100.0,0.0,,100,100.0,
+line_008,line,Toàn ngành,2019,"99,1",99.1,103.2,103.2,0.0414,,103.2,103.2,
+line_008,line,Toàn ngành,2020,"93,8",93.8,94.6,94.6,0.0085,,94.6,94.6,
+line_008,line,Toàn ngành,2021,"95,1",95.1,95.1,95.1,0.0,,95.1,95.1,
+line_009,line,Diện tích,1980,100,100.0,100,100.0,0.0,,100,100.0,
+line_009,line,Diện tích,1990,"107,9",107.9,107.9,107.9,0.0,,107.9,107.9,
+line_009,line,Diện tích,2000,"136,7",136.7,136.7,136.7,0.0,,136.7,136.7,
+line_009,line,Diện tích,2002,134,134.0,134,134.0,0.0,,134,134.0,
+line_009,line,Diện tích,2005,"130,9",130.9,130.9,130.9,0.0,,130.9,130.9,
+line_009,line,Năng suất cả năm,1980,100,100.0,100,100.0,0.0,,100,100.0,
+line_009,line,Năng suất cả năm,1990,"152,8",152.8,152.8,152.8,0.0,,152.8,152.8,
+line_009,line,Năng suất cả năm,2000,"204,3",204.3,204.3,204.3,0.0,,204.3,204.3,
+line_009,line,Năng suất cả năm,2002,"220,7",220.7,220.7,220.7,0.0,,220.7,220.7,
+line_009,line,Năng suất cả năm,2005,"235,6",235.6,235.6,235.6,0.0,,235.6,235.6,
+line_009,line,Sản lượng cả năm,1980,100,100.0,100,100.0,0.0,,100,100.0,
+line_009,line,Sản lượng cả năm,1990,"165,5",165.5,165.5,165.5,0.0,,165.5,165.5,
+line_009,line,Sản lượng cả năm,2000,281,281.0,281,281.0,0.0,,281,281.0,
+line_009,line,Sản lượng cả năm,2002,"296,6",296.6,296.6,296.6,0.0,,296.6,296.6,
+line_009,line,Sản lượng cả năm,2005,"308,6",308.6,308.6,308.6,0.0,,308.6,308.6,
+line_010,line,Điện,1950,100,100.0,238,238.0,1.38,E2_sai_gia_tri,238,238.0,E2_sai_gia_tri
+line_010,line,Điện,1960,238,238.0,513,513.0,1.1555,E2_sai_gia_tri,513,513.0,E2_sai_gia_tri
+line_010,line,Điện,1970,513,513.0,447,447.0,0.1287,E2_sai_gia_tri,447,447.0,E2_sai_gia_tri
+line_010,line,Điện,1980,823,823.0,823,823.0,0.0,,823,823.0,
+line_010,line,Điện,1990,1224,1224.0,1224,1224.0,0.0,,1224,1224.0,
+line_010,line,Điện,2003,1535,1535.0,1535,1535.0,0.0,,1535,1535.0,
+line_010,line,Dầu mỏ,1950,100,100.0,143,143.0,0.43,E2_sai_gia_tri,143,143.0,E2_sai_gia_tri
+line_010,line,Dầu mỏ,1960,200,200.0,238,238.0,0.19,E2_sai_gia_tri,238,238.0,E2_sai_gia_tri
+line_010,line,Dầu mỏ,1970,447,447.0,361,361.0,0.1924,E2_sai_gia_tri,361,361.0,E2_sai_gia_tri
+line_010,line,Dầu mỏ,1980,586,586.0,586,586.0,0.0,,586,586.0,
+line_010,line,Dầu mỏ,1990,637,637.0,637,637.0,0.0,,637,637.0,
+line_010,line,Dầu mỏ,2003,746,746.0,746,746.0,0.0,,746,746.0,
+line_010,line,Thép,1950,100,100.0,143,143.0,0.43,E2_sai_gia_tri,143,143.0,E2_sai_gia_tri
+line_010,line,Thép,1960,150,150.0,314,314.0,1.0933,E2_sai_gia_tri,314,314.0,E2_sai_gia_tri
+line_010,line,Thép,1970,314,314.0,361,361.0,0.1497,E2_sai_gia_tri,361,361.0,E2_sai_gia_tri
+line_010,line,Thép,1980,361,361.0,407,407.0,0.1274,E2_sai_gia_tri,407,407.0,E2_sai_gia_tri
+line_010,line,Thép,1990,407,407.0,460,460.0,0.1302,E2_sai_gia_tri,460,460.0,E2_sai_gia_tri
+line_010,line,Thép,2003,460,460.0,460,460.0,0.0,,460,460.0,
+line_010,line,Than,1950,100,100.0,143,143.0,0.43,E2_sai_gia_tri,143,143.0,E2_sai_gia_tri
+line_010,line,Than,1960,143,143.0,161,161.0,0.1259,E2_sai_gia_tri,161,161.0,E2_sai_gia_tri
+line_010,line,Than,1970,161,161.0,207,207.0,0.2857,E2_sai_gia_tri,207,207.0,E2_sai_gia_tri
+line_010,line,Than,1980,207,207.0,187,187.0,0.0966,E2_sai_gia_tri,187,187.0,E2_sai_gia_tri
+line_010,line,Than,1990,187,187.0,291,291.0,0.5561,E2_sai_gia_tri,291,291.0,E2_sai_gia_tri
+line_010,line,Than,2003,291,291.0,291,291.0,0.0,,291,291.0,
+line_012,line,GDP,2009,"5,32",5.32,,,,E8_thieu_diem_du_lieu,5.32,5.32,
+line_012,line,GDP,2010,"6,78",6.78,,,,E8_thieu_diem_du_lieu,6.78,6.78,
+line_012,line,GDP,2011,"6,24",6.24,,,,E8_thieu_diem_du_lieu,6.24,6.24,
+line_012,line,GDP,2012,"5,25",5.25,,,,E8_thieu_diem_du_lieu,5.25,5.25,
+line_012,line,GDP,2013,"5,42",5.42,,,,E8_thieu_diem_du_lieu,5.42,5.42,
+line_012,line,GDP,2014,"5,98",5.98,,,,E8_thieu_diem_du_lieu,5.98,5.98,
+line_012,line,GDP,2015,"6,68",6.68,,,,E8_thieu_diem_du_lieu,6.68,6.68,
+line_012,line,GDP,2016,"6,21",6.21,,,,E8_thieu_diem_du_lieu,6.21,6.21,
+line_012,line,GDP,2017,"6,81",6.81,,,,E8_thieu_diem_du_lieu,6.81,6.81,
+line_012,line,GDP,2018,"7,08",7.08,,,,E8_thieu_diem_du_lieu,7.08,7.08,
+line_012,line,GDP,2019,"7,02",7.02,,,,E8_thieu_diem_du_lieu,7.02,7.02,
+line_013,line,Diện tích,2018,"10,26",10.26,10.26,10.26,0.0,,10.26,10.26,
+line_013,line,Diện tích,2019,"10,29",10.29,10.29,10.29,0.0,,10.29,10.29,
+line_013,line,Diện tích,2020,"10,28",10.28,10.28,10.28,0.0,,10.28,10.28,
+line_013,line,Diện tích,2021,"10,17",10.17,10.17,10.17,0.0,,10.17,10.17,
+line_014,line,Việt Nam,2013,"44,5",44.5,"44,5",44.5,0.0,,"44,5",44.5,
+line_014,line,Việt Nam,2014,"44,9",44.9,"44,9",44.9,0.0,,"44,9",44.9,
+line_014,line,Việt Nam,2015,"45,4",45.4,"45,4",45.4,0.0,,"45,4",45.4,
+line_014,line,Việt Nam,2016,"46,4",46.4,"46,4",46.4,0.0,,"46,4",46.4,
+line_014,line,Việt Nam,2017,"46,5",46.5,"46,5",46.5,0.0,,"46,5",46.5,
+line_014,line,Indonesia,2013,"53,5",53.5,"53,5",53.5,0.0,,"53,5",53.5,
+line_014,line,Indonesia,2014,53,53.0,53,53.0,0.0,,53,53.0,
+line_014,line,Indonesia,2015,"52,5",52.5,"52,5",52.5,0.0,,"52,5",52.5,
+line_014,line,Indonesia,2016,"50,7",50.7,"50,7",50.7,0.0,,"50,7",50.7,
+line_014,line,Indonesia,2017,50,50.0,50,50.0,0.0,,50,50.0,
+line_015,line,Tỉ lệ đóng góp,2012,"0,26",0.26,0.26,0.26,0.0,,0.26,0.26,
+line_015,line,Tỉ lệ đóng góp,2013,"0,28",0.28,0.28,0.28,0.0,,0.28,0.28,
+line_015,line,Tỉ lệ đóng góp,2014,"0,3",0.3,0.3,0.3,0.0,,0.3,0.3,
+line_015,line,Tỉ lệ đóng góp,2015,"0,32",0.32,0.32,0.32,0.0,,0.32,0.32,
+line_015,line,Tỉ lệ đóng góp,2016,"0,34",0.34,0.34,0.34,0.0,,0.34,0.34,
+line_015,line,Tỉ lệ đóng góp,2017,"0,35",0.35,0.35,0.35,0.0,,0.35,0.35,
+line_015,line,Tỉ lệ đóng góp,2018,"0,36",0.36,0.36,0.36,0.0,,0.36,0.36,
+line_016,line,CPI,2018,"3,54",3.54,,,,E8_thieu_diem_du_lieu,"3,54",3.54,
+line_016,line,CPI,2019,"2,79",2.79,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_016,line,CPI,2020,"3,23",3.23,,,,E8_thieu_diem_du_lieu,"3,23",3.23,
+line_016,line,CPI,2021,"1,84",1.84,,,,E8_thieu_diem_du_lieu,"1,84",1.84,
+line_016,line,CPI,2022,"3,15",3.15,,,,E8_thieu_diem_du_lieu,"3,15",3.15,
+line_016,line,CPI,2023,"3,25",3.25,,,,E8_thieu_diem_du_lieu,"3,25",3.25,
+line_016,line,CPI,2024,"3,63",3.63,,,,E8_thieu_diem_du_lieu,"3,63",3.63,
+line_017,line,Giá bán,Chiều 19/5,4538,4538.0,,,,E8_thieu_diem_du_lieu,4538.0,4538.0,
+line_017,line,Giá bán,Sáng 20/5,"4456,9",4456.9,,,,E8_thieu_diem_du_lieu,4456.9,4456.9,
+line_017,line,Giá bán,Chiều 20/5,"4496,3",4496.3,,,,E8_thieu_diem_du_lieu,4496.3,4496.3,
+line_017,line,Giá bán,Sáng 21/5,"4540,7",4540.7,,,,E8_thieu_diem_du_lieu,4540.7,4540.7,
+line_017,line,Giá bán,Chiều 21/5,"4531,8",4531.8,,,,E8_thieu_diem_du_lieu,4531.8,4531.8,
+line_017,line,Giá bán,Sáng 22/5,"4523,5",4523.5,,,,E8_thieu_diem_du_lieu,4523.5,4523.5,
+line_017,line,Giá bán,Trưa 22/5,"4520,1",4520.1,,,,E8_thieu_diem_du_lieu,4520.1,4520.1,
+line_017,line,Giá bán,Chiều 22/5,"4531,9",4531.9,,,,E8_thieu_diem_du_lieu,4531.9,4531.9,
+line_017,line,Giá bán,Sáng 23/5,"4508,5",4508.5,,,,E8_thieu_diem_du_lieu,4508.5,4508.5,
+line_017,line,Giá bán,Chiều 23/5,"4508,5",4508.5,,,,E8_thieu_diem_du_lieu,4508.5,4508.5,
+line_017,line,Giá bán,Sáng 24/5,"4508,5",4508.5,,,,E8_thieu_diem_du_lieu,4508.5,4508.5,
+line_017,line,Giá bán,Chiều 24/5,"4508,5",4508.5,,,,E8_thieu_diem_du_lieu,4508.5,4508.5,
+line_017,line,Giá bán,Sáng 25/5,"4560,87",4560.87,,,,E8_thieu_diem_du_lieu,4508.5,4508.5,
+line_017,line,Giá bán,Chiều 25/5,"4561,16",4561.16,,,,E8_thieu_diem_du_lieu,4561.16,4561.16,
+line_018,line,Bán ra,27/6,"2,314",2.314,,,,E0_khong_parse_duoc_JSON,2.314,2314.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,28/6,"2,314",2.314,,,,E0_khong_parse_duoc_JSON,2.241,2241.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,30/6,"2,241",2.241,,,,E0_khong_parse_duoc_JSON,2.249,2249.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,1/7,"2,249",2.249,,,,E0_khong_parse_duoc_JSON,2.186,2186.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,2/7,"2,346",2.346,,,,E0_khong_parse_duoc_JSON,2.160,2160.0,E2_sai_gia_tri
+line_018,line,Bán ra,3/7,"2,422",2.422,,,,E0_khong_parse_duoc_JSON,2.227,2227.0,E2_sai_gia_tri
+line_018,line,Bán ra,4/7,"2,425",2.425,,,,E0_khong_parse_duoc_JSON,2.254,2254.0,E2_sai_gia_tri
+line_018,line,Bán ra,5/7,"2,425",2.425,,,,E0_khong_parse_duoc_JSON,2.254,2254.0,E2_sai_gia_tri
+line_018,line,Bán ra,6/7,"2,410",2.41,,,,E0_khong_parse_duoc_JSON,2.222,2222.0,E2_sai_gia_tri
+line_018,line,Bán ra,7/7,"2,395",2.395,,,,E0_khong_parse_duoc_JSON,2.191,2191.0,E2_sai_gia_tri
+line_018,line,Bán ra,8/7,"2,331",2.331,,,,E0_khong_parse_duoc_JSON,2.191,2191.0,E2_sai_gia_tri
+line_018,line,Bán ra,9/7,"2,273",2.273,,,,E0_khong_parse_duoc_JSON,2.227,2227.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,10/7,"2,346",2.346,,,,E0_khong_parse_duoc_JSON,2.247,2247.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,11/7,"2,330",2.33,,,,E0_khong_parse_duoc_JSON,2.227,2227.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,12/7,"2,330",2.33,,,,E0_khong_parse_duoc_JSON,2.247,2247.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,13/7,"2,278",2.278,,,,E0_khong_parse_duoc_JSON,2.276,2276.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,14/7,"2,247",2.247,,,,E0_khong_parse_duoc_JSON,2.330,2330.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,15/7,"2,276",2.276,,,,E0_khong_parse_duoc_JSON,2.331,2331.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,16/7,"2,222",2.222,,,,E0_khong_parse_duoc_JSON,2.273,2273.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,17/7,"2,145",2.145,,,,E0_khong_parse_duoc_JSON,2.346,2346.0,E2_sai_gia_tri
+line_018,line,Bán ra,18/7,"2,191",2.191,,,,E0_khong_parse_duoc_JSON,2.330,2330.0,E2_sai_gia_tri
+line_018,line,Bán ra,19/7,"2,191",2.191,,,,E0_khong_parse_duoc_JSON,2.276,2276.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,20/7,"2,227",2.227,,,,E0_khong_parse_duoc_JSON,2.346,2346.0,E2_sai_gia_tri
+line_018,line,Bán ra,21/7,"2,254",2.254,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_018,line,Bán ra,22/7,"2,322",2.322,,,,E0_khong_parse_duoc_JSON,2.252,2252.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,23/7,"2,304",2.304,,,,E0_khong_parse_duoc_JSON,2.342,2342.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Bán ra,24/7,"2,202",2.202,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_018,line,Bán ra,25/7,"2,235",2.235,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_018,line,Bán ra,26/7,"2,235",2.235,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_018,line,Bán ra,27/7,"2,285",2.285,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_018,line,Bán ra,28/7,"2,193",2.193,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_018,line,Mua vào,27/6,"2,245",2.245,,,,E0_khong_parse_duoc_JSON,2.245,2245.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,28/6,"2,245",2.245,,,,E0_khong_parse_duoc_JSON,2.245,2245.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,30/6,"2,174",2.174,,,,E0_khong_parse_duoc_JSON,2.174,2174.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,1/7,"2,182",2.182,,,,E0_khong_parse_duoc_JSON,2.081,2081.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,2/7,"2,276",2.276,,,,E0_khong_parse_duoc_JSON,2.125,2125.0,E2_sai_gia_tri
+line_018,line,Mua vào,3/7,"2,349",2.349,,,,E0_khong_parse_duoc_JSON,2.252,2252.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,4/7,"2,352",2.352,,,,E0_khong_parse_duoc_JSON,2.210,2210.0,E2_sai_gia_tri
+line_018,line,Mua vào,5/7,"2,352",2.352,,,,E0_khong_parse_duoc_JSON,2.136,2136.0,E2_sai_gia_tri
+line_018,line,Mua vào,6/7,"2,338",2.338,,,,E0_khong_parse_duoc_JSON,2.168,2168.0,E2_sai_gia_tri
+line_018,line,Mua vào,7/7,"2,323",2.323,,,,E0_khong_parse_duoc_JSON,2.125,2125.0,E2_sai_gia_tri
+line_018,line,Mua vào,8/7,"2,261",2.261,,,,E0_khong_parse_duoc_JSON,2.127,2127.0,E2_sai_gia_tri
+line_018,line,Mua vào,9/7,"2,205",2.205,,,,E0_khong_parse_duoc_JSON,2.125,2125.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,10/7,"2,276",2.276,,,,E0_khong_parse_duoc_JSON,2.182,2182.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,11/7,"2,260",2.26,,,,E0_khong_parse_duoc_JSON,2.276,2276.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,12/7,"2,260",2.26,,,,E0_khong_parse_duoc_JSON,2.249,2249.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,13/7,"2,210",2.21,,,,E0_khong_parse_duoc_JSON,2.260,2260.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,14/7,"2,180",2.18,,,,E0_khong_parse_duoc_JSON,2.340,2340.0,E2_sai_gia_tri
+line_018,line,Mua vào,15/7,"2,208",2.208,,,,E0_khong_parse_duoc_JSON,2.180,2180.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,16/7,"2,155",2.155,,,,E0_khong_parse_duoc_JSON,2.208,2208.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,17/7,"2,081",2.081,,,,E0_khong_parse_duoc_JSON,2.155,2155.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,18/7,"2,125",2.125,,,,E0_khong_parse_duoc_JSON,2.323,2323.0,E2_sai_gia_tri
+line_018,line,Mua vào,19/7,"2,125",2.125,,,,E0_khong_parse_duoc_JSON,2.261,2261.0,E2_sai_gia_tri
+line_018,line,Mua vào,20/7,"2,160",2.16,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_018,line,Mua vào,21/7,"2,186",2.186,,,,E0_khong_parse_duoc_JSON,2.160,2160.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,22/7,"2,252",2.252,,,,E0_khong_parse_duoc_JSON,2.186,2186.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,23/7,"2,235",2.235,,,,E0_khong_parse_duoc_JSON,2.276,2276.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,24/7,"2,136",2.136,,,,E0_khong_parse_duoc_JSON,2.235,2235.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,25/7,"2,168",2.168,,,,E0_khong_parse_duoc_JSON,2.352,2352.0,E2_sai_gia_tri
+line_018,line,Mua vào,26/7,"2,168",2.168,,,,E0_khong_parse_duoc_JSON,2.352,2352.0,E2_sai_gia_tri
+line_018,line,Mua vào,27/7,"2,216",2.216,,,,E0_khong_parse_duoc_JSON,2.216,2216.0,E1_sai_dinh_dang_hoac_bac_so
+line_018,line,Mua vào,28/7,"2,127",2.127,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Vietcombank),Oct-24,25000,25000.0,,,,E0_khong_parse_duoc_JSON,25000,25000.0,
+line_020,line,Tỷ giá USD/VND (Vietcombank),Dec-24,25523,25523.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Vietcombank),May-25,26110,26110.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Vietcombank),Sep-25,26497,26497.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Vietcombank),Oct-25,26352,26352.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Tự do),Oct-24,25360,25360.0,,,,E0_khong_parse_duoc_JSON,25360,25360.0,
+line_020,line,Tỷ giá USD/VND (Tự do),Dec-24,25900,25900.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Tự do),May-25,26550,26550.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Tự do),Sep-25,27015,27015.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_020,line,Tỷ giá USD/VND (Tự do),Oct-25,27620,27620.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2009,"75,6",75.6,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2014,"76,0",76.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2019,"76,3",76.3,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2024,"77,3",77.3,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2029,"77,9",77.9,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2034,"78,5",78.5,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2039,"79,1",79.1,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2044,"79,6",79.6,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2049,"80,1",80.1,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2054,"80,6",80.6,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2059,"81,1",81.1,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2064,"81,6",81.6,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2069,"82,0",82.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nữ,2074,"82,4",82.4,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2009,"70,2",70.2,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2014,"70,6",70.6,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2019,"71,1",71.1,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2024,"72,3",72.3,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2029,"73,0",73.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2034,"73,6",73.6,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2039,"74,3",74.3,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2044,"74,9",74.9,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2049,"75,4",75.4,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2054,"76,0",76.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2059,"76,5",76.5,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2064,"77,0",77.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2069,"77,5",77.5,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_021,line,Nam,2074,"77,9",77.9,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Tỷ suất sinh,1950,"3,5",3.5,,,,E0_khong_parse_duoc_JSON,3.5,3.5,
+line_022,line,Tỷ suất sinh,1960,"2,1",2.1,,,,E0_khong_parse_duoc_JSON,2.1,2.1,
+line_022,line,Tỷ suất sinh,1970,"2,08",2.08,,,,E0_khong_parse_duoc_JSON,2.08,2.08,
+line_022,line,Tỷ suất sinh,1980,"1,8",1.8,,,,E0_khong_parse_duoc_JSON,1.8,1.8,
+line_022,line,Tỷ suất sinh,1990,"1,58",1.58,,,,E0_khong_parse_duoc_JSON,1.58,1.58,
+line_022,line,Tỷ suất sinh,2000,"1,34",1.34,,,,E0_khong_parse_duoc_JSON,1.34,1.34,
+line_022,line,Tỷ suất sinh,2010,"1,36",1.36,,,,E0_khong_parse_duoc_JSON,1.36,1.36,
+line_022,line,Tỷ suất sinh,2020,"1,36",1.36,,,,E0_khong_parse_duoc_JSON,1.36,1.36,
+line_022,line,Dân số,1950,84,84.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Dân số,1960,94,94.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Dân số,1970,105,105.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Dân số,1980,117,117.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Dân số,1990,123,123.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Dân số,2000,127,127.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Dân số,2010,128,128.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_022,line,Dân số,2020,125,125.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+line_023,line,Dân số,1995,100,100.0,100,100.0,0.0,,100,100.0,
+line_023,line,Dân số,1998,"103,5",103.5,"103,5",103.5,0.0,,"103,5",103.5,
+line_023,line,Dân số,2000,"105,6",105.6,"105,6",105.6,0.0,,"105,6",105.6,
+line_023,line,Dân số,2002,"108,2",108.2,"108,2",108.2,0.0,,"108,2",108.2,
+line_023,line,Sản lượng lương thực,1995,100,100.0,100,100.0,0.0,,100,100.0,
+line_023,line,Sản lượng lương thực,1998,"117,7",117.7,"117,7",117.7,0.0,,"117,7",117.7,
+line_023,line,Sản lượng lương thực,2000,"128,6",128.6,"128,6",128.6,0.0,,"128,6",128.6,
+line_023,line,Sản lượng lương thực,2002,"131,1",131.1,"131,1",131.1,0.0,,"131,1",131.1,
+line_023,line,Bình quân lương thực theo đầu người,1995,100,100.0,100,100.0,0.0,,100,100.0,
+line_023,line,Bình quân lương thực theo đầu người,1998,"113,8",113.8,"113,8",113.8,0.0,,"113,8",113.8,
+line_023,line,Bình quân lương thực theo đầu người,2000,"121,8",121.8,"121,8",121.8,0.0,,"121,8",121.8,
+line_023,line,Bình quân lương thực theo đầu người,2002,"121,2",121.2,"121,2",121.2,0.0,,"121,2",121.2,
+line_024,line,GDP,1990,"967,3",967.3,967.3,967.3,0.0,,967.3,967.3,
+line_024,line,GDP,1995,"363,9",363.9,368.9,368.9,0.0137,,368.9,368.9,
+line_024,line,GDP,2000,"259,7",259.7,259.7,259.7,0.0,,259.7,259.7,
+line_024,line,GDP,2003,"432,9",432.9,432.9,432.9,0.0,,432.9,432.9,
+line_024,line,GDP,2004,"582,4",582.4,582.4,582.4,0.0,,582.4,582.4,
+line_026,line,Việt Nam,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_026,line,Việt Nam,2012,"138,8",138.8,138.8,138.8,0.0,,138.8,138.8,
+line_026,line,Việt Nam,2013,"152,1",152.1,152.1,152.1,0.0,,152.1,152.1,
+line_026,line,Việt Nam,2014,"165,5",165.5,165.5,165.5,0.0,,165.5,165.5,
+line_026,line,Việt Nam,2015,"173,4",173.4,173.4,173.4,0.0,,173.4,173.4,
+line_026,line,Thái Lan,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_026,line,Thái Lan,2012,"120,5",120.5,120.5,120.5,0.0,,120.5,120.5,
+line_026,line,Thái Lan,2013,"127,4",127.4,129.4,129.4,0.0157,,129.4,129.4,
+line_026,line,Thái Lan,2014,"121,8",121.8,127.4,127.4,0.046,,127.4,127.4,
+line_026,line,Thái Lan,2015,"118,8",118.8,118.8,118.8,0.0,,118.8,118.8,
+line_026,line,Brunei,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_026,line,Brunei,2012,105,105.0,105,105.0,0.0,,105,105.0,
+line_026,line,Brunei,2013,"102,4",102.4,102.4,102.4,0.0,,102.4,102.4,
+line_026,line,Brunei,2014,"101,8",101.8,101.8,101.8,0.0,,101.8,101.8,
+line_026,line,Brunei,2015,"100,1",100.1,100.1,100.1,0.0,,100.1,100.1,
+line_026,line,Cam-pu-chia,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_026,line,Cam-pu-chia,2012,"120,7",120.7,120.7,120.7,0.0,,120.7,120.7,
+line_026,line,Cam-pu-chia,2013,"129,4",129.4,129.4,129.4,0.0,,129.4,129.4,
+line_026,line,Cam-pu-chia,2014,"142,7",142.7,142.7,142.7,0.0,,142.7,142.7,
+line_026,line,Cam-pu-chia,2015,"151,5",151.5,151.5,151.5,0.0,,151.5,151.5,
+line_027,line,Đường hàng không,2010,"4091,7",4091.7,"4091,7",4091.7,0.0,,"4091,7",4091.7,
+line_027,line,Đường hàng không,2012,"5575,9",5575.9,"5575,9",5575.9,0.0,,"5575,9",5575.9,
+line_027,line,Đường hàng không,2014,"6220,2",6220.2,"6220,2",6220.2,0.0,,"6220,2",6220.2,
+line_027,line,Đường hàng không,2015,"6271,2",6271.2,"6271,2",6271.2,0.0,,"6271,2",6271.2,
+line_027,line,Đường thuỷ,2010,"50,5",50.5,"50,5",50.5,0.0,,"50,5",50.5,
+line_027,line,Đường thuỷ,2012,"285,8",285.8,"285,8",285.8,0.0,,"285,8",285.8,
+line_027,line,Đường thuỷ,2014,"133,2",133.2,"133,2",133.2,0.0,,"133,2",133.2,
+line_027,line,Đường thuỷ,2015,"169,8",169.8,"169,8",169.8,0.0,,"169,8",169.8,
+line_027,line,Đường bộ,2010,"937,6",937.6,"937,6",937.6,0.0,,"937,6",937.6,
+line_027,line,Đường bộ,2012,"986,3",986.3,"986,3",986.3,0.0,,"986,3",986.3,
+line_027,line,Đường bộ,2014,"1606,5",1606.5,"1606,5",1606.5,0.0,,"1606,5",1606.5,
+line_027,line,Đường bộ,2015,"1502,6",1502.6,"1502,6",1502.6,0.0,,"1502,6",1502.6,
+line_028,line,Cà phê,2010,"518,2",518.2,518.2,518.2,0.0,,518.2,518.2,
+line_028,line,Cà phê,2013,"581,3",581.3,581.3,581.3,0.0,,581.3,581.3,
+line_028,line,Cà phê,2014,"588,8",588.8,588.8,588.8,0.0,,588.8,588.8,
+line_028,line,Cà phê,2015,"604,3",604.3,604.3,604.3,0.0,,604.3,604.3,
+line_028,line,Cà phê,2016,"622,2",622.2,622.2,622.2,0.0,,622.2,622.2,
+line_028,line,Cao su,2010,"429,1",429.1,429.1,429.1,0.0,,429.1,429.1,
+line_028,line,Cao su,2013,"548,8",548.8,548.8,548.8,0.0,,548.8,548.8,
+line_028,line,Cao su,2014,570,570.0,570,570.0,0.0,,570,570.0,
+line_028,line,Cao su,2015,"593,8",593.8,593.8,593.8,0.0,,593.8,593.8,
+line_028,line,Cao su,2016,"600,1",600.1,600.1,600.1,0.0,,600.1,600.1,
+line_028,line,Điều,2010,"339,8",339.8,339.8,339.8,0.0,,339.8,339.8,
+line_028,line,Điều,2013,"300,9",300.9,300.9,300.9,0.0,,300.9,300.9,
+line_028,line,Điều,2014,"285,8",285.8,285.8,285.8,0.0,,285.8,285.8,
+line_028,line,Điều,2015,"280,3",280.3,280.3,280.3,0.0,,280.3,280.3,
+line_028,line,Điều,2016,"288,3",288.3,288.3,288.3,0.0,,288.3,288.3,
+line_029,line,Thuỷ sản ướp đông,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_029,line,Thuỷ sản ướp đông,2007,"119,6",119.6,119.6,119.6,0.0,,119.6,119.6,
+line_029,line,Thuỷ sản ướp đông,2009,"172,8",172.8,172.8,172.8,0.0,,172.8,172.8,
+line_029,line,Thuỷ sản ướp đông,2010,"187,5",187.5,187.5,187.5,0.0,,187.5,187.5,
+line_029,line,Thuỷ sản ướp đông,2013,"214,7",214.7,214.7,214.7,0.0,,214.7,214.7,
+line_029,line,Bia các loại,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_029,line,Bia các loại,2007,"113,3",113.3,113.3,113.3,0.0,,113.3,113.3,
+line_029,line,Bia các loại,2009,"137,4",137.4,137.4,137.4,0.0,,137.4,137.4,
+line_029,line,Bia các loại,2010,"165,7",165.7,165.7,165.7,0.0,,165.7,165.7,
+line_029,line,Bia các loại,2013,"205,7",205.7,205.7,205.7,0.0,,205.7,205.7,
+line_029,line,Gạo xay xát,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_029,line,Gạo xay xát,2007,"108,3",108.3,108.3,108.3,0.0,,108.3,108.3,
+line_029,line,Gạo xay xát,2009,"117,4",117.4,117.4,117.4,0.0,,117.4,117.4,
+line_029,line,Gạo xay xát,2010,"117,7",117.7,117.7,117.7,0.0,,117.7,117.7,
+line_029,line,Gạo xay xát,2013,"144,3",144.3,144.3,144.3,0.0,,144.3,144.3,
+line_029,line,Muối biển,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_029,line,Muối biển,2007,"95,5",95.5,108.3,108.3,0.134,E2_sai_gia_tri,108.3,108.3,E2_sai_gia_tri
+line_029,line,Muối biển,2009,"75,6",75.6,75.6,75.6,0.0,,75.6,75.6,
+line_029,line,Muối biển,2010,"108,6",108.6,108.6,108.6,0.0,,108.6,108.6,
+line_029,line,Muối biển,2013,83,83.0,83,83.0,0.0,,83,83.0,
+line_030,line,Sản lượng lương thực,1990,100,100.0,100.0,100.0,0.0,,100.0,100.0,
+line_030,line,Sản lượng lương thực,2000,"173,7",173.7,148.7,148.7,0.1439,E2_sai_gia_tri,148.7,148.7,E2_sai_gia_tri
+line_030,line,Sản lượng lương thực,2005,"199,3",199.3,159.7,159.7,0.1987,E2_sai_gia_tri,159.7,159.7,E2_sai_gia_tri
+line_030,line,Sản lượng lương thực,2010,"224,5",224.5,170.5,170.5,0.2405,E2_sai_gia_tri,170.5,170.5,E2_sai_gia_tri
+line_030,line,Sản lượng lương thực,2015,254,254.0,254.0,254.0,0.0,,254.0,254.0,
+line_030,line,Bình quân lương thực đầu người,1990,100,100.0,100.0,100.0,0.0,,100.0,100.0,
+line_030,line,Bình quân lương thực đầu người,2000,"148,7",148.7,117.6,117.6,0.2091,E2_sai_gia_tri,117.6,117.6,E2_sai_gia_tri
+line_030,line,Bình quân lương thực đầu người,2005,"159,7",159.7,124.8,124.8,0.2185,E2_sai_gia_tri,124.8,124.8,E2_sai_gia_tri
+line_030,line,Bình quân lương thực đầu người,2010,"170,5",170.5,131.7,131.7,0.2276,E2_sai_gia_tri,131.7,131.7,E2_sai_gia_tri
+line_030,line,Bình quân lương thực đầu người,2015,"182,9",182.9,182.9,182.9,0.0,,182.9,182.9,
+line_030,line,Tổng số dân,1990,100,100.0,100.0,100.0,0.0,,100.0,100.0,
+line_030,line,Tổng số dân,2000,"117,6",117.6,117.6,117.6,0.0,,117.6,117.6,
+line_030,line,Tổng số dân,2005,"124,8",124.8,124.8,124.8,0.0,,124.8,124.8,
+line_030,line,Tổng số dân,2010,"131,7",131.7,131.7,131.7,0.0,,131.7,131.7,
+line_030,line,Tổng số dân,2015,"138,9",138.9,138.9,138.9,0.0,,138.9,138.9,
+line_031,line,Xuất khẩu,2000,37,37.0,37,37.0,0.0,,37,37.0,
+line_031,line,Xuất khẩu,2005,"68,2",68.2,68.2,68.2,0.0,,68.2,68.2,
+line_031,line,Xuất khẩu,2010,"107,6",107.6,107.6,107.6,0.0,,107.6,107.6,
+line_031,line,Xuất khẩu,2015,"96,1",96.1,100.6,100.6,0.0468,,100.6,100.6,
+line_031,line,Xuất khẩu,2020,"93,2",93.2,93.2,93.2,0.0,,93.2,93.2,
+line_031,line,Nhập khẩu,2000,"33,1",33.1,33.1,33.1,0.0,,33.1,33.1,
+line_031,line,Nhập khẩu,2005,"68,8",68.8,68.8,68.8,0.0,,68.8,68.8,
+line_031,line,Nhập khẩu,2010,"102,8",102.8,102.8,102.8,0.0,,102.8,102.8,
+line_031,line,Nhập khẩu,2015,"100,6",100.6,96.1,96.1,0.0447,,96.1,96.1,
+line_031,line,Nhập khẩu,2020,"78,3",78.3,78.3,78.3,0.0,,78.3,78.3,
+line_032,line,Dầu mỏ,1990,100,100.0,100,100.0,0.0,,100,100.0,
+line_032,line,Dầu mỏ,2000,"113,9",113.9,113.9,113.9,0.0,,113.9,113.9,
+line_032,line,Dầu mỏ,2010,126,126.0,126,126.0,0.0,,126,126.0,
+line_032,line,Dầu mỏ,2020,"131,9",131.9,131.9,131.9,0.0,,131.9,131.9,
+line_032,line,Điện,1990,100,100.0,100,100.0,0.0,,100,100.0,
+line_032,line,Điện,2000,"127,1",127.1,127.1,127.1,0.0,,127.1,127.1,
+line_032,line,Điện,2010,"177,2",177.2,177.2,177.2,0.0,,177.2,177.2,
+line_032,line,Điện,2020,"217,5",217.5,217.5,217.5,0.0,,217.5,217.5,
+line_033,line,Cà phê,2010,"518,2",518.2,518.2,518.2,0.0,,518.2,518.2,
+line_033,line,Cà phê,2013,"581,3",581.3,581.3,581.3,0.0,,581.3,581.3,
+line_033,line,Cà phê,2014,"588,8",588.8,588.8,588.8,0.0,,588.8,588.8,
+line_033,line,Cà phê,2015,"604,3",604.3,604.3,604.3,0.0,,604.3,604.3,
+line_033,line,Cà phê,2016,"622,2",622.2,622.2,622.2,0.0,,622.2,622.2,
+line_033,line,Cao su,2010,"429,1",429.1,429.1,429.1,0.0,,429.1,429.1,
+line_033,line,Cao su,2013,"548,8",548.8,548.8,548.8,0.0,,548.8,548.8,
+line_033,line,Cao su,2014,570,570.0,570,570.0,0.0,,570,570.0,
+line_033,line,Cao su,2015,"593,8",593.8,593.8,593.8,0.0,,593.8,593.8,
+line_033,line,Cao su,2016,"600,1",600.1,600.1,600.1,0.0,,600.1,600.1,
+line_033,line,Điều,2010,"339,8",339.8,339.8,339.8,0.0,,339.8,339.8,
+line_033,line,Điều,2013,"300,9",300.9,300.9,300.9,0.0,,300.9,300.9,
+line_033,line,Điều,2014,"285,8",285.8,285.8,285.8,0.0,,285.8,285.8,
+line_033,line,Điều,2015,"280,3",280.3,280.3,280.3,0.0,,280.3,280.3,
+line_033,line,Điều,2016,"288,3",288.3,288.3,288.3,0.0,,288.3,288.3,
+line_034,line,Tổng nợ,1990,1310,1310.0,1310,1310.0,0.0,,1310,1310.0,
+line_034,line,Tổng nợ,1998,2465,2465.0,2465,2465.0,0.0,,2465,2465.0,
+line_034,line,Tổng nợ,2000,2498,2498.0,2498,2498.0,0.0,,2498,2498.0,
+line_034,line,Tổng nợ,2004,2724,2724.0,2724,2724.0,0.0,,2724,2724.0,
+line_035,line,Tốc độ tăng GDP,1990,"5,1",5.1,5.1,5.1,0.0,,5.1,5.1,
+line_035,line,Tốc độ tăng GDP,1995,"1,5",1.5,1.5,1.5,0.0,,1.5,1.5,
+line_035,line,Tốc độ tăng GDP,1997,"1,9",1.9,1.9,1.9,0.0,,1.9,1.9,
+line_035,line,Tốc độ tăng GDP,1999,"0,8",0.8,0.8,0.8,0.0,,0.8,0.8,
+line_035,line,Tốc độ tăng GDP,2001,"0,4",0.4,0.4,0.4,0.0,,0.4,0.4,
+line_035,line,Tốc độ tăng GDP,2003,"2,7",2.7,2.7,2.7,0.0,,2.7,2.7,
+line_035,line,Tốc độ tăng GDP,2005,"2,5",2.5,2.5,2.5,0.0,,2.5,2.5,
+line_036,line,Thuỷ sản ướp đông,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_036,line,Thuỷ sản ướp đông,2007,"119,6",119.6,113.3,113.3,0.0527,E2_sai_gia_tri,113.3,113.3,E2_sai_gia_tri
+line_036,line,Thuỷ sản ướp đông,2009,"172,8",172.8,172.8,172.8,0.0,,172.8,172.8,
+line_036,line,Thuỷ sản ướp đông,2010,"187,5",187.5,187.5,187.5,0.0,,187.5,187.5,
+line_036,line,Thuỷ sản ướp đông,2013,"214,7",214.7,214.7,214.7,0.0,,214.7,214.7,
+line_036,line,Bia các loại,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_036,line,Bia các loại,2007,"113,3",113.3,119.6,119.6,0.0556,E2_sai_gia_tri,119.6,119.6,E2_sai_gia_tri
+line_036,line,Bia các loại,2009,"137,4",137.4,137.4,137.4,0.0,,137.4,137.4,
+line_036,line,Bia các loại,2010,"165,7",165.7,165.7,165.7,0.0,,165.7,165.7,
+line_036,line,Bia các loại,2013,"205,7",205.7,205.7,205.7,0.0,,205.7,205.7,
+line_036,line,Gạo xay xát,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_036,line,Gạo xay xát,2007,"108,3",108.3,117.4,117.4,0.084,E2_sai_gia_tri,117.4,117.4,E2_sai_gia_tri
+line_036,line,Gạo xay xát,2009,"117,4",117.4,108.3,108.3,0.0775,E2_sai_gia_tri,108.3,108.3,E2_sai_gia_tri
+line_036,line,Gạo xay xát,2010,"117,7",117.7,117.7,117.7,0.0,,117.7,117.7,
+line_036,line,Gạo xay xát,2013,"144,3",144.3,144.3,144.3,0.0,,144.3,144.3,
+line_036,line,Muối biển,2005,100,100.0,100,100.0,0.0,,100,100.0,
+line_036,line,Muối biển,2007,"95,5",95.5,95.5,95.5,0.0,,95.5,95.5,
+line_036,line,Muối biển,2009,"75,6",75.6,75.6,75.6,0.0,,75.6,75.6,
+line_036,line,Muối biển,2010,"108,6",108.6,108.6,108.6,0.0,,108.6,108.6,
+line_036,line,Muối biển,2013,83,83.0,83,83.0,0.0,,83,83.0,
+line_037,line,Cà phê,2010,"518,2",518.2,518.2,518.2,0.0,,518.2,518.2,
+line_037,line,Cà phê,2013,"581,3",581.3,581.3,581.3,0.0,,581.3,581.3,
+line_037,line,Cà phê,2014,"588,8",588.8,588.8,588.8,0.0,,588.8,588.8,
+line_037,line,Cà phê,2015,"604,3",604.3,600.1,600.1,0.007,,600.1,600.1,
+line_037,line,Cà phê,2016,"622,2",622.2,600.1,600.1,0.0355,,600.1,600.1,
+line_037,line,Cao su,2010,"429,1",429.1,429.1,429.1,0.0,,429.1,429.1,
+line_037,line,Cao su,2013,"548,8",548.8,548.8,548.8,0.0,,548.8,548.8,
+line_037,line,Cao su,2014,570,570.0,570,570.0,0.0,,570,570.0,
+line_037,line,Cao su,2015,"593,8",593.8,604.3,604.3,0.0177,,604.3,604.3,
+line_037,line,Cao su,2016,"600,1",600.1,622.2,622.2,0.0368,,622.2,622.2,
+line_037,line,Điều,2010,"339,8",339.8,339.8,339.8,0.0,,339.8,339.8,
+line_037,line,Điều,2013,"300,9",300.9,300.9,300.9,0.0,,300.9,300.9,
+line_037,line,Điều,2014,"285,8",285.8,285.8,285.8,0.0,,285.8,285.8,
+line_037,line,Điều,2015,"280,3",280.3,280.3,280.3,0.0,,280.3,280.3,
+line_037,line,Điều,2016,"288,3",288.3,288.3,288.3,0.0,,288.3,288.3,
+line_038,line,Than,2000,100,100.0,100.0,100.0,0.0,,100.0,100.0,
+line_038,line,Than,2006,"335,3",335.3,335.3,335.3,0.0,,335.3,335.3,
+line_038,line,Than,2010,"386,2",386.2,386.2,386.2,0.0,,386.2,386.2,
+line_038,line,Than,2012,"362,9",362.9,362.9,362.9,0.0,,362.9,362.9,
+line_038,line,Than,2014,"359,4",359.4,359.4,359.4,0.0,,359.4,359.4,
+line_038,line,Điện,2000,100,100.0,100.0,100.0,0.0,,100.0,100.0,
+line_038,line,Điện,2006,"222,4",222.4,221.3,221.3,0.0049,,221.3,221.3,
+line_038,line,Điện,2010,"365,9",365.9,365.9,365.9,0.0,,365.9,365.9,
+line_038,line,Điện,2012,431,431.0,421.1,421.1,0.023,,421.1,421.1,
+line_038,line,Điện,2014,525,525.0,525,525.0,0.0,,525,525.0,
+line_038,line,Phân bón hóa học,2000,100,100.0,100.0,100.0,0.0,,100.0,100.0,
+line_038,line,Phân bón hóa học,2006,"221,3",221.3,222.4,222.4,0.005,,222.4,222.4,
+line_038,line,Phân bón hóa học,2010,"246,6",246.6,246.6,246.6,0.0,,246.6,246.6,
+line_038,line,Phân bón hóa học,2012,"327,7",327.7,327.7,327.7,0.0,,327.7,327.7,
+line_038,line,Phân bón hóa học,2014,"421,1",421.1,421.1,421.1,0.0,,421.1,421.1,
+line_039,line,Việt Nam,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_039,line,Việt Nam,2012,"138,8",138.8,138.8,138.8,0.0,,138.8,138.8,
+line_039,line,Việt Nam,2013,"152,1",152.1,152.1,152.1,0.0,,152.1,152.1,
+line_039,line,Việt Nam,2014,"165,5",165.5,165.5,165.5,0.0,,165.5,165.5,
+line_039,line,Việt Nam,2015,"173,4",173.4,173.4,173.4,0.0,,173.4,173.4,
+line_039,line,Thái Lan,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_039,line,Thái Lan,2012,"120,5",120.5,120.7,120.7,0.0017,,120.7,120.7,
+line_039,line,Thái Lan,2013,"127,4",127.4,127.4,127.4,0.0,,127.4,127.4,
+line_039,line,Thái Lan,2014,"121,8",121.8,121.8,121.8,0.0,,121.8,121.8,
+line_039,line,Thái Lan,2015,"118,8",118.8,118.8,118.8,0.0,,118.8,118.8,
+line_039,line,Brunei,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_039,line,Brunei,2012,105,105.0,105,105.0,0.0,,105,105.0,
+line_039,line,Brunei,2013,"102,4",102.4,102.4,102.4,0.0,,102.4,102.4,
+line_039,line,Brunei,2014,"101,8",101.8,101.8,101.8,0.0,,101.8,101.8,
+line_039,line,Brunei,2015,"100,1",100.1,100.1,100.1,0.0,,100.1,100.1,
+line_039,line,Cam-pu-chia,2011,100,100.0,100,100.0,0.0,,100,100.0,
+line_039,line,Cam-pu-chia,2012,"120,7",120.7,120.5,120.5,0.0017,,120.5,120.5,
+line_039,line,Cam-pu-chia,2013,"129,4",129.4,129.4,129.4,0.0,,129.4,129.4,
+line_039,line,Cam-pu-chia,2014,"142,7",142.7,142.7,142.7,0.0,,142.7,142.7,
+line_039,line,Cam-pu-chia,2015,"151,5",151.5,151.5,151.5,0.0,,151.5,151.5,
+line_042,line,Tần số tương đối,4.5,20,20.0,20,20.0,0.0,,20,20.0,
+line_042,line,Tần số tương đối,5.5,40,40.0,40,40.0,0.0,,40,40.0,
+line_042,line,Tần số tương đối,6.5,"26,7",26.7,26.7,26.7,0.0,,26.7,26.7,
+line_042,line,Tần số tương đối,7.5,10,10.0,10,10.0,0.0,,10,10.0,
+line_042,line,Tần số tương đối,8.5,"3,3",3.3,3.3,3.3,0.0,,3.3,3.3,
+line_044,line,Thủy cung,1980,20,20.0,10.5,10.5,0.475,E2_sai_gia_tri,10.5,10.5,E2_sai_gia_tri
+line_044,line,Thủy cung,1985,35,35.0,15.5,15.5,0.5571,E2_sai_gia_tri,15.5,15.5,E2_sai_gia_tri
+line_044,line,Thủy cung,1990,20,20.0,19.5,19.5,0.025,,19.5,19.5,
+line_044,line,Thủy cung,1995,23,23.0,22.5,22.5,0.0217,,22.5,22.5,
+line_044,line,Thủy cung,2000,20,20.0,20.5,20.5,0.025,,20.5,20.5,
+line_044,line,Thủy cung,2005,15,15.0,15.5,15.5,0.0333,,15.5,15.5,
+line_044,line,Thủy cung,2010,9,9.0,9.5,9.5,0.0556,E2_sai_gia_tri,9.5,9.5,E2_sai_gia_tri
+line_044,line,Lâu đài,1980,23,23.0,23.5,23.5,0.0217,,23.5,23.5,
+line_044,line,Lâu đài,1985,27,27.0,27.5,27.5,0.0185,,27.5,27.5,
+line_044,line,Lâu đài,1990,40,40.0,39.5,39.5,0.0125,,39.5,39.5,
+line_044,line,Lâu đài,1995,45,45.0,45.5,45.5,0.0111,,45.5,45.5,
+line_044,line,Lâu đài,2000,35,35.0,35.5,35.5,0.0143,,35.5,35.5,
+line_044,line,Lâu đài,2005,34,34.0,28.5,28.5,0.1618,E2_sai_gia_tri,28.5,28.5,E2_sai_gia_tri
+line_044,line,Lâu đài,2010,33,33.0,32.5,32.5,0.0152,,32.5,32.5,
+line_044,line,Sở thú,1980,10,10.0,19.5,19.5,0.95,E2_sai_gia_tri,19.5,19.5,E2_sai_gia_tri
+line_044,line,Sở thú,1985,15,15.0,15.5,15.5,0.0333,,15.5,15.5,
+line_044,line,Sở thú,1990,9,9.0,9.5,9.5,0.0556,E2_sai_gia_tri,9.5,9.5,E2_sai_gia_tri
+line_044,line,Sở thú,1995,12,12.0,12.5,12.5,0.0417,,12.5,12.5,
+line_044,line,Sở thú,2000,10,10.0,10.5,10.5,0.05,,10.5,10.5,
+line_044,line,Sở thú,2005,15,15.0,15.5,15.5,0.0333,,15.5,15.5,
+line_044,line,Sở thú,2010,20,20.0,20.5,20.5,0.025,,20.5,20.5,
+line_044,line,Lễ hội,1980,30,30.0,29.5,29.5,0.0167,,29.5,29.5,
+line_044,line,Lễ hội,1985,27,27.0,15.5,15.5,0.4259,E2_sai_gia_tri,15.5,15.5,E2_sai_gia_tri
+line_044,line,Lễ hội,1990,25,25.0,9.5,9.5,0.62,E2_sai_gia_tri,9.5,9.5,E2_sai_gia_tri
+line_044,line,Lễ hội,1995,24,24.0,12.5,12.5,0.4792,E2_sai_gia_tri,12.5,12.5,E2_sai_gia_tri
+line_044,line,Lễ hội,2000,23,23.0,18.5,18.5,0.1957,E2_sai_gia_tri,18.5,18.5,E2_sai_gia_tri
+line_044,line,Lễ hội,2005,20,20.0,15.5,15.5,0.225,E2_sai_gia_tri,15.5,15.5,E2_sai_gia_tri
+line_044,line,Lễ hội,2010,18,18.0,17.5,17.5,0.0278,,17.5,17.5,
+line_051,line,Trung Quốc,2000,"1,2",1.2,1.2,1.2,0.0,,1.2,1.2,
+line_051,line,Trung Quốc,2005,"1,29",1.29,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Trung Quốc,2010,"1,31",1.31,1.3,1.3,0.0076,,1.3,1.3,
+line_051,line,Trung Quốc,2015,"1,39",1.39,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Trung Quốc,2020,"1,4",1.4,1.4,1.4,0.0,,1.4,1.4,
+line_051,line,Trung Quốc,2025,"1,41",1.41,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Trung Quốc,2030,"1,4",1.4,1.5,1.5,0.0714,E2_sai_gia_tri,1.5,1.5,E2_sai_gia_tri
+line_051,line,Trung Quốc,2035,"1,4",1.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Trung Quốc,2040,"1,4",1.4,1.4,1.4,0.0,,1.4,1.4,
+line_051,line,Trung Quốc,2045,"1,39",1.39,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Trung Quốc,2050,"1,38",1.38,1.3,1.3,0.058,E2_sai_gia_tri,1.3,1.3,E2_sai_gia_tri
+line_051,line,Ấn độ,2000,1,1.0,1.0,1.0,0.0,,1.0,1.0,
+line_051,line,Ấn độ,2005,"1,05",1.05,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Ấn độ,2010,"1,1",1.1,1.1,1.1,0.0,,1.1,1.1,
+line_051,line,Ấn độ,2015,"1,2",1.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Ấn độ,2020,"1,29",1.29,1.2,1.2,0.0698,E2_sai_gia_tri,1.2,1.2,E2_sai_gia_tri
+line_051,line,Ấn độ,2025,"1,38",1.38,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Ấn độ,2030,"1,41",1.41,1.3,1.3,0.078,E2_sai_gia_tri,1.3,1.3,E2_sai_gia_tri
+line_051,line,Ấn độ,2035,"1,49",1.49,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Ấn độ,2040,"1,51",1.51,1.4,1.4,0.0728,E2_sai_gia_tri,1.4,1.4,E2_sai_gia_tri
+line_051,line,Ấn độ,2045,"1,58",1.58,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+line_051,line,Ấn độ,2050,"1,59",1.59,1.5,1.5,0.0566,E2_sai_gia_tri,1.5,1.5,E2_sai_gia_tri
+line_052,line,Qua điện thoại,Tháng 1,1000,1000.0,1000,1000.0,0.0,,1000,1000.0,
+line_052,line,Qua điện thoại,Tháng 2,900,900.0,1000,1000.0,0.1111,E2_sai_gia_tri,1000,1000.0,E2_sai_gia_tri
+line_052,line,Qua điện thoại,Tháng 3,1100,1100.0,1200,1200.0,0.0909,E2_sai_gia_tri,1200,1200.0,E2_sai_gia_tri
+line_052,line,Qua điện thoại,Tháng 4,1050,1050.0,1400,1400.0,0.3333,E2_sai_gia_tri,1400,1400.0,E2_sai_gia_tri
+line_052,line,Qua điện thoại,Tháng 5,1425,1425.0,1600,1600.0,0.1228,E2_sai_gia_tri,1600,1600.0,E2_sai_gia_tri
+line_052,line,Qua điện thoại,Tháng 6,1625,1625.0,1800,1800.0,0.1077,E2_sai_gia_tri,1800,1800.0,E2_sai_gia_tri
+line_052,line,Qua thư/email,Tháng 1,800,800.0,700,700.0,0.125,E2_sai_gia_tri,700,700.0,E2_sai_gia_tri
+line_052,line,Qua thư/email,Tháng 2,800,800.0,700,700.0,0.125,E2_sai_gia_tri,700,700.0,E2_sai_gia_tri
+line_052,line,Qua thư/email,Tháng 3,795,795.0,600,600.0,0.2453,E2_sai_gia_tri,600,600.0,E2_sai_gia_tri
+line_052,line,Qua thư/email,Tháng 4,595,595.0,500,500.0,0.1597,E2_sai_gia_tri,500,500.0,E2_sai_gia_tri
+line_052,line,Qua thư/email,Tháng 5,370,370.0,400,400.0,0.0811,E2_sai_gia_tri,400,400.0,E2_sai_gia_tri
+line_052,line,Qua thư/email,Tháng 6,340,340.0,400,400.0,0.1765,E2_sai_gia_tri,400,400.0,E2_sai_gia_tri
+line_052,line,Trực tiếp,Tháng 1,450,450.0,400,400.0,0.1111,E2_sai_gia_tri,400,400.0,E2_sai_gia_tri
+line_052,line,Trực tiếp,Tháng 2,680,680.0,600,600.0,0.1176,E2_sai_gia_tri,600,600.0,E2_sai_gia_tri
+line_052,line,Trực tiếp,Tháng 3,850,850.0,800,800.0,0.0588,E2_sai_gia_tri,800,800.0,E2_sai_gia_tri
+line_052,line,Trực tiếp,Tháng 4,1400,1400.0,1000,1000.0,0.2857,E2_sai_gia_tri,1200,1200.0,E2_sai_gia_tri
+line_052,line,Trực tiếp,Tháng 5,1750,1750.0,1200,1200.0,0.3143,E2_sai_gia_tri,1600,1600.0,E2_sai_gia_tri
+line_052,line,Trực tiếp,Tháng 6,1950,1950.0,1600,1600.0,0.1795,E2_sai_gia_tri,1000,1000.0,E2_sai_gia_tri
+line_053,line,Ngành A,1990,50,50.0,50,50.0,0.0,,50,50.0,
+line_053,line,Ngành A,1995,48,48.0,47,47.0,0.0208,,47,47.0,
+line_053,line,Ngành A,2000,44,44.0,43,43.0,0.0227,,43,43.0,
+line_053,line,Ngành A,2005,46,46.0,46,46.0,0.0,,46,46.0,
+line_053,line,Ngành A,2010,43,43.0,42,42.0,0.0233,,42,42.0,
+line_053,line,Ngành A,2015,39,39.0,38,38.0,0.0256,,38,38.0,
+line_053,line,Ngành A,2020,40,40.0,39,39.0,0.025,,39,39.0,
+line_053,line,Ngành A,2025,35,35.0,36,36.0,0.0286,,36,36.0,
+line_053,line,Ngành B,1990,25,25.0,24,24.0,0.04,,24,24.0,
+line_053,line,Ngành B,1995,28,28.0,27,27.0,0.0357,,27,27.0,
+line_053,line,Ngành B,2000,31,31.0,29,29.0,0.0645,E2_sai_gia_tri,29,29.0,E2_sai_gia_tri
+line_053,line,Ngành B,2005,29,29.0,29,29.0,0.0,,29,29.0,
+line_053,line,Ngành B,2010,35,35.0,35,35.0,0.0,,35,35.0,
+line_053,line,Ngành B,2015,38,38.0,36,36.0,0.0526,E2_sai_gia_tri,36,36.0,E2_sai_gia_tri
+line_053,line,Ngành B,2020,33,33.0,35,35.0,0.0606,E2_sai_gia_tri,35,35.0,E2_sai_gia_tri
+line_053,line,Ngành B,2025,35,35.0,37,37.0,0.0571,E2_sai_gia_tri,37,37.0,E2_sai_gia_tri
+line_053,line,Ngành C,1990,17,17.0,22,22.0,0.2941,E2_sai_gia_tri,22,22.0,E2_sai_gia_tri
+line_053,line,Ngành C,1995,18,18.0,25,25.0,0.3889,E2_sai_gia_tri,25,25.0,E2_sai_gia_tri
+line_053,line,Ngành C,2000,20,20.0,28,28.0,0.4,E2_sai_gia_tri,28,28.0,E2_sai_gia_tri
+line_053,line,Ngành C,2005,23,23.0,31,31.0,0.3478,E2_sai_gia_tri,31,31.0,E2_sai_gia_tri
+line_053,line,Ngành C,2010,25,25.0,30,30.0,0.2,E2_sai_gia_tri,30,30.0,E2_sai_gia_tri
+line_053,line,Ngành C,2015,28,28.0,28,28.0,0.0,,28,28.0,
+line_053,line,Ngành C,2020,30,30.0,29,29.0,0.0333,,29,29.0,
+line_053,line,Ngành C,2025,29,29.0,27,27.0,0.069,E2_sai_gia_tri,27,27.0,E2_sai_gia_tri
+line_053,line,Ngành D,1990,38,38.0,38,38.0,0.0,,38,38.0,
+line_053,line,Ngành D,1995,36,36.0,36,36.0,0.0,,36,36.0,
+line_053,line,Ngành D,2000,34,34.0,34,34.0,0.0,,34,34.0,
+line_053,line,Ngành D,2005,32,32.0,32,32.0,0.0,,32,32.0,
+line_053,line,Ngành D,2010,29,29.0,33,33.0,0.1379,E2_sai_gia_tri,33,33.0,E2_sai_gia_tri
+line_053,line,Ngành D,2015,26,26.0,34,34.0,0.3077,E2_sai_gia_tri,34,34.0,E2_sai_gia_tri
+line_053,line,Ngành D,2020,25,25.0,37,37.0,0.48,E2_sai_gia_tri,37,37.0,E2_sai_gia_tri
+line_053,line,Ngành D,2025,24,24.0,38,38.0,0.5833,E2_sai_gia_tri,38,38.0,E2_sai_gia_tri
+pie_001,pie,Tỷ trọng,Thủy điện,27,27.0,27,27.0,0.0,,27,27.0,
+pie_001,pie,Tỷ trọng,Nhiệt điện,44,44.0,44,44.0,0.0,,44,44.0,
+pie_001,pie,Tỷ trọng,Tua bin khí,11,11.0,11,11.0,0.0,,11,11.0,
+pie_001,pie,Tỷ trọng,Năng lượng tái tạo,17,17.0,17,17.0,0.0,,17,17.0,
+pie_001,pie,Tỷ trọng,Điện nhập khẩu,"0,8",0.8,"0,8",0.8,0.0,,"0,8",0.8,
+pie_002,pie,Tỷ lệ,Nhiệt điện than,"49,3",49.3,,,,E8_thieu_diem_du_lieu,49.3,49.3,
+pie_002,pie,Tỷ lệ,Nhiệt điện khí đốt,"16,9",16.9,,,,E8_thieu_diem_du_lieu,16.9,16.9,
+pie_002,pie,Tỷ lệ,Thuỷ điện tích năng,"2,4",2.4,,,,E8_thieu_diem_du_lieu,2.4,2.4,
+pie_002,pie,Tỷ lệ,Thuỷ điện,"23,1",23.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_002,pie,Tỷ lệ,Điện nhập khẩu,"3,1",3.1,,,,E8_thieu_diem_du_lieu,3.1,3.1,
+pie_002,pie,Tỷ lệ,Năng lượng tái tạo,"5,6",5.6,,,,E8_thieu_diem_du_lieu,5.6,5.6,
+pie_002,pie,Tỷ lệ,Điện hạt nhân,"1,3",1.3,,,,E8_thieu_diem_du_lieu,1.3,1.3,
+pie_003,pie,Tỷ lệ diện tích,Tây Nguyên,40,40.0,9,9.0,0.775,E2_sai_gia_tri,9,9.0,E2_sai_gia_tri
+pie_003,pie,Tỷ lệ diện tích,Trung du và miền núi Bắc Bộ,32,32.0,15,15.0,0.5312,E2_sai_gia_tri,15,15.0,E2_sai_gia_tri
+pie_003,pie,Tỷ lệ diện tích,Bắc Trung Bộ,"1,2",1.2,1.20,1.2,0.0,,1.20,1.2,
+pie_003,pie,Tỷ lệ diện tích,Đông Nam bộ,"2,8",2.8,2.80,2.8,0.0,,2.80,2.8,
+pie_003,pie,Tỷ lệ diện tích,Đông bằng sông Hồng,15,15.0,,,,E8_thieu_diem_du_lieu,32,32.0,E2_sai_gia_tri
+pie_003,pie,Tỷ lệ diện tích,Duyên hải Nam Trung Bộ,9,9.0,40,40.0,3.4444,E2_sai_gia_tri,40,40.0,E2_sai_gia_tri
+pie_004,pie,Tỷ lệ trong cơ thể,Các nguyên tố khác,4,4.0,,,,E8_thieu_diem_du_lieu,18.50,18.5,E2_sai_gia_tri
+pie_004,pie,Tỷ lệ trong cơ thể,Nitrogen,3,3.0,,,,E8_thieu_diem_du_lieu,3,3.0,
+pie_004,pie,Tỷ lệ trong cơ thể,Hydrogen,"9,5",9.5,,,,E8_thieu_diem_du_lieu,9.50,9.5,
+pie_004,pie,Tỷ lệ trong cơ thể,Oxygen,65,65.0,,,,E8_thieu_diem_du_lieu,65,65.0,
+pie_004,pie,Tỷ lệ trong cơ thể,Carbon,"18,5",18.5,,,,E8_thieu_diem_du_lieu,4,4.0,E2_sai_gia_tri
+pie_005,pie,Tỷ lệ dân số,Châu Á,"60,4",60.4,,,,E8_thieu_diem_du_lieu,"60,4",60.4,
+pie_005,pie,Tỷ lệ dân số,Châu Âu,11,11.0,,,,E8_thieu_diem_du_lieu,11,11.0,
+pie_005,pie,Tỷ lệ dân số,Châu Đại Dương,"0,5",0.5,,,,E8_thieu_diem_du_lieu,"0,5",0.5,
+pie_005,pie,Tỷ lệ dân số,Châu Mỹ,"13,6",13.6,,,,E8_thieu_diem_du_lieu,"13,6",13.6,
+pie_005,pie,Tỷ lệ dân số,Châu Phi,"14,5",14.5,,,,E8_thieu_diem_du_lieu,"14,5",14.5,
+pie_006,pie,Hình tròn 1,Nông nghiệp - lâm - thủy sản,"65,1",65.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_006,pie,Hình tròn 1,Công nghiệp - xây dựng,"13,1",13.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_006,pie,Hình tròn 1,Dịch vụ,"21,8",21.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_006,pie,Hình tròn 2,Nông nghiệp - lâm - thủy sản,"46,7",46.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_006,pie,Hình tròn 2,Công nghiệp - xây dựng,"21,2",21.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_006,pie,Hình tròn 2,Dịch vụ,32,32.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_007,pie,Tỷ lệ,Bò,3,3.0,,,,E8_thieu_diem_du_lieu,3,3.0,
+pie_007,pie,Tỷ lệ,Lợn,69,69.0,,,,E8_thieu_diem_du_lieu,69,69.0,
+pie_007,pie,Tỷ lệ,Gà,14,14.0,,,,E8_thieu_diem_du_lieu,14,14.0,
+pie_007,pie,Tỷ lệ,Thỏ,14,14.0,,,,E8_thieu_diem_du_lieu,14,14.0,
+pie_008,pie,Tỷ lệ người đạt giải Nobel,Văn học,13,13.0,13,13.0,0.0,,13,13.0,
+pie_008,pie,Tỷ lệ người đạt giải Nobel,Vật lý,23,23.0,,,,E8_thieu_diem_du_lieu,23,23.0,
+pie_008,pie,Tỷ lệ người đạt giải Nobel,Y học,24,24.0,24,24.0,0.0,,24,24.0,
+pie_008,pie,Tỷ lệ người đạt giải Nobel,Hoá học,20,20.0,20,20.0,0.0,,20,20.0,
+pie_008,pie,Tỷ lệ người đạt giải Nobel,Kinh tế,9,9.0,9,9.0,0.0,,9,9.0,
+pie_008,pie,Tỷ lệ người đạt giải Nobel,Hoà bình,11,11.0,11,11.0,0.0,,11,11.0,
+pie_009,pie,Tỷ lệ ảnh hưởng,Vận động,20,20.0,20,20.0,0.0,,20,20.0,
+pie_009,pie,Tỷ lệ ảnh hưởng,Di truyền,23,23.0,23,23.0,0.0,,23,23.0,
+pie_009,pie,Tỷ lệ ảnh hưởng,Dinh dưỡng,32,32.0,32,32.0,0.0,,32,32.0,
+pie_009,pie,Tỷ lệ ảnh hưởng,Giấc ngủ và môi trường,16,16.0,,,,E8_thieu_diem_du_lieu,16,16.0,
+pie_009,pie,Tỷ lệ ảnh hưởng,Yếu tố khác,9,9.0,9,9.0,0.0,,9,9.0,
+pie_010,pie,Cơ cấu năm 2005,Kinh tế ngoài Nhà nước,"83,3",83.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_010,pie,Cơ cấu năm 2005,Kinh tế nhà nước,"12,9",12.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_010,pie,Cơ cấu năm 2005,Khu vực có vốn đầu tư nước ngoài,"3,8",3.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_010,pie,Cơ cấu năm 2013,Kinh tế ngoài Nhà nước,"85,2",85.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_010,pie,Cơ cấu năm 2013,Kinh tế nhà nước,"10,9",10.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_010,pie,Cơ cấu năm 2013,Khu vực có vốn đầu tư nước ngoài,"3,9",3.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_011,pie,Cơ cấu năm 2010,Kinh tế ngoài Nhà nước,"60,3",60.3,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+pie_011,pie,Cơ cấu năm 2010,Kinh tế nhà nước,"31,8",31.8,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+pie_011,pie,Cơ cấu năm 2010,Khu vực có vốn đầu tư nước ngoài,"7,9",7.9,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+pie_011,pie,Cơ cấu năm 2016,Kinh tế ngoài Nhà nước,"73,8",73.8,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+pie_011,pie,Cơ cấu năm 2016,Kinh tế nhà nước,15,15.0,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+pie_011,pie,Cơ cấu năm 2016,Khu vực có vốn đầu tư nước ngoài,"11,2",11.2,,,,E0_khong_parse_duoc_JSON,,,E0b_bi_cat_hoac_hong
+pie_012,pie,Cơ cấu năm 2010,Cá,77,77.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_012,pie,Cơ cấu năm 2010,Tôm,"16,5",16.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_012,pie,Cơ cấu năm 2010,Thuỷ sản khác,"6,6",6.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_012,pie,Cơ cấu năm 2017,Cá,"70,2",70.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_012,pie,Cơ cấu năm 2017,Tôm,"18,9",18.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_012,pie,Cơ cấu năm 2017,Thuỷ sản khác,"10,9",10.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2010,Công nghiệp khai khoáng,"10,2",10.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2010,"Công nghiệp chế biến, chế tạo","86,2",86.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2010,"Sản xuất và phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",3,3.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2010,"Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải","0,6",0.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2021,Công nghiệp khai khoáng,3,3.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2021,"Công nghiệp chế biến, chế tạo",93,93.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2021,"Sản xuất và phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí","3,3",3.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_013,pie,Cơ cấu năm 2021,"Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải","0,7",0.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_014,pie,Tỷ lệ GDP,Khu vực I,"24,9",24.9,,,,E8_thieu_diem_du_lieu,24.9,24.9,
+pie_014,pie,Tỷ lệ GDP,Khu vực II,"32,9",32.9,,,,E8_thieu_diem_du_lieu,32.9,32.9,
+pie_014,pie,Tỷ lệ GDP,Khu vực III,"42,2",42.2,,,,E8_thieu_diem_du_lieu,42.2,42.2,
+pie_015,pie,Cơ cấu năm 1960,Nông nghiệp,4,4.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_015,pie,Cơ cấu năm 1960,Công nghiệp,34,34.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_015,pie,Cơ cấu năm 1960,Dịch vụ,62,62.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_015,pie,Cơ cấu năm 2016,Nông nghiệp,1,1.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_015,pie,Cơ cấu năm 2016,Công nghiệp,19,19.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_015,pie,Cơ cấu năm 2016,Dịch vụ,80,80.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_016,pie,Cơ cấu năm 2010,Lúa đông xuân,"41,2",41.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_016,pie,Cơ cấu năm 2010,Lúa hè thu,"32,5",32.5,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_016,pie,Cơ cấu năm 2010,Lúa mùa,"26,3",26.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_016,pie,Cơ cấu năm 2016,Lúa đông xuân,"39,6",39.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_016,pie,Cơ cấu năm 2016,Lúa hè thu,36,36.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_016,pie,Cơ cấu năm 2016,Lúa mùa,"24,4",24.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_017,pie,Tỷ trọng xuất khẩu,EU,31,31.0,,,,E8_thieu_diem_du_lieu,43.8,43.8,E2_sai_gia_tri
+pie_017,pie,Tỷ trọng xuất khẩu,Hoa Kỳ,"9,2",9.2,,,,E8_thieu_diem_du_lieu,12.7,12.7,E2_sai_gia_tri
+pie_017,pie,Tỷ trọng xuất khẩu,Nhật Bản,"3,3",3.3,,,,E8_thieu_diem_du_lieu,3.3,3.3,
+pie_017,pie,Tỷ trọng xuất khẩu,Trung Quốc,"12,7",12.7,,,,E8_thieu_diem_du_lieu,12.7,12.7,
+pie_017,pie,Tỷ trọng xuất khẩu,Các nước khác,"43,8",43.8,,,,E8_thieu_diem_du_lieu,43.8,43.8,
+pie_018,pie,Cơ cấu năm 2000,Xuất khẩu,"53,1",53.1,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_018,pie,Cơ cấu năm 2000,Nhập khẩu,"46,9",46.9,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_018,pie,Cơ cấu năm 2020,Xuất khẩu,"53,6",53.6,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_018,pie,Cơ cấu năm 2020,Nhập khẩu,"46,4",46.4,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_019,pie,Tỉ lệ,Không khí,30,30.0,30,30.0,0.0,,30,30.0,
+pie_019,pie,Tỉ lệ,Nước,30,30.0,30,30.0,0.0,,30,30.0,
+pie_019,pie,Tỉ lệ,Chất khoáng,35,35.0,35,35.0,0.0,,35,35.0,
+pie_019,pie,Tỉ lệ,Chất mùn,5,5.0,5,5.0,0.0,,5,5.0,
+pie_020,pie,Cơ cấu tiêu dùng,Khí,"24,2",24.2,24.2,24.2,0.0,,24.2,24.2,
+pie_020,pie,Cơ cấu tiêu dùng,Than,27,27.0,27,27.0,0.0,,27,27.0,
+pie_020,pie,Cơ cấu tiêu dùng,Năng lượng hạt nhân,"4,3",4.3,4.3,4.3,0.0,,4.3,4.3,
+pie_020,pie,Cơ cấu tiêu dùng,Thủy điện,"6,4",6.4,6.4,6.4,0.0,,6.4,6.4,
+pie_020,pie,Cơ cấu tiêu dùng,Năng lượng tái tạo,5,5.0,5,5.0,0.0,,5,5.0,
+pie_020,pie,Cơ cấu tiêu dùng,Dầu,"33,1",33.1,33.1,33.1,0.0,,33.1,33.1,
+pie_021,pie,Sản lượng điện,Thủy điện,"37,7",37.7,37.70,37.7,0.0,,37.70,37.7,
+pie_021,pie,Sản lượng điện,Điện than,"41,6",41.6,41.60,41.6,0.0,,41.60,41.6,
+pie_021,pie,Sản lượng điện,Điện khí,"18,8",18.8,18.80,18.8,0.0,,18.80,18.8,
+pie_021,pie,Sản lượng điện,Điện tái tạo,"0,5",0.5,0.50,0.5,0.0,,0.50,0.5,
+pie_021,pie,Sản lượng điện,Điện nhập khẩu,"1,4",1.4,1.40,1.4,0.0,,1.40,1.4,
+pie_022,pie,Cơ cấu năm 2010,Bưu chính,"3,3",3.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_022,pie,Cơ cấu năm 2010,Viễn thông,"96,7",96.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_022,pie,Cơ cấu năm 2021,Bưu chính,"7,8",7.8,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_022,pie,Cơ cấu năm 2021,Viễn thông,"92,2",92.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_023,pie,Lúa,Đông Nam Á,"26,2",26.2,26.2,26.2,0.0,,26.2,26.2,
+pie_023,pie,Lúa,Châu Á,"71,3",71.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_023,pie,Lúa,Vùng khác,"2,5",2.5,2.5,2.5,0.0,,2.5,2.5,
+pie_023,pie,Cà phê,Đông Nam Á,"19,2",19.2,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_023,pie,Cà phê,Châu Á,"24,7",24.7,24.7,24.7,0.0,,24.7,24.7,
+pie_023,pie,Cà phê,Vùng khác,"26,1",26.1,26.1,26.1,0.0,,26.1,26.1,
+pie_024,pie,Năm 2010,"Nông nghiệp, lâm nghiệp, thủy sản","4,7",4.7,,,,E8_thieu_diem_du_lieu,"4,7",4.7,
+pie_024,pie,Năm 2010,"Công nghiệp, xây dựng","29,1",29.1,,,,E8_thieu_diem_du_lieu,"29,1",29.1,
+pie_024,pie,Năm 2010,Dịch vụ,"55,7",55.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_024,pie,Năm 2010,Thuế sản phẩm trừ trợ cấp sản phẩm,"10,5",10.5,,,,E8_thieu_diem_du_lieu,"10,5",10.5,
+pie_024,pie,Năm 2020,"Nông nghiệp, lâm nghiệp, thủy sản","6,5",6.5,,,,E8_thieu_diem_du_lieu,"6,5",6.5,
+pie_024,pie,Năm 2020,"Công nghiệp, xây dựng","28,3",28.3,,,,E8_thieu_diem_du_lieu,"28,3",28.3,
+pie_024,pie,Năm 2020,Dịch vụ,"60,3",60.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_024,pie,Năm 2020,Thuế sản phẩm trừ trợ cấp sản phẩm,"4,9",4.9,,,,E8_thieu_diem_du_lieu,"4,9",4.9,
+pie_025,pie,Năm 2000,Dưới 15 tuổi,"36,4",36.4,,,,E8_thieu_diem_du_lieu,36.4,36.4,
+pie_025,pie,Năm 2000,Từ 15 đến 64 tuổi,"59,1",59.1,,,,E8_thieu_diem_du_lieu,59.1,59.1,
+pie_025,pie,Năm 2000,Từ 65 tuổi trở lên,"4,5",4.5,,,,E8_thieu_diem_du_lieu,4.5,4.5,
+pie_025,pie,Năm 2020,Dưới 15 tuổi,"28,7",28.7,,,,E8_thieu_diem_du_lieu,28.7,28.7,
+pie_025,pie,Năm 2020,Từ 15 đến 64 tuổi,"65,6",65.6,,,,E8_thieu_diem_du_lieu,65.6,65.6,
+pie_025,pie,Năm 2020,Từ 65 tuổi trở lên,"5,7",5.7,,,,E8_thieu_diem_du_lieu,5.7,5.7,
+pie_026,pie,Tỉ lệ,Đuối nước,48,48.0,,,,E8_thieu_diem_du_lieu,48,48.0,
+pie_026,pie,Tỉ lệ,Tai nạn giao thông,28,28.0,,,,E8_thieu_diem_du_lieu,28,28.0,
+pie_026,pie,Tỉ lệ,Ngã,2,2.0,,,,E8_thieu_diem_du_lieu,2,2.0,
+pie_026,pie,Tỉ lệ,Ngộ độc,2,2.0,,,,E8_thieu_diem_du_lieu,2,2.0,
+pie_026,pie,Tỉ lệ,Thương tích khác (không phân loại),20,20.0,,,,E8_thieu_diem_du_lieu,20,20.0,
+pie_027,pie,Năm 2005,Trồng trọt,"2,4",2.4,,,,E8_thieu_diem_du_lieu,19.3,19.3,E2_sai_gia_tri
+pie_027,pie,Năm 2005,Chăn nuôi,"19,3",19.3,,,,E8_thieu_diem_du_lieu,2.4,2.4,E2_sai_gia_tri
+pie_027,pie,Năm 2005,Dịch vụ,"78,3",78.3,,,,E8_thieu_diem_du_lieu,78.3,78.3,
+pie_027,pie,Năm 2015,Trồng trọt,"1,5",1.5,,,,E8_thieu_diem_du_lieu,25,25.0,E2_sai_gia_tri
+pie_027,pie,Năm 2015,Chăn nuôi,25,25.0,,,,E8_thieu_diem_du_lieu,1.5,1.5,E2_sai_gia_tri
+pie_027,pie,Năm 2015,Dịch vụ,"73,5",73.5,,,,E8_thieu_diem_du_lieu,73.5,73.5,
+pie_028,pie,Tỉ lệ,Bán hàng,55,55.0,,,,E8_thieu_diem_du_lieu,55,55.0,
+pie_028,pie,Tỉ lệ,Tài chính,25,25.0,,,,E8_thieu_diem_du_lieu,25,25.0,
+pie_028,pie,Tỉ lệ,Marketing,15,15.0,,,,E8_thieu_diem_du_lieu,15,15.0,
+pie_028,pie,Tỉ lệ,Nhân sự,5,5.0,,,,E8_thieu_diem_du_lieu,5,5.0,
+pie_029,pie,Tỉ lệ,Rừng sản xuất,"48,9",48.9,,,,E8_thieu_diem_du_lieu,48.9,48.9,
+pie_029,pie,Tỉ lệ,Rừng phòng hộ,"33,1",33.1,,,,E8_thieu_diem_du_lieu,33.1,33.1,
+pie_029,pie,Tỉ lệ,Rừng đặc dụng,"15,1",15.1,,,,E8_thieu_diem_du_lieu,15.1,15.1,
+pie_029,pie,Tỉ lệ,Rừng khác,"2,9",2.9,,,,E8_thieu_diem_du_lieu,2.9,2.9,
+pie_030,pie,Diện tích,Vùng kinh tế trọng điểm phía Nam,"39,3",39.3,,,,E8_thieu_diem_du_lieu,39.3,39.3,
+pie_030,pie,Diện tích,Vùng kinh tế trọng điểm miền Bắc và miền Trung,"60,7",60.7,,,,E8_thieu_diem_du_lieu,60.7,60.7,
+pie_030,pie,Dân số,Vùng kinh tế trọng điểm phía Nam,"39,3",39.3,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_030,pie,Dân số,Vùng kinh tế trọng điểm miền Bắc và miền Trung,"60,7",60.7,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_030,pie,GDP,Vùng kinh tế trọng điểm phía Nam,65,65.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_030,pie,GDP,Vùng kinh tế trọng điểm miền Bắc và miền Trung,35,35.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_031,pie,Tỉ lệ,Lát 1 (xanh lá),38,38.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_031,pie,Tỉ lệ,Lát 2 (đỏ),26,26.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_031,pie,Tỉ lệ,Lát 3 (vàng),20,20.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_031,pie,Tỉ lệ,Lát 4 (xanh dương),10,10.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_031,pie,Tỉ lệ,Lát 5 (tím),6,6.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_032,pie,Tỉ lệ,Khu vực I,"24,9",24.9,,,,E8_thieu_diem_du_lieu,24.9,24.9,
+pie_032,pie,Tỉ lệ,Khu vực II,"32,9",32.9,,,,E8_thieu_diem_du_lieu,32.9,32.9,
+pie_032,pie,Tỉ lệ,Khu vực III,"42,2",42.2,,,,E8_thieu_diem_du_lieu,42.2,42.2,
+pie_033,pie,Đồng bằng sông Cửu Long,Đất nông nghiệp,"74,5",74.5,8.5,8.5,0.8859,E2_sai_gia_tri,8.5,8.5,E2_sai_gia_tri
+pie_033,pie,Đồng bằng sông Cửu Long,Đất lâm nghiệp,"9,1",9.1,,,,E8_thieu_diem_du_lieu,7.9,7.9,E2_sai_gia_tri
+pie_033,pie,Đồng bằng sông Cửu Long,Đất chuyên dùng và đất ở,"8,5",8.5,9.1,9.1,0.0706,E2_sai_gia_tri,9.1,9.1,E2_sai_gia_tri
+pie_033,pie,Đồng bằng sông Cửu Long,Đất chưa sử dụng,"7,9",7.9,74.5,74.5,8.4304,E2_sai_gia_tri,74.5,74.5,E2_sai_gia_tri
+pie_033,pie,Tây Nguyên,Đất nông nghiệp,"23,6",23.6,8.5,8.5,0.6398,E2_sai_gia_tri,8.5,8.5,E2_sai_gia_tri
+pie_033,pie,Tây Nguyên,Đất lâm nghiệp,"55,4",55.4,,,,E8_thieu_diem_du_lieu,17.6,17.6,E2_sai_gia_tri
+pie_033,pie,Tây Nguyên,Đất chuyên dùng và đất ở,"3,4",3.4,3.4,3.4,0.0,,3.4,3.4,
+pie_033,pie,Tây Nguyên,Đất chưa sử dụng,"17,6",17.6,55.4,55.4,2.1477,E2_sai_gia_tri,55.4,55.4,E2_sai_gia_tri
+pie_034,pie,Năm 2010,Kinh tế Nhà nước,"31,8",31.8,,,,E8_thieu_diem_du_lieu,60.3,60.3,E2_sai_gia_tri
+pie_034,pie,Năm 2010,Kinh tế ngoài Nhà nước,"60,3",60.3,,,,E8_thieu_diem_du_lieu,11.2,11.2,E2_sai_gia_tri
+pie_034,pie,Năm 2010,Khu vực có vốn đầu tư nước ngoài,"7,9",7.9,,,,E8_thieu_diem_du_lieu,15.0,15.0,E2_sai_gia_tri
+pie_034,pie,Năm 2016,Kinh tế Nhà nước,15,15.0,,,,E8_thieu_diem_du_lieu,73.8,73.8,E2_sai_gia_tri
+pie_034,pie,Năm 2016,Kinh tế ngoài Nhà nước,"73,8",73.8,,,,E8_thieu_diem_du_lieu,7.9,7.9,E2_sai_gia_tri
+pie_034,pie,Năm 2016,Khu vực có vốn đầu tư nước ngoài,"11,2",11.2,,,,E8_thieu_diem_du_lieu,31.8,31.8,E2_sai_gia_tri
+pie_035,pie,Tỉ lệ,Thạc sĩ,"50,9",50.9,,,,E8_thieu_diem_du_lieu,100,100.0,E2_sai_gia_tri
+pie_035,pie,Tỉ lệ,Đại học,27,27.0,,,,E8_thieu_diem_du_lieu,60,60.0,E2_sai_gia_tri
+pie_035,pie,Tỉ lệ,Tiến sĩ,"20,7",20.7,,,,E8_thieu_diem_du_lieu,40,40.0,E2_sai_gia_tri
+pie_035,pie,Tỉ lệ,Cao đẳng,"1,4",1.4,,,,E8_thieu_diem_du_lieu,10,10.0,E2_sai_gia_tri
+pie_036,pie,Năm 1990,Cây lương thực,"67,1",67.1,,,,E8_thieu_diem_du_lieu,"67,1",67.1,
+pie_036,pie,Năm 1990,Cây rau đậu,7,7.0,,,,E8_thieu_diem_du_lieu,"2,3",2.3,E2_sai_gia_tri
+pie_036,pie,Năm 1990,Cây công nghiệp,"13,5",13.5,,,,E8_thieu_diem_du_lieu,"10,1",10.1,E2_sai_gia_tri
+pie_036,pie,Năm 1990,Cây ăn quả,"10,1",10.1,,,,E8_thieu_diem_du_lieu,"13,5",13.5,E2_sai_gia_tri
+pie_036,pie,Năm 1990,Cây khác,"2,3",2.3,,,,E8_thieu_diem_du_lieu,"7,0",7.0,E2_sai_gia_tri
+pie_036,pie,Năm 2005,Cây lương thực,"59,2",59.2,,,,E8_thieu_diem_du_lieu,"59,2",59.2,
+pie_036,pie,Năm 2005,Cây rau đậu,"8,3",8.3,,,,E8_thieu_diem_du_lieu,"7,3",7.3,E2_sai_gia_tri
+pie_036,pie,Năm 2005,Cây công nghiệp,"23,7",23.7,,,,E8_thieu_diem_du_lieu,"23,7",23.7,
+pie_036,pie,Năm 2005,Cây ăn quả,"7,3",7.3,,,,E8_thieu_diem_du_lieu,"8,3",8.3,E2_sai_gia_tri
+pie_036,pie,Năm 2005,Cây khác,"1,5",1.5,,,,E8_thieu_diem_du_lieu,"1,5",1.5,
+pie_037,pie,Năm 1995,Chè,"12,5",12.5,,,,E8_thieu_diem_du_lieu,"12,5%",12.5,
+pie_037,pie,Năm 1995,Cà phê,"35,1",35.1,,,,E8_thieu_diem_du_lieu,"52,4%",52.4,E2_sai_gia_tri
+pie_037,pie,Năm 1995,Cao su,"52,4",52.4,,,,E8_thieu_diem_du_lieu,"35,1%",35.1,E2_sai_gia_tri
+pie_037,pie,Năm 2005,Chè,"11,1",11.1,,,,E8_thieu_diem_du_lieu,"11,1%",11.1,
+pie_037,pie,Năm 2005,Cà phê,"45,1",45.1,,,,E8_thieu_diem_du_lieu,"43,8%",43.8,
+pie_037,pie,Năm 2005,Cao su,"43,8",43.8,,,,E8_thieu_diem_du_lieu,"45,1%",45.1,
+pie_037,pie,Năm 2013,Chè,"7,5",7.5,,,,E8_thieu_diem_du_lieu,"7,5%",7.5,
+pie_037,pie,Năm 2013,Cà phê,"36,9",36.9,,,,E8_thieu_diem_du_lieu,"55,6%",55.6,E2_sai_gia_tri
+pie_037,pie,Năm 2013,Cao su,"55,6",55.6,,,,E8_thieu_diem_du_lieu,"36,9%",36.9,E2_sai_gia_tri
+pie_038,pie,Năm 2011,Lát 1 (xanh dương),59,59.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2011,Lát 2 (đỏ),21,21.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2011,Lát 3 (xanh lá),10,10.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2011,Lát 4 (tím),5,5.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2011,Lát 5 (xanh ngọc),5,5.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2012,Lát 1 (xanh dương),49,49.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2012,Lát 2 (đỏ),23,23.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2012,Lát 3 (xanh lá),12,12.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2012,Lát 4 (tím),10,10.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2012,Lát 5 (xanh ngọc),6,6.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2013,Lát 1 (xanh dương),38,38.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2013,Lát 2 (đỏ),25,25.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2013,Lát 3 (xanh lá),15,15.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2013,Lát 4 (tím),14,14.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_038,pie,Năm 2013,Lát 5 (xanh ngọc),8,8.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_039,pie,Natri,Bữa sáng,14,14.0,14,14.0,0.0,,14,14.0,
+pie_039,pie,Natri,Bữa trưa,29,29.0,14,14.0,0.5172,E2_sai_gia_tri,14,14.0,E2_sai_gia_tri
+pie_039,pie,Natri,Bữa tối,43,43.0,43,43.0,0.0,,43,43.0,
+pie_039,pie,Natri,Đồ ăn nhẹ,14,14.0,,,,E8_thieu_diem_du_lieu,14,14.0,
+pie_039,pie,Chất béo bão hòa,Bữa sáng,16,16.0,21,21.0,0.3125,E2_sai_gia_tri,21,21.0,E2_sai_gia_tri
+pie_039,pie,Chất béo bão hòa,Bữa trưa,26,26.0,16,16.0,0.3846,E2_sai_gia_tri,16,16.0,E2_sai_gia_tri
+pie_039,pie,Chất béo bão hòa,Bữa tối,37,37.0,37,37.0,0.0,,37,37.0,
+pie_039,pie,Chất béo bão hòa,Đồ ăn nhẹ,21,21.0,,,,E8_thieu_diem_du_lieu,26,26.0,E2_sai_gia_tri
+pie_039,pie,Đường bổ sung,Bữa sáng,16,16.0,42,42.0,1.625,E2_sai_gia_tri,42,42.0,E2_sai_gia_tri
+pie_039,pie,Đường bổ sung,Bữa trưa,19,19.0,16,16.0,0.1579,E2_sai_gia_tri,16,16.0,E2_sai_gia_tri
+pie_039,pie,Đường bổ sung,Bữa tối,23,23.0,23,23.0,0.0,,23,23.0,
+pie_039,pie,Đường bổ sung,Đồ ăn nhẹ,42,42.0,,,,E8_thieu_diem_du_lieu,19,19.0,E2_sai_gia_tri
+pie_040,pie,Năm 1985,Mỹ thuật,17,17.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm 1985,Ngoại ngữ hiện đại,24,24.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm 1985,Lịch sử địa phương,15,15.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm 1985,Ứng dụng âm nhạc,8,8.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm 1985,Nấu ăn,14,14.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm 1985,Thể dục và khiêu vũ,22,22.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm nay,Mỹ thuật,15,15.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm nay,Ngoại ngữ hiện đại,17,17.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm nay,Lịch sử địa phương,27,27.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm nay,Ứng dụng âm nhạc,0,0.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm nay,Nấu ăn,19,19.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_040,pie,Năm nay,Thể dục và khiêu vũ,22,22.0,,,,E8_thieu_diem_du_lieu,,,E8_thieu_diem_du_lieu
+pie_041,pie,Năm 2009,Điện thoại di động,15,15.0,,,,E8_thieu_diem_du_lieu,26,26.0,E2_sai_gia_tri
+pie_041,pie,Năm 2009,Máy tính xách tay,20,20.0,,,,E8_thieu_diem_du_lieu,20,20.0,
+pie_041,pie,Năm 2009,Máy tính bảng,5,5.0,,,,E8_thieu_diem_du_lieu,8,8.0,E2_sai_gia_tri
+pie_041,pie,Năm 2009,Máy tính để bàn,18,18.0,,,,E8_thieu_diem_du_lieu,18,18.0,
+pie_041,pie,Năm 2009,TV màn hình phẳng,8,8.0,,,,E8_thieu_diem_du_lieu,4,4.0,E2_sai_gia_tri
+pie_041,pie,Năm 2009,TV truyền thống,34,34.0,,,,E8_thieu_diem_du_lieu,12,12.0,E2_sai_gia_tri
+pie_041,pie,Năm 2019,Điện thoại di động,26,26.0,,,,E8_thieu_diem_du_lieu,34,34.0,E2_sai_gia_tri
+pie_041,pie,Năm 2019,Máy tính xách tay,12,12.0,,,,E8_thieu_diem_du_lieu,27,27.0,E2_sai_gia_tri
+pie_041,pie,Năm 2019,Máy tính bảng,19,19.0,,,,E8_thieu_diem_du_lieu,12,12.0,E2_sai_gia_tri
+pie_041,pie,Năm 2019,Máy tính để bàn,12,12.0,,,,E8_thieu_diem_du_lieu,19,19.0,E2_sai_gia_tri
+pie_041,pie,Năm 2019,TV màn hình phẳng,27,27.0,,,,E8_thieu_diem_du_lieu,15,15.0,E2_sai_gia_tri
+pie_041,pie,Năm 2019,TV truyền thống,4,4.0,,,,E8_thieu_diem_du_lieu,5,5.0,E2_sai_gia_tri
+pie_042,pie,Năm 2005,Điện tử & Thiết bị gia dụng,35,35.0,,,,E8_thieu_diem_du_lieu,35,35.0,
+pie_042,pie,Năm 2005,Thực phẩm & Đồ uống,22,22.0,,,,E8_thieu_diem_du_lieu,22,22.0,
+pie_042,pie,Năm 2005,Đồ nội thất,25,25.0,,,,E8_thieu_diem_du_lieu,25,25.0,
+pie_042,pie,Năm 2005,Trò chơi điện tử,18,18.0,,,,E8_thieu_diem_du_lieu,18,18.0,
+pie_042,pie,Năm 2010,Điện tử & Thiết bị gia dụng,30,30.0,,,,E8_thieu_diem_du_lieu,30,30.0,
+pie_042,pie,Năm 2010,Thực phẩm & Đồ uống,32,32.0,,,,E8_thieu_diem_du_lieu,32,32.0,
+pie_042,pie,Năm 2010,Đồ nội thất,15,15.0,,,,E8_thieu_diem_du_lieu,15,15.0,
+pie_042,pie,Năm 2010,Trò chơi điện tử,23,23.0,,,,E8_thieu_diem_du_lieu,23,23.0,

@@ -1,0 +1,98 @@
+{
+ "id": "area_007",
+ "title": "",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Nông – lâm – ngư nghiệp",
+  "Công nghiệp – xây dựng",
+  "Dịch vụ"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Nông – lâm – ngư nghiệp",
+   "x": "1986",
+   "y_raw": "49,5"
+  },
+  {
+   "series": "Nông – lâm – ngư nghiệp",
+   "x": "1990",
+   "y_raw": "45,6"
+  },
+  {
+   "series": "Nông – lâm – ngư nghiệp",
+   "x": "1995",
+   "y_raw": "32,6"
+  },
+  {
+   "series": "Nông – lâm – ngư nghiệp",
+   "x": "2000",
+   "y_raw": "23,4"
+  },
+  {
+   "series": "Nông – lâm – ngư nghiệp",
+   "x": "2005",
+   "y_raw": "16,8"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1986",
+   "y_raw": "21,5"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1990",
+   "y_raw": "22,7"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "1995",
+   "y_raw": "25,4"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "2000",
+   "y_raw": "32,7"
+  },
+  {
+   "series": "Công nghiệp – xây dựng",
+   "x": "2005",
+   "y_raw": "39,3"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1986",
+   "y_raw": "29,0"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1990",
+   "y_raw": "31,7"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1995",
+   "y_raw": "42,0"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2000",
+   "y_raw": "43,9"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2005",
+   "y_raw": "43,9"
+  }
+ ],
+ "notes": "[Claude nháp]"
+}

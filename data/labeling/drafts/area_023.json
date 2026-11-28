@@ -1,0 +1,128 @@
+{
+ "id": "area_023",
+ "title": "Biểu đồ thể hiện cơ cấu GDP của nước ta thời kì 1991 – 2002",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Nông, lâm, ngư nghiệp",
+  "Công nghiệp - xây dựng",
+  "Dịch vụ"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1991",
+   "y_raw": "40,5"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1993",
+   "y_raw": "29,9"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1995",
+   "y_raw": "27,2"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1997",
+   "y_raw": "25,8"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "1999",
+   "y_raw": "25,4"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "2001",
+   "y_raw": "23,3"
+  },
+  {
+   "series": "Nông, lâm, ngư nghiệp",
+   "x": "2002",
+   "y_raw": "23"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "1991",
+   "y_raw": "23,8"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "1993",
+   "y_raw": "28,9"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "1995",
+   "y_raw": "28,8"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "1997",
+   "y_raw": "32,1"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "1999",
+   "y_raw": "34,5"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "2001",
+   "y_raw": "38,1"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "2002",
+   "y_raw": "38,5"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1991",
+   "y_raw": "35,7"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1993",
+   "y_raw": "41,2"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1995",
+   "y_raw": "44"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1997",
+   "y_raw": "42,1"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1999",
+   "y_raw": "40,1"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2001",
+   "y_raw": "38,6"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2002",
+   "y_raw": "38,5"
+  }
+ ],
+ "notes": "[Claude nháp] Ảnh ghi dấu chấm thập phân kiểu Anh (vd 35.7); y_raw đã đổi sang kiểu VN. Cùng số liệu với area_015 và area_018."
+}

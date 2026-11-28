@@ -1,0 +1,94 @@
+{
+ "id": "area_013",
+ "title": "Biểu đồ miền: Thay đổi cơ cấu giá trị xuất nhập khẩu của Campuchia",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": "Tỉ trọng",
+  "unit": "%"
+ },
+ "legend": [
+  "Xuất khẩu",
+  "Nhập khẩu"
+ ],
+ "values_shown_on_chart": false,
+ "data": [
+  {
+   "series": "Xuất khẩu",
+   "x": "2010",
+   "y_raw": "0,375",
+   "estimated": true
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "2012",
+   "y_raw": "0,42",
+   "estimated": true
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "2014",
+   "y_raw": "0,455",
+   "estimated": true
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "2016",
+   "y_raw": "0,475",
+   "estimated": true
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "2018",
+   "y_raw": "0,48",
+   "estimated": true
+  },
+  {
+   "series": "Xuất khẩu",
+   "x": "2020",
+   "y_raw": "0,48",
+   "estimated": true
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2010",
+   "y_raw": "0,625",
+   "estimated": true
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2012",
+   "y_raw": "0,58",
+   "estimated": true
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2014",
+   "y_raw": "0,545",
+   "estimated": true
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2016",
+   "y_raw": "0,525",
+   "estimated": true
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2018",
+   "y_raw": "0,52",
+   "estimated": true
+  },
+  {
+   "series": "Nhập khẩu",
+   "x": "2020",
+   "y_raw": "0,52",
+   "estimated": true
+  }
+ ],
+ "notes": "[Claude nháp] Không ghi số: ước lượng theo vạch chia. Trục ghi 'Tỉ trọng (%)' nhưng thang 0-1 nên y ghi theo thang 0-1 như trên trục. Nhập khẩu = 1 - Xuất khẩu."
+}

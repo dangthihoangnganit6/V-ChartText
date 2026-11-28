@@ -1,0 +1,109 @@
+{
+  "id": "line_023",
+  "image": "images/line_023.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_23.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 26,
+  "chart_type": "line",
+  "title": "Biểu đồ thể hiện tốc độ tăng dân số, sản lượng lương thực và bình quân lương thực đầu người của vùng Đồng bằng sông Hồng giai đoạn 1995 - 2002",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Dân số",
+    "Sản lượng lương thực",
+    "Bình quân lương thực theo đầu người"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Dân số",
+      "x": "1995",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Dân số",
+      "x": "1998",
+      "y": 103.5,
+      "y_raw": "103,5"
+    },
+    {
+      "series": "Dân số",
+      "x": "2000",
+      "y": 105.6,
+      "y_raw": "105,6"
+    },
+    {
+      "series": "Dân số",
+      "x": "2002",
+      "y": 108.2,
+      "y_raw": "108,2"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "1995",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "1998",
+      "y": 117.7,
+      "y_raw": "117,7"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2000",
+      "y": 128.6,
+      "y_raw": "128,6"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2002",
+      "y": 131.1,
+      "y_raw": "131,1"
+    },
+    {
+      "series": "Bình quân lương thực theo đầu người",
+      "x": "1995",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Bình quân lương thực theo đầu người",
+      "x": "1998",
+      "y": 113.8,
+      "y_raw": "113,8"
+    },
+    {
+      "series": "Bình quân lương thực theo đầu người",
+      "x": "2000",
+      "y": 121.8,
+      "y_raw": "121,8"
+    },
+    {
+      "series": "Bình quân lương thực theo đầu người",
+      "x": "2002",
+      "y": 121.2,
+      "y_raw": "121,2"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

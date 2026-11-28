@@ -1,0 +1,124 @@
+{
+  "id": "bar_047",
+  "image": "images/bar_047.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_46.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 189,
+  "chart_type": "bar",
+  "title": "Biểu đồ tăng trưởng GDP Việt Nam giai đoạn 2012 - 2025",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": null
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "GDP Việt Nam",
+      "x": "2012",
+      "y": 5.25,
+      "y_raw": "5,25"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2013",
+      "y": 5.42,
+      "y_raw": "5,42"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2014",
+      "y": 5.98,
+      "y_raw": "5,98"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2015",
+      "y": 6.68,
+      "y_raw": "6,68"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2016",
+      "y": 6.21,
+      "y_raw": "6,21"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2017",
+      "y": 6.81,
+      "y_raw": "6,81"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2018",
+      "y": 7.08,
+      "y_raw": "7,08"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2019",
+      "y": 7.02,
+      "y_raw": "7,02"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2020",
+      "y": 2.91,
+      "y_raw": "2,91"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2021",
+      "y": 2.58,
+      "y_raw": "2,58"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2022",
+      "y": 8.02,
+      "y_raw": "8,02"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2023",
+      "y": 5.05,
+      "y_raw": "5,05"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "2024",
+      "y": 7.09,
+      "y_raw": "7,09"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "Quý I/2025",
+      "y": 6.93,
+      "y_raw": "6,93"
+    },
+    {
+      "series": "GDP Việt Nam",
+      "x": "Quý II/2025",
+      "y": 7.96,
+      "y_raw": "7,96"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

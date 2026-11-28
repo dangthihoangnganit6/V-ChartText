@@ -1,0 +1,113 @@
+{
+ "id": "area_024",
+ "title": "CƠ CẤU GDP PHÂN THEO KHU VỰC KINH TẾ Ở NƯỚC TA GIAI ĐOẠN 1990 – 2014",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Nông - lâm - ngư nghiệp",
+  "Công nghiệp - xây dựng",
+  "Dịch vụ"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Nông - lâm - ngư nghiệp",
+   "x": "1990",
+   "y_raw": "38,7"
+  },
+  {
+   "series": "Nông - lâm - ngư nghiệp",
+   "x": "1995",
+   "y_raw": "37,2"
+  },
+  {
+   "series": "Nông - lâm - ngư nghiệp",
+   "x": "2000",
+   "y_raw": "24,5"
+  },
+  {
+   "series": "Nông - lâm - ngư nghiệp",
+   "x": "2005",
+   "y_raw": "19,3"
+  },
+  {
+   "series": "Nông - lâm - ngư nghiệp",
+   "x": "2010",
+   "y_raw": "21"
+  },
+  {
+   "series": "Nông - lâm - ngư nghiệp",
+   "x": "2014",
+   "y_raw": "19,7"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "1990",
+   "y_raw": "22,7"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "1995",
+   "y_raw": "28,8"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "2000",
+   "y_raw": "36,7"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "2005",
+   "y_raw": "38,1"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "2010",
+   "y_raw": "36,7"
+  },
+  {
+   "series": "Công nghiệp - xây dựng",
+   "x": "2014",
+   "y_raw": "36,9"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1990",
+   "y_raw": "38,6"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "1995",
+   "y_raw": "44"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2000",
+   "y_raw": "38,8"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2005",
+   "y_raw": "42,6"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2010",
+   "y_raw": "42,3"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2014",
+   "y_raw": "43,4"
+  }
+ ],
+ "notes": "[Claude nháp] Ảnh ghi dấu chấm thập phân kiểu Anh (vd 35.7); y_raw đã đổi sang kiểu VN. Năm 1995 ảnh ghi 37,2 làm tổng = 110% (có thể ảnh in sai, số thật là 27,2); ghi đúng như ảnh, người soát quyết định."
+}

@@ -1,0 +1,117 @@
+{
+  "id": "line_017",
+  "image": "images/line_017.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_17.jpg"
+  },
+  "annotator": "nhi",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 20,
+  "chart_type": "line",
+  "title": "Diễn biến giá vàng thế giới (Chiều 19/5 - Chiều 25/5)",
+  "x_axis": {
+    "label": "Thời gian",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "USD/ounce"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Giá bán",
+      "x": "Chiều 19/5",
+      "y": 4538.0,
+      "y_raw": "4538"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Sáng 20/5",
+      "y": 4456.9,
+      "y_raw": "4456,9"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Chiều 20/5",
+      "y": 4496.3,
+      "y_raw": "4496,3"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Sáng 21/5",
+      "y": 4540.7,
+      "y_raw": "4540,7"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Chiều 21/5",
+      "y": 4531.8,
+      "y_raw": "4531,8"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Sáng 22/5",
+      "y": 4523.5,
+      "y_raw": "4523,5"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Trưa 22/5",
+      "y": 4520.1,
+      "y_raw": "4520,1"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Chiều 22/5",
+      "y": 4531.9,
+      "y_raw": "4531,9"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Sáng 23/5",
+      "y": 4508.5,
+      "y_raw": "4508,5"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Chiều 23/5",
+      "y": 4508.5,
+      "y_raw": "4508,5"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Sáng 24/5",
+      "y": 4508.5,
+      "y_raw": "4508,5"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Chiều 24/5",
+      "y": 4508.5,
+      "y_raw": "4508,5"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Sáng 25/5",
+      "y": 4560.87,
+      "y_raw": "4560,87"
+    },
+    {
+      "series": "Giá bán",
+      "x": "Chiều 25/5",
+      "y": 4561.16,
+      "y_raw": "4561,16"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

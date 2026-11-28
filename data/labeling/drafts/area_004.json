@@ -1,0 +1,62 @@
+{
+ "id": "area_004",
+ "title": "BIỂU ĐỒ THỂ HIỆN CƠ CẤU DÂN SỐ PHÂN THEO THÀNH THỊ VÀ NÔNG THÔN NƯỚC TA GIAI ĐOẠN 2000 - 2014",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": "Tỉ lệ",
+  "unit": "%"
+ },
+ "legend": [
+  "Thành thị",
+  "Nông thôn"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Thành thị",
+   "x": "2000",
+   "y_raw": "24,1"
+  },
+  {
+   "series": "Thành thị",
+   "x": "2005",
+   "y_raw": "27,1"
+  },
+  {
+   "series": "Thành thị",
+   "x": "2010",
+   "y_raw": "30,5"
+  },
+  {
+   "series": "Thành thị",
+   "x": "2014",
+   "y_raw": "33,1"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2000",
+   "y_raw": "75,9"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2005",
+   "y_raw": "72,9"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2010",
+   "y_raw": "69,5"
+  },
+  {
+   "series": "Nông thôn",
+   "x": "2014",
+   "y_raw": "66,9"
+  }
+ ],
+ "notes": "[Claude nháp]"
+}

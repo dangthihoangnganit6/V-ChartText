@@ -1,0 +1,63 @@
+{
+  "id": "pie_004",
+  "image": "images/pie_004.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_4.png"
+  },
+  "annotator": "nhi",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 60,
+  "chart_type": "pie",
+  "title": "Tỷ lệ khối lượng Các Nguyên Tố Trong Cơ Thể Người",
+  "x_axis": {
+    "label": "Nguyên tố",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ trong cơ thể",
+      "x": "Các nguyên tố khác",
+      "y": 4.0,
+      "y_raw": "4"
+    },
+    {
+      "series": "Tỷ lệ trong cơ thể",
+      "x": "Nitrogen",
+      "y": 3.0,
+      "y_raw": "3"
+    },
+    {
+      "series": "Tỷ lệ trong cơ thể",
+      "x": "Hydrogen",
+      "y": 9.5,
+      "y_raw": "9,5"
+    },
+    {
+      "series": "Tỷ lệ trong cơ thể",
+      "x": "Oxygen",
+      "y": 65.0,
+      "y_raw": "65"
+    },
+    {
+      "series": "Tỷ lệ trong cơ thể",
+      "x": "Carbon",
+      "y": 18.5,
+      "y_raw": "18,5"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

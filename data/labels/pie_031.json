@@ -1,0 +1,63 @@
+{
+  "id": "pie_031",
+  "image": "images/pie_031.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_31.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 87,
+  "chart_type": "pie",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỉ lệ",
+      "x": "Lát 1 (xanh lá)",
+      "y": 38.0,
+      "y_raw": "38"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Lát 2 (đỏ)",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Lát 3 (vàng)",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Lát 4 (xanh dương)",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Lát 5 (tím)",
+      "y": 6.0,
+      "y_raw": "6"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề và chú giải: tên lát chỉ là mô tả màu",
+  "imported_at": "2026-11-20"
+}

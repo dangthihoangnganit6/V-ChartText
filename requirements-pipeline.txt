@@ -1,0 +1,14 @@
+# Qwen3-VL + chấm điểm
+transformers>=4.57.0
+accelerate
+torch
+torchvision
+pillow
+numpy
+scipy
+# Vintern-1B (trust_remote_code)
+timm
+einops
+sentencepiece
+# gán nhãn bằng Excel (src/labeling_xlsx.py)
+openpyxl

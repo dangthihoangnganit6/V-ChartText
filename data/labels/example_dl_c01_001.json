@@ -1,0 +1,25 @@
+{
+  "id": "dl_c01_001",
+  "image": "images/dl_c01_001.png",
+  "source": {
+    "type": "sgk",
+    "book": "Địa lí 12 - Kết nối tri thức",
+    "page": 45,
+    "url": null
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "chart_type": "bar",
+  "title": "Sản lượng lúa của nước ta giai đoạn 2010 - 2021",
+  "x_axis": {"label": "Năm", "unit": null},
+  "y_axis": {"label": "Sản lượng", "unit": "nghìn tấn"},
+  "legend": ["Sản lượng lúa"],
+  "values_shown_on_chart": true,
+  "data": [
+    {"series": "Sản lượng lúa", "x": "2010", "y": 40005.6, "y_raw": "40.005,6"},
+    {"series": "Sản lượng lúa", "x": "2015", "y": 45091.0, "y_raw": "45.091,0"},
+    {"series": "Sản lượng lúa", "x": "2021", "y": 43852.6, "y_raw": "43.852,6"}
+  ],
+  "difficulty": {"n_series": 1, "dual_axis": false, "has_vn_thousand_sep": true},
+  "notes": "Số liệu minh hoạ, không phải số thật trong SGK."
+}

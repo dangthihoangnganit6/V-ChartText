@@ -1,0 +1,64 @@
+{
+  "id": "bar_049",
+  "image": "images/bar_049.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_48.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 191,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "tỉ đô la Mỹ"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số tiền (tiền đô la Mỹ)",
+      "x": "2016",
+      "y": 19.257,
+      "y_raw": "19,257"
+    },
+    {
+      "series": "Số tiền (tiền đô la Mỹ)",
+      "x": "2017",
+      "y": 21.908,
+      "y_raw": "21,908"
+    },
+    {
+      "series": "Số tiền (tiền đô la Mỹ)",
+      "x": "2018",
+      "y": 24.032,
+      "y_raw": "24,032"
+    },
+    {
+      "series": "Số tiền (tiền đô la Mỹ)",
+      "x": "2019",
+      "y": 25.287,
+      "y_raw": "25,287"
+    },
+    {
+      "series": "Số tiền (tiền đô la Mỹ)",
+      "x": "2020",
+      "y": 27.755,
+      "y_raw": "27,755"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

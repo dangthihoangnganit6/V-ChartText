@@ -1,0 +1,64 @@
+{
+  "id": "bar_027",
+  "image": "images/bar_027.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_27.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 170,
+  "chart_type": "bar",
+  "title": "Ước tính dân số Việt Nam qua các thập niên (triệu người)",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "triệu người"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số dân (triệu người)",
+      "x": "1979",
+      "y": 53.0,
+      "y_raw": "53"
+    },
+    {
+      "series": "Số dân (triệu người)",
+      "x": "1989",
+      "y": 67.0,
+      "y_raw": "67"
+    },
+    {
+      "series": "Số dân (triệu người)",
+      "x": "1999",
+      "y": 79.0,
+      "y_raw": "79"
+    },
+    {
+      "series": "Số dân (triệu người)",
+      "x": "2009",
+      "y": 87.0,
+      "y_raw": "87"
+    },
+    {
+      "series": "Số dân (triệu người)",
+      "x": "2019",
+      "y": 93.0,
+      "y_raw": "93"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

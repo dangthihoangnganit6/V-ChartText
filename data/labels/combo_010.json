@@ -1,0 +1,88 @@
+{
+  "id": "combo_010",
+  "image": "images/combo_010.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_10.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 108,
+  "chart_type": "combo",
+  "title": "Biểu đồ tình hình sản xuất lúa ở nước ta giai đoạn 2010 - 2021",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": "Sản lượng",
+    "unit": "Triệu tấn"
+  },
+  "legend": [
+    "Diện tích gieo trồng",
+    "Sản lượng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2010",
+      "y": 7.5,
+      "y_raw": "7,5"
+    },
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2015",
+      "y": 7.8,
+      "y_raw": "7,8"
+    },
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2020",
+      "y": 7.3,
+      "y_raw": "7,3"
+    },
+    {
+      "series": "Diện tích gieo trồng",
+      "x": "2021",
+      "y": 7.2,
+      "y_raw": "7,2"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2010",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2015",
+      "y": 45.1,
+      "y_raw": "45,1"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2020",
+      "y": 42.7,
+      "y_raw": "42,7"
+    },
+    {
+      "series": "Sản lượng",
+      "x": "2021",
+      "y": 43.9,
+      "y_raw": "43,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Diện tích (cột) theo trục phải Triệu ha; Sản lượng (đường) theo trục trái Triệu tấn",
+  "y2_axis": {
+    "label": "Diện tích gieo trồng",
+    "unit": "Triệu ha"
+  },
+  "imported_at": "2026-11-20"
+}

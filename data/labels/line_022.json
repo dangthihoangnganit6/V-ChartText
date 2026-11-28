@@ -1,0 +1,136 @@
+{
+  "id": "line_022",
+  "image": "images/line_022.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_22.jpg"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 25,
+  "chart_type": "line",
+  "title": "Tỉ suất sinh và dân số Nhật Bản 1950-2020",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ suất"
+  },
+  "legend": [
+    "Tỷ suất sinh",
+    "Dân số"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ suất sinh",
+      "x": "1950",
+      "y": 3.5,
+      "y_raw": "3,5"
+    },
+    {
+      "series": "Tỷ suất sinh",
+      "x": "1960",
+      "y": 2.1,
+      "y_raw": "2,1"
+    },
+    {
+      "series": "Tỷ suất sinh",
+      "x": "1970",
+      "y": 2.08,
+      "y_raw": "2,08"
+    },
+    {
+      "series": "Tỷ suất sinh",
+      "x": "1980",
+      "y": 1.8,
+      "y_raw": "1,8"
+    },
+    {
+      "series": "Tỷ suất sinh",
+      "x": "1990",
+      "y": 1.58,
+      "y_raw": "1,58"
+    },
+    {
+      "series": "Tỷ suất sinh",
+      "x": "2000",
+      "y": 1.34,
+      "y_raw": "1,34"
+    },
+    {
+      "series": "Tỷ suất sinh",
+      "x": "2010",
+      "y": 1.36,
+      "y_raw": "1,36"
+    },
+    {
+      "series": "Tỷ suất sinh",
+      "x": "2020",
+      "y": 1.36,
+      "y_raw": "1,36"
+    },
+    {
+      "series": "Dân số",
+      "x": "1950",
+      "y": 84.0,
+      "y_raw": "84"
+    },
+    {
+      "series": "Dân số",
+      "x": "1960",
+      "y": 94.0,
+      "y_raw": "94"
+    },
+    {
+      "series": "Dân số",
+      "x": "1970",
+      "y": 105.0,
+      "y_raw": "105"
+    },
+    {
+      "series": "Dân số",
+      "x": "1980",
+      "y": 117.0,
+      "y_raw": "117"
+    },
+    {
+      "series": "Dân số",
+      "x": "1990",
+      "y": 123.0,
+      "y_raw": "123"
+    },
+    {
+      "series": "Dân số",
+      "x": "2000",
+      "y": 127.0,
+      "y_raw": "127"
+    },
+    {
+      "series": "Dân số",
+      "x": "2010",
+      "y": 128.0,
+      "y_raw": "128"
+    },
+    {
+      "series": "Dân số",
+      "x": "2020",
+      "y": 125.0,
+      "y_raw": "125"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "y2_axis": {
+    "label": null,
+    "unit": "Triệu người"
+  },
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "pie_002",
+  "image": "images/pie_002.jpeg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_2.jpeg"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 58,
+  "chart_type": "pie",
+  "title": "Cơ cấu công suất nguồn điện đến năm 2020",
+  "x_axis": {
+    "label": "Nguồn điện",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ lệ",
+      "x": "Nhiệt điện than",
+      "y": 49.3,
+      "y_raw": "49,3"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Nhiệt điện khí đốt",
+      "y": 16.9,
+      "y_raw": "16,9"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Thuỷ điện tích năng",
+      "y": 2.4,
+      "y_raw": "2,4"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Thuỷ điện",
+      "y": 23.1,
+      "y_raw": "23,1"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Điện nhập khẩu",
+      "y": 3.1,
+      "y_raw": "3,1"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Năng lượng tái tạo",
+      "y": 5.6,
+      "y_raw": "5,6"
+    },
+    {
+      "series": "Tỷ lệ",
+      "x": "Điện hạt nhân",
+      "y": 1.3,
+      "y_raw": "1,3"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

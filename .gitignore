@@ -28,3 +28,23 @@ Thumbs.db
 .vscode/
 .idea/
 *.tmp
+
+# ===== pipeline & đánh giá (Giang) =====
+# Ảnh SGK có bản quyền: lưu trên Drive nhóm, không đẩy lên GitHub public
+data/images/*
+!data/images/.gitkeep
+*.safetensors
+.cache/
+# môi trường ảo, mã tham khảo, ảnh tải từ Drive: chỉ giữ trên máy
+third_party/
+raw_drive/
+# file tạm của find_truncated.py
+rerun_ids.json
+outputs_v768/
+# file khoá của Excel khi đang mở
+~$*
+# bảng cũ (so 2 phiên bản luật, dễ nhầm với prompt v2)
+eval/results/compare_v1_v2.md
+# file đóng gói gửi nhóm, chỉ giữ trên máy
+*.zip
+gửi nhóm/

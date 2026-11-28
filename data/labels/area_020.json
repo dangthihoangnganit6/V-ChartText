@@ -1,0 +1,109 @@
+{
+  "id": "area_020",
+  "image": "images/area_020.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_20.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 139,
+  "chart_type": "area",
+  "title": "Cho biểu đồ về lực lượng lao động phân theo nhóm tuổi của nước ta, giai đoạn 2010 - 2020",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "15-24 tuổi",
+    "25-49 tuổi",
+    "Trên 50 tuổi"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "15-24 tuổi",
+      "x": "2010",
+      "y": 18.3,
+      "y_raw": "18,3"
+    },
+    {
+      "series": "15-24 tuổi",
+      "x": "2018",
+      "y": 12.8,
+      "y_raw": "12,8"
+    },
+    {
+      "series": "15-24 tuổi",
+      "x": "2019",
+      "y": 12.8,
+      "y_raw": "12,8"
+    },
+    {
+      "series": "15-24 tuổi",
+      "x": "2020",
+      "y": 11.4,
+      "y_raw": "11,4"
+    },
+    {
+      "series": "25-49 tuổi",
+      "x": "2010",
+      "y": 61.4,
+      "y_raw": "61,4"
+    },
+    {
+      "series": "25-49 tuổi",
+      "x": "2018",
+      "y": 61.5,
+      "y_raw": "61,5"
+    },
+    {
+      "series": "25-49 tuổi",
+      "x": "2019",
+      "y": 61.5,
+      "y_raw": "61,5"
+    },
+    {
+      "series": "25-49 tuổi",
+      "x": "2020",
+      "y": 61.3,
+      "y_raw": "61,3"
+    },
+    {
+      "series": "Trên 50 tuổi",
+      "x": "2010",
+      "y": 20.3,
+      "y_raw": "20,3"
+    },
+    {
+      "series": "Trên 50 tuổi",
+      "x": "2018",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Trên 50 tuổi",
+      "x": "2019",
+      "y": 25.6,
+      "y_raw": "25,6"
+    },
+    {
+      "series": "Trên 50 tuổi",
+      "x": "2020",
+      "y": 25.8,
+      "y_raw": "25,8"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Năm 2018 ba phần cộng lại 101,3, giữ nguyên số trên ảnh",
+  "imported_at": "2026-11-20"
+}

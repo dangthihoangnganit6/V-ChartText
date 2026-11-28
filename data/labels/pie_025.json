@@ -1,0 +1,72 @@
+{
+  "id": "pie_025",
+  "image": "images/pie_025.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_25.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 81,
+  "chart_type": "pie",
+  "title": "Biểu đồ thể hiện cơ cấu dân số theo tuổi của khu vực Tây Nam Á năm 2000 và 2020",
+  "x_axis": {
+    "label": "Nhóm tuổi",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Năm 2000",
+    "Năm 2020"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 2000",
+      "x": "Dưới 15 tuổi",
+      "y": 36.4,
+      "y_raw": "36,4"
+    },
+    {
+      "series": "Năm 2000",
+      "x": "Từ 15 đến 64 tuổi",
+      "y": 59.1,
+      "y_raw": "59,1"
+    },
+    {
+      "series": "Năm 2000",
+      "x": "Từ 65 tuổi trở lên",
+      "y": 4.5,
+      "y_raw": "4,5"
+    },
+    {
+      "series": "Năm 2020",
+      "x": "Dưới 15 tuổi",
+      "y": 28.7,
+      "y_raw": "28,7"
+    },
+    {
+      "series": "Năm 2020",
+      "x": "Từ 15 đến 64 tuổi",
+      "y": 65.6,
+      "y_raw": "65,6"
+    },
+    {
+      "series": "Năm 2020",
+      "x": "Từ 65 tuổi trở lên",
+      "y": 5.7,
+      "y_raw": "5,7"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

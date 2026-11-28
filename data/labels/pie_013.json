@@ -1,0 +1,84 @@
+{
+  "id": "pie_013",
+  "image": "images/pie_013.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_13.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 69,
+  "chart_type": "pie",
+  "title": "Biểu đồ quy mô và cấu trúc sản xuất công nghiệp phân theo ngành ở nước ta năm 2010 và năm 2021",
+  "x_axis": {
+    "label": "Ngành",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Cơ cấu năm 2010",
+    "Cơ cấu năm 2021"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Công nghiệp khai khoáng",
+      "y": 10.2,
+      "y_raw": "10,2"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Công nghiệp chế biến, chế tạo",
+      "y": 86.2,
+      "y_raw": "86,2"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Sản xuất và phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",
+      "y": 3.0,
+      "y_raw": "3"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",
+      "y": 0.6,
+      "y_raw": "0,6"
+    },
+    {
+      "series": "Cơ cấu năm 2021",
+      "x": "Công nghiệp khai khoáng",
+      "y": 3.0,
+      "y_raw": "3"
+    },
+    {
+      "series": "Cơ cấu năm 2021",
+      "x": "Công nghiệp chế biến, chế tạo",
+      "y": 93.0,
+      "y_raw": "93"
+    },
+    {
+      "series": "Cơ cấu năm 2021",
+      "x": "Sản xuất và phân phối điện, khí đốt, nước nóng, hơi nước và điều hoà không khí",
+      "y": 3.3,
+      "y_raw": "3,3"
+    },
+    {
+      "series": "Cơ cấu năm 2021",
+      "x": "Cung cấp nước, hoạt động quản lí và xử lí rác thải, nước thải",
+      "y": 0.7,
+      "y_raw": "0,7"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

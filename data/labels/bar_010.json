@@ -1,0 +1,92 @@
+{
+  "id": "bar_010",
+  "image": "images/bar_010.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_10.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 153,
+  "chart_type": "bar",
+  "title": "Diện tích cây công nghiệp lâu năm vùng Trung du và miền núi Bắc Bộ, Tây Nguyên và Đông Nam Bộ giai đoạn 2010 - 2021",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn ha"
+  },
+  "legend": [
+    "Trung du và miền núi Bắc Bộ",
+    "Tây Nguyên",
+    "Đông Nam Bộ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Trung du và miền núi Bắc Bộ",
+      "x": "2010",
+      "y": 116.8,
+      "y_raw": "116,8"
+    },
+    {
+      "series": "Trung du và miền núi Bắc Bộ",
+      "x": "2015",
+      "y": 144.1,
+      "y_raw": "144,1"
+    },
+    {
+      "series": "Trung du và miền núi Bắc Bộ",
+      "x": "2021",
+      "y": 149.2,
+      "y_raw": "149,2"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "2010",
+      "y": 820.4,
+      "y_raw": "820,4"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "2015",
+      "y": 980.3,
+      "y_raw": "980,3"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "2021",
+      "y": 1063.7,
+      "y_raw": "1063,7"
+    },
+    {
+      "series": "Đông Nam Bộ",
+      "x": "2010",
+      "y": 802.1,
+      "y_raw": "802,1"
+    },
+    {
+      "series": "Đông Nam Bộ",
+      "x": "2015",
+      "y": 813.2,
+      "y_raw": "813,2"
+    },
+    {
+      "series": "Đông Nam Bộ",
+      "x": "2021",
+      "y": 809.9,
+      "y_raw": "809,9"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

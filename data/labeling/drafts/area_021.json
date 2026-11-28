@@ -1,0 +1,104 @@
+{
+ "id": "area_021",
+ "title": "Cơ cấu GDP phân theo ngành kinh tế của nước ta giai đoạn 2010 – 2022",
+ "subject": "dia_li",
+ "src_type": null,
+ "x_axis": {
+  "label": "Năm",
+  "unit": null
+ },
+ "y_axis": {
+  "label": null,
+  "unit": "%"
+ },
+ "legend": [
+  "Nông nghiệp, lâm nghiệp và thủy sản",
+  "Công nghiệp và xây dựng",
+  "Dịch vụ",
+  "Thuế sản phẩm trừ trợ cấp sản phẩm"
+ ],
+ "values_shown_on_chart": true,
+ "data": [
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+   "x": "2010",
+   "y_raw": "15,4"
+  },
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+   "x": "2015",
+   "y_raw": "14,5"
+  },
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+   "x": "2020",
+   "y_raw": "12,7"
+  },
+  {
+   "series": "Nông nghiệp, lâm nghiệp và thủy sản",
+   "x": "2022",
+   "y_raw": "12,0"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "2010",
+   "y_raw": "33,0"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "2015",
+   "y_raw": "34,3"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "2020",
+   "y_raw": "36,7"
+  },
+  {
+   "series": "Công nghiệp và xây dựng",
+   "x": "2022",
+   "y_raw": "38,2"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2010",
+   "y_raw": "40,6"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2015",
+   "y_raw": "42,2"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2020",
+   "y_raw": "41,8"
+  },
+  {
+   "series": "Dịch vụ",
+   "x": "2022",
+   "y_raw": "41,3"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "2010",
+   "y_raw": "11"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "2015",
+   "y_raw": "9,1"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "2020",
+   "y_raw": "8,8"
+  },
+  {
+   "series": "Thuế sản phẩm trừ trợ cấp sản phẩm",
+   "x": "2022",
+   "y_raw": "8,5"
+  }
+ ],
+ "notes": "[Claude nháp] Nguồn số liệu: Niên giám thống kê Việt Nam năm 2023."
+}

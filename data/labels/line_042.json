@@ -1,0 +1,63 @@
+{
+  "id": "line_042",
+  "image": "images/line_042.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_42.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 45,
+  "chart_type": "line",
+  "title": "",
+  "x_axis": {
+    "label": "Quãng đường (km)",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tần số tương đối",
+      "x": "4.5",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "Tần số tương đối",
+      "x": "5.5",
+      "y": 40.0,
+      "y_raw": "40"
+    },
+    {
+      "series": "Tần số tương đối",
+      "x": "6.5",
+      "y": 26.7,
+      "y_raw": "26,7"
+    },
+    {
+      "series": "Tần số tương đối",
+      "x": "7.5",
+      "y": 10.0,
+      "y_raw": "10"
+    },
+    {
+      "series": "Tần số tương đối",
+      "x": "8.5",
+      "y": 3.3,
+      "y_raw": "3,3"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

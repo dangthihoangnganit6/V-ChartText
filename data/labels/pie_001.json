@@ -1,0 +1,63 @@
+{
+  "id": "pie_001",
+  "image": "images/pie_001.jpeg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_1.jpeg"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 57,
+  "chart_type": "pie",
+  "title": "Tỷ trọng các nguồn điện trên tổng sản lượng điện sản xuất",
+  "x_axis": {
+    "label": "Nguồn điện",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỷ trọng",
+      "x": "Thủy điện",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Tỷ trọng",
+      "x": "Nhiệt điện",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "Tỷ trọng",
+      "x": "Tua bin khí",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "Tỷ trọng",
+      "x": "Năng lượng tái tạo",
+      "y": 17.0,
+      "y_raw": "17"
+    },
+    {
+      "series": "Tỷ trọng",
+      "x": "Điện nhập khẩu",
+      "y": 0.8,
+      "y_raw": "0,8"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-25"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "bar_006",
+  "image": "images/bar_006.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_6.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 149,
+  "chart_type": "bar",
+  "title": "Sản lượng thủy sản Trung Quốc giai đoạn 2000 - 2020",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Triệu Tấn"
+  },
+  "legend": [
+    "Thủy sản khai thác",
+    "Thủy sản nuôi trồng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Thủy sản khai thác",
+      "x": "2000",
+      "y": 14.8,
+      "y_raw": "14,8"
+    },
+    {
+      "series": "Thủy sản khai thác",
+      "x": "2010",
+      "y": 15.1,
+      "y_raw": "15,1"
+    },
+    {
+      "series": "Thủy sản khai thác",
+      "x": "2020",
+      "y": 12.7,
+      "y_raw": "12,7"
+    },
+    {
+      "series": "Thủy sản nuôi trồng",
+      "x": "2000",
+      "y": 29.7,
+      "y_raw": "29,7"
+    },
+    {
+      "series": "Thủy sản nuôi trồng",
+      "x": "2010",
+      "y": 47.8,
+      "y_raw": "47,8"
+    },
+    {
+      "series": "Thủy sản nuôi trồng",
+      "x": "2020",
+      "y": 52.3,
+      "y_raw": "52,3"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

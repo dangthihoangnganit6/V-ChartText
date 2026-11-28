@@ -1,0 +1,100 @@
+{
+  "id": "combo_015",
+  "image": "images/combo_015.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_15.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 113,
+  "chart_type": "combo",
+  "title": "Biểu đồ tình hình phát triển dân số của nước ta trong giai đoạn 1995-2003",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn người"
+  },
+  "legend": [
+    "Tổng số dân",
+    "Tốc độ gia tăng dân số"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tổng số dân",
+      "x": "1995",
+      "y": 71995.5,
+      "y_raw": "71995,5"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "1998",
+      "y": 75456.3,
+      "y_raw": "75456,3"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "2000",
+      "y": 77635.4,
+      "y_raw": "77635,4"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "2001",
+      "y": 78685.8,
+      "y_raw": "78685,8"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "2003",
+      "y": 80902.4,
+      "y_raw": "80902,4"
+    },
+    {
+      "series": "Tốc độ gia tăng dân số",
+      "x": "1995",
+      "y": 1.65,
+      "y_raw": "1,65"
+    },
+    {
+      "series": "Tốc độ gia tăng dân số",
+      "x": "1998",
+      "y": 1.55,
+      "y_raw": "1,55"
+    },
+    {
+      "series": "Tốc độ gia tăng dân số",
+      "x": "2000",
+      "y": 1.36,
+      "y_raw": "1,36"
+    },
+    {
+      "series": "Tốc độ gia tăng dân số",
+      "x": "2001",
+      "y": 1.35,
+      "y_raw": "1,35"
+    },
+    {
+      "series": "Tốc độ gia tăng dân số",
+      "x": "2003",
+      "y": 1.47,
+      "y_raw": "1,47"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Số dân thành thị (cột chồng) không ghi số; tốc độ gia tăng theo trục phải (%)",
+  "y2_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "imported_at": "2026-11-20"
+}

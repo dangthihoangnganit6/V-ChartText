@@ -1,0 +1,131 @@
+{
+  "id": "combo_007",
+  "image": "images/combo_007.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_7.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 105,
+  "chart_type": "combo",
+  "title": "Diện tích cây hàng năm, cây lâu năm và tỉ trọng diện tích cây hàng năm của nước ta, giai đoạn 2000 - 2017",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn ha"
+  },
+  "legend": [
+    "Diện tích cây hàng năm",
+    "Diện tích cây lâu năm",
+    "Tỉ trọng diện tích cây hàng năm"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Diện tích cây hàng năm",
+      "x": "2000",
+      "y": 10540.3,
+      "y_raw": "10540,3"
+    },
+    {
+      "series": "Diện tích cây hàng năm",
+      "x": "2005",
+      "y": 10818.8,
+      "y_raw": "10818,8"
+    },
+    {
+      "series": "Diện tích cây hàng năm",
+      "x": "2010",
+      "y": 11214.3,
+      "y_raw": "11214,3"
+    },
+    {
+      "series": "Diện tích cây hàng năm",
+      "x": "2015",
+      "y": 11700.0,
+      "y_raw": "11700"
+    },
+    {
+      "series": "Diện tích cây hàng năm",
+      "x": "2017",
+      "y": 11703.4,
+      "y_raw": "11703,4"
+    },
+    {
+      "series": "Diện tích cây lâu năm",
+      "x": "2000",
+      "y": 2104.0,
+      "y_raw": "2104"
+    },
+    {
+      "series": "Diện tích cây lâu năm",
+      "x": "2005",
+      "y": 2468.2,
+      "y_raw": "2468,2"
+    },
+    {
+      "series": "Diện tích cây lâu năm",
+      "x": "2010",
+      "y": 2846.8,
+      "y_raw": "2846,8"
+    },
+    {
+      "series": "Diện tích cây lâu năm",
+      "x": "2015",
+      "y": 3245.3,
+      "y_raw": "3245,3"
+    },
+    {
+      "series": "Diện tích cây lâu năm",
+      "x": "2017",
+      "y": 3394.4,
+      "y_raw": "3394,4"
+    },
+    {
+      "series": "Tỉ trọng diện tích cây hàng năm",
+      "x": "2000",
+      "y": 83.4,
+      "y_raw": "83,4"
+    },
+    {
+      "series": "Tỉ trọng diện tích cây hàng năm",
+      "x": "2005",
+      "y": 81.4,
+      "y_raw": "81,4"
+    },
+    {
+      "series": "Tỉ trọng diện tích cây hàng năm",
+      "x": "2010",
+      "y": 79.8,
+      "y_raw": "79,8"
+    },
+    {
+      "series": "Tỉ trọng diện tích cây hàng năm",
+      "x": "2015",
+      "y": 78.3,
+      "y_raw": "78,3"
+    },
+    {
+      "series": "Tỉ trọng diện tích cây hàng năm",
+      "x": "2017",
+      "y": 77.5,
+      "y_raw": "77,5"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Tỉ trọng theo trục phải (%)",
+  "y2_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "imported_at": "2026-11-20"
+}

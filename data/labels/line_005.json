@@ -1,0 +1,105 @@
+{
+  "id": "line_005",
+  "image": "images/line_005.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_5.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 8,
+  "chart_type": "line",
+  "title": "Lượng mưa trung bình trong 12 tháng năm 2021 tại Hà Nội",
+  "x_axis": {
+    "label": "Tháng",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "mm"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "1",
+      "y": 19.0,
+      "y_raw": "19"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "2",
+      "y": 26.0,
+      "y_raw": "26"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "3",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "4",
+      "y": 90.0,
+      "y_raw": "90"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "5",
+      "y": 189.0,
+      "y_raw": "189"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "6",
+      "y": 231.0,
+      "y_raw": "231"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "7",
+      "y": 288.0,
+      "y_raw": "288"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "8",
+      "y": 318.0,
+      "y_raw": "318"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "9",
+      "y": 265.0,
+      "y_raw": "265"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "10",
+      "y": 131.0,
+      "y_raw": "131"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "11",
+      "y": 43.0,
+      "y_raw": "43"
+    },
+    {
+      "series": "Lượng mưa trung bình",
+      "x": "12",
+      "y": 23.0,
+      "y_raw": "23"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

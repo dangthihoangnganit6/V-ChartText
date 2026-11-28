@@ -1,0 +1,204 @@
+{
+  "id": "line_021",
+  "image": "images/line_021.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_21.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 24,
+  "chart_type": "line",
+  "title": "Tuổi thọ trung bình từ lúc sinh toàn quốc theo giới tính, giai đoạn 2009 - 2024 và dự báo giai đoạn 2029 - 2074",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tuổi"
+  },
+  "legend": [
+    "Nữ",
+    "Nam"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nữ",
+      "x": "2009",
+      "y": 75.6,
+      "y_raw": "75,6"
+    },
+    {
+      "series": "Nữ",
+      "x": "2014",
+      "y": 76.0,
+      "y_raw": "76,0"
+    },
+    {
+      "series": "Nữ",
+      "x": "2019",
+      "y": 76.3,
+      "y_raw": "76,3"
+    },
+    {
+      "series": "Nữ",
+      "x": "2024",
+      "y": 77.3,
+      "y_raw": "77,3"
+    },
+    {
+      "series": "Nữ",
+      "x": "2029",
+      "y": 77.9,
+      "y_raw": "77,9"
+    },
+    {
+      "series": "Nữ",
+      "x": "2034",
+      "y": 78.5,
+      "y_raw": "78,5"
+    },
+    {
+      "series": "Nữ",
+      "x": "2039",
+      "y": 79.1,
+      "y_raw": "79,1"
+    },
+    {
+      "series": "Nữ",
+      "x": "2044",
+      "y": 79.6,
+      "y_raw": "79,6"
+    },
+    {
+      "series": "Nữ",
+      "x": "2049",
+      "y": 80.1,
+      "y_raw": "80,1"
+    },
+    {
+      "series": "Nữ",
+      "x": "2054",
+      "y": 80.6,
+      "y_raw": "80,6"
+    },
+    {
+      "series": "Nữ",
+      "x": "2059",
+      "y": 81.1,
+      "y_raw": "81,1"
+    },
+    {
+      "series": "Nữ",
+      "x": "2064",
+      "y": 81.6,
+      "y_raw": "81,6"
+    },
+    {
+      "series": "Nữ",
+      "x": "2069",
+      "y": 82.0,
+      "y_raw": "82,0"
+    },
+    {
+      "series": "Nữ",
+      "x": "2074",
+      "y": 82.4,
+      "y_raw": "82,4"
+    },
+    {
+      "series": "Nam",
+      "x": "2009",
+      "y": 70.2,
+      "y_raw": "70,2"
+    },
+    {
+      "series": "Nam",
+      "x": "2014",
+      "y": 70.6,
+      "y_raw": "70,6"
+    },
+    {
+      "series": "Nam",
+      "x": "2019",
+      "y": 71.1,
+      "y_raw": "71,1"
+    },
+    {
+      "series": "Nam",
+      "x": "2024",
+      "y": 72.3,
+      "y_raw": "72,3"
+    },
+    {
+      "series": "Nam",
+      "x": "2029",
+      "y": 73.0,
+      "y_raw": "73,0"
+    },
+    {
+      "series": "Nam",
+      "x": "2034",
+      "y": 73.6,
+      "y_raw": "73,6"
+    },
+    {
+      "series": "Nam",
+      "x": "2039",
+      "y": 74.3,
+      "y_raw": "74,3"
+    },
+    {
+      "series": "Nam",
+      "x": "2044",
+      "y": 74.9,
+      "y_raw": "74,9"
+    },
+    {
+      "series": "Nam",
+      "x": "2049",
+      "y": 75.4,
+      "y_raw": "75,4"
+    },
+    {
+      "series": "Nam",
+      "x": "2054",
+      "y": 76.0,
+      "y_raw": "76,0"
+    },
+    {
+      "series": "Nam",
+      "x": "2059",
+      "y": 76.5,
+      "y_raw": "76,5"
+    },
+    {
+      "series": "Nam",
+      "x": "2064",
+      "y": 77.0,
+      "y_raw": "77,0"
+    },
+    {
+      "series": "Nam",
+      "x": "2069",
+      "y": 77.5,
+      "y_raw": "77,5"
+    },
+    {
+      "series": "Nam",
+      "x": "2074",
+      "y": 77.9,
+      "y_raw": "77,9"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "[20/11] Ảnh có 14 mốc (2009-2074), bỏ 2079; sửa dấu || trong chuỗi Nam; đơn vị Tuổi. Chú giải gốc tách Thực tế/Dự báo, ở đây gộp theo giới",
+  "imported_at": "2026-11-20"
+}

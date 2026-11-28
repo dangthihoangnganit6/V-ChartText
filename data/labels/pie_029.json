@@ -1,0 +1,57 @@
+{
+  "id": "pie_029",
+  "image": "images/pie_029.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_29.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 85,
+  "chart_type": "pie",
+  "title": "",
+  "x_axis": {
+    "label": "Loại rừng",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tỉ lệ",
+      "x": "Rừng sản xuất",
+      "y": 48.9,
+      "y_raw": "48,9"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Rừng phòng hộ",
+      "y": 33.1,
+      "y_raw": "33,1"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Rừng đặc dụng",
+      "y": 15.1,
+      "y_raw": "15,1"
+    },
+    {
+      "series": "Tỉ lệ",
+      "x": "Rừng khác",
+      "y": 2.9,
+      "y_raw": "2,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề, không ghi đơn vị (tổng = 100 nên coi là %)",
+  "imported_at": "2026-11-20"
+}

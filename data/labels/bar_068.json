@@ -1,0 +1,85 @@
+{
+  "id": "bar_068",
+  "image": "images/bar_068.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_67.jpg"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 210,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn tấn"
+  },
+  "legend": [
+    "Cá biển",
+    "Hải sản khác"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cá biển",
+      "x": "2010",
+      "y": 516.9,
+      "y_raw": "516,9"
+    },
+    {
+      "series": "Cá biển",
+      "x": "2015",
+      "y": 721.9,
+      "y_raw": "721,9"
+    },
+    {
+      "series": "Cá biển",
+      "x": "2020",
+      "y": 940.4,
+      "y_raw": "940,4"
+    },
+    {
+      "series": "Cá biển",
+      "x": "2021",
+      "y": 966.0,
+      "y_raw": "966,0"
+    },
+    {
+      "series": "Hải sản khác",
+      "x": "2010",
+      "y": 190.2,
+      "y_raw": "190,2"
+    },
+    {
+      "series": "Hải sản khác",
+      "x": "2015",
+      "y": 191.7,
+      "y_raw": "191,7"
+    },
+    {
+      "series": "Hải sản khác",
+      "x": "2020",
+      "y": 204.4,
+      "y_raw": "204,4"
+    },
+    {
+      "series": "Hải sản khác",
+      "x": "2021",
+      "y": 201.9,
+      "y_raw": "201,9"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "stacked",
+  "imported_at": "2026-11-20"
+}
