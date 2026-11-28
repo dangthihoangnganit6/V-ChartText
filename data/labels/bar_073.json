@@ -1,0 +1,64 @@
+{
+  "id": "bar_073",
+  "image": "images/bar_073.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_72.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 215,
+  "chart_type": "bar",
+  "title": "Sản lượng điện của TQ qua các năm",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ kWh"
+  },
+  "legend": [],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Sản lượng điện",
+      "x": "2001",
+      "y": 1480.0,
+      "y_raw": "1480"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2002",
+      "y": 1650.0,
+      "y_raw": "1650"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2003",
+      "y": 1900.0,
+      "y_raw": "1900"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2004",
+      "y": 2200.0,
+      "y_raw": "2200"
+    },
+    {
+      "series": "Sản lượng điện",
+      "x": "2005",
+      "y": 2470.0,
+      "y_raw": "2470"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này [25/11] Đọc lại giá trị theo vạch trục (ảnh không in số).",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

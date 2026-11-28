@@ -1,0 +1,58 @@
+{
+  "id": "bar_024",
+  "image": "images/bar_024.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_24.png"
+  },
+  "annotator": "ngan",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 167,
+  "chart_type": "bar",
+  "title": "Biểu đồ biểu diễn số đại biểu chọn mỗi loại nước uống",
+  "x_axis": {
+    "label": "Loại nước uống",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Số đại biểu chọn"
+  },
+  "legend": [],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Số đại biểu chọn mỗi loại nước uống",
+      "x": "Nước cam",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Số đại biểu chọn mỗi loại nước uống",
+      "x": "Nước dứa",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Số đại biểu chọn mỗi loại nước uống",
+      "x": "Nước chanh",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "Số đại biểu chọn mỗi loại nước uống",
+      "x": "Nước dưa hấu",
+      "y": 8.0,
+      "y_raw": "8"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

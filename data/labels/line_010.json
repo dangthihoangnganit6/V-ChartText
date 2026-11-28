@@ -1,0 +1,182 @@
+{
+  "id": "line_010",
+  "image": "images/line_010.jpeg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_10.jpeg"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 13,
+  "chart_type": "line",
+  "title": "Biểu đồ thể hiện tốc độ tăng trưởng một số sản phẩm công nghiệp của thế giới thời kì 1950 - 2003",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Điện",
+    "Dầu mỏ",
+    "Thép",
+    "Than"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Điện",
+      "x": "1950",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Điện",
+      "x": "1960",
+      "y": 238.0,
+      "y_raw": "238"
+    },
+    {
+      "series": "Điện",
+      "x": "1970",
+      "y": 513.0,
+      "y_raw": "513"
+    },
+    {
+      "series": "Điện",
+      "x": "1980",
+      "y": 823.0,
+      "y_raw": "823"
+    },
+    {
+      "series": "Điện",
+      "x": "1990",
+      "y": 1224.0,
+      "y_raw": "1224"
+    },
+    {
+      "series": "Điện",
+      "x": "2003",
+      "y": 1535.0,
+      "y_raw": "1535"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "1950",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "1960",
+      "y": 200.0,
+      "y_raw": "200"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "1970",
+      "y": 447.0,
+      "y_raw": "447"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "1980",
+      "y": 586.0,
+      "y_raw": "586"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "1990",
+      "y": 637.0,
+      "y_raw": "637"
+    },
+    {
+      "series": "Dầu mỏ",
+      "x": "2003",
+      "y": 746.0,
+      "y_raw": "746"
+    },
+    {
+      "series": "Thép",
+      "x": "1950",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Thép",
+      "x": "1960",
+      "y": 150.0,
+      "y_raw": "150"
+    },
+    {
+      "series": "Thép",
+      "x": "1970",
+      "y": 314.0,
+      "y_raw": "314"
+    },
+    {
+      "series": "Thép",
+      "x": "1980",
+      "y": 361.0,
+      "y_raw": "361"
+    },
+    {
+      "series": "Thép",
+      "x": "1990",
+      "y": 407.0,
+      "y_raw": "407"
+    },
+    {
+      "series": "Thép",
+      "x": "2003",
+      "y": 460.0,
+      "y_raw": "460"
+    },
+    {
+      "series": "Than",
+      "x": "1950",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Than",
+      "x": "1960",
+      "y": 143.0,
+      "y_raw": "143"
+    },
+    {
+      "series": "Than",
+      "x": "1970",
+      "y": 161.0,
+      "y_raw": "161"
+    },
+    {
+      "series": "Than",
+      "x": "1980",
+      "y": 207.0,
+      "y_raw": "207"
+    },
+    {
+      "series": "Than",
+      "x": "1990",
+      "y": 187.0,
+      "y_raw": "187"
+    },
+    {
+      "series": "Than",
+      "x": "2003",
+      "y": 291.0,
+      "y_raw": "291"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "[25/11] Dầu mỏ 1960 và Thép 1960 không in số trên ảnh (200, 150 là ước lượng).",
+  "imported_at": "2026-11-20"
+}

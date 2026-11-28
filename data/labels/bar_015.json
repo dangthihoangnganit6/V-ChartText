@@ -1,0 +1,106 @@
+{
+  "id": "bar_015",
+  "image": "images/bar_015.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_15.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 158,
+  "chart_type": "bar",
+  "title": "Biểu đồ về lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+  "x_axis": {
+    "label": "Tháng",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "mm"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "I",
+      "y": 13.8,
+      "y_raw": "13,8"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "II",
+      "y": 4.1,
+      "y_raw": "4,1"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "III",
+      "y": 10.5,
+      "y_raw": "10,5"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "IV",
+      "y": 50.4,
+      "y_raw": "50,4"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "V",
+      "y": 218.4,
+      "y_raw": "218,4"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "VI",
+      "y": 311.7,
+      "y_raw": "311,7"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "VII",
+      "y": 293.7,
+      "y_raw": "293,7"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "VIII",
+      "y": 269.8,
+      "y_raw": "269,8"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "IX",
+      "y": 327.0,
+      "y_raw": "327"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "X",
+      "y": 266.7,
+      "y_raw": "266,7"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "XI",
+      "y": 116.5,
+      "y_raw": "116,5"
+    },
+    {
+      "series": "lượng mưa trung bình tháng ở TP. Hồ Chí Minh",
+      "x": "XII",
+      "y": 48.3,
+      "y_raw": "48,3"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "line_003",
+  "image": "images/line_003.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_3.jpg"
+  },
+  "annotator": "nhi",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 6,
+  "chart_type": "line",
+  "title": "Số lượng quạt máy bán được trong năm vừa qua",
+  "x_axis": {
+    "label": "Tháng",
+    "unit": null
+  },
+  "y_axis": {
+    "label": "Số lượng",
+    "unit": null
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số lượng bán ra",
+      "x": "1",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "2",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "3",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "4",
+      "y": 120.0,
+      "y_raw": "120"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "5",
+      "y": 140.0,
+      "y_raw": "140"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "6",
+      "y": 150.0,
+      "y_raw": "150"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "7",
+      "y": 130.0,
+      "y_raw": "130"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "8",
+      "y": 140.0,
+      "y_raw": "140"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "9",
+      "y": 80.0,
+      "y_raw": "80"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "10",
+      "y": 50.0,
+      "y_raw": "50"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "11",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Số lượng bán ra",
+      "x": "12",
+      "y": 20.0,
+      "y_raw": "20"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

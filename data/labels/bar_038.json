@@ -1,0 +1,97 @@
+{
+  "id": "bar_038",
+  "image": "images/bar_038.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_38.jpg"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 181,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tuổi thọ trung bình"
+  },
+  "legend": [
+    "Nam",
+    "Nữ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nam",
+      "x": "2016",
+      "y": 70.8,
+      "y_raw": "70,8"
+    },
+    {
+      "series": "Nam",
+      "x": "2017",
+      "y": 70.9,
+      "y_raw": "70,9"
+    },
+    {
+      "series": "Nam",
+      "x": "2018",
+      "y": 70.9,
+      "y_raw": "70,9"
+    },
+    {
+      "series": "Nam",
+      "x": "2019",
+      "y": 71.0,
+      "y_raw": "71"
+    },
+    {
+      "series": "Nam",
+      "x": "2020",
+      "y": 71.0,
+      "y_raw": "71"
+    },
+    {
+      "series": "Nữ",
+      "x": "2016",
+      "y": 76.1,
+      "y_raw": "76,1"
+    },
+    {
+      "series": "Nữ",
+      "x": "2017",
+      "y": 76.2,
+      "y_raw": "76,2"
+    },
+    {
+      "series": "Nữ",
+      "x": "2018",
+      "y": 76.2,
+      "y_raw": "76,2"
+    },
+    {
+      "series": "Nữ",
+      "x": "2019",
+      "y": 76.3,
+      "y_raw": "76,3"
+    },
+    {
+      "series": "Nữ",
+      "x": "2020",
+      "y": 76.4,
+      "y_raw": "76,4"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

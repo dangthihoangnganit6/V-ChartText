@@ -1,0 +1,127 @@
+{
+  "id": "line_030",
+  "image": "images/line_030.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_30.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 33,
+  "chart_type": "line",
+  "title": "Tốc độ tăng trưởng tổng số dân, sản lượng lương thực và bình quân lương thực theo đầu người của nước ta giai đoạn 1990-2015",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Sản lượng lương thực",
+    "Bình quân lương thực đầu người",
+    "Tổng số dân"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Sản lượng lương thực",
+      "x": "1990",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2000",
+      "y": 173.7,
+      "y_raw": "173,7"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2005",
+      "y": 199.3,
+      "y_raw": "199,3"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2010",
+      "y": 224.5,
+      "y_raw": "224,5"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2015",
+      "y": 254.0,
+      "y_raw": "254"
+    },
+    {
+      "series": "Bình quân lương thực đầu người",
+      "x": "1990",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Bình quân lương thực đầu người",
+      "x": "2000",
+      "y": 148.7,
+      "y_raw": "148,7"
+    },
+    {
+      "series": "Bình quân lương thực đầu người",
+      "x": "2005",
+      "y": 159.7,
+      "y_raw": "159,7"
+    },
+    {
+      "series": "Bình quân lương thực đầu người",
+      "x": "2010",
+      "y": 170.5,
+      "y_raw": "170,5"
+    },
+    {
+      "series": "Bình quân lương thực đầu người",
+      "x": "2015",
+      "y": 182.9,
+      "y_raw": "182,9"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "1990",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "2000",
+      "y": 117.6,
+      "y_raw": "117,6"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "2005",
+      "y": 124.8,
+      "y_raw": "124,8"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "2010",
+      "y": 131.7,
+      "y_raw": "131,7"
+    },
+    {
+      "series": "Tổng số dân",
+      "x": "2015",
+      "y": 138.9,
+      "y_raw": "138,9"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

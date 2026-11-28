@@ -1,0 +1,159 @@
+{
+  "id": "line_039",
+  "image": "images/line_039.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_39.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 42,
+  "chart_type": "line",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Việt Nam",
+    "Thái Lan",
+    "Brunei",
+    "Cam-pu-chia"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Việt Nam",
+      "x": "2011",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2012",
+      "y": 138.8,
+      "y_raw": "138,8"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2013",
+      "y": 152.1,
+      "y_raw": "152,1"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2014",
+      "y": 165.5,
+      "y_raw": "165,5"
+    },
+    {
+      "series": "Việt Nam",
+      "x": "2015",
+      "y": 173.4,
+      "y_raw": "173,4"
+    },
+    {
+      "series": "Thái Lan",
+      "x": "2011",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Thái Lan",
+      "x": "2012",
+      "y": 120.5,
+      "y_raw": "120,5"
+    },
+    {
+      "series": "Thái Lan",
+      "x": "2013",
+      "y": 127.4,
+      "y_raw": "127,4"
+    },
+    {
+      "series": "Thái Lan",
+      "x": "2014",
+      "y": 121.8,
+      "y_raw": "121,8"
+    },
+    {
+      "series": "Thái Lan",
+      "x": "2015",
+      "y": 118.8,
+      "y_raw": "118,8"
+    },
+    {
+      "series": "Brunei",
+      "x": "2011",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Brunei",
+      "x": "2012",
+      "y": 105.0,
+      "y_raw": "105"
+    },
+    {
+      "series": "Brunei",
+      "x": "2013",
+      "y": 102.4,
+      "y_raw": "102,4"
+    },
+    {
+      "series": "Brunei",
+      "x": "2014",
+      "y": 101.8,
+      "y_raw": "101,8"
+    },
+    {
+      "series": "Brunei",
+      "x": "2015",
+      "y": 100.1,
+      "y_raw": "100,1"
+    },
+    {
+      "series": "Cam-pu-chia",
+      "x": "2011",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Cam-pu-chia",
+      "x": "2012",
+      "y": 120.7,
+      "y_raw": "120,7"
+    },
+    {
+      "series": "Cam-pu-chia",
+      "x": "2013",
+      "y": 129.4,
+      "y_raw": "129,4"
+    },
+    {
+      "series": "Cam-pu-chia",
+      "x": "2014",
+      "y": 142.7,
+      "y_raw": "142,7"
+    },
+    {
+      "series": "Cam-pu-chia",
+      "x": "2015",
+      "y": 151.5,
+      "y_raw": "151,5"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "duplicate_of": "line_026",
+  "imported_at": "2026-11-20"
+}

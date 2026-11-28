@@ -1,0 +1,138 @@
+{
+  "id": "combo_014",
+  "image": "images/combo_014.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_14.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 112,
+  "chart_type": "combo",
+  "title": "Biểu đồ thể hiện số lượng khách và doanh thu du lịch ở nước ta giai đoạn 2010 - 2021",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Triệu lượt"
+  },
+  "legend": [
+    "Khách do các cơ sở lưu trú phục vụ",
+    "Khách do các cơ sở lữ hành phục vụ",
+    "Doanh thu của các cơ sở lưu trú",
+    "Doanh thu của các cơ sở lữ hành"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Khách do các cơ sở lưu trú phục vụ",
+      "x": "2010",
+      "y": 66.5,
+      "y_raw": "66,5"
+    },
+    {
+      "series": "Khách do các cơ sở lưu trú phục vụ",
+      "x": "2015",
+      "y": 114.0,
+      "y_raw": "114"
+    },
+    {
+      "series": "Khách do các cơ sở lưu trú phục vụ",
+      "x": "2019",
+      "y": 179.4,
+      "y_raw": "179,4"
+    },
+    {
+      "series": "Khách do các cơ sở lưu trú phục vụ",
+      "x": "2021",
+      "y": 63.6,
+      "y_raw": "63,6"
+    },
+    {
+      "series": "Khách do các cơ sở lữ hành phục vụ",
+      "x": "2010",
+      "y": 8.2,
+      "y_raw": "8,2"
+    },
+    {
+      "series": "Khách do các cơ sở lữ hành phục vụ",
+      "x": "2015",
+      "y": 12.6,
+      "y_raw": "12,6"
+    },
+    {
+      "series": "Khách do các cơ sở lữ hành phục vụ",
+      "x": "2019",
+      "y": 18.4,
+      "y_raw": "18,4"
+    },
+    {
+      "series": "Khách do các cơ sở lữ hành phục vụ",
+      "x": "2021",
+      "y": 3.6,
+      "y_raw": "3,6"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lưu trú",
+      "x": "2010",
+      "y": 28.9,
+      "y_raw": "28,9"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lưu trú",
+      "x": "2015",
+      "y": 44.7,
+      "y_raw": "44,7"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lưu trú",
+      "x": "2019",
+      "y": 67.0,
+      "y_raw": "67"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lưu trú",
+      "x": "2021",
+      "y": 23.7,
+      "y_raw": "23,7"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lữ hành",
+      "x": "2010",
+      "y": 15.5,
+      "y_raw": "15,5"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lữ hành",
+      "x": "2015",
+      "y": 30.4,
+      "y_raw": "30,4"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lữ hành",
+      "x": "2019",
+      "y": 44.7,
+      "y_raw": "44,7"
+    },
+    {
+      "series": "Doanh thu của các cơ sở lữ hành",
+      "x": "2021",
+      "y": 9.0,
+      "y_raw": "9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "2 chuỗi khách (cột) theo trục trái Triệu lượt; 2 chuỗi doanh thu (đường) theo trục phải Nghìn tỉ đồng",
+  "y2_axis": {
+    "label": null,
+    "unit": "Nghìn tỉ đồng"
+  },
+  "imported_at": "2026-11-20"
+}

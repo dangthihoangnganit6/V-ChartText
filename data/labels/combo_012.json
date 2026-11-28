@@ -1,0 +1,124 @@
+{
+  "id": "combo_012",
+  "image": "images/combo_012.webp",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_12.webp"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 110,
+  "chart_type": "combo",
+  "title": "Biểu đồ thể hiện GDP, tốc độ tăng trưởng GDP của Nhật Bản giai đoạn 1961 - 2020",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỉ USD"
+  },
+  "legend": [
+    "GDP",
+    "Tốc độ tăng trưởng GDP"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "GDP",
+      "x": "1961",
+      "y": 53.5,
+      "y_raw": "53,5"
+    },
+    {
+      "series": "GDP",
+      "x": "1970",
+      "y": 212.6,
+      "y_raw": "212,6"
+    },
+    {
+      "series": "GDP",
+      "x": "1990",
+      "y": 3132.0,
+      "y_raw": "3132"
+    },
+    {
+      "series": "GDP",
+      "x": "2000",
+      "y": 4968.4,
+      "y_raw": "4968,4"
+    },
+    {
+      "series": "GDP",
+      "x": "2010",
+      "y": 5759.1,
+      "y_raw": "5759,1"
+    },
+    {
+      "series": "GDP",
+      "x": "2019",
+      "y": 5123.3,
+      "y_raw": "5123,3"
+    },
+    {
+      "series": "GDP",
+      "x": "2020",
+      "y": 5040.1,
+      "y_raw": "5040,1"
+    },
+    {
+      "series": "Tốc độ tăng trưởng GDP",
+      "x": "1961",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "Tốc độ tăng trưởng GDP",
+      "x": "1970",
+      "y": 2.5,
+      "y_raw": "2,5"
+    },
+    {
+      "series": "Tốc độ tăng trưởng GDP",
+      "x": "1990",
+      "y": 4.8,
+      "y_raw": "4,8"
+    },
+    {
+      "series": "Tốc độ tăng trưởng GDP",
+      "x": "2000",
+      "y": 2.7,
+      "y_raw": "2,7"
+    },
+    {
+      "series": "Tốc độ tăng trưởng GDP",
+      "x": "2010",
+      "y": 4.1,
+      "y_raw": "4,1"
+    },
+    {
+      "series": "Tốc độ tăng trưởng GDP",
+      "x": "2019",
+      "y": 0.3,
+      "y_raw": "0,3"
+    },
+    {
+      "series": "Tốc độ tăng trưởng GDP",
+      "x": "2020",
+      "y": -4.5,
+      "y_raw": "-4,5"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Tốc độ tăng trưởng theo trục phải (%)",
+  "y2_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "imported_at": "2026-11-20"
+}

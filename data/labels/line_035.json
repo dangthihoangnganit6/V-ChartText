@@ -1,0 +1,75 @@
+{
+  "id": "line_035",
+  "image": "images/line_035.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_35.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 38,
+  "chart_type": "line",
+  "title": "Biểu đồ thể hiện tốc độ tăng GDP của Nhật Bản giai đoạn 1990 - 2005",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tốc độ tăng GDP",
+      "x": "1990",
+      "y": 5.1,
+      "y_raw": "5,1"
+    },
+    {
+      "series": "Tốc độ tăng GDP",
+      "x": "1995",
+      "y": 1.5,
+      "y_raw": "1,5"
+    },
+    {
+      "series": "Tốc độ tăng GDP",
+      "x": "1997",
+      "y": 1.9,
+      "y_raw": "1,9"
+    },
+    {
+      "series": "Tốc độ tăng GDP",
+      "x": "1999",
+      "y": 0.8,
+      "y_raw": "0,8"
+    },
+    {
+      "series": "Tốc độ tăng GDP",
+      "x": "2001",
+      "y": 0.4,
+      "y_raw": "0,4"
+    },
+    {
+      "series": "Tốc độ tăng GDP",
+      "x": "2003",
+      "y": 2.7,
+      "y_raw": "2,7"
+    },
+    {
+      "series": "Tốc độ tăng GDP",
+      "x": "2005",
+      "y": 2.5,
+      "y_raw": "2,5"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

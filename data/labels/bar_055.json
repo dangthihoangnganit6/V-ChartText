@@ -1,0 +1,76 @@
+{
+  "id": "bar_055",
+  "image": "images/bar_055.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_54.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 197,
+  "chart_type": "bar",
+  "title": "GRDP bình quân đầu người các tỉnh ĐNB 2021",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "triệu/người"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "GRDP bình quân đầu người",
+      "x": "Bà Rịa Vũng Tàu",
+      "y": 281.2,
+      "y_raw": "281,2"
+    },
+    {
+      "series": "GRDP bình quân đầu người",
+      "x": "BRVT (trừ dầu khí)",
+      "y": 165.2,
+      "y_raw": "165,2"
+    },
+    {
+      "series": "GRDP bình quân đầu người",
+      "x": "Bình Dương",
+      "y": 152.25,
+      "y_raw": "152,25"
+    },
+    {
+      "series": "GRDP bình quân đầu người",
+      "x": "TP.HCM",
+      "y": 146.2,
+      "y_raw": "146,2"
+    },
+    {
+      "series": "GRDP bình quân đầu người",
+      "x": "Đồng Nai",
+      "y": 118.45,
+      "y_raw": "118,45"
+    },
+    {
+      "series": "GRDP bình quân đầu người",
+      "x": "Tây Ninh",
+      "y": 76.5,
+      "y_raw": "76,5"
+    },
+    {
+      "series": "GRDP bình quân đầu người",
+      "x": "Bình Phước",
+      "y": 75.99,
+      "y_raw": "75,99"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

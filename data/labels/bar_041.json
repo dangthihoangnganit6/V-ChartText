@@ -1,0 +1,97 @@
+{
+  "id": "bar_041",
+  "image": "images/bar_041.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_41.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 184,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Triệu đô la Mỹ"
+  },
+  "legend": [
+    "Nhập khẩu",
+    "Xuất khẩu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nhập khẩu",
+      "x": "2016",
+      "y": 2990.6,
+      "y_raw": "2990,6"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2017",
+      "y": 3660.4,
+      "y_raw": "3660,4"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2018",
+      "y": 4936.8,
+      "y_raw": "4936,8"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2019",
+      "y": 5720.3,
+      "y_raw": "5720,3"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2020",
+      "y": 5381.8,
+      "y_raw": "5381,8"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2016",
+      "y": 2617.9,
+      "y_raw": "2617,9"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2017",
+      "y": 2862.6,
+      "y_raw": "2862,6"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2018",
+      "y": 3533.7,
+      "y_raw": "3533,7"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2019",
+      "y": 3369.2,
+      "y_raw": "3369,2"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2020",
+      "y": 2826.1,
+      "y_raw": "2826,1"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

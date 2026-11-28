@@ -1,0 +1,84 @@
+{
+  "id": "pie_033",
+  "image": "images/pie_033.gif",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_33.gif"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 89,
+  "chart_type": "pie",
+  "title": "",
+  "x_axis": {
+    "label": "Loại đất",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Đồng bằng sông Cửu Long",
+    "Tây Nguyên"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Đồng bằng sông Cửu Long",
+      "x": "Đất nông nghiệp",
+      "y": 74.5,
+      "y_raw": "74,5"
+    },
+    {
+      "series": "Đồng bằng sông Cửu Long",
+      "x": "Đất lâm nghiệp",
+      "y": 9.1,
+      "y_raw": "9,1"
+    },
+    {
+      "series": "Đồng bằng sông Cửu Long",
+      "x": "Đất chuyên dùng và đất ở",
+      "y": 8.5,
+      "y_raw": "8,5"
+    },
+    {
+      "series": "Đồng bằng sông Cửu Long",
+      "x": "Đất chưa sử dụng",
+      "y": 7.9,
+      "y_raw": "7,9"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "Đất nông nghiệp",
+      "y": 23.6,
+      "y_raw": "23,6"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "Đất lâm nghiệp",
+      "y": 55.4,
+      "y_raw": "55,4"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "Đất chuyên dùng và đất ở",
+      "y": 3.4,
+      "y_raw": "3,4"
+    },
+    {
+      "series": "Tây Nguyên",
+      "x": "Đất chưa sử dụng",
+      "y": 17.6,
+      "y_raw": "17,6"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Ảnh không có tiêu đề",
+  "imported_at": "2026-11-20"
+}

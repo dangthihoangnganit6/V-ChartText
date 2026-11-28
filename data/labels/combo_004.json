@@ -1,0 +1,88 @@
+{
+  "id": "combo_004",
+  "image": "images/combo_004.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_4.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 102,
+  "chart_type": "combo",
+  "title": "Sản lượng dầu thô và sản lượng điện của Thái Lan, giai đoạn 2010 - 2015",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn tấn"
+  },
+  "legend": [
+    "Dầu thô",
+    "Điện"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Dầu thô",
+      "x": "2010",
+      "y": 7555.0,
+      "y_raw": "7555"
+    },
+    {
+      "series": "Dầu thô",
+      "x": "2012",
+      "y": 7348.0,
+      "y_raw": "7348"
+    },
+    {
+      "series": "Dầu thô",
+      "x": "2013",
+      "y": 7373.0,
+      "y_raw": "7373"
+    },
+    {
+      "series": "Dầu thô",
+      "x": "2015",
+      "y": 7517.0,
+      "y_raw": "7517"
+    },
+    {
+      "series": "Điện",
+      "x": "2010",
+      "y": 158.0,
+      "y_raw": "158"
+    },
+    {
+      "series": "Điện",
+      "x": "2012",
+      "y": 169.0,
+      "y_raw": "169"
+    },
+    {
+      "series": "Điện",
+      "x": "2013",
+      "y": 169.0,
+      "y_raw": "169"
+    },
+    {
+      "series": "Điện",
+      "x": "2015",
+      "y": 178.0,
+      "y_raw": "178"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Điện theo trục phải (Tỉ kWh)",
+  "y2_axis": {
+    "label": null,
+    "unit": "Tỉ kWh"
+  },
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "pie_042",
+  "image": "images/pie_042.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_42.png"
+  },
+  "annotator": "giang",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 96,
+  "chart_type": "pie",
+  "title": "Doanh số trực tuyến theo lĩnh vực bán lẻ tại Canada",
+  "x_axis": {
+    "label": "Lĩnh vực bán lẻ",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Năm 2005",
+    "Năm 2010"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 2005",
+      "x": "Điện tử & Thiết bị gia dụng",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Thực phẩm & Đồ uống",
+      "y": 22.0,
+      "y_raw": "22"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Đồ nội thất",
+      "y": 25.0,
+      "y_raw": "25"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Trò chơi điện tử",
+      "y": 18.0,
+      "y_raw": "18"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Điện tử & Thiết bị gia dụng",
+      "y": 30.0,
+      "y_raw": "30"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Thực phẩm & Đồ uống",
+      "y": 32.0,
+      "y_raw": "32"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Đồ nội thất",
+      "y": 15.0,
+      "y_raw": "15"
+    },
+    {
+      "series": "Năm 2010",
+      "x": "Trò chơi điện tử",
+      "y": 23.0,
+      "y_raw": "23"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

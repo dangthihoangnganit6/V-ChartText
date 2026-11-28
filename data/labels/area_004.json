@@ -1,0 +1,84 @@
+{
+  "id": "area_004",
+  "image": "images/area_004.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_4.jpg"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 123,
+  "chart_type": "area",
+  "title": "Biểu đồ thể hiện cơ cấu dân số phân theo thành thị và nông thôn nước ta giai đoạn 2000 - 2014",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Thành thị",
+    "Nông thôn"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Thành thị",
+      "x": "2000",
+      "y": 24.1,
+      "y_raw": "24,1"
+    },
+    {
+      "series": "Thành thị",
+      "x": "2005",
+      "y": 27.1,
+      "y_raw": "27,1"
+    },
+    {
+      "series": "Thành thị",
+      "x": "2010",
+      "y": 30.5,
+      "y_raw": "30,5"
+    },
+    {
+      "series": "Thành thị",
+      "x": "2014",
+      "y": 33.1,
+      "y_raw": "33,1"
+    },
+    {
+      "series": "Nông thôn",
+      "x": "2000",
+      "y": 75.9,
+      "y_raw": "75,9"
+    },
+    {
+      "series": "Nông thôn",
+      "x": "2005",
+      "y": 72.9,
+      "y_raw": "72,9"
+    },
+    {
+      "series": "Nông thôn",
+      "x": "2010",
+      "y": 69.5,
+      "y_raw": "69,5"
+    },
+    {
+      "series": "Nông thôn",
+      "x": "2014",
+      "y": 66.9,
+      "y_raw": "66,9"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

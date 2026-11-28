@@ -1,0 +1,109 @@
+{
+  "id": "bar_072",
+  "image": "images/bar_072.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_71.png"
+  },
+  "annotator": "ngan",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 214,
+  "chart_type": "bar",
+  "title": "Điểm của Tiến và Mai",
+  "x_axis": {
+    "label": "Môn học",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Điểm"
+  },
+  "legend": [
+    "Tiến",
+    "Mai"
+  ],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Tiến",
+      "x": "Ngữ văn",
+      "y": 7.0,
+      "y_raw": "7"
+    },
+    {
+      "series": "Tiến",
+      "x": "Toán",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Tiến",
+      "x": "Ngoại ngữ 1",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Tiến",
+      "x": "GDCD",
+      "y": 6.0,
+      "y_raw": "6"
+    },
+    {
+      "series": "Tiến",
+      "x": "Lịch sử và Địa lí",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Tiến",
+      "x": "Khoa học tự nhiên",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Mai",
+      "x": "Ngữ văn",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Mai",
+      "x": "Toán",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Mai",
+      "x": "Ngoại ngữ 1",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "Mai",
+      "x": "GDCD",
+      "y": 6.0,
+      "y_raw": "6"
+    },
+    {
+      "series": "Mai",
+      "x": "Lịch sử và Địa lí",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Mai",
+      "x": "Khoa học tự nhiên",
+      "y": 8.0,
+      "y_raw": "8"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị đọc theo vạch (số nguyên). [20/11] Tiến → tên đúng; dấu xuống dòng → ||; loại cột ghép",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

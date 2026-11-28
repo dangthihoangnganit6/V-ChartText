@@ -1,0 +1,89 @@
+{
+  "id": "combo_005",
+  "image": "images/combo_005.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_5.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 103,
+  "chart_type": "combo",
+  "title": "Sản lượng và giá trị sản xuất thủy sản của nước ta, giai đoạn 2005 - 2017",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn tấn"
+  },
+  "legend": [
+    "Tổng sản lượng (Khai thác + Nuôi trồng)",
+    "Giá trị sản xuất"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tổng sản lượng (Khai thác + Nuôi trồng)",
+      "x": "2005",
+      "y": 3467.0,
+      "y_raw": "3467"
+    },
+    {
+      "series": "Tổng sản lượng (Khai thác + Nuôi trồng)",
+      "x": "2010",
+      "y": 4200.0,
+      "y_raw": "4200"
+    },
+    {
+      "series": "Tổng sản lượng (Khai thác + Nuôi trồng)",
+      "x": "2015",
+      "y": 4870.0,
+      "y_raw": "4870"
+    },
+    {
+      "series": "Tổng sản lượng (Khai thác + Nuôi trồng)",
+      "x": "2017",
+      "y": 5128.0,
+      "y_raw": "5128"
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2005",
+      "y": 38784.0,
+      "y_raw": "38784"
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2010",
+      "y": 47014.0,
+      "y_raw": "47014"
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2015",
+      "y": 53654.0,
+      "y_raw": "53654"
+    },
+    {
+      "series": "Giá trị sản xuất",
+      "x": "2017",
+      "y": 56966.0,
+      "y_raw": "56966"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Cột chồng Khai thác/Nuôi trồng không ghi số riêng, chỉ ghi tổng; Giá trị sản xuất theo trục phải (Tỉ đồng)",
+  "y2_axis": {
+    "label": null,
+    "unit": "Tỉ đồng"
+  },
+  "imported_at": "2026-11-20",
+  "duplicate_of": "combo_001"
+}

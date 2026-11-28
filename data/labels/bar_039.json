@@ -1,0 +1,85 @@
+{
+  "id": "bar_039",
+  "image": "images/bar_039.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_39.jpg"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 182,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": "Sản lượng",
+    "unit": "Nghìn tấn"
+  },
+  "legend": [
+    "Khai thác",
+    "Nuôi trồng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Khai thác",
+      "x": "2000",
+      "y": 1660.9,
+      "y_raw": "1660,9"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2005",
+      "y": 1987.9,
+      "y_raw": "1987,9"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2010",
+      "y": 2414.4,
+      "y_raw": "2414,4"
+    },
+    {
+      "series": "Khai thác",
+      "x": "2016",
+      "y": 3226.1,
+      "y_raw": "3226,1"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2000",
+      "y": 589.6,
+      "y_raw": "589,6"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2005",
+      "y": 1478.0,
+      "y_raw": "1478"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2010",
+      "y": 2728.3,
+      "y_raw": "2728,3"
+    },
+    {
+      "series": "Nuôi trồng",
+      "x": "2016",
+      "y": 3644.6,
+      "y_raw": "3644,6"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "bar_007",
+  "image": "images/bar_007.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_7.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 150,
+  "chart_type": "bar",
+  "title": "Lực lượng lao động từ 15 tuổi trở lên của nước ta giai đoạn 2000 - 2021",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Triệu người"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Lực lượng lao động",
+      "x": "2000",
+      "y": 37.6,
+      "y_raw": "37,6"
+    },
+    {
+      "series": "Lực lượng lao động",
+      "x": "2005",
+      "y": 44.9,
+      "y_raw": "44,9"
+    },
+    {
+      "series": "Lực lượng lao động",
+      "x": "2010",
+      "y": 50.4,
+      "y_raw": "50,4"
+    },
+    {
+      "series": "Lực lượng lao động",
+      "x": "2015",
+      "y": 54.3,
+      "y_raw": "54,3"
+    },
+    {
+      "series": "Lực lượng lao động",
+      "x": "2019",
+      "y": 55.8,
+      "y_raw": "55,8"
+    },
+    {
+      "series": "Lực lượng lao động",
+      "x": "2021",
+      "y": 50.6,
+      "y_raw": "50,6"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "bar_051",
+  "image": "images/bar_051.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_50.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 193,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": null
+  },
+  "legend": [
+    "Khách du lịch nội địa",
+    "Khách quốc tế đến Việt Nam"
+  ],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2011",
+      "y": 30000.0,
+      "y_raw": "30000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2012",
+      "y": 32000.0,
+      "y_raw": "32000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2013",
+      "y": 35000.0,
+      "y_raw": "35000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2014",
+      "y": 38000.0,
+      "y_raw": "38000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2015",
+      "y": 57000.0,
+      "y_raw": "57000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2016",
+      "y": 62000.0,
+      "y_raw": "62000"
+    },
+    {
+      "series": "Khách du lịch nội địa",
+      "x": "2017",
+      "y": 74000.0,
+      "y_raw": "74000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2011",
+      "y": 6000.0,
+      "y_raw": "6000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2012",
+      "y": 6800.0,
+      "y_raw": "6800"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2013",
+      "y": 7500.0,
+      "y_raw": "7500"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2014",
+      "y": 7800.0,
+      "y_raw": "7800"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2015",
+      "y": 8000.0,
+      "y_raw": "8000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2016",
+      "y": 10000.0,
+      "y_raw": "10000"
+    },
+    {
+      "series": "Khách quốc tế đến Việt Nam",
+      "x": "2017",
+      "y": 13000.0,
+      "y_raw": "13000"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. Không nên chấm RA@5% trên ảnh này",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

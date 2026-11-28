@@ -1,0 +1,92 @@
+{
+  "id": "bar_018",
+  "image": "images/bar_018.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_18.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 161,
+  "chart_type": "bar",
+  "title": "Lượng Mưa, Lượng Bốc Hơi Và Cân Bằng ẩm Của Một Số Địa Điểm ở nước ta",
+  "x_axis": {
+    "label": "Tiêu chí",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "mm"
+  },
+  "legend": [
+    "Hà Nội",
+    "Huế",
+    "TP. Hồ Chí Minh"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Hà Nội",
+      "x": "Lượng mưa",
+      "y": 1676.0,
+      "y_raw": "1676"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Lượng bốc hơi",
+      "y": 989.0,
+      "y_raw": "989"
+    },
+    {
+      "series": "Hà Nội",
+      "x": "Cân bằng ẩm",
+      "y": 687.0,
+      "y_raw": "687"
+    },
+    {
+      "series": "Huế",
+      "x": "Lượng mưa",
+      "y": 2868.0,
+      "y_raw": "2868"
+    },
+    {
+      "series": "Huế",
+      "x": "Lượng bốc hơi",
+      "y": 1000.0,
+      "y_raw": "1000"
+    },
+    {
+      "series": "Huế",
+      "x": "Cân bằng ẩm",
+      "y": 1868.0,
+      "y_raw": "1868"
+    },
+    {
+      "series": "TP. Hồ Chí Minh",
+      "x": "Lượng mưa",
+      "y": 1931.0,
+      "y_raw": "1931"
+    },
+    {
+      "series": "TP. Hồ Chí Minh",
+      "x": "Lượng bốc hơi",
+      "y": 1686.0,
+      "y_raw": "1686"
+    },
+    {
+      "series": "TP. Hồ Chí Minh",
+      "x": "Cân bằng ẩm",
+      "y": 245.0,
+      "y_raw": "245"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}
