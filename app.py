@@ -84,7 +84,12 @@ QWEN3_VL_MODEL_ID = os.environ.get("QWEN3_VL_MODEL_ID", "Qwen/Qwen3-VL-2B-Instru
 QWEN3_VL_REMOTE_URL = os.environ.get("QWEN3_VL_REMOTE_URL", "").strip()
 QWEN3_VL_AUTOLOAD = os.environ.get("QWEN3_VL_AUTOLOAD", "0") == "1"
 QWEN3_VL_ALLOW_CPU = os.environ.get("QWEN3_VL_ALLOW_CPU", "0") == "1"
-QWEN3_VL_TIMEOUT = float(os.environ.get("QWEN3_VL_TIMEOUT", "120"))
+QWEN3_VL_TIMEOUT = float(os.environ.get("QWEN3_VL_TIMEOUT", "180"))
+QWEN3_VL_MAX_IMAGE_SIDE = int(os.environ.get("QWEN3_VL_MAX_IMAGE_SIDE", "1280"))
+QWEN3_VL_MAX_NEW_TOKENS = int(os.environ.get("QWEN3_VL_MAX_NEW_TOKENS", "512"))
+QWEN3_VL_REPETITION_PENALTY = float(os.environ.get("QWEN3_VL_REPETITION_PENALTY", "1.05"))
+QWEN3_VL_MIN_PIXELS = int(os.environ.get("QWEN3_VL_MIN_PIXELS", str(256 * 28 * 28)))
+QWEN3_VL_MAX_PIXELS = int(os.environ.get("QWEN3_VL_MAX_PIXELS", str(1280 * 28 * 28)))
 
 QWEN3_VL_PROMPT_JSON = """Bạn là chuyên gia trích xuất dữ liệu biểu đồ giáo dục tiếng Việt (SGK Địa lí, Lịch sử, tài liệu ôn thi THPT Quốc gia).
 Đọc hình ảnh biểu đồ và trích xuất thành DUY NHẤT một chuỗi JSON hợp lệ gồm 7 trường:
@@ -100,6 +105,7 @@ QWEN3_VL_PROMPT_JSON = """Bạn là chuyên gia trích xuất dữ liệu biểu
 Giữ nguyên định dạng số tiếng Việt (dấu ',' thập phân, dấu '.' hàng nghìn). Chỉ trả về JSON, không giải thích thêm."""
 
 _QWEN3_VL_LOCK = threading.Lock()
+_QWEN3_VL_INFER_LOCK = threading.Lock()
 _QWEN3_VL_STATE: Dict[str, Any] = {
     "model": None,
     "processor": None,
@@ -136,7 +142,14 @@ def init_qwen3_vl_model(model_id: Optional[str] = None) -> Tuple[bool, str]:
 
             device = "cuda" if has_cuda else "cpu"
             _QWEN3_VL_STATE["device"] = device
-            processor = AutoProcessor.from_pretrained(target_id)
+            try:
+                processor = AutoProcessor.from_pretrained(
+                    target_id,
+                    min_pixels=QWEN3_VL_MIN_PIXELS,
+                    max_pixels=QWEN3_VL_MAX_PIXELS,
+                )
+            except TypeError:
+                processor = AutoProcessor.from_pretrained(target_id)
             model = AutoModelForImageTextToText.from_pretrained(
                 target_id,
                 dtype="auto",
@@ -662,6 +675,7 @@ def _normalize_qwen3_vl_output(raw_or_dict: Any) -> Tuple[Optional[Dict[str, Any
         m_brace = re.search(r"(\{[\s\S]*\})", raw_text)
         json_str = m.group(1).strip() if m else (m_brace.group(1).strip() if m_brace else "")
         if not json_str:
+            print(f"[Qwen3-VL][_normalize_qwen3_vl_output] Không tìm thấy JSON. raw_text=\n{raw_text}")
             return None, f"Không tìm thấy JSON hợp lệ trong đầu ra Qwen3-VL: {raw_text[:120]}"
 
         json_str = re.sub(r",\s*\}", "}", re.sub(r",\s*\]", "]", json_str))
@@ -671,9 +685,11 @@ def _normalize_qwen3_vl_output(raw_or_dict: Any) -> Tuple[Optional[Dict[str, Any
             try:
                 parsed = json.loads(json_str.replace("'", '"'))
             except Exception:
+                print(f"[Qwen3-VL][_normalize_qwen3_vl_output] Lỗi cú pháp JSON ({e}). raw_text=\n{raw_text}")
                 return None, f"Lỗi cú pháp JSON từ Qwen3-VL: {e}"
 
         if not isinstance(parsed, dict):
+            print(f"[Qwen3-VL][_normalize_qwen3_vl_output] JSON không phải dict. raw_text=\n{raw_text}")
             return None, "Đầu ra JSON của Qwen3-VL không phải dạng dict."
 
     def _norm_sep(v: Any, sep: str, default: str = "") -> str:
@@ -707,6 +723,7 @@ def _normalize_qwen3_vl_output(raw_or_dict: Any) -> Tuple[Optional[Dict[str, Any
         values = _norm_sep(parsed.get("values"), " || ", "")
 
     if not categories and not values:
+        print(f"[Qwen3-VL][_normalize_qwen3_vl_output] Thiếu categories và values. raw_or_dict=\n{raw_or_dict}")
         return None, "Qwen3-VL trả về thiếu cả danh mục (categories) và giá trị (values)."
 
     return {
@@ -720,9 +737,31 @@ def _normalize_qwen3_vl_output(raw_or_dict: Any) -> Tuple[Optional[Dict[str, Any
     }, None
 
 
+def _prepare_qwen3_vl_image(
+    image_path: str,
+    max_side: int = QWEN3_VL_MAX_IMAGE_SIDE,
+) -> Tuple[str, Tuple[int, int], Tuple[int, int], bool]:
+    """Thu nhỏ ảnh giữ nguyên tỷ lệ nếu cạnh dài vượt quá max_side để giảm visual tokens và tăng tốc suy luận."""
+    import tempfile
+
+    with Image.open(image_path) as im:
+        orig_size = im.size
+        w, h = orig_size
+        if max_side > 0 and max(w, h) > max_side:
+            scale = max_side / float(max(w, h))
+            new_size = (max(1, int(round(w * scale))), max(1, int(round(h * scale))))
+            resample = Image.Resampling.LANCZOS if hasattr(Image, "Resampling") else Image.LANCZOS
+            resized = im.convert("RGB").resize(new_size, resample)
+            with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+                tmp_path = tmp.name
+                resized.save(tmp_path, format="PNG")
+            return tmp_path, orig_size, new_size, True
+    return image_path, orig_size, orig_size, False
+
+
 def extract_chart_data_vlm(image_path: str, timeout_sec: float = QWEN3_VL_TIMEOUT) -> Dict[str, Any]:
     """Bước 1: Chạy Qwen3-VL trực tiếp trên ảnh (qua remote Colab endpoint hoặc model cục bộ)."""
-    t0 = time.time()
+    t0 = time.perf_counter()
     if not image_path or not os.path.exists(image_path):
         return {"ok": False, "data": None, "error": "Ảnh không tồn tại.", "error_type": "invalid_image",
                 "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": 0.0}
@@ -732,86 +771,157 @@ def extract_chart_data_vlm(image_path: str, timeout_sec: float = QWEN3_VL_TIMEOU
             im.verify()
     except Exception as e:
         return {"ok": False, "data": None, "error": f"Ảnh không hợp lệ: {e}", "error_type": "invalid_image",
-                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.perf_counter() - t0, 2)}
 
-    remote_url = os.environ.get("QWEN3_VL_REMOTE_URL", "").strip() or QWEN3_VL_REMOTE_URL
-    if remote_url:
-        import requests
+    prepared_path, orig_size, new_size, is_temp_img = _prepare_qwen3_vl_image(image_path)
+    try:
+        remote_url = os.environ.get("QWEN3_VL_REMOTE_URL", "").strip() or QWEN3_VL_REMOTE_URL
+        if remote_url:
+            import requests
 
-        try:
-            with open(image_path, "rb") as img_f:
-                resp = requests.post(
-                    remote_url,
-                    files={"file": (os.path.basename(image_path), img_f, "application/octet-stream")},
-                    timeout=timeout_sec,
+            t_http = time.perf_counter()
+            try:
+                with open(prepared_path, "rb") as img_f:
+                    resp = requests.post(
+                        remote_url,
+                        files={"file": (os.path.basename(prepared_path), img_f, "application/octet-stream")},
+                        timeout=timeout_sec,
+                    )
+            except requests.exceptions.Timeout:
+                elapsed = round(time.perf_counter() - t0, 2)
+                print(f"[Qwen3-VL][Remote] Timeout sau {elapsed}s (ngưỡng {timeout_sec:.0f}s), size={orig_size}->{new_size}")
+                return {"ok": False, "data": None, "error": f"Gọi endpoint từ xa vượt quá {timeout_sec:.0f}s.", "error_type": "timeout",
+                        "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": elapsed}
+            except requests.exceptions.RequestException as e:
+                elapsed = round(time.perf_counter() - t0, 2)
+                print(f"[Qwen3-VL][Remote] RequestException sau {elapsed}s: {e}")
+                return {"ok": False, "data": None, "error": f"Lỗi kết nối endpoint từ xa ({remote_url}): {e}", "error_type": "remote_error",
+                        "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": elapsed}
+
+            http_sec = round(time.perf_counter() - t_http, 2)
+            if resp.status_code >= 400:
+                err_detail = resp.text[:500]
+                err_type = "remote_error"
+                model_id_err = "Qwen3-VL-Remote"
+                try:
+                    err_payload = resp.json()
+                    if isinstance(err_payload, dict):
+                        err_msg = err_payload.get("error") or err_detail
+                        err_trace = err_payload.get("trace") or ""
+                        err_type = err_payload.get("error_type") or "remote_error"
+                        model_id_err = err_payload.get("model_id") or model_id_err
+                        print(f"[Qwen3-VL][Remote] HTTP {resp.status_code} ({http_sec}s): {err_msg}\n{err_trace}")
+                        err_detail = f"{err_msg}" + (f" | trace: {err_trace[-300:]}" if err_trace else "")
+                except ValueError:
+                    print(f"[Qwen3-VL][Remote] HTTP {resp.status_code} ({http_sec}s), non-JSON body: {err_detail}")
+                return {"ok": False, "data": None, "error": f"Endpoint từ xa trả về HTTP {resp.status_code}: {err_detail}", "error_type": err_type,
+                        "model_id": model_id_err, "device": "remote-colab", "elapsed_sec": round(time.perf_counter() - t0, 2)}
+
+            try:
+                payload = resp.json()
+            except ValueError as e:
+                return {"ok": False, "data": None, "error": f"Endpoint từ xa trả về không phải JSON hợp lệ: {e}", "error_type": "invalid_output",
+                        "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": round(time.perf_counter() - t0, 2)}
+
+            if not isinstance(payload, dict) or not payload.get("ok"):
+                err_msg = payload.get("error") if isinstance(payload, dict) else "Phản hồi từ endpoint từ xa không hợp lệ."
+                err_type = (payload.get("error_type") if isinstance(payload, dict) else None) or "remote_error"
+                print(f"[Qwen3-VL][Remote] ok=False ({http_sec}s): {err_type} - {err_msg}")
+                return {"ok": False, "data": None, "error": err_msg or "Endpoint từ xa trả về lỗi.", "error_type": err_type,
+                        "model_id": (payload.get("model_id") if isinstance(payload, dict) else None) or "Qwen3-VL-Remote",
+                        "device": "remote-colab", "elapsed_sec": round(time.perf_counter() - t0, 2)}
+
+            t_norm = time.perf_counter()
+            data, norm_err = _normalize_qwen3_vl_output(payload.get("data"))
+            norm_sec = round(time.perf_counter() - t_norm, 3)
+            elapsed = round(time.perf_counter() - t0, 2)
+            print(f"[Qwen3-VL][Remote] orig={orig_size} sent={new_size} http={http_sec}s norm={norm_sec}s total={elapsed}s")
+            if norm_err or data is None:
+                return {"ok": False, "data": None, "error": norm_err, "error_type": "invalid_output",
+                        "model_id": payload.get("model_id", "Qwen3-VL-Remote"), "device": "remote-colab", "elapsed_sec": elapsed}
+
+            return {"ok": True, "data": data, "error": None, "error_type": None,
+                    "model_id": payload.get("model_id", "Qwen3-VL-Remote"), "device": "remote-colab", "elapsed_sec": elapsed}
+
+        ok_load, load_msg = init_qwen3_vl_model()
+        if not ok_load:
+            return {"ok": False, "data": None, "error": load_msg, "error_type": "model_not_ready",
+                    "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.perf_counter() - t0, 2)}
+
+        def _infer() -> str:
+            import torch
+            from qwen_vl_utils import process_vision_info
+
+            acquired = _QWEN3_VL_INFER_LOCK.acquire(timeout=timeout_sec)
+            if not acquired:
+                raise TimeoutError(f"GPU đang bận xử lý lượt suy luận trước quá {timeout_sec:.0f}s.")
+            try:
+                processor = _QWEN3_VL_STATE["processor"]
+                model = _QWEN3_VL_STATE["model"]
+
+                t_prep = time.perf_counter()
+                messages = [{"role": "user", "content": [{"type": "image", "image": prepared_path}, {"type": "text", "text": QWEN3_VL_PROMPT_JSON}]}]
+                text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+                image_inputs, video_inputs = process_vision_info(messages)
+                inputs = processor(text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt").to(model.device)
+                prep_sec = time.perf_counter() - t_prep
+                input_tokens = int(inputs.input_ids.shape[1])
+
+                t_gen = time.perf_counter()
+                with torch.no_grad():
+                    gen_ids = model.generate(
+                        **inputs,
+                        max_new_tokens=QWEN3_VL_MAX_NEW_TOKENS,
+                        do_sample=False,
+                        repetition_penalty=QWEN3_VL_REPETITION_PENALTY,
+                    )
+                gen_sec = time.perf_counter() - t_gen
+                trimmed = [out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, gen_ids)]
+                output_tokens = int(trimmed[0].shape[0]) if trimmed else 0
+                raw_out = processor.batch_decode(trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+                print(
+                    f"[Qwen3-VL][Local] orig={orig_size} resized={new_size} "
+                    f"prep={prep_sec:.2f}s gen={gen_sec:.2f}s "
+                    f"in_tok={input_tokens} out_tok={output_tokens} max_new={QWEN3_VL_MAX_NEW_TOKENS}"
                 )
-            resp.raise_for_status()
-            payload = resp.json()
-        except requests.exceptions.Timeout:
-            return {"ok": False, "data": None, "error": f"Gọi endpoint từ xa vượt quá {timeout_sec:.0f}s.", "error_type": "timeout",
-                    "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
-        except requests.exceptions.RequestException as e:
-            return {"ok": False, "data": None, "error": f"Lỗi kết nối endpoint từ xa ({remote_url}): {e}", "error_type": "remote_error",
-                    "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
-        except ValueError as e:
-            return {"ok": False, "data": None, "error": f"Endpoint từ xa trả về không phải JSON hợp lệ: {e}", "error_type": "invalid_output",
-                    "model_id": "Qwen3-VL-Remote", "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+                return raw_out
+            finally:
+                _QWEN3_VL_INFER_LOCK.release()
 
-        if not isinstance(payload, dict) or not payload.get("ok"):
-            err_msg = payload.get("error") if isinstance(payload, dict) else "Phản hồi từ endpoint từ xa không hợp lệ."
-            err_type = (payload.get("error_type") if isinstance(payload, dict) else None) or "remote_error"
-            return {"ok": False, "data": None, "error": err_msg or "Endpoint từ xa trả về lỗi.", "error_type": err_type,
-                    "model_id": (payload.get("model_id") if isinstance(payload, dict) else None) or "Qwen3-VL-Remote",
-                    "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+        executor = ThreadPoolExecutor(max_workers=1)
+        future = executor.submit(_infer)
+        try:
+            raw_text = future.result(timeout=timeout_sec)
+        except FuturesTimeoutError:
+            elapsed = round(time.perf_counter() - t0, 2)
+            print(f"[Qwen3-VL][Local] FuturesTimeoutError sau {elapsed}s (ngưỡng {timeout_sec:.0f}s)")
+            return {"ok": False, "data": None, "error": f"Suy luận Qwen3-VL vượt quá {timeout_sec:.0f}s.", "error_type": "timeout",
+                    "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": elapsed}
+        except Exception as e:
+            elapsed = round(time.perf_counter() - t0, 2)
+            print(f"[Qwen3-VL][Local] Runtime error sau {elapsed}s: {e}")
+            return {"ok": False, "data": None, "error": f"Lỗi suy luận Qwen3-VL: {e}", "error_type": "runtime_error",
+                    "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": elapsed}
+        finally:
+            executor.shutdown(wait=False)
 
-        data, norm_err = _normalize_qwen3_vl_output(payload.get("data"))
+        t_norm = time.perf_counter()
+        data, norm_err = _normalize_qwen3_vl_output(raw_text)
+        norm_sec = round(time.perf_counter() - t_norm, 3)
+        elapsed = round(time.perf_counter() - t0, 2)
+        print(f"[Qwen3-VL][Local] norm={norm_sec}s total={elapsed}s ok={norm_err is None and data is not None}")
         if norm_err or data is None:
             return {"ok": False, "data": None, "error": norm_err, "error_type": "invalid_output",
-                    "model_id": payload.get("model_id", "Qwen3-VL-Remote"), "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
+                    "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": elapsed}
 
         return {"ok": True, "data": data, "error": None, "error_type": None,
-                "model_id": payload.get("model_id", "Qwen3-VL-Remote"), "device": "remote-colab", "elapsed_sec": round(time.time() - t0, 2)}
-
-    ok_load, load_msg = init_qwen3_vl_model()
-    if not ok_load:
-        return {"ok": False, "data": None, "error": load_msg, "error_type": "model_not_ready",
-                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
-
-    def _infer() -> str:
-        import torch
-        from qwen_vl_utils import process_vision_info
-
-        processor = _QWEN3_VL_STATE["processor"]
-        model = _QWEN3_VL_STATE["model"]
-        messages = [{"role": "user", "content": [{"type": "image", "image": image_path}, {"type": "text", "text": QWEN3_VL_PROMPT_JSON}]}]
-        text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        image_inputs, video_inputs = process_vision_info(messages)
-        inputs = processor(text=[text], images=image_inputs, videos=video_inputs, padding=True, return_tensors="pt").to(model.device)
-        with torch.no_grad():
-            gen_ids = model.generate(**inputs, max_new_tokens=1024, do_sample=False)
-        trimmed = [out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs.input_ids, gen_ids)]
-        return processor.batch_decode(trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
-
-    executor = ThreadPoolExecutor(max_workers=1)
-    future = executor.submit(_infer)
-    try:
-        raw_text = future.result(timeout=timeout_sec)
-    except FuturesTimeoutError:
-        return {"ok": False, "data": None, "error": f"Suy luận Qwen3-VL vượt quá {timeout_sec:.0f}s.", "error_type": "timeout",
-                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
-    except Exception as e:
-        return {"ok": False, "data": None, "error": f"Lỗi suy luận Qwen3-VL: {e}", "error_type": "runtime_error",
-                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": elapsed}
     finally:
-        executor.shutdown(wait=False)
-
-    data, norm_err = _normalize_qwen3_vl_output(raw_text)
-    if norm_err or data is None:
-        return {"ok": False, "data": None, "error": norm_err, "error_type": "invalid_output",
-                "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
-
-    return {"ok": True, "data": data, "error": None, "error_type": None,
-            "model_id": _QWEN3_VL_STATE["model_id"], "device": _QWEN3_VL_STATE["device"], "elapsed_sec": round(time.time() - t0, 2)}
+        if is_temp_img and prepared_path and os.path.exists(prepared_path):
+            try:
+                os.remove(prepared_path)
+            except OSError:
+                pass
 
 
 def process_pipeline_demo(
@@ -847,7 +957,22 @@ def process_pipeline_demo(
     # --------------------------------------------------------------------------
     # BƯỚC 1: SUY LUẬN VLM TRỰC TIẾP TỪ ẢNH ĐẦU VÀO (KHÔNG TRA CỨU CACHE/BENCHMARK)
     # --------------------------------------------------------------------------
+    t_pipe = time.perf_counter()
+    yield (
+        gr.update(value=pd.DataFrame([{"Thuộc tính": "Trạng thái Bước 1 (VLM)", "Nội dung": "⏳ Đang trích xuất dữ liệu biểu đồ bằng Qwen3-VL..."}])),
+        gr.update(value=pd.DataFrame()),
+        gr.update(value="", placeholder="⏳ Đang chờ Bước 1 (Qwen3-VL)...", elem_classes=["v-desc-box", "v-loading-box"]),
+        gr.update(value=None, label="⏳ Đang chờ tạo giọng đọc Cấp 1 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(value="", placeholder="⏳ Đang chờ Bước 1 (Qwen3-VL)...", elem_classes=["v-desc-box", "v-loading-box"]),
+        gr.update(value=None, label="⏳ Đang chờ tạo giọng đọc Cấp 2 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(value="", placeholder="⏳ Đang chờ Bước 1 (Qwen3-VL)...", elem_classes=["v-desc-box", "v-loading-box"]),
+        gr.update(value=None, label="⏳ Đang chờ tạo giọng đọc Cấp 3 (Hoài My)...", elem_classes=["v-loading-audio"]),
+        gr.update(value=render_loading_vichartfact_html("Đang trích xuất dữ liệu biểu đồ bằng Qwen3-VL (Bước 1)...")),
+        gr.update(value=""),
+        []
+    )
     vlm_res = extract_chart_data_vlm(input_image_path)
+    print(f"[Pipeline] Bước 1 hoàn tất sau {time.perf_counter() - t_pipe:.2f}s (ok={vlm_res.get('ok')})")
 
     if not vlm_res.get("ok") or not vlm_res.get("data"):
         err_detail = vlm_res.get("error") or "Không thể trích xuất dữ liệu từ ảnh."
