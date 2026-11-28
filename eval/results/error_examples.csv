@@ -1,0 +1,44 @@
+﻿model,ma_loi,n,vi_du
+Qwen3-VL-2B-Instruct,L1_sai_loai_bieu_do,26,area_005 area_010 area_012 area_015 area_018 combo_001 combo_002 combo_003
+Qwen3-VL-2B-Instruct,L2_thieu_chuoi,18,bar_018 bar_043 bar_048 bar_054 bar_061 combo_005 line_021 pie_006
+Qwen3-VL-2B-Instruct,L3_thieu_diem,33,area_014 bar_014 bar_018 bar_019 bar_024 bar_032 bar_043 bar_048
+Qwen3-VL-2B-Instruct,L4_sai_gia_tri,42,area_001 area_002 area_003 area_004 area_006 area_007 area_008 area_010
+Qwen3-VL-2B-Instruct,L5_bac_so,3,bar_016 bar_049 line_018
+Qwen3-VL-2B-Instruct,L6_sai_don_vi,19,area_013 bar_011 bar_012 bar_013 bar_017 bar_020 bar_025 bar_035
+Qwen3-VL-2B-Instruct,L7_bia_tieu_de,20,bar_022 bar_023 bar_035 bar_038 bar_039 bar_041 bar_043 bar_049
+Qwen3-VL-2B-Instruct,L8_sai_tieu_de,6,bar_004 bar_010 bar_054 bar_058 pie_019 pie_020
+Qwen3-VL-2B-Instruct,L9_json_hong,5,line_018 line_020 line_021 line_022 pie_011
+Qwen3-VL-2B-Instruct,L10_lap,2,line_020 pie_011
+Qwen3-VL-2B-Instruct,L11_cham_gioi_han,5,line_018 line_020 line_021 line_022 pie_011
+Qwen3-VL-2B-Instruct@v2,L1_sai_loai_bieu_do,26,area_005 area_010 area_012 area_015 area_018 combo_001 combo_002 combo_003
+Qwen3-VL-2B-Instruct@v2,L2_thieu_chuoi,17,bar_018 bar_043 bar_048 bar_054 bar_056 bar_061 combo_005 line_021
+Qwen3-VL-2B-Instruct@v2,L3_thieu_diem,44,area_014 bar_014 bar_018 bar_019 bar_024 bar_032 bar_033 bar_043
+Qwen3-VL-2B-Instruct@v2,L4_sai_gia_tri,33,area_001 area_002 area_003 area_004 area_006 area_007 area_008 area_010
+Qwen3-VL-2B-Instruct@v2,L5_bac_so,3,bar_016 bar_049 line_018
+Qwen3-VL-2B-Instruct@v2,L6_sai_don_vi,20,area_013 bar_010 bar_011 bar_012 bar_013 bar_017 bar_020 bar_025
+Qwen3-VL-2B-Instruct@v2,L7_bia_tieu_de,16,bar_022 bar_023 bar_035 bar_038 bar_039 bar_041 bar_043 bar_049
+Qwen3-VL-2B-Instruct@v2,L8_sai_tieu_de,6,bar_004 bar_009 bar_010 bar_054 pie_019 pie_020
+Qwen3-VL-2B-Instruct@v2,L9_json_hong,5,line_018 line_020 line_021 line_022 pie_040
+Qwen3-VL-2B-Instruct@v2,L10_lap,3,line_020 pie_040 pie_041
+Qwen3-VL-2B-Instruct@v2,L11_cham_gioi_han,5,line_018 line_020 line_021 line_022 pie_040
+Vintern-1B-v3_5,L1_sai_loai_bieu_do,83,area_001 area_002 area_003 area_004 area_005 area_006 area_007 area_008
+Vintern-1B-v3_5,L2_thieu_chuoi,27,bar_043 bar_048 bar_054 bar_061 bar_066 combo_012 combo_019 line_021
+Vintern-1B-v3_5,L3_thieu_diem,127,area_001 area_002 area_003 area_004 area_006 area_007 area_008 area_009
+Vintern-1B-v3_5,L4_sai_gia_tri,99,area_001 area_002 area_003 area_004 area_005 area_006 area_007 area_008
+Vintern-1B-v3_5,L5_bac_so,5,bar_016 bar_049 bar_052 combo_006 combo_014
+Vintern-1B-v3_5,L6_sai_don_vi,34,area_013 bar_017 bar_018 bar_020 bar_022 bar_023 bar_025 bar_033
+Vintern-1B-v3_5,L7_bia_tieu_de,47,area_001 area_002 area_003 area_005 area_006 area_007 area_008 area_009
+Vintern-1B-v3_5,L8_sai_tieu_de,5,bar_050 bar_054 line_022 pie_012 pie_020
+Vintern-1B-v3_5,L9_json_hong,12,bar_033 bar_059 bar_075 combo_013 line_018 line_020 line_030 pie_008
+Vintern-1B-v3_5,L10_lap,5,bar_033 bar_059 bar_075 line_030 pie_040
+Vintern-1B-v3_5,L11_cham_gioi_han,10,bar_033 bar_059 bar_075 line_018 line_020 line_030 pie_008 pie_031
+Qwen3-VL-2B-Instruct,D1_so_khong_khop,94,area_006 area_009 area_010 area_011 area_013 area_015 area_018 area_020
+Qwen3-VL-2B-Instruct,D2_so_sai_dinh_dang,28,area_012 bar_003 bar_022 bar_023 bar_042 bar_043 bar_053 bar_054
+Qwen3-VL-2B-Instruct,D3_thieu_don_vi,26,area_013 bar_001 bar_002 bar_003 bar_005 bar_009 bar_010 bar_014
+Qwen3-VL-2B-Instruct,D4_chen_tieng_anh,39,area_001 area_007 area_008 area_009 area_013 area_020 area_022 bar_001
+Qwen3-VL-2B-Instruct,D5_khong_co_so,0,
+Vintern-1B-v3_5,D1_so_khong_khop,98,area_002 area_004 area_008 area_009 area_010 area_015 area_016 area_017
+Vintern-1B-v3_5,D2_so_sai_dinh_dang,33,area_001 area_003 area_008 area_014 area_016 area_022 bar_003 bar_015
+Vintern-1B-v3_5,D3_thieu_don_vi,26,area_002 area_013 bar_003 bar_014 bar_017 bar_019 bar_020 bar_023
+Vintern-1B-v3_5,D4_chen_tieng_anh,0,
+Vintern-1B-v3_5,D5_khong_co_so,10,bar_026 bar_033 bar_034 bar_044 bar_066 bar_067 bar_075 pie_001
