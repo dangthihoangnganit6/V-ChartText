@@ -1,0 +1,17 @@
+﻿ma_loi,mo_ta,Qwen3-VL-2B-Instruct_so_bd,Qwen3-VL-2B-Instruct_%,Qwen3-VL-2B-Instruct_tren,Qwen3-VL-2B-Instruct@v2_so_bd,Qwen3-VL-2B-Instruct@v2_%,Qwen3-VL-2B-Instruct@v2_tren,Vintern-1B-v3_5_so_bd,Vintern-1B-v3_5_%,Vintern-1B-v3_5_tren
+L1_sai_loai_bieu_do,Gán sai loại biểu đồ (vd combo/area -> bar),26,13.0,200,26,13.0,200,83,41.7,199
+L2_thieu_chuoi,Biểu đồ nhiều chuỗi: lấy được < một nửa số chuỗi (thường chỉ 1 chuỗi),18,13.1,137,17,12.4,137,27,19.7,137
+L3_thieu_diem,Thiếu >= 30% điểm dữ liệu so với nhãn,33,16.5,200,44,22.0,200,127,63.8,199
+L4_sai_gia_tri,>= 1 điểm lệch > 5% (E2),42,23.6,178,33,18.5,178,99,55.9,177
+L5_bac_so,Đọc sai dấu chấm/phẩy -> lệch đúng 10/100/1000 lần (E1),3,1.7,178,3,1.7,178,5,2.8,177
+L6_sai_don_vi,Sai hoặc thiếu đơn vị trục y (chấm nới),19,10.0,190,20,10.5,190,34,18.0,189
+L7_bia_tieu_de,Ảnh không có tiêu đề nhưng mô hình tự đặt tiêu đề,20,40.8,49,16,32.7,49,47,100.0,47
+L8_sai_tieu_de,Ảnh có tiêu đề nhưng chép sai (độ giống < 0.8),6,4.1,146,6,4.1,146,5,3.5,141
+L9_json_hong,Output extract không phải JSON hợp lệ (kể cả cứu được),5,2.5,200,5,2.5,200,12,6.0,200
+L10_lap,Lặp một điểm/cụm >= 5 lần,2,1.0,200,3,1.5,200,5,2.5,200
+L11_cham_gioi_han,Chạm giới hạn max_new_tokens,5,2.5,200,5,2.5,200,10,5.0,200
+D1_so_khong_khop,Mô tả: có >= 1 con số không khớp số liệu (bịa/đọc sai),94,47.0,200,0,,0,98,49.0,200
+D2_so_sai_dinh_dang,"Mô tả: có số lệch bậc 10/100/1000 (đọc nhầm 1.200 / 12,5)",28,14.0,200,0,,0,33,16.5,200
+D3_thieu_don_vi,Mô tả: không nhắc đơn vị của trục y,26,13.7,190,0,,0,26,13.7,190
+D4_chen_tieng_anh,Mô tả: chen từ tiếng Anh,39,19.5,200,0,,0,0,0.0,200
+D5_khong_co_so,Mô tả: không nêu con số nào,0,0.0,200,0,,0,10,5.0,200

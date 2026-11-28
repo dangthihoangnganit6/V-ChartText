@@ -1,0 +1,16 @@
+﻿model,chart_type,n,RA@5%,RA@5%_noi,RNSS,loai_dung_tat_ca,desc_%so_dung
+Qwen3-VL-2B-Instruct,area,24,0.514,0.514,0.93,0.792,0.889
+Qwen3-VL-2B-Instruct,bar,72,0.786,0.81,0.927,1.0,0.732
+Qwen3-VL-2B-Instruct,combo,21,0.74,0.74,0.887,0.0,0.875
+Qwen3-VL-2B-Instruct,line,41,0.736,0.823,0.877,1.0,0.819
+Qwen3-VL-2B-Instruct,pie,42,0.169,0.503,0.872,1.0,0.729
+Qwen3-VL-2B-Instruct@v2,area,24,0.559,0.559,0.923,0.792,
+Qwen3-VL-2B-Instruct@v2,bar,72,0.755,0.779,0.899,1.0,
+Qwen3-VL-2B-Instruct@v2,combo,21,0.725,0.725,0.872,0.0,
+Qwen3-VL-2B-Instruct@v2,line,41,0.735,0.822,0.877,1.0,
+Qwen3-VL-2B-Instruct@v2,pie,42,0.241,0.43,0.749,1.0,
+Vintern-1B-v3_5,area,24,0.096,0.096,0.438,0.0,0.901
+Vintern-1B-v3_5,bar,72,0.373,0.479,0.69,1.0,0.637
+Vintern-1B-v3_5,combo,21,0.209,0.226,0.494,0.0,0.669
+Vintern-1B-v3_5,line,41,0.335,0.409,0.554,0.073,0.917
+Vintern-1B-v3_5,pie,42,0.0,0.129,0.575,1.0,0.58
