@@ -1,0 +1,124 @@
+{
+  "id": "combo_013",
+  "image": "images/combo_013.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ kết hợp_21 ảnh_đủ r/Biểu đồ kết hợp_13.jpg"
+  },
+  "annotator": "giang",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 111,
+  "chart_type": "combo",
+  "title": "Tổng tài sản",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ đồng"
+  },
+  "legend": [
+    "Tổng tài sản",
+    "Tăng trưởng"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tổng tài sản",
+      "x": "2002",
+      "y": 4296.0,
+      "y_raw": "4296"
+    },
+    {
+      "series": "Tổng tài sản",
+      "x": "2003",
+      "y": 7304.0,
+      "y_raw": "7304"
+    },
+    {
+      "series": "Tổng tài sản",
+      "x": "2004",
+      "y": 10395.0,
+      "y_raw": "10395"
+    },
+    {
+      "series": "Tổng tài sản",
+      "x": "2005",
+      "y": 14156.0,
+      "y_raw": "14156"
+    },
+    {
+      "series": "Tổng tài sản",
+      "x": "2006",
+      "y": 24764.0,
+      "y_raw": "24764"
+    },
+    {
+      "series": "Tổng tài sản",
+      "x": "2007",
+      "y": 63484.0,
+      "y_raw": "63484"
+    },
+    {
+      "series": "Tổng tài sản",
+      "x": "2008 (Kế hoạch)",
+      "y": 93182.0,
+      "y_raw": "93182"
+    },
+    {
+      "series": "Tăng trưởng",
+      "x": "2002",
+      "y": 37.0,
+      "y_raw": "37"
+    },
+    {
+      "series": "Tăng trưởng",
+      "x": "2003",
+      "y": 70.0,
+      "y_raw": "70"
+    },
+    {
+      "series": "Tăng trưởng",
+      "x": "2004",
+      "y": 42.0,
+      "y_raw": "42"
+    },
+    {
+      "series": "Tăng trưởng",
+      "x": "2005",
+      "y": 36.0,
+      "y_raw": "36"
+    },
+    {
+      "series": "Tăng trưởng",
+      "x": "2006",
+      "y": 75.0,
+      "y_raw": "75"
+    },
+    {
+      "series": "Tăng trưởng",
+      "x": "2007",
+      "y": 156.0,
+      "y_raw": "156"
+    },
+    {
+      "series": "Tăng trưởng",
+      "x": "2008 (Kế hoạch)",
+      "y": 47.0,
+      "y_raw": "47"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Số trên ảnh viết kiểu Anh (4,296 = 4296); Tăng trưởng theo trục phải (%)",
+  "y2_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "imported_at": "2026-11-20"
+}

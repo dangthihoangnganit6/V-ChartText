@@ -1,0 +1,69 @@
+{
+  "id": "pie_020",
+  "image": "images/pie_020.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_20.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 76,
+  "chart_type": "pie",
+  "title": "Cơ cấu tiêu dùng các dạng năng lượng của toàn cầu trong năm 2019",
+  "x_axis": {
+    "label": "Năng lượng",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu tiêu dùng",
+      "x": "Khí",
+      "y": 24.2,
+      "y_raw": "24,2"
+    },
+    {
+      "series": "Cơ cấu tiêu dùng",
+      "x": "Than",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "Cơ cấu tiêu dùng",
+      "x": "Năng lượng hạt nhân",
+      "y": 4.3,
+      "y_raw": "4,3"
+    },
+    {
+      "series": "Cơ cấu tiêu dùng",
+      "x": "Thủy điện",
+      "y": 6.4,
+      "y_raw": "6,4"
+    },
+    {
+      "series": "Cơ cấu tiêu dùng",
+      "x": "Năng lượng tái tạo",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "Cơ cấu tiêu dùng",
+      "x": "Dầu",
+      "y": 33.1,
+      "y_raw": "33,1"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

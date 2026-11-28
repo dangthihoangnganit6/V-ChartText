@@ -1,0 +1,33 @@
+{
+  "id": "line_045",
+  "image": "images/line_045.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_45.png"
+  },
+  "annotator": "nhi",
+  "subject": null,
+  "status": "excluded",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 54,
+  "chart_type": "line",
+  "title": "Chi tiêu hàng năm trung bình cho dịch vụ điện thoại di động và điện thoại cố định quốc tế, nội địa (2001-2010)",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "$"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [],
+  "reviewer": "Nhi",
+  "notes": "LOẠI KHỎI BENCHMARK: chưa có giá trị",
+  "exclude_reason": "LOẠI KHỎI BENCHMARK: chưa có giá trị",
+  "imported_at": "2026-11-20"
+}

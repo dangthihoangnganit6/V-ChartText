@@ -1,0 +1,164 @@
+{
+  "id": "bar_053",
+  "image": "images/bar_053.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_52.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 195,
+  "chart_type": "bar",
+  "title": "Xuất Khẩu, Nhập khẩu, Xuất Siêu Của Việt Nam Sang Mỹ (Tỷ USD)",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ USD"
+  },
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu",
+    "Xuất Siêu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "2016",
+      "y": 38.46,
+      "y_raw": "38,46"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2017",
+      "y": 41.61,
+      "y_raw": "41,61"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2018",
+      "y": 47.53,
+      "y_raw": "47,53"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2019",
+      "y": 61.33,
+      "y_raw": "61,33"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2020",
+      "y": 77.08,
+      "y_raw": "77,08"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2021",
+      "y": 96.29,
+      "y_raw": "96,29"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "4 tháng 2022",
+      "y": 36.2,
+      "y_raw": "36,2"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2016",
+      "y": 8.7,
+      "y_raw": "8,7"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2017",
+      "y": 9.35,
+      "y_raw": "9,35"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2018",
+      "y": 12.75,
+      "y_raw": "12,75"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2019",
+      "y": 14.43,
+      "y_raw": "14,43"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2020",
+      "y": 13.71,
+      "y_raw": "13,71"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2021",
+      "y": 15.27,
+      "y_raw": "15,27"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "4 tháng 2022",
+      "y": 4.6,
+      "y_raw": "4,6"
+    },
+    {
+      "series": "Xuất Siêu",
+      "x": "2016",
+      "y": 29.76,
+      "y_raw": "29,76"
+    },
+    {
+      "series": "Xuất Siêu",
+      "x": "2017",
+      "y": 32.26,
+      "y_raw": "32,26"
+    },
+    {
+      "series": "Xuất Siêu",
+      "x": "2018",
+      "y": 34.78,
+      "y_raw": "34,78"
+    },
+    {
+      "series": "Xuất Siêu",
+      "x": "2019",
+      "y": 46.9,
+      "y_raw": "46,9"
+    },
+    {
+      "series": "Xuất Siêu",
+      "x": "2020",
+      "y": 63.37,
+      "y_raw": "63,37"
+    },
+    {
+      "series": "Xuất Siêu",
+      "x": "2021",
+      "y": 81.02,
+      "y_raw": "81,02"
+    },
+    {
+      "series": "Xuất Siêu",
+      "x": "4 tháng 2022",
+      "y": 31.6,
+      "y_raw": "31,6"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

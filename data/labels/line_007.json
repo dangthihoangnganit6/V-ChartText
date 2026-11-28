@@ -1,0 +1,109 @@
+{
+  "id": "line_007",
+  "image": "images/line_007.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_7.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 10,
+  "chart_type": "line",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn lượt người"
+  },
+  "legend": [
+    "Đường hàng không",
+    "Đường thuỷ",
+    "Đường bộ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Đường hàng không",
+      "x": "2010",
+      "y": 4091.7,
+      "y_raw": "4091,7"
+    },
+    {
+      "series": "Đường hàng không",
+      "x": "2012",
+      "y": 5575.9,
+      "y_raw": "5575,9"
+    },
+    {
+      "series": "Đường hàng không",
+      "x": "2014",
+      "y": 6220.2,
+      "y_raw": "6220,2"
+    },
+    {
+      "series": "Đường hàng không",
+      "x": "2015",
+      "y": 6271.2,
+      "y_raw": "6271,2"
+    },
+    {
+      "series": "Đường thuỷ",
+      "x": "2010",
+      "y": 50.5,
+      "y_raw": "50,5"
+    },
+    {
+      "series": "Đường thuỷ",
+      "x": "2012",
+      "y": 285.8,
+      "y_raw": "285,8"
+    },
+    {
+      "series": "Đường thuỷ",
+      "x": "2014",
+      "y": 133.2,
+      "y_raw": "133,2"
+    },
+    {
+      "series": "Đường thuỷ",
+      "x": "2015",
+      "y": 169.8,
+      "y_raw": "169,8"
+    },
+    {
+      "series": "Đường bộ",
+      "x": "2010",
+      "y": 937.6,
+      "y_raw": "937,6"
+    },
+    {
+      "series": "Đường bộ",
+      "x": "2012",
+      "y": 986.3,
+      "y_raw": "986,3"
+    },
+    {
+      "series": "Đường bộ",
+      "x": "2014",
+      "y": 1606.5,
+      "y_raw": "1606,5"
+    },
+    {
+      "series": "Đường bộ",
+      "x": "2015",
+      "y": 1502.6,
+      "y_raw": "1502,6"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "[20/11] Ảnh không có tiêu đề (tiêu đề cũ không có trên ảnh); trục hoành 4 mốc 2010/2012/2014/2015 cho khớp 4 giá trị. Trùng số liệu với Biểu đồ đường_27",
+  "imported_at": "2026-11-20"
+}

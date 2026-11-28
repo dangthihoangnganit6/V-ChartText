@@ -1,0 +1,254 @@
+{
+  "id": "bar_057",
+  "image": "images/bar_057.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_56.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 199,
+  "chart_type": "bar",
+  "title": "Cán cân thương mại hàng hóa giữa EU và Việt Nam qua các năm (đơn vị: tỷ USD)",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ USD"
+  },
+  "legend": [
+    "EU xuất khẩu sang Việt Nam",
+    "EU nhập khẩu từ Việt Nam",
+    "Cán cân thương mại"
+  ],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2011",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2012",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2013",
+      "y": 5.0,
+      "y_raw": "5"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2014",
+      "y": 6.0,
+      "y_raw": "6"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2015",
+      "y": 8.0,
+      "y_raw": "8"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2016",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2017",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2018",
+      "y": 11.0,
+      "y_raw": "11"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2019",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2020",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2021",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "EU xuất khẩu sang Việt Nam",
+      "x": "2022",
+      "y": 13.0,
+      "y_raw": "13"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2011",
+      "y": 12.0,
+      "y_raw": "12"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2012",
+      "y": 16.0,
+      "y_raw": "16"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2013",
+      "y": 20.0,
+      "y_raw": "20"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2014",
+      "y": 22.0,
+      "y_raw": "22"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2015",
+      "y": 27.0,
+      "y_raw": "27"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2016",
+      "y": 29.0,
+      "y_raw": "29"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2017",
+      "y": 32.0,
+      "y_raw": "32"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2018",
+      "y": 35.0,
+      "y_raw": "35"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2019",
+      "y": 36.0,
+      "y_raw": "36"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2020",
+      "y": 36.0,
+      "y_raw": "36"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2021",
+      "y": 41.0,
+      "y_raw": "41"
+    },
+    {
+      "series": "EU nhập khẩu từ Việt Nam",
+      "x": "2022",
+      "y": 55.0,
+      "y_raw": "55"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2011",
+      "y": -7.0,
+      "y_raw": "-7"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2012",
+      "y": -11.5,
+      "y_raw": "-11,5"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2013",
+      "y": -13.5,
+      "y_raw": "-13,5"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2014",
+      "y": -14.5,
+      "y_raw": "-14,5"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2015",
+      "y": -17.0,
+      "y_raw": "-17"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2016",
+      "y": -19.0,
+      "y_raw": "-19"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2017",
+      "y": -22.0,
+      "y_raw": "-22"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2018",
+      "y": -24.0,
+      "y_raw": "-24"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2019",
+      "y": -25.0,
+      "y_raw": "-25"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2020",
+      "y": -27.5,
+      "y_raw": "-27,5"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2021",
+      "y": -30.0,
+      "y_raw": "-30"
+    },
+    {
+      "series": "Cán cân thương mại",
+      "x": "2022",
+      "y": -42.0,
+      "y_raw": "-42"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. [20/11] Bổ sung đủ 12 năm cho chuỗi Cán cân (trước thiếu 1)",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

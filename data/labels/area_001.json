@@ -1,0 +1,109 @@
+{
+  "id": "area_001",
+  "image": "images/area_001.webp",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_1.webp"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 120,
+  "chart_type": "area",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Nông - lâm - ngư nghiệp",
+    "Công nghiệp - xây dựng",
+    "Dịch vụ"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "1995",
+      "y": 27.2,
+      "y_raw": "27,2"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2005",
+      "y": 25.8,
+      "y_raw": "25,8"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2010",
+      "y": 21.0,
+      "y_raw": "21"
+    },
+    {
+      "series": "Nông - lâm - ngư nghiệp",
+      "x": "2016",
+      "y": 18.4,
+      "y_raw": "18,4"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "1995",
+      "y": 28.8,
+      "y_raw": "28,8"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2005",
+      "y": 32.5,
+      "y_raw": "32,5"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2010",
+      "y": 41.0,
+      "y_raw": "41"
+    },
+    {
+      "series": "Công nghiệp - xây dựng",
+      "x": "2016",
+      "y": 28.3,
+      "y_raw": "28,3"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "1995",
+      "y": 44.0,
+      "y_raw": "44"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2005",
+      "y": 41.7,
+      "y_raw": "41,7"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2010",
+      "y": 38.0,
+      "y_raw": "38"
+    },
+    {
+      "series": "Dịch vụ",
+      "x": "2016",
+      "y": 43.3,
+      "y_raw": "43,3"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Mấy cái biểu đồ miền này không có tiêu đề nên model đoán sai hết luôn á",
+  "imported_at": "2026-11-25"
+}

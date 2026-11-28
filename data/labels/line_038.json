@@ -1,0 +1,127 @@
+{
+  "id": "line_038",
+  "image": "images/line_038.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_38.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 41,
+  "chart_type": "line",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Than",
+    "Điện",
+    "Phân bón hóa học"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Than",
+      "x": "2000",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Than",
+      "x": "2006",
+      "y": 335.3,
+      "y_raw": "335,3"
+    },
+    {
+      "series": "Than",
+      "x": "2010",
+      "y": 386.2,
+      "y_raw": "386,2"
+    },
+    {
+      "series": "Than",
+      "x": "2012",
+      "y": 362.9,
+      "y_raw": "362,9"
+    },
+    {
+      "series": "Than",
+      "x": "2014",
+      "y": 359.4,
+      "y_raw": "359,4"
+    },
+    {
+      "series": "Điện",
+      "x": "2000",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Điện",
+      "x": "2006",
+      "y": 222.4,
+      "y_raw": "222,4"
+    },
+    {
+      "series": "Điện",
+      "x": "2010",
+      "y": 365.9,
+      "y_raw": "365,9"
+    },
+    {
+      "series": "Điện",
+      "x": "2012",
+      "y": 431.0,
+      "y_raw": "431"
+    },
+    {
+      "series": "Điện",
+      "x": "2014",
+      "y": 525.0,
+      "y_raw": "525"
+    },
+    {
+      "series": "Phân bón hóa học",
+      "x": "2000",
+      "y": 100.0,
+      "y_raw": "100"
+    },
+    {
+      "series": "Phân bón hóa học",
+      "x": "2006",
+      "y": 221.3,
+      "y_raw": "221,3"
+    },
+    {
+      "series": "Phân bón hóa học",
+      "x": "2010",
+      "y": 246.6,
+      "y_raw": "246,6"
+    },
+    {
+      "series": "Phân bón hóa học",
+      "x": "2012",
+      "y": 327.7,
+      "y_raw": "327,7"
+    },
+    {
+      "series": "Phân bón hóa học",
+      "x": "2014",
+      "y": 421.1,
+      "y_raw": "421,1"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

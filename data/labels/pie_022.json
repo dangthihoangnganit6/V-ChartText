@@ -1,0 +1,60 @@
+{
+  "id": "pie_022",
+  "image": "images/pie_022.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_22.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 78,
+  "chart_type": "pie",
+  "title": "Cơ cấu doanh thu dịch vụ bưu chính và viễn thông ở nước ta năm 2010 và 2021",
+  "x_axis": {
+    "label": "Dịch vụ",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Cơ cấu năm 2010",
+    "Cơ cấu năm 2021"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Bưu chính",
+      "y": 3.3,
+      "y_raw": "3,3"
+    },
+    {
+      "series": "Cơ cấu năm 2010",
+      "x": "Viễn thông",
+      "y": 96.7,
+      "y_raw": "96,7"
+    },
+    {
+      "series": "Cơ cấu năm 2021",
+      "x": "Bưu chính",
+      "y": 7.8,
+      "y_raw": "7,8"
+    },
+    {
+      "series": "Cơ cấu năm 2021",
+      "x": "Viễn thông",
+      "y": 92.2,
+      "y_raw": "92,2"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "[20/11] Sửa dấu || thừa giữa 7.8 và 92.2",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "bar_048",
+  "image": "images/bar_048.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_47.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 190,
+  "chart_type": "bar",
+  "title": "Tăng trưởng GDP theo lĩnh vực svck",
+  "x_axis": {
+    "label": "Lĩnh vực",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "2023",
+    "2024 (dự báo)",
+    "2025 (dự báo)"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "2023",
+      "x": "GDP",
+      "y": 5.0,
+      "y_raw": "5,0"
+    },
+    {
+      "series": "2023",
+      "x": "Nông, lâm, ngư nghiệp",
+      "y": 3.8,
+      "y_raw": "3,8"
+    },
+    {
+      "series": "2023",
+      "x": "Công nghiệp & Xây dựng",
+      "y": 3.7,
+      "y_raw": "3,7"
+    },
+    {
+      "series": "2023",
+      "x": "Dịch vụ",
+      "y": 6.8,
+      "y_raw": "6,8"
+    },
+    {
+      "series": "2024 (dự báo)",
+      "x": "GDP",
+      "y": 6.9,
+      "y_raw": "6,9"
+    },
+    {
+      "series": "2024 (dự báo)",
+      "x": "Nông, lâm, ngư nghiệp",
+      "y": 3.2,
+      "y_raw": "3,2"
+    },
+    {
+      "series": "2024 (dự báo)",
+      "x": "Công nghiệp & Xây dựng",
+      "y": 8.1,
+      "y_raw": "8,1"
+    },
+    {
+      "series": "2024 (dự báo)",
+      "x": "Dịch vụ",
+      "y": 7.1,
+      "y_raw": "7,1"
+    },
+    {
+      "series": "2025 (dự báo)",
+      "x": "GDP",
+      "y": 6.9,
+      "y_raw": "6,9"
+    },
+    {
+      "series": "2025 (dự báo)",
+      "x": "Nông, lâm, ngư nghiệp",
+      "y": 3.5,
+      "y_raw": "3,5"
+    },
+    {
+      "series": "2025 (dự báo)",
+      "x": "Công nghiệp & Xây dựng",
+      "y": 7.6,
+      "y_raw": "7,6"
+    },
+    {
+      "series": "2025 (dự báo)",
+      "x": "Dịch vụ",
+      "y": 7.5,
+      "y_raw": "7,5"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

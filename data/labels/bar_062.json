@@ -1,0 +1,128 @@
+{
+  "id": "bar_062",
+  "image": "images/bar_062.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_61.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 204,
+  "chart_type": "bar",
+  "title": "",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Triệu USD"
+  },
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu",
+    "Cán cân TM"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "10T/2010",
+      "y": 644.0,
+      "y_raw": "644"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "10T/2011",
+      "y": 1047.0,
+      "y_raw": "1047"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "10T/2012",
+      "y": 1279.0,
+      "y_raw": "1279"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "10T/2013",
+      "y": 1608.0,
+      "y_raw": "1608"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "10T/2014",
+      "y": 1437.0,
+      "y_raw": "1437"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "10T/2010",
+      "y": 898.0,
+      "y_raw": "898"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "10T/2011",
+      "y": 588.0,
+      "y_raw": "588"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "10T/2012",
+      "y": 701.0,
+      "y_raw": "701"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "10T/2013",
+      "y": 735.0,
+      "y_raw": "735"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "10T/2014",
+      "y": 768.0,
+      "y_raw": "768"
+    },
+    {
+      "series": "Cán cân TM",
+      "x": "10T/2010",
+      "y": -254.0,
+      "y_raw": "-254"
+    },
+    {
+      "series": "Cán cân TM",
+      "x": "10T/2011",
+      "y": 459.0,
+      "y_raw": "459"
+    },
+    {
+      "series": "Cán cân TM",
+      "x": "10T/2012",
+      "y": 578.0,
+      "y_raw": "578"
+    },
+    {
+      "series": "Cán cân TM",
+      "x": "10T/2013",
+      "y": 872.0,
+      "y_raw": "872"
+    },
+    {
+      "series": "Cán cân TM",
+      "x": "10T/2014",
+      "y": 669.0,
+      "y_raw": "669"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

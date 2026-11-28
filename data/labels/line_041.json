@@ -1,0 +1,33 @@
+{
+  "id": "line_041",
+  "image": "images/line_041.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_41.jpg"
+  },
+  "annotator": "nhi",
+  "subject": null,
+  "status": "excluded",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 44,
+  "chart_type": "line",
+  "title": "",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "$"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [],
+  "reviewer": "Nhi",
+  "notes": "LOẠI KHỎI BENCHMARK: không có giá trị (Thiếu dữ liệu)",
+  "exclude_reason": "LOẠI KHỎI BENCHMARK: không có giá trị (Thiếu dữ liệu)",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,157 @@
+{
+  "id": "bar_054",
+  "image": "images/bar_054.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_53.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 196,
+  "chart_type": "bar",
+  "title": "Tỷ USD",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ USD"
+  },
+  "legend": [
+    "5 tháng/2021",
+    "5 tháng/2022"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "5 tháng/2021",
+      "x": "Điện thoại & linh kiện",
+      "y": 21.76,
+      "y_raw": "21,76"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Máy vi tính, sp đ.tử & LK",
+      "y": 19.8,
+      "y_raw": "19,80"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Máy móc, t.bị, dụng cụ p.tùng",
+      "y": 14.77,
+      "y_raw": "14,77"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Hàng dệt, may",
+      "y": 12.27,
+      "y_raw": "12,27"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Giày dép",
+      "y": 8.41,
+      "y_raw": "8,41"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Gỗ và sp gỗ",
+      "y": 6.68,
+      "y_raw": "6,68"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Phương tiện vận tải và p.tùng",
+      "y": 4.48,
+      "y_raw": "4,48"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Hàng thuỷ sản",
+      "y": 3.28,
+      "y_raw": "3,28"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Sắt thép",
+      "y": 3.58,
+      "y_raw": "3,58"
+    },
+    {
+      "series": "5 tháng/2021",
+      "x": "Sp từ chất dẻo",
+      "y": 1.89,
+      "y_raw": "1,89"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Điện thoại & linh kiện",
+      "y": 24.78,
+      "y_raw": "24,78"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Máy vi tính, sp đ.tử & LK",
+      "y": 22.51,
+      "y_raw": "22,51"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Máy móc, t.bị, dụng cụ p.tùng",
+      "y": 17.29,
+      "y_raw": "17,29"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Hàng dệt, may",
+      "y": 15.0,
+      "y_raw": "15,00"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Giày dép",
+      "y": 9.43,
+      "y_raw": "9,43"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Gỗ và sp gỗ",
+      "y": 6.99,
+      "y_raw": "6,99"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Phương tiện vận tải và p.tùng",
+      "y": 4.82,
+      "y_raw": "4,82"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Hàng thuỷ sản",
+      "y": 4.71,
+      "y_raw": "4,71"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Sắt thép",
+      "y": 4.12,
+      "y_raw": "4,12"
+    },
+    {
+      "series": "5 tháng/2022",
+      "x": "Sp từ chất dẻo",
+      "y": 2.42,
+      "y_raw": "2,42"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

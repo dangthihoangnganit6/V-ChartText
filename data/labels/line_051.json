@@ -1,0 +1,168 @@
+{
+  "id": "line_051",
+  "image": "images/line_051.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_51.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 50,
+  "chart_type": "line",
+  "title": "Dân số Ấn Độ và Trung Quốc, 2000-2050",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ người"
+  },
+  "legend": [
+    "Trung Quốc",
+    "Ấn độ"
+  ],
+  "values_shown_on_chart": false,
+  "data": [
+    {
+      "series": "Trung Quốc",
+      "x": "2000",
+      "y": 1.2,
+      "y_raw": "1,2"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2005",
+      "y": 1.29,
+      "y_raw": "1,29"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2010",
+      "y": 1.31,
+      "y_raw": "1,31"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2015",
+      "y": 1.39,
+      "y_raw": "1,39"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2020",
+      "y": 1.4,
+      "y_raw": "1,4"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2025",
+      "y": 1.41,
+      "y_raw": "1,41"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2030",
+      "y": 1.4,
+      "y_raw": "1,4"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2035",
+      "y": 1.4,
+      "y_raw": "1,4"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2040",
+      "y": 1.4,
+      "y_raw": "1,4"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2045",
+      "y": 1.39,
+      "y_raw": "1,39"
+    },
+    {
+      "series": "Trung Quốc",
+      "x": "2050",
+      "y": 1.38,
+      "y_raw": "1,38"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2000",
+      "y": 1.0,
+      "y_raw": "1"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2005",
+      "y": 1.05,
+      "y_raw": "1,05"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2010",
+      "y": 1.1,
+      "y_raw": "1,1"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2015",
+      "y": 1.2,
+      "y_raw": "1,2"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2020",
+      "y": 1.29,
+      "y_raw": "1,29"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2025",
+      "y": 1.38,
+      "y_raw": "1,38"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2030",
+      "y": 1.41,
+      "y_raw": "1,41"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2035",
+      "y": 1.49,
+      "y_raw": "1,49"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2040",
+      "y": 1.51,
+      "y_raw": "1,51"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2045",
+      "y": 1.58,
+      "y_raw": "1,58"
+    },
+    {
+      "series": "Ấn độ",
+      "x": "2050",
+      "y": 1.59,
+      "y_raw": "1,59"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "ẢNH KHÔNG GHI SỐ: giá trị ước lượng theo trục. [20/11] Trục hoành 11 mốc (5 năm/mốc) cho khớp 11 giá trị",
+  "imported_at": "2026-11-20"
+}

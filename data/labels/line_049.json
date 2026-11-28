@@ -1,0 +1,33 @@
+{
+  "id": "line_049",
+  "image": "images/line_049.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_49.png"
+  },
+  "annotator": "nhi",
+  "subject": null,
+  "status": "excluded",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 48,
+  "chart_type": "line",
+  "title": "Tiêu thụ năng lượng tại Hoa Kỳ theo nhiên liệu (1980-2030)",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Quadrillion BTU"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [],
+  "reviewer": "Nhi",
+  "notes": "LOẠI KHỎI BENCHMARK: chưa có giá trị",
+  "exclude_reason": "LOẠI KHỎI BENCHMARK: chưa có giá trị",
+  "imported_at": "2026-11-20"
+}

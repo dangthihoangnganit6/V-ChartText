@@ -1,0 +1,91 @@
+{
+  "id": "pie_037",
+  "image": "images/pie_037.jpeg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ tròn_42 ảnh_đủ/Biểu đồ tròn_37.jpeg"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 93,
+  "chart_type": "pie",
+  "title": "Biểu đồ thể hiện quy mô và cơ cấu diện tích một số cây công nghiệp lâu năm của nước ta giai đoạn 1995-2013",
+  "x_axis": {
+    "label": "Cây công nghiệp",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Năm 1995",
+    "Năm 2005",
+    "Năm 2013"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Năm 1995",
+      "x": "Chè",
+      "y": 12.5,
+      "y_raw": "12,5"
+    },
+    {
+      "series": "Năm 1995",
+      "x": "Cà phê",
+      "y": 35.1,
+      "y_raw": "35,1"
+    },
+    {
+      "series": "Năm 1995",
+      "x": "Cao su",
+      "y": 52.4,
+      "y_raw": "52,4"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Chè",
+      "y": 11.1,
+      "y_raw": "11,1"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Cà phê",
+      "y": 45.1,
+      "y_raw": "45,1"
+    },
+    {
+      "series": "Năm 2005",
+      "x": "Cao su",
+      "y": 43.8,
+      "y_raw": "43,8"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Chè",
+      "y": 7.5,
+      "y_raw": "7,5"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Cà phê",
+      "y": 36.9,
+      "y_raw": "36,9"
+    },
+    {
+      "series": "Năm 2013",
+      "x": "Cao su",
+      "y": 55.6,
+      "y_raw": "55,6"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "Quy mô theo bán kính: 1995 = 1,0; 2005 = 1,4; 2013 = 1,8",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "area_011",
+  "image": "images/area_011.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ miền_24 ảnh_đủ r/Biểu đồ miền_11.png"
+  },
+  "annotator": "giang",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 130,
+  "chart_type": "area",
+  "title": "Chuyển dịch cơ cấu khối lượng vận chuyển phân theo loại hàng hóa ở nước ta, giai đoạn 2010 - 2017",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "%"
+  },
+  "legend": [
+    "Hàng xuất khẩu",
+    "Hàng nhập khẩu",
+    "Hàng nội địa"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2010",
+      "y": 24.9,
+      "y_raw": "24,9"
+    },
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2013",
+      "y": 20.9,
+      "y_raw": "20,9"
+    },
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2015",
+      "y": 25.9,
+      "y_raw": "25,9"
+    },
+    {
+      "series": "Hàng xuất khẩu",
+      "x": "2017",
+      "y": 25.2,
+      "y_raw": "25,2"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2010",
+      "y": 42.4,
+      "y_raw": "42,4"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2013",
+      "y": 39.9,
+      "y_raw": "39,9"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2015",
+      "y": 38.8,
+      "y_raw": "38,8"
+    },
+    {
+      "series": "Hàng nhập khẩu",
+      "x": "2017",
+      "y": 38.6,
+      "y_raw": "38,6"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2010",
+      "y": 32.7,
+      "y_raw": "32,7"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2013",
+      "y": 39.2,
+      "y_raw": "39,2"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2015",
+      "y": 35.3,
+      "y_raw": "35,3"
+    },
+    {
+      "series": "Hàng nội địa",
+      "x": "2017",
+      "y": 36.2,
+      "y_raw": "36,2"
+    }
+  ],
+  "reviewer": "Giang",
+  "notes": "",
+  "duplicate_of": "area_002",
+  "imported_at": "2026-11-20"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "line_004",
+  "image": "images/line_004.jpg",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_4.jpg"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 7,
+  "chart_type": "line",
+  "title": "Tổng sản lượng thủy sản của nước ta giai đoạn 2017 - 2020",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Nghìn tấn"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tổng sản lượng",
+      "x": "2017",
+      "y": 7279.0,
+      "y_raw": "7279"
+    },
+    {
+      "series": "Tổng sản lượng",
+      "x": "2018",
+      "y": 7743.0,
+      "y_raw": "7743"
+    },
+    {
+      "series": "Tổng sản lượng",
+      "x": "2019",
+      "y": 8150.0,
+      "y_raw": "8150"
+    },
+    {
+      "series": "Tổng sản lượng",
+      "x": "2020",
+      "y": 8410.0,
+      "y_raw": "8410"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

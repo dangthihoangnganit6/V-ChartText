@@ -1,0 +1,94 @@
+{
+  "id": "bar_033",
+  "image": "images/bar_033.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_33.png"
+  },
+  "annotator": "ngan",
+  "subject": "khac",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 176,
+  "chart_type": "bar",
+  "title": "Điểm kiểm tra học kì II môn Toán lớp 6A",
+  "x_axis": {
+    "label": "Điểm số",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Số HS"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Số HS",
+      "x": "1",
+      "y": 0.0,
+      "y_raw": "0"
+    },
+    {
+      "series": "Số HS",
+      "x": "2",
+      "y": 0.0,
+      "y_raw": "0"
+    },
+    {
+      "series": "Số HS",
+      "x": "3",
+      "y": 0.0,
+      "y_raw": "0"
+    },
+    {
+      "series": "Số HS",
+      "x": "4",
+      "y": 2.0,
+      "y_raw": "2"
+    },
+    {
+      "series": "Số HS",
+      "x": "5",
+      "y": 2.0,
+      "y_raw": "2"
+    },
+    {
+      "series": "Số HS",
+      "x": "6",
+      "y": 3.0,
+      "y_raw": "3"
+    },
+    {
+      "series": "Số HS",
+      "x": "7",
+      "y": 4.0,
+      "y_raw": "4"
+    },
+    {
+      "series": "Số HS",
+      "x": "8",
+      "y": 14.0,
+      "y_raw": "14"
+    },
+    {
+      "series": "Số HS",
+      "x": "9",
+      "y": 9.0,
+      "y_raw": "9"
+    },
+    {
+      "series": "Số HS",
+      "x": "10",
+      "y": 6.0,
+      "y_raw": "6"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

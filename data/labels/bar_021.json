@@ -1,0 +1,76 @@
+{
+  "id": "bar_021",
+  "image": "images/bar_021.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_21.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 164,
+  "chart_type": "bar",
+  "title": "Biểu đồ thể hiện sản lượng lương thực của Liên bang Nga giai đoạn 1995 - 2005",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "triệu tấn"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Sản lượng lương thực",
+      "x": "1995",
+      "y": 62.0,
+      "y_raw": "62,0"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "1998",
+      "y": 46.9,
+      "y_raw": "46,9"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "1999",
+      "y": 53.8,
+      "y_raw": "53,8"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2000",
+      "y": 64.3,
+      "y_raw": "64,3"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2001",
+      "y": 83.6,
+      "y_raw": "83,6"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2002",
+      "y": 92.0,
+      "y_raw": "92,0"
+    },
+    {
+      "series": "Sản lượng lương thực",
+      "x": "2005",
+      "y": 78.2,
+      "y_raw": "78,2"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "imported_at": "2026-11-20"
+}

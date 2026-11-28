@@ -1,0 +1,110 @@
+{
+  "id": "bar_045",
+  "image": "images/bar_045.webp",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_45.webp"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 188,
+  "chart_type": "bar",
+  "title": "Xuất - Nhập Khẩu Hàng Hóa qua Các Năm",
+  "x_axis": {
+    "label": null,
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỉ đô la Mỹ"
+  },
+  "legend": [
+    "Xuất khẩu",
+    "Nhập khẩu",
+    "Nhập Siêu"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Xuất khẩu",
+      "x": "2000",
+      "y": 14.5,
+      "y_raw": "14,5"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2002",
+      "y": 16.7,
+      "y_raw": "16,7"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2005",
+      "y": 32.4,
+      "y_raw": "32,4"
+    },
+    {
+      "series": "Xuất khẩu",
+      "x": "2007",
+      "y": 48.6,
+      "y_raw": "48,6"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2000",
+      "y": 15.6,
+      "y_raw": "15,6"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2002",
+      "y": 19.7,
+      "y_raw": "19,7"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2005",
+      "y": 36.8,
+      "y_raw": "36,8"
+    },
+    {
+      "series": "Nhập khẩu",
+      "x": "2007",
+      "y": 62.8,
+      "y_raw": "62,8"
+    },
+    {
+      "series": "Nhập Siêu",
+      "x": "2000",
+      "y": -1.1,
+      "y_raw": "-1,1"
+    },
+    {
+      "series": "Nhập Siêu",
+      "x": "2002",
+      "y": -3.0,
+      "y_raw": "-3,0"
+    },
+    {
+      "series": "Nhập Siêu",
+      "x": "2005",
+      "y": -4.4,
+      "y_raw": "-4,4"
+    },
+    {
+      "series": "Nhập Siêu",
+      "x": "2007",
+      "y": -14.2,
+      "y_raw": "-14,2"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}

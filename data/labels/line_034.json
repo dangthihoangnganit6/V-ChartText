@@ -1,0 +1,57 @@
+{
+  "id": "line_034",
+  "image": "images/line_034.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ đường_52 ảnh_đủ/Biểu đồ đường_34.png"
+  },
+  "annotator": "nhi",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 37,
+  "chart_type": "line",
+  "title": "Biểu đồ thể hiện tổng nợ nước ngoài của nhóm nước đang phát triển 1990 - 2004",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "ti USD"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tổng nợ",
+      "x": "1990",
+      "y": 1310.0,
+      "y_raw": "1310"
+    },
+    {
+      "series": "Tổng nợ",
+      "x": "1998",
+      "y": 2465.0,
+      "y_raw": "2465"
+    },
+    {
+      "series": "Tổng nợ",
+      "x": "2000",
+      "y": 2498.0,
+      "y_raw": "2498"
+    },
+    {
+      "series": "Tổng nợ",
+      "x": "2004",
+      "y": 2724.0,
+      "y_raw": "2724"
+    }
+  ],
+  "reviewer": "Nhi",
+  "notes": "",
+  "imported_at": "2026-11-20"
+}

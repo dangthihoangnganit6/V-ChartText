@@ -1,0 +1,83 @@
+{
+  "id": "bar_019",
+  "image": "images/bar_019.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_19.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 162,
+  "chart_type": "bar",
+  "title": "Tình hình Nợ nước Ngoài của Một Số Quốc Gia Mĩ La Tinh, Năm 2017",
+  "x_axis": {
+    "label": "Quốc gia",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỉ USD"
+  },
+  "legend": [],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "Ac-hen-ti-na",
+      "y": 236.5,
+      "y_raw": "236,5"
+    },
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "Bra-xin",
+      "y": 543.0,
+      "y_raw": "543"
+    },
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "E-cua-do",
+      "y": 41.1,
+      "y_raw": "41,1"
+    },
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "Ha-mai-ca",
+      "y": 14.7,
+      "y_raw": "14,7"
+    },
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "Me-hi-co",
+      "y": 441.6,
+      "y_raw": "441,6"
+    },
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "Pa-ra-goay",
+      "y": 15.9,
+      "y_raw": "15,9"
+    },
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "Pe-ru",
+      "y": 67.6,
+      "y_raw": "67,6"
+    },
+    {
+      "series": "Tình hình Nợ nước Ngoài",
+      "x": "Ve-ne-xu-ê-la",
+      "y": 148.9,
+      "y_raw": "148,9"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "single",
+  "duplicate_of": "bar_014",
+  "imported_at": "2026-11-20"
+}

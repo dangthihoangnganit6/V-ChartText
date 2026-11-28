@@ -1,0 +1,73 @@
+{
+  "id": "bar_016",
+  "image": "images/bar_016.png",
+  "source": {
+    "type": null,
+    "book": null,
+    "page": null,
+    "url": null,
+    "original_file": "Biểu đồ cột_74 ảnh_đủ r/Biểu đồ cột_16.png"
+  },
+  "annotator": "ngan",
+  "subject": "dia_li",
+  "status": "done",
+  "label_source": "sheet:Data_Labeling",
+  "sheet_row": 159,
+  "chart_type": "bar",
+  "title": "Quy mô GDP của Ma-lai-xi-a và Xin-ga-po, giai đoạn 2010 - 2016",
+  "x_axis": {
+    "label": "Năm",
+    "unit": null
+  },
+  "y_axis": {
+    "label": null,
+    "unit": "Tỷ đô la Mỹ"
+  },
+  "legend": [
+    "Ma-lai-xi-a",
+    "Xin-ga-po"
+  ],
+  "values_shown_on_chart": true,
+  "data": [
+    {
+      "series": "Ma-lai-xi-a",
+      "x": "2010",
+      "y": 255.0,
+      "y_raw": "255"
+    },
+    {
+      "series": "Ma-lai-xi-a",
+      "x": "2013",
+      "y": 323.0,
+      "y_raw": "323"
+    },
+    {
+      "series": "Ma-lai-xi-a",
+      "x": "2016",
+      "y": 297.0,
+      "y_raw": "297"
+    },
+    {
+      "series": "Xin-ga-po",
+      "x": "2010",
+      "y": 236.0,
+      "y_raw": "236"
+    },
+    {
+      "series": "Xin-ga-po",
+      "x": "2013",
+      "y": 303.0,
+      "y_raw": "303"
+    },
+    {
+      "series": "Xin-ga-po",
+      "x": "2016",
+      "y": 297.0,
+      "y_raw": "297"
+    }
+  ],
+  "reviewer": "Ngân",
+  "notes": "",
+  "bar_mode": "grouped",
+  "imported_at": "2026-11-20"
+}
