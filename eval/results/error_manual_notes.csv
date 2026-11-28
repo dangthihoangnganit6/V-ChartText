@@ -1,0 +1,164 @@
+﻿image_name,chart_type,nhan_xet,nhom_loi
+Biểu đồ đường_1.png,line,Có vẻ phần chính tả hơi sai,M2_sai_chinh_ta
+Biểu đồ đường_3.jpg,line,Values hơi lệch so với thực tế,L4_sai_gia_tri
+Biểu đồ đường_7.png,line,"Biểu đồ vốn không có tiêu đồ, có vẻ mô hình tự bịa. Có chấp nhận ko? Ngoài ra biểu đồ gồm 3 đường đại diện 3 thành phần, mô hình không phân tích ra hết",L2_thieu_chuoi L7_bia_tieu_de
+Biểu đồ đường_8.png,line,"Biểu đồ gồm nhiều đường đại diện nhiều thành phần, mô hình không phân tích ra hết",L2_thieu_chuoi
+Biểu đồ đường_9.png,line,"Biểu đồ gồm nhiều đường đại diện nhiều thành phần, mô hình không phân tích ra hết. Nhầm giá trị trục hoành",L2_thieu_chuoi M5_nham_truc
+Biểu đồ đường_10.jpeg,line,"Biểu đồ gồm nhiều đường đại diện nhiều thành phần, mô hình không phân tích ra hết. Nhầm giá trị trục hoành",L2_thieu_chuoi M5_nham_truc
+Biểu đồ đường_11.jpg,line,"Biểu đồ gồm nhiều đường đại diện nhiều thành phần, mô hình không phân tích ra hết. Nhầm giá trị trục hoành",L2_thieu_chuoi M5_nham_truc
+Biểu đồ đường_12.jpg,line,Phần giá trị trích xuất vẫn bị lỗi,M9_khac
+Biểu đồ đường_13.png,line,Phần giá trị trích xuất vẫn bị lỗi,M9_khac
+Biểu đồ đường_14.png,line,"Bịa tiêu đồ, bịa cả thông số ...",L7_bia_tieu_de M3_bia_du_lieu
+Biểu đồ đường_17.jpg,line,Không đọc được biểu đồ,M4_khong_doc_duoc
+Biểu đồ đường_18.jpg,line,"Sai tiêu đề, chỉ phân tích 1 thành phần. Có vẻ do nhiều giá trị quá nó ko đọc hết",L2_thieu_chuoi L8_sai_tieu_de
+Biểu đồ đường_19.webp,line,"Biểu đồ gồm nhiều đường đại diện nhiều thành phần, mô hình không phân tích ra hết. Nhầm giá trị trục hoành",L2_thieu_chuoi M5_nham_truc
+Biểu đồ đường_20.png,line,"Biểu đồ gồm nhiều đường đại diện nhiều thành phần, mô hình không phân tích ra hết.",L2_thieu_chuoi
+Biểu đồ đường_21.png,line,"Biểu đồ gồm nhiều đường đại diện nhiều thành phần, mô hình không phân tích ra hết.",L2_thieu_chuoi
+Biểu đồ đường_22.jpg,line,Không p-hân tích được biểu đò,M4_khong_doc_duoc
+Biểu đồ đường_40.jpg,line,Cần báo lỗi,M9_khac
+Biểu đồ đường_41.jpg,line,Cần báo lỗi,M9_khac
+Biểu đồ đường_43.jpg,line,Cần báo lỗi,M9_khac
+Biểu đồ đường_48.png,line,Cần báo lỗi,M9_khac
+Biểu đồ đường_49.png,line,"Khó trích xuất giá tri cụ thể, chỉ có thể miêu tả xu hướng",M9_khac
+Biểu đồ đường_50.png,line,"Khó trích xuất giá tri cụ thể, chỉ có thể miêu tả xu hướng",M9_khac
+Biểu đồ đường_45.png,line,"Khó trích xuất giá tri cụ thể, chỉ có thể miêu tả xu hướng",M9_khac
+Biểu đồ đường_46.png,line,"Khó trích xuất giá tri cụ thể, chỉ có thể miêu tả xu hướng",M9_khac
+Biểu đồ đường_47.png,line,"Khó trích xuất giá tri cụ thể, chỉ có thể miêu tả xu hướng",M9_khac
+Biểu đồ tròn_1.jpeg,pie,Tỷ lệ không khớp giá trị đại diện,L4_sai_gia_tri
+Biểu đồ tròn_2.jpeg,pie,Không đọc được biểu đồ,M4_khong_doc_duoc
+Biểu đồ tròn_3.png,pie,"Sai chính tả, không đọc được các giá trị từng phần",L2_thieu_chuoi M2_sai_chinh_ta
+Biểu đồ tròn_4.png,pie,"Sai chính tả, Giá trị từng phần không khớp với thành phần đại diện",L4_sai_gia_tri M2_sai_chinh_ta
+Biểu đồ tròn_5.jpg,pie,"Sai chính tả, Giá trị từng phần không khớp với thành phần đại diện",L4_sai_gia_tri M2_sai_chinh_ta
+Biểu đồ tròn_6.jpg,pie,"Sai chính tả, Giá trị từng phần không khớp với thành phần đại diện",L4_sai_gia_tri M2_sai_chinh_ta
+Biểu đồ tròn_7.png,pie,Không đọc được dữ liệu biểu đồ,M4_khong_doc_duoc
+Biểu đồ tròn_8.png,pie,Thiếu 1 thành phần,L2_thieu_chuoi
+Biểu đồ tròn_9.png,pie,"Sai chính tả, không đọc được các giá trị từng phần",L2_thieu_chuoi M2_sai_chinh_ta
+Biểu đồ tròn_10.png,pie,"Sai chính tả, không đọc được các giá trị từng phần",L2_thieu_chuoi M2_sai_chinh_ta
+Biểu đồ tròn_11.png,pie,"Sai chính tả, không đọc được các giá trị từng phần",L2_thieu_chuoi M2_sai_chinh_ta
+Biểu đồ tròn_12.png,pie,Không đọc được các giá trị từng phần,L2_thieu_chuoi
+Biểu đồ tròn_13.png,pie,Không đọc được các giá trị từng phần,L2_thieu_chuoi
+Biểu đồ tròn_14.png,pie,"Sai chính tả, Giá trị từng phần không khớp với thành phần đại diện",L4_sai_gia_tri M2_sai_chinh_ta
+Biểu đồ tròn_15.png,pie,Không đọc được các giá trị từng phần,L2_thieu_chuoi
+Biểu đồ tròn_16.png,pie,Giá trị từng phần không khớp với thành phần đại diện,L4_sai_gia_tri
+Biểu đồ tròn_17.png,pie,Giá trị từng phần không khớp với thành phần đại diện,L4_sai_gia_tri
+Biểu đồ tròn_18.png,pie,Chưa tách bạch được 2 biểu đồ,L2_thieu_chuoi
+Biểu đồ tròn_19.png,pie,Bịa dữ liễu biểu đồ,M3_bia_du_lieu
+Biểu đồ tròn_20.png,pie,Giá trị từng phần không khớp với thành phần đại diện,L4_sai_gia_tri
+Biểu đồ tròn_21.png,pie,Không đọc được các giá trị từng phần,L2_thieu_chuoi
+Biểu đồ tròn_22.png,pie,Giá trị từng phần không khớp với thành phần đại diện,L4_sai_gia_tri
+Biểu đồ tròn_23.png,pie,"Biểu đồ gồm 2 hình tròn, mô hình không tách được từng hình: gộp giá trị, lặp số, thiếu 2.5. Categories lấy tên hình (Lúa, Cà phê) thay vì chú giải khu vực; để nguyên placeholder 'Tên trục hoành', 'Tên chuỗi dữ liệu'",L2_thieu_chuoi M1_chep_mau_prompt
+Biểu đồ tròn_24.png,pie,"Sai title (bỏ 'cơ cấu', thiếu năm). Categories là năm thay vì ngành; chỉ lấy giá trị Dịch vụ của 2 năm, thiếu 3 thành phần còn lại",L2_thieu_chuoi L8_sai_tieu_de M5_nham_truc
+Biểu đồ tròn_25.png,pie,"Gộp 2 hình tròn, chỉ ra 3 số lẫn giữa 2 năm, giá trị từng phần không khớp với thành phần đại diện. Đơn vị và tên trục để placeholder",L2_thieu_chuoi L3_thieu_diem L4_sai_gia_tri L6_sai_don_vi M1_chep_mau_prompt
+Biểu đồ tròn_26.png,pie,"Bịa dữ liệu biểu đồ: chép số mẫu 123.4 | 567.8 từ prompt dù ảnh ghi đủ %. Sai chính tả chú giải (Dưới nước, Ngả, Người dân), sai đơn vị (Ngày)",L6_sai_don_vi M1_chep_mau_prompt M2_sai_chinh_ta M3_bia_du_lieu
+Biểu đồ tròn_27.png,pie,"Biểu đồ không có tiêu đề, model bịa 'Dữ liệu biểu đồ'. Categories là năm thay vì thành phần; chỉ lấy 2 số, thiếu 4 giá trị",L3_thieu_diem L7_bia_tieu_de M5_nham_truc
+Biểu đồ tròn_28.webp,pie,"Bịa title; chép mẫu prompt (Mục 1 | Mục 2, 123.4 | 567.8) dù giá trị ghi rõ trên ảnh",L7_bia_tieu_de M1_chep_mau_prompt
+Biểu đồ tròn_29.png,pie,Bịa title; đọc sai chú giải 'Rừng' thành 'Rủi ro'. Giá trị đúng,L7_bia_tieu_de
+Biểu đồ tròn_30.jpg,pie,"Bịa title 'Diễn tích' (sai chính tả); nhầm tên 3 hình tròn thành categories, sai tên vùng; chỉ lấy 3 số, thứ tự lẫn lộn",L3_thieu_diem L7_bia_tieu_de M2_sai_chinh_ta
+Biểu đồ tròn_31.png,pie,"Chép mẫu prompt: title 'Pie Chart', 'Mục 1 | Mục 2', 123.4 | 567.8. Ảnh không có chú giải nhưng ghi đủ 5 giá trị %",M1_chep_mau_prompt
+Biểu đồ tròn_32.png,pie,Bịa title 'Điểm số'; thứ tự giá trị ngược với khu vực (42.2 gán cho Khu vực I); đơn vị để placeholder dù ảnh ghi (%),L4_sai_gia_tri L6_sai_don_vi L7_bia_tieu_de M1_chep_mau_prompt
+Biểu đồ tròn_33.gif,pie,"Không trích xuất được gì (output rỗng), có thể do ảnh định dạng GIF. Cần báo lỗi",M4_khong_doc_duoc
+Biểu đồ tròn_34.png,pie,"Chép nguyên mẫu prompt (title, đơn vị, categories, 123.4 | 567.8)",L6_sai_don_vi M1_chep_mau_prompt
+Biểu đồ tròn_35.png,pie,"Ảnh không ghi số, model không ước lượng mà chép số mẫu 123.4 | 567.8; bịa title",L7_bia_tieu_de M1_chep_mau_prompt
+Biểu đồ tròn_36.jpg,pie,"Bịa title, chép mẫu prompt (Mục 1 | Mục 2, 123.4 | 567.8) dù ảnh ghi đủ số của 2 năm",L7_bia_tieu_de M1_chep_mau_prompt
+Biểu đồ tròn_37.jpeg,pie,Title sai nghĩa ('sản xuất nông nghiệp' thay cho 'diện tích cây công nghiệp lâu năm'). Đúng tên 3 cây nhưng giá trị chép mẫu 123.4 | 567.8,L8_sai_tieu_de M1_chep_mau_prompt
+Biểu đồ tròn_38.jpg,pie,"Ảnh không có tiêu đề và chú giải, model bịa title. 3 hình tròn chỉ ra 3 số lẫn giữa các năm",L3_thieu_diem L7_bia_tieu_de
+Biểu đồ tròn_41.png,pie,Categories là năm thay vì loại thiết bị; giá trị chép mẫu 123.4 | 567.8,M1_chep_mau_prompt M5_nham_truc
+Biểu đồ tròn_42.png,pie,"Sai chính tả title (trục tuyền); categories là năm thay vì lĩnh vực; mỗi năm chỉ lấy 1 số, thiếu 6 giá trị",L2_thieu_chuoi L3_thieu_diem L8_sai_tieu_de M2_sai_chinh_ta M5_nham_truc
+Biểu đồ tròn_39.png,pie,"Sai chính tả (bao hòa, bô sung, Dường). Categories là tên 3 hình tròn thay vì bữa ăn; mỗi hình chỉ lấy 1 số, số thứ 3 sai (23 thay vì 42)",L2_thieu_chuoi M2_sai_chinh_ta M5_nham_truc
+Biểu đồ tròn_40.png,pie,"Categories là năm thay vì khóa học; mỗi năm chỉ lấy 1 số, thiếu 10 giá trị",L2_thieu_chuoi L3_thieu_diem M5_nham_truc
+Biểu đồ kết hợp_1.png,combo,"Sai loại biểu đồ (column thay vì kết hợp); sai đơn vị (Tỷ), bỏ trục phải; sai chính tả (Nơi trồng). Chỉ lấy 3 tổng sản lượng, thiếu 4870 và toàn bộ giá trị sản xuất",L1_sai_loai_bieu_do L3_thieu_diem L6_sai_don_vi M2_sai_chinh_ta
+Biểu đồ kết hợp_2.png,combo,"Sai loại biểu đồ; sai title ('tỷ lệ sinh sản lúa'), sai đơn vị (Nhân/ha). Chỉ lấy đường năng suất, bỏ cột diện tích",L1_sai_loai_bieu_do L2_thieu_chuoi L6_sai_don_vi L8_sai_tieu_de
+Biểu đồ kết hợp_3.png,combo,"Sai loại biểu đồ; sai chính tả chú giải (Thân, Diện), đơn vị Tấn thay vì Nghìn tấn. Chỉ lấy cột than, bỏ đường điện",L1_sai_loai_bieu_do L2_thieu_chuoi L6_sai_don_vi M2_sai_chinh_ta
+Biểu đồ kết hợp_4.png,combo,Sai loại biểu đồ; sai title (đầu tư thay vì dầu thô). Categories là tên chuỗi thay vì năm; giá trị 2 chuỗi trộn xen kẽ trong 1 dãy,L1_sai_loai_bieu_do L8_sai_tieu_de M5_nham_truc
+Biểu đồ kết hợp_5.png,combo,"Sai loại biểu đồ; đơn vị tiếng Anh (thousand tonnes); sai chú giải (Khả năng, Nơi trồng). Chỉ lấy tổng sản lượng, thiếu giá trị sản xuất",L1_sai_loai_bieu_do L3_thieu_diem L6_sai_don_vi D4_chen_tieng_anh
+Biểu đồ kết hợp_6.png,combo,"Sai loại biểu đồ; sai đơn vị (Ha). Chỉ lấy đường độ che phủ, bỏ 2 chuỗi cột rừng tự nhiên và rừng trồng",L1_sai_loai_bieu_do L2_thieu_chuoi L6_sai_don_vi
+Biểu đồ kết hợp_7.png,combo,"Sai loại biểu đồ; đơn vị 'Ngày', sai chính tả (Diễn tích). Chỉ ra 3 số, 33944 là đọc nhầm bậc số của 3394.4; thiếu phần lớn giá trị",L1_sai_loai_bieu_do L3_thieu_diem L5_bac_so L6_sai_don_vi M2_sai_chinh_ta
+Biểu đồ kết hợp_8.png,combo,"Sai loại biểu đồ; sai chính tả chú giải (Thân, Diện), đơn vị Tấn thay vì Nghìn tấn. Chỉ lấy cột than, bỏ đường điện",L1_sai_loai_bieu_do L2_thieu_chuoi L6_sai_don_vi M2_sai_chinh_ta
+Biểu đồ kết hợp_9.png,combo,"Sai loại biểu đồ; sai title ('tỷ lệ sản xuất'), đơn vị 'Nhà'. Chỉ lấy cột diện tích, bỏ đường sản lượng",L1_sai_loai_bieu_do L2_thieu_chuoi L6_sai_don_vi L8_sai_tieu_de
+Biểu đồ kết hợp_10.png,combo,"Sai loại biểu đồ; sai title, đơn vị 'Tỷ'. Chỉ lấy đường sản lượng, bỏ cột diện tích",L1_sai_loai_bieu_do L2_thieu_chuoi L6_sai_don_vi L8_sai_tieu_de
+Biểu đồ kết hợp_11.png,combo,"Sai loại biểu đồ; x_axis 'Đơn vị'; categories là tên chuỗi thay vì năm; chỉ có 2 số, thiếu 6 giá trị",L1_sai_loai_bieu_do L3_thieu_diem L6_sai_don_vi M5_nham_truc
+Biểu đồ kết hợp_12.webp,combo,"Sai loại biểu đồ; title chung chung (bỏ Nhật Bản, giai đoạn). Categories là tên chuỗi; chỉ lấy cột GDP, bỏ đường tốc độ tăng trưởng (có giá trị âm -4.5)",L1_sai_loai_bieu_do L2_thieu_chuoi L8_sai_tieu_de M5_nham_truc
+Biểu đồ kết hợp_13.jpg,combo,"Sai loại biểu đồ; đọc lệch 2 số (10396 thay vì 10395, 14166 thay vì 14156); bỏ đường tăng trưởng %; thiếu '(Kế hoạch)' ở 2008",L1_sai_loai_bieu_do L2_thieu_chuoi L4_sai_gia_tri
+Biểu đồ kết hợp_14.png,combo,"Sai loại biểu đồ; chép mẫu prompt (123.4 | 567.8). Sai chú giải ('lưu trữ' thay vì lưu trú/lữ hành, lặp tên)",L1_sai_loai_bieu_do M1_chep_mau_prompt
+Biểu đồ kết hợp_15.png,combo,"Sai loại biểu đồ; đơn vị 'Người' thay vì Nghìn người. Chỉ lấy 2 số tốc độ gia tăng, bỏ cột tổng số dân",L1_sai_loai_bieu_do L2_thieu_chuoi L3_thieu_diem L6_sai_don_vi
+Biểu đồ kết hợp_16.png,combo,"Sai loại biểu đồ; sai chính tả nhiều (Diễn tích, cấy), đơn vị 'Ngày'; series_name là nguyên title; giá trị chép mẫu 1234 | 5678",L1_sai_loai_bieu_do L6_sai_don_vi M1_chep_mau_prompt M2_sai_chinh_ta
+Biểu đồ kết hợp_17.png,combo,"Sai loại biểu đồ. Ảnh không ghi số, model đọc vạch trục ra dãy số tròn không khớp cột, thiếu 1 tháng, bỏ đường nhiệt độ",L1_sai_loai_bieu_do L2_thieu_chuoi L3_thieu_diem
+Biểu đồ kết hợp_18.png,combo,"Sai loại biểu đồ; output mất dấu tiếng Việt. Gán giá trị nhiệt độ cho series Lượng mưa, thiếu 1 tháng, bỏ toàn bộ lượng mưa",L1_sai_loai_bieu_do L2_thieu_chuoi L3_thieu_diem M2_sai_chinh_ta
+Biểu đồ kết hợp_19.png,combo,"Sai loại biểu đồ; output mất dấu tiếng Việt. Categories là tên chuỗi thay vì tháng; gán nhiệt độ cho series Lượng mưa, bỏ cột lượng mưa",L1_sai_loai_bieu_do L2_thieu_chuoi M2_sai_chinh_ta M5_nham_truc
+Biểu đồ kết hợp_20.png,combo,"Sai loại biểu đồ. Đọc nhầm dấu phẩy thập phân thành bậc số (2,16 → 216; 64,4 → 644; 1,51 → 151) và trộn 2 chuỗi; bỏ đường tỉ lệ tăng",L1_sai_loai_bieu_do L2_thieu_chuoi L5_bac_so
+Biểu đồ kết hợp_21.png,combo,"Sai loại biểu đồ; đơn vị 'Người ha' (sai Nghìn ha). Chỉ lấy cột diện tích, bỏ đường sản lượng",L1_sai_loai_bieu_do L2_thieu_chuoi L6_sai_don_vi
+Biểu đồ miền_1.webp,area,"Biểu đồ không có tiêu đề, không có nhãn trục, đơn vị => model trích xuất sai cả title, loại biểu đồ, đơn vị, giá trị",L6_sai_don_vi
+Biểu đồ miền_2.jpg,area,"Sai title, thiếu giá trị, bịa categories",L3_thieu_diem L8_sai_tieu_de M3_bia_du_lieu
+Biểu đồ miền_3.jpg,area,"Title chung chung, thiếu values",L3_thieu_diem L8_sai_tieu_de
+Biểu đồ miền_4.jpg,area,"Trích xuất sai title (nhận đơn vị thành title), thiếu giá trị",L3_thieu_diem L6_sai_don_vi L8_sai_tieu_de
+Biểu đồ miền_5.png,area,"Sai title (sai cả chính tả dấu), thiếu giá trị",L3_thieu_diem L8_sai_tieu_de M2_sai_chinh_ta
+Biểu đồ miền_6.png,area,"Sai title, sai giá trị, thiếu giá trị",L3_thieu_diem L4_sai_gia_tri L8_sai_tieu_de
+Biểu đồ miền_7.jpg,area,"Bịa title sai, thiếu giá trị",L3_thieu_diem L7_bia_tieu_de L8_sai_tieu_de
+Biểu đồ miền_8.jpg,area,"Bịa sai title, thiếu giá trị",L3_thieu_diem L8_sai_tieu_de
+Biểu đồ miền_9.webp,area,"Với biểu đồ không có giá trị thì model không tự ước lượng khoảng giá trị, sai title, sai đơn vị đo mặc dù trục tung vẫn hiện %",L6_sai_don_vi L8_sai_tieu_de
+Biểu đồ miền_10.png,area,"Có title vẫn trích xuất sai, sai chính tả dấu, thiếu giá trị",L3_thieu_diem M2_sai_chinh_ta
+Biểu đồ miền_11.png,area,Sai title,L8_sai_tieu_de
+Biểu đồ miền_12.png,area,"Sai title; chú giải sai (Lâm nghiệp, Người nghiệp thay cho Công nghiệp - xây dựng, Dịch vụ). Chỉ lấy 3 số năm 1985",L3_thieu_diem L8_sai_tieu_de
+Biểu đồ miền_13.png,area,"Bịa thêm 'tỷ lệ' vào title. Ảnh không ghi số, model ước lượng thô 1 cặp (0.4 | 0.6), thiếu 5 năm",M3_bia_du_lieu
+Biểu đồ miền_14.png,area,"Ảnh không có tiêu đề, model bịa title. Chỉ lấy 1 thành phần (hàng nông - lâm - thủy sản), thiếu 2 thành phần",L2_thieu_chuoi L7_bia_tieu_de
+Biểu đồ miền_15.png,area,"Sai chính tả title (Cổ cảng). Chỉ lấy chuỗi Dịch vụ, thiếu 2 thành phần",L2_thieu_chuoi L8_sai_tieu_de M2_sai_chinh_ta
+Biểu đồ miền_16.png,area,"x_axis sai (Nông nghiệp, xây dựng), chú giải sai. Chỉ lấy chuỗi Dịch vụ, thiếu 2 thành phần",L2_thieu_chuoi M5_nham_truc
+Biểu đồ miền_17.jpg,area,"Ảnh không có tiêu đề, model bịa title và chép mẫu prompt (Mục 1 | Mục 2, 123.4 | 567.8) dù ảnh ghi đủ số",L7_bia_tieu_de M1_chep_mau_prompt
+Biểu đồ miền_18.jpg,area,"Ảnh không có tiêu đề, model bịa title, đơn vị 'cm', chép mẫu prompt (123.4 | 567.8) dù ảnh ghi đủ số",L6_sai_don_vi L7_bia_tieu_de M1_chep_mau_prompt
+Biểu đồ miền_19.png,area,Bịa title; bịa categories thành dãy năm liên tục 1990 - 2002 (ảnh chỉ có 6 mốc); giá trị lặp 38.0,L7_bia_tieu_de M3_bia_du_lieu
+Biểu đồ miền_20.png,area,"Bịa title. Chỉ lấy chuỗi 'Trên 50 tuổi', thiếu 2 nhóm tuổi",L2_thieu_chuoi L7_bia_tieu_de
+Biểu đồ miền_21.png,area,"Sai chính tả (Thúu, Cổ cẩu). Chỉ lấy chuỗi Nông nghiệp, thiếu 3 thành phần",L2_thieu_chuoi M2_sai_chinh_ta
+Biểu đồ miền_22.jpeg,area,"Sai title (My La), bịa chú giải 'Thú cưng'. Chỉ lấy chuỗi Dịch vụ, thiếu 3 thành phần",L2_thieu_chuoi L8_sai_tieu_de M3_bia_du_lieu
+Biểu đồ miền_23.jpg,area,"Sai title (do thê hiện có cấu). Chỉ lấy chuỗi Dịch vụ, thiếu 2 thành phần",L2_thieu_chuoi L8_sai_tieu_de
+Biểu đồ miền_24.png,area,"x_axis 'Mục 1'; tách sai chú giải thành 6 mục. Chỉ lấy chuỗi Dịch vụ, thiếu 2 thành phần",L2_thieu_chuoi M5_nham_truc
+Biểu đồ cột_1.png,cột,"ô tô bị đọc nhầm thành ""ống"", đơn vị là ""nghìn km"" chỉ đọc được ""km"", không đọc được trục x, không đọc được nước ""Ấn Độ"", tự đẻ ra nước ""Anh"", đọc sai series name",L6_sai_don_vi M3_bia_du_lieu M5_nham_truc
+Biểu đồ cột_2.png,cột,"""đường sắt"" bị đọc thành ""đường sạt"",  đơn vị là ""nghìn km"" chỉ đọc được ""km"", không đọc được trục x, tự đẻ thêm hoặc mất dấu, đọc sai series name",L6_sai_don_vi M2_sai_chinh_ta M3_bia_du_lieu M5_nham_truc
+Biểu đồ cột_3.png,cột,"đơn vị là ""Tỉ USD"" bị đọc thành ""USD"", không đọc được trục x, trục x bị cho vào categories",L6_sai_don_vi M5_nham_truc
+Biểu đồ cột_4.png,cột ghép,"sai đơn vị, k đọc đc cột ghép (có thể do prompt)",L2_thieu_chuoi L6_sai_don_vi
+Biểu đồ cột_5.png,cột ghép,"sai đơn vị, k đọc đc cột ghép (có thể do prompt)",L2_thieu_chuoi L6_sai_don_vi
+Biểu đồ cột_6.png,cột ghép,"sai đơn vị, k đọc đc cột ghép (có thể do prompt)",L2_thieu_chuoi L6_sai_don_vi
+Biểu đồ cột_7.png,cột,AI đọc đúng,M6_dung
+Biểu đồ cột_8.png,cột ghép,"sai đơn vị, k đọc đc cột ghép (có thể do prompt)",L2_thieu_chuoi L6_sai_don_vi
+Biểu đồ cột_9.png,cột,AI đọc đúng,M6_dung
+Biểu đồ cột_10.png,cột ghép,"sai chính tả tên biểu đồ, sai đơn vị, k đọc đc cột ghép",L2_thieu_chuoi L6_sai_don_vi L8_sai_tieu_de M2_sai_chinh_ta
+Biểu đồ cột_11.png,cột ghép,"sai chính tả tên biểu đồ, sai đơn vị, k đọc đc cột ghép",L2_thieu_chuoi L6_sai_don_vi L8_sai_tieu_de M2_sai_chinh_ta
+Biểu đồ cột_12.png,cột ghép,"sai chính tả tên biểu đồ, sai đơn vị, k đọc đc cột ghép",L2_thieu_chuoi L6_sai_don_vi L8_sai_tieu_de M2_sai_chinh_ta
+Biểu đồ cột_13.png,cột ghép,"sai chính tả tên biểu đồ, sai đơn vị, k đọc đc cột ghép",L2_thieu_chuoi L6_sai_don_vi L8_sai_tieu_de M2_sai_chinh_ta
+Biểu đồ cột_14.png,cột,lỗi không đọc được gì,M4_khong_doc_duoc
+Biểu đồ cột_15.png,cột,lỗi chính tả,M2_sai_chinh_ta
+Biểu đồ cột_17.png,cột ghép,k đọc đc cột ghép,L2_thieu_chuoi
+Biểu đồ cột_18.png,cột ghép,k đọc đc cột ghép,L2_thieu_chuoi
+Biểu đồ cột_21.png,cột,bị kết quả tiếng anh,D4_chen_tieng_anh
+Biểu đồ cột_22.png,cột ghép,không đọc được gì,M4_khong_doc_duoc
+Biểu đồ cột_23.png,cột ghép,không đọc được gì,M4_khong_doc_duoc
+Biểu đồ cột_24.png,cột,"tự đẻ ra tên linh tinh, sai chính tả làm sai hoàn toàn nghĩa, đọc số liệu sai",L4_sai_gia_tri M2_sai_chinh_ta M3_bia_du_lieu
+Biểu đồ cột_25.png,cột,đúng,M6_dung
+Biểu đồ cột_26.png,cột,sai số liệu,L4_sai_gia_tri
+Biểu đồ cột_27.png,cột,sai chính tả,M2_sai_chinh_ta
+Biểu đồ cột_28.png,cột,sai chính tả,M2_sai_chinh_ta
+Biểu đồ cột_29.png,cột,sai số liệu,L4_sai_gia_tri
+Biểu đồ cột_30.png,cột,sai chính tả,M2_sai_chinh_ta
+Biểu đồ cột_31.png,cột ghép,k đọc được cột ghép,L2_thieu_chuoi
+Biểu đồ cột_32.png,cột ghép,k đọc được cột ghép,L2_thieu_chuoi
+Biểu đồ cột_33.png,cột,sai số liệu,L4_sai_gia_tri
+Biểu đồ cột_34.png,cột,không đọc được gì,M4_khong_doc_duoc
+Biểu đồ cột_35.jpg,cột,đúng,M6_dung
+Biểu đồ cột_36.jpg,cột,sai chính tả,M2_sai_chinh_ta
+Biểu đồ cột_37.jpg,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_38.jpg,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_39.jpg,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_40.png,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_41.png,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_42.png,cột,đúng,M6_dung
+Biểu đồ cột_43.png,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_44.webp,cột,sai chính tả,M2_sai_chinh_ta
+Biểu đồ cột_45.webp,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_46.png,cột,không đọc được gì,M4_khong_doc_duoc
+Biểu đồ cột_47.png,cột ghép,sai số liệu,L4_sai_gia_tri
+Biểu đồ cột_48.png,cột,"sai số liệu ngăn cách dấu , với ngăn cách hàng nghìn",L4_sai_gia_tri L5_bac_so
+Biểu đồ cột_49.webp,cột ghép,sai số liệu,L4_sai_gia_tri
+Biểu đồ cột_50.png,cột ghép,không đọc được gì,M4_khong_doc_duoc
+Biểu đồ cột_51.png,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_52.png,cột ghép,sai hết,L4_sai_gia_tri
+Biểu đồ cột_66.png,cột,bị chuyển qua tiếng anh,D4_chen_tieng_anh
+Biểu đồ cột_74.png,cột ghép,sai series name,M9_khac

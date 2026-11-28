@@ -1,0 +1,4 @@
+﻿model,n_charts_extract,json_ok,RA@5%,RNSS,type_ok,unit_ok,RA@5%_noi,RNSS_noi,unit_ok_noi,n_sach,RA@5%_sach,RA@5%_noi_sach,n_tat_ca,json_ok_tat_ca,json_cuu_duoc,extract_cham_gioi_han,extract_lap,loai_dung_tat_ca,loai_khong_hop_le,n_charts_describe,desc_%so_dung,desc_so_chua_khop,desc_E1,desc_E3_thieu_don_vi_%,desc_E9_khong_TV_%,desc_so_tu_tb,desc_lap_tat_ca,desc_chen_tieng_Anh_%,desc_khong_co_so,giay_moi_lan_goi
+Qwen3-VL-2B-Instruct,200,0.975,0.609,0.901,0.845,0.695,0.705,0.907,0.9,160,0.618,0.731,200,0.975,5,5,2,0.87,9,200,0.777,486,89,0.13,0.0,171.89,4,0.195,0,19.299
+Qwen3-VL-2B-Instruct@v2,200,0.975,0.616,0.863,0.845,0.732,0.682,0.87,0.895,160,0.626,0.707,200,0.975,5,5,3,0.87,9,,,,,,,,,,,24.391
+Vintern-1B-v3_5,200,0.94,0.236,0.587,0.545,0.332,0.319,0.602,0.816,160,0.25,0.335,200,0.94,11,10,5,0.583,0,200,0.771,337,74,0.13,0.0,123.495,3,0.0,10,9.451

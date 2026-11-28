@@ -1,0 +1,39 @@
+id,nguoi_gan,muc_do,loi,de_xuat_sua
+bar_059,ngan,cao,"Ảnh KHÔNG ghi số nhưng values_shown=true, thiếu cờ; nhiều giá trị ước lượng sai: Châu Âu 2020 nhãn -150 (ảnh ≈ +180), Châu Âu 2017/2018/2019/2021 nhãn 400/450/450/300 (ảnh ≈ 530/320/660/200), Thế giới 2018/2019 nhãn 1500/1550 (ảnh ≈ 1370/1730), Bắc Mỹ 2022 nhãn 300 (≈ 370)","Đọc lại theo vạch trục, values_shown=false, notes 'ẢNH KHÔNG GHI SỐ'"
+bar_061,ngan,cao,"Ảnh KHÔNG ghi số, thiếu cờ; phần lớn giá trị lệch: Hàng hóa khác 2021/2022 nhãn 9,0/10,5 nhưng ảnh ≈ 10,2/7,9 (ngược chiều); Sắn ≈ 1,05/1,3 (nhãn 0,5/0,5); Dệt may ≈ 1,3/1,2 (0,8/0,7); Gỗ 2022 ≈ 2,2 (1,2); Xơ sợi 2021 ≈ 3,0 (2,5)...","Đọc lại toàn bộ, values_shown=false, ghi cờ"
+bar_073,ngan,cao,"Ảnh KHÔNG ghi số, thiếu cờ; 2004/2005 nhãn 2100/2300 nhưng ảnh ≈ 2200/2470; 2002 ≈ 1650 (nhãn 1700)","Sửa 2004≈2200, 2005≈2470, 2002≈1650; values_shown=false"
+combo_001,(không rõ),cao,"Trùng ảnh với combo_005 nhưng không khai báo duplicate_of; ảnh chỉ ghi TỔNG, nhãn tự tách Khai thác=2000/2000/2000/2500 và Nuôi trồng = tổng − ước lượng (2015/2017 Khai thác thực tế ≈ 2280/2430); file thiếu status","Gán duplicate_of=combo_005 hoặc chỉ giữ chuỗi tổng như combo_005; thêm status"
+pie_011,nhi,cao,"Sai tên lát: 'Kinh tế nước ngoài' → 'Kinh tế ngoài Nhà nước'; 'Kinh tế có vốn đầu tư nước ngoài' → 'Khu vực có vốn đầu tư nước ngoài'. Trùng ảnh với pie_034 nhưng không khai báo","Sửa tên; pie_034 gán duplicate_of=pie_011 (và bổ sung tiêu đề cho pie_034)"
+line_003,nhi,cao,"Tiêu đề sai: ảnh ghi 'Số lượng quạt máy bán được trong năm vừa qua' (nhãn: 'Số lượng sản xuất máy bán được trong năm qua'); y.unit='Tháng' sai (trục tung là 'Số lượng')","title sửa theo ảnh; y.label='Số lượng', y.unit=null"
+line_008,,cao,"y.unit='Đơn vị đo' là giá trị mẫu chưa điền (đã báo ở kiểm tra chéo)","Điền đơn vị theo ảnh"
+bar_051,ngan,tb,"Ảnh KHÔNG ghi số, thiếu cờ; lệch nhẹ: Khách quốc tế 2012-2015 nhãn 6500/7000/7500/7500 (ảnh ≈ 6800/7500/7900/8000), nội địa 2015 nhãn 58000 (≈ 57000); thiếu tiêu đề/đơn vị (ảnh không ghi)","values_shown=false, notes 'ẢNH KHÔNG GHI SỐ'"
+bar_025,ngan,thap,"Ảnh không ghi số (cột nằm đúng vạch nên giá trị vẫn đúng) nhưng values_shown=true","values_shown=false hoặc ghi chú 'đọc theo vạch'"
+bar_026,ngan,thap,"Như bar_025","Như bar_025"
+bar_034,ngan,thap,"Như bar_025; series tên 'không có' (giá trị giữ chỗ)","series đặt tên mô tả hoặc theo trục; values_shown=false"
+bar_075,ngan,thap,"Lỗi chính tả series 'Thành phố Hồ Chí Mình'","'Thành phố Hồ Chí Minh'"
+bar_032,ngan,thap,"Tiêu đề 'bán ra' nhưng ảnh ghi 'bán được'","Sửa theo ảnh"
+pie_001,(không rõ),thap,"Mỗi lát là một series riêng (5 series × 1 điểm) thay vì 1 series; thiếu status (cùng area_001, bar_001, line_001, combo_001)","Gộp về 1 series; thêm status='done'"
+bar_052,ngan,ghi_nho,"Ảnh in 2141,74 (2019, nhiều khả năng là 241,74); nhãn giữ theo ảnh, đã có ghi chú","Cân nhắc loại điểm này khỏi chấm RA"
+pie_023;pie_002;area_024;area_020;area_008;area_001,,ok,"Tổng ≠ 100 là do ảnh gốc; nhãn chép đúng số trên ảnh","Không sửa"
+bar_037,ngan,cao,Sai tên chuỗi: 'Nước Trong' → ảnh ghi 'nuôi trồng',series = 'Nuôi trồng'
+bar_039,ngan,cao,"Nuôi trồng 2005: nhãn 1487, ảnh in 1478 (đảo chữ số)",y = 1478
+bar_056,ngan,cao,"Ảnh KHÔNG ghi số nhưng values_shown=true, thiếu cờ; nhiều điểm lệch > 5%: 2020 Thái Nguyên 23 (≈24,4), Hải Phòng 17 (≈18,9), Đồng Nai 17 (≈18,8), Hải Dương 7 (≈7,8), Phú Thọ 5 (≈4,3); 2021 Hải Phòng 25 (≈23,8), Đồng Nai 23 (≈21,8), Hà Nội 14 (≈15,5), Phú Thọ 7 (≈8,2), Hải Dương 9 (≈10)",Đọc lại theo vạch; values_shown=false + cờ
+bar_050,ngan,tb,"Ảnh KHÔNG ghi số, thiếu cờ; giá trị ước lượng gần đúng (Nhập khẩu 2022 355 ≈360, 2024 376 ≈381)",values_shown=false + cờ
+line_052,nhi,tb,"Ảnh KHÔNG ghi số, thiếu cờ; Qua thư/email T6 385 (ảnh ≈340), Trực tiếp T2 650 (≈680)",values_shown=false + cờ; sửa T6 email
+combo_009,giang,tb,"Đơn vị trục ngược: ảnh trục trái = Triệu tấn (Sản lượng), trục phải = Nghìn ha (Diện tích); nhãn y=Nghìn ha, y2=Triệu tấn (notes thì ghi đúng)",Thống nhất y/y2 với notes
+bar_057,ngan,thap,"Ước lượng lệch nhẹ: EU nhập khẩu 2022 53 (≈55), 2018 33 (≈35)",Tuỳ chọn
+line_013,nhi,thap,Chính tả 'Diễn tích' (tiêu đề + series) → 'Diện tích',
+line_015,nhi,thap,Tiêu đề 'dòng góp' → 'đóng góp',
+line_009,nhi,thap,Tiêu đề 'lúa cà nam' → 'lúa cả năm',
+line_017,nhi,thap,x 'Chiề 21/5' → 'Chiều 21/5',
+line_033,nhi,thap,Tiêu đề 'gia đoạn' → 'giai đoạn',
+line_034,nhi,thap,Tiêu đề 'tổng số nước ngoài' → 'tổng nợ nước ngoài',
+line_031,nhi,thap,Tiêu đề 'tỷ giá' → ảnh ghi 'trị giá',
+line_024,nhi,thap,Tiêu đề 'tỷ lệ thay đổi GDP' → ảnh ghi 'sự thay đổi GDP',
+line_002;line_006;pie_008,nhi,thap,Tiêu đề/nhãn rút gọn so với ảnh ('Nhiệt độ tại Hà Nội vào một ngày mùa thu'; 'Kinh doanh thương mại'; 'tính đến năm 2020'),
+pie_009,nhi,thap,'Vận đồng' → 'Vận động',
+pie_013,nhi,thap,'Công nghiẹp' → 'Công nghiệp',
+pie_016,nhi,thap,'Lúa đồng Xuân' → 'Lúa đông xuân'; tiêu đề 'lúa cà năm' → 'lúa cả năm',
+bar_002,ngan,thap,"Tiêu đề thiếu 'năm 2019'; ảnh ghi 'Biểu đồ các nước có chiều dài đường sắt lớn nhất thế giới, năm 2019'",
+bar_035,ngan,thap,Ảnh không có tiêu đề nhưng nhãn đặt title='Người dân',title rỗng
+bar_036,ngan,thap,series 'Số lượng lương thực' → 'Sản lượng lương thực',
